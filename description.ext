@@ -1,0 +1,124 @@
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 15;
+};
+OnLoadName = "Mercanaries ALiVE";
+onLoadMission = "A special unit of soldiers is tasked with sabotaging infrastructure, rescuing hostages and eliminating high value targets...";
+author="Beyaco";
+respawn = 3;
+respawndelay = 5;
+respawnTemplates[] = {"MenuInventory", "MenuPosition", "Spectator"};
+respawnOnStart = -1;
+disabledAI = 0;
+joinUnassigned = 1;
+enableDebugConsole = 1;
+allowFunctionsLog = 1;
+ExtendedInfoType=0;
+corpseManagerMode = 1;
+corpseLimit = 50;
+corpseRemovalMinTime = 1200;
+corpseRemovalMaxTime = 3600;
+wreckManagerMode = 1;
+wreckLimit = 50;
+wreckRemovalMinTime = 1200;
+wreckRemovalMaxTime = 3600;
+minPlayerDistance = 100;
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+#include "modules\grad-listBuymenu\grad_listBuymenu.hpp"
+#include "modules\grad-moneymenu\grad_moneymenu.hpp"
+#include "modules\grad-fortifications\grad_fortifications.hpp"
+#include "modules\cfgBuyables.hpp"
+#include "modules\cfgFortifications.hpp"
+#include "modules\cfgPersistence.hpp"
+
+class CfgFunctions {
+    #include "modules\grad-moneymenu\cfgFunctions.hpp"
+    #include "modules\grad-listBuymenu\cfgFunctions.hpp"
+	#include "modules\grad-fortifications\cfgFunctions.hpp"
+	#include "modules\grad-persistence\cfgFunctions.hpp"
+};
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+class RscTitles {
+    #include "modules\grad-fortifications\dialog\hint\title.hpp"
+};
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+class CfgGradMoneymenu {
+    canGiveDefault = 1;
+    canTransferToSidesDefault[] = {"east","west","independent","civilian"};
+    canTakeFromDeadDefault = 1;
+    canSendDirectlyDefault = 1;
+    canTakeFromSurrenderedDefault = 1;
+    startMoney = 0;
+    startBankBalance = 0;
+	playersLoseMoneyOnDeath = 1;	
+    atmObjects[] = {"Land_Atm_01_F", "Land_Atm_02_F"};
+};
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+class CfgRoles
+{
+	class Assault
+	{
+		displayName = Mercenary;
+		icon = "a3\Ui_f\data\GUI\Cfg\RespawnRoles\assault_ca.paa";
+	};
+};
+
+
+
+
+
+class CfgRespawnInventory
+{
+	class LOADOUT1
+	{
+		displayName = "Scrub";									// Name visible in the menu
+		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";	// Icon displayed next to the name
+		role = "Assault";										// Optional, see CfgRoles
+
+		// Loadout definition, uses same entries as CfgVehicles classes
+		weapons[] = {
+			"arifle_MX_ACO_F",
+			"Binocular"
+		};
+		magazines[] = {
+			"30Rnd_65x39_caseless_mag",
+			"30Rnd_65x39_caseless_mag",
+			"30Rnd_65x39_caseless_mag",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		items[] = {
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_Splint",
+			"ACE_Splint",
+			"ACE_morphine",
+			"ACE_epinephrine"
+		};
+		linkedItems[] = {
+			"V_Chestrig_blk",
+			"H_Watchcap_blk",
+			"acc_flashlight",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"ItemGPS"
+		};
+		uniformClass = "U_B_CombatUniform_mcam_tshirt";
+		backpack = "B_Carryall_cbr";
+	};
+};
