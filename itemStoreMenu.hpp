@@ -262,7 +262,7 @@
                 description = "	Canister (Fuel)";
                 price = 25;
                 stock = 10000;
-				kindOf = others;
+				kindOf = other;
 				code = [player,"Land_CanisterFuel_F"] call grad_fortifications_fnc_addFort;
             };			
 			class Laserbatteries {
@@ -371,52 +371,7 @@
                 description = "ACE RedGull energy drink";
                 amount = 1;
                 price = 1;
-                stock = 1000;
-            };
-			class Land_TacticalBacon_F {
-                displayName = "Tactical Bacon";
-                description = "Tactical Bacon";
-                amount = 1;
-                price = 1;
-                stock = 1000;
-				kindOf = other;
-				code = [player,"Land_TacticalBacon_F"] call grad_fortifications_fnc_addFort;				
-            };
-			class Land_BakedBeans_F {
-                displayName = "Baked Beans";
-                description = "Baked Beans";
-                amount = 1;
-                price = 1;
-                stock = 1000;
-				kindOf = other;
-				code = [player,"Land_BakedBeans_F"] call grad_fortifications_fnc_addFort;				
-            };
-			class Land_CerealsBox_F {
-                displayName = "Cereal box";
-                description = "Cereal box";
-                amount = 1;
-                price = 1;
-                stock = 1000;
-				kindOf = other;
-				code = [player,"Land_CerealsBox_F"] call grad_fortifications_fnc_addFort;				
-            };
-			class Land_RiceBox_F {
-                displayName = "Rice";
-                description = "Rice";
-                amount = 1;
-                price = 1;
-                stock = 1000;
-				kindOf = other;
-				code = [player,"Land_RiceBox_F"] call grad_fortifications_fnc_addFort;				
-            };
-			class Land_PowderedMilk_F {
-                displayName = "Powdered milk";
-                description = "Powdered milk";
-                amount = 1;
-                price = 1;
-                stock = 1000;
-				kindOf = other;
-				code = [player,"Land_PowderedMilk_F"] call grad_fortifications_fnc_addFort;				
+                stock = 1000;				
             };
 			class ACE_Banana {
                 displayName = "ACE banana";
