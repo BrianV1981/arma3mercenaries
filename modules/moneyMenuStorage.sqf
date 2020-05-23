@@ -1,0 +1,12 @@
+[box_1] call grad_moneymenu_fnc_setStorage;
+[box_2] call grad_moneymenu_fnc_setStorage;
+[box_3] call grad_moneymenu_fnc_setStorage;
+[box_4] call grad_moneymenu_fnc_setStorage;
+[box_5] call grad_moneymenu_fnc_setStorage;
+[box_6] call grad_moneymenu_fnc_setStorage;
+[box_7] call grad_moneymenu_fnc_setStorage;
+[box_8] call grad_moneymenu_fnc_setStorage;
+[box_9] call grad_moneymenu_fnc_setStorage;
+[box_10] call grad_moneymenu_fnc_setStorage;
+[box_11, "76561197997216797"] call grad_moneymenu_fnc_setStorage;
+[box_12, "76561198049332408"] call grad_moneymenu_fnc_setStorage;
