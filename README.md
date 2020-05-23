@@ -1,2 +1,2 @@
 # arma3mercenaries
-My first repository...
+My first Arma 3 repository...See the Wiki!
