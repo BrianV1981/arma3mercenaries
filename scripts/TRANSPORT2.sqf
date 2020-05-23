@@ -1,0 +1,1 @@
+["TRANSPORT",[[26688,24510,0],60,"B_Heli_Transport_03_F","CH47I Chinook","",""]] Call ALiVE_fnc_combatSupportAdd;sleep 1800;["WEST","TRANSPORT","CH47I Chinook"] call ALiVE_fnc_combatSupportRemove;

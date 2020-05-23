@@ -1,0 +1,1 @@
+["ARTILLERY",[[26702,24526,0],60,"B_MBT_01_arty_F","Sholef","",""]] Call ALiVE_fnc_combatSupportAdd;sleep 1800;["WEST","ARTILLERY","Sholef"] call ALiVE_fnc_combatSupportRemove;

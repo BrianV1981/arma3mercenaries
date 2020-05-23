@@ -1,0 +1,1 @@
+["TRANSPORT",[[26672,24523,0],60,"B_Heli_Transport_01_F","UH-80 Ghost Hawk","",""]] Call ALiVE_fnc_combatSupportAdd;sleep 1800;["WEST","TRANSPORT","UH-80 Ghost Hawk"] call ALiVE_fnc_combatSupportRemove;
