@@ -6,7 +6,13 @@
             displayName = "Handguns";
             kindOf = "Weapons";
             //items of this category:
-			
+
+			class ACE_Flashlight_Maglite_ML300L {
+                displayName = "ACE Maglite ML300L";
+                description = "Flash light.";
+                price = 10;
+                stock = 1000;                  
+            };			
 			class hgun_Pistol_Signal_F {
                 displayName = "Starter Pistol";
                 description = "The Starter Pistol is a double-action revolver chambered to fire 10 mm signal flare slugs, It loads from 6-round cylinders and has both a fire rate and muzzle velocity of 240 rounds per minute/240 m/s. The Starter Pistol does not support being fitted with any accessories or muzzle attachments.";
