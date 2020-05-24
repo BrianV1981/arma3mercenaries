@@ -48,70 +48,64 @@
                 price = 10000;
                 stock = 10000;                
             };
+			class ACE_Yardage450 {
+                displayName = "ACE Yardage450";
+                description = "Magnification: 4x Rangefinder. (default button b)";
+                price = 100;
+                stock = 10000;                 
+            };		
 			class Binocular {
                 displayName = "Binoculars";
                 description = "Magnification: 4x-12x. (default button b)";
                 price = 150;
                 stock = 10000;                 
             };
-			class ACE_SpottingScope {
-                displayName = "Spotting Scope";
-                description = "Magnification: unknown. (default button b)";
-                price = 150;
-                stock = 10000;                 
-            };			
-			class Rangefinder {
-                displayName = "Rangefinder";
-                description = "Magnification: 5x-25x. (default button b)";
-                price = 500;
-                stock = 10000;                 
-            };
 			class ace_dragon_sight {
                 displayName = "ACE SU-36/P Daysight";
-                description = "Magnification: unknown. (default button b)";
-                price = 500;
+                description = "Magnification: 4x-12x. (default button b)";
+                price = 160;
                 stock = 10000;                 
-            };			
+            };		
 			class ACE_MX2A {
                 displayName = "ACE MX2A";
-                description = "Magnification: unknown. (default button b)";
-                price = 500;
+                description = "Magnification: 2x Thermal imaging. (default button b)";
+                price = 200;
                 stock = 10000;                 
-            };			
-			class ACE_Vector {
-                displayName = "ACE Vector 21";
-                description = "Magnification: unknown. (default button b)";
-                price = 500;
-                stock = 10000;                 
-            };
+            };				
 			class ACE_VectorDay {
                 displayName = "ACE Vector 21 (Day)";
-                description = "Magnification: unknown. (default button b)";
-                price = 500;
+                description = "Magnification: 7x Rangefinder. (default button b)";
+                price = 300;
+                stock = 10000;                 
+            };		
+			class ACE_Vector {
+                displayName = "ACE Vector 21";
+                description = "Magnification: 7x Rangefinder (night vision). (default button b)";
+                price = 350;
                 stock = 10000;                 
             };
-			class ACE_Yardage450 {
-                displayName = "ACE Yardage450";
-                description = "Magnification: unknown. (default button b)";
-                price = 500;
+			class Rangefinder {
+                displayName = "Rangefinder";
+                description = "Magnification: 5x-25x Rangefinder. (default button b)";
+                price = 400;
                 stock = 10000;                 
-            };			
+            };		
 			class Laserdesignator {
                 displayName = "Laser Designator (Sand)";
-                description = "Magnification: 5x-25x. (default button b)";
-                price = 1000;
+                description = "Magnification: 5x-25x Rangefinder. (default button b)";
+                price = 600;
                 stock = 10000;                
             };
 			class Laserdesignator_02 {
                 displayName = "Laser Designator (Hex)";
-                description = "Magnification: 1x-20x. (default button b)";
-                price = 1000;
+                description = "Magnification: 5x-25x Rangefinder. (default button b)";
+                price = 600;
                 stock = 10000;                
             };
 			class Laserdesignator_03 {
                 displayName = "Laser Designator (Olive)";
-                description = "Magnification: 5x-25x. (default button b)";
-                price = 1000;
+                description = "Magnification: 5x-25x. Rangefinder (default button b)";
+                price = 600;
                 stock = 10000;                
             };			
 			class NVGogglesB_blk_F {
@@ -155,12 +149,6 @@
                 description = "The ACE Maglite XL50 flashlight can be utilized with the ACE self interaction menu (while looking at the map) to see your map in the dark.";
                 price = 40;
                 stock = 10000;                
-            };
-			class ACE_Flashlight_Maglite_ML300L {
-                displayName = "ACE Maglite ML300L";
-                description = "Flash light.";
-                price = 10;
-                stock = 1000;                  
             };
 			class  ACE_EarPlugs {
                 displayName = "ACE Earplugs";
