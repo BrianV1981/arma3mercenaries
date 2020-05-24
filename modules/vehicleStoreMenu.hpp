@@ -20,16 +20,16 @@
                 price = 500;
                 stock = 9999;
             };
-			class C_Offroad_02_unarmed_F {
-                displayName = "MB 4WD";
-                description = "The MB 4WD is a modern four-wheel drive off-road vehicle with a distinctive construction. The vehicle was produced in the US and exists in a number of different editions. (Slingload: No) (Slingloadable: Yes)";
-                price = 5000;
-                stock = 100;
-            };
 			class C_Hatchback_01_sport_F {
                 displayName = "Hatchback (Sport)";
                 description = "The Hatchback is a five-door compact car with a hatchback layout. The Hatchback contains enough seats for the driver and up to a maximum of three other passengers. (Slingload: No) (Slingloadable: Yes)";
-                price = 5000;
+                price = 4000;
+                stock = 100;
+            };		
+			class C_Offroad_02_unarmed_F {
+                displayName = "MB 4WD";
+                description = "The MB 4WD is a modern four-wheel drive off-road vehicle with a distinctive construction. The vehicle was produced in the US and exists in a number of different editions. (Slingload: No) (Slingloadable: Yes)";
+                price = 6000;
                 stock = 100;
             };
 			class B_G_Offroad_01_F {
@@ -37,12 +37,6 @@
                 description = "Offroad. (Slingload: No) (Slingloadable: Yes)";
                 price = 8000;
                 stock = 100;        
-            };
-			class C_Van_01_transport_F {
-                displayName = "Truck (Flatbed)";
-                description = "	The standard van can be used for a huge variety of practical purposes. This particular model features a long load length and excellent roof height, allowing for the transport of passengers, cargo, or even some smaller vehicles. (Slingload: No) (Slingloadable: Yes)";
-                price = 10000;
-                stock = 100;
             };
 			class B_G_Van_02_transport_F {
                 displayName = "Van Transport";
@@ -56,6 +50,12 @@
                 price = 10000;
                 stock = 9999;
             };
+			class C_Van_01_transport_F {
+                displayName = "Truck (Flatbed)";
+                description = "	The standard van can be used for a huge variety of practical purposes. This particular model features a long load length and excellent roof height, allowing for the transport of passengers, cargo, or even some smaller vehicles. (Slingload: No) (Slingloadable: Yes)";
+                price = 13000;
+                stock = 100;
+            };		
 		};
 		class Svehicles {
             kindOf = "Vehicles";
@@ -160,24 +160,6 @@
                 price = 20000;
                 stock = 9999;              
             }; 
-            class B_MRAP_01_F {
-                displayName = "Hunter";
-                description = "The Hunter is a four-wheel drive, all-terrain, MRAP-type vehicle. Primarily intended for use in counter-insurgency operations, it is multi-role and can act as both a troop carrier and supply vehicle if needed. (Slingload: No) (Slingloadable: Yes)";
-                price = 190000;
-                stock = 50;
-            };
-            class B_MRAP_01_hmg_F {
-                displayName = "Hunter HMG";
-                description = "The Hunter is a four-wheel drive, all-terrain, MRAP-type vehicle. Primarily intended for use in counter-insurgency operations, it is multi-role and can act as both a troop carrier and supply vehicle if needed. (Slingload: No) (Slingloadable: Yes)";
-                price = 210000;
-                stock = 50;
-            };
-			class B_MRAP_01_gmg_F {
-                displayName = "Hunter GMG";
-                description = "The Hunter is a four-wheel drive, all-terrain, MRAP-type vehicle. Primarily intended for use in counter-insurgency operations, it is multi-role and can act as both a troop carrier and supply vehicle if needed. (Slingload: No) (Slingloadable: Yes)";
-                price = 210000;
-                stock = 50;
-            };
 			class B_T_LSV_01_unarmed_F {
                 displayName = "Prowler";
                 description = "Primarily designed for use by special operations units, the Prowler is a lightweight, air transportable, highly mobile platform that can be configured for a variety of missions. (Slingload: No) (Slingloadable: Yes)";
@@ -195,6 +177,24 @@
                 description = "Primarily designed for use by special operations units, the Prowler is a lightweight, air transportable, highly mobile platform that can be configured for a variety of missions. (Slingload: No) (Slingloadable: Yes)";
                 price = 175000;
                 stock = 50;
+            };
+            class B_MRAP_01_F {
+                displayName = "Hunter";
+                description = "The Hunter is a four-wheel drive, all-terrain, MRAP-type vehicle. Primarily intended for use in counter-insurgency operations, it is multi-role and can act as both a troop carrier and supply vehicle if needed. (Slingload: No) (Slingloadable: Yes)";
+                price = 190000;
+                stock = 50;
+            };
+            class B_MRAP_01_hmg_F {
+                displayName = "Hunter HMG";
+                description = "The Hunter is a four-wheel drive, all-terrain, MRAP-type vehicle. Primarily intended for use in counter-insurgency operations, it is multi-role and can act as both a troop carrier and supply vehicle if needed. (Slingload: No) (Slingloadable: Yes)";
+                price = 210000;
+                stock = 50;
+            };
+			class B_MRAP_01_gmg_F {
+                displayName = "Hunter GMG";
+                description = "The Hunter is a four-wheel drive, all-terrain, MRAP-type vehicle. Primarily intended for use in counter-insurgency operations, it is multi-role and can act as both a troop carrier and supply vehicle if needed. (Slingload: No) (Slingloadable: Yes)";
+                price = 210000;
+                stock = 50;
             };			
 		};	
         class LAvehicles {
@@ -208,31 +208,7 @@
                 description = "The Gorgon is an 8x8 armoured combat vehicle that uses an inverted V-shape hull. It is designed to transport troops into battle and to provide fire support against a variety of ground threats.";
                 price = 420000;
                 stock = 20;
-            };			
-			class B_APC_Tracked_01_AA_F {
-                displayName = "FV-6a Cheetah";
-                description = "Primarily used to defend against aerial threats, the Cheetah is fitted with a turret armed with dual 35 mm cannons and four surface-to-air missiles that can be fired in a rapid succession once an aerial target is locked onto.";
-                price = 500000;
-                stock = 20;
             };
-			class B_T_APC_Tracked_01_AA_F {
-                displayName = "FV-6a Cheetah";
-                description = "Primarily used to defend against aerial threats, the Cheetah is fitted with a turret armed with dual 35 mm cannons and four surface-to-air missiles that can be fired in a rapid succession once an aerial target is locked onto.";
-                price = 500000;
-                stock = 20;
-            };			
-			class B_APC_Tracked_01_rcws_F {
-                displayName = "IFV-6c Panther";
-                description = "The Panther is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat.";
-                price = 440000;
-                stock = 20;
-            };
-			class B_T_APC_Tracked_01_rcws_F {
-                displayName = "IFV-6c Panther";
-                description = "The Panther is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat.";
-                price = 440000;
-                stock = 20;
-            };			
 			class B_APC_Wheeled_01_cannon_F {
                 displayName = "AMV-7 Marshall";
                 description = "The Marshall is an 8x8 infantry fighting vehicle designed as a medium-lift personnel carrier for expeditionary warfare. It can operate across a variety of environments ranging from land to sea, and can even be para-dropped from the air.";
@@ -245,18 +221,18 @@
                 price = 420000;
                 stock = 20;
             };
-			class B_AFV_Wheeled_01_cannon_F {
-                displayName = "Rhino MGS";
-                description = "The Rhino MGS is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel.";
-                price = 450000;
-                stock = 20;
-            };
 			class B_T_AFV_Wheeled_01_cannon_F {
                 displayName = "Rhino MGS";
                 description = "The Rhino MGS is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel.";
                 price = 450000;
                 stock = 20;
             };
+			class B_AFV_Wheeled_01_cannon_F {
+                displayName = "Rhino MGS";
+                description = "The Rhino MGS is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel.";
+                price = 450000;
+                stock = 20;
+            };		
 			class B_AFV_Wheeled_01_up_cannon_F {
                 displayName = "Rhino MGS UP";
                 description = "The Rhino MGS is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. The 'UP' version is equipped with a remotely operated 12.7mm HMG and improved protection, provided by a cage and reactive armor. However, with this setup, it's too bulky to fit into many transport vehicles, including the Blackfish VTOL.";
@@ -268,7 +244,19 @@
                 description = "The Rhino MGS is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. The 'UP' version is equipped with a remotely operated 12.7mm HMG and improved protection, provided by a cage and reactive armor. However, with this setup, it's too bulky to fit into many transport vehicles, including the Blackfish VTOL.";
                 price = 465000;
                 stock = 20;
-            };			
+            };							
+			class B_APC_Tracked_01_rcws_F {
+                displayName = "IFV-6c Panther";
+                description = "The Panther is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat.";
+                price = 440000;
+                stock = 20;
+            };
+			class B_T_APC_Tracked_01_rcws_F {
+                displayName = "IFV-6c Panther";
+                description = "The Panther is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat.";
+                price = 440000;
+                stock = 20;
+            };						
 			class B_APC_Tracked_01_CRV_F {
                 displayName = "CRV-6e Bobcat";
                 description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
@@ -280,7 +268,19 @@
                 description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
                 price = 475000;
                 stock = 20;
-            };			
+            };
+			class B_APC_Tracked_01_AA_F {
+                displayName = "FV-6a Cheetah";
+                description = "Primarily used to defend against aerial threats, the Cheetah is fitted with a turret armed with dual 35 mm cannons and four surface-to-air missiles that can be fired in a rapid succession once an aerial target is locked onto.";
+                price = 500000;
+                stock = 20;
+            };
+			class B_T_APC_Tracked_01_AA_F {
+                displayName = "FV-6a Cheetah";
+                description = "Primarily used to defend against aerial threats, the Cheetah is fitted with a turret armed with dual 35 mm cannons and four surface-to-air missiles that can be fired in a rapid succession once an aerial target is locked onto.";
+                price = 500000;
+                stock = 20;
+            };		
 			class B_Radar_System_01_F {
                 displayName = "AN/MPQ-105 Radar";
                 description = "The AN/MPQ-105 is the search and detection, target track and illumination radar and missile commander for the surface-to-air defense missile system";
