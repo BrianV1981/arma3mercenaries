@@ -394,76 +394,268 @@
             displayName = "Wearable Gear";
             kindOf = "Wearables";
 
+			class U_B_CBRN_Suit_01_MTP_F {
+                displayName = "CBRN Suit (MTP) [NATO]";
+                description = "CBRN Suit (MTP) [NATO]";
+                price = 250;
+                stock = 10000;                
+            };		
+			class U_B_CBRN_Suit_01_Tropic_F {
+                displayName = "CBRN Suit (Tropic) [NATO]";
+                description = "CBRN Suit (Tropic) [NATO]";
+                price = 250;
+                stock = 10000;                
+            };		
+			class U_B_CBRN_Suit_01_Wdl_F {
+                displayName = "CBRN Suit (Woodland) [NATO]";
+                description = "CBRN Suit (Woodland) [NATO]";
+                price = 250;
+                stock = 10000;                
+            };		
+			class U_I_G_Story_Protagonist_F {
+                displayName = "Worn Combat Fatigues (Kerry)";
+                description = "Worn Combat Fatigues (Kerry)";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_CombatUniform_mcam_worn {
+                displayName = "Worn Combat Fatigues (MTP)";
+                description = "Worn Combat Fatigues (MTP)";
+                price = 250;
+                stock = 10000;                
+            };		
+			class U_B_CombatUniform_mcam {
+                displayName = "Combat Fatigues (MTP)";
+                description = "Combat Fatigues (MTP)";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_CombatUniform_sgg {
+                displayName = "Combat Fatigues (MTP)";
+                description = "Combat Fatigues (MTP)";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_CombatUniform_mcam_wdl_f {
+                displayName = "Combat Fatigues (Woodland)";
+                description = "Combat Fatigues (Woodland)";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_CombatUniform_wdl {
+                displayName = "Combat Fatigues (MTP)";
+                description = "Combat Fatigues (MTP)";
+                price = 250;
+                stock = 10000;                
+            };		
 			class U_B_CombatUniform_mcam_tshirt {
                 displayName = "Combat Fatigues (MTP) (Tee)";
                 description = "Combat Fatigues (MTP) (Tee)";
                 price = 250;
                 stock = 10000;                
-            };			
-			class U_B_CombatUniform_mcam {
-                displayName = "Combat Fatigues (MTP)";
-                description = "Combat Fatigues (MTP)";
-                price = 300;
+            };
+			class U_B_CombatUniform_sgg_tshirt {
+                displayName = "Combat Fatigues (MTP) (Tee)";
+                description = "Combat Fatigues (MTP) (Tee)";
+                price = 250;
                 stock = 10000;                
             };
+			class U_B_CombatUniform_tshirt_mcam_wdL_f {
+                displayName = "Combat Fatigues (Woodland, Tee)";
+                description = "Combat Fatigues (Woodland, Tee)";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_CombatUniform_wdl_tshirt {
+                displayName = "Combat Fatigues (MTP) (Tee)";
+                description = "Combat Fatigues (MTP) (Tee)";
+                price = 250;
+                stock = 10000;                
+            };				
 			class U_B_CombatUniform_mcam_vest {
                 displayName = "Recon Fatigues (MTP)";
                 description = "Recon Fatigues (MTP)";
-                price = 300;
+                price = 250;
                 stock = 10000;                
             };
+			class U_B_CombatUniform_sgg_vest {
+                displayName = "Recon Fatigues (MTP)";
+                description = "Recon Fatigues (MTP)";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_CombatUniform_vest_mcam_wdl_f {
+                displayName = "Recon Fatigues (Woodland)";
+                description = "Recon Fatigues (Woodland)";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_CombatUniform_wdl_vest {
+                displayName = "Recon Fatigues (MTP)";
+                description = "Recon Fatigues (MTP)";
+                price = 250;
+                stock = 10000;                
+            };	
 			class U_B_SpecopsUniform_sgg {
                 displayName = "Specop Fatigues (Sage)";
                 description = "Specop Fatigues (Sage)";
-                price = 320;
+                price = 250;
                 stock = 10000;                
-            };
+            };		
 			class U_B_survival_uniform  {
                 displayName = "Survival Fatigues";
                 description = "Survival Fatigues";
-                price = 360;
-                stock = 10000;                
-            };
-			class U_I_G_Story_Protagonist_F {
-                displayName = "Worn Combat Fatigues (Kerry)";
-                description = "Worn Combat Fatigues (Kerry)";
-                price = 280;
+                price = 300;
                 stock = 10000;                
             };						
 			class U_B_GhillieSuit {
                 displayName = "Ghillie Suit [NATO]";
                 description = "Ghillie Suit [NATO]";
-                price = 425;
+                price = 400;
                 stock = 10000;                
             };			
+			class U_B_FullGhillie_ard {
+                displayName = "Full Ghillie (Arid) [NATO]";
+                description = "Full Ghillie (Arid) [NATO]";
+                price = 450;
+                stock = 10000;                
+            };
 			class U_B_FullGhillie_lsh {
                 displayName = "Full Ghillie (Lush) [NATO]";
                 description = "Full Ghillie (Lush) [NATO]";
-                price = 475;
+                price = 450;
                 stock = 10000;                
-            };			
+            };
+			class U_B_FullGhillie_sard {
+                displayName = "Full Ghillie (Semi-Arid) [NATO]";
+                description = "Full Ghillie (Semi-Arid) [NATO]";
+                price = 450;
+                stock = 10000;                
+            };		
 			class U_B_HeliPilotCoveralls {
                 displayName = "Heli Pilot Coveralls [NATO]";
                 description = "Heli Pilot Coveralls [NATO]";
-                price = 325;
+                price = 300;
                 stock = 10000;                
             };
 			class U_B_PilotCoveralls {
                 displayName = "Pilot Coveralls [NATO]";
                 description = "Pilot Coveralls [NATO]";
-                price = 325;
+                price = 300;
                 stock = 10000;                
             };			
 			class U_B_Wetsuit {
                 displayName = "Wetsuit [NATO]";
                 description = "Wetsuit [NATO]";
-                price = 1000;
+                price = 500;
                 stock = 10000;                
             };
+			class U_B_G_Captain_Ivan_F {
+                displayName = "Paramilitary Garb (Jacket)";
+                description = "Paramilitary Garb (Jacket)";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_GEN_Commander_F {
+                displayName = "Gendarmerie Commander Uniform";
+                description = "Gendarmerie Commander Uniform";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_GEN_Soldier_F {
+                displayName = "Gendarmerie Uniform";
+                description = "Gendarmerie Uniform";
+                price = 500;
+                stock = 10000;                
+            };		
+			class U_B_CTRG_1 {
+                displayName = "CTRG Combat Uniform";
+                description = "CTRG Combat Uniform";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_CTRG_Soldier_F {
+                displayName = "CTRG Stealth Uniform";
+                description = "CTRG Stealth Uniform";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_CTRG_Soldier_urb_1_F {
+                displayName = "CTRG Urban Uniform";
+                description = "CTRG Urban Uniform";
+                price = 250;
+                stock = 10000;                
+            };		
+			class U_B_CTRG_2 {
+                displayName = "CTRG Combat Uniform (Tee)";
+                description = "CTRG Combat Uniform (Tee)";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_CTRG_Soldier_2_F {
+                displayName = "CTRG Stealth Uniform (Tee)";
+                description = "CTRG Stealth Uniform (Tee)";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_CTRG_Soldier_urb_2_F {
+                displayName = "CTRG Urban Uniform (Tee)";
+                description = "CTRG Urban Uniform (Tee)";
+                price = 250;
+                stock = 10000;                
+            };		
+			class U_B_CTRG_3 {
+                displayName = "CTRG Combat Uniform (Rolled-up)";
+                description = "CTRG Combat Uniform (Rolled-up)";
+                price = 250;
+                stock = 10000;                
+            };		
+			class U_B_CTRG_Soldier_3_F {
+                displayName = "CTRG Stealth Uniform (Rolled-up)";
+                description = "CTRG Stealth Uniform (Rolled-up)";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_CTRG_Soldier_urb_3_F {
+                displayName = "CTRG Urban Uniform (Rolled-up)";
+                description = "CTRG Urban Uniform (Rolled-up)";
+                price = 250;
+                stock = 10000;                
+            };
+			class U_B_T_Soldier_F {
+                displayName = "Combat Fatigues (Tropic)";
+                description = "Combat Fatigues (Tropic)";
+                price = 250;
+                stock = 10000;                
+            };	
+			class U_B_T_Soldier_AR_F {
+                displayName = "Combat Fatigues (Tropic, Tee)";
+                description = "Combat Fatigues (Tropic, Tee)";
+                price = 250;
+                stock = 10000;                
+            };		
+			class U_B_T_Soldier_SL_F  {
+                displayName = "Recon Fatigues (Tropic)";
+                description = "Recon Fatigues (Tropic)";
+                price = 250;
+                stock = 10000;                
+            };						
+			class U_B_T_Sniper_F {
+                displayName = "Ghillie Suit (Tropic) [NATO]";
+                description = "Ghillie Suit (Tropic) [NATO]";
+                price = 400;
+                stock = 10000;                
+            };			
+			class U_B_T_FullGhillie_tna_F {
+                displayName = "Full Ghillie (Jungle) [NATO]";
+                description = "Full Ghillie (Jungle) [NATO]";
+                price = 450;
+                stock = 10000;                
+            };		
 			class U_I_CombatUniform_tshirt {
                 displayName = "Combat Fatigues [AAF] (Officer)";
                 description = "Combat Fatigues [AAF] (Officer)";
-                price = 200;
+                price = 250;
                 stock = 10000;                
             };			
 			class U_I_CombatUniform {
@@ -493,25 +685,25 @@
 			class U_I_FullGhillie_lsh {
                 displayName = "Full Ghillie (Lush) [AAF]";
                 description = "Full Ghillie (Lush) [AAF]";
-                price = 425;
+                price = 450;
                 stock = 10000;                
             };
 			class U_I_FullGhillie_sard {
                 displayName = "Full Ghillie (Semi-Arid) [AAF]";
                 description = "Full Ghillie (Semi-Arid) [AAF]";
-                price = 425;
+                price = 450;
                 stock = 10000;                
             };
 			class U_I_FullGhillie_ard {
                 displayName = "Full Ghillie (Arid) [AAF]";
                 description = "Full Ghillie (Arid) [AAF]";
-                price = 425;
+                price = 450;
                 stock = 10000;                
             };			
 			class U_I_Wetsuit {
                 displayName = "Wetsuit [AAF]";
                 description = "Wetsuit [AAF]";
-                price = 900;
+                price = 500;
                 stock = 10000;                
             };
 			class U_I_pilotCoveralls {
@@ -541,13 +733,13 @@
 			class U_O_V_Soldier_Viper_F  {
                 displayName = "Special Purpose Suit (Green Hex)";
                 description = "Special Purpose Suit (Green Hex)";
-                price = 1500;
+                price = 500;
                 stock = 10000;                
             };
 			class U_O_V_Soldier_Viper_hex_F  {
                 displayName = "Special Purpose Suit (Hex)";
                 description = "Special Purpose Suit (Hex)";
-                price = 1500;
+                price = 500;
                 stock = 10000;                
             };			
 			class V_TacVest_blk {
