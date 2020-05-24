@@ -9,9 +9,29 @@
 			class ACE_Sandbag_empty {
                 displayName = "ACE Sandbag (empty)";
                 description = "The ACE Sandbag (empty) can be utilize with the ACE self interaction menu.";
-                price = 0;
+                price = 10;
                 stock = 10000;
 				kindOf = Items;
+            };
+			
+			class ACE_EntrenchingTool {
+                displayName = "ACE Entrenching Tool";
+                description = "The ACE entrenching tool can be utilize to dig trenches with the ACE self interaction menu.";
+                price = 30;
+                stock = 10000;                
+            };
+			class ACE_ConcertinaWireCoil {
+                displayName = "ACE Concertina Wire Coil";
+                description = "The ACE Concertina Wire Coil can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 10;
+                stock = 10000;
+				code = [container_2,"ACE_ConcertinaWireCoil"] call grad_fortifications_fnc_addFort;
+            };
+			class ACE_wirecutter {
+                displayName = "ACE Wire Cutter";
+                description = "The ACE wire cutter can be utilize to cut ACE concertina wire with the ACE interaction menu.";
+                price = 20;
+                stock = 10000;
             };
 			class Land_BagFence_Corner_F {
                 displayName = "Sandbag Wall (Corner)";
@@ -47,13 +67,6 @@
                 price = 15;
                 stock = 200;
 				code = [container_2,"Land_BagFence_Short_F"] call grad_fortifications_fnc_addFort;
-            };
-			class ACE_ConcertinaWireCoil {
-                displayName = "ACE Concertina Wire Coil";
-                description = "The ACE Concertina Wire Coil can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 20;
-                stock = 10000;
-				code = [container_2,"ACE_ConcertinaWireCoil"] call grad_fortifications_fnc_addFort;
             };
 			class Land_HBarrier_1_F {
                 displayName = "H-barrier (Block)";
@@ -93,7 +106,7 @@
 			class Land_HBarrierWall6_F {
                 displayName = "H-barrier Wall (Long)";
                 description = "H-barrier Wall (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 800;
+                price = 1000;
                 stock = 200;
 				code = [container_2,"Land_HBarrierWall6_F"] call grad_fortifications_fnc_addFort;
             };
@@ -237,34 +250,6 @@
                 stock = 100;
 				code = [container_2,"Land_RampConcrete_F"] call grad_fortifications_fnc_addFort;
             };
-			class Land_Net_Fence_4m_F {
-                displayName = "Net Fence";
-                description = "Net Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100;
-                stock = 200;
-				code = [container_2,"Land_Net_Fence_4m_F"] call grad_fortifications_fnc_addFort;
-            };
-			class Land_Net_Fence_8m_F {
-                displayName = "Net Fence (Long)";
-                description = "Net Fence (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
-                stock = 200;
-				code = [container_2,"Land_Net_Fence_8m_F"] call grad_fortifications_fnc_addFort;
-            };
-			class Land_Net_Fence_Gate_F {
-                displayName = "Net Fence (Gate)";
-                description = "Net Fence (Gate) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
-                stock = 200;
-				code = [container_2,"Land_Net_Fence_Gate_F"] call grad_fortifications_fnc_addFort;
-            };
-			class Land_Net_Fence_pole_F {
-                displayName = "Net Fence (Pole)";
-                description = "Net Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10;
-                stock = 200;
-				code = [container_2,"Land_Net_Fence_pole_F"] call grad_fortifications_fnc_addFort;
-            };
 			class Land_New_WiredFence_5m_F {
                 displayName = "Barbed Wire Fence";
                 description = "Barbed Wire Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -310,7 +295,7 @@
 			class Land_HBarrierTower_F {
                 displayName = "H-barrier Watchtower";
                 description = "H-barrier Watchtower can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 3000;
+                price = 2000;
                 stock = 200;
 				code = [container_2,"Land_HBarrierTower_F"] call grad_fortifications_fnc_addFort;
             };
