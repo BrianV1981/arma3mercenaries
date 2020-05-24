@@ -240,21 +240,23 @@
             };
 			class ACE_Track {
                 displayName = "ACE Spare Track";
-                description = "ACE Spare Track";
+                description = "ACE Spare Track can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 100;
                 stock = 10000;
-				kindOf = vehicles;
+				kindOf = other;
+				code = [player,"ACE_Track"] call grad_fortifications_fnc_addFort;
             };
 			class ACE_Wheel {
                 displayName = "ACE Spare Wheel";
-                description = "ACE Spare Wheel";
+                description = "ACE Spare Wheel can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 50;
                 stock = 10000;
-				kindOf = vehicles;
+				kindOf = other;
+				code = [player,"ACE_Wheel"] call grad_fortifications_fnc_addFort;
             };
 			class Land_CanisterFuel_F {
                 displayName = "	Canister (Fuel)";
-                description = "	Canister (Fuel)";
+                description = "	Canister (Fuel) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 25;
                 stock = 10000;
 				kindOf = other;
