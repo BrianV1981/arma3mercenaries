@@ -1091,122 +1091,129 @@
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };			
-			class launch_NLAW_F {
-                displayName = "PCML Rocket Launcher";
-                description = "The PCML is a portable short-range, fire-and-forget, guided missile launcher. It can only load missiles with 150 mm high-explosive anti-tank (HEAT) tandem charge warheads, which are capable of striking targets at distances of between 600 and up to 800 metres away. The launcher comes with an integrated night vision-capable sight that has a magnification strength of 2x, and an integrated laser rangefinder. It is able to toggle between using the standard direct-fire and an overfly top-attack (OTA) mode.";
-                price = 10000;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
 			class launch_O_Vorona_green_F {
                 displayName = "9M135 Vorona (Green)";
                 description = "The 9M135 Vorona is a wire-guided, shoulder-launched anti-tank missile launcher, It is designed to be able to load missiles fitted with either high-explosive anti-tank (HEAT) or high-explosive (HE) warheads. The launcher itself uses an optical scope that has a magnification strength of 2x, a built-in laser rangefinder, and is able to switch between using normal day and orange/red-hot thermal vision modes.";
-                price = 15000;
+                price = 8000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class launch_O_Vorona_brown_F {
                 displayName = "9M135 Vorona (Brown)";
                 description = "The 9M135 Vorona is a wire-guided, shoulder-launched anti-tank missile launcher, It is designed to be able to load missiles fitted with either high-explosive anti-tank (HEAT) or high-explosive (HE) warheads. The launcher itself uses an optical scope that has a magnification strength of 2x, a built-in laser rangefinder, and is able to switch between using normal day and orange/red-hot thermal vision modes.";
-                price = 15000;
+                price = 8000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };			
+            };
+			class launch_NLAW_F {
+                displayName = "PCML Rocket Launcher";
+                description = "The PCML is a portable short-range, fire-and-forget, guided missile launcher. NLAW uses Predicted Line Of Sight guidance, It can only load missiles with 150 mm high-explosive anti-tank (HEAT) tandem charge warheads, which are capable of striking targets at distances of between 600 and up to 800 metres away. The launcher comes with an integrated night vision-capable sight that has a magnification strength of 2x, and an integrated laser rangefinder. It is able to toggle between using the standard direct-fire and an overfly top-attack (OTA) mode.";
+                price = 10000;
+                stock = 1000;                
+                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
+            };
+			class ACE_launch_NLAW_Used_F {
+                displayName = "ACE PCML Rocket Launcher";
+                description = "The PCML is a portable short-range, fire-and-forget, guided missile launcher. NLAW uses Predicted Line Of Sight guidance, It can only load missiles with 150 mm high-explosive anti-tank (HEAT) tandem charge warheads, which are capable of striking targets at distances of between 600 and up to 800 metres away. The launcher comes with an integrated night vision-capable sight that has a magnification strength of 2x, and an integrated laser rangefinder. It is able to toggle between using the standard direct-fire and an overfly top-attack (OTA) mode.";
+                price = 10000;
+                stock = 1000;                
+                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
+            };		
 			class launch_Titan_F {
                 displayName = "Titan MPRL";
                 description = "The Titan MPRL is a portable long-range, surface-to-air, guided missile launcher. It uses 127 mm missiles with high-explosive fragmentation (HE-Frag) warheads that are capable of tracking and hitting aircraft at distances of up to 3,500 metres. The launcher's command launch unit (CLU) can toggle between three modes of operation: normal day vision, white-hot thermal, and black-hot thermal. In addition, it can have its magnification adjusted to either 1x or 2x strength. The CLU has a small rail that supports being fitted with side rail accessories. The Titan can turn any infantry unit into an extremely dangerous threat for all aircraft.";
-                price = 20000;
+                price = 15000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class launch_B_Titan_F {
                 displayName = "Titan MPRL";
                 description = "The Titan MPRL is a portable long-range, surface-to-air, guided missile launcher. It uses 127 mm missiles with high-explosive fragmentation (HE-Frag) warheads that are capable of tracking and hitting aircraft at distances of up to 3,500 metres. The launcher's command launch unit (CLU) can toggle between three modes of operation: normal day vision, white-hot thermal, and black-hot thermal. In addition, it can have its magnification adjusted to either 1x or 2x strength. The CLU has a small rail that supports being fitted with side rail accessories. The Titan can turn any infantry unit into an extremely dangerous threat for all aircraft.";
-                price = 20000;
+                price = 15000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class launch_I_Titan_F {
                 displayName = "Titan MPRL";
                 description = "The Titan MPRL is a portable long-range, surface-to-air, guided missile launcher. It uses 127 mm missiles with high-explosive fragmentation (HE-Frag) warheads that are capable of tracking and hitting aircraft at distances of up to 3,500 metres. The launcher's command launch unit (CLU) can toggle between three modes of operation: normal day vision, white-hot thermal, and black-hot thermal. In addition, it can have its magnification adjusted to either 1x or 2x strength. The CLU has a small rail that supports being fitted with side rail accessories. The Titan can turn any infantry unit into an extremely dangerous threat for all aircraft.";
-                price = 20000;
+                price = 15000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class launch_O_Titan_F {
                 displayName = "Titan MPRL";
                 description = "The Titan MPRL is a portable long-range, surface-to-air, guided missile launcher. It uses 127 mm missiles with high-explosive fragmentation (HE-Frag) warheads that are capable of tracking and hitting aircraft at distances of up to 3,500 metres. The launcher's command launch unit (CLU) can toggle between three modes of operation: normal day vision, white-hot thermal, and black-hot thermal. In addition, it can have its magnification adjusted to either 1x or 2x strength. The CLU has a small rail that supports being fitted with side rail accessories. The Titan can turn any infantry unit into an extremely dangerous threat for all aircraft.";
-                price = 20000;
+                price = 15000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class launch_B_Titan_tna_F {
                 displayName = "Titan MPRL (Tropic)";
                 description = "The Titan MPRL is a portable long-range, surface-to-air, guided missile launcher. It uses 127 mm missiles with high-explosive fragmentation (HE-Frag) warheads that are capable of tracking and hitting aircraft at distances of up to 3,500 metres. The launcher's command launch unit (CLU) can toggle between three modes of operation: normal day vision, white-hot thermal, and black-hot thermal. In addition, it can have its magnification adjusted to either 1x or 2x strength. The CLU has a small rail that supports being fitted with side rail accessories. The Titan can turn any infantry unit into an extremely dangerous threat for all aircraft.";
-                price = 20000;
+                price = 15000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class launch_O_Titan_ghex_F {
                 displayName = "Titan MPRL (Green Hex)";
                 description = "The Titan MPRL is a portable long-range, surface-to-air, guided missile launcher. It uses 127 mm missiles with high-explosive fragmentation (HE-Frag) warheads that are capable of tracking and hitting aircraft at distances of up to 3,500 metres. The launcher's command launch unit (CLU) can toggle between three modes of operation: normal day vision, white-hot thermal, and black-hot thermal. In addition, it can have its magnification adjusted to either 1x or 2x strength. The CLU has a small rail that supports being fitted with side rail accessories. The Titan can turn any infantry unit into an extremely dangerous threat for all aircraft.";
-                price = 20000;
+                price = 15000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class launch_I_Titan_eaf_F {
                 displayName = "Titan MPRL (Geometric)";
                 description = "The Titan MPRL is a portable long-range, surface-to-air, guided missile launcher. It uses 127 mm missiles with high-explosive fragmentation (HE-Frag) warheads that are capable of tracking and hitting aircraft at distances of up to 3,500 metres. The launcher's command launch unit (CLU) can toggle between three modes of operation: normal day vision, white-hot thermal, and black-hot thermal. In addition, it can have its magnification adjusted to either 1x or 2x strength. The CLU has a small rail that supports being fitted with side rail accessories. The Titan can turn any infantry unit into an extremely dangerous threat for all aircraft.";
-                price = 20000;
+                price = 15000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class launch_B_Titan_olive_F {
                 displayName = "Titan MPRL (Olive)";
                 description = "The Titan MPRL is a portable long-range, surface-to-air, guided missile launcher. It uses 127 mm missiles with high-explosive fragmentation (HE-Frag) warheads that are capable of tracking and hitting aircraft at distances of up to 3,500 metres. The launcher's command launch unit (CLU) can toggle between three modes of operation: normal day vision, white-hot thermal, and black-hot thermal. In addition, it can have its magnification adjusted to either 1x or 2x strength. The CLU has a small rail that supports being fitted with side rail accessories. The Titan can turn any infantry unit into an extremely dangerous threat for all aircraft.";
-                price = 20000;
+                price = 15000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };			
 			class launch_Titan_short_F {
                 displayName = "Titan MPRL Compact";
                 description = "The Titan MPRL Compact is a portable long-range, fire-and-forget, guided missile launcher. It can be loaded with either 127 mm high-explosive anti-tank (HEAT) or antipersonnel (AP) warheads that are capable of striking targets at distances of up to 2,000 metres away. True to its name, the Titan's ability to load and fire AT/AP missiles is what makes it a unique multi-role weapon.";
-                price = 20000;
+                price = 15000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class launch_B_Titan_short_F {
                 displayName = "Titan MPRL Compact (Sand)";
                 description = "The Titan MPRL Compact is a portable long-range, fire-and-forget, guided missile launcher. It can be loaded with either 127 mm high-explosive anti-tank (HEAT) or antipersonnel (AP) warheads that are capable of striking targets at distances of up to 2,000 metres away. True to its name, the Titan's ability to load and fire AT/AP missiles is what makes it a unique multi-role weapon.";
-                price = 20000;
+                price = 15000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class launch_I_Titan_short_F {
                 displayName = "Titan MPRL Compact (Olive)";
                 description = "The Titan MPRL Compact is a portable long-range, fire-and-forget, guided missile launcher. It can be loaded with either 127 mm high-explosive anti-tank (HEAT) or antipersonnel (AP) warheads that are capable of striking targets at distances of up to 2,000 metres away. True to its name, the Titan's ability to load and fire AT/AP missiles is what makes it a unique multi-role weapon.";
-                price = 20000;
+                price = 15000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class launch_O_Titan_short_F {
                 displayName = "Titan MPRL Compact (Coyote)";
                 description = "The Titan MPRL Compact is a portable long-range, fire-and-forget, guided missile launcher. It can be loaded with either 127 mm high-explosive anti-tank (HEAT) or antipersonnel (AP) warheads that are capable of striking targets at distances of up to 2,000 metres away. True to its name, the Titan's ability to load and fire AT/AP missiles is what makes it a unique multi-role weapon.";
-                price = 20000;
+                price = 15000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class launch_B_Titan_short_tna_F {
                 displayName = "Titan MPRL Compact (Tropic)";
                 description = "The Titan MPRL Compact is a portable long-range, fire-and-forget, guided missile launcher. It can be loaded with either 127 mm high-explosive anti-tank (HEAT) or antipersonnel (AP) warheads that are capable of striking targets at distances of up to 2,000 metres away. True to its name, the Titan's ability to load and fire AT/AP missiles is what makes it a unique multi-role weapon.";
-                price = 20000;
+                price = 15000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class launch_O_Titan_short_ghex_F {
                 displayName = "Titan MPRL Compact (Green Hex)";
                 description = "The Titan MPRL Compact is a portable long-range, fire-and-forget, guided missile launcher. It can be loaded with either 127 mm high-explosive anti-tank (HEAT) or antipersonnel (AP) warheads that are capable of striking targets at distances of up to 2,000 metres away. True to its name, the Titan's ability to load and fire AT/AP missiles is what makes it a unique multi-role weapon.";
-                price = 20000;
+                price = 15 000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };			
@@ -1246,7 +1253,7 @@
                 stock = 10000;                
             };
 			class 30Rnd_9x21_Mag_SMG_02_Tracer_Red {
-                displayName = "	9 mm 30Rnd Reload Tracer (Red) Mag";
+                displayName = "9 mm 30Rnd Reload Tracer (Red) Mag";
                 description = "Caliber: 9x21 mm Tracers (Red) Rounds: 30 Used in: Sting, Protector.";
                 price = 50;
                 stock = 10000;                
@@ -1509,76 +1516,76 @@
                 price = 100;
                 stock = 10000;                
             };
+			class RPG7_F {
+                displayName = "PG-7VM HEAT Grenade";
+                description = "PG-7VM HEAT 40mm Anti-Tank Grenade";
+                price = 100;
+                stock = 10000;                
+            };		
 			class RPG32_F {
                 displayName = "RPG-32 Rocket";
-                description = "RPG-32 rocket";
+                description = "105 mm PG-42V high-explosive anti-tank (HEAT)";
                 price = 500;
                 stock = 10000;                
             };
 			class RPG32_HE_F {
                 displayName = "RPG-32 HE Rocket";
-                description = "RPG-32 HE Rocket";
-                price = 500;
+                description = "72 mm TBG-42V high-explosive (HE) grenades";
+                price = 200;
                 stock = 10000;                
             };			
-			class RPG7_F {
-                displayName = "PG-7VM HEAT Grenade";
-                description = "PG-7VM HEAT Anti-Tank Grenade";
-                price = 2000;
-                stock = 10000;                
-            };
 			class MRAWS_HEAT_F {
                 displayName = "MAAWS HEAT 75 Round";
-                description = "Standard issue rocket. Uses a high-explosive anti-tank (HEAT) warhead, 75 Round";
-                price = 2000;
+                description = "84 mm standard issue rocket. Uses a high-explosive anti-tank (HEAT) warhead, 75 Round";
+                price = 500;
                 stock = 10000;                
             };
 			class MRAWS_HE_F {
                 displayName = "MAAWS HE 44 Round";
-                description = "high-explosive dual purpose (HEDP) warhead, 44 Round";
-                price = 2000;
+                description = "84 mm high-explosive dual purpose (HEDP) warhead, 44 Round";
+                price = 200;
                 stock = 10000;                
             };
 			class MRAWS_HEAT55_F {
                 displayName = "MAAWS HEAT 55 Round";
-                description = "Standard issue rocket. Uses a high-explosive anti-tank (HEAT) warhead, 55 Round";
-                price = 2000;
+                description = "84 mm standard issue rocket. Uses a high-explosive anti-tank (HEAT) warhead, 55 Round";
+                price = 250;
                 stock = 10000;                
             };			
-			class NLAW_F {
-                displayName = "PCML Missile";
-                description = "150 mm high-explosive anti-tank (HEAT) tandem charge warhead for the PCML Rocket Launcher";
-                price = 5000;
-                stock = 10000;                
-            };
 			class Vorona_HEAT {
                 displayName = "9M135 HEAT Missile";
-                description = "Anti-tank with a powerful tandem HEAT warhead.";
-                price = 7500;
+                description = "130 mm Anti-tank with a powerful tandem HEAT warhead.";
+                price = 700;
                 stock = 10000;                
             };
 			class Vorona_HE {
                 displayName = "9M135 HE Missile";
-                description = " Anti-personnel with a HE-FRAG warhead.";
-                price = 7500;
+                description = "130 mm Anti-personnel with a HE-FRAG warhead.";
+                price = 300;
                 stock = 10000;                
-            };			
+            };
+			class NLAW_F {
+                displayName = "PCML Missile";
+                description = "150 mm high-explosive anti-tank (HEAT) tandem charge warhead for the PCML Rocket Launcher";
+                price = 1500;
+                stock = 10000;                
+            };		
 			class Titan_AA {
                 displayName = "Titan AA Missile";
-                description = "Anti-air missle for the Titan MPRL";
-                price = 10000;
+                description = "127 mm Anti-air missle for the Titan MPRL";
+                price = 2000;
                 stock = 10000;                
             };
 			class Titan_AT {
                 displayName = "Titan AT Missile";
-                description = "Anti-Tank round used in the Titan MPRL Compact";
-                price = 10000;
+                description = "127 mm Anti-Tank round used in the Titan MPRL Compact";
+                price = 2000;
                 stock = 10000;                
             };
 			class Titan_AP {
                 displayName = "Titan AP Missile";
                 description = "Antipersonnel round used in the Titan MPRL Compact";
-                price = 8000;
+                price = 500;
                 stock = 10000;                
             };
 			class HandGrenade {
@@ -1909,13 +1916,6 @@
             displayName = "Static Weapons";
             kindOf = "others";
 
-		     class ACE_SpottingScopeObject {
-                displayName = "Spotting Scope (placed)";
-                description = "Spotting Scope (placed).";
-                price = 200;
-                stock = 100;
-				code = [player,"ACE_SpottingScopeObject"] call grad_fortifications_fnc_addFort;
-			};
 		     class B_HMG_01_F {
                 displayName = "Mk30 HMG .50";
                 description = "Mk30 HMG .50 can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
