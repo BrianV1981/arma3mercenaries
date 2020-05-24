@@ -70,5 +70,5 @@ Using orientation of objects: yes
 	
 	["Land_Cargo_Tower_V1_F",[-20.6719,12.1836,0],218.556,1,0,[0,0],"","",true,false],
 	["Land_Cargo_Patrol_V1_F",[-6.11328,-16.2617,0],39.0698,1,0,[0,0],"","",true,false],
-	["Land_Cargo_Patrol_V1_F",[9.14063,-17.498,0],309.072,1,0,[0,0],"","",true,false], 
+	["Land_Cargo_Patrol_V1_F",[9.14063,-17.498,0],309.072,1,0,[0,0],"","",true,false]
 ]
