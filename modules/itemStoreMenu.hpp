@@ -220,14 +220,14 @@
 			class B_Respawn_TentDome_F {
                 displayName = "Respawn Camp (Dome Tent)";
                 description = "Respawn Camp (Dome Tent)";
-                price = 20;
+                price = 30;
                 stock = 10000;
 				kindOf = wearables;
             };
 			class B_Respawn_Sleeping_bag_blue_F {
                 displayName = "Respawn Camp (Blue Sleeping Bag)";
                 description = "Respawn Camp (Blue Sleeping Bag)";
-                price = 20;
+                price = 30;
                 stock = 10000;
 				kindOf = wearables;
             };
@@ -323,7 +323,7 @@
                 displayName = "ACE Bodybag";
                 description = "In order to deliver a dead civilian to their family member, you must first place it in a Body Bag via an ACE action (Interactions -> Place body in body bag). The Body Bag can then be loaded into the cargo of a vehicle, driven to the destination, unloaded, and then manually dragged to the relative. You can also bury ﻿or exhume any body bags if you ar﻿e carrying an Entrenching Tool.﻿ ﻿﻿﻿Autops﻿ies can be performed if you are carrying a Surgical Kit.";
                 amount = 1;
-                price = 100;
+                price = 50;
                 stock = 1000;
             };
 			class ACE_Canteen {
@@ -337,28 +337,28 @@
                 displayName = "ACE Water Bottle";
                 description = "ACE water bottle";
                 amount = 1;
-                price = 1;
+                price = 5;
                 stock = 1000;
             };
 			class ACE_Can_Spirit {
                 displayName = "ACE Spirit Soda";
                 description = "ACE Spirit soda";
                 amount = 1;
-                price = 1;
+                price = 2;
                 stock = 1000;
             };
 			class ACE_Can_Franta {
                 displayName = "ACE Franta Soda";
                 description = "ACE Franta soda";
                 amount = 1;
-                price = 1;
+                price = 2;
                 stock = 1000;
             };
 			class ACE_Can_RedGull {
                 displayName = "ACE RedGull Energy Drink";
                 description = "ACE RedGull energy drink";
                 amount = 1;
-                price = 1;
+                price = 2;
                 stock = 1000;				
             };
 			class ACE_Banana {
@@ -1113,232 +1113,226 @@
                 price = 25;
                 stock = 10000;
             };
-			class B_AssaultPack_Kerry {
-                displayName = "US Assault Pack (Kerry)";
-                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
-                price = 250;
-                stock = 10000;
-            };			
-			class B_Carryall_ocamo {
-                displayName = "Carryall Backpack (Hex)";
-                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
-                price = 150;
-                stock = 10000;
-            };
-			class B_Carryall_oucamo {
-                displayName = "Carryall Backpack (Urban)";
-                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
-                price = 150;
-                stock = 10000;
-            };
-			class B_Carryall_mcamo {
-                displayName = "Carryall Backpack (MTP)";
-                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
-                price = 150;
-                stock = 10000;
-            };
-			class B_Carryall_khk {
-                displayName = "Carryall Backpack (Khaki)";
-                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
-                price = 250;
-                stock = 10000;
-            };
-			class B_Carryall_cbr {
-                displayName = "Carryall Backpack (Coyote)";
-                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
-                price = 250;
-                stock = 10000;
-            };
-			class B_Carryall_taiga_F {
-                displayName = "Carryall Backpack (Taiga)";
-                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
-                price = 250;
-                stock = 10000;
-            };
-			class B_Carryall_oli {
-                displayName = "Carryall Backpack (Olive)";
-                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
-                price = 250;
-                stock = 10000;
-            };			
-			class B_Carryall_ghex_F {
-                displayName = "Carryall Backpack (Green Hex)";
-                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
-                price = 250;
-                stock = 10000;
-            };
-			class B_Carryall_green_F {
-                displayName = "Carryall Backpack (Green)";
-                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
-                price = 250;
-                stock = 10000;
-            };			
-			class B_Carryall_wdl_F {
-                displayName = "Carryall Backpack (Woodland)";
-                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
-                price = 250;
-                stock = 10000;
-            };
-			class B_Carryall_eaf_F {
-                displayName = "Carryall Backpack (Geometric)";
-                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
-                price = 250;
-                stock = 10000;
-            };
-			class G_Bergen {
-                displayName = "Bergen";
-                description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
-                price = 250;
-                stock = 10000;
-            };			
-			class B_Bergen_mcamo {
-                displayName = "Bergen (MTP)";
-                description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
-                price = 250;
-                stock = 10000;
-            };
-			class B_Bergen_mcamo_F {
-                displayName = "Bergen Backpack (MTP)";
-                description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
-                price = 250;
-                stock = 10000;
-            };			
-			class B_Bergen_dgtl_F {
-                displayName = "Bergen Backpack (Digital)";
-                description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
-                price = 250;
-                stock = 10000;
-            };
-			class B_Bergen_hex_F {
-                displayName = "Bergen Backpack (Hex)";
-                description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
-                price = 250;
-                stock = 10000;
-            };
-			class B_Bergen_tna_F {
-                displayName = "Bergen Backpack (Tropic)";
-                description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
-                price = 250;
-                stock = 10000;
-            };
-			class B_Bergen_blk {
-                displayName = "Bergen (Black)";
-                description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
-                price = 250;
-                stock = 10000;
-            };
-			class B_Bergen_rgr {
-                displayName = "Bergen (Green)";
-                description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
-                price = 250;
-                stock = 10000;
-            };
-			class B_Bergen_sgg {
-                displayName = "Bergen (Sage)";
-                description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
-                price = 250;
-                stock = 10000;
-            };			
-			class B_Kitbag_rgr {
-                displayName = "Kitbag (Green)";
-                description = "A moderately-sized backpack, the Kitbag has a carrying capacity of 280 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
-                price = 100;
-                stock = 10000;
-            };
-			class B_Kitbag_mcamo {
-                displayName = "Kitbag (MTP)";
-                description = "A moderately-sized backpack, the Kitbag has a carrying capacity of 280 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
-                price = 100;
-                stock = 10000;
-            };
-			class B_Kitbag_sgg {
-                displayName = "Kitbag (Sage)";
-                description = "A moderately-sized backpack, the Kitbag has a carrying capacity of 280 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
-                price = 100;
-                stock = 10000;
-            };
-			class B_Kitbag_cbr {
-                displayName = "Kitbag (Coyote)";
-                description = "A moderately-sized backpack, the Kitbag has a carrying capacity of 280 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
-                price = 100;
-                stock = 10000;
-            };
-			class B_Kitbag_tan {
-                displayName = "Kitbag (Tan)";
-                description = "A moderately-sized backpack, the Kitbag has a carrying capacity of 280 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
-                price = 100;
-                stock = 10000;
-            };
 			class G_AssaultPack {
                 displayName = "Assault Pack";
                 description = "A small-sized backpack, the Assault Pack has a carrying capacity of 160 mass While its total capacity is less than that of the Field Pack by 40, it is much lighter and inflicts less of a stamina penalty on the carrier.";
-                price = 70;
+                price = 150;
                 stock = 10000;
             };
 			class B_AssaultPack_blk {
                 displayName = "Assault Pack (Black)";
                 description = "A small-sized backpack, the Assault Pack has a carrying capacity of 160 mass While its total capacity is less than that of the Field Pack by 40, it is much lighter and inflicts less of a stamina penalty on the carrier.";
-                price = 70;
+                price = 150;
                 stock = 10000;
             };
 			class B_AssaultPack_mcamo {
                 displayName = "	Assault Pack (MTP)";
                 description = "A small-sized backpack, the Assault Pack has a carrying capacity of 160 mass While its total capacity is less than that of the Field Pack by 40, it is much lighter and inflicts less of a stamina penalty on the carrier.";
-                price = 70;
+                price = 150;
                 stock = 10000;
             };
 			class B_AssaultPack_khk {
                 displayName = "Assault Pack (Khaki)";
                 description = "A small-sized backpack, the Assault Pack has a carrying capacity of 160 mass While its total capacity is less than that of the Field Pack by 40, it is much lighter and inflicts less of a stamina penalty on the carrier.";
-                price = 70;
+                price = 150;
                 stock = 10000;
             };
 			class B_AssaultPack_rgr {
                 displayName = "Assault Pack (Green)";
                 description = "A small-sized backpack, the Assault Pack has a carrying capacity of 160 mass While its total capacity is less than that of the Field Pack by 40, it is much lighter and inflicts less of a stamina penalty on the carrier.";
-                price = 70;
+                price = 150;
                 stock = 10000;
             };
 			class B_AssaultPack_dgtl {
                 displayName = "Assault Pack (Digital)";
                 description = "A small-sized backpack, the Assault Pack has a carrying capacity of 160 mass While its total capacity is less than that of the Field Pack by 40, it is much lighter and inflicts less of a stamina penalty on the carrier.";
-                price = 70;
+                price = 150;
                 stock = 10000;
             };
 			class B_AssaultPack_ocamo {
                 displayName = "Assault Pack (Hex)";
                 description = "A small-sized backpack, the Assault Pack has a carrying capacity of 160 mass While its total capacity is less than that of the Field Pack by 40, it is much lighter and inflicts less of a stamina penalty on the carrier.";
-                price = 70;
+                price = 150;
                 stock = 10000;
             };
 			class B_AssaultPack_sgg {
                 displayName = "Assault Pack (Sage)";
                 description = "A small-sized backpack, the Assault Pack has a carrying capacity of 160 mass While its total capacity is less than that of the Field Pack by 40, it is much lighter and inflicts less of a stamina penalty on the carrier.";
-                price = 70;
+                price = 150;
                 stock = 10000;
             };
 			class B_AssaultPack_tna_F {
                 displayName = "Assault Pack (Tropic)";
                 description = "A small-sized backpack, the Assault Pack has a carrying capacity of 160 mass While its total capacity is less than that of the Field Pack by 40, it is much lighter and inflicts less of a stamina penalty on the carrier.";
-                price = 70;
+                price = 150;
                 stock = 10000;
             };
 			class 	B_AssaultPack_wdl_F {
                 displayName = "Assault Pack (Woodland)";
                 description = "A small-sized backpack, the Assault Pack has a carrying capacity of 160 mass While its total capacity is less than that of the Field Pack by 40, it is much lighter and inflicts less of a stamina penalty on the carrier.";
-                price = 70;
+                price = 150;
                 stock = 10000;
             };			
-			class B_Assault_Diver {
-                displayName = "Assault Pack (Black)";
-                description = "A small-sized backpack (diver), the Assault Pack has a carrying capacity of 160 mass While its total capacity is less than that of the Field Pack by 40, it is much lighter and inflicts less of a stamina penalty on the carrier.";
-                price = 100;
+			class B_Kitbag_rgr {
+                displayName = "Kitbag (Green)";
+                description = "A moderately-sized backpack, the Kitbag has a carrying capacity of 280 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
+                price = 200;
+                stock = 10000;
+            };
+			class B_Kitbag_mcamo {
+                displayName = "Kitbag (MTP)";
+                description = "A moderately-sized backpack, the Kitbag has a carrying capacity of 280 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
+                price = 200;
+                stock = 10000;
+            };
+			class B_Kitbag_sgg {
+                displayName = "Kitbag (Sage)";
+                description = "A moderately-sized backpack, the Kitbag has a carrying capacity of 280 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
+                price = 200;
+                stock = 10000;
+            };
+			class B_Kitbag_cbr {
+                displayName = "Kitbag (Coyote)";
+                description = "A moderately-sized backpack, the Kitbag has a carrying capacity of 280 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
+                price = 200;
+                stock = 10000;
+            };
+			class B_Kitbag_tan {
+                displayName = "Kitbag (Tan)";
+                description = "A moderately-sized backpack, the Kitbag has a carrying capacity of 280 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
+                price = 200;
+                stock = 10000;
+            };
+			class B_ViperHarness_blk_F {
+                displayName = "Viper Harness (Black)";
+                description = "A moderately-sized backpack, the Viper Harness has a carrying capacity of 300 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
+                price = 250;
+                stock = 10000;
+            };
+			class B_ViperHarness_ghex_F {
+                displayName = "Viper Harness (Green Hex)";
+                description = "A moderately-sized backpack, the Viper Harness has a carrying capacity of 300 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
+                price = 250;
+                stock = 10000;
+            };
+			class B_ViperHarness_hex_F {
+                displayName = "Viper Harness (Hex)";
+                description = "A moderately-sized backpack, the Viper Harness has a carrying capacity of 300 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
+                price = 250;
+                stock = 10000;
+            };
+			class B_ViperHarness_khk_F {
+                displayName = "Viper Harness (Khaki)";
+                description = "A moderately-sized backpack, the Viper Harness has a carrying capacity of 300 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
+                price = 250;
+                stock = 10000;
+            };
+			class B_ViperHarness_oli_F {
+                displayName = "Viper Harness (Olive)";
+                description = "A moderately-sized backpack, the Viper Harness has a carrying capacity of 300 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
+                price = 250;
+                stock = 10000;
+            };		
+			class B_AssaultPack_Kerry {
+                displayName = "US Assault Pack (Kerry)";
+                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
+                price = 300;
                 stock = 10000;
             };			
+			class B_Carryall_ocamo {
+                displayName = "Carryall Backpack (Hex)";
+                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
+                price = 300;
+                stock = 10000;
+            };
+			class B_Carryall_oucamo {
+                displayName = "Carryall Backpack (Urban)";
+                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
+                price = 300;
+                stock = 10000;
+            };
+			class B_Carryall_mcamo {
+                displayName = "Carryall Backpack (MTP)";
+                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
+                price = 300;
+                stock = 10000;
+            };
+			class B_Carryall_khk {
+                displayName = "Carryall Backpack (Khaki)";
+                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
+                price = 300;
+                stock = 10000;
+            };
+			class B_Carryall_cbr {
+                displayName = "Carryall Backpack (Coyote)";
+                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
+                price = 300;
+                stock = 10000;
+            };
+			class B_Carryall_taiga_F {
+                displayName = "Carryall Backpack (Taiga)";
+                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
+                price = 300;
+                stock = 10000;
+            };
+			class B_Carryall_oli {
+                displayName = "Carryall Backpack (Olive)";
+                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
+                price = 300;
+                stock = 10000;
+            };			
+			class B_Carryall_ghex_F {
+                displayName = "Carryall Backpack (Green Hex)";
+                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
+                price = 300;
+                stock = 10000;
+            };
+			class B_Carryall_green_F {
+                displayName = "Carryall Backpack (Green)";
+                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
+                price = 300;
+                stock = 10000;
+            };			
+			class B_Carryall_wdl_F {
+                displayName = "Carryall Backpack (Woodland)";
+                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
+                price = 300;
+                stock = 10000;
+            };
+			class B_Carryall_eaf_F {
+                displayName = "Carryall Backpack (Geometric)";
+                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
+                price = 300;
+                stock = 10000;
+            }; 
+			class B_Bergen_hex_F {
+                displayName = "Bergen Backpack (Hex)";
+                description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
+                price = 350;
+                stock = 10000;
+            };
+			class B_Bergen_tna_F {
+                displayName = "Bergen Backpack (Tropic)";
+                description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
+                price = 350;
+                stock = 10000;
+            };
+			class B_Bergen_dgtl_F {
+                displayName = "Bergen Backpack (Digital)";
+                description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
+                price = 350;
+                stock = 10000;
+            };
+			class B_Bergen_mcamo_F {
+                displayName = "Bergen Backpack (MTP)";
+                description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
+                price = 350;
+                stock = 10000;
+            };						
 			class B_Parachute {
                 displayName = "Steerable Parachute";
                 description = "Steerable Parachute.";
-                price = 100;
+                price = 120;
                 stock = 10000;
             };			
         };
