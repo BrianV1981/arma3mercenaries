@@ -105,6 +105,12 @@
                 price = 200000;
                 stock = 50;
             };
+			class B_Truck_01_box_F {
+                displayName = "HEMTT Box";
+                description = "This HEMTT is equipped with a box container. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                price = 200000;
+                stock = 50;
+            };
 			class B_Truck_01_transport_F {
                 displayName = "HEMTT Transport";
                 description = "This HEMTT is a transport vehicle. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
