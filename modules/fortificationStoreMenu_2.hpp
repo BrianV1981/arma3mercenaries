@@ -435,16 +435,9 @@
                 stock = 200;
 				code = [container_2,"Land_CanisterFuel_F"] call grad_fortifications_fnc_addFort;
             };	
-			class Land_MetalBarrel_F {
-                displayName = "Fuel Barrel (Test)";
-                description = "Fuel barrel (test) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50;
-                stock = 200;
-				code = [container_2,"Land_MetalBarrel_F"] call grad_fortifications_fnc_addFort;
-            };
 			class FlexibleTank_01_sand_F {
-                displayName = "Flexible Fuel Tank (Test)";
-                description = "Flexible Fuel Tank (Test) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                displayName = "Flexible Fuel Tank (300 Liters)";
+                description = "Flexible Fuel Tank (300 liters) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 50;
                 stock = 200;
 				code = [container_2,"FlexibleTank_01_sand_F"] call grad_fortifications_fnc_addFort;
