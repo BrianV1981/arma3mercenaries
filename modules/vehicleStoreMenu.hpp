@@ -210,73 +210,73 @@
                 stock = 20;
             };
 			class B_APC_Wheeled_01_cannon_F {
-                displayName = "AMV-7 Marshall";
+                displayName = "AMV-7 Marshall (Sand)";
                 description = "The Marshall is an 8x8 infantry fighting vehicle designed as a medium-lift personnel carrier for expeditionary warfare. It can operate across a variety of environments ranging from land to sea, and can even be para-dropped from the air.";
                 price = 420000;
                 stock = 20;
             };
 			class B_T_APC_Wheeled_01_cannon_F {
-                displayName = "AMV-7 Marshall";
+                displayName = "AMV-7 Marshall (Military Green)";
                 description = "The Marshall is an 8x8 infantry fighting vehicle designed as a medium-lift personnel carrier for expeditionary warfare. It can operate across a variety of environments ranging from land to sea, and can even be para-dropped from the air.";
                 price = 420000;
                 stock = 20;
             };
-			class B_T_AFV_Wheeled_01_cannon_F {
-                displayName = "Rhino MGS";
+			class B_AFV_Wheeled_01_cannon_F {
+                displayName = "Rhino MGS (Sand)";
                 description = "The Rhino MGS is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel.";
                 price = 450000;
                 stock = 20;
             };
-			class B_AFV_Wheeled_01_cannon_F {
-                displayName = "Rhino MGS";
+			class B_T_AFV_Wheeled_01_cannon_F {
+                displayName = "Rhino MGS (Military Green)";
                 description = "The Rhino MGS is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel.";
                 price = 450000;
                 stock = 20;
             };		
 			class B_AFV_Wheeled_01_up_cannon_F {
-                displayName = "Rhino MGS UP";
+                displayName = "Rhino MGS UP (Sand)";
                 description = "The Rhino MGS is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. The 'UP' version is equipped with a remotely operated 12.7mm HMG and improved protection, provided by a cage and reactive armor. However, with this setup, it's too bulky to fit into many transport vehicles, including the Blackfish VTOL.";
                 price = 465000;
                 stock = 20;
             };
 			class B_T_AFV_Wheeled_01_up_cannon_F {
-                displayName = "Rhino MGS UP";
+                displayName = "Rhino MGS UP (Military Green)";
                 description = "The Rhino MGS is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. The 'UP' version is equipped with a remotely operated 12.7mm HMG and improved protection, provided by a cage and reactive armor. However, with this setup, it's too bulky to fit into many transport vehicles, including the Blackfish VTOL.";
                 price = 465000;
                 stock = 20;
             };							
 			class B_APC_Tracked_01_rcws_F {
-                displayName = "IFV-6c Panther";
+                displayName = "IFV-6c Panther (Sand)";
                 description = "The Panther is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat.";
                 price = 440000;
                 stock = 20;
             };
 			class B_T_APC_Tracked_01_rcws_F {
-                displayName = "IFV-6c Panther";
+                displayName = "IFV-6c Panther (Military Green)";
                 description = "The Panther is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat.";
                 price = 440000;
                 stock = 20;
             };						
 			class B_APC_Tracked_01_CRV_F {
-                displayName = "CRV-6e Bobcat";
+                displayName = "CRV-6e Bobcat (Sand)";
                 description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
                 price = 475000;
                 stock = 20;
             };
 			class B_T_APC_Tracked_01_CRV_F {
-                displayName = "CRV-6e Bobcat";
+                displayName = "CRV-6e Bobcat (Military Green)";
                 description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
                 price = 475000;
                 stock = 20;
             };
 			class B_APC_Tracked_01_AA_F {
-                displayName = "FV-6a Cheetah";
+                displayName = "FV-6a Cheetah (Sand)";
                 description = "Primarily used to defend against aerial threats, the Cheetah is fitted with a turret armed with dual 35 mm cannons and four surface-to-air missiles that can be fired in a rapid succession once an aerial target is locked onto.";
                 price = 500000;
                 stock = 20;
             };
 			class B_T_APC_Tracked_01_AA_F {
-                displayName = "FV-6a Cheetah";
+                displayName = "FV-6a Cheetah (Military Green)";
                 description = "Primarily used to defend against aerial threats, the Cheetah is fitted with a turret armed with dual 35 mm cannons and four surface-to-air missiles that can be fired in a rapid succession once an aerial target is locked onto.";
                 price = 500000;
                 stock = 20;
@@ -320,13 +320,13 @@
                 stock = 20;
             };			
 			class B_MBT_01_cannon_F {
-                displayName = "Merkava MK IV M";
+                displayName = "Merkava MK IV M (Sand)";
                 description = "The Merkava MK IV M is a main battle tank that uses a drive train consisting of six road wheels, one rear idler wheel, one front drive sprocket and three return rollers per side.The turret is triangular and narrow in shape, large but low, and is mounted rearwards onto the chassis, a layout commonly found on SPGs.";
                 price = 600000;
                 stock = 20;
             };
 			class B_T_MBT_01_cannon_F {
-                displayName = "Merkava MK IV M";
+                displayName = "Merkava MK IV M (Military Green)";
                 description = "The Merkava MK IV M is a main battle tank that uses a drive train consisting of six road wheels, one rear idler wheel, one front drive sprocket and three return rollers per side.The turret is triangular and narrow in shape, large but low, and is mounted rearwards onto the chassis, a layout commonly found on SPGs.";
                 price = 600000;
                 stock = 20;
@@ -342,19 +342,19 @@
                 description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers.";
                 price = 625000;
                 stock = 20;
-            };			
+            };	
+		class B_MBT_01_TUSK_F {
+                displayName = "M2A4 Slammer UP (Sand)";
+                description = "The M2A4 Slammer UP is the urban purpose variant of the M2A1 Slammer. Compared to the basic version, it features heavier armor with reinforced rear of the tank and a remote-controlled turret fitted with 12.7 mm heavy machine gun.";
+                price = 650000;
+                stock = 20;
+            };	
 			class B_T_MBT_01_TUSK_F {
-                displayName = "M2A4 Slammer UP";
+                displayName = "M2A4 Slammer UP (Military Green)";
                 description = "The M2A4 Slammer UP is the urban purpose variant of the M2A1 Slammer. Compared to the basic version, it features heavier armor with reinforced rear of the tank and a remote-controlled turret fitted with 12.7 mm heavy machine gun.";
                 price = 650000;
                 stock = 20;
-            };
-			class B_MBT_01_TUSK_F {
-                displayName = "M2A4 Slammer UP";
-                description = "The M2A4 Slammer UP is the urban purpose variant of the M2A1 Slammer. Compared to the basic version, it features heavier armor with reinforced rear of the tank and a remote-controlled turret fitted with 12.7 mm heavy machine gun.";
-                price = 650000;
-                stock = 20;
-            };			
+            };		
 			class O_MBT_04_command_F {
                 displayName = "T-140K Angara";
                 description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers. Two main variants are currently in use - the standard T-140 and the T-140K, a 'commander' variant which exchanges the HMG for a 30mm autocannon. In addition, it also provides additional radios and sensors for platoon and company leaders.";
@@ -368,25 +368,25 @@
                 stock = 20;
             };			
 			class B_MBT_01_mlrs_F {
-                displayName = "M5 Sandstorm MLRS";
+                displayName = "M5 Sandstorm MLRS (Sand)";
                 description = "Sharing the same chassis as its MBT parent, the Sandstorm is essentially a mobile rocket battery on treads. It can accurately deliver high-explosive rockets with a dispersion of less than 100 m on targets more than 11 km away in a single salvo.";
                 price = 700000;
                 stock = 20;
             };
 			class B_T_MBT_01_mlrs_F {
-                displayName = "M5 Sandstorm MLRS";
+                displayName = "M5 Sandstorm MLRS (Military Green)";
                 description = "Sharing the same chassis as its MBT parent, the Sandstorm is essentially a mobile rocket battery on treads. It can accurately deliver high-explosive rockets with a dispersion of less than 100 m on targets more than 11 km away in a single salvo.";
                 price = 700000;
                 stock = 20;
             };			
 			class B_MBT_01_arty_F {
-                displayName = "M4 Scorcher";
+                displayName = "M4 Scorcher (Sand)";
                 description = "Fitted with a 155 mm howitzer cannon as its primary weapon, the Scorcher is a powerful gun-based fire support vehicle that can launch a mixture of high-explosive, smoke, cluster, and even precision guided shells on targets at extreme distances.";
                 price = 700000;
                 stock = 20;
             };
 			class B_T_MBT_01_arty_F {
-                displayName = "M4 Scorcher";
+                displayName = "M4 Scorcher (Military Green)";
                 description = "Fitted with a 155 mm howitzer cannon as its primary weapon, the Scorcher is a powerful gun-based fire support vehicle that can launch a mixture of high-explosive, smoke, cluster, and even precision guided shells on targets at extreme distances.";
                 price = 700000;
                 stock = 20;
@@ -405,13 +405,13 @@
                 stock = 20;
             };
             class B_T_VTOL_01_infantry_blue_F {
-                displayName = "V-44 X Blackfish (Infantry Transport)";
+                displayName = "V-44 X Blackfish (Infantry Transport) (Blue)";
                 description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
                 price = 400000;
                 stock = 20;
             };
             class B_T_VTOL_01_infantry_olive_F {
-                displayName = "V-44 X Blackfish (Infantry Transport)";
+                displayName = "V-44 X Blackfish (Infantry Transport) (Olive)";
                 description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
                 price = 400000;
                 stock = 20;
@@ -423,13 +423,13 @@
                 stock = 20;
             };
             class B_T_VTOL_01_armed_blue_F {
-                displayName = "V-44 X Blackfish (Armed)";
+                displayName = "V-44 X Blackfish (Armed) (Blue)";
                 description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place, Armed variant of the Blackfish. Has two gunners who remotely operate its weapon systems through control panels in front of their seats.. (Slingload: No) (Slingloadable: No)";
                 price = 420000;
                 stock = 20;
             };
             class B_T_VTOL_01_armed_olive_F {
-                displayName = "V-44 X Blackfish (Armed)";
+                displayName = "V-44 X Blackfish (Armed) (Olive)";
                 description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place, Armed variant of the Blackfish. Has two gunners who remotely operate its weapon systems through control panels in front of their seats.. (Slingload: No) (Slingloadable: No)";
                 price = 420000;
                 stock = 20;
@@ -668,4 +668,4 @@
 				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
             };
         };
-	};
+};
