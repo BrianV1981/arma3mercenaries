@@ -168,6 +168,13 @@
                 price = 50;
                 stock = 10000;                
             };
+		class ACE_Sandbag_empty {
+                displayName = "ACE Sandbag (empty)";
+                description = "The ACE Sandbag (empty) can be utilize with the ACE self interaction menu.";
+                price = 10;
+                stock = 10000;
+				kindOf = Items;
+            };
 			class ACE_EntrenchingTool {
                 displayName = "ACE Entrenching Tool";
                 description = "The ACE entrenching tool can be utilize to dig trenches with the ACE self interaction menu.";
@@ -193,27 +200,27 @@
                 stock = 10000;
 				kindOf = wearables;
             };
-			class Chemlight_blue {
-                displayName = "Chemlight (Blue)";
-                description = "Chemlight (Blue)";
+			class ACE_Chemlight_HiOrange {
+                displayName = "ACE Chemlight (Hi Orange)";
+                description = "ACE Chemlight (Hi Orange)";
                 price = 1;
                 stock = 10000;
             };
-			class Chemlight_green {
-                displayName = "Chemlight (Green)";
-                description = "Chemlight (Green)";
+			class ACE_Chemlight_HiWhite {
+                displayName = "ACE Chemlight (Hi White)";
+                description = "ACE Chemlight (Hi White)";
                 price = 1;
                 stock = 10000;
             };
-			class Chemlight_red {
-                displayName = "Chemlight (Red)";
-                description = "Chemlight (Red)";
+			class ACE_Chemlight_HiRed {
+                displayName = "ACE Chemlight (Hi Red)";
+                description = "ACE Chemlight (Hi Red)";
                 price = 1;
                 stock = 10000;
             };
-			class Chemlight_yellow {
-                displayName = "Chemlight (Yellow)";
-                description = "Chemlight (Yellow)";
+			class ACE_Chemlight_HiYellow {
+                displayName = "ACE Chemlight (Hi Yellow)";
+                description = "ACE Chemlight (Hi Yellow)";
                 price = 1;
                 stock = 10000;
             };
