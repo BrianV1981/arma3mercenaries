@@ -553,9 +553,15 @@
                 description = "The Ghost Hawk is a five-bladed, twin engine, rotary-wing stealth helicopter designed for slingloading cargo and to transport troops into battle. (Slingload: Yes, up to 4000 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
-            };			
+            };
+			class I_Heli_Transport_02_F {
+                displayName = "CH-49 Mohawk";
+                description = "The CH-49 Mohawk is a conventionally designed, four-bladed, rotary-wing helicopter that is powered by three engines. (Slingload: Yes, up to 5000 kg) (Slingloadable: No)";
+                price = 350000;
+                stock = 50;
+            };	
             class B_Heli_Transport_03_unarmed_green_F {
-                displayName = "CH47I Chinook Unarmed (Green)";
+                displayName = "CH47I Chinook (Unarmed) (Green)";
                 description = "The CH47I Chinook is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
