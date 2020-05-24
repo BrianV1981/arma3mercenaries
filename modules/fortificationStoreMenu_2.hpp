@@ -367,48 +367,6 @@
                 price = 200;
                 stock = 200;
 				code = [container_2,"CamoNet_BLUFOR_big_F"] call grad_fortifications_fnc_addFort;
-            };		
-			class Land_BarrelWater_F {
-                displayName = "Plastic Barrel (Water)";
-                description = "Plastic Barrel (Water) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50;
-                stock = 200;
-				code = [container_2,"Land_BarrelWater_F"] call grad_fortifications_fnc_addFort;
-            };			
-			class Land_StallWater_F {
-                displayName = "Stall (Water)";
-                description = "Stall (Water) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100;
-                stock = 200;
-				code = [container_2,"Land_StallWater_F"] call grad_fortifications_fnc_addFort;
-            };
-			class StorageBladder_02_water_forest_F {
-                displayName = "Water Bladder (Forest)";
-                description = "Water Bladder (Forest) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
-                stock = 200;
-				code = [container_2,"StorageBladder_02_water_forest_F"] call grad_fortifications_fnc_addFort;
-            };		
-			class WaterPump_01_forest_F {
-                displayName = "Water Pump (Forest)";
-                description = "Water Pump (Forest) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100000;
-                stock = 200;
-				code = [container_2,"WaterPump_01_forest_F"] call grad_fortifications_fnc_addFort;
-            };
-			class Land_WaterTank_04_F {
-                displayName = "Water Tank (Small, On Stand)";
-                description = "Water Tank (Small, On Stand) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50;
-                stock = 200;
-				code = [container_2,"Land_WaterTank_04_F"] call grad_fortifications_fnc_addFort;
-            };			
-			class Land_PaperBox_01_small_closed_brown_food_F {
-                displayName = "Cardboard Box (Food) [IDAP]";
-                description = "Cardboard Box (Food) [IDAP] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
-                stock = 200;
-				code = [container_2,"Land_PaperBox_01_small_closed_brown_food_F"] call grad_fortifications_fnc_addFort;
             };
 			class Land_HelipadCircle_F {
                 displayName = "Helipad (Circle)";
@@ -456,8 +414,7 @@
 	    		class Cfortifications {
             displayName = "Cargo";
             kindOf = "other";
-
-	
+				
 			class Land_BarrelWater_F {
                 displayName = "Plastic Barrel (160 Liters)";
                 description = "Plastic Barrel (160 liters) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
