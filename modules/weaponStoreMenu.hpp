@@ -9,8 +9,8 @@
 
 			class ACE_Flashlight_Maglite_ML300L {
                 displayName = "ACE Maglite ML300L";
-                description = "Flash light.";
-                price = 10;
+                description = "Flash light that requires 2 hands and utilizes the handgun inventory slot.";
+                price = 0;
                 stock = 1000;                  
             };			
 			class hgun_Pistol_Signal_F {
