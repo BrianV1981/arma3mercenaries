@@ -612,7 +612,7 @@
 				code = [container_1,"B_Slingload_01_Repair_F"] call grad_fortifications_fnc_addFort;
             };
 	};
-	    		class Sweapons {
+	    	class Sweapons_1 {
             displayName = "Static Weapons";
             kindOf = "other";
 
@@ -652,7 +652,7 @@
 				code = [container_1,"B_Mortar_01_F"] call grad_fortifications_fnc_addFort;
             };
         };	
-		class Mammo {
+		class Mammo_1 {
             displayName = "Static Weapon Ammunition";
             kindOf = "Items";
 
