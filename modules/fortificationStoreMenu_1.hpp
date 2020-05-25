@@ -173,13 +173,6 @@
                 stock = 100;
 				code = [container_1,"Land_Concrete_SmallWall_8m_F"] call grad_fortifications_fnc_addFort;
             };
-			class Land_Crash_barrier_F {
-                displayName = "Safety Barrier";
-                description = "Safety Barrier can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50;
-                stock = 100;
-				code = [container_1,"Land_Crash_barrier_F"] call grad_fortifications_fnc_addFort;
-            };
 			class Land_Mil_WallBig_4m_F {
                 displayName = "Military Base Wall";
                 description = "Military Base Wall can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -215,20 +208,27 @@
                 stock = 100;
 				code = [container_1,"Land_RoadBarrier_01_F"] call grad_fortifications_fnc_addFort;
             };
-			class Land_PlasticBarrier_01_line_x6_F {
-                displayName = "Plastic Barrier (Small, 6)";
-                description = "Plastic Barrier (Small, 6) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 20;
-                stock = 200;
-				code = [container_1,"Land_PlasticBarrier_01_line_x6_F"] call grad_fortifications_fnc_addFort;
-            };	
 			class RoadBarrier_small_F {
                 displayName = "Road Barrier (Small)";
                 description = "Road Barrier (Small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 100;
                 stock = 100;
 				code = [container_1,"RoadBarrier_small_F"] call grad_fortifications_fnc_addFort;
-            };			
+            };
+			class Land_PlasticBarrier_01_line_x6_F {
+                displayName = "Plastic Barrier (Small, 6)";
+                description = "Plastic Barrier (Small, 6) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 20;
+                stock = 200;
+				code = [container_1,"Land_PlasticBarrier_01_line_x6_F"] call grad_fortifications_fnc_addFort;
+            };
+			class Land_Crash_barrier_F {
+                displayName = "Safety Barrier";
+                description = "Safety Barrier can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50;
+                stock = 100;
+				code = [container_1,"Land_Crash_barrier_F"] call grad_fortifications_fnc_addFort;
+            };
 			class Land_DragonsTeeth_01_4x2_new_F {
                 displayName = "Dragon's Teeth (Row, new)";
                 description = "Dragon's Teeth (Row, new) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -301,7 +301,7 @@
             };
         };
 		class Dfortifications_1 {
-            displayName = "Lights, Tents, Decorations";
+            displayName = "Lights, Tents, Other";
             kindOf = "other";
 
 			class Land_Camping_Light_F {
@@ -452,35 +452,35 @@
 			class Box_NATO_WpsSpecial_F {
                 displayName = "Special Weapons [NATO]";
                 description = "Special weapons [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25000;
+                price = 30000;
                 stock = 200;
 				code = [container_1,"Box_NATO_WpsSpecial_F"] call grad_fortifications_fnc_addFort;
             };
 			class Box_NATO_Ammo_F {
                 displayName = "Basic Ammo [NATO]";
                 description = "Basic ammo [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25000;
+                price = 16000;
                 stock = 200;
 				code = [container_1,"Box_NATO_Ammo_F"] call grad_fortifications_fnc_addFort;
             };
 			class Box_NATO_Grenades_F {
                 displayName = "Grenades [NATO]";
                 description = "Grenades [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25000;
+                price = 6500;
                 stock = 200;
 				code = [container_1,"Box_NATO_Grenades_F"] call grad_fortifications_fnc_addFort;
             };
 			class Box_NATO_WpsLaunch_F {
                 displayName = "Launchers [NATO]";
                 description = "Launchers [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25000;
+                price = 60000;
                 stock = 200;
 				code = [container_1,"Box_NATO_WpsLaunch_F"] call grad_fortifications_fnc_addFort;
             };
 			class Box_NATO_Support_F {
                 displayName = "Support [NATO]";
                 description = "Support [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25000;
+                price = 20000;
                 stock = 200;
 				code = [container_1,"Box_NATO_Support_F"] call grad_fortifications_fnc_addFort;
             };
@@ -494,60 +494,59 @@
 			class B_supplyCrate_F {
                 displayName = "Supply Box [NATO]";
                 description = "Supply box [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 75000;
+                price = 20000;
                 stock = 200;
 				code = [container_1,"B_supplyCrate_F"] call grad_fortifications_fnc_addFort;
-            };
-			class Box_Ammo_F {
-                displayName = "Ammo Cache [NATO]";
-                description = "Ammo Cache [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 75000;
-                stock = 200;
-				code = [container_1,"Box_Ammo_F"] call grad_fortifications_fnc_addFort;
-            };
-			class Box_Wps_F {
-                displayName = "Weapons Cache [NATO] (Empty)";
-                description = "Weapons cache [NATO] (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 75000;
-                stock = 200;
-				code = [container_1,"Box_Wps_F"] call grad_fortifications_fnc_addFort;
             };
 			class B_CargoNet_01_ammo_F {
                 displayName = "Cargo Net [NATO]";
                 description = "Cargo Net [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
+                price = 149000;
                 stock = 200;
 				code = [container_1,"B_CargoNet_01_ammo_F"] call grad_fortifications_fnc_addFort;
             };
 			class Box_NATO_Equip_F {
                 displayName = "Equipment Box [NATO]";
                 description = "Equipment Box [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25000;
+                price = 17000;
                 stock = 200;
 				code = [container_1,"Box_NATO_Equip_F"] call grad_fortifications_fnc_addFort;
             };
 			class Box_NATO_Uniforms_F {
                 displayName = "Uniforms Box [NATO]";
                 description = "Uniforms Box [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25000;
+                price = 21000;
                 stock = 200;
 				code = [container_1,"Box_NATO_Uniforms_F"] call grad_fortifications_fnc_addFort;
             };
 			class Box_IED_Exp_F {
                 displayName = "Explosives (IED)";
-                description = "	Explosives (IED) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25000;
+                description = "Explosives (IED) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 5000;
                 stock = 200;
 				code = [container_1,"Box_IED_Exp_F"] call grad_fortifications_fnc_addFort;
             };
 			class Land_PaperBox_01_small_closed_brown_food_F {
                 displayName = "[IDAP] Cardboard Box (Empty)";
                 description = "[IDAP] Cardboard Box (Empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
+                price = 10;
                 stock = 200;
 				code = [container_1,"Land_PaperBox_01_small_closed_brown_food_F"] call grad_fortifications_fnc_addFort;
             };
-
+			class Box_Ammo_F {
+                displayName = "Ammo Cache [NATO] (Empty)";
+                description = "Ammo Cache [NATO] (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 100;
+                stock = 200;
+				code = [container_1,"Box_Ammo_F"] call grad_fortifications_fnc_addFort;
+            };
+			class Box_Wps_F {
+                displayName = "Weapons Cache [NATO] (Empty)";
+                description = "Weapons cache [NATO] (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 100;
+                stock = 200;
+				code = [container_1,"Box_Wps_F"] call grad_fortifications_fnc_addFort;
+            };
 			class Land_FoodSacks_01_cargo_white_idap_F {
                 displayName = "[IDAP] Cargo Net (Empty Sacks)";
                 description = "[IDAP] Cargo Net (empty sacks) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -556,60 +555,53 @@
 				code = [container_1,"Land_PaperBox_01_small_closed_brown_food_F"] call grad_fortifications_fnc_addFort;
             };
 			class CargoNet_01_box_F {
-                displayName = "Cargo Net Box (Empty )";
-                description = "Cargo net box (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100;
+                displayName = "Cargo Net Box Pallet (Empty )";
+                description = "Cargo net box pallet (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 200;
                 stock = 200;
 				code = [container_1,"CargoNet_01_box_F"] call grad_fortifications_fnc_addFort;
             };
 			class CargoNet_01_barrels_F {
                 displayName = "Cargo Net Barrel Pallet (Empty)";
                 description = "Cargo Net Barrel Pallet (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50;
+                price = 200;
                 stock = 200;
 				code = [container_1,"CargoNet_01_barrels_F"] call grad_fortifications_fnc_addFort;
-            };
-			class Fridge_01_closed_F {
-                displayName = "Refrigerator (Test)";
-                description = "The refrigerator (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100;
-                stock = 200;
-				code = [container_1,"Fridge_01_closed_F"] call grad_fortifications_fnc_addFort;
             };
 			class B_Slingload_01_Cargo_F {
                 displayName = "Huron Cargo Container";
                 description = "Huron Cargo Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
+                price = 5000;
                 stock = 200;
 				code = [container_1,"B_Slingload_01_Cargo_F"] call grad_fortifications_fnc_addFort;
             };
 			class B_Slingload_01_Ammo_F {
                 displayName = "Huron Ammo Container";
                 description = "Huron Ammo Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
+                price = 50000;
                 stock = 200;
 				code = [container_1,"B_Slingload_01_Ammo_F"] call grad_fortifications_fnc_addFort;
             };
 			class B_Slingload_01_Fuel_F {
                 displayName = "Huron Fuel Container";
                 description = "Huron Fuel Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
+                price = 50000;
                 stock = 200;
 				code = [container_1,"B_Slingload_01_Ammo_F"] call grad_fortifications_fnc_addFort;
-            };
-			class B_Slingload_01_Medevac_F {
-                displayName = "Huron Medical Container";
-                description = "Huron Medical Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
-                stock = 200;
-				code = [container_1,"B_Slingload_01_Medevac_F"] call grad_fortifications_fnc_addFort;
             };
 			class B_Slingload_01_Repair_F {
                 displayName = "Huron Repair Container";
                 description = "	Huron Repair Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
+                price = 50000;
                 stock = 200;
 				code = [container_1,"B_Slingload_01_Repair_F"] call grad_fortifications_fnc_addFort;
+            };
+			class B_Slingload_01_Medevac_F {
+                displayName = "Huron Medical Container";
+                description = "Huron Medical Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 5000;
+                stock = 200;
+				code = [container_1,"B_Slingload_01_Medevac_F"] call grad_fortifications_fnc_addFort;
             };
 	};
 	    	class Sweapons_1 {
