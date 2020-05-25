@@ -324,13 +324,6 @@
                 price = 75;
                 stock = 200;
 				code = [container_1,"Land_PortableLight_double_F"] call grad_fortifications_fnc_addFort;
-            };
-			class MetalBarrel_burning_F {
-                displayName = "Metal Barrel (burning)";
-                description = "Metal Barrel (burning) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100;
-                stock = 200;
-				code = [container_1,"MetalBarrel_burning_F"] call grad_fortifications_fnc_addFort;
             };	
 		    class CamoNet_BLUFOR_F {
                 displayName = "Camouflage Net (Green)";
@@ -422,8 +415,8 @@
 				code = [container_1,"StorageBladder_02_water_forest_F"] call grad_fortifications_fnc_addFort;
             };		
 			class WaterPump_01_forest_F {
-                displayName = "Water Pump (Infinite)";
-                description = "Water Pump (infinite) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                displayName = "Water Pump (Unlimited)";
+                description = "Water Pump (unlimited) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 100000;
                 stock = 200;
 				code = [container_1,"WaterPump_01_forest_F"] call grad_fortifications_fnc_addFort;
@@ -513,8 +506,8 @@
 				code = [container_1,"Box_Ammo_F"] call grad_fortifications_fnc_addFort;
             };
 			class Box_Wps_F {
-                displayName = "Weapons Cache [NATO]";
-                description = "Weapons cache [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                displayName = "Weapons Cache [NATO] (Empty)";
+                description = "Weapons cache [NATO] (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 75000;
                 stock = 200;
 				code = [container_1,"Box_Wps_F"] call grad_fortifications_fnc_addFort;
@@ -577,67 +570,46 @@
 				code = [container_1,"CargoNet_01_barrels_F"] call grad_fortifications_fnc_addFort;
             };
 			class Fridge_01_closed_F {
-                displayName = "Refrigerator (Empty)";
+                displayName = "Refrigerator (Test)";
                 description = "The refrigerator (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 100;
                 stock = 200;
-				code = [container_1,"CargoNet_01_box_F"] call grad_fortifications_fnc_addFort;
+				code = [container_1,"Fridge_01_closed_F"] call grad_fortifications_fnc_addFort;
             };
 			class B_Slingload_01_Cargo_F {
                 displayName = "Huron Cargo Container";
                 description = "Huron Cargo Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
+                price = 10000;
                 stock = 200;
-				code = [container_1,"B_Slingload_01_Ammo_F"] call grad_fortifications_fnc_addFort;
+				code = [container_1,"B_Slingload_01_Cargo_F"] call grad_fortifications_fnc_addFort;
             };
 			class B_Slingload_01_Ammo_F {
                 displayName = "Huron Ammo Container";
                 description = "Huron Ammo Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
+                price = 10000;
                 stock = 200;
 				code = [container_1,"B_Slingload_01_Ammo_F"] call grad_fortifications_fnc_addFort;
             };
 			class B_Slingload_01_Fuel_F {
                 displayName = "Huron Fuel Container";
                 description = "Huron Fuel Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
+                price = 10000;
                 stock = 200;
 				code = [container_1,"B_Slingload_01_Ammo_F"] call grad_fortifications_fnc_addFort;
             };
 			class B_Slingload_01_Medevac_F {
                 displayName = "Huron Medical Container";
                 description = "Huron Medical Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
+                price = 10000;
                 stock = 200;
 				code = [container_1,"B_Slingload_01_Medevac_F"] call grad_fortifications_fnc_addFort;
             };
 			class B_Slingload_01_Repair_F {
                 displayName = "Huron Repair Container";
                 description = "	Huron Repair Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
+                price = 10000;
                 stock = 200;
 				code = [container_1,"B_Slingload_01_Repair_F"] call grad_fortifications_fnc_addFort;
-            };
-			class Land_CargoBox_V1_F {
-                displayName = "Cargo Box";
-                description = "Cargo Box can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
-                stock = 200;
-				code = [container_1,"Land_CargoBox_V1_F"] call grad_fortifications_fnc_addFort;
-            };
-			class Land_Cargo20_military_green_F {
-                displayName = "Cargo Container (Medium, Military Green)";
-                description = "Cargo Container (Medium, Military Green)can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
-                stock = 200;
-				code = [container_1,"Land_Cargo20_military_green_F"] call grad_fortifications_fnc_addFort;
-            };
-			class Land_Cargo40_military_green_F {
-                displayName = "Cargo Container (Medium, Military Green)";
-                description = "Cargo Container (Medium, Military Green) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
-                stock = 200;
-				code = [container_1,"Land_Cargo40_military_green_F"] call grad_fortifications_fnc_addFort;
             };
 	};
 };
