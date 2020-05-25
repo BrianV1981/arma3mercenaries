@@ -20,13 +20,142 @@ class CfgGradFortifications {
     onBuildComplete = ""; //String - Code that is executed when unit completes building and server spawns the actual object. Local to server. Passed: [unit,fort object]
 	
     class Fortifications {
-        class Land_BagFence_Long_F {
-            boundingBoxSize = 0.8;
+		
+        class Land_BarrelWater_F {
+            canPackUp = 0;
         };
 
-        class Land_HBarrier_5_F {
-            boundingBoxSize = 0.8;
+        class Land_StallWater_F {
+            canPackUp = 0;
         };
+		
+		class StorageBladder_02_water_forest_F {
+            canPackUp = 0;
+        };
+		
+		class WaterPump_01_forest_F {
+            canPackUp = 0;
+        };
+		
+		class Land_CanisterFuel_F {
+            canPackUp = 0;
+        };
+		
+		class FlexibleTank_01_sand_F {
+            canPackUp = 0;
+        };
+		
+		class StorageBladder_01_fuel_sand_F {
+            canPackUp = 0;
+        };
+		
+		class Box_NATO_Wps_F {
+            canPackUp = 0;
+        };
+		
+		class Box_NATO_WpsSpecial_F {
+            canPackUp = 0;
+        };
+		
+		class Box_NATO_Ammo_F {
+            canPackUp = 0;
+        };
+		
+		class Box_NATO_Grenades {
+            canPackUp = 0;
+        };
+		
+		class Box_NATO_WpsLaunch_F {
+            canPackUp = 0;
+        };
+		
+		class Box_NATO_Support_F {
+            canPackUp = 0;
+        };
+		
+		class Box_NATO_AmmoVeh_F {
+            canPackUp = 0;
+        };
+		
+		class B_supplyCrate_F {
+            canPackUp = 0;
+        };
+		
+		class Box_Ammo_F {
+            canPackUp = 0;
+        };
+		
+		class Box_Wps_F {
+            canPackUp = 0;
+        };
+		
+		class Box_NATO_Equip_F {
+            canPackUp = 0;
+        };
+		
+		class Box_NATO_Uniforms_F {
+            canPackUp = 0;
+        };
+		
+		class Box_IED_Exp_F {
+            canPackUp = 0;
+        };
+		
+		class Land_PaperBox_01_small_closed_brown_food_F {
+            canPackUp = 0;
+        };
+		
+		class Land_FoodSacks_01_cargo_white_idap_F {
+            canPackUp = 0;
+        };
+		
+		class CargoNet_01_barrels_F {
+            canPackUp = 0;
+        };
+		
+		class Fridge_01_closed_F {
+            canPackUp = 0;
+        };
+		
+		class B_Slingload_01_Cargo_F {
+            canPackUp = 0;
+        };
+		
+		class B_Slingload_01_Ammo_F {
+            canPackUp = 0;
+        };
+		
+		class B_Slingload_01_Fuel_F {
+            canPackUp = 0;
+        };
+		
+		class B_Slingload_01_Medevac_F {
+            canPackUp = 0;
+        };
+		class B_Slingload_01_Repair_F {
+            canPackUp = 0;
+        };
+		
+		class B_HMG_01_F {
+            canPackUp = 0;
+        };
+		
+		class B_HMG_01_high_F {
+            canPackUp = 0;
+        };
+		
+		class B_GMG_01_F {
+            canPackUp = 0;
+        };
+		
+		class B_GMG_01_high_F {
+            canPackUp = 0;
+        };
+		
+		class B_Mortar_01_F {
+            canPackUp = 0;
+        };
+		
     };
 
     class Vehicles {
