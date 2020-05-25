@@ -1213,7 +1213,7 @@
 			class launch_O_Titan_short_ghex_F {
                 displayName = "Titan MPRL Compact (Green Hex)";
                 description = "The Titan MPRL Compact is a portable long-range, fire-and-forget, guided missile launcher. It can be loaded with either 127 mm high-explosive anti-tank (HEAT) or antipersonnel (AP) warheads that are capable of striking targets at distances of up to 2,000 metres away. True to its name, the Titan's ability to load and fire AT/AP missiles is what makes it a unique multi-role weapon.";
-                price = 15 000;
+                price = 15000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };			
