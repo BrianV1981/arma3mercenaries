@@ -107,20 +107,110 @@
                 description = "Magnification: 5x-25x. Rangefinder (default button b)";
                 price = 600;
                 stock = 10000;                
-            };			
+            };
+			class Laserdesignator_01_khk_F {
+                displayName = "Laser Designator (Khaki)";
+                description = "Magnification: 5x-25x Rangefinder. (default button b)";
+                price = 600;
+                stock = 10000;                
+            };
+			class Laserdesignator_02_ghex_F {
+                displayName = "Laser Designator (Green Hex)";
+                description = "Magnification: 5x-25x. Rangefinder (default button b)";
+                price = 600;
+                stock = 10000;                
+            };		
 			class NVGogglesB_blk_F {
                 displayName = "ENVG-II (Black)";
                 description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
                 price = 2000;
                 stock = 10000;                
             };
+			class NVGogglesB_grn_F {
+                displayName = "ENVG-II (Green)";
+                description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
+                price = 2000;
+                stock = 10000;                
+            };
+			class NVGogglesB_gry_F {
+                displayName = "ENVG-II (Grey)";
+                description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
+                price = 2000;
+                stock = 10000;                
+            };
+			class O_NVGoggles_hex_F {
+                displayName = "Compact NVG (Hex)";
+                description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
+                price = 700;
+                stock = 10000;                
+            };
+			class O_NVGoggles_urb_F {
+                displayName = "Compact NVG (Urban)";
+                description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
+                price = 700;
+                stock = 10000;                
+            };
+			class O_NVGoggles_ghex_F {
+                displayName = "Compact NVG (Green Hex)";
+                description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
+                price = 700;
+                stock = 10000;                
+            };
+			class O_NVGoggles_grn_F {
+                displayName = "Compact NVG (Green)";
+                description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
+                price = 700;
+                stock = 10000;                
+            };		
 			class NVGoggles_OPFOR {
-                displayName = "	NV Goggles (Black)";
+                displayName = "NV Goggles (Black)";
                 description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
                 price = 1000;
                 stock = 10000;                
             };
-            class ToolKit {
+			class NVGoggles_INDEP {
+                displayName = "NV Goggles (Green)";
+                description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
+                price = 1000;
+                stock = 10000;                
+            };
+			class NVGoggles {
+                displayName = "NV Goggles (Brown)";
+                description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
+                price = 1000;
+                stock = 10000;                
+            };
+			class NVGoggles_tna_F {
+                displayName = "NV Goggles (Tropic)";
+                description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
+                price = 1000;
+                stock = 10000;                
+            };		
+			class ACE_NVG_Gen1 {
+                displayName = "NV Goggles (Gen1)";
+                description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
+                price = 1000;
+                stock = 10000;                
+            };
+			class ACE_NVG_Gen2 {
+                displayName = "NV Goggles (Gen2)";
+                description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
+                price = 1000;
+                stock = 10000;                
+            };
+			class ACE_NVG_Gen4 {
+                displayName = "NV Goggles (Gen4)";
+                description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
+                price = 1000;
+                stock = 10000;                
+            };
+			class ACE_NVG_Wide {
+                displayName = "NV Goggles (Wide)";
+                description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
+                price = 1000;
+                stock = 10000;                
+            };		
+                        class ToolKit {
                 displayName = "ToolKit";
                 description = "Use this to repair vehicles";
                 price = 200;
@@ -168,6 +258,12 @@
                 price = 50;
                 stock = 10000;                
             };
+			class ACE_SpottingScope {
+                displayName = "Spotting Scope";
+                description = "The ACE Spotting Scope.";
+                price = 50;
+                stock = 10000;                
+            };		
 		class ACE_Sandbag_empty {
                 displayName = "ACE Sandbag (empty)";
                 description = "The ACE Sandbag (empty) can be utilize with the ACE self interaction menu.";
@@ -193,6 +289,36 @@
                 price = 20;
                 stock = 10000;
             };
+			class ACE_rope12 {
+                displayName = "Rope 12.2 meters";
+                description = "Fast roping insertions from helicopters.";
+                price = 20;
+                stock = 10000;
+            };
+			class ACE_rope15 {
+                displayName = "Rope 15.2 meters";
+                description = "Fast roping insertions from helicopters.";
+                price = 20;
+                stock = 10000;
+            };
+			class ACE_rope18 {
+                displayName = "Rope 12.3 meters";
+                description = "Fast roping insertions from helicopters.";
+                price = 20;
+                stock = 10000;
+            };
+			class ACE_rope27 {
+                displayName = "Rope 27.4 meters";
+                description = "Fast roping insertions from helicopters.";
+                price = 20;
+                stock = 10000;
+            };
+			class ACE_rope36 {
+                displayName = "Rope 36.6 meters";
+                description = "Fast roping insertions from helicopters.";
+                price = 20;
+                stock = 10000;
+            };		
 			class ACE_TacticalLadder_Pack {
                 displayName = "ACE Telescopic Ladder Backpack";
                 description = "The ACE Telescopic Ladder Backpack can be utilize with the ACE self interaction menu.";
@@ -391,6 +517,13 @@
                 price = 5;
                 stock = 1000;
             };
+			class ACE_Humanitarian_Ration {
+                displayName = "Humanitarian Ration";
+                description = "Humanitarian Ration";
+                amount = 1;
+                price = 5;
+                stock = 1000;
+            };			
         };
         class equipment {
             displayName = "Wearable Gear";
@@ -995,7 +1128,13 @@
                 description = "Light Combat Helmet (Woodland) Armor Level I";
                 price = 120;
                 stock = 10000;                
-            };			
+            };
+			class H_HelmetB_TI_tna_F {
+                displayName = "Stealth Combat Helmet";
+                description = "Stealth Combat Helmet Armor Level II";
+                price = 200;
+                stock = 10000;                
+            };		
 			class H_HelmetB {
                 displayName = "Combat Helmet";
                 description = "Combat Helmet Armor Level II";
@@ -1314,6 +1453,12 @@
                 price = 25;
                 stock = 10000;
             };
+		    class G_Balaclava_TI_G_tna_F {
+                displayName = "Stealth Balaclava (Green, Googles)";
+                description = "Stealth Balaclava (Green, Googles)";
+                price = 25;
+                stock = 10000;
+            };		
 			class G_AssaultPack {
                 displayName = "Assault Pack";
                 description = "A small-sized backpack, the Assault Pack has a carrying capacity of 160 mass While its total capacity is less than that of the Field Pack by 40, it is much lighter and inflicts less of a stamina penalty on the carrier.";
