@@ -303,7 +303,15 @@
                 amount = 1;
                 stock = 9999;
 				code = [player,"scripts\mercenaries_2\B_engineer_F.sqf"] call BIS_fnc_execVM;
-            };			
+            };	
+			class B_Patrol_Engineer_F {
+                displayName = "NATO Patrol Engineer";
+                description = "This is a NATO patrol engineer.";
+                price = 5000;
+                amount = 1;
+                stock = 9999;
+				code = [player,"scripts\mercenaries_2\B_Patrol_Engineer_F.sqf"] call BIS_fnc_execVM;
+            };
 			class B_medic_F {
                 displayName = "NATO Combat Life Saver";
                 description = "NATO This is a NATO combat life saver.";
