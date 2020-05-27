@@ -156,6 +156,21 @@ class CfgGradFortifications {
             canPackUp = 0;
         };
 		
+		class CamoNet_BLUFOR_F {
+            size = 1;
+        };
+		
+		class CamoNet_BLUFOR_open_F {
+            size = 1;
+        };
+		
+		class CamoNet_BLUFOR_big_F {
+            size = 1;
+        };
+		
+		class Land_HelipadCircle_F {
+            size = 1;
+        };		
     };
 
     class Vehicles {
