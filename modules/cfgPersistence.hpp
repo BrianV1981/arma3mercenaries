@@ -1,13 +1,13 @@
 class CfgGradPersistence {
     missionTag = "grad_persistent_money";
-    loadOnMissionStart = 0;
+    loadOnMissionStart = 1;
     missionWaitCondition = "true";
     playerWaitCondition = "true";
 
     saveUnits = 0;
     saveVehicles = 0;
     saveContainers = 0;
-    saveStatics = 3;
+    saveStatics = 0;
 	
     savePlayerInventory = 0;
     savePlayerDamage = 0;
@@ -18,5 +18,5 @@ class CfgGradPersistence {
     saveTasks = 0;
     saveTriggers = 0;
     saveTeamAccounts = 1;
-	saveTimeAndDate = 0;
+    saveTimeAndDate = 0;
 };
