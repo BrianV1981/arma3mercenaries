@@ -5,13 +5,13 @@ class CfgGradPersistence {
     playerWaitCondition = "true";
 
     saveUnits = 0;
-    saveVehicles = 0;
-    saveContainers = 0;
-    saveStatics = 0;
+    saveVehicles = 3;
+    saveContainers = 3;
+    saveStatics = 3;
 	
     savePlayerInventory = 0;
     savePlayerDamage = 0;
-    savePlayerPosition = 0;
+    savePlayerPosition = 1;
     savePlayerMoney = 1;
 	
     saveMarkers = 0;
