@@ -1,5 +1,5 @@
 execVM "scripts\killedEventHandlers.sqf";
-execVM "modules\moneyMenuSetStorage.sqf";
+execVM "scripts\moneyMenuSetStorage.sqf";
 [west, "LOADOUT1"] call BIS_fnc_addRespawnInventory;
 /////////////////////////////////////////////////Ambient Radio Chatter in/near Vehicles////////////////////////////////
 while {true} do
