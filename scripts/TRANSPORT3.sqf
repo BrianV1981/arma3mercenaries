@@ -1,1 +1,1 @@
-["TRANSPORT",[[26702,24526,0],60,"B_Heli_Light_01_F","MH-9 Hummingbird","",""]] Call ALiVE_fnc_combatSupportAdd;sleep 1800;["WEST","TRANSPORT","MH-9 Hummingbird"] call ALiVE_fnc_combatSupportRemove;
+["TRANSPORT",[[26702,24526,0],60,"B_Heli_Light_01_F","MH-9 Hummingbird","",""]] Call ALiVE_fnc_combatSupportAdd;sleep 3600;["WEST","TRANSPORT","MH-9 Hummingbird"] call ALiVE_fnc_combatSupportRemove;

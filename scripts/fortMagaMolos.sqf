@@ -7,7 +7,7 @@ Area size: 50
 Using orientation of objects: yes
 */
 // 0 = [positionWhereYouWantToSpawnYourComposition, azimutOfYourComposition, call (compile (preprocessFileLineNumbers "yourComposition.sqf"))] call BIS_fnc_ObjectsMapper;
-// 0 = [[26637.5, 24539.8], 0, call (compile (preprocessFileLineNumbers "fortMaga.sqf"))] call BIS_fnc_ObjectsMapper;
+// 0 = [[26637.5, 24539.8], 0, call (compile (preprocessFileLineNumbers "scripts\fortMagaMolos.sqf"))] call BIS_fnc_ObjectsMapper;
 
 [
 	["Land_CncWall4_F",[5.74023,-2.33398,-0.00918198],39.0698,1,0,[0,0],"","",true,false], 

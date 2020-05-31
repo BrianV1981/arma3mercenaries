@@ -1,9 +1,9 @@
 [
     "ARTY",                         // CS type
     [
-        [26600, 24580, 0],    // Position
-        "B_MBT_01_arty_F",          // Classname
-        "Sholef",                   // Callsign
+        [26563, 24611, 0],    // Position
+        "B_MBT_01_mlrs_F",          // Classname
+        "Seara",                   // Callsign
         3,                          // Number of units/vehicles to spawn
         [                           // Number of available rounds
             ["HE",      100],

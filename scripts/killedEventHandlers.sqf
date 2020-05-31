@@ -1,3 +1,4 @@
+//https://forums.bohemia.net/forums/topic/211383-trigger-on-enemy-death/
 addMissionEventHandler ["entityKilled", {
   params ["_killed","_killer","_instigator"];
   if (local _instigator && getNumber (configFile >> "cfgVehicles" >> typeOf _killed >> "side") == 0) then {
