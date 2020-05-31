@@ -8,7 +8,7 @@ OnLoadName = "arma3mercenaries";
 onLoadMission = "A special unit of soldiers is tasked with sabotaging infrastructure, rescuing hostages and eliminating high value targets...";
 author="Beyaco";
 respawn = 3;
-respawndelay = 5;
+respawndelay = 15;
 respawnTemplates[] = {"MenuInventory", "MenuPosition", "Spectator"};
 respawnOnStart = -1;
 disabledAI = 0;
@@ -121,4 +121,72 @@ class CfgRespawnInventory
 		uniformClass = "U_B_CombatUniform_mcam_tshirt";
 		backpack = "B_Carryall_cbr";
 	};
+};
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+class CfgSounds
+{
+	sounds[] = {};
+	class bird
+	{
+		name = "birdSong";
+		sound[] = {"music\bird.ogg", 7, 1, 500};
+		titles[] = {};
+	};
+	class hush
+	{
+		name = "hushSong";
+		sound[] = {"music\hush.ogg", 8, 1, 500};
+		titles[] = {};
+	};
+	class shakin
+	{
+		name = "shakinSong";
+		sound[] = {"music\shakin.ogg", 7, 1, 500};
+		titles[] = {};
+	};
+	class letter
+	{
+		name = "letterSong";
+		sound[] = {"music\letter.ogg", 8, 1, 500};
+		titles[] = {};
+	};
+    class black
+	{
+		name = "blackSong";
+		sound[] = {"music\black.ogg", 8, 1, 500};
+		titles[] = {};
+	};
+	class boots
+	{
+		name = "bootsSong";
+		sound[] = {"music\boots.ogg", 8, 1, 500};
+		titles[] = {};
+	};
+	class bully
+	{
+		name = "bullySong";
+		sound[] = {"music\bully.ogg", 8, 1, 500};
+		titles[] = {};
+	};
+	class preacher
+	{
+		name = "preacherSong";
+		sound[] = {"music\preacher.ogg", 8, 1, 500};
+		titles[] = {};
+	};
+	class trumpspeach1
+	{
+		name = "trumpspeach1Song";
+		sound[] = {"music\trumpspeach1.ogg", 10, 1, 500};
+		titles[] = {};
+	};
+	class foxiran1
+	{
+		name = "foxiran1Song";
+		sound[] = {"music\foxiran1.ogg", 10, 1, 500};
+		titles[] = {};
+	};
+	
 };
