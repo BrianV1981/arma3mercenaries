@@ -3,8 +3,8 @@
 
         //category:	
         class items {
-            displayName = "Items";
-            kindOf = "Military Supplies";
+            displayName = "Military Supplies";
+            kindOf = "Items";
 
             class ItemMap {
                 displayName = "Map";
@@ -216,12 +216,30 @@
                 price = 200;
                 stock = 10000;                
             };
+			class ACE_DefusalKit {
+                displayName = "ACE ACE Defusal Kit";
+                description = "The ACE ACE defusal kit can be utilize with the ACE interaction menu.";
+                price = 20;
+                stock = 10000;
+            };
 			class MineDetector {
                 displayName = "Mine Detector";
                 description = "Detects all mines within a 15 meter in range. (default buttons [ and ])";
                 price = 1000;
                 stock = 10000;                
-            };				
+            };
+   			class ACE_Cellphone {
+                displayName = "ACE Cellphone";
+                description = "The ACE cellphone can be utilize with the ACE self interaction menu, under explosives. After placing the charge, interact with it with ACE and assign it to a type of detonator.";
+                price = 300;
+                stock = 10000;                
+            };
+			class ACE_Clacker {
+                displayName = "ACE M57 Firing Device";
+                description = "The ACE M57 firing device can be utilize with the ACE self interaction menu, under explosives. After placing the charge, interact with it with ACE and assign it to a type of detonator.";
+                price = 200;
+                stock = 10000;                
+            };			
 			class ACE_Flashlight_XL50 {
                 displayName = "ACE Maglite XL50 Flashlight";
                 description = "The ACE Maglite XL50 flashlight can be utilized with the ACE self interaction menu (while looking at the map) to see your map in the dark.";
@@ -268,12 +286,6 @@
 			class ACE_wirecutter {
                 displayName = "ACE Wire Cutter";
                 description = "The ACE wire cutter can be utilize to cut ACE concertina wire with the ACE interaction menu.";
-                price = 20;
-                stock = 10000;
-            };
-			class ACE_DefusalKit {
-                displayName = "ACE ACE Defusal Kit";
-                description = "The ACE ACE defusal kit can be utilize with the ACE interaction menu.";
                 price = 20;
                 stock = 10000;
             };
