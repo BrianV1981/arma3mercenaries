@@ -683,13 +683,6 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'CargoNet_01_box_F'] call grad_fortifications_fnc_addFort}";
             };
-			class CargoNet_01_barrels_F {
-                displayName = "Cargo Net Barrel Pallet (Empty)";
-                description = "Cargo Net Barrel Pallet (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'CargoNet_01_barrels_F'] call grad_fortifications_fnc_addFort}";
-            };
 			class B_Slingload_01_Cargo_F {
                 displayName = "Huron Cargo Container";
                 description = "Huron Cargo Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
