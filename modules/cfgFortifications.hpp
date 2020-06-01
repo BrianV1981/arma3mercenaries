@@ -175,7 +175,6 @@ class CfgGradFortifications {
 		class Land_HelipadCircle_F {
             size = 1;
         };		
-    };
 		class Land_Cargo_Tower_V1_F {
             size = 30;
         };
