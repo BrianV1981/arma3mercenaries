@@ -7,7 +7,7 @@ class CfgGradPersistence {
     saveUnits = 0;
     saveVehicles = 0;
     saveContainers = 2;
-    saveStatics = 0;
+    saveStatics = 2;
 	
     savePlayerInventory = 0;
     savePlayerDamage = 0;
