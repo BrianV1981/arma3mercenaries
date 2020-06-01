@@ -315,19 +315,19 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_2,'Land_Cargo_Patrol_V1_F'] call grad_fortifications_fnc_addFort}";
             };
-			class Land_Cargo_Tower_V1_F {
-                displayName = "Military Cargo Tower (Green)";
-                description = "Military Cargo Tower (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Land_Cargo_Tower_V1_F'] call grad_fortifications_fnc_addFort}";
-            };
 			class Land_Cargo_HQ_V1_F {
                 displayName = "Military Cargo HQ (Green)";
                 description = "Military Cargo HQ (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 75000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_2,'Land_Cargo_HQ_V1_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Cargo_Tower_V1_F {
+                displayName = "Military Cargo Tower (Green)";
+                description = "Military Cargo Tower (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 100000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_Cargo_Tower_V1_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Land_PillboxBunker_01_hex_F {
                 displayName = "Pillbox (Hexagonal)";
