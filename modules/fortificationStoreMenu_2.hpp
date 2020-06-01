@@ -13,7 +13,6 @@
                 stock = 10000;
 				kindOf = Items;
             };
-			
 			class ACE_EntrenchingTool {
                 displayName = "ACE Entrenching Tool";
                 description = "The ACE entrenching tool can be utilize to dig trenches with the ACE self interaction menu.";
