@@ -4,7 +4,7 @@ class CfgGradFortifications {
     buildTimeFactor = 1; //Number - Higher means building takes longer.
 	demolishTimeFactor = 1; //Number - Higher means demolitions take longer.
 	packUpTimeFactor = 1; //Number - Higher means packing up takes longer.
-	playerInventorySize = 20; //Number - Size of the virtual inventory of units.
+	playerInventorySize = 30; //Number - Size of the virtual inventory of units.
 	vehicleInventorySizeFactor = 1; //Number - Size factor for vehicle inventories.
 	canDemolishDefault = 1; //(1/0) - Can anyone demolish fortifications by default?
     canPackUpDefault = 1; // (1/0) - Can fortification owners pack up fortifications by default?
@@ -157,20 +157,31 @@ class CfgGradFortifications {
         };
 		
 		class CamoNet_BLUFOR_F {
-            size = 1;
+            size = 5;
         };
 		
 		class CamoNet_BLUFOR_open_F {
-            size = 1;
+            size = 5;
         };
 		
 		class CamoNet_BLUFOR_big_F {
-            size = 1;
+            size = 5;
         };
 		
 		class Land_HelipadCircle_F {
             size = 1;
         };		
+    };
+		class Land_HelipadCircle_F {
+            size = 1;
+        };		
+    };
+		class Land_Cargo_Tower_V1_F {
+            size = 30;
+        };
+			class Land_Cargo_HQ_V1_F {
+            size = 30;
+        };
     };
 
     class Vehicles {
