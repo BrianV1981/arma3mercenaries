@@ -132,6 +132,7 @@ class CfgGradFortifications {
 		class B_Slingload_01_Medevac_F {
             canPackUp = 0;
         };
+		
 		class B_Slingload_01_Repair_F {
             canPackUp = 0;
         };
@@ -171,16 +172,19 @@ class CfgGradFortifications {
 		class Land_HelipadCircle_F {
             size = 1;
         };		
-    };
+
 		class Land_HelipadCircle_F {
             size = 1;
-        };		
+        };
+		
 		class Land_Cargo_Tower_V1_F {
             size = 30;
         };
-			class Land_Cargo_HQ_V1_F {
+		
+		class Land_Cargo_HQ_V1_F {
             size = 30;
         };
+		
     };
 
     class Vehicles {
