@@ -1642,6 +1642,23 @@
                 price = 40;
                 stock = 10000;                
             };			
+        };
+		class Eammo {
+            displayName = "Plantable Explosives";
+            kindOf = "Items";
+			
+   			class ACE_Cellphone {
+                displayName = "ACE Cellphone";
+                description = "The ACE cellphone can be utilize with the ACE self interaction menu, under explosives. After placing the charge, interact with it with ACE and assign it to a type of detonator.";
+                price = 300;
+                stock = 10000;                
+            };
+			class ACE_Clacker {
+                displayName = "ACE M57 Firing Device";
+                description = "The ACE M57 firing device can be utilize with the ACE self interaction menu, under explosives. After placing the charge, interact with it with ACE and assign it to a type of detonator.";
+                price = 200;
+                stock = 10000;                
+            };
 			class DemoCharge_Remote_Mag {
                 displayName = "Explosive Charge";
                 description = "Explosive charges can be utilize with the ACE self interaction menu, under explosives. After placing charge, interact with it with ACE and assign it to a type of detonator. ";
@@ -1689,7 +1706,7 @@
                 description = "Anti-personnel tripwire mine";
                 price = 100;
                 stock = 10000;                
-            };			
+            };
         };
         class accessories {
             displayName = "Weapon Accessories";

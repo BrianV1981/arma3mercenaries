@@ -4,7 +4,7 @@
         //category:	
         class items {
             displayName = "Items";
-            kindOf = "Items";
+            kindOf = "Military Supplies";
 
             class ItemMap {
                 displayName = "Map";
@@ -210,7 +210,7 @@
                 price = 1000;
                 stock = 10000;                
             };		
-                        class ToolKit {
+             class ToolKit {
                 displayName = "ToolKit";
                 description = "Use this to repair vehicles";
                 price = 200;
@@ -221,19 +221,7 @@
                 description = "Detects all mines within a 15 meter in range. (default buttons [ and ])";
                 price = 1000;
                 stock = 10000;                
-            };			
-			class ACE_Cellphone {
-                displayName = "ACE Cellphone";
-                description = "The ACE cellphone can be utilize with the ACE self interaction menu, under explosives. After placing the charge, interact with it with ACE and assign it to a type of detonator.";
-                price = 300;
-                stock = 10000;                
-            };
-			class ACE_Clacker {
-                displayName = "ACE M57 Firing Device";
-                description = "The ACE M57 firing device can be utilize with the ACE self interaction menu, under explosives. After placing the charge, interact with it with ACE and assign it to a type of detonator.";
-                price = 200;
-                stock = 10000;                
-            };	
+            };				
 			class ACE_Flashlight_XL50 {
                 displayName = "ACE Maglite XL50 Flashlight";
                 description = "The ACE Maglite XL50 flashlight can be utilized with the ACE self interaction menu (while looking at the map) to see your map in the dark.";
@@ -363,31 +351,7 @@
                 price = 30;
                 stock = 10000;
 				kindOf = wearables;
-            };
-			class ACE_Track {
-                displayName = "ACE Spare Track";
-                description = "ACE Spare Track can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100;
-                stock = 10000;
-				kindOf = other;
-				code = [player,"ACE_Track"] call grad_fortifications_fnc_addFort;
-            };
-			class ACE_Wheel {
-                displayName = "ACE Spare Wheel";
-                description = "ACE Spare Wheel can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50;
-                stock = 10000;
-				kindOf = other;
-				code = [player,"ACE_Wheel"] call grad_fortifications_fnc_addFort;
-            };
-			class Land_CanisterFuel_F {
-                displayName = "	Canister (Fuel)";
-                description = "	Canister (Fuel) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25;
-                stock = 10000;
-				kindOf = other;
-				code = [player,"Land_CanisterFuel_F"] call grad_fortifications_fnc_addFort;
-            };			
+            };	
 			class Laserbatteries {
                 displayName = "Laser Designator Batteries";
                 description = "Batteries for a laser designator. (Does not fit into NVG, UAV or Drone)";
@@ -400,7 +364,7 @@
                 price = 5;
                 stock = 10000;
             };
-        };		
+        };
 		class medical {
             displayName = "Medical Supplies, MRE's and Beverages";
             kindOf = "Items";
@@ -523,10 +487,10 @@
                 amount = 1;
                 price = 5;
                 stock = 1000;
-            };			
-        };
+            };
+        };		
         class equipment {
-            displayName = "Wearable Gear";
+            displayName = "Military Equipment";
             kindOf = "Wearables";
 
 			class U_B_CBRN_Suit_01_MTP_F {
@@ -1472,7 +1436,7 @@
                 stock = 10000;
             };
 			class B_AssaultPack_mcamo {
-                displayName = "	Assault Pack (MTP)";
+                displayName = "Assault Pack (MTP)";
                 description = "A small-sized backpack, the Assault Pack has a carrying capacity of 160 mass While its total capacity is less than that of the Field Pack by 40, it is much lighter and inflicts less of a stamina penalty on the carrier.";
                 price = 150;
                 stock = 10000;
@@ -1518,7 +1482,13 @@
                 description = "A small-sized backpack, the Assault Pack has a carrying capacity of 160 mass While its total capacity is less than that of the Field Pack by 40, it is much lighter and inflicts less of a stamina penalty on the carrier.";
                 price = 150;
                 stock = 10000;
-            };			
+            };
+			class B_AssaultPack_Kerry {
+                displayName = "US Assault Pack (Kerry)";
+                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
+                price = 300;
+                stock = 10000;
+            };
 			class B_Kitbag_rgr {
                 displayName = "Kitbag (Green)";
                 description = "A moderately-sized backpack, the Kitbag has a carrying capacity of 280 mass and can store much more than the Assault Pack, Tactical Backpack, and Field Pack.";
@@ -1579,12 +1549,6 @@
                 price = 250;
                 stock = 10000;
             };		
-			class B_AssaultPack_Kerry {
-                displayName = "US Assault Pack (Kerry)";
-                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
-                price = 300;
-                stock = 10000;
-            };			
 			class B_Carryall_ocamo {
                 displayName = "Carryall Backpack (Hex)";
                 description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
@@ -1674,7 +1638,13 @@
                 description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
                 price = 350;
                 stock = 10000;
-            };						
+            };
+			class ACE_gunbag {
+                displayName = "ACE Gunbag";
+                description = "ACE Gunbag allows users to put a gun inside a backpack.";
+                price = 350;
+                stock = 10000;
+            };
 			class B_Parachute {
                 displayName = "Steerable Parachute";
                 description = "Steerable Parachute.";

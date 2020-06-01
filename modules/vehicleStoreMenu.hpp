@@ -158,13 +158,13 @@
                 displayName = "Offroad (HMG)"; 
                 description = "	The 4x4 pickup by Generic Motors is a perfect choice for farmers and hunters. The durable chassis and powerful engine has been designed to withstand anything from the cratered highways of Central Europe to the rugged terrain of the Mediterranean. (Slingload: No) (Slingloadable: Yes)";
                 price = 10000;
-                stock = 9999;              
+                stock = 9999;
             };
 			class B_G_Offroad_01_AT_F  {
                 displayName = "Offroad (AT)"; 
                 description = "	The 4x4 pickup by Generic Motors is a perfect choice for farmers and hunters. The durable chassis and powerful engine has been designed to withstand anything from the cratered highways of Central Europe to the rugged terrain of the Mediterranean. (Slingload: No) (Slingloadable: Yes)";
                 price = 20000;
-                stock = 9999;              
+                stock = 9999;
             }; 
 			class B_T_LSV_01_unarmed_F {
                 displayName = "Prowler";
@@ -190,19 +190,37 @@
                 price = 190000;
                 stock = 50;
             };
+			class O_MRAP_02_F {
+                displayName = "Ifrit";
+                description = "The Ifrit is a four-wheel drive MRAP-type vehicle that can fulfil many roles ranging from serving as a V.I.P. transport, escort vehicle, light troop transport, to reconnaissance. All in a well-protected and compact package. (Slingload: No) (Slingloadable: Yes)";
+                price = 190000;
+                stock = 50;
+            };
             class B_MRAP_01_hmg_F {
-                displayName = "Hunter HMG";
+                displayName = "Hunter (HMG)";
                 description = "The Hunter is a four-wheel drive, all-terrain, MRAP-type vehicle. Primarily intended for use in counter-insurgency operations, it is multi-role and can act as both a troop carrier and supply vehicle if needed. (Slingload: No) (Slingloadable: Yes)";
                 price = 210000;
                 stock = 50;
             };
+			class O_MRAP_02_hmg_F {
+                displayName = "Ifrit (HMG)";
+                description = "The Ifrit is a four-wheel drive MRAP-type vehicle that can fulfil many roles ranging from serving as a V.I.P. transport, escort vehicle, light troop transport, to reconnaissance. All in a well-protected and compact package. (Slingload: No) (Slingloadable: Yes)";
+                price = 210000;
+                stock = 50;
+            };
 			class B_MRAP_01_gmg_F {
-                displayName = "Hunter GMG";
+                displayName = "Hunter (GMG)";
                 description = "The Hunter is a four-wheel drive, all-terrain, MRAP-type vehicle. Primarily intended for use in counter-insurgency operations, it is multi-role and can act as both a troop carrier and supply vehicle if needed. (Slingload: No) (Slingloadable: Yes)";
                 price = 210000;
                 stock = 50;
-            };			
-		};	
+            };
+			class O_MRAP_02_gmg_F {
+                displayName = "Ifrit (GMG)";
+                description = "The Ifrit is a four-wheel drive MRAP-type vehicle that can fulfil many roles ranging from serving as a V.I.P. transport, escort vehicle, light troop transport, to reconnaissance. All in a well-protected and compact package. (Slingload: No) (Slingloadable: Yes)";
+                price = 210000;
+                stock = 50;
+            };
+		};
         class LAvehicles {
             kindOf = "Vehicles";
             displayName = "Light Armored Vehicles";
@@ -254,6 +272,18 @@
 			class B_APC_Tracked_01_rcws_F {
                 displayName = "IFV-6c Panther (Sand)";
                 description = "The Panther is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat.";
+                price = 440000;
+                stock = 20;
+            };
+			class O_APC_Tracked_02_cannon_F {
+                displayName = "BTR-K Kamysh";
+                description = "The BTR-K is a highly manoeuvrable infantry fighting vehicle designed as a troop transport that can engage armoured ground and low-flying aerial targets while stationary, and as an armoured reconnaissance vehicle.";
+                price = 440000;
+                stock = 20;
+            };
+			class O_APC_Tracked_02_AA_F {
+                displayName = "ZSU-39 Tigris";
+                description = "The ZSU-39 is a dedicated anti-aircraft variant of its IFV parent that is fitted with a turret armed with dual 35 mm cannons and surface-to-air missiles.";
                 price = 440000;
                 stock = 20;
             };
@@ -571,7 +601,13 @@
                 description = "The CH47I Chinook is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
-            };			
+            };
+			class O_Heli_Transport_04_F {
+                displayName = "	Mi-290 Taru";
+                description = "The Mi-290 is a twin-engine, heavy-lift utility helicopter that uses a distinctive coaxial rotor system which removes the need for a tail rotor. It is unique for its ability to utilise interchangeable mission pods, which grant the Mi-290 a diverse array of performable roles, from transporting troops into battle, to providing air medical services. (Slingload: Yes, up to 13500 kg) (Slingloadable: No)";
+                price = 350000;
+                stock = 50;
+            };
             class B_Heli_Transport_03_F {
                 displayName = "CH47I Chinook";
                 description = "The CH47I Chinook is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
