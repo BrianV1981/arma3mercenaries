@@ -525,7 +525,7 @@
 			class FlexibleTank_01_sand_F {
                 displayName = "Flexible Fuel Tank (300 Liters)";
                 description = "Flexible Fuel Tank (300 liters) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50;
+                price = 300;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'FlexibleTank_01_sand_F'] call grad_fortifications_fnc_addFort}";
             };
