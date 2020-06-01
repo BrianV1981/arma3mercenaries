@@ -1,5 +1,5 @@
     //buyables set/store:
-    class fortificationStore_1 {
+    class fortificationStore_2 {
 
         //category:
 		class fortifications_1 {
