@@ -647,13 +647,6 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Box_IED_Exp_F'] call grad_fortifications_fnc_addFort}";
             };
-			class Land_PaperBox_01_small_closed_brown_food_F {
-                displayName = "[IDAP] Cardboard Box (Empty)";
-                description = "[IDAP] cardboard box (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_PaperBox_01_small_closed_brown_food_F'] call grad_fortifications_fnc_addFort}";
-            };
 			class Box_Ammo_F {
                 displayName = "Ammo Cache [NATO] (Empty)";
                 description = "Ammo cache [NATO] (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -668,10 +661,10 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Box_Wps_F'] call grad_fortifications_fnc_addFort}";
             };
-			class Land_FoodSacks_01_cargo_white_idap_F {
-                displayName = "[IDAP] Cargo Net (Empty Sacks)";
-                description = "[IDAP] cargo net (empty sacks) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
+			class Land_PaperBox_01_small_closed_brown_food_F {
+                displayName = "[IDAP] Cardboard Food Box (Empty)";
+                description = "[IDAP] cardboard food box (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 10;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_PaperBox_01_small_closed_brown_food_F'] call grad_fortifications_fnc_addFort}";
             };

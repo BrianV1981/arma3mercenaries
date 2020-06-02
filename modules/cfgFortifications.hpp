@@ -105,6 +105,10 @@ class CfgGradFortifications {
             canPackUp = 0;
         };
 		
+		class CargoNet_01_box_F {
+            canPackUp = 0;
+        };
+		
 		class Land_FoodSacks_01_cargo_white_idap_F {
             canPackUp = 0;
         };
