@@ -718,13 +718,13 @@
 			class U_B_CTRG_Soldier_urb_2_F {
                 displayName = "CTRG Urban Uniform (Tee)";
                 description = "CTRG Urban Uniform (Tee)";
-                price = 250;
+                price = 500;
                 stock = 10000;                
             };		
 			class U_B_CTRG_3 {
                 displayName = "CTRG Combat Uniform (Rolled-up)";
                 description = "CTRG Combat Uniform (Rolled-up)";
-                price = 250;
+                price = 500;
                 stock = 10000;                
             };		
 			class U_B_CTRG_Soldier_3_F {
