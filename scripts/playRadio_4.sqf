@@ -24,7 +24,7 @@ radio_4 remoteExec ["removeAllActions"];
 
 _waitTime = time + _songLength;
 waitUntil{time >= _waitTime};
-radio remoteExec ["removeAllActions"];
+radio_4 remoteExec ["removeAllActions"];
 
 radioH_4 = [] execVM "scripts\playradio_4.sqf";
 
