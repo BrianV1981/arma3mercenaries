@@ -1,3 +1,17 @@
+//http://www.armaholic.com/page.php?id=19139
+//Installation / Usage:
+//- Place a trigger on your map. The defined area of the trigger in the editor translates to the area a vehicle must enter to be serviced.
+//- Ensure that the trigger is set to be activated repeatedly and may be activated by anyone or whomever you wish it to be activated by.
+//- For land vehicles, place this in the trigger conditions
+//("LandVehicle" countType thislist  > 0) && ((getpos (thislist select 0)) select 2 < 1)
+//- For air vehicles, place this in the trigger condition and replace triggername with the name of the trigger:
+//(getPos ((list triggername) select 0) select 2) <= 1
+//- Place the following into the Trigger On Act field.
+//_xhandle= (thislist select 0) execVM "x_reload.sqf";
+//
+//("AllVehicles" countType thislist  > 0) && ((getpos (thislist select 0)) select 2 < 1)
+//will rearm UNITS as well!
+
 _object = _this;
 
 _type = typeOf _object;
