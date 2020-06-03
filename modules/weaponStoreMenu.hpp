@@ -371,21 +371,21 @@
             class arifle_ARX_blk_F {
                 displayName = "Type 115 6.5 mm (Black)";
                 description = "The Type 115 is a selective-fire assault rifle that is primarily chambered to fire caseless 6.5×39 mm ammunition. It also has an underbarrel anti-materiel rifle module that is designed to fire specialised .50 BW rounds,It loads from the same 30-round box magazines used by Mediterranean CSAT Katiba assault rifles, and can reach a fire rate of up to 895 rounds per minute with a muzzle velocity of 800 m/s. The Type 115 accepts accessories on all three of its rails; top, side, and underbarrel (located beneath the AMR module) and can mount attachments onto its muzzle as well.";
-                price = 7000;
+                price = 8000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count
             };
             class arifle_ARX_ghex_F {
                 displayName = "Type 115 6.5 mm (Green Hex)";
                 description = "The Type 115 is a selective-fire assault rifle that is primarily chambered to fire caseless 6.5×39 mm ammunition. It also has an underbarrel anti-materiel rifle module that is designed to fire specialised .50 BW rounds,It loads from the same 30-round box magazines used by Mediterranean CSAT Katiba assault rifles, and can reach a fire rate of up to 895 rounds per minute with a muzzle velocity of 800 m/s. The Type 115 accepts accessories on all three of its rails; top, side, and underbarrel (located beneath the AMR module) and can mount attachments onto its muzzle as well.";
-                price = 7000;
+                price = 8000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count
             };
             class arifle_ARX_hex_F {
                 displayName = "Type 115 6.5 mm (Hex)";
                 description = "The Type 115 is a selective-fire assault rifle that is primarily chambered to fire caseless 6.5×39 mm ammunition. It also has an underbarrel anti-materiel rifle module that is designed to fire specialised .50 BW rounds,It loads from the same 30-round box magazines used by Mediterranean CSAT Katiba assault rifles, and can reach a fire rate of up to 895 rounds per minute with a muzzle velocity of 800 m/s. The Type 115 accepts accessories on all three of its rails; top, side, and underbarrel (located beneath the AMR module) and can mount attachments onto its muzzle as well.";
-                price = 7000;
+                price = 8000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count
             };
