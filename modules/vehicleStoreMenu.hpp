@@ -655,7 +655,7 @@
 			class ACE_UAVBattery {
                 displayName = "ACE UAV Battery";
                 description = "ACE UAV Battery";
-                price = 0;
+                price = 100;
                 stock = 10000;
 				kindOf = Items;
             };
@@ -683,14 +683,14 @@
 			class B_UGV_01_F {
                 displayName = "UGV Stomper";
                 description = "The Stomper is available in two variants; an unarmed version that has no weapons mounted on it that is meant to be used for transporting supplies and cargo, and an armed version that is fitted with an RCWS turret armed with a dual-mount 12.7 mm heavy machine gun and 40 mm automatic grenade launcher. (Slingload: No) (Slingloadable: Yes)";
-                price = 5000;
+                price = 10000;
                 stock = 20; 
 				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
             };
 			class B_UGV_01_rcws_F {
                 displayName = "UGV Stomper RCWS";
                 description = "The Stomper is available in two variants; an unarmed version that has no weapons mounted on it that is meant to be used for transporting supplies and cargo, and an armed version that is fitted with an RCWS turret armed with a dual-mount 12.7 mm heavy machine gun and 40 mm automatic grenade launcher. (Slingload: No) (Slingloadable: Yes)";
-                price = 10000;
+                price = 50000;
                 stock = 20;
 				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
             };
