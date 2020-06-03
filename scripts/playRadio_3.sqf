@@ -24,7 +24,7 @@ radio_3 remoteExec ["removeAllActions"];
 
 _waitTime = time + _songLength;
 waitUntil{time >= _waitTime};
-radio remoteExec ["removeAllActions"];
+radio_3 remoteExec ["removeAllActions"];
 
 radioH_3 = [] execVM "scripts\playradio_3.sqf";
 
