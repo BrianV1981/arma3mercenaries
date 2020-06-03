@@ -18,12 +18,12 @@ allowFunctionsLog = 1;
 ExtendedInfoType=0;
 corpseManagerMode = 1;
 corpseLimit = 50;
-corpseRemovalMinTime = 1200;
-corpseRemovalMaxTime = 3600;
+corpseRemovalMinTime = 600;
+corpseRemovalMaxTime = 1200;
 wreckManagerMode = 1;
 wreckLimit = 50;
-wreckRemovalMinTime = 1200;
-wreckRemovalMaxTime = 3600;
+wreckRemovalMinTime = 300;
+wreckRemovalMaxTime = 600;
 minPlayerDistance = 100;
 
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -40,6 +40,7 @@ class CfgFunctions {
     #include "modules\grad-listBuymenu\cfgFunctions.hpp"
 	#include "modules\grad-fortifications\cfgFunctions.hpp"
 	#include "modules\grad-persistence\cfgFunctions.hpp"
+	#include "vcom\cfgFunctions.hpp"
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -87,39 +88,18 @@ class CfgRespawnInventory
 
 		// Loadout definition, uses same entries as CfgVehicles classes
 		weapons[] = {
-			"arifle_MX_ACO_F",
-			"Binocular"
+		
 		};
 		magazines[] = {
-			"30Rnd_65x39_caseless_mag",
-			"30Rnd_65x39_caseless_mag",
-			"30Rnd_65x39_caseless_mag",
-			"SmokeShell",
-			"SmokeShell"
 		};
 		items[] = {
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_Splint",
-			"ACE_Splint",
-			"ACE_morphine",
-			"ACE_epinephrine"
+		"ItemMap"
 		};
 		linkedItems[] = {
-			"V_Chestrig_blk",
-			"H_Watchcap_blk",
-			"acc_flashlight",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"ItemGPS"
+		
 		};
-		uniformClass = "U_B_CombatUniform_mcam_tshirt";
-		backpack = "B_Carryall_cbr";
+		uniformClass = "";
+		backpack = "";
 	};
 };
 
@@ -188,5 +168,27 @@ class CfgSounds
 		sound[] = {"music\foxiran1.ogg", 10, 1, 500};
 		titles[] = {};
 	};
+	
+};
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class CfgRemoteExec
+{
+	// List of script functions allowed to be sent from client via remoteExec
+	class Functions
+	{
+		mode = 2;
+		jip = 1;		
+		
+		class vcm_serverask { allowedTargets = 0;jip = 1; };
+		class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+		class BIS_fnc_debugConsoleExec { allowedTargets = 0;jip = 1; };
+		class SpawnScript { allowedTargets = 0;jip = 1; };
+		class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+		class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+		
+	};
+	
 	
 };
