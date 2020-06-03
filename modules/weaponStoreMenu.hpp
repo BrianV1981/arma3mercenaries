@@ -106,119 +106,119 @@
 			class SMG_01_F {
                 displayName = "Vermin SMG .45 ACP";
                 description = "The Vermin is a personal defence weapon that uses a delayed blowback, closed bolt operation and is chambered to fire the .45 ACP round, It loads from 30-round box magazines and can achieve an impressive fire rate of up to 1,200 rounds per minute, with a muzzle velocity of 280 m/s. The Vermin can be fitted with optical sights on its top rail, and can also mount attachments onto its muzzle. Although it does not have a side rail to attach laser pointers, it can fit a custom-designed flashlight in the notch located just above the end of the barrel.";
-                price = 5500;
+                price = 4500;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class SMG_03_black {
                 displayName = "ADR-97 5.7 mm (Black)";
                 description = "The ADR-97 is a personal defence weapon that uses a straight blowback operation and is chambered to fire the 5.7×28 mm round, It loads from 50-round plastic box magazines and can attain a rate of fire of roughly ~ 900 rounds per minute, with a muzzle velocity of 786.5 m/s. It does not support being mounted with optical sights or side rail accessories, though it has an integrated reflex sight and can have attachments fitted onto its muzzle.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class SMG_03_camo {
                 displayName = "ADR-97 5.7 mm (Camo)";
                 description = "The ADR-97 is a personal defence weapon that uses a straight blowback operation and is chambered to fire the 5.7×28 mm round, It loads from 50-round plastic box magazines and can attain a rate of fire of roughly ~ 900 rounds per minute, with a muzzle velocity of 786.5 m/s. It does not support being mounted with optical sights or side rail accessories, though it has an integrated reflex sight and can have attachments fitted onto its muzzle.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class SMG_03_khaki {
                 displayName = "ADR-97 5.7 mm (Khaki)";
                 description = "The ADR-97 is a personal defence weapon that uses a straight blowback operation and is chambered to fire the 5.7×28 mm round, It loads from 50-round plastic box magazines and can attain a rate of fire of roughly ~ 900 rounds per minute, with a muzzle velocity of 786.5 m/s. It does not support being mounted with optical sights or side rail accessories, though it has an integrated reflex sight and can have attachments fitted onto its muzzle.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class SMG_03_hex {
                 displayName = "ADR-97 5.7 mm (Hex)";
                 description = "The ADR-97 is a personal defence weapon that uses a straight blowback operation and is chambered to fire the 5.7×28 mm round, It loads from 50-round plastic box magazines and can attain a rate of fire of roughly ~ 900 rounds per minute, with a muzzle velocity of 786.5 m/s. It does not support being mounted with optical sights or side rail accessories, though it has an integrated reflex sight and can have attachments fitted onto its muzzle.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };			
 			class SMG_03C_black {
                 displayName = "ADR-97C 5.7 mm (Black)";
                 description = "The ADR-97C is a compact variant of the baseline ADR-97 SMG, The only differences with this variant is that it has a lower muzzle velocity of 715 m/s and is less accurate due to using a shorter barrel. It is otherwise identical to its parent counterpart in all other aspects.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class SMG_03C_camo {
                 displayName = "ADR-97C 5.7 mm (Camo)";
                 description = "The ADR-97C is a compact variant of the baseline ADR-97 SMG, The only differences with this variant is that it has a lower muzzle velocity of 715 m/s and is less accurate due to using a shorter barrel. It is otherwise identical to its parent counterpart in all other aspects.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class SMG_03C_khaki {
                 displayName = "ADR-97C 5.7 mm (Khaki)";
                 description = "The ADR-97C is a compact variant of the baseline ADR-97 SMG, The only differences with this variant is that it has a lower muzzle velocity of 715 m/s and is less accurate due to using a shorter barrel. It is otherwise identical to its parent counterpart in all other aspects.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class SMG_03C_hex {
                 displayName = "ADR-97C 5.7 mm (Hex)";
                 description = "The ADR-97C is a compact variant of the baseline ADR-97 SMG, The only differences with this variant is that it has a lower muzzle velocity of 715 m/s and is less accurate due to using a shorter barrel. It is otherwise identical to its parent counterpart in all other aspects.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };			
 			class SMG_03_TR_black {
                 displayName = "ADR-97 TR 5.7 mm (Black)";
                 description = "The ADR-97 TR is a modified variant of the baseline ADR-97 SMG, While it has virtually identical performance stats to its parent counterpart, this variant eschews the built-in reflex sight in favour of having top and side rails, This means that the ADR-97 TR can be fitted with optics and other accessories, though consequently it no longer has any iron sights that can be used to aim if it is not fitted with an optical sight.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class SMG_03_TR_camo {
                 displayName = "ADR-97 TR 5.7 mm (Camo)";
                 description = "The ADR-97 TR is a modified variant of the baseline ADR-97 SMG, While it has virtually identical performance stats to its parent counterpart, this variant eschews the built-in reflex sight in favour of having top and side rails, This means that the ADR-97 TR can be fitted with optics and other accessories, though consequently it no longer has any iron sights that can be used to aim if it is not fitted with an optical sight.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class SMG_03_TR_khaki {
                 displayName = "ADR-97 TR 5.7 mm (Khaki)";
                 description = "The ADR-97 TR is a modified variant of the baseline ADR-97 SMG, While it has virtually identical performance stats to its parent counterpart, this variant eschews the built-in reflex sight in favour of having top and side rails, This means that the ADR-97 TR can be fitted with optics and other accessories, though consequently it no longer has any iron sights that can be used to aim if it is not fitted with an optical sight.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class SMG_03_TR_hex {
                 displayName = "ADR-97 TR 5.7 mm (Hex)";
                 description = "The ADR-97 TR is a modified variant of the baseline ADR-97 SMG, While it has virtually identical performance stats to its parent counterpart, this variant eschews the built-in reflex sight in favour of having top and side rails, This means that the ADR-97 TR can be fitted with optics and other accessories, though consequently it no longer has any iron sights that can be used to aim if it is not fitted with an optical sight.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };			
 			class SMG_03C_TR_black {
                 displayName = "ADR-97C TR 5.7 mm (Black)";
                 description = "Just like the conventional ADR-97C model, this variant almost identical to it in terms of performance (shorter barrel, lower muzzle velocity, higher dispersion), But similar to the ADR-97 TR variant, this model removes the built-in reflex sight in favour of having top and side rails, While this means that it no longer has an iron sight for aiming, it is able to mount optical sights onto its top rail and be fitted with accessories like laser sights onto its side rail.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class SMG_03C_TR_camo {
                 displayName = "ADR-97C TR 5.7 mm (Camo)";
                 description = "Just like the conventional ADR-97C model, this variant almost identical to it in terms of performance (shorter barrel, lower muzzle velocity, higher dispersion), But similar to the ADR-97 TR variant, this model removes the built-in reflex sight in favour of having top and side rails, While this means that it no longer has an iron sight for aiming, it is able to mount optical sights onto its top rail and be fitted with accessories like laser sights onto its side rail.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class SMG_03C_TR_khaki {
                 displayName = "ADR-97C TR 5.7 mm (Khaki)";
                 description = "Just like the conventional ADR-97C model, this variant almost identical to it in terms of performance (shorter barrel, lower muzzle velocity, higher dispersion), But similar to the ADR-97 TR variant, this model removes the built-in reflex sight in favour of having top and side rails, While this means that it no longer has an iron sight for aiming, it is able to mount optical sights onto its top rail and be fitted with accessories like laser sights onto its side rail.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class SMG_03C_TR_hex {
                 displayName = "	ADR-97C TR 5.7 mm (Hex)";
                 description = "Just like the conventional ADR-97C model, this variant almost identical to it in terms of performance (shorter barrel, lower muzzle velocity, higher dispersion), But similar to the ADR-97 TR variant, this model removes the built-in reflex sight in favour of having top and side rails, While this means that it no longer has an iron sight for aiming, it is able to mount optical sights onto its top rail and be fitted with accessories like laser sights onto its side rail.";
-                price = 8000;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };			
@@ -231,7 +231,7 @@
             class arifle_SDAR_F {
                 displayName = "SDAR 5.56 mm";
                 description = "The SDAR is a selective-fire, bullpup assault rifle that is chambered to fire the 5.56×45 mm NATO round. It can be used on both land and underwater. It accepts all types of 5.56 mm NATO ammunition and can fire them while the weapon is submerged, but only the dual purpose magazines are capable of inflicting damage underwater. The supercavitating rounds have an effective range of approximately 30 metres. Beyond that distance, they will lose most of their velocity and become unable to hit any targets.";
-                price = 4500;
+                price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count
             };
