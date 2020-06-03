@@ -660,12 +660,19 @@
 				kindOf = Items;
             };
 			class B_UAV_01_F {
-                displayName = "AR-2 Darter";
+                displayName = "AR-2 Darter (Nato)";
                 description = "Man portable and compact, the Darter is miniature VTOL-capable quad-rotor drone that is small enough to be carried in a backpack.";
                 price = 5000;
                 stock = 20;
 				code = "if (isServer) then {createVehicleCrew (_this select 2)}";				
             };
+			class I_UAV_01_F {
+                displayName = "AR-2 Darter (Independent)";
+                description = "Man portable and compact, the Darter is miniature VTOL-capable quad-rotor drone that is small enough to be carried in a backpack.";
+                price = 5000;
+                stock = 20;
+				code = "if (isServer) then {createVehicleCrew (_this select 2)}";				
+            };			
 			class B_UAV_02_F {
                 displayName = "MQ-4A Greyhawk";
                 description = "The Greyhawk is a medium-altitude, long-endurance aerial drone that can serve a variety of roles from surveillance to ground attack, and even air-to-air combat. (Slingload: No) (Slingloadable: Yes)";
