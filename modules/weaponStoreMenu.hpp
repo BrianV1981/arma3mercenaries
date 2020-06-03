@@ -834,35 +834,35 @@
                 price = 17000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 			
-			};
+	    };
             class MMG_01_tan_F {
                 displayName = "Navid 9.3 mm (Tan)";
                 description = "The Navid is a gas operated medium machine gun that is chambered to fire the 9.3×64mm round, It feeds from 150-round belts stored in cloth pouches, and has a variable rate of fire depending on its current fire mode that can attain anywhere from just 705 rounds per minute up to an impressive 1,500 rounds per minute (on burst fire). It has a muzzle velocity of 785 m/s, and can fit accessories onto its top, side, and underbarrel rails. Unlike the Zafir LMG used by Mediterranean CSAT forces, the muzzle also supports being mounted with attachments.";
                 price = 17000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 			
-			};
+	    };
             class MMG_02_black_F {
                 displayName = "SPMG .338 (Black)";
                 description = "The SPMG is a gas operated, long-stroke piston operated medium machine gun that is chambered to fire the .338 Norma Magnum round, It feeds from 130-round belts stored in cloth pouches, and can achieve a fire rate of up to 500 rounds per minute, with a muzzle velocity of 807 m/s. The SPMG can be fitted with accessories on its top, side, and underbarrel rails, and can mount attachments onto its muzzle.";
                 price = 17000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 			
-			};
+	    };
             class MMG_02_camo_F {
                 displayName = "SPMG .338 (MTP)";
                 description = "The SPMG is a gas operated, long-stroke piston operated medium machine gun that is chambered to fire the .338 Norma Magnum round, It feeds from 130-round belts stored in cloth pouches, and can achieve a fire rate of up to 500 rounds per minute, with a muzzle velocity of 807 m/s. The SPMG can be fitted with accessories on its top, side, and underbarrel rails, and can mount attachments onto its muzzle.";
                 price = 17000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 			
-			};
+	    };
             class MMG_02_sand_F {
                 displayName = "SPMG .338 (Sand)";
                 description = "The SPMG is a gas operated, long-stroke piston operated medium machine gun that is chambered to fire the .338 Norma Magnum round, It feeds from 130-round belts stored in cloth pouches, and can achieve a fire rate of up to 500 rounds per minute, with a muzzle velocity of 807 m/s. The SPMG can be fitted with accessories on its top, side, and underbarrel rails, and can mount attachments onto its muzzle.";
                 price = 17000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 			
-			};			
+	    };			
 	};		
         class LMGweapons {
             displayName = "Light Machine Guns";
@@ -1717,61 +1717,61 @@
                 description = "MRD Close Range.";
                 price = 80;
                 stock = 10000;                
-			};
+	    };
 			class optic_MRD_black {
                 displayName = "MRD (Black)";
                 description = "MRD Close Range.";
                 price = 80;
                 stock = 10000;                
-			};
+	    };
 			class optic_Yorris {
                 displayName = "Yorris J2";
                 description = "Y-J2 Close Range.";
                 price = 80;
                 stock = 10000;                
-			};
+	    };
 			class optic_Holosight_blk_F {
                 displayName = "Mk17 Holosight (Black)";
                 description = "Mk17 Close Range.";
                 price = 100;
                 stock = 10000;                
-			};
+	    };
 			class optic_Holosight_smg_blk_F {
                 displayName = "Mk17 Holosight SMG (Black)";
                 description = "Mk17 Close Range.";
                 price = 100;
                 stock = 10000;                
-			};
+	    };
 			class optic_Aco {
                 displayName = "ACO (Red)";
                 description = "Advanced Collimator Optics Color: Red, Close Range.";
                 price = 150;
                 stock = 10000;                
-			};
+	    };
 			class optic_ACO_grn {
                 displayName = "ACO (Green)";
                 description = "Advanced Collimator Optics Color: Green, Close Range.";
                 price = 150;
                 stock = 10000;                
-			};
+	    };
 			class optic_Aco_smg {
                 displayName = "ACO SMG (Red";
                 description = "Advanced Collimator Optics Color: Red, Close Range.";
                 price = 150;
                 stock = 10000;                
-			};
+	    };
 			class optic_ACO_grn_smg {
                 displayName = "ACO SMG (Green)";
                 description = "Advanced Collimator Optics Color: Green, Close Range.";
                 price = 150;
                 stock = 10000;                
-			};
+	    };
 			class optic_Hamr {
                 displayName = "RCO";
                 description = "Rifle Combat Optics Magnification: 2x";
                 price = 200;
                 stock = 10000;                
-			};
+	    };
 			class optic_ERCO_blk_F {
                 displayName = "ERCO (Black)";
                 description = "Enhanced Rifle Combat Optics Magnification: 2x.";
@@ -1783,7 +1783,7 @@
                 description = "Advanced Rifle Combat Optics Magnification: 2x";
                 price = 300;
                 stock = 10000;                
-			};
+	    };
 			class optic_MRCO {
                 displayName = "MRCO";
                 description = "MRCO Magnification: 2x.";
@@ -1837,7 +1837,7 @@
                 description = "The LRPS (Long-Range Precision Scope Magnification: 6x-25x";
                 price = 1000;
                 stock = 10000;                
-			};
+	    };
 			class muzzle_snds_L {
                 displayName = "Sound Suppressor (9 mm)";
                 description = "Sound Suppressor (9 mm)";
@@ -1855,25 +1855,31 @@
                 description = "Sound Suppressor (5.56 mm)";
                 price = 300;
                 stock = 10000;                
-			};
+	    };
 			class muzzle_snds_570 {
                 displayName = "Sound Suppressor (5.7 mm)";
                 description = "Sound Suppressor (5.7 mm)";
                 price = 350;
                 stock = 10000;                
-			};
+	    };
 			class muzzle_snds_58_blk_F {
                 displayName = "Stealth Sound Suppressor (5.8 mm, Black)";
                 description = "Stealth Sound Suppressor (5.8 mm, Black)";
                 price = 400;
                 stock = 10000;                
-			};
+	    };
+			class muzzle_snds_65_TI_blk_F {
+                displayName = "	Stealth Sound Suppressor (6.5 mm, Black)";
+                description = "	Stealth Sound Suppressor (6.5 mm, Black)";
+                price = 450;
+                stock = 10000;                
+	    };		
 			class muzzle_snds_H {
                 displayName = "Sound Suppressor (6.5 mm)";
                 description = "Sound Suppressor (6.5 mm)";
                 price = 450;
                 stock = 10000;                
-			};
+	    };
 			class muzzle_snds_B {
                 displayName = "Sound Suppressor (7.62 mm)";
                 description = "Sound Suppressor (7.62 mm)";
