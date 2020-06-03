@@ -328,6 +328,20 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_2,'Land_Cargo_Tower_V1_F'] call grad_fortifications_fnc_addFort}";
             };
+			class Land_DeerStand_04_F {
+                displayName = "Deer Stand (v4)";
+                description = "Deer Stand (v4) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 2000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_DeerStand_04_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_GaurdTower_02_F {
+                displayName = "GaurdTower (small)";
+                description = "GaurdTower (small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 2000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_GaurdTower_02_F'] call grad_fortifications_fnc_addFort}";
+            };			
 			class Land_PillboxBunker_01_hex_F {
                 displayName = "Pillbox (Hexagonal)";
                 description = "Pillbox (Hexagonal) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -474,6 +488,20 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_2,'Flag_POWMIA_F'] call grad_fortifications_fnc_addFort}";
             };
+			class Land_Monument_02_F {
+                displayName = "War Monument";
+                description = "War Monument can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 200;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_Monument_02_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Tombstone_17_F {
+                displayName = "Tombstone (wooden, v6)";
+                description = "Tombstone (wooden, v6) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 200;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Monument_02_F'] call grad_fortifications_fnc_addFort}";
+            };			
 			class Land_SignM_WarningMilitaryArea_english_F {
                 displayName = "Sign (Military Area, English)";
                 description = "Sign (Military Area, English) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
