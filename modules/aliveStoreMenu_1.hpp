@@ -2,8 +2,8 @@
     class aliveStore_1 {
 
         //category:  
-		class other {
-            displayName = "ALiVE Combat Air Support";
+		class Nother {
+            displayName = "NATO Combat Support";
             kindOf = "Other";
 
 			class B_Heli_Light_01_F {
@@ -69,5 +69,53 @@
                 stock = 1000;
 		code = "if (player == (_this select 0)) then {execVM 'scripts\ARTY1.sqf'}";
             };
-	};			
+	};
+		//category:
+		class Iother {
+            displayName = "Independent Combat Support";
+            kindOf = "Other";
+
+			class I_Heli_light_03_unarmed_F {
+                displayName = "ALiVE AW159 Wildcat (Unarmed) Transport (60 Minutes)";
+                description = "Purchasing this will give you 60 minutes of access to a AW159 Wildcat (Unarmed) transport helicoptor, that can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
+                price = 25000;
+                stock = 1000;
+		code = "if (player == (_this select 0)) then {execVM 'scripts\TRANSPORT4.sqf'}";
+            };
+			class I_Heli_Transport_02_F {
+                displayName = "ALiVE W101 Merlin Transport (60 Minutes)";
+                description = "Purchasing this will give you 60 minutes of access to a W101 Merlin transport helicoptor, that can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
+                price = 25000;
+                stock = 1000;
+		code = "if (player == (_this select 0)) then {execVM 'scripts\TRANSPORT5.sqf'}";
+            };
+			class I_Heli_light_03_dynamicLoadout_F {
+                displayName = "AW159 Wildcat (CAS) (30 Minutes)";
+                description = "Purchasing this will give you 30 minutes of access to a AW159 Wildcat (CAS) combat support helicoptor, that can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
+                price = 25000;
+                stock = 1000;
+		code = "if (player == (_this select 0)) then {execVM 'scripts\CAS5.sqf'}";
+            };
+			class I_Plane_Fighter_03_dynamicLoadout_F {
+                displayName = "ALiVE L-159 ALCA Combat Support (30 Minutes)";
+                description = "This L-159 ALCA combat support jet can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
+                price = 50000;
+                stock = 1000;
+		code = "if (player == (_this select 0)) then {execVM 'scripts\CAS6.sqf'}";
+            };
+			class B_Plane_Fighter_01_F {
+                displayName = "ALiVE F/A-181 Black Wasp II Combat Support (30 Minutes)";
+                description = "This F/A-181 Black Wasp II combat support jet can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
+                price = 100000;
+                stock = 1000;
+		code = "if (player == (_this select 0)) then {execVM 'scripts\CAS7.sqf'}";
+            };
+			class I_Truck_02_MRL_F {
+                displayName = "ALiVE Zamak MRL (30 Minutes)";
+                description = "This Zamak MRL combat support artillery can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
+                price = 100000;
+                stock = 1000;
+		code = "if (player == (_this select 0)) then {execVM 'scripts\ARTY3.sqf'}";
+            };
+	};	
 };
