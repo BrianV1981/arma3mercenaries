@@ -4,7 +4,6 @@
         class units_1 {
             displayname = "Syndicate Mercenaries";
             kindOf = "other";
-            tracking = 0;
 
 			class I_C_Soldier_Para_1_F {
                 displayName = "Syndikat Soldier (Rifle)";
