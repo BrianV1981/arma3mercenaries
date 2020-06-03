@@ -597,8 +597,8 @@
 				code = [player,"scripts\mercenaries_1\I_G_Soldier_exp_F.sqf"] call BIS_fnc_execVM;
             };
 			class I_G_Soldier_GL_F {
-                displayName = "FIA Explosive Specialist";
-                description = "This is a FIA Explosive Specialist.";
+                displayName = "FIA Grenadier";
+                description = "This is a FIA Grenadier.";
                 price = 2000;
                 amount = 1;
                 stock = 9999;

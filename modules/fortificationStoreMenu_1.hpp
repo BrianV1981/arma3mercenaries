@@ -328,20 +328,6 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Cargo_Tower_V1_F'] call grad_fortifications_fnc_addFort}";
             };
-			class Land_DeerStand_04_F {
-                displayName = "Deer Stand (v4)";
-                description = "Deer Stand (v4) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 2000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_04_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_GaurdTower_02_F {
-                displayName = "GaurdTower (small)";
-                description = "GaurdTower (small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 2000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_GaurdTower_02_F'] call grad_fortifications_fnc_addFort}";
-            };			
 			class Land_PillboxBunker_01_hex_F {
                 displayName = "Pillbox (Hexagonal)";
                 description = "Pillbox (Hexagonal) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -390,6 +376,27 @@
                 price = 100000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Bunker_01_HQ_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_DeerStand_01_F {
+                displayName = "Deer Stand (v1)";
+                description = "Deer Stand (v1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 2000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_04_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_DeerStand_02_F {
+                displayName = "Deer Stand (v2)";
+                description = "Deer Stand (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 2000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_04_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_GuardTower_02_F {
+                displayName = "Guard Tower (small)";
+                description = "Guard Tower (small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 2000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_GaurdTower_02_F'] call grad_fortifications_fnc_addFort}";
             };
         };
 		class Dfortifications_1 {

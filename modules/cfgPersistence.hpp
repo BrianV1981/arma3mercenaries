@@ -14,7 +14,7 @@ class CfgGradPersistence {
     savePlayerPosition = 1;
     savePlayerMoney = 1;
 	
-    saveMarkers = 1;
+    saveMarkers = 2;
     saveTasks = 0;
     saveTriggers = 0;
     saveTeamAccounts = 1;
