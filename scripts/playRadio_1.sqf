@@ -27,5 +27,3 @@ waitUntil{time >= _waitTime};
 radio_1 remoteExec ["removeAllActions"];
 
 radioH_1 = [] execVM "scripts\playRadio_1.sqf";
-
-
