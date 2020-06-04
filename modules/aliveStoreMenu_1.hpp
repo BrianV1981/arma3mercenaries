@@ -3,7 +3,7 @@
 
         //category:  
 		class Nother {
-            displayName = "NATO Combat Support";
+            displayName = "Combat Support (NATO)";
             kindOf = "Other";
 
 			class B_Heli_Light_01_F {
@@ -72,7 +72,7 @@
 	};
 		//category:
 		class Iother {
-            displayName = "Independent Combat Support";
+            displayName = "Combat Support (INDEPENDENT)";
             kindOf = "Other";
 
 			class I_Heli_light_03_unarmed_F {
