@@ -18,7 +18,7 @@ radio_3 remoteExec ["removeAllActions"];
 	radio_3 setDir _dir;
 	radioH_3 remoteExec ["terminate"];
 	
-	[radio_3, ["Play Radio", {radioH_3 = [] execVM "scripts\playradio_3.sqf"}, [], 6, false, true, "", "_target distance _this < 10"]] remoteExec ["addAction"];
+	[radio_3, ["Play Radio", {radioH_3 = [] execVM "scripts\playRadio_3.sqf"}, [], 6, false, true, "", "_target distance _this < 10"]] remoteExec ["addAction"];
 }, [], 6, false, true, "", "_target distance _this < 10"]] remoteExec ["addAction"];
 
 
@@ -26,6 +26,4 @@ _waitTime = time + _songLength;
 waitUntil{time >= _waitTime};
 radio_3 remoteExec ["removeAllActions"];
 
-radioH_3 = [] execVM "scripts\playradio_3.sqf";
-
-
+radioH_3 = [] execVM "scripts\playRadio_3.sqf";
