@@ -2,7 +2,7 @@
     class fortificationStore_2 {
 
         //category:
-		class fortifications_1 {
+		class fortifications {
             displayName = "Fortifications";
             kindOf = "other";
 
@@ -299,72 +299,128 @@
                 price = 2000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_2,'Land_HBarrierTower_F'] call grad_fortifications_fnc_addFort}";
-            };		
-			class Land_PillboxBunker_01_hex_F {
-                displayName = "Pillbox (Hexagonal)";
-                description = "Pillbox (Hexagonal) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Land_PillboxBunker_01_hex_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_PillboxBunker_01_rectangle_F {
-                displayName = "Pillbox (Rectangular)";
-                description = "Pillbox (Rectangular) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Land_PillboxBunker_01_rectangle_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_PillboxBunker_01_big_F {
-                displayName = "Pillbox (Big)";
-                description = "Pillbox (Big) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Land_PillboxBunker_01_big_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Land_DeerStand_01_F {
                 displayName = "Deer Stand (v1)";
                 description = "Deer Stand (v1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 2000;
                 stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_04_F'] call grad_fortifications_fnc_addFort}";
+				code = "if (player == (_this select 0)) then {[container_2,'Land_DeerStand_01_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Land_DeerStand_02_F {
                 displayName = "Deer Stand (v2)";
                 description = "Deer Stand (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 2000;
                 stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_04_F'] call grad_fortifications_fnc_addFort}";
+				code = "if (player == (_this select 0)) then {[container_2,'Land_DeerStand_02_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Land_GuardTower_02_F {
                 displayName = "Guard Tower (small)";
                 description = "Guard Tower (small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 2000;
                 stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_GaurdTower_02_F'] call grad_fortifications_fnc_addFort}";
+				code = "if (player == (_this select 0)) then {[container_2,'Land_GuardTower_02_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Cargo_House_V1_F {
+                displayName = "Military Cargo House (Green)";
+                description = "Military Cargo House (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 10000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_Cargo_House_V1_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Cargo_Patrol_V1_F {
+                displayName = "Military Cargo Post (Green)";
+                description = "Military Cargo Post (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 15000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_Cargo_Patrol_V1_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Cargo_HQ_V1_F {
+                displayName = "Military Cargo HQ (Green)";
+                description = "Military Cargo HQ (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 75000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_Cargo_HQ_V1_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Cargo_Tower_V1_F {
+                displayName = "Military Cargo Tower (Green)";
+                description = "Military Cargo Tower (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 100000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_Cargo_Tower_V1_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_PillboxBunker_01_hex_F {
+                displayName = "Pillbox (Hexagonal)";
+                description = "Pillbox (Hexagonal) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_PillboxBunker_01_hex_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_PillboxBunker_01_rectangle_F {
+                displayName = "Pillbox (Rectangular)";
+                description = "Pillbox (Rectangular) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_PillboxBunker_01_rectangle_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_PillboxBunker_01_big_F {
+                displayName = "Pillbox (Big)";
+                description = "Pillbox (Big) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 100000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_PillboxBunker_01_big_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Bunker_01_small_F {
+                displayName = "Land Bunker (Small)";
+                description = "Land Bunker (Small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_Bunker_01_small_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Bunker_01_big_F {
+                displayName = "Land Bunker (Big)";
+                description = "Land Bunker (Big) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 100000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_Bunker_01_big_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Bunker_01_tall_F {
+                displayName = "Land Bunker (Tall)";
+                description = "Land Bunker (Tall) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 100000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_Bunker_01_tall_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Bunker_01_HQ_F {
+                displayName = "Land Bunker (HQ)";
+                description = "Land Bunker (HQ) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 100000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_Bunker_01_HQ_F'] call grad_fortifications_fnc_addFort}";
             };
         };
-		class Dfortifications_1 {
+		class Dfortifications {
             displayName = "Lights, Tents, Other";
             kindOf = "other";
 
 			class Land_Camping_Light_F {
                 displayName = "	Camping Lantern";
                 description = "	Camping Lantern can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 0;
+                price = 20;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_2,'Land_Camping_Light_F'] call grad_fortifications_fnc_addFort}";
             };			
 			class Land_PortableLight_single_F {
                 displayName = "Portable Lights (Single)";
                 description = "Portable Lights (Single) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 0;
+                price = 50;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {code = [container_2,'Land_PortableLight_single_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Land_PortableLight_double_F {
                 displayName = "Portable Lights (Double)";
                 description = "Portable Lights (Double) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 0;
+                price = 75;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_2,'Land_PortableLight_double_F'] call grad_fortifications_fnc_addFort}";
             };
@@ -451,7 +507,7 @@
                 description = "Tombstone (wooden, v6) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 200;
                 stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_Monument_02_F'] call grad_fortifications_fnc_addFort}";
+				code = "if (player == (_this select 0)) then {[container_2,'Land_Monument_02_F'] call grad_fortifications_fnc_addFort}";
             };			
 			class Land_SignM_WarningMilitaryArea_english_F {
                 displayName = "Sign (Military Area, English)";
@@ -475,7 +531,7 @@
 				code = "if (player == (_this select 0)) then {[container_2,'Land_PierLadder_F'] call grad_fortifications_fnc_addFort}";
             };			
         };
-	    		class Cfortifications_1 {
+	    		class Cfortifications {
             displayName = "Cargo and Logistical Supplies";
             kindOf = "other";
 			
@@ -641,8 +697,8 @@
 				code = "if (player == (_this select 0)) then {[container_2,'Box_Wps_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Land_PaperBox_01_small_closed_brown_food_F {
-                displayName = "[IDAP] Cardboard Box (Empty)";
-                description = "[IDAP] cardboard box (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                displayName = "[IDAP] Cardboard Food Box (Empty)";
+                description = "[IDAP] cardboard food box (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 10;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_2,'Land_PaperBox_01_small_closed_brown_food_F'] call grad_fortifications_fnc_addFort}";
@@ -739,7 +795,7 @@
 				code = "if (player == (_this select 0)) then {[container_2,'Land_Pod_Heli_Transport_04_covered_F'] call grad_fortifications_fnc_addFort}";
             };
 	};
-	    	class Sweapons_1 {
+	    	class Sweapons {
             displayName = "Static Weapons";
             kindOf = "other";
 
@@ -779,7 +835,7 @@
 				code = "if (player == (_this select 0)) then {[container_2,'B_Mortar_01_F'] call grad_fortifications_fnc_addFort}";
             };
         };	
-		class Mammo_1 {
+		class Mammo {
             displayName = "Static Weapon Ammunition";
             kindOf = "Items";
 
