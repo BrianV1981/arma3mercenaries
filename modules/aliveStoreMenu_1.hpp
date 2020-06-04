@@ -4,8 +4,15 @@
         //category:  
 		class Nother {
             displayName = "Combat Support (NATO)";
-            kindOf = "Other";
-
+            kindOf = "Other"
+			
+			class B_Truck_01_transport_F {
+                displayName = "ALiVE HEMTT Transport (60 Minutes)";
+                description = "This HEMTT Transport can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
+                price = 25000;
+                stock = 1000;
+		code = "if (player == (_this select 0)) then {execVM 'scripts\ARTY1.sqf'}";
+            };
 			class B_Heli_Light_01_F {
                 displayName = "ALiVE MH-9 Hummingbird Transport (60 Minutes)";
                 description = "Purchasing this will give you 60 minutes of access to a MH-9 Hummingbird transport helicoptor, that can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
@@ -74,7 +81,14 @@
 		class Iother {
             displayName = "Combat Support (INDEPENDENT)";
             kindOf = "Other";
-
+			
+			class I_Truck_02_transport_F {
+                displayName = "ALiVE Zamak Transport (60 Minutes)";
+                description = "This Zamak Transport can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
+                price = 25000;
+                stock = 1000;
+		code = "if (player == (_this select 0)) then {execVM 'scripts\ARTY1.sqf'}";
+            };
 			class I_Heli_light_03_unarmed_F {
                 displayName = "ALiVE AW159 Wildcat (Unarmed) Transport (60 Minutes)";
                 description = "Purchasing this will give you 60 minutes of access to a AW159 Wildcat (Unarmed) transport helicoptor, that can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
