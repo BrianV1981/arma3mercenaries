@@ -2,7 +2,7 @@
     class fortificationStore_1 {
 
         //category:
-		class fortifications_1 {
+		class fortifications {
             displayName = "Fortifications";
             kindOf = "other";
 
@@ -300,6 +300,27 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_HBarrierTower_F'] call grad_fortifications_fnc_addFort}";
             };
+			class Land_DeerStand_01_F {
+                displayName = "Deer Stand (v1)";
+                description = "Deer Stand (v1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 2000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_01_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_DeerStand_02_F {
+                displayName = "Deer Stand (v2)";
+                description = "Deer Stand (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 2000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_02_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_GuardTower_02_F {
+                displayName = "Guard Tower (small)";
+                description = "Guard Tower (small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 2000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_GuardTower_02_F'] call grad_fortifications_fnc_addFort}";
+            };
 			class Land_Cargo_House_V1_F {
                 displayName = "Military Cargo House (Green)";
                 description = "Military Cargo House (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -377,29 +398,8 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Bunker_01_HQ_F'] call grad_fortifications_fnc_addFort}";
             };
-			class Land_DeerStand_01_F {
-                displayName = "Deer Stand (v1)";
-                description = "Deer Stand (v1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 2000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_04_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_DeerStand_02_F {
-                displayName = "Deer Stand (v2)";
-                description = "Deer Stand (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 2000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_04_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_GuardTower_02_F {
-                displayName = "Guard Tower (small)";
-                description = "Guard Tower (small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 2000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_GaurdTower_02_F'] call grad_fortifications_fnc_addFort}";
-            };
         };
-		class Dfortifications_1 {
+		class Dfortifications {
             displayName = "Lights, Tents, Other";
             kindOf = "other";
 
@@ -531,7 +531,7 @@
 				code = "if (player == (_this select 0)) then {[container_1,'Land_PierLadder_F'] call grad_fortifications_fnc_addFort}";
             };			
         };
-	    		class Cfortifications_1 {
+	    		class Cfortifications {
             displayName = "Cargo and Logistical Supplies";
             kindOf = "other";
 			
@@ -795,7 +795,7 @@
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_covered_F'] call grad_fortifications_fnc_addFort}";
             };
 	};
-	    	class Sweapons_1 {
+	    	class Sweapons {
             displayName = "Static Weapons";
             kindOf = "other";
 
@@ -835,7 +835,7 @@
 				code = "if (player == (_this select 0)) then {[container_1,'B_Mortar_01_F'] call grad_fortifications_fnc_addFort}";
             };
         };	
-		class Mammo_1 {
+		class Mammo {
             displayName = "Static Weapon Ammunition";
             kindOf = "Items";
 
