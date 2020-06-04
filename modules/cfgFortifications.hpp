@@ -8,7 +8,7 @@ class CfgGradFortifications {
 	vehicleInventorySizeFactor = 1; //Number - Size factor for vehicle inventories.
 	canDemolishDefault = 1; //(1/0) - Can anyone demolish fortifications by default?
     canPackUpDefault = 1; // (1/0) - Can fortification owners pack up fortifications by default?
-    canStoreInLandVehicles = 1 // (1/0) - Can fortifications be stored in land vehicles?
+    canStoreInLandVehicles = 1; // (1/0) - Can fortifications be stored in land vehicles?
     canStoreInShips = 1; //(1/0) - Can fortifications be stored in ships?
     canStoreInHelicopters = 1; //(1/0) - Can fortifications be stored in helicopters?
     canStoreInPlanes = 1; //(1/0) - Can fortifications be stored in planes?
