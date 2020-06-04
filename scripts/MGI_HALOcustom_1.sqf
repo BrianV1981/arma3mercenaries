@@ -44,43 +44,35 @@ MGI_compHALO = compileFinal "
   ["Jump","onMapSingleClick", {
     0 cutText ["","black",0.01,true];
     params ["","_pos","","","_jump_alt","_jump_safety","_MGI_forSquad"];
-    _caller = player;
-    _MGI_units =  (units _caller) select {local _x && alive _x &&  _x distanceSqr _caller < 1 && isnull objectParent _x};
-    {
-      [_x,_forEachIndex,_pos,_jump_alt,_jump_safety] spawn {
+      [player,_forEachIndex,_pos,_jump_alt,_jump_safety] spawn {
         params ["_unit","_index","_pos","_jump_alt","_jump_safety"];
         private ["_bpk","_bpktype","_whs","_para"];
-        if (isPlayer _unit) then {
+ 
          _unit call MGI_compHALO;
-        };
+
         uisleep 2;
         _unit allowDamage false;
-        _unit setPos [(_pos select 0)-60 + random 30,(_pos select 1) -60 + random 30, (_jump_alt max 200) + (12 *_index)];
+        _unit setPos [(_pos select 0),(_pos select 1), (_jump_alt max 200)];
         waitUntil {(getpos _unit select 2) > _jump_safety -50};
         uisleep 0.2;
-        if (isPlayer _unit) then {
+
           _bpk = _unit getVariable "bpk";
           _bpktype = typeOf (_unit getVariable "bpk");
           _whs = objectParent _bpk;
           _unit addBackpackGlobal "B_parachute";
-        };
+ 
         0 cutText ["","black in",1,true];
-        waitUntil {(getpos _unit select 2) < ([_jump_safety max 90,_jump_safety] select (isPlayer _unit)) +20 or  (!isnull objectParent player) };
-        if (!isplayer _unit) then {
-          uisleep 0.8;
-          _chute = createVehicle ["Steerable_Parachute_F", getpos _unit, [], 0, "can_collide"];
-          _unit moveInDriver _chute;
-        } else {
+        waitUntil {(getpos _unit select 2) < _jump_safety or  !isnull objectParent player};
+
           _unit allowDamage true;
           if (!isTouchingGround _unit) then {
           _unit action ["OpenParachute", _unit];
-          }
-        };
+         };
         _para = objectParent _unit;
         waitUntil {!isnull _para};
         _para allowDamage false;
         waitUntil {sleep 0.5; (isTouchingGround _unit && isNull _para) or surfaceIsWater (getpos _unit) or !alive _unit};
-        if (isPlayer _unit) then {
+
           _unit setVariable ["bpk",nil];
           waitUntil {isNull _para};
           deleteVehicle _para;
@@ -91,12 +83,8 @@ MGI_compHALO = compileFinal "
             sleep 2;
             deleteVehicle _whs;
           };
-        } else {
-          uisleep 2;
-          _unit allowdamage true;
-        };
       };
-    } forEach _MGI_units;
+
     openmap [false,false];
     ["Jump","onMapSingleClick"] call BIS_fnc_removeStackedEventHandler;
     false
