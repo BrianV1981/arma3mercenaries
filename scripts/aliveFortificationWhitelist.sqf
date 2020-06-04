@@ -20,5 +20,5 @@ ALiVE_SYS_LOGISTICS_CARRYABLE = [["Man"],[
 "Land_Cargo_Tower_V1_F",
 "Land_Cargo_HQ_V1_F",
 "Land_Cargo_Patrol_V1_F",
-"Land_Cargo_House_V1_F",
+"Land_Cargo_House_V1_F"
 ],["House"]];
