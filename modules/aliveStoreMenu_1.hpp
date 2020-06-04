@@ -106,7 +106,7 @@
 			class I_Heli_Transport_02_F {
                 displayName = "ALiVE W101 Merlin Transport (60 Minutes)";
                 description = "Purchasing this will give you 60 minutes of access to a W101 Merlin transport helicoptor, that can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
-                price = 25000;
+                price = 70000;
                 stock = 100;
 		code = "if (player == (_this select 0)) then {execVM 'scripts\TRANSPORT5.sqf'}";
             };
