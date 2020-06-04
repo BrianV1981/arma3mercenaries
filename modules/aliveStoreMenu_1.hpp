@@ -11,7 +11,7 @@
                 description = "This HEMTT Transport can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
                 price = 25000;
                 stock = 100;
-		code = "if (player == (_this select 0)) then {execVM 'scripts\TRANPORT6.sqf'}";
+		code = "if (player == (_this select 0)) then {execVM 'scripts\TRANSPORT6.sqf'}";
             };
 			class B_APC_Tracked_01_rcws_F {
                 displayName = "ALiVE Namer Transport (60 Minutes)";
@@ -94,7 +94,7 @@
                 description = "This Zamak Transport can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
                 price = 25000;
                 stock = 100;
-		code = "if (player == (_this select 0)) then {execVM 'scripts\ARTY1.sqf'}";
+		code = "if (player == (_this select 0)) then {execVM 'scripts\TRANSPORT7.sqf'}";
             };
 			class I_Heli_light_03_unarmed_F {
                 displayName = "ALiVE AW159 Wildcat (Unarmed) Transport (60 Minutes)";
