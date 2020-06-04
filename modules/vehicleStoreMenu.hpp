@@ -32,6 +32,12 @@
                 price = 6000;
                 stock = 100;
             };
+			class C_SUV_01_F {
+                displayName = "SUV";
+                description = "SUV. (Slingload: No) (Slingloadable: Yes)";
+                price = 8000;
+                stock = 100;        
+            };
 			class B_G_Offroad_01_F {
                 displayName = "Offroad";
                 description = "Offroad. (Slingload: No) (Slingloadable: Yes)";
@@ -39,7 +45,7 @@
                 stock = 100;        
             };
 			class B_G_Van_02_transport_F {
-                displayName = "Van Transport";
+                displayName = "Van (Transport)";
                 description = "	The standard van can be used for a huge variety of practical purposes. This particular model features a long load length and excellent roof height, allowing for the transport of passengers, cargo, or even some smaller vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 10000;
                 stock = 100;
@@ -52,10 +58,16 @@
             };
 			class C_Van_01_transport_F {
                 displayName = "Truck (Flatbed)";
-                description = "	The standard van can be used for a huge variety of practical purposes. This particular model features a long load length and excellent roof height, allowing for the transport of passengers, cargo, or even some smaller vehicles. (Slingload: No) (Slingloadable: Yes)";
+                description = "The Truck is a multipurpose, medium-sized, off-road capable van designed for a variety of roles ranging from transporting freight and/or passengers, to refuelling military and civilian vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 13000;
                 stock = 100;
-            };		
+            };
+			class C_Van_01_box_F {
+                displayName = "Truck (Box)";
+                description = "The Truck is a multipurpose, medium-sized, off-road capable van designed for a variety of roles ranging from transporting freight and/or passengers, to refuelling military and civilian vehicles. (Slingload: No) (Slingloadable: Yes)";
+                price = 13000;
+                stock = 100;
+            };	
 		};
 		class Svehicles {
             kindOf = "Vehicles";
@@ -66,6 +78,12 @@
 			class B_G_Offroad_01_repair_F {
                 displayName = "Offroad (Repair)"; 
                 description = "Offroad (Repair). (Slingload: No) (Slingloadable: Yes)";
+                price = 50000;
+                stock = 9999;
+            };
+			class C_Van_01_fuel_F {
+                displayName = "Truck (Fuel)"; 
+                description = "The Truck is a multipurpose, medium-sized, off-road capable van designed for a variety of roles ranging from transporting freight and/or passengers, to refuelling military and civilian vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 50000;
                 stock = 9999;
             };
