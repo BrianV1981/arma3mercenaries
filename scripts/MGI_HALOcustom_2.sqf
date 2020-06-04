@@ -45,6 +45,14 @@ MGI_compHALO = compileFinal "
     0 cutText ["","black",0.01,true];
     params ["","_pos","","","_jump_alt","_jump_safety","_MGI_forSquad"];
     _caller = player;
+    _MGI_units =  (units _caller) select {local _x && alive _x &&  _x distanceSqr _caller < 100000 && isnull objectParent _x};
+    {
+      [_x,_forEachIndex,_pos,_jump_alt,_jump_safety] spawn {
+        params ["_unit","_index","_pos","_jump_alt","_jump_safety"];
+        private ["_bpk","_bpktype","_whs","_para"];
+        if (isPlayer _unit) then {
+         _unit call MGI_compHALO;
+        };
         uisleep 2;
         _unit allowDamage false;
         _unit setPos [(_pos select 0)-60 + random 30,(_pos select 1) -60 + random 30, (_jump_alt max 200) + (12 *_index)];
