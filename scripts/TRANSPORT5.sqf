@@ -1,1 +1,1 @@
-["TRANSPORT",[[26708,24493,0],60,"I_Heli_Transport_02_F","AW101 Merlin","","(group this) setVariable ['Vcm_Disable',true]"]] Call ALiVE_fnc_combatSupportAdd;sleep 3600;["GUER","TRANSPORT","AW101 Merlin"] call ALiVE_fnc_combatSupportRemove;
+["TRANSPORT",[[26708,24493,1],60,"I_Heli_Transport_02_F","AW101 Merlin","","(group this) setVariable ['Vcm_Disable',true]"]] Call ALiVE_fnc_combatSupportAdd;sleep 3600;["GUER","TRANSPORT","AW101 Merlin"] call ALiVE_fnc_combatSupportRemove;
