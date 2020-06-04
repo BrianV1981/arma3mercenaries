@@ -1,7 +1,7 @@
 [
     "ARTY",                         // CS type
     [
-        [26563, 24611, 0],    // Position
+        [26528, 24551, 0],    // Position
         "I_Truck_02_MRL_F",          // Classname
         "Zamak MRL",                   // Callsign
         3,                          // Number of units/vehicles to spawn
