@@ -91,12 +91,13 @@ class CfgRespawnInventory
 		
 		};
 		magazines[] = {
+		
 		};
 		items[] = {
-		"ItemMap"
+		
 		};
 		linkedItems[] = {
-		
+		"ItemMap"
 		};
 		uniformClass = "";
 		backpack = "";
