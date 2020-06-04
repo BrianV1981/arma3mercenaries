@@ -103,9 +103,9 @@
                 stock = 1000;
 		code = "if (player == (_this select 0)) then {execVM 'scripts\CAS6.sqf'}";
             };
-			class B_Plane_Fighter_01_F {
-                displayName = "ALiVE F/A-181 Black Wasp II Combat Support (30 Minutes)";
-                description = "This F/A-181 Black Wasp II combat support jet can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
+			class I_Plane_Fighter_04_F {
+                displayName = "ALiVE JAS 39 Gripen Combat Support (30 Minutes)";
+                description = "This JAS 39 Gripen combat support jet can be utilized from your Ace Self Interact Menu > ALiVE > ALiVE Combat Support.";
                 price = 100000;
                 stock = 1000;
 		code = "if (player == (_this select 0)) then {execVM 'scripts\CAS7.sqf'}";
