@@ -214,28 +214,46 @@
                 price = 190000;
                 stock = 50;
             };
+			class I_MRAP_03_F {
+                displayName = "Strider";
+                description = "The Strider is a four-wheel drive armed reconnaissance vehicle. Though its primary mission is observation, it can act as both a light troop transport and scout vehicle as well. (Slingload: No) (Slingloadable: Yes)";
+                price = 190000;
+                stock = 50;
+            };
             class B_MRAP_01_hmg_F {
                 displayName = "Hunter (HMG)";
                 description = "The Hunter is a four-wheel drive, all-terrain, MRAP-type vehicle. Primarily intended for use in counter-insurgency operations, it is multi-role and can act as both a troop carrier and supply vehicle if needed. (Slingload: No) (Slingloadable: Yes)";
-                price = 210000;
+                price = 225000;
                 stock = 50;
             };
 			class O_MRAP_02_hmg_F {
                 displayName = "Ifrit (HMG)";
                 description = "The Ifrit is a four-wheel drive MRAP-type vehicle that can fulfil many roles ranging from serving as a V.I.P. transport, escort vehicle, light troop transport, to reconnaissance. All in a well-protected and compact package. (Slingload: No) (Slingloadable: Yes)";
-                price = 210000;
+                price = 225000;
+                stock = 50;
+            };
+			class I_MRAP_03_hmg_F {
+                displayName = "Strider (HMG)";
+                description = "The Strider is a four-wheel drive armed reconnaissance vehicle. Though its primary mission is observation, it can act as both a light troop transport and scout vehicle as well. (Slingload: No) (Slingloadable: Yes)";
+                price = 225000;
                 stock = 50;
             };
 			class B_MRAP_01_gmg_F {
                 displayName = "Hunter (GMG)";
                 description = "The Hunter is a four-wheel drive, all-terrain, MRAP-type vehicle. Primarily intended for use in counter-insurgency operations, it is multi-role and can act as both a troop carrier and supply vehicle if needed. (Slingload: No) (Slingloadable: Yes)";
-                price = 210000;
+                price = 250000;
                 stock = 50;
             };
 			class O_MRAP_02_gmg_F {
                 displayName = "Ifrit (GMG)";
                 description = "The Ifrit is a four-wheel drive MRAP-type vehicle that can fulfil many roles ranging from serving as a V.I.P. transport, escort vehicle, light troop transport, to reconnaissance. All in a well-protected and compact package. (Slingload: No) (Slingloadable: Yes)";
-                price = 210000;
+                price = 250000;
+                stock = 50;
+            };
+			class I_MRAP_03_gmg_F {
+                displayName = "Strider (GMG)";
+                description = "The Strider is a four-wheel drive armed reconnaissance vehicle. Though its primary mission is observation, it can act as both a light troop transport and scout vehicle as well. (Slingload: No) (Slingloadable: Yes)";
+                price = 250000;
                 stock = 50;
             };
 		};
@@ -310,7 +328,13 @@
                 description = "The Panther is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat.";
                 price = 440000;
                 stock = 20;
-            };						
+            };
+			class I_APC_tracked_03_cannon_F {
+                displayName = "FV-720 Mora";
+                description = "The FV-720 Mora is an armoured vehicle used to transport infantry squads into combat under protection, and to provide fire support once troops have disembarked. It is fitted with a 30 mm cannon that is capable of firing both high-explosive and armour-piercing rounds at ranges of up to 1,500 metres against light-medium armoured vehicles.";
+                price = 440000;
+                stock = 20;
+            };
 			class B_APC_Tracked_01_CRV_F {
                 displayName = "CRV-6e Bobcat (Sand)";
                 description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
@@ -445,7 +469,44 @@
                 price = 700000;
                 stock = 20;
             };			
-	};		
+	};
+        class AAvehicles {
+            kindOf = "Vehicles";
+            displayName = "Artillery Vehicles";
+            tracking = 0;
+            //items of this category:
+			
+			class I_Truck_02_MRL_F {
+                displayName = "Zamak MLR";
+                description = "The Zamak MLR is simply a modified variant of the baseline Zamak truck that has had its rear flatbed configured to house a rocket pod and a (non-functional) winch crane. It is armed with a 230 mm rocket pod which is always pre-loaded with 12 long-range artillery rockets, and are fitted with high-explosive (HE) warheads.";
+                price = 400000;
+                stock = 20;
+            };
+			class B_MBT_01_mlrs_F {
+                displayName = "M5 Sandstorm MLRS (Sand)";
+                description = "Sharing the same chassis as its MBT parent, the Sandstorm is essentially a mobile rocket battery on treads. It can accurately deliver high-explosive rockets with a dispersion of less than 100 m on targets more than 11 km away in a single salvo.";
+                price = 700000;
+                stock = 20;
+            };
+			class B_T_MBT_01_mlrs_F {
+                displayName = "M5 Sandstorm MLRS (Military Green)";
+                description = "Sharing the same chassis as its MBT parent, the Sandstorm is essentially a mobile rocket battery on treads. It can accurately deliver high-explosive rockets with a dispersion of less than 100 m on targets more than 11 km away in a single salvo.";
+                price = 700000;
+                stock = 20;
+            };			
+			class B_MBT_01_arty_F {
+                displayName = "M4 Scorcher (Sand)";
+                description = "Fitted with a 155 mm howitzer cannon as its primary weapon, the Scorcher is a powerful gun-based fire support vehicle that can launch a mixture of high-explosive, smoke, cluster, and even precision guided shells on targets at extreme distances.";
+                price = 700000;
+                stock = 20;
+            };
+			class B_T_MBT_01_arty_F {
+                displayName = "M4 Scorcher (Military Green)";
+                description = "Fitted with a 155 mm howitzer cannon as its primary weapon, the Scorcher is a powerful gun-based fire support vehicle that can launch a mixture of high-explosive, smoke, cluster, and even precision guided shells on targets at extreme distances.";
+                price = 700000;
+                stock = 20;
+            };			
+	};	
         class Avehicles {
             kindOf = "Vehicles";
             displayName = "Fixed-Wing and VTOL Aircraft";
