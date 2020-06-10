@@ -5,7 +5,7 @@
 		class fortifications {
             displayName = "Fortifications";
             kindOf = "other";
-
+			
 			class ACE_Sandbag_empty {
                 displayName = "ACE Sandbag (empty)";
                 description = "The ACE Sandbag (empty) can be utilize with the ACE self interaction menu.";

@@ -326,6 +326,20 @@
                 stock = 10000;
 				kindOf = wearables;
             };
+			class B_Respawn_TentDome_F {
+                displayName = "Respawn Camp (Dome Tent)";
+                description = "Respawn Camp (Dome Tent)";
+                price = 100;
+                stock = 10000;
+				kindOf = wearables;
+            };
+			class B_Respawn_Sleeping_bag_blue_F {
+                displayName = "Respawn Camp (Blue Sleeping Bag)";
+                description = "Respawn Camp (Blue Sleeping Bag)";
+                price = 100;
+                stock = 10000;
+				kindOf = wearables;
+            };
 			class ACE_Chemlight_HiOrange {
                 displayName = "ACE Chemlight (Hi Orange)";
                 description = "ACE Chemlight (Hi Orange)";
@@ -350,20 +364,6 @@
                 price = 0;
                 stock = 10000;
             };
-			class B_Respawn_TentDome_F {
-                displayName = "Respawn Camp (Dome Tent)";
-                description = "Respawn Camp (Dome Tent)";
-                price = 100;
-                stock = 10000;
-				kindOf = wearables;
-            };
-			class B_Respawn_Sleeping_bag_blue_F {
-                displayName = "Respawn Camp (Blue Sleeping Bag)";
-                description = "Respawn Camp (Blue Sleeping Bag)";
-                price = 100;
-                stock = 10000;
-				kindOf = wearables;
-            };	
 			class Laserbatteries {
                 displayName = "Laser Designator Batteries";
                 description = "Batteries for a laser designator. (Does not fit into NVG, UAV or Drone)";

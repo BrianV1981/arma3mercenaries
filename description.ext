@@ -18,13 +18,9 @@ allowFunctionsLog = 1;
 ExtendedInfoType=0;
 corpseManagerMode = 1;
 corpseLimit = 50;
-corpseRemovalMinTime = 600;
-corpseRemovalMaxTime = 1200;
-wreckManagerMode = 1;
-wreckLimit = 50;
-wreckRemovalMinTime = 300;
-wreckRemovalMaxTime = 600;
-minPlayerDistance = 100;
+corpseRemovalMinTime = 1800;
+corpseRemovalMaxTime = 3600;
+wreckManagerMode = 0;
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 

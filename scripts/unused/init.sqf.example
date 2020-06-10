@@ -1,0 +1,8 @@
+/////////////////////////////////////////////////https://github.com/acemod/ACE3/issues/3918///////////////////////////////
+
+//_fnc_makeCarrayble = { 
+//    params ["_object"]; 
+//    diag_log text format ["Making %1 [%2] Carrable", _object, typeOf _object]; 
+//    [_object, true, [0,0.5,1], 0] call ace_dragging_fnc_setCarryable; 
+//};
+//["	Land_LampStreet_small_F", "init", _fnc_makeCarrayble, true, [], true] call CBA_fnc_addClassEventHandler; 

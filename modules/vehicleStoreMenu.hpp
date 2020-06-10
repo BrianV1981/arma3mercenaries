@@ -2,6 +2,49 @@
     class vehicleStore {
         //category:  
     
+	class Vitems {
+            kindOf = "Items";
+            displayName = "Keys and Lockpicks";
+            tracking = 0;
+            //items of this category:
+
+			class ACE_key_master {
+                displayName = "Vehicle Key: Master"; 
+                description = "Vehicle Key: Master";
+                price = 0;
+                stock = 9999;
+            };
+			class ACE_key_west {
+                displayName = "Vehicle Key: West"; 
+                description = "Vehicle Key: West";
+                price = 0;
+                stock = 9999;
+            };
+			class ACE_key_indp {
+                displayName = "Vehicle Key: Independent"; 
+                description = "Vehicle Key: Independent";
+                price = 0;
+                stock = 9999;
+            };
+			class ACE_key_civ {
+                displayName = "Vehicle Key: Civilian"; 
+                description = "Vehicle Key: Civilian";
+                price = 0;
+                stock = 9999;
+            };
+			class ACE_key_east {
+                displayName = "Vehicle Key: East"; 
+                description = "Vehicle Key: East";
+                price = 0;
+                stock = 9999;
+            };
+			class ACE_key_lockpick {
+                displayName = "Lockpick"; 
+                description = "Lockpick";
+                price = 0;
+                stock = 9999;
+            };
+		};
         class Rvehicles {
             kindOf = "Vehicles";
             displayName = "Automobiles and Recreational Vehicles";
@@ -10,7 +53,7 @@
 
             class B_Quadbike_01_F {
                 displayName = "Quad Bike"; 
-                description = "The ATV is an all-terrain, 4x4 light utility vehicle that is mainly designed for use by special forces units and non-combat troops. (Slingload: No) (Slingloadable: Yes)";
+                description = "***WARNING**ALL QUAD BIKES WILL BE DELETED UPON SERVER RESTART***The ATV is an all-terrain, 4x4 light utility vehicle that is mainly designed for use by special forces units and non-combat troops. (Slingload: No) (Slingloadable: Yes)";
                 price = 0;
                 stock = 9999;
             };
@@ -161,9 +204,24 @@
             };
 			class B_Truck_01_medical_F {
                 displayName = "HEMTT Medical";
-                description = "This HEMTT is a mobile medical facility. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a mobile medical facility that acts as a mobile respawn point for NATO forces only. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 220000;
                 stock = 50;
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
+            };
+			class B_APC_Tracked_01_CRV_F {
+                displayName = "CRV-6e Bobcat (Sand)";
+                description = "The Bobcat is designed to serve purely as a support vehicle that also acts as a mobile respawn point for NATO forces. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
+                price = 475000;
+                stock = 20;
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
+            };
+			class B_T_APC_Tracked_01_CRV_F {
+                displayName = "CRV-6e Bobcat (Military Green)";
+                description = "The Bobcat is designed to serve purely as a support vehicle that also acts as a mobile respawn point for NATO forces. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
+                price = 475000;
+                stock = 20;
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
 		};
 		class Cvehicles {
@@ -335,18 +393,6 @@
                 price = 440000;
                 stock = 20;
             };
-			class B_APC_Tracked_01_CRV_F {
-                displayName = "CRV-6e Bobcat (Sand)";
-                description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
-                price = 475000;
-                stock = 20;
-            };
-			class B_T_APC_Tracked_01_CRV_F {
-                displayName = "CRV-6e Bobcat (Military Green)";
-                description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
-                price = 475000;
-                stock = 20;
-            };
 			class B_APC_Tracked_01_AA_F {
                 displayName = "FV-6a Cheetah (Sand)";
                 description = "Primarily used to defend against aerial threats, the Cheetah is fitted with a turret armed with dual 35 mm cannons and four surface-to-air missiles that can be fired in a rapid succession once an aerial target is locked onto.";
@@ -444,31 +490,7 @@
                 description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers. Two main variants are currently in use - the standard T-140 and the T-140K, a 'commander' variant which exchanges the HMG for a 30mm autocannon. In addition, it also provides additional radios and sensors for platoon and company leaders.";
                 price = 675000;
                 stock = 20;
-            };			
-			class B_MBT_01_mlrs_F {
-                displayName = "M5 Sandstorm MLRS (Sand)";
-                description = "Sharing the same chassis as its MBT parent, the Sandstorm is essentially a mobile rocket battery on treads. It can accurately deliver high-explosive rockets with a dispersion of less than 100 m on targets more than 11 km away in a single salvo.";
-                price = 700000;
-                stock = 20;
-            };
-			class B_T_MBT_01_mlrs_F {
-                displayName = "M5 Sandstorm MLRS (Military Green)";
-                description = "Sharing the same chassis as its MBT parent, the Sandstorm is essentially a mobile rocket battery on treads. It can accurately deliver high-explosive rockets with a dispersion of less than 100 m on targets more than 11 km away in a single salvo.";
-                price = 700000;
-                stock = 20;
-            };			
-			class B_MBT_01_arty_F {
-                displayName = "M4 Scorcher (Sand)";
-                description = "Fitted with a 155 mm howitzer cannon as its primary weapon, the Scorcher is a powerful gun-based fire support vehicle that can launch a mixture of high-explosive, smoke, cluster, and even precision guided shells on targets at extreme distances.";
-                price = 700000;
-                stock = 20;
-            };
-			class B_T_MBT_01_arty_F {
-                displayName = "M4 Scorcher (Military Green)";
-                description = "Fitted with a 155 mm howitzer cannon as its primary weapon, the Scorcher is a powerful gun-based fire support vehicle that can launch a mixture of high-explosive, smoke, cluster, and even precision guided shells on targets at extreme distances.";
-                price = 700000;
-                stock = 20;
-            };			
+            };		
 	};
         class AAvehicles {
             kindOf = "Vehicles";
@@ -515,21 +537,24 @@
 			
             class B_T_VTOL_01_infantry_F {
                 displayName = "V-44 X Blackfish (Infantry Transport)";
-                description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
+                description = "This is a V-44 X Blackfish (Infantry Transport) that also acts as a mobile respawn point for NATO forces. The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
                 price = 400000;
                 stock = 20;
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
             class B_T_VTOL_01_infantry_blue_F {
                 displayName = "V-44 X Blackfish (Infantry Transport) (Blue)";
-                description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
+                description = "This is a V-44 X Blackfish (Infantry Transport) that also acts as a mobile respawn point for NATO forces. The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
                 price = 400000;
                 stock = 20;
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
             class B_T_VTOL_01_infantry_olive_F {
                 displayName = "V-44 X Blackfish (Infantry Transport) (Olive)";
-                description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
+                description = "This is a V-44 X Blackfish (Infantry Transport) that also acts as a mobile respawn point for NATO forces. The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
                 price = 400000;
                 stock = 20;
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };			
             class B_T_VTOL_01_armed_F {
                 displayName = "V-44 X Blackfish (Armed)";
@@ -677,15 +702,17 @@
             };	
             class B_Heli_Transport_03_unarmed_green_F {
                 displayName = "CH47I Chinook (Unarmed) (Green)";
-                description = "The CH47I Chinook is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
+                description = "This is a CH47I Chinook (Unarmed) that also acts as a mobile respawn point for NATO forces. The CH47I Chinook is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
 			class O_Heli_Transport_04_F {
-                displayName = "	Mi-290 Taru";
-                description = "The Mi-290 is a twin-engine, heavy-lift utility helicopter that uses a distinctive coaxial rotor system which removes the need for a tail rotor. It is unique for its ability to utilise interchangeable mission pods, which grant the Mi-290 a diverse array of performable roles, from transporting troops into battle, to providing air medical services. (Slingload: Yes, up to 13500 kg) (Slingloadable: No)";
+                displayName = "Mi-290 Taru";
+                description = "This is a Mi-290 Taru that also acts as a mobile respawn point for NATO forces. The Mi-290 is a twin-engine, heavy-lift utility helicopter that uses a distinctive coaxial rotor system which removes the need for a tail rotor. It is unique for its ability to utilise interchangeable mission pods, which grant the Mi-290 a diverse array of performable roles, from transporting troops into battle, to providing air medical services. (Slingload: Yes, up to 13500 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
             class B_Heli_Transport_03_F {
                 displayName = "CH47I Chinook";
@@ -723,7 +750,7 @@
                 price = 10000;
                 stock = 10000;
 				kindOf = Items;
-            };	
+            };
 			class ACE_UAVBattery {
                 displayName = "ACE UAV Battery";
                 description = "ACE UAV Battery";
@@ -736,70 +763,70 @@
                 description = "Man portable and compact, the Darter is miniature VTOL-capable quad-rotor drone that is small enough to be carried in a backpack.";
                 price = 5000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";				
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";	
             };
 			class B_UAV_06_F {
                 displayName = "AL-6 Pelican (NATO)";
                 description = "Compared to the Darter, the AL-6 Pelican Utility Drone's overall functionality is more simplistic as it is only designed with ferrying supplies in mind (usually medical items). Because it lacks a laser designator and does not possess a secondary camera with thermal/night vision capability, it is similarly ill-suited for use in a reconnaissance or surveillance role.";
                 price = 5000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";				
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";				
             };
 			class B_UAV_06_medical_F {
                 displayName = "AL-6 Pelican (Medical) (NATO)";
                 description = "Compared to the Darter, the AL-6 Pelican Utility Drone's overall functionality is more simplistic as it is only designed with ferrying supplies in mind (usually medical items). Because it lacks a laser designator and does not possess a secondary camera with thermal/night vision capability, it is similarly ill-suited for use in a reconnaissance or surveillance role.";
                 price = 5000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";				
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";				
             };
 			class B_UAV_02_F {
                 displayName = "MQ-4A Greyhawk";
                 description = "The Greyhawk is a medium-altitude, long-endurance aerial drone that can serve a variety of roles from surveillance to ground attack, and even air-to-air combat. (Slingload: No) (Slingloadable: Yes)";
                 price = 500000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class B_UAV_02_CAS_F {
                 displayName = "MQ-4A Greyhawk (CAS)";
                 description = "The Greyhawk is a medium-altitude, long-endurance aerial drone that can serve a variety of roles from surveillance to ground attack, and even air-to-air combat. (Slingload: No) (Slingloadable: Yes)";
                 price = 500000;
                 stock = 20; 
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class B_UGV_01_F {
                 displayName = "UGV Stomper";
                 description = "The Stomper is available in two variants; an unarmed version that has no weapons mounted on it that is meant to be used for transporting supplies and cargo, and an armed version that is fitted with an RCWS turret armed with a dual-mount 12.7 mm heavy machine gun and 40 mm automatic grenade launcher. (Slingload: No) (Slingloadable: Yes)";
                 price = 10000;
                 stock = 20; 
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class B_UGV_01_rcws_F {
                 displayName = "UGV Stomper RCWS";
                 description = "The Stomper is available in two variants; an unarmed version that has no weapons mounted on it that is meant to be used for transporting supplies and cargo, and an armed version that is fitted with an RCWS turret armed with a dual-mount 12.7 mm heavy machine gun and 40 mm automatic grenade launcher. (Slingload: No) (Slingloadable: Yes)";
                 price = 50000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class B_T_UAV_03_dynamicLoadout_F {
                 displayName = "MQ-12 Falcon";
                 description = "The Falcon is a single engine, five-bladed, long-endurance helicopter UAV. Designed as a semi-stealthed VTOL drone, the Falcon has the ability to autonomously take off and land on any prepared and unprepared surface. (Slingload: No) (Slingloadable: No)";
                 price = 100000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class B_UGV_02_Science_F {
                 displayName = "ED-1E Roller";
                 description = "ED-1 is a commercial off-the-shelf series of robotic systems built upon a man-portable modular platform. The tracked mini UGV has convenient front and rear obstacle climbers that allow it to traverse relatively complex terrain. (Slingload: No) (Slingloadable: Yes)";
                 price = 5000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class B_UGV_02_Demining_F {
                 displayName = "ED-1D Pelter";
                 description = "ED-1 is a commercial off-the-shelf series of robotic systems built upon a man-portable modular platform. The tracked mini UGV has convenient front and rear obstacle climbers that allow it to traverse relatively complex terrain. (Slingload: No) (Slingloadable: Yes)";
                 price = 10000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
         };
 				class IDunits {
@@ -826,56 +853,56 @@
                 description = "Man portable and compact, the Darter is miniature VTOL-capable quad-rotor drone that is small enough to be carried in a backpack.";
                 price = 5000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";				
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";				
             };
 			class I_UAV_06_F {
                 displayName = "AL-6 Pelican (INDEPENDANT)";
                 description = "Compared to the Darter, the AL-6 Pelican Utility Drone's overall functionality is more simplistic as it is only designed with ferrying supplies in mind (usually medical items). Because it lacks a laser designator and does not possess a secondary camera with thermal/night vision capability, it is similarly ill-suited for use in a reconnaissance or surveillance role.";
                 price = 5000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";				
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";				
             };
 			class I_UAV_06_medical_F {
                 displayName = "AL-6 Pelican (Medical) (INDEPENDANT)";
                 description = "Compared to the Darter, the AL-6 Pelican Utility Drone's overall functionality is more simplistic as it is only designed with ferrying supplies in mind (usually medical items). Because it lacks a laser designator and does not possess a secondary camera with thermal/night vision capability, it is similarly ill-suited for use in a reconnaissance or surveillance role.";
                 price = 5000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";				
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";				
             };
 			class I_UAV_02_dynamicLoadout_F {
                 displayName = "K40 Ababil-3 (INDEPENDANT)";
                 description = "The K40 Ababil-3 is a medium-altitude, long-endurance aerial drone that can serve a variety of roles from surveillance to ground attack, and even air-to-air combat. (Slingload: No) (Slingloadable: Yes)";
                 price = 500000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class I_E_UGV_01_F {
                 displayName = "UGV Stomper (INDEPENDANT)";
                 description = "The Stomper is available in two variants; an unarmed version that has no weapons mounted on it that is meant to be used for transporting supplies and cargo, and an armed version that is fitted with an RCWS turret armed with a dual-mount 12.7 mm heavy machine gun and 40 mm automatic grenade launcher. (Slingload: No) (Slingloadable: Yes)";
                 price = 10000;
                 stock = 20; 
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class I_E_UGV_01_rcws_F {
                 displayName = "UGV Stomper RCWS (INDEPENDANT)";
                 description = "The Stomper is available in two variants; an unarmed version that has no weapons mounted on it that is meant to be used for transporting supplies and cargo, and an armed version that is fitted with an RCWS turret armed with a dual-mount 12.7 mm heavy machine gun and 40 mm automatic grenade launcher. (Slingload: No) (Slingloadable: Yes)";
                 price = 50000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class I_UGV_02_Science_F {
                 displayName = "ED-1E Roller (INDEPENDANT)";
                 description = "ED-1 is a commercial off-the-shelf series of robotic systems built upon a man-portable modular platform. The tracked mini UGV has convenient front and rear obstacle climbers that allow it to traverse relatively complex terrain. (Slingload: No) (Slingloadable: Yes)";
                 price = 5000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class I_UGV_02_Demining_F {
                 displayName = "ED-1D Pelter (INDEPENDANT)";
                 description = "ED-1 is a commercial off-the-shelf series of robotic systems built upon a man-portable modular platform. The tracked mini UGV has convenient front and rear obstacle climbers that allow it to traverse relatively complex terrain. (Slingload: No) (Slingloadable: Yes)";
                 price = 10000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2)}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 	};
 };

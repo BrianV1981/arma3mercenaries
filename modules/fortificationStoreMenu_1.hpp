@@ -402,7 +402,7 @@
 		class Dfortifications {
             displayName = "Lights, Tents, Other";
             kindOf = "other";
-
+			
 			class Land_Camping_Light_F {
                 displayName = "	Camping Lantern";
                 description = "	Camping Lantern can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";

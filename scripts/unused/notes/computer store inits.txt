@@ -1,0 +1,6 @@
+[computer_1,"mercenaryStore_1",container_1,aHelipad_1,"Mercenaries For Hire","Blackwater Mercenaries For Hire"] call grad_lbm_fnc_addInteraction;
+[computer_1,"vehicleStore",container_1,aHelipad_1,"Vehicles For Sale","CIA Vehicle Lot"] call grad_lbm_fnc_addInteraction;
+[computer_1,"weaponStore",container_1,aHelipad_1,"Weapons For Sale","CIA Arms Dealer"] call grad_lbm_fnc_addInteraction;
+[computer_1,"itemStore",container_1,aHelipad_1,"Supplies For Sale","Military Surplus Store"] call grad_lbm_fnc_addInteraction;
+[computer_1,"fortificationStore_1",container_1,aHelipad_1,"Fortification and Cargo Supplies","Fortification and Cargo Supplies For Sale"] call grad_lbm_fnc_addInteraction;
+[computer_1,"aliveStore",container_1,aHelipad_1,"Combat Support","ALiVE Combat Support"] call grad_lbm_fnc_addInteraction;

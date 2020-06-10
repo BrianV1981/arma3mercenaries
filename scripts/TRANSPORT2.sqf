@@ -1,1 +1,15 @@
-["TRANSPORT",[[26688,24510,0],60,"B_Heli_Transport_03_F","CH47I Chinook","","(group this) setVariable ['Vcm_Disable',true]"]] Call ALiVE_fnc_combatSupportAdd;sleep 3600;["WEST","TRANSPORT","CH47I Chinook"] call ALiVE_fnc_combatSupportRemove;
+[
+    "TRANSPORT",                                                      	 // CS type
+    [
+        [26688,24510,0],                                               	// position
+        60,                                                             // direction
+        "B_Heli_Transport_03_F",                                         // class
+        "CH47I Chinook",                                              // callsign
+        "(group (_this select 0)) setVariable ['Vcm_Disable',true]",    	   // code
+        "0",                                                           // height
+        true,                                                          // slingloading
+        0                                                             // number of boxes to spawn for slingloading
+    ]
+] Call ALiVE_fnc_combatSupportAdd;
+sleep 3600;
+["WEST","TRANSPORT","CH47I Chinook"] call ALiVE_fnc_combatSupportRemove;

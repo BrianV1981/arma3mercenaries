@@ -4,7 +4,7 @@
         //category:  
 		class Nother {
             displayName = "Combat Support (NATO)";
-            kindOf = "Other"
+            kindOf = "Other";
 			
 			class B_Truck_01_transport_F {
                 displayName = "ALiVE HEMTT Transport (60 Minutes)";

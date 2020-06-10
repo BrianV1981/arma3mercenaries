@@ -1,1 +1,15 @@
-["TRANSPORT",[[26702,24526,0],60,"B_Heli_Light_01_F","MH-9 Hummingbird","","(group this) setVariable ['Vcm_Disable',true]"]] Call ALiVE_fnc_combatSupportAdd;sleep 3600;["WEST","TRANSPORT","MH-9 Hummingbird"] call ALiVE_fnc_combatSupportRemove;
+[
+    "TRANSPORT",                                                      	 // CS type
+    [
+        [26702,24526,0],                                               	// position
+        60,                                                             // direction
+        "B_Heli_Light_01_F",                                         // class
+        "MH-9 Hummingbird",                                              // callsign
+        "(group (_this select 0)) setVariable ['Vcm_Disable',true]",    	   // code
+        "0",                                                           // height
+        true,                                                          // slingloading
+        0                                                             // number of boxes to spawn for slingloading
+    ]
+] Call ALiVE_fnc_combatSupportAdd;
+sleep 3600;
+["WEST","TRANSPORT","MH-9 Hummingbird"] call ALiVE_fnc_combatSupportRemove;
