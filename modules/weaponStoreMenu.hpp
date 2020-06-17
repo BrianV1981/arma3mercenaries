@@ -1504,12 +1504,24 @@
                 price = 110;
                 stock = 10000;                
             };
+			class 1Rnd_HE_Grenade_shell {
+                displayName = "40 mm HE Grenade Round (x1)";
+                description = "40 mm HE Grenade Round (x1)";
+                price = 100;
+                stock = 10000;                
+            };		
 			class 3Rnd_HE_Grenade_shell {
                 displayName = "40 mm HE Grenade Round (x3)";
                 description = "40 mm HE Grenade Round (x3)";
                 price = 300;
                 stock = 10000;                
             };
+			class 1Rnd_Smoke_Grenade_shell {
+                displayName = "40mm Smoke Round (White) (x1)";
+                description = "40mm Smoke Round (White) (x1)";
+                price = 50;
+                stock = 10000;                
+            };		
 			class 3Rnd_Smoke_Grenade_shell {
                 displayName = "40mm Smoke Round (White) (x3)";
                 description = "40mm Smoke Round (White) (x3)";
@@ -1745,25 +1757,25 @@
 			class optic_Aco {
                 displayName = "ACO (Red)";
                 description = "Advanced Collimator Optics Color: Red, Close Range.";
-                price = 150;
+                price = 0;
                 stock = 10000;                
 	    };
 			class optic_ACO_grn {
                 displayName = "ACO (Green)";
                 description = "Advanced Collimator Optics Color: Green, Close Range.";
-                price = 150;
+                price = 0;
                 stock = 10000;                
 	    };
 			class optic_Aco_smg {
                 displayName = "ACO SMG (Red";
                 description = "Advanced Collimator Optics Color: Red, Close Range.";
-                price = 150;
+                price = 0;
                 stock = 10000;                
 	    };
 			class optic_ACO_grn_smg {
                 displayName = "ACO SMG (Green)";
                 description = "Advanced Collimator Optics Color: Green, Close Range.";
-                price = 150;
+                price = 0;
                 stock = 10000;                
 	    };
 			class optic_Hamr {
@@ -1838,64 +1850,100 @@
                 price = 1000;
                 stock = 10000;                
 	    };
-			class muzzle_snds_L {
-                displayName = "Sound Suppressor (9 mm)";
-                description = "Sound Suppressor (9 mm)";
+			class ace_muzzle_mzls_smg_02 {
+                displayName = "Flash Suppressor (9 mm)";
+                description = "A flash suppressor, also known as a flash guard, flash eliminator, flash hider, or flash cone, is a muzzle device attached to the muzzle of a rifle that reduces its visible signature while firing by cooling or dispersing the burning gases that exit the muzzle, a phenomenon typical of carbine-length weapons. Its primary intent is to reduce the chances that the shooter will be blinded in low-light shooting conditions. Contrary to popular belief, it is only a minor secondary benefit if a flash suppressor reduces the intensity of the flash visible to the enemy.";
                 price = 150;
                 stock = 10000;                
             };
+			class ace_muzzle_mzls_smg_01 {
+                displayName = "Flash Suppressor (.45 ACP)";
+                description = "A flash suppressor, also known as a flash guard, flash eliminator, flash hider, or flash cone, is a muzzle device attached to the muzzle of a rifle that reduces its visible signature while firing by cooling or dispersing the burning gases that exit the muzzle, a phenomenon typical of carbine-length weapons. Its primary intent is to reduce the chances that the shooter will be blinded in low-light shooting conditions. Contrary to popular belief, it is only a minor secondary benefit if a flash suppressor reduces the intensity of the flash visible to the enemy.";
+                price = 200;
+                stock = 10000;                
+            };
+			class ace_muzzle_mzls_l {
+                displayName = "Flash Suppressor (5.56mm)";
+                description = "A flash suppressor, also known as a flash guard, flash eliminator, flash hider, or flash cone, is a muzzle device attached to the muzzle of a rifle that reduces its visible signature while firing by cooling or dispersing the burning gases that exit the muzzle, a phenomenon typical of carbine-length weapons. Its primary intent is to reduce the chances that the shooter will be blinded in low-light shooting conditions. Contrary to popular belief, it is only a minor secondary benefit if a flash suppressor reduces the intensity of the flash visible to the enemy.";
+                price = 300;
+                stock = 10000;                
+            };
+			class ace_muzzle_mzls_h {
+                displayName = "Flash Suppressor (6.5 mm)";
+                description = "A flash suppressor, also known as a flash guard, flash eliminator, flash hider, or flash cone, is a muzzle device attached to the muzzle of a rifle that reduces its visible signature while firing by cooling or dispersing the burning gases that exit the muzzle, a phenomenon typical of carbine-length weapons. Its primary intent is to reduce the chances that the shooter will be blinded in low-light shooting conditions. Contrary to popular belief, it is only a minor secondary benefit if a flash suppressor reduces the intensity of the flash visible to the enemy.";
+                price = 450;
+                stock = 10000;                
+            };
+			class ace_muzzle_mzls_b {
+                displayName = "Flash Suppressor (7.62 mm)";
+                description = "A flash suppressor, also known as a flash guard, flash eliminator, flash hider, or flash cone, is a muzzle device attached to the muzzle of a rifle that reduces its visible signature while firing by cooling or dispersing the burning gases that exit the muzzle, a phenomenon typical of carbine-length weapons. Its primary intent is to reduce the chances that the shooter will be blinded in low-light shooting conditions. Contrary to popular belief, it is only a minor secondary benefit if a flash suppressor reduces the intensity of the flash visible to the enemy.";
+                price = 500;
+                stock = 10000;                
+            };		
+			class ace_muzzle_mzls_338 {
+                displayName = "Flash Suppressor (.338)";
+                description = "A flash suppressor, also known as a flash guard, flash eliminator, flash hider, or flash cone, is a muzzle device attached to the muzzle of a rifle that reduces its visible signature while firing by cooling or dispersing the burning gases that exit the muzzle, a phenomenon typical of carbine-length weapons. Its primary intent is to reduce the chances that the shooter will be blinded in low-light shooting conditions. Contrary to popular belief, it is only a minor secondary benefit if a flash suppressor reduces the intensity of the flash visible to the enemy.";
+                price = 550;
+                stock = 10000;                
+            };
+			class ace_muzzle_mzls_93mmg {
+                displayName = "Flash Suppressor (9.3 mm)";
+                description = "A flash suppressor, also known as a flash guard, flash eliminator, flash hider, or flash cone, is a muzzle device attached to the muzzle of a rifle that reduces its visible signature while firing by cooling or dispersing the burning gases that exit the muzzle, a phenomenon typical of carbine-length weapons. Its primary intent is to reduce the chances that the shooter will be blinded in low-light shooting conditions. Contrary to popular belief, it is only a minor secondary benefit if a flash suppressor reduces the intensity of the flash visible to the enemy.";
+                price = 600;
+                stock = 10000;                
+            };		
 			class muzzle_snds_acp {
                 displayName = "Sound Suppressor (.45 ACP)";
-                description = "Sound Suppressor (.45 ACP)";
+                description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
                 price = 200;
                 stock = 10000;                
             };
 			class muzzle_snds_M {
                 displayName = "Sound Suppressor (5.56 mm)";
-                description = "Sound Suppressor (5.56 mm)";
+                description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
                 price = 300;
                 stock = 10000;                
 	    };
 			class muzzle_snds_570 {
                 displayName = "Sound Suppressor (5.7 mm)";
-                description = "Sound Suppressor (5.7 mm)";
+                description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
                 price = 350;
                 stock = 10000;                
 	    };
 			class muzzle_snds_58_blk_F {
                 displayName = "Stealth Sound Suppressor (5.8 mm, Black)";
-                description = "Stealth Sound Suppressor (5.8 mm, Black)";
+                description = "The 5.8 mm suppressor is unique for being able to conceal its heat signature, and will not light up on infrared sensors during and after continuous fire. There is otherwise no difference to the regular 5.56 mm suppressor (performance-wise).";
                 price = 400;
                 stock = 10000;                
 	    };
-			class muzzle_snds_65_TI_blk_F {
-                displayName = "	Stealth Sound Suppressor (6.5 mm, Black)";
-                description = "	Stealth Sound Suppressor (6.5 mm, Black)";
+			class muzzle_snds_H {
+                displayName = "Sound Suppressor (6.5 mm)";
+                description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
                 price = 450;
                 stock = 10000;                
 	    };		
-			class muzzle_snds_H {
-                displayName = "Sound Suppressor (6.5 mm)";
-                description = "Sound Suppressor (6.5 mm)";
-                price = 450;
+			class muzzle_snds_65_TI_blk_F {
+                displayName = "	Stealth Sound Suppressor (6.5 mm, Black)";
+                description = "	The 5.8 mm suppressor is unique for being able to conceal its heat signature, and will not light up on infrared sensors during and after continuous fire. There is otherwise no difference to the regular 5.56 mm suppressor (performance-wise).";
+                price = 500;
                 stock = 10000;                
-	    };
+	    };		
 			class muzzle_snds_B {
                 displayName = "Sound Suppressor (7.62 mm)";
-                description = "Sound Suppressor (7.62 mm)";
+                description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
                 price = 500;
                 stock = 10000;                
             };
 			class muzzle_snds_338_black {
                 displayName = "Sound Suppressor (.338, Black)";
-                description = "Sound Suppressor (.338, Black)";
-                price = 600;
+                description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
+                price = 550;
                 stock = 10000;                
             };
 			class muzzle_snds_93mmg {
                 displayName = "Sound Suppressor (9.3mm, Black)";
-                description = "Sound Suppressor (9.3mm, Black)";
-                price = 700;
+                description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
+                price = 600;
                 stock = 10000;                
             };
 			class acc_flashlight_pistol {
