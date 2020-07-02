@@ -53,7 +53,7 @@ if (jukestate == "PLAY") then {
 		if (isnull virtualplayer2) then {virtualplayer2 = "Land_HelipadEmpty_F" createVehicle position _jukebox};
 		virtualplayer2 attachTo [_jukebox,[0,0,0]];
 		_nextselected = _tunestoplay select _i;
-		[virtualplayer2, _nextselected] remoteExec ["say3D"];
+		[virtualplayer2, _nextselected] remoteExec ["say3D",0];
 		hint format ["Now playing:\n%1", _nextselected];
 		_songend = time + _maxsonglength;
 		waitUntil {time >= _songend or isnull virtualplayer2 or jukestate != "PLAY"};
@@ -71,7 +71,7 @@ if (jukestate == "NEXT") then {
 	publicVariable "curindex";
 	if (isnull virtualplayer2) then {virtualplayer2 = "Land_HelipadEmpty_F" createVehicle position _jukebox};
 	virtualplayer2 attachTo [_jukebox,[0,0,0]];
-	[virtualplayer2, _nextselected] remoteExec ["say3D"];
+	[virtualplayer2, _nextselected] remoteExec ["say3D",0];
 	hint format ["Now playing:\n%1", _nextselected];
 	_songend = time + _maxsonglength;
 	waitUntil {time >= _songend or isnull virtualplayer2 or jukestate != "NEXT"};
