@@ -6,7 +6,7 @@ class Header
 };
 OnLoadName = "arma3mercenaries";
 onLoadMission = "A special unit of soldiers is tasked with sabotaging infrastructure, rescuing hostages and eliminating high value targets...";
-author="Beyaco";
+author="BrianV1981";
 respawn = 3;
 respawndelay = 15;
 respawnTemplates[] = {"MenuInventory", "MenuPosition", "Spectator"};
