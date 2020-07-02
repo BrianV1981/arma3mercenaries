@@ -1,1 +1,2 @@
 execVM "scripts\wearAllUniforms.sqf";
+[player, 1, ["ACE_SelfActions", "ACE_Equipment"], [p_1,"aliveStore_1",container_2,aHelipad_2,"Combat Support Menu","ALiVE Combat Support"] call grad_lbm_fnc_addInteraction;] call ace_interact_menu_fnc_addActionToObject; 
