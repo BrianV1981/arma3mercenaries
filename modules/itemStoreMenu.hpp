@@ -51,7 +51,7 @@
 			class ACE_Yardage450 {
                 displayName = "ACE Yardage450";
                 description = "Magnification: 4x Rangefinder. (default button b)";
-                price = 100;
+                price = 0;
                 stock = 10000;                 
             };		
 			class Binocular {
@@ -612,7 +612,13 @@
                 description = "Recon Fatigues (MTP)";
                 price = 500;
                 stock = 10000;                
-            };	
+            };
+			class U_O_SpecopsUniform_ocamo {
+                displayName = "Recon Fatigues (Hex)";
+                description = "Recon Fatigues (Hex)";
+                price = 5000;
+                stock = 10000;                
+            };		
 			class U_B_SpecopsUniform_sgg {
                 displayName = "Specop Fatigues (Sage)";
                 description = "Specop Fatigues (Sage)";
@@ -834,19 +840,25 @@
                 description = "Heli Pilot Coveralls [AAF]";
                 price = 750;
                 stock = 10000;                
-            };			
-			class U_O_SpecopsUniform_blk {
-                displayName = "Recon Fatigues (Black)";
-                description = "Recon Fatigues (Black)";
-                price = 5000;
-                stock = 10000;                
             };
-			class U_O_SpecopsUniform_ocamo {
-                displayName = "Recon Fatigues (Hex)";
-                description = "Recon Fatigues (Hex)";
+			class U_O_T_Soldier_F  {
+                displayName = "Fatigues (Green Hex)[CSAT]";
+                description = "Fatigues (Green Hex)[CSAT]";
                 price = 5000;
-                stock = 10000;                
-            };			
+                stock = 5000;                
+            };
+			class U_O_CombatUniform_ocamo  {
+                displayName = "Fatigues (Hex)[CSAT]";
+                description = "Fatigues (Hex)[CSAT]";
+                price = 5000;
+                stock = 5000;                
+            };
+			class U_O_CombatUniform_oucamo  {
+                displayName = "Fatigues (Urban)[CSAT]";
+                description = "Fatigues (Urban)[CSAT]";
+                price = 5000;
+                stock = 5000;                
+            };		
 			class U_O_V_Soldier_Viper_F  {
                 displayName = "Special Purpose Suit (Green Hex)";
                 description = "Special Purpose Suit (Green Hex)";
