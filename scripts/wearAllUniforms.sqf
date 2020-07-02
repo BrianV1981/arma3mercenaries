@@ -20,20 +20,30 @@ fnc_otherUnif = {
         private _currentInvent = uniformItems player;  
         _currentInvent = (_currentInvent arrayIntersect _currentInvent) apply {private _v= _x;[_x]+[{_v isEqualTo _x} count _currentInvent]}; 
         private _selectedUnif = ((_uniforms select {toLower (gettext (_x >> "picture")) splitString "\"joinString "\" == _picture}) apply {configName _x}); 
-        if (_selectedUnif isEqualTo []) exitWith {}; 
-        _selectedUnif = _selectedUnif #0; 
+        if (_selectedUnif isEqualTo []) exitWith {};
   
         if !(pl_container isKindOf "CAManBase") then {  
-          _unifConts = (everyContainer pl_container select {getNumber (configFile >> "CfgWeapons" >> _x #0 >> 'ItemInfo' >> 'type') == 801});  
-          _cnt = 0; 
- 
-          for "_i" from 0 to _index do {  
-            if (lbText [_idc,_i] == _text) then {  
-              _cnt = _cnt +1;  
-              _uniformObject = _unifConts select {_selectedUnif == (_x #0)} select (_cnt -1) select 1  
-            };  
+          _unifConts = (everyContainer pl_container select {getNumber (configFile >> "CfgWeapons" >> _x #0 >> 'ItemInfo' >> 'type') == 801});
+          _uniformObject = objNull;
+          private ["_cnt","_selectedCfg"];
+          scopeName "main";
+          for "_i" from 0 to count _selectedUnif -1 do {
+            _cnt = 0;
+            _selectedCfg = _selectedUnif #_i; 
+            for "_j" from 0 to _index do {  
+              if (lbText [_idc,_j] == _text) then {  
+                _cnt = _cnt +1;
+                _uniformObject = _unifConts select {_selectedCfg == (_x #0)} select (_cnt -1) select 1;
+                if (!isnil "_uniformObject" && {!isNull _uniformObject}) then {
+                  _selectedUnif = _selectedCfg;
+                  breakTo "main"
+                };
+              };
+            };
+            _uniformObject = objNull;
           };  
-        } else {  
+        } else {
+          _selectedUnif = _selectedUnif #0;  
           _uniformObject = uniformContainer pl_container  
         }; 
  
