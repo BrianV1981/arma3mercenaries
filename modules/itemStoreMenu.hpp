@@ -858,6 +858,30 @@
                 description = "Fatigues (Urban)[CSAT]";
                 price = 5000;
                 stock = 5000;                
+            };
+			class U_O_R_Gorka_01_F  {
+                displayName = "Granit-B Suit";
+                description = "Granit-B Suit";
+                price = 5000;
+                stock = 5000;                
+            };		
+			class U_O_R_Gorka_01_brown_F  {
+                displayName = "Granit-B Suit (Weathered)";
+                description = "Granit-B Suit (Weathered)";
+                price = 5000;
+                stock = 5000;                
+            };
+			class U_O_R_Gorka_01_camo_F  {
+                displayName = "Granit-T";
+                description = "Granit-T";
+                price = 5000;
+                stock = 5000;                
+            };
+			class U_O_R_Gorka_01_black_F  {
+                displayName = "Tracksuit (Black)";
+                description = "Tracksuit (Black)";
+                price = 5000;
+                stock = 5000;                
             };		
 			class U_O_V_Soldier_Viper_F  {
                 displayName = "Special Purpose Suit (Green Hex)";
@@ -1201,6 +1225,12 @@
                 price = 2000;
                 stock = 10000;                
             };
+			class H_HelmetB_plain_wdl {
+                displayName = "Combat Helmet (Woodland)";
+                description = "Combat Helmet (Woodland) Armor Level II";
+                price = 2000;
+                stock = 10000;                
+            };		
 			class H_PASGT_basic_black_F {
                 displayName = "Basic Helmet (Black)";
                 description = "Basic Helmet (Black) Armor Level II";
@@ -1315,6 +1345,24 @@
                 price = 5000;
                 stock = 10000;                
             };
+			class H_HelmetAggressor_F {
+                displayName = "Avenger Helmet";
+                description = "Avenger Helmet Armor Level IV";
+                price = 5000;
+                stock = 10000;                
+            };
+			class H_HelmetAggressor_cover_F {
+                displayName = "Avenger Helmet (Cover B)";
+                description = "Avenger Helmet (Cover B) Armor Level IV";
+                price = 5000;
+                stock = 10000;                
+            };
+			class H_HelmetAggressor_cover_taiga_F {
+                displayName = "Avenger Helmet (Cover T)";
+                description = "Avenger Helmet (Cover T) Armor Level IV";
+                price = 5000;
+                stock = 10000;                
+            };		
 			class H_HelmetLeaderO_ghex_F {
                 displayName = "Defender Helmet (Green Hex)";
                 description = "Defender Helmet (Green Hex) Armor Level V";
