@@ -20,6 +20,13 @@
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
+			class hgun_esd_01_F {
+                displayName = "Spectrum Device";
+                description = "Spectrum Device is a small handheld transceiver with an electromagnetic spectrum analyser. Its standard grip is designed to fit a range of directional antennas with varying frequency ranges, One common use for these devices is for jamming drones. When fitted with other antennas however, it allows the operator to receive and identify a myriad of signals, as well as to record and transmit them.";
+                price = 1000;
+                stock = 1000;                
+                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
+            };			
 			class hgun_Pistol_01_F {
                 displayName = "PM 9 mm";
                 description = "The PM is a semi-automatic handgun chambered to fire the 9×21 mm round, It loads from 10-round box magazines, and can attain a fire rate of up to 400 rounds per minute with a muzzle velocity of 315 m/s. Unlike other handguns, the PM is unable to mount any accessories or muzzle attachments.";

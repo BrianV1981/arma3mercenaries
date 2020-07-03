@@ -67,31 +67,43 @@
                 displayName = "Hatchback (Sport)";
                 description = "The Hatchback is a five-door compact car with a hatchback layout. The Hatchback contains enough seats for the driver and up to a maximum of three other passengers. (Slingload: No) (Slingloadable: Yes)";
                 price = 4000;
-                stock = 100;
+                stock = 1000;
             };		
 			class C_Offroad_02_unarmed_F {
                 displayName = "MB 4WD";
                 description = "The MB 4WD is a modern four-wheel drive off-road vehicle with a distinctive construction. The vehicle was produced in the US and exists in a number of different editions. (Slingload: No) (Slingloadable: Yes)";
                 price = 6000;
-                stock = 100;
+                stock = 1000;
             };
 			class C_SUV_01_F {
                 displayName = "SUV";
                 description = "SUV. (Slingload: No) (Slingloadable: Yes)";
                 price = 8000;
-                stock = 100;        
+                stock = 1000;        
             };
 			class B_G_Offroad_01_F {
                 displayName = "Offroad";
                 description = "Offroad. (Slingload: No) (Slingloadable: Yes)";
                 price = 8000;
-                stock = 100;        
+                stock = 1000;        
             };
+			class C_Offroad_01_covered_F {
+                displayName = "Offroad (Covered)";
+                description = "Offroad. (Slingload: No) (Slingloadable: Yes)";
+                price = 8000;
+                stock = 1000;        
+            };
+			class C_Offroad_01_comms_F {
+                displayName = "Offroad (Comms)";
+                description = "Offroad. (Slingload: No) (Slingloadable: Yes)";
+                price = 8000;
+                stock = 1000;        
+            };		
 			class B_G_Van_02_transport_F {
                 displayName = "Van (Transport)";
                 description = "	The standard van can be used for a huge variety of practical purposes. This particular model features a long load length and excellent roof height, allowing for the transport of passengers, cargo, or even some smaller vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 10000;
-                stock = 100;
+                stock = 1000;
             };		
             class B_G_Van_02_vehicle_F {
                 displayName = "Van (Camo)"; 
@@ -103,13 +115,13 @@
                 displayName = "Truck (Flatbed)";
                 description = "The Truck is a multipurpose, medium-sized, off-road capable van designed for a variety of roles ranging from transporting freight and/or passengers, to refuelling military and civilian vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 13000;
-                stock = 100;
+                stock = 1000;
             };
 			class C_Van_01_box_F {
                 displayName = "Truck (Box)";
                 description = "The Truck is a multipurpose, medium-sized, off-road capable van designed for a variety of roles ranging from transporting freight and/or passengers, to refuelling military and civilian vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 13000;
-                stock = 100;
+                stock = 1000;
             };	
 		};
 		class Svehicles {
@@ -118,6 +130,12 @@
             tracking = 0;
             //items of this category:
 			
+			class C_Tractor_01_F {
+                displayName = "Tractor"; 
+                description = "Found in farm barns across the globe, the common tractor is a reliable high torque engineering vehicle, used for towing trailers and many other agricultural tasks. This 2WD tractor with a diesel engine has proven itself reliable since the eighties. With solid maintenance and the occasional lick of fresh paint, this old workhorse has been in use by several generations of farmers to date. (Slingload: No) (Slingloadable: Yes)";
+                price = 10000;
+                stock = 9999;
+            };			
 			class B_G_Offroad_01_repair_F {
                 displayName = "Offroad (Repair)"; 
                 description = "Offroad (Repair). (Slingload: No) (Slingloadable: Yes)";
