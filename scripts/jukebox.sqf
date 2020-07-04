@@ -16,6 +16,7 @@ _maxSongLength = 121;
 _tunestoplay =
 [
 "black",
+"fortunate",
 "trumpspeach1",
 "bully",
 "shakin",
