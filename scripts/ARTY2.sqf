@@ -18,4 +18,4 @@
         ],
         "(group this) setVariable ['Vcm_Disable',true]"                          // Code to run on spawn
     ]
-] call ALiVE_fnc_combatSupportAdd;sleep 1800;["WEST","ARTILLERY","Sholef"] call ALiVE_fnc_combatSupportRemove;
+] call ALiVE_fnc_combatSupportAdd;sleep 1800;["WEST","ARTY","Sholef"] call ALiVE_fnc_combatSupportRemove;

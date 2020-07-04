@@ -55,7 +55,8 @@
                 displayName = "Quad Bike"; 
                 description = "***WARNING**ALL QUAD BIKES WILL BE DELETED UPON SERVER RESTART***The ATV is an all-terrain, 4x4 light utility vehicle that is mainly designed for use by special forces units and non-combat troops. (Slingload: No) (Slingloadable: Yes)";
                 price = 0;
-                stock = 9999;
+                code = [this,["<img size='1' color='#00eeaa' shadow='2' image='images\play.paa'/>PLAY","scripts\jukebox.sqf","PLAY",9,false,true,"","_this distance _target < 10"]] remoteExec ["addAction",0];
+				stock = 9999;
             };
 			class C_Kart_01_black_F {
                 displayName = "Go-Kart (Black)"; 
@@ -341,85 +342,85 @@
 			
 			class B_APC_Wheeled_03_cannon_F  {
                 displayName = "AFV-4 Gorgon";
-                description = "The Gorgon is an 8x8 armoured combat vehicle that uses an inverted V-shape hull. It is designed to transport troops into battle and to provide fire support against a variety of ground threats.";
+                description = "The Gorgon is an 8x8 armoured combat vehicle that uses an inverted V-shape hull. It is designed to transport troops into battle and to provide fire support against a variety of ground threats. (Seating Capacity: 11)";
                 price = 420000;
                 stock = 20;
             };
 			class B_APC_Wheeled_01_cannon_F {
-                displayName = "AMV-7 Marshall (Sand)";
-                description = "The Marshall is an 8x8 infantry fighting vehicle designed as a medium-lift personnel carrier for expeditionary warfare. It can operate across a variety of environments ranging from land to sea, and can even be para-dropped from the air.";
+                displayName = "Badger IFV (Sand)";
+                description = "The Badger IFV is an 8x8 infantry fighting vehicle designed as a medium-lift personnel carrier for expeditionary warfare. It can operate across a variety of environments ranging from land to sea, and can even be para-dropped from the air. (Seating Capacity: 11)";
                 price = 420000;
                 stock = 20;
             };
 			class B_T_APC_Wheeled_01_cannon_F {
-                displayName = "AMV-7 Marshall (Military Green)";
-                description = "The Marshall is an 8x8 infantry fighting vehicle designed as a medium-lift personnel carrier for expeditionary warfare. It can operate across a variety of environments ranging from land to sea, and can even be para-dropped from the air.";
+                displayName = "Badger IFV (Military Green)";
+                description = "The Badger IFV is an 8x8 infantry fighting vehicle designed as a medium-lift personnel carrier for expeditionary warfare. It can operate across a variety of environments ranging from land to sea, and can even be para-dropped from the air. (Seating Capacity: 11)";
                 price = 420000;
                 stock = 20;
             };
 			class B_AFV_Wheeled_01_cannon_F {
-                displayName = "Rhino MGS (Sand)";
-                description = "The Rhino MGS is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel.";
+                displayName = "Rooikat 120 (Sand)";
+                description = "The Rooikat 120 is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. (Seating Capacity: 3)";
                 price = 450000;
                 stock = 20;
             };
 			class B_T_AFV_Wheeled_01_cannon_F {
-                displayName = "Rhino MGS (Military Green)";
-                description = "The Rhino MGS is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel.";
+                displayName = "Rooikat 120 (Military Green)";
+                description = "The Rooikat 120 is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. (Seating Capacity: 3)";
                 price = 450000;
                 stock = 20;
             };		
 			class B_AFV_Wheeled_01_up_cannon_F {
-                displayName = "Rhino MGS UP (Sand)";
-                description = "The Rhino MGS is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. The 'UP' version is equipped with a remotely operated 12.7mm HMG and improved protection, provided by a cage and reactive armor. However, with this setup, it's too bulky to fit into many transport vehicles, including the Blackfish VTOL.";
+                displayName = "Rooikat 120 UP (Sand)";
+                description = "The RRooikat 120 is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. The 'UP' version is equipped with a remotely operated 12.7mm HMG and improved protection, provided by a cage and reactive armor. However, with this setup, it's too bulky to fit into many transport vehicles, including the Blackfish VTOL. (Seating Capacity: 3)";
                 price = 465000;
                 stock = 20;
             };
 			class B_T_AFV_Wheeled_01_up_cannon_F {
-                displayName = "Rhino MGS UP (Military Green)";
-                description = "The Rhino MGS is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. The 'UP' version is equipped with a remotely operated 12.7mm HMG and improved protection, provided by a cage and reactive armor. However, with this setup, it's too bulky to fit into many transport vehicles, including the Blackfish VTOL.";
+                displayName = "Rooikat 120 UP (Military Green)";
+                description = "The Rooikat 120 is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. The 'UP' version is equipped with a remotely operated 12.7mm HMG and improved protection, provided by a cage and reactive armor. However, with this setup, it's too bulky to fit into many transport vehicles, including the Blackfish VTOL. (Seating Capacity: 3)";
                 price = 465000;
                 stock = 20;
-            };							
+            };						
 			class B_APC_Tracked_01_rcws_F {
-                displayName = "IFV-6c Panther (Sand)";
-                description = "The Panther is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat.";
-                price = 440000;
-                stock = 20;
-            };
-			class O_APC_Tracked_02_cannon_F {
-                displayName = "BTR-K Kamysh";
-                description = "The BTR-K is a highly manoeuvrable infantry fighting vehicle designed as a troop transport that can engage armoured ground and low-flying aerial targets while stationary, and as an armoured reconnaissance vehicle.";
-                price = 440000;
-                stock = 20;
-            };
-			class O_APC_Tracked_02_AA_F {
-                displayName = "ZSU-39 Tigris";
-                description = "The ZSU-39 is a dedicated anti-aircraft variant of its IFV parent that is fitted with a turret armed with dual 35 mm cannons and surface-to-air missiles.";
+                displayName = "Namer (Sand)";
+                description = "The Namer is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat. (Seating Capacity: 11)";
                 price = 440000;
                 stock = 20;
             };
 			class B_T_APC_Tracked_01_rcws_F {
-                displayName = "IFV-6c Panther (Military Green)";
-                description = "The Panther is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat.";
+                displayName = "Namer (Military Green)";
+                description = "The Namer is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat. (Seating Capacity: 11)";
+                price = 440000;
+                stock = 20;
+            };
+			class O_APC_Tracked_02_cannon_F {
+                displayName = "BM-2T";
+                description = "The BM-2T is a highly manoeuvrable infantry fighting vehicle designed as a troop transport that can engage armoured ground and low-flying aerial targets while stationary, and as an armoured reconnaissance vehicle. (Seating Capacity: 11)";
+                price = 440000;
+                stock = 20;
+            };
+			class O_APC_Tracked_02_AA_F {
+                displayName = "ZSU-35";
+                description = "The ZSU-35 is a dedicated anti-aircraft variant of its IFV parent that is fitted with a turret armed with dual 35 mm cannons and surface-to-air missiles. (Seating Capacity: 3)";
                 price = 440000;
                 stock = 20;
             };
 			class I_APC_tracked_03_cannon_F {
-                displayName = "FV-720 Mora";
-                description = "The FV-720 Mora is an armoured vehicle used to transport infantry squads into combat under protection, and to provide fire support once troops have disembarked. It is fitted with a 30 mm cannon that is capable of firing both high-explosive and armour-piercing rounds at ranges of up to 1,500 metres against light-medium armoured vehicles.";
+                displayName = "FV510";
+                description = "The FV-510 is an armoured vehicle used to transport infantry squads into combat under protection, and to provide fire support once troops have disembarked. It is fitted with a 30 mm cannon that is capable of firing both high-explosive and armour-piercing rounds at ranges of up to 1,500 metres against light-medium armoured vehicles. (Seating Capacity: 10)";
                 price = 440000;
                 stock = 20;
             };
 			class B_APC_Tracked_01_AA_F {
-                displayName = "FV-6a Cheetah (Sand)";
-                description = "Primarily used to defend against aerial threats, the Cheetah is fitted with a turret armed with dual 35 mm cannons and four surface-to-air missiles that can be fired in a rapid succession once an aerial target is locked onto.";
+                displayName = "Bardelas (Sand)";
+                description = "Primarily used to defend against aerial threats, the Bardelas is fitted with a turret armed with dual 35 mm cannons and four surface-to-air missiles that can be fired in a rapid succession once an aerial target is locked onto. (Seating Capacity: 3)";
                 price = 500000;
                 stock = 20;
             };
 			class B_T_APC_Tracked_01_AA_F {
-                displayName = "FV-6a Cheetah (Military Green)";
-                description = "Primarily used to defend against aerial threats, the Cheetah is fitted with a turret armed with dual 35 mm cannons and four surface-to-air missiles that can be fired in a rapid succession once an aerial target is locked onto.";
+                displayName = "Bardelas (Military Green)";
+                description = "Primarily used to defend against aerial threats, the Bardelas is fitted with a turret armed with dual 35 mm cannons and four surface-to-air missiles that can be fired in a rapid succession once an aerial target is locked onto. (Seating Capacity: 3)";
                 price = 500000;
                 stock = 20;
             };		
@@ -444,71 +445,71 @@
 			
 
 			class I_MBT_03_cannon_F {
-                displayName = "MBT-52 Kuma";
-                description = "The MBT-52 Kuma is the main battle tank used by Altian Armed Forces. A batch of a few dozen tanks and spare turrets were bought under-price from a South-European country facing economic collapse. Like similar MBTs of the era, the Kuma is armed with a 120mm cannon, 7.62mm coaxial machine gun and a remotely controlled 12.7mm HMG. The level of protection for the crew is also remarkable, thanks to additional armor layers.";
+                displayName = "Leopard 2SG";
+                description = "The Leopard 2SG is the main battle tank used by Altian Armed Forces. A batch of a few dozen tanks and spare turrets were bought under-price from a South-European country facing economic collapse. Like similar MBTs of the era, the Kuma is armed with a 120mm cannon, 7.62mm coaxial machine gun and a remotely controlled 12.7mm HMG. The level of protection for the crew is also remarkable, thanks to additional armor layers. (Seating Capacity: 3)";
                 price = 560000;
                 stock = 20;
             };			
 			class O_MBT_02_cannon_F {
-                displayName = "T-100 Varsuk";
-                description = "	A modernized version of the Russian T-95 MBT. The ongoing development of the new generation battle tank was restarted in 2016 thanks to revenues from the oil crisis. The new concept of battle tank is lower, lighter with increased maneuverability. The crew was moved from the turret to a more armored body of the tank resulting in increased survivability. The T-100 Varsuk comes with a standard 125 mm cannon.";
+                displayName = "T-100 Black Eagle";
+                description = "	A modernized version of the Russian T-95 MBT. The ongoing development of the new generation battle tank was restarted in 2016 thanks to revenues from the oil crisis. The new concept of battle tank is lower, lighter with increased maneuverability. The crew was moved from the turret to a more armored body of the tank resulting in increased survivability. The T-100 Varsuk comes with a standard 125 mm cannon. (Seating Capacity: 3)";
                 price = 575000;
                 stock = 20;
             };
 			class O_T_MBT_02_cannon_ghex_F {
-                displayName = "T-100 Varsuk";
-                description = "	A modernized version of the Russian T-95 MBT. The ongoing development of the new generation battle tank was restarted in 2016 thanks to revenues from the oil crisis. The new concept of battle tank is lower, lighter with increased maneuverability. The crew was moved from the turret to a more armored body of the tank resulting in increased survivability. The T-100 Varsuk comes with a standard 125 mm cannon.";
+                displayName = "T-100 Black Eagle";
+                description = "	A modernized version of the Russian T-95 MBT. The ongoing development of the new generation battle tank was restarted in 2016 thanks to revenues from the oil crisis. The new concept of battle tank is lower, lighter with increased maneuverability. The crew was moved from the turret to a more armored body of the tank resulting in increased survivability. The T-100 Varsuk comes with a standard 125 mm cannon. (Seating Capacity: 3)";
                 price = 575000;
                 stock = 20;
             };			
 			class B_MBT_01_cannon_F {
                 displayName = "Merkava MK IV M (Sand)";
-                description = "The Merkava MK IV M is a main battle tank that uses a drive train consisting of six road wheels, one rear idler wheel, one front drive sprocket and three return rollers per side.The turret is triangular and narrow in shape, large but low, and is mounted rearwards onto the chassis, a layout commonly found on SPGs.";
+                description = "The Merkava MK IV M is a main battle tank that uses a drive train consisting of six road wheels, one rear idler wheel, one front drive sprocket and three return rollers per side.The turret is triangular and narrow in shape, large but low, and is mounted rearwards onto the chassis, a layout commonly found on SPGs. (Seating Capacity: 9)";
                 price = 600000;
                 stock = 20;
             };
 			class B_T_MBT_01_cannon_F {
                 displayName = "Merkava MK IV M (Military Green)";
-                description = "The Merkava MK IV M is a main battle tank that uses a drive train consisting of six road wheels, one rear idler wheel, one front drive sprocket and three return rollers per side.The turret is triangular and narrow in shape, large but low, and is mounted rearwards onto the chassis, a layout commonly found on SPGs.";
+                description = "The Merkava MK IV M is a main battle tank that uses a drive train consisting of six road wheels, one rear idler wheel, one front drive sprocket and three return rollers per side.The turret is triangular and narrow in shape, large but low, and is mounted rearwards onto the chassis, a layout commonly found on SPGs. (Seating Capacity: 9)";
                 price = 600000;
                 stock = 20;
             };			
 			class O_MBT_04_cannon_F {
-                displayName = "T-140 Angara";
-                description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers.";
+                displayName = "T-14 Armata";
+                description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers. (Seating Capacity: 3)";
                 price = 625000;
                 stock = 20;
             };
 			class O_T_MBT_04_cannon_F {
-                displayName = "T-140 Angara";
-                description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers.";
+                displayName = "T-14 Armata";
+                description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers. (Seating Capacity: 3)";
                 price = 625000;
                 stock = 20;
             };	
 		class B_MBT_01_TUSK_F {
-                displayName = "M2A4 Slammer UP (Sand)";
-                description = "The M2A4 Slammer UP is the urban purpose variant of the M2A1 Slammer. Compared to the basic version, it features heavier armor with reinforced rear of the tank and a remote-controlled turret fitted with 12.7 mm heavy machine gun.";
+                displayName = "Merkava MK IV LIC (Sand)";
+                description = "The Merkava MK IV LIC is the urban purpose variant of the M2A1 Slammer. Compared to the basic version, it features heavier armor with reinforced rear of the tank and a remote-controlled turret fitted with 12.7 mm heavy machine gun. (Seating Capacity: 9)";
                 price = 650000;
                 stock = 20;
             };	
 			class B_T_MBT_01_TUSK_F {
-                displayName = "M2A4 Slammer UP (Military Green)";
-                description = "The M2A4 Slammer UP is the urban purpose variant of the M2A1 Slammer. Compared to the basic version, it features heavier armor with reinforced rear of the tank and a remote-controlled turret fitted with 12.7 mm heavy machine gun.";
+                displayName = "Merkava MK IV LIC (Military Green)";
+                description = "The Merkava MK IV LIC is the urban purpose variant of the M2A1 Slammer. Compared to the basic version, it features heavier armor with reinforced rear of the tank and a remote-controlled turret fitted with 12.7 mm heavy machine gun. (Seating Capacity: 9)";
                 price = 650000;
                 stock = 20;
             };		
 			class O_MBT_04_command_F {
-                displayName = "T-140K Angara";
-                description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers. Two main variants are currently in use - the standard T-140 and the T-140K, a 'commander' variant which exchanges the HMG for a 30mm autocannon. In addition, it also provides additional radios and sensors for platoon and company leaders.";
+                displayName = "T-14K Armata";
+                description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers. Two main variants are currently in use - the standard T-140 and the T-140K, a 'commander' variant which exchanges the HMG for a 30mm autocannon. In addition, it also provides additional radios and sensors for platoon and company leaders. (Seating Capacity: 3)";
                 price = 675000;
                 stock = 20;
             };
 			class O_T_MBT_04_command_F {
-                displayName = "T-140K Angara";
-                description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers. Two main variants are currently in use - the standard T-140 and the T-140K, a 'commander' variant which exchanges the HMG for a 30mm autocannon. In addition, it also provides additional radios and sensors for platoon and company leaders.";
+                displayName = "T-14K Armata";
+                description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers. Two main variants are currently in use - the standard T-140 and the T-140K, a 'commander' variant which exchanges the HMG for a 30mm autocannon. In addition, it also provides additional radios and sensors for platoon and company leaders. (Seating Capacity: 3)";
                 price = 675000;
                 stock = 20;
-            };		
+            };
 	};
         class AAvehicles {
             kindOf = "Vehicles";
@@ -517,32 +518,32 @@
             //items of this category:
 			
 			class I_Truck_02_MRL_F {
-                displayName = "Zamak MLR";
-                description = "The Zamak MLR is simply a modified variant of the baseline Zamak truck that has had its rear flatbed configured to house a rocket pod and a (non-functional) winch crane. It is armed with a 230 mm rocket pod which is always pre-loaded with 12 long-range artillery rockets, and are fitted with high-explosive (HE) warheads.";
+                displayName = "KamAZ MRL";
+                description = "The KamAZ MRL is simply a modified variant of the baseline Zamak truck that has had its rear flatbed configured to house a rocket pod and a (non-functional) winch crane. It is armed with a 230 mm rocket pod which is always pre-loaded with 12 long-range artillery rockets, and are fitted with high-explosive (HE) warheads. (Seating Capacity: 3)";
                 price = 400000;
                 stock = 20;
             };
 			class B_MBT_01_mlrs_F {
-                displayName = "M5 Sandstorm MLRS (Sand)";
-                description = "Sharing the same chassis as its MBT parent, the Sandstorm is essentially a mobile rocket battery on treads. It can accurately deliver high-explosive rockets with a dispersion of less than 100 m on targets more than 11 km away in a single salvo.";
+                displayName = "Seara (Sand)";
+                description = "Sharing the same chassis as its MBT parent, the Seara is essentially a mobile rocket battery on treads. It can accurately deliver high-explosive rockets with a dispersion of less than 100 m on targets more than 11 km away in a single salvo. (Seating Capacity: 3)";
                 price = 700000;
                 stock = 20;
             };
 			class B_T_MBT_01_mlrs_F {
-                displayName = "M5 Sandstorm MLRS (Military Green)";
-                description = "Sharing the same chassis as its MBT parent, the Sandstorm is essentially a mobile rocket battery on treads. It can accurately deliver high-explosive rockets with a dispersion of less than 100 m on targets more than 11 km away in a single salvo.";
+                displayName = "Seara (Military Green)";
+                description = "Sharing the same chassis as its MBT parent, the Seara is essentially a mobile rocket battery on treads. It can accurately deliver high-explosive rockets with a dispersion of less than 100 m on targets more than 11 km away in a single salvo. (Seating Capacity: 3)";
                 price = 700000;
                 stock = 20;
             };			
 			class B_MBT_01_arty_F {
-                displayName = "M4 Scorcher (Sand)";
-                description = "Fitted with a 155 mm howitzer cannon as its primary weapon, the Scorcher is a powerful gun-based fire support vehicle that can launch a mixture of high-explosive, smoke, cluster, and even precision guided shells on targets at extreme distances.";
+                displayName = "Sholef (Sand)";
+                description = "Fitted with a 155 mm howitzer cannon as its primary weapon, the Scorcher is a powerful gun-based fire support vehicle that can launch a mixture of high-explosive, smoke, cluster, and even precision guided shells on targets at extreme distances. (Seating Capacity: 3)";
                 price = 700000;
                 stock = 20;
             };
 			class B_T_MBT_01_arty_F {
-                displayName = "M4 Scorcher (Military Green)";
-                description = "Fitted with a 155 mm howitzer cannon as its primary weapon, the Scorcher is a powerful gun-based fire support vehicle that can launch a mixture of high-explosive, smoke, cluster, and even precision guided shells on targets at extreme distances.";
+                displayName = "Sholef (Military Green)";
+                description = "Fitted with a 155 mm howitzer cannon as its primary weapon, the Scorcher is a powerful gun-based fire support vehicle that can launch a mixture of high-explosive, smoke, cluster, and even precision guided shells on targets at extreme distances. (Seating Capacity: 3)";
                 price = 700000;
                 stock = 20;
             };			

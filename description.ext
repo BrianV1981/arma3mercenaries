@@ -20,8 +20,11 @@ corpseManagerMode = 1;
 corpseLimit = 50;
 corpseRemovalMinTime = 1800;
 corpseRemovalMaxTime = 3600;
-wreckManagerMode = 0;
-
+wreckManagerMode = 1;
+wreckLimit = 20;
+wreckRemovalMinTime = 300;
+wreckRemovalMaxTime = 600;
+minPlayerDistance = 0;
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 #include "modules\grad-listBuymenu\grad_listBuymenu.hpp"
@@ -163,6 +166,12 @@ class CfgSounds
 	{
 		name = "foxiran1Song";
 		sound[] = {"music\foxiran1.ogg", 10, 1, 500};
+		titles[] = {};
+	};
+	class Killfeed_notification
+	{
+		name = "Killfeed_notification";
+		sound[] = {"GF_Killfeed\Killfeed_Sounds\Killfeed_notification.ogg", db-5, 1.0};
 		titles[] = {};
 	};
 	
