@@ -150,6 +150,12 @@ class CfgSounds
 		sound[] = {"music\bully.ogg", 8, 1, 500};
 		titles[] = {};
 	};
+	class fortunate
+	{
+		name = "fortunateSong";
+		sound[] = {"music\fortunate.ogg", 8, 1, 500};
+		titles[] = {};
+	};
 	class preacher
 	{
 		name = "preacherSong";
