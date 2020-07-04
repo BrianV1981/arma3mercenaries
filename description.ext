@@ -114,6 +114,12 @@ class CfgSounds
 		sound[] = {"music\bird.ogg", 7, 1, 500};
 		titles[] = {};
 	};
+	class cisco
+	{
+		name = "ciscoSong";
+		sound[] = {"music\cisco.ogg", 7, 1, 500};
+		titles[] = {};
+	};
 	class hush
 	{
 		name = "hushSong";
@@ -154,6 +160,12 @@ class CfgSounds
 	{
 		name = "fortunateSong";
 		sound[] = {"music\fortunate.ogg", 8, 1, 500};
+		titles[] = {};
+	};
+	class pompeo1
+	{
+		name = "pompeo1Song";
+		sound[] = {"music\pompeo1.ogg", 10, 1, 500};
 		titles[] = {};
 	};
 	class preacher
