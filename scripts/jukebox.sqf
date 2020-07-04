@@ -15,6 +15,7 @@ _maxSongLength = 121;
 // Add your tune classes here. Tunes must be declared in Cfg_Sounds in description.ext
 _tunestoplay =
 [
+"cisco",
 "black",
 "fortunate",
 "trumpspeach1",
@@ -25,7 +26,8 @@ _tunestoplay =
 "foxiran1",
 "letter",
 "boots",
-"bird"
+"bird",
+"pompeo1"
 ];
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
