@@ -3,14 +3,15 @@ SAV_fnc_taskSucceeded = {
  
     switch (_operation) do {
         case "handleEvent": {
-[p_1,5000] call grad_lbm_fnc_addFunds;
-[p_2,5000] call grad_lbm_fnc_addFunds;
-[p_3,5000] call grad_lbm_fnc_addFunds;
-[p_4,5000] call grad_lbm_fnc_addFunds;
-[p_5,2500] call grad_lbm_fnc_addFunds;
-[p_6,2500] call grad_lbm_fnc_addFunds;
-[p_7,2500] call grad_lbm_fnc_addFunds;
-[p_8,2500] call grad_lbm_fnc_addFunds;
+[p_1,random 5000] call grad_lbm_fnc_addFunds;
+[p_2,random 5000] call grad_lbm_fnc_addFunds;
+[p_3,random 5000] call grad_lbm_fnc_addFunds;
+[p_4,random 5000] call grad_lbm_fnc_addFunds;
+[p_5,random 2500] call grad_lbm_fnc_addFunds;
+[p_6,random 2500] call grad_lbm_fnc_addFunds;
+[p_7,random 2500] call grad_lbm_fnc_addFunds;
+[p_8,random 2500] call grad_lbm_fnc_addFunds;
+hint "The installation has been disabled. The payment amount will depend on the intelligence gathered and will be deposted into your account."
 
             // do your reward stuff here
             // task data is in _args

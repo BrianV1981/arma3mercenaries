@@ -1092,7 +1092,7 @@
                 description = "GA Carrier GL Rig (Olive) Explosive Resistant";
                 price = 1500;
                 stock = 10000;                
-            };			
+            };
 			class V_RebreatherB {
                 displayName = "Rebreather [NATO]";
                 description = "Rebreather [NATO] Armor Level I";
