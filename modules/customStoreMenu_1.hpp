@@ -14,15 +14,7 @@
                 stock = 9999;
 				code = [player,"scripts\loadouts\scrub.sqf"] call BIS_fnc_execVM;
             };
-			class B_Recon_Sharpshooter_F {
-                displayName = "Constellis Sharpshooter Loadout (Blufor)";
-                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a Sharpshooter loadout.";
-                price = 10000;
-                amount = 1;
-                stock = 9999;
-				code = [player,"scripts\loadouts\reconSharpshooter.sqf"] call BIS_fnc_execVM;
-            };			
-			class B_recon_medic_F {
+		class B_recon_medic_F {
                 displayName = "Constellis Paramedic Loadout (Blufor)";
                 description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a Paramedic loadout.";
                 price = 10000;
@@ -30,10 +22,18 @@
                 stock = 9999;
 				code = [player,"scripts\loadouts\reconParamedic.sqf"] call BIS_fnc_execVM;
             };
+			class B_Recon_Sharpshooter_F {
+                displayName = "Constellis Sharpshooter Loadout (Blufor)";
+                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a Sharpshooter loadout.";
+                price = 15000;
+                amount = 1;
+                stock = 9999;
+				code = [player,"scripts\loadouts\reconSharpshooter.sqf"] call BIS_fnc_execVM;
+            };			
 			class B_sniper_F {
                 displayName = "Constellis Sniper Loadout (Blufor)";
                 description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is sniper loadout.";
-                price = 10000;
+                price = 20000;
                 amount = 1;
                 stock = 9999;
 				code = [player,"scripts\loadouts\reconSniperArid.sqf"] call BIS_fnc_execVM;
@@ -41,7 +41,7 @@
 			class B_recon_exp_F {
                 displayName = "Constellis Demo Specialist Loadout (Blufor)";
                 description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a Demo Specialist loadout";
-                price = 15000;
+                price = 20000;
                 amount = 1;
                 stock = 9999;
 				code = [player,"scripts\loadouts\reconDemoSpecialist.sqf"] call BIS_fnc_execVM;
@@ -92,7 +92,7 @@
                 stock = 9999;
 				code = [player,"scripts\loadouts\recoded_1.sqf"] call BIS_fnc_execVM;
             };
-			class B_ghillie_ard_F {
+			class B_ghillie_sard_F {
                 displayName = "Recoded Loadout 2";
                 description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Recoded.";
                 price = 25000;
