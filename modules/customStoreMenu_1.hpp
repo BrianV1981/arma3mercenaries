@@ -85,12 +85,20 @@
 				code = [player,"scripts\loadouts\jay_1.sqf"] call BIS_fnc_execVM;
             };
 			class B_ghillie_ard_F {
-                displayName = "Recoded Loadout";
+                displayName = "Recoded Loadout 1";
                 description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Recoded.";
                 price = 45000;
                 amount = 1;
                 stock = 9999;
 				code = [player,"scripts\loadouts\recoded_1.sqf"] call BIS_fnc_execVM;
+            };
+			class B_ghillie_ard_F {
+                displayName = "Recoded Loadout 2";
+                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Recoded.";
+                price = 25000;
+                amount = 1;
+                stock = 9999;
+				code = [player,"scripts\loadouts\recoded_2.sqf"] call BIS_fnc_execVM;
             };
 		};
 	};
