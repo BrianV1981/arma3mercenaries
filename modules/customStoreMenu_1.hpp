@@ -74,7 +74,7 @@
                 price = 45000;
                 amount = 1;
                 stock = 9999;
-				code = [player,"scripts\loadouts\vasquez.sqf"] call BIS_fnc_execVM;
+				code = [player,"scripts\loadouts\vasquez_1.sqf"] call BIS_fnc_execVM;
             };
 			class B_CTRG_Soldier_M_tna_F {
                 displayName = "Jay Loadout";
@@ -82,7 +82,7 @@
                 price = 35000;
                 amount = 1;
                 stock = 9999;
-				code = [player,"scripts\loadouts\jay.sqf"] call BIS_fnc_execVM;
+				code = [player,"scripts\loadouts\jay_1.sqf"] call BIS_fnc_execVM;
             };
 			class B_ghillie_ard_F {
                 displayName = "Recoded Loadout";
@@ -90,7 +90,7 @@
                 price = 45000;
                 amount = 1;
                 stock = 9999;
-				code = [player,"scripts\loadouts\recoded.sqf"] call BIS_fnc_execVM;
+				code = [player,"scripts\loadouts\recoded_1.sqf"] call BIS_fnc_execVM;
             };
 		};
 	};
