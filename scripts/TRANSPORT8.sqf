@@ -11,5 +11,5 @@
         0                                                             // number of boxes to spawn for slingloading
     ]
 ] Call ALiVE_fnc_combatSupportAdd;
-sleep 3600;
+sleep 7200;
 ["WEST","TRANSPORT","Namer"] call ALiVE_fnc_combatSupportRemove;

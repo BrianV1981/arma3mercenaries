@@ -9,14 +9,14 @@
 			class ACE_Sandbag_empty {
                 displayName = "ACE Sandbag (empty)";
                 description = "The ACE Sandbag (empty) can be utilize with the ACE self interaction menu.";
-                price = 10;
+                price = 0;
                 stock = 10000;
 				kindOf = Items;
             };
 			class ACE_EntrenchingTool {
                 displayName = "ACE Entrenching Tool";
                 description = "The ACE entrenching tool can be utilize to dig trenches with the ACE self interaction menu.";
-                price = 30;
+                price = 0;
                 stock = 10000;
 			    kindOf = Items;
             };
@@ -29,7 +29,7 @@
             };
 			class ACE_wirecutter {
                 displayName = "ACE Wire Cutter";
-                description = "The ACE wire cutter can be utilize to cut ACE concertina wire with the ACE interaction menu.";
+                description = "The ACE wire cutter can be used to cut concertina wire and fences. Utilize with the ACE interaction menu.";
                 price = 20;
                 stock = 10000;
 				kindOf = Items;
@@ -146,54 +146,54 @@
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_CncBarrierMedium4_F'] call grad_fortifications_fnc_addFort}";
             };
-			class Land_CncWall1_F {
-                displayName = "Concrete Wall";
-                description = "Concrete Wall can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
-                stock = 100;
-				code = "if (player == (_this select 0)) then {code = [container_1,'Land_CncWall1_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_CncWall4_F {
-                displayName = "Concrete Wall (Long)";
-                description = "concrete Wall (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 500;
-                stock = 100;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_CncWall4_F'] call grad_fortifications_fnc_addFort}";
-            };
 			class Land_Concrete_SmallWall_4m_F {
                 displayName = "Concrete Wall (Small, 4 m)";
                 description = "Concrete Wall (Small, 4 m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 300;
+                price = 100;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Concrete_SmallWall_4m_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Land_Concrete_SmallWall_8m_F {
                 displayName = "Concrete Wall (Small, 8 m)";
                 description = "Concrete Wall (Small, 8 m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 400;
+                price = 200;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Concrete_SmallWall_8m_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Land_Mil_WallBig_4m_F {
                 displayName = "Military Base Wall";
                 description = "Military Base Wall can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
+                price = 300;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Mil_WallBig_4m_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Land_Mil_WallBig_Corner_F {
                 displayName = "Military Base Wall (Corner)";
                 description = "Military Base Wall (Corner) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
+                price = 100;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Mil_WallBig_Corner_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Land_Mil_WallBig_Gate_F {
                 displayName = "Military Base Wall (Gate)";
                 description = "Military Base Wall (Gate) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
+                price = 300;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Mil_WallBig_Gate_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_CncWall1_F {
+                displayName = "Concrete Wall";
+                description = "Concrete Wall can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 500;
+                stock = 100;
+				code = "if (player == (_this select 0)) then {code = [container_1,'Land_CncWall1_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_CncWall4_F {
+                displayName = "Concrete Wall (Long)";
+                description = "concrete Wall (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 1500;
+                stock = 100;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_CncWall4_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Land_BarGate_F {
                 displayName = "Bar Gate";
@@ -430,7 +430,28 @@
 		class Dfortifications {
             displayName = "Lights, Nets, Other";
             kindOf = "other";
-
+			
+			class Target_PopUp3_Moving_90deg_Acc2_F {
+                displayName = "Moving Target 3 (Front Accuracy)";
+                description = "The target can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Target_PopUp3_Moving_90deg_Acc2_F'] call grad_fortifications_fnc_addFort}";
+            };	
+			class Land_Target_Oval_F {
+                displayName = "Target-Oval (Ground)";
+                description = "The target can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Target_Oval_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Target_Dueling_01_F {
+                displayName = "Dueling Target (Ground)";
+                description = "The target can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Target_Dueling_01_F'] call grad_fortifications_fnc_addFort}";
+            };
 			class Land_Camping_Light_F {
                 displayName = "Camping Lantern";
                 description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***The camping lantern can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -570,117 +591,208 @@
             displayName = "Cargo and Logistical Supplies";
             kindOf = "other";
 			
-			class ACE_Track {
-                displayName = "ACE Spare Track";
-                description = "ACE Spare Track can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100;
+			class ToolKit {
+                displayName = "ToolKit";
+				kindOf = "items";
+                description = "***RECOMMENDED TO HAVE AT ALL TIMES***Use this to repair vehicles";
+                price = 1000;
                 stock = 10000;
-				code = "if (player == (_this select 0)) then {[container_1,'ACE_Track'] call grad_fortifications_fnc_addFort}";
             };
 			class ACE_Wheel {
                 displayName = "ACE Spare Wheel";
-                description = "ACE Spare Wheel can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "***RECOMMENDED TO HAVE AT ALL TIMES***ACE Spare Wheel can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications. (consumed on use)";
                 price = 50;
                 stock = 10000;
 				code = "if (player == (_this select 0)) then {[container_1,'ACE_Wheel'] call grad_fortifications_fnc_addFort}";
+            };
+			class ACE_Track {
+                displayName = "ACE Spare Track";
+                description = "ACE Spare Track can be utilized to repair damaged vehichle tracks. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications. (consumed on use)";
+                price = 100;
+                stock = 10000;
+				code = "if (player == (_this select 0)) then {[container_1,'ACE_Track'] call grad_fortifications_fnc_addFort}";
             };	
 			class Land_CanisterFuel_F {
-                displayName = "Fuel Canister (Test)";
-                description = "The fuel canister (test) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                displayName = "Fuel Canister (15 Liters)";
+                description = "***RECOMMENDED TO HAVE AT ALL TIMES***The fuel canister (15 liters) can be utilized to refuel vehicles in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications. (depletes on use)";
                 price = 50;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_CanisterFuel_F'] call grad_fortifications_fnc_addFort}";
             };	
 			class FlexibleTank_01_sand_F {
                 displayName = "Flexible Fuel Tank (300 Liters)";
-                description = "Flexible Fuel Tank (300 liters) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Flexible Fuel Tank (300 liters) can be utilized to refuel vehicles in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications. (depletes on use)";
                 price = 300;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'FlexibleTank_01_sand_F'] call grad_fortifications_fnc_addFort}";
             };
 			class StorageBladder_01_fuel_sand_F {
                 displayName = "Fuel Bladder (10,000 Liters)";
-                description = "The fuel bladder (10,000 Liters) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "The fuel bladder (10,000 Liters) can be utilized to refuel vehicles in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications. (depletes on use)";
                 price = 5000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'StorageBladder_01_fuel_sand_F'] call grad_fortifications_fnc_addFort}";
             };
+			class B_Slingload_01_Fuel_F {
+                displayName = "Huron Fuel Container";
+                description = "The huron fuel container can be utilized to refuel vehicles in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications. (depletes on use)";
+                price = 50000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'B_Slingload_01_Fuel_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Pod_Heli_Transport_04_fuel_F {
+                displayName = "Taru Fuel Pod";
+                description = "Taru Fuel Pod can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_fuel_F'] call grad_fortifications_fnc_addFort}";
+            };
 			class Land_BarrelWater_F {
                 displayName = "Plastic Barrel (160 Liters)";
-                description = "Plastic Barrel (160 liters) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "The plastic barrel (160 liters) can be utilized to refill canteens and water bottles, you can also drink straight from the spicket. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications. (depletes on use)";
                 price = 50;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_BarrelWater_F'] call grad_fortifications_fnc_addFort}";
             };			
 			class Land_StallWater_F {
                 displayName = "Water Stall (250 Liters)";
-                description = "The water stall (250 liters) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "The water stall (250 liters) can be utilized to refill yourself, canteens and water bottles in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications. (depletes on use)";
                 price = 100;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_StallWater_F'] call grad_fortifications_fnc_addFort}";
             };
 			class StorageBladder_02_water_forest_F {
                 displayName = "Water Bladder (10,000 Liters)";
-                description = "Water Bladder (10,000 liters) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Water Bladder (10,000 liters) can be utilized to refill yourself, canteens and water bottles in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications. (depletes on use)";
                 price = 1000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'StorageBladder_02_water_forest_F'] call grad_fortifications_fnc_addFort}";
             };		
 			class WaterPump_01_forest_F {
                 displayName = "Water Pump (Unlimited)";
-                description = "Water Pump (unlimited) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Water Pump (unlimited) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications. (depletes on use)";
                 price = 15000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'WaterPump_01_forest_F'] call grad_fortifications_fnc_addFort}";
             };
+			class Box_NATO_AmmoVeh_F {
+                displayName = "Vehicle Ammo [NATO]";
+                description = "Vehicle ammo [NATO] can be utilized to rearm vehicles and generate static weapon ammo in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 25000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Box_NATO_AmmoVeh_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class B_Slingload_01_Ammo_F {
+                displayName = "Huron Ammo Container";
+                description = "The huron ammo container can be utilized to rearm vehicles and generate static weapon ammo in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'B_Slingload_01_Ammo_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Pod_Heli_Transport_04_ammo_F {
+                displayName = "Taru Ammo Pod";
+                description = "Taru Ammo Pod can be utilized to rearm vehicles and generate static weapon ammo in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_ammo_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class B_Slingload_01_Repair_F {
+                displayName = "Huron Repair Container";
+                description = "Huron Repair Container can be utilized to fully repair any vehicle in the field. It deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'B_Slingload_01_Repair_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Pod_Heli_Transport_04_repair_F {
+                displayName = "Taru Repair Pod";
+                description = "Taru Repair Pod  can be utilized to fully repair any vehicle in the field. It deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_repair_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class B_Slingload_01_Medevac_F {
+                displayName = "Huron Medical Container (Medical Facility)";
+                description = "The huron medical container (medical facility) will enable the use of personal aid kits (PAK's) in the field. It can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 5000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'B_Slingload_01_Medevac_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Pod_Heli_Transport_04_medevac_F {
+                displayName = "Taru Medical Pod";
+                description = "The taru medical pod (medical facility) will enable the use of personal aid kits (PAK's) in the field. It can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 5000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_medevac_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class CargoNet_01_box_F {
+                displayName = "Cargo Net Box Pallet (Empty )";
+                description = "*The cargo net box pallet (empty) can be utilized to store scavanged equipment. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 200;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'CargoNet_01_box_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Box_Ammo_F {
+                displayName = "Ammo Cache (Empty)";
+                description = "The ammo cache (empty) can be utilized to store scavanged equipment. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 100;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Box_Ammo_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Box_Wps_F {
+                displayName = "Weapons Cache (Empty)";
+                description = "*The weapons cache (empty) can be utilized to store scavanged equipment. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 100;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Box_Wps_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_PaperBox_01_small_closed_brown_food_F {
+                displayName = "Cardboard Food Box (Empty)";
+                description = "Cardboard food box (empty) can be utilized to store scavanged equipment. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 10;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_PaperBox_01_small_closed_brown_food_F'] call grad_fortifications_fnc_addFort}";
+            };
 			class Box_NATO_Wps_F {
                 displayName = "Basic Weapons [NATO]";
-                description = "Basic weapons [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Basic weapons [NATO] contains an assortmant of weapons and ammo and can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 25000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Box_NATO_Wps_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Box_NATO_WpsSpecial_F {
                 displayName = "Special Weapons [NATO]";
-                description = "Special weapons [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Special weapons [NATO] contains an assortmant of weapons, attachemnts, and ammo and can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 30000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Box_NATO_WpsSpecial_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Box_NATO_Ammo_F {
                 displayName = "Basic Ammo [NATO]";
-                description = "Basic ammo [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Basic ammo [NATO] contains an assortmant ammo and can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 16000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Box_NATO_Ammo_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Box_NATO_Grenades_F {
                 displayName = "Grenades [NATO]";
-                description = "Grenades [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Grenades [NATO] contains an assortmant grenades and can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 6500;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Box_NATO_Grenades_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Box_NATO_WpsLaunch_F {
                 displayName = "Launchers [NATO]";
-                description = "Launchers [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Launchers [NATO] contains an assortmant of launchers with rounds and can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 60000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Box_NATO_WpsLaunch_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Box_NATO_Support_F {
                 displayName = "Support [NATO]";
-                description = "Support [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Support [NATO] contains an assortmant of ammo, attachments, and equipment. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 20000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Box_NATO_Support_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Box_NATO_AmmoVeh_F {
-                displayName = "Vehicle Ammo [NATO]";
-                description = "Vehicle ammo [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Box_NATO_AmmoVeh_F'] call grad_fortifications_fnc_addFort}";
             };
 			class B_supplyCrate_F {
                 displayName = "Supply Box [NATO]";
@@ -705,45 +817,17 @@
             };
 			class Box_NATO_Uniforms_F {
                 displayName = "Uniforms Box [NATO]";
-                description = "Uniforms Box [NATO] can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 21000;
+                description = "Uniforms Box [NATO] contains an assortment of uniforms, stealth uniforms and ghillie suites. You can deploy it with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 25000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Box_NATO_Uniforms_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Box_IED_Exp_F {
                 displayName = "Explosives (IED)";
-                description = "Explosives (IED) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Explosives (IED) contains an assortmant of IED's. You can deploy it with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 5000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Box_IED_Exp_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Box_Ammo_F {
-                displayName = "Ammo Cache [NATO] (Empty)";
-                description = "Ammo cache [NATO] (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Box_Ammo_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Box_Wps_F {
-                displayName = "Weapons Cache [NATO] (Empty)";
-                description = "Weapons cache [NATO] (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Box_Wps_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_PaperBox_01_small_closed_brown_food_F {
-                displayName = "[IDAP] Cardboard Food Box (Empty)";
-                description = "[IDAP] cardboard food box (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_PaperBox_01_small_closed_brown_food_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class CargoNet_01_box_F {
-                displayName = "Cargo Net Box Pallet (Empty )";
-                description = "Cargo net box pallet (empty) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 200;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'CargoNet_01_box_F'] call grad_fortifications_fnc_addFort}";
             };
 			class B_Slingload_01_Cargo_F {
                 displayName = "Huron Cargo Container";
@@ -752,48 +836,6 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'B_Slingload_01_Cargo_F'] call grad_fortifications_fnc_addFort}";
             };
-			class B_Slingload_01_Ammo_F {
-                displayName = "Huron Ammo Container";
-                description = "Huron Ammo Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'B_Slingload_01_Ammo_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class B_Slingload_01_Fuel_F {
-                displayName = "Huron Fuel Container";
-                description = "Huron Fuel Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'B_Slingload_01_Ammo_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class B_Slingload_01_Repair_F {
-                displayName = "Huron Repair Container";
-                description = "	Huron Repair Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'B_Slingload_01_Repair_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class B_Slingload_01_Medevac_F {
-                displayName = "Huron Medical Container";
-                description = "Huron Medical Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 5000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'B_Slingload_01_Medevac_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_Pod_Heli_Transport_04_ammo_F {
-                displayName = "Taru Ammo Pod";
-                description = "Taru Ammo Pod can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_ammo_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_Pod_Heli_Transport_04_bench_F {
-                displayName = "Taru Bench Pod";
-                description = "Taru Bench Pod can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 5000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_bench_F'] call grad_fortifications_fnc_addFort}";
-            };
 			class Land_Pod_Heli_Transport_04_box_F {
                 displayName = "Taru Cargo Pod";
                 description = "Taru Cargo Pod can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -801,33 +843,19 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_box_F'] call grad_fortifications_fnc_addFort}";
             };
-			class Land_Pod_Heli_Transport_04_fuel_F {
-                displayName = "Taru Fuel Pod";
-                description = "Taru Fuel Pod can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_fuel_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_Pod_Heli_Transport_04_medevac_F {
-                displayName = "Taru Medical Pod";
-                description = "Taru Medical Pod can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 5000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_medevac_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_Pod_Heli_Transport_04_repair_F {
-                displayName = "Taru Repair Pod";
-                description = "Taru Repair Pod can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_repair_F'] call grad_fortifications_fnc_addFort}";
-            };
 			class Land_Pod_Heli_Transport_04_covered_F {
                 displayName = "Taru Transport Pod";
                 description = "Taru Transport Pod can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 10000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_covered_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Pod_Heli_Transport_04_bench_F {
+                displayName = "Taru Bench Pod";
+                description = "Taru Bench Pod can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 5000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_bench_F'] call grad_fortifications_fnc_addFort}";
             };
 	};
 	    class Sweapons {
@@ -844,65 +872,65 @@
 		     class B_HMG_01_F {
                 displayName = "Mk30 HMG .50";
                 description = "Mk30 HMG .50 can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
+                price = 15000;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'B_HMG_01_F'] call grad_fortifications_fnc_addFort}";
 			};
 			class B_HMG_01_high_F {
                 displayName = "Mk30 HMG .50 (Raised)";
                 description = "Mk30 HMG .50 (Raised) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
+                price = 15000;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'B_HMG_01_high_F'] call grad_fortifications_fnc_addFort}";
 			};
 			class B_GMG_01_F {
                 displayName = "Mk32 GMG 20 mm";
                 description = "Mk32 GMG 20 mm can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
+                price = 15000;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'B_GMG_01_F'] call grad_fortifications_fnc_addFort}";
             };
 			class B_GMG_01_high_F {
                 displayName = "Mk32 GMG 20 mm (Raised)";
                 description = "Mk32 GMG 20 mm (Raised) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
+                price = 15000;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'B_GMG_01_high_F'] call grad_fortifications_fnc_addFort}";
 			};
 			class B_Mortar_01_F {
                 displayName = "Mk6 Mortar";
                 description = "Mk6 Mortar can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
+                price = 15000;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'B_Mortar_01_F'] call grad_fortifications_fnc_addFort}";
             };
 			class B_static_AA_F {
                 displayName = "Static Titan Launcher (AA) (NATO)";
                 description = "Static Titan Launcher (AA) (NATO) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
+                price = 40000;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'B_static_AA_F'] call grad_fortifications_fnc_addFort}";
             };
-			class I_static_AA_F {
+			class B_static_AT_F {
                 displayName = "Static Titan Launcher (AT) (NATO)";
                 description = "Static Titan Launcher (AT) (NATO) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
+                price = 40000;
+                stock = 100;
+				code = "if (player == (_this select 0)) then {[container_1,'B_static_AT_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class I_static_AA_F {
+                displayName = "Static Titan Launcher (AA) (Independent)";
+                description = "Static Titan Launcher (AA) (Independent) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 40000;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'I_static_AA_F'] call grad_fortifications_fnc_addFort}";
             };
 			class I_static_AT_F {
-                displayName = "Static Titan Launcher (AA) (Independent)";
-                description = "Static Titan Launcher (AA) (Independent) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
-                stock = 100;
-				code = "if (player == (_this select 0)) then {[container_1,'I_static_AT_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class B_static_AT_F {
                 displayName = "Static Titan Launcher (AT) (Independent)";
                 description = "Static Titan Launcher (AT) (Independent) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
+                price = 40000;
                 stock = 100;
-				code = "if (player == (_this select 0)) then {[container_1,'B_static_AT_F'] call grad_fortifications_fnc_addFort}";
+				code = "if (player == (_this select 0)) then {[container_1,'I_static_AT_F'] call grad_fortifications_fnc_addFort}";
             };
         };	
 		class Mammo {
@@ -912,19 +940,19 @@
 			class ace_csw_100Rnd_127x99_mag_Red {
                 displayName = "ACE 12.7 mm HMG Tracer (Red) Belt";
                 description = "ACE 12.7 mm HMG Tracer (Red) belt used in the Mk30 HMG .50";
-                price = 1000;
+                price = 100;
                 stock = 10000;                
             };
 			class ace_csw_20Rnd_20mm_g_belt {
                 displayName = "ACE 20 mm Grenade Belt";
                 description = "ACE 20 mm grenade belt used in the Mk32 GMG";
-                price = 1000;
+                price = 100;
                 stock = 10000;                
             };
 			class ace_csw_50Rnd_127x108_mag {
                 displayName = "ACE 12.7x108 mm Cartridge";
                 description = "ACE 12.7x108 mm cartridge.";
-                price = 1000;
+                price = 100;
                 stock = 10000;                
             };
 			class ACE_1Rnd_82mm_Mo_HE {
@@ -955,6 +983,18 @@
                 displayName = "ACE 82mm Illumination Round";
                 description = "ACE 82mm Illumination Round used in the Mk6 Mortar.";
                 price = 100;
+                stock = 10000;                
+            };
+			class Titan_AA {
+                displayName = "Titan AA Missile";
+                description = "127 mm Anti-air missle for the Titan MPRL";
+                price = 2000;
+                stock = 10000;                
+            };
+			class Titan_AT {
+                displayName = "Titan AT Missile";
+                description = "127 mm Anti-Tank round used in the Titan MPRL Compact";
+                price = 2000;
                 stock = 10000;                
             };
         };

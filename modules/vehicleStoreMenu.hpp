@@ -55,11 +55,10 @@
                 displayName = "Quad Bike"; 
                 description = "***WARNING**ALL QUAD BIKES WILL BE DELETED UPON SERVER RESTART***The ATV is an all-terrain, 4x4 light utility vehicle that is mainly designed for use by special forces units and non-combat troops. (Slingload: No) (Slingloadable: Yes)";
                 price = 0;
-                code = [this,["<img size='1' color='#00eeaa' shadow='2' image='images\play.paa'/>PLAY","scripts\jukebox.sqf","PLAY",9,false,true,"","_this distance _target < 10"]] remoteExec ["addAction",0];
 				stock = 9999;
             };
 			class C_Kart_01_black_F {
-                displayName = "Go-Kart (Black)"; 
+                displayName = "Go-Kart"; 
                 description = "Go-karts come in all shapes and forms, from motorless models to high-powered racing machines. Some, such as Superkarts, are able to beat racing cars or motorcycles on long circuits. (Slingload: No) (Slingloadable: Yes)";
                 price = 500;
                 stock = 9999;
@@ -80,13 +79,13 @@
                 displayName = "SUV";
                 description = "SUV. (Slingload: No) (Slingloadable: Yes)";
                 price = 8000;
-                stock = 1000;        
+				stock = 1000;				
             };
 			class B_G_Offroad_01_F {
                 displayName = "Offroad";
                 description = "Offroad. (Slingload: No) (Slingloadable: Yes)";
                 price = 8000;
-                stock = 1000;        
+                stock = 1000;     	
             };
 			class C_Offroad_01_covered_F {
                 displayName = "Offroad (Covered)";
@@ -114,7 +113,7 @@
             };
 			class C_Van_01_transport_F {
                 displayName = "Truck (Flatbed)";
-                description = "The Truck is a multipurpose, medium-sized, off-road capable van designed for a variety of roles ranging from transporting freight and/or passengers, to refuelling military and civilian vehicles. (Slingload: No) (Slingloadable: Yes)";
+                description = "***ATTENTION***Truck (Flatbed) can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. Once activated, you can use the middle mouse wheel on the vehicle that you wish to be towed. (Slingload: No) (Slingloadable: Yes)";
                 price = 13000;
                 stock = 1000;
             };
@@ -123,7 +122,13 @@
                 description = "The Truck is a multipurpose, medium-sized, off-road capable van designed for a variety of roles ranging from transporting freight and/or passengers, to refuelling military and civilian vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 13000;
                 stock = 1000;
-            };	
+            };
+			class C_Tractor_01_F {
+                displayName = "Tractor"; 
+                description = "Found in farm barns across the globe, the common tractor is a reliable high torque engineering vehicle, used for towing trailers and many other agricultural tasks. This 2WD tractor with a diesel engine has proven itself reliable since the eighties. With solid maintenance and the occasional lick of fresh paint, this old workhorse has been in use by several generations of farmers to date. (Slingload: No) (Slingloadable: Yes)";
+                price = 5000;
+                stock = 9999;
+            };
 		};
 		class Svehicles {
             kindOf = "Vehicles";
@@ -131,15 +136,16 @@
             tracking = 0;
             //items of this category:
 			
-			class C_Tractor_01_F {
-                displayName = "Tractor"; 
-                description = "Found in farm barns across the globe, the common tractor is a reliable high torque engineering vehicle, used for towing trailers and many other agricultural tasks. This 2WD tractor with a diesel engine has proven itself reliable since the eighties. With solid maintenance and the occasional lick of fresh paint, this old workhorse has been in use by several generations of farmers to date. (Slingload: No) (Slingloadable: Yes)";
-                price = 10000;
+			class C_Van_02_medevac_F {
+                displayName = "Ambulance (Medical Facility)"; 
+                description = "Ambulance (Medical Facility) will enable the use of personal aid kits (PAK's) in the field and is a mobile medical facility. It is also a mobile respawn point for NATO and Syndicate forces. (Slingload: No) (Slingloadable: Yes)";
+                price = 50000;
                 stock = 9999;
-            };			
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
+            };
 			class B_G_Offroad_01_repair_F {
-                displayName = "Offroad (Repair)"; 
-                description = "Offroad (Repair). (Slingload: No) (Slingloadable: Yes)";
+                displayName = "Offroad (Repair Facility)"; 
+                description = "Offroad (repair facility) can be utiliezed to repair damaged vehicles to 100%. (Slingload: No) (Slingloadable: Yes)";
                 price = 50000;
                 stock = 9999;
             };
@@ -223,21 +229,21 @@
             };
 			class B_Truck_01_medical_F {
                 displayName = "HEMTT Medical";
-                description = "This HEMTT is a mobile medical facility that acts as a mobile respawn point for NATO forces only. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "Ambulance (Medical Facility) will enable the use of personal aid kits (PAK's) in the field and is a mobile medical facility. It is also a mobile respawn point for NATO and Syndicate forces. (Slingload: No) (Slingloadable: Yes)";
                 price = 220000;
                 stock = 50;
 				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
 			class B_APC_Tracked_01_CRV_F {
                 displayName = "CRV-6e Bobcat (Sand)";
-                description = "The Bobcat is designed to serve purely as a support vehicle that also acts as a mobile respawn point for NATO forces. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
+                description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat. It also serves as a mobile respawn point for NATO forces. ";
                 price = 475000;
                 stock = 20;
 				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
 			class B_T_APC_Tracked_01_CRV_F {
                 displayName = "CRV-6e Bobcat (Military Green)";
-                description = "The Bobcat is designed to serve purely as a support vehicle that also acts as a mobile respawn point for NATO forces. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
+                description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat. It also serves as a mobile respawn point for NATO forces. ";
                 price = 475000;
                 stock = 20;
 				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
@@ -745,18 +751,18 @@
                 price = 400000;
                 stock = 50;
             };			
-			class O_Heli_Attack_02_black_F {
-                displayName = "Mi-48 Kajman (Black)";
-                description = "The Mi-48 is a large helicopter gunship with low-capacity troop transport capability. It uses a tandem cockpit layout, and has a distinctive coaxial rotor system that removes the need for a tail rotor.";
-                price = 575000;
-                stock = 25;
-            };
             class B_Heli_Attack_01_F {
                 displayName = "AH-99 Comanchie";
                 description = "The Comanchie is a five-bladed, rotary-wing stealth helicopter designed for both armed reconnaissance and ground attack duties.(Slingload: No) (Slingloadable: No)";
                 price = 525000;
                 stock = 25;
             }; 
+			class O_Heli_Attack_02_black_F {
+                displayName = "Mi-48 Kajman (Black)";
+                description = "The Mi-48 is a large helicopter gunship with low-capacity troop transport capability. It uses a tandem cockpit layout, and has a distinctive coaxial rotor system that removes the need for a tail rotor.";
+                price = 575000;
+                stock = 25;
+            };
 	};	
 		class NDunits {
             displayname = "UAV's and Drones (NATO)";

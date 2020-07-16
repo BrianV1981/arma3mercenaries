@@ -1,0 +1,198 @@
+///////////grad store info///////////////
+
+To execute code on server only:
+
+code = "if (isServer) then {skipTime 6}";
+To execute code on buyer only:
+
+code = "if (player == (_this select 0)) then { */ your code /*}";
+
+///////////////////////////////////////////////////////////////////////////
+
+code = [player,"scripts\setOwner.sqf"] call BIS_fnc_execVM;
+
+////////////////////////////////////////////////////////////////////////////////
+
+skipTime 5;
+
+/////////////////////////////////////////////////////////////////////////////
+
+[] spawn {
+	for "_i" from 1 to 24 do {
+		_time = diag_tickTime;
+		skipTime _i;
+		diag_log  [_i, diag_tickTime - _time];
+		sleep 3;
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////
+
+skipTime (_timeToSkipTo - daytime + 24 ) % 24;// Skip forward to a specific time, irrespective of the current mission time
+
+//////////////////////////////////////////////////////////////////////////
+
+["Hello World", "hint", true, true] call BIS_fnc_MP;
+
+["Server restarting, please player exit",0,0,10,1,0,7017] spawn bis_fnc_dynamicText;
+
+//////////////////////////////////////////////////////////////////////////
+
+
+
+_kill_HUD = format["<t size='0.3'>Killed  <t size='0.5'> <t color='%1'>  %2  <t color='#%1'>  %3 m</t>",_killed_Color,_killed_Name,floor _distance];	
+			[_kill_HUD,0,0,8,1,-1,7017] spawn bis_fnc_dynamicText;
+
+
+//////////////////////////////////////////////////////////////////////////
+
+
+
+[cpu_3,"mercenaryStore_2",container_2,aHelipad_2,"Private Security Services Contractors For Hire","Constellis Holdings, Inc."] call grad_lbm_fnc_addInteraction; 
+[cpu_3,"vehicleStore",container_2,aHelipad_2,"Vehicles For Sale","CIA Vehicle Lot"] call grad_lbm_fnc_addInteraction; 
+[cpu_3,"marineStore",container_2,aHelipad_2,"CIA Dock","CIA Boats For Sale"] call grad_lbm_fnc_addInteraction;
+[cpu_3,"weaponStore",container_2,aHelipad_2,"Weapons For Sale","CIA Arms Dealer"] call grad_lbm_fnc_addInteraction; 
+[cpu_3,"itemStore",container_2,aHelipad_2,"Military Supplies For Sale","Military Surplus Store"] call grad_lbm_fnc_addInteraction; 
+[cpu_3,"fortificationStore_2",container_2,aHelipad_2,"Fortification and Logistical Supplies Menu","Fortification and Logistical Supplies"] call grad_lbm_fnc_addInteraction; 
+[cpu_3,"aliveStore_1",container_2,aHelipad_2,"Combat Support Menu","ALiVE Combat Support"] call grad_lbm_fnc_addInteraction;
+[cpu_3,"haloStore_1",container_2,aHelipad_2,"High-altitude Military Parachuting","Special Activities Center (SAC)"] call grad_lbm_fnc_addInteraction; 
+[cpu_3,"customStore_1",container_1,aHelipad_1,"Predefined and Custom Loadouts","Constellis Quick Loadouts"] call grad_lbm_fnc_addInteraction;
+[cpu_3,"bugStore_2",container_2,aHelipad_2,"It's Bugged!","Reset Store"] call grad_lbm_fnc_addInteraction;
+
+//////////////////////////////////////////////////////////////////////////
+
+
+
+[cpu_4,"aliveStore_1",container_2,aHelipad_2,"Combat Support Menu","ALiVE Combat Support"] call grad_lbm_fnc_addInteraction;
+[cpu_4,"haloStore",container_2,aHelipad_2,"High-altitude Military Parachuting","Special Activities Center (SAC)"] call grad_lbm_fnc_addInteraction;
+
+
+//////////////////////////////////////////////////////////////////////////
+
+
+
+
+[cpu_1,"mercenaryStore_1",container_1,aHelipad_1,"Private Security Services Contractors For Hire","Constellis Holdings, Inc."] call grad_lbm_fnc_addInteraction;
+[cpu_1,"vehicleStore",container_1,aHelipad_1,"Vehicles For Sale","CIA Vehicle Lot"] call grad_lbm_fnc_addInteraction;
+[cpu_1,"weaponStore",container_1,aHelipad_1,"Weapons For Sale","CIA Arms Dealer"] call grad_lbm_fnc_addInteraction;
+[cpu_1,"itemStore",container_1,aHelipad_1,"Military Supplies For Sale","Military Surplus Store"] call grad_lbm_fnc_addInteraction;
+[cpu_1,"fortificationStore_1",container_1,aHelipad_1,"Fortification and Logistical Supplies Menu","Fortification and Logistical Supplies"] call grad_lbm_fnc_addInteraction;
+[cpu_1,"aliveStore_1",container_1,aHelipad_1,"Combat Support Menu","ALiVE Combat Support"] call grad_lbm_fnc_addInteraction;
+[cpu_1,"haloStore_1",container_1,aHelipad_1,"High-altitude Military Parachuting","Special Activities Center (SAC)"] call grad_lbm_fnc_addInteraction;
+[cpu_1,"customStore_1",container_1,aHelipad_1,"Predefined and Custom Loadouts","Constellis Quick Loadouts"] call grad_lbm_fnc_addInteraction;
+[cpu_1,"bugStore_2",container_1,aHelipad_1,"It's Bugged!","Reset Store"] call grad_lbm_fnc_addInteraction;
+
+//////////////////////////////////////////////////////////////////////////
+
+[cpu_2,"marineStore",container_1,aHelipad_3,"CIA Dock","CIA Boats For Sale"] call grad_lbm_fnc_addInteraction;
+
+
+
+//////////////////////////////////////////////////////////////////////////
+
+
+code = "if (isServer) then {[container_1,'Land_BagFence_Corner_F'] call grad_fortifications_fnc_addFort}";
+
+code = "if (player == (_this select 0)) then {[container_1,'Land_BagFence_Corner_F'] call grad_fortifications_fnc_addFort}";
+
+code = "if (isServer) then {execVM 'script.sqf'}";
+
+code = "if (player == (_this select 0)) then {execVM 'script.sqf'}";
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+[p_1,random 5000] call grad_lbm_fnc_addFunds;
+[p_2,random 5000] call grad_lbm_fnc_addFunds;
+[p_3,random 5000] call grad_lbm_fnc_addFunds;
+[p_4,random 5000] call grad_lbm_fnc_addFunds;
+[p_5,random 5000] call grad_lbm_fnc_addFunds;
+[p_6,random 5000] call grad_lbm_fnc_addFunds;
+[p_7,random 5000] call grad_lbm_fnc_addFunds;
+[p_8,random 5000] call grad_lbm_fnc_addFunds;
+[p_9,random 2500] call grad_lbm_fnc_addFunds;
+[p_10,random 2500] call grad_lbm_fnc_addFunds;
+[p_11,random 2500] call grad_lbm_fnc_addFunds;
+[p_12,random 2500] call grad_lbm_fnc_addFunds;
+[p_13,random 2500] call grad_lbm_fnc_addFunds;
+[p_14,random 2500] call grad_lbm_fnc_addFunds;
+[p_15,random 2500] call grad_lbm_fnc_addFunds;
+[p_16,random 2500] call grad_lbm_fnc_addFunds;
+
+[p_1,random 50000] call grad_lbm_fnc_addFunds;
+[p_2,random 50000] call grad_lbm_fnc_addFunds;
+[p_3,random 50000] call grad_lbm_fnc_addFunds;
+[p_4,random 50000] call grad_lbm_fnc_addFunds;
+[p_5,random 50000] call grad_lbm_fnc_addFunds;
+[p_6,random 50000] call grad_lbm_fnc_addFunds;
+[p_7,random 50000] call grad_lbm_fnc_addFunds;
+[p_8,random 50000] call grad_lbm_fnc_addFunds;
+[p_9,random 50000] call grad_lbm_fnc_addFunds;
+[p_10,random 50000] call grad_lbm_fnc_addFunds;
+[p_11,random 50000] call grad_lbm_fnc_addFunds;
+[p_12,random 50000] call grad_lbm_fnc_addFunds;
+[p_13,random 50000] call grad_lbm_fnc_addFunds;
+[p_14,random 50000] call grad_lbm_fnc_addFunds;
+[p_15,random 50000] call grad_lbm_fnc_addFunds;
+[p_16,random 50000] call grad_lbm_fnc_addFunds;
+
+[p_1, 50000] call grad_lbm_fnc_addFunds;
+[p_2, 50000] call grad_lbm_fnc_addFunds;
+[p_3, 50000] call grad_lbm_fnc_addFunds;
+[p_4, 50000] call grad_lbm_fnc_addFunds;
+[p_5, 50000] call grad_lbm_fnc_addFunds;
+[p_6, 50000] call grad_lbm_fnc_addFunds;
+[p_7, 50000] call grad_lbm_fnc_addFunds;
+[p_8, 50000] call grad_lbm_fnc_addFunds;
+[p_9, 25000] call grad_lbm_fnc_addFunds;
+[p_10, 25000] call grad_lbm_fnc_addFunds;
+[p_11, 25000] call grad_lbm_fnc_addFunds;
+[p_12, 25000] call grad_lbm_fnc_addFunds;
+
+{_x setDamage 1} foreach thisList;
+[p_1,random 10000] call grad_lbm_fnc_addFunds;
+[p_2,random 10000] call grad_lbm_fnc_addFunds;
+[p_3,random 10000] call grad_lbm_fnc_addFunds;
+[p_4,random 10000] call grad_lbm_fnc_addFunds;
+[p_5,random 10000] call grad_lbm_fnc_addFunds;
+[p_6,random 10000] call grad_lbm_fnc_addFunds;
+[p_7,random 10000] call grad_lbm_fnc_addFunds;
+[p_8,random 10000] call grad_lbm_fnc_addFunds;
+[p_9,random 10000] call grad_lbm_fnc_addFunds;
+[p_10,random 10000] call grad_lbm_fnc_addFunds;
+[p_11,random 10000] call grad_lbm_fnc_addFunds;
+[p_12,random 10000] call grad_lbm_fnc_addFunds;
+[p_13,random 10000] call grad_lbm_fnc_addFunds;
+[p_14,random 10000] call grad_lbm_fnc_addFunds;
+[p_15,random 10000] call grad_lbm_fnc_addFunds;
+[p_16,random 10000] call grad_lbm_fnc_addFunds;
+hint "The enemy combatant has been interrogated. The payment amount varies depending on the intelligence recieved. The credits have been delivered to you in person by a CIA courier."
+
+{_x setDamage 1} foreach thisList;
+[p_1,random 5000] call grad_lbm_fnc_addFunds;
+[p_2,random 5000] call grad_lbm_fnc_addFunds;
+[p_3,random 5000] call grad_lbm_fnc_addFunds;
+[p_4,random 5000] call grad_lbm_fnc_addFunds;
+[p_5,random 5000] call grad_lbm_fnc_addFunds;
+[p_6,random 5000] call grad_lbm_fnc_addFunds;
+[p_7,random 5000] call grad_lbm_fnc_addFunds;
+[p_8,random 5000] call grad_lbm_fnc_addFunds;
+[p_9,random 5000] call grad_lbm_fnc_addFunds;
+[p_10,random 5000] call grad_lbm_fnc_addFunds;
+[p_11,random 5000] call grad_lbm_fnc_addFunds;
+[p_12,random 5000] call grad_lbm_fnc_addFunds;
+[p_13,random 5000] call grad_lbm_fnc_addFunds;
+[p_14,random 5000] call grad_lbm_fnc_addFunds;
+[p_15,random 5000] call grad_lbm_fnc_addFunds;
+[p_16,random 5000] call grad_lbm_fnc_addFunds;
+hint "The enemy combatant has been interrogated. The payment amount varies depending on the intelligence recieved. The credits have been delivered to you in person by a CIA courier."
+
+
+
+
+
+
+
+
+
+

@@ -1,2 +1,2 @@
 private _randomSpawnPos = aHelipad_1 getPos [(random 20) + 1,random 359];
-_mercenary = "O_V_Soldier_LAT_hex_F" createUnit [_randomSpawnPos, (group player), "", 0.5];
+_mercenary = "O_V_Soldier_LAT_hex_F" createUnit [_randomSpawnPos, (group player), "", 0.5];sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime;

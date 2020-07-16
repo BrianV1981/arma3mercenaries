@@ -80,12 +80,12 @@ addMissionEventHandler ["EntityKilled",{
 
 			//________________	1. Player HUD Notification	________________
 			//	https://community.bistudio.com/wiki/BIS_fnc_dynamicText
-			//_kill_HUD = format["<t size='0.5'>Killed  <t size='0.8'> <t color='%1'>  %2  <t color='#FFD700'>  %3 m</t>",_killed_Color,_killed_Name,floor _distance];	
-			//[_kill_HUD,0,0.3,2,0,0,7017] spawn bis_fnc_dynamicText;
+			_kill_HUD = format["<t size='0.3'>  Killed  <t size='0.5'> <t color='%1'>  %2  <t color='#%1'>  %3 m</t>",_killed_Color,_killed_Name,floor _distance];	
+			[_kill_HUD,0,0,8,1,-1,7017] spawn bis_fnc_dynamicText;
 			
 			//________________	2. systemChat Notification	________________
 			//	runs on every PC showing kills on global , * You can disable the default arma
-			[[format["%1  Killed  %2  from  %3 m  with  %4", name player,_killed_Name,floor _distance,_weapon]]remoteExec["systemChat"]];
+			//[[format["%1  Killed  %2  from  %3 m  with  %4", name player,_killed_Name,floor _distance,_weapon]]remoteExec["systemChat"]];
 			
 			//________________	3. 2 Different notification types	________________
 			//_kill_info = format["<img size='1' shadow='1' image='%1'/>  %2  Killed <t color='%3'>  %4  <t color='#FFD700'> from   %5 m   with  <t color='#FF0000'> %6 </t>",_pictureweapon,name _killer,_killed_Color,_killed_Name,floor _distance,_weapon];

@@ -1,3 +1,5 @@
+["GUER","ARTY","Zamak MRL"] call ALiVE_fnc_combatSupportRemove;
+sleep 3600;
 [
     "ARTY",                         // CS type
     [
@@ -18,4 +20,6 @@
         ],
         "(group this) setVariable ['Vcm_Disable',true]"                          // Code to run on spawn
     ]
-] call ALiVE_fnc_combatSupportAdd;sleep 1800;["GUER","ARTY","Zamak MRL"] call ALiVE_fnc_combatSupportRemove;
+] call ALiVE_fnc_combatSupportAdd;
+sleep 3600;
+["GUER","ARTY","Zamak MRL"] call ALiVE_fnc_combatSupportRemove;

@@ -18,6 +18,12 @@
                 price = 50;
                 stock = 10000;                
             };
+			class ACE_Altimeter {
+                displayName = "ACE Altimeter Watch";
+                description = "The ACE altimeter watch uses atmospheric pressure as a gauge to measure and track changes in the altitude – just like a barometer. ... As you go up, the pressure starts to decrease, and the altimeter compares this new pressure to the previously-known sea level to determine your height. (default button o)";
+                price = 500;
+                stock = 10000;                
+            };
 			class ItemCompass {
                 displayName = "Compass";
                 description = "Useful for navigation. (default button k)";
@@ -32,7 +38,7 @@
             };
 			class ItemGPS {
                 displayName = "GPS";
-                description = "	Enables accurate positioning of yourself and others on the map. (default buttons [ and ])";
+                description = "Enables accurate positioning of yourself and others on the map. (default buttons [ and ])";
                 price = 150;
                 stock = 10000;                
             };
@@ -48,16 +54,58 @@
                 price = 10000;
                 stock = 10000;                
             };
-			class ACE_Yardage450 {
-                displayName = "ACE Yardage450";
-                description = "Magnification: 4x Rangefinder. (default button b)";
+			class ACE_DAGR {
+                displayName = "ACE DAGR GPS";
+                description = "The ACE Defense Advanced GPS Receiver is unlike commercial GPS receivers. The DAGR provides secure, military SAASM-based GPS in the most rugged, reliable, proven handheld form available today. It's the result of our expertise through delivering more than 500,000 DAGRs to the U.S. military and authorized countries.";
+                price = 200;
+                stock = 10000;                
+            };
+			class ACE_microDAGR	 {
+                displayName = "ACE MicroDAGR GPS";
+                description = "The ACE MicroDAGR is the world’s smallest, most trusted and lowest-power SAASM-based handheld GPS.";
+                price = 250;
+                stock = 10000;                
+            };
+			class ACE_MapTools {
+                displayName = "ACE Map Tools";
+                description = "The ACE map mools can be utilize with the ACE self interaction menu, under equipment.";
                 price = 0;
                 stock = 10000;                 
-            };		
+            };
+			class ACE_RangeTable_82mm {
+                displayName = "ACE 82mm Rangetable";
+                description = "The ACE 82mm rangetable can be utilize with the ACE self interaction menu, under equipment.";
+                price = 0;
+                stock = 10000;                 
+            };
+			class ACE_RangeCard {
+                displayName = "ACE Rangecard";
+                description = "The ACE Rangecard can be utilize with the ACE self interaction menu, under equipment.";
+                price = 0;
+                stock = 10000;                 
+            };
+			class ACE_Kestrel4500 {
+                displayName = "ACE Kestrel 4500NV";
+                description = "The ACE Kestrel applied ballistics meter combines sophisticated environmental sensing features with long-range shooting ballistics information in one hand-held device.";
+                price = 150;
+                stock = 10000;                 
+            };
+			class ACE_ATragMX {
+                displayName = "ACE ATragMX";
+                description = "Horus ATragMX software considers atmospheric conditions, gun data, ammunition, range, speed and muzzle velocity to calculate precise aiming solutions with “come-up” results – and even accounts for Coriolis and spin drift effects. ATragMX, loaded on a handheld computer made by TDS Recon, is easy to use and lightning-fast. The Recon meets the rigorous MIL-STD-810F military standard for drops, vibration, humidity, altitude and extreme temperatures.";
+                price = 150;
+                stock = 10000;                 
+            };
 			class Binocular {
                 displayName = "Binoculars";
                 description = "Magnification: 4x-12x. (default button b)";
                 price = 200;
+                stock = 10000;                 
+            };
+			class ACE_Yardage450 {
+                displayName = "ACE Yardage450";
+                description = "Magnification: 4x Rangefinder. (default button b)";
+                price = 300;
                 stock = 10000;                 
             };
 			class ace_dragon_sight {
@@ -65,13 +113,13 @@
                 description = "Magnification: 4x-12x. (default button b)";
                 price = 300;
                 stock = 10000;                 
-            };		
+            };
 			class ACE_MX2A {
                 displayName = "ACE MX2A";
                 description = "Magnification: 2x Thermal imaging. (default button b)";
                 price = 400;
                 stock = 10000;                 
-            };				
+            };
 			class ACE_VectorDay {
                 displayName = "ACE Vector 21 (Day)";
                 description = "Magnification: 7x Rangefinder. (default button b)";
@@ -212,7 +260,7 @@
             };		
              class ToolKit {
                 displayName = "ToolKit";
-                description = "Use this to repair vehicles";
+                description = "***RECOMMENDED TO HAVE AT ALL TIMES***Use this to repair vehicles";
                 price = 1000;
                 stock = 10000;                
             };
@@ -279,46 +327,16 @@
             };
 			class ACE_EntrenchingTool {
                 displayName = "ACE Entrenching Tool";
-                description = "The ACE entrenching tool can be utilize to dig trenches with the ACE self interaction menu.";
-                price = 50;
+                description = "***RECOMMENDED TO HAVE AT ALL TIMES***The ACE entrenching tool can be utilize to dig trenches with the ACE self interaction menu.";
+                price = 0;
                 stock = 10000;                
             };
 			class ACE_wirecutter {
                 displayName = "ACE Wire Cutter";
                 description = "The ACE wire cutter can be utilize to cut ACE concertina wire with the ACE interaction menu.";
-                price = 30;
-                stock = 10000;
-            };
-			class ACE_rope12 {
-                displayName = "Rope 12.2 meters";
-                description = "Fast roping insertions from helicopters.";
                 price = 0;
                 stock = 10000;
-            };
-			class ACE_rope15 {
-                displayName = "Rope 15.2 meters";
-                description = "Fast roping insertions from helicopters.";
-                price = 0;
-                stock = 10000;
-            };
-			class ACE_rope18 {
-                displayName = "Rope 12.3 meters";
-                description = "Fast roping insertions from helicopters.";
-                price = 0;
-                stock = 10000;
-            };
-			class ACE_rope27 {
-                displayName = "Rope 27.4 meters";
-                description = "Fast roping insertions from helicopters.";
-                price = 0;
-                stock = 10000;
-            };
-			class ACE_rope36 {
-                displayName = "Rope 36.6 meters";
-                description = "Fast roping insertions from helicopters.";
-                price = 0;
-                stock = 10000;
-            };		
+            };	
 			class ACE_TacticalLadder_Pack {
                 displayName = "ACE Telescopic Ladder Backpack";
                 description = "The ACE Telescopic Ladder Backpack can be utilize with the ACE self interaction menu.";
@@ -326,17 +344,24 @@
                 stock = 10000;
 				kindOf = wearables;
             };
-			class B_Respawn_TentDome_F {
-                displayName = "Respawn Camp (Dome Tent)";
-                description = "Respawn Camp (Dome Tent)";
+			class B_Respawn_Sleeping_bag_blue_F {
+                displayName = "Respawn Backpack (Blue Sleeping Bag)";
+                description = "Whoever assembles the respawn backpack will receive a new respawn position.";
                 price = 100;
                 stock = 10000;
 				kindOf = wearables;
             };
-			class B_Respawn_Sleeping_bag_blue_F {
-                displayName = "Respawn Camp (Blue Sleeping Bag)";
-                description = "Respawn Camp (Blue Sleeping Bag)";
-                price = 100;
+			class B_Respawn_TentDome_F {
+                displayName = "Respawn Backpack (Dome Tent)";
+                description = "Whoever assembles the respawn backpack will receive a new respawn position and nearby players will receive the respawn position as well.";
+                price = 500;
+                stock = 10000;
+				kindOf = wearables;
+            };
+			class B_Parachute {
+                displayName = "Steerable Parachute";
+                description = "Steerable Parachute.";
+                price = 0;
                 stock = 10000;
 				kindOf = wearables;
             };
@@ -364,6 +389,29 @@
                 price = 0;
                 stock = 10000;
             };
+			class ACE_SpraypaintBlack {
+                displayName = "ACE Spray Paint (Black)";
+                description = "The ACE spray paint can be utilize with the ACE self interaction menu. ";
+                price = 0;
+                stock = 10000;
+            };
+			class ACE_SpraypaintBlue {
+                displayName = "ACE Spray Paint (Blue)";
+                description = "The ACE spray paint can be utilize with the ACE self interaction menu. ";
+                price = 0;
+                stock = 10000;
+            };
+			class ACE_SpraypaintGreen {
+                displayName = "ACE Spray Paint (Green)";
+                description = "The ACE spray paint can be utilize with the ACE self interaction menu. ";
+                price = 0;
+                stock = 10000;
+            };class ACE_SpraypaintRed {
+                displayName = "ACE Spray Paint (Red)";
+                description = "The ACE spray paint can be utilize with the ACE self interaction menu. ";
+                price = 0;
+                stock = 10000;
+            };
 			class Laserbatteries {
                 displayName = "Laser Designator Batteries";
                 description = "Batteries for a laser designator. (Does not fit into NVG, UAV or Drone)";
@@ -373,6 +421,12 @@
 			class ACE_UAVBattery {
                 displayName = "ACE UAV Battery";
                 description = "ACE UAV Battery";
+                price = 100;
+                stock = 10000;
+            };
+			class ACE_Tripod {
+                displayName = "ACE SSWT Kit";
+                description = "The ACE SSWT kit adds a packable tripod deployable on the field. It features a flat part to deploy your weapon on and adjustable legs. It can be utilize with the ACE self interaction menu > Equipment.";
                 price = 100;
                 stock = 10000;
             };
@@ -425,14 +479,21 @@
             };
 			class ACE_epinephrine {
                 displayName = "ACE Epinephrine Auto Injector (x5)";
-                description = "Epinephrine Auto Injector is used to raise the odds of reviving a downed soldier. (utilize the Fort MAGA medical cargo house for subsidized medical treatment)";
+                description = "Epinephrine Auto Injector is used to raise the odds of reviving a downed soldier.";
                 amount = 5;
                 price = 100;
                 stock = 1000;     
             };
+			class ACE_personalAidKit {
+                displayName = "ACE Personal Aid Kit";
+                description = "ACE Personal Aid Kit or PAK is used to remove bruises and battle wounds. The patient has to be stable with everything bandaged and 100% blood for the option to appear";
+                amount = 1;
+                price = 1000;
+                stock = 1000;     
+            };
 			class ACE_bodyBag {
                 displayName = "ACE Bodybag";
-                description = "In order to deliver a dead civilian to their family member, you must first place it in a Body Bag via an ACE action (Interactions -> Place body in body bag). The Body Bag can then be loaded into the cargo of a vehicle, driven to the destination, unloaded, and then manually dragged to the relative. You can also bury ﻿or exhume any body bags if you ar﻿e carrying an Entrenching Tool.﻿ ﻿﻿﻿Autops﻿ies can be performed if you are carrying a Surgical Kit.";
+                description = "ACE Bodybag";
                 amount = 1;
                 price = 50;
                 stock = 1000;
@@ -634,25 +695,25 @@
 			class U_B_GhillieSuit {
                 displayName = "Ghillie Suit [NATO]";
                 description = "Ghillie Suit [NATO]";
-                price = 750;
+                price = 5000;
                 stock = 10000;                
             };			
 			class U_B_FullGhillie_ard {
                 displayName = "Full Ghillie (Arid) [NATO]";
                 description = "Full Ghillie (Arid) [NATO]";
-                price = 1000;
+                price = 5000;
                 stock = 10000;                
             };
 			class U_B_FullGhillie_lsh {
                 displayName = "Full Ghillie (Lush) [NATO]";
                 description = "Full Ghillie (Lush) [NATO]";
-                price = 1000;
+                price = 5000;
                 stock = 10000;                
             };
 			class U_B_FullGhillie_sard {
                 displayName = "Full Ghillie (Semi-Arid) [NATO]";
                 description = "Full Ghillie (Semi-Arid) [NATO]";
-                price = 1000;
+                price = 5000;
                 stock = 10000;                
             };		
 			class U_B_HeliPilotCoveralls {
@@ -766,13 +827,13 @@
 			class U_B_T_Sniper_F {
                 displayName = "Ghillie Suit (Tropic) [NATO]";
                 description = "Ghillie Suit (Tropic) [NATO]";
-                price = 750;
+                price = 5000;
                 stock = 10000;                
             };			
 			class U_B_T_FullGhillie_tna_F {
                 displayName = "Full Ghillie (Jungle) [NATO]";
                 description = "Full Ghillie (Jungle) [NATO]";
-                price = 1000;
+                price = 5000;
                 stock = 10000;                
             };		
 			class U_I_CombatUniform_tshirt {
@@ -802,25 +863,25 @@
 			class U_I_GhillieSuit {
                 displayName = "Ghillie Suit [AAF]";
                 description = "Ghillie Suit [AAF]";
-                price = 750;
+                price = 5000;
                 stock = 10000;                
             };
 			class U_I_FullGhillie_lsh {
                 displayName = "Full Ghillie (Lush) [AAF]";
                 description = "Full Ghillie (Lush) [AAF]";
-                price = 1000;
+                price = 5000;
                 stock = 10000;                
             };
 			class U_I_FullGhillie_sard {
                 displayName = "Full Ghillie (Semi-Arid) [AAF]";
                 description = "Full Ghillie (Semi-Arid) [AAF]";
-                price = 1000;
+                price = 5000;
                 stock = 10000;                
             };
 			class U_I_FullGhillie_ard {
                 displayName = "Full Ghillie (Arid) [AAF]";
                 description = "Full Ghillie (Arid) [AAF]";
-                price = 1000;
+                price = 5000;
                 stock = 10000;                
             };			
 			class U_I_Wetsuit {
@@ -950,8 +1011,8 @@
                 stock = 10000;                
             };
 			class V_PlateCarrier_Kerry {
-                displayName = "	US Plate Carrier Rig (Kerry)";
-                description = "	US Plate Carrier Rig (Kerry) Armor Level III";
+                displayName = "US Plate Carrier Rig (Kerry)";
+                description = "US Plate Carrier Rig (Kerry) Armor Level III";
                 price = 1000;
                 stock = 10000;                
             };			
@@ -1759,11 +1820,23 @@
                 price = 300;
                 stock = 10000;
             };
+			class B_Respawn_Sleeping_bag_blue_F {
+                displayName = "Respawn Backpack (Blue Sleeping Bag)";
+                description = "Whoever assembles the respawn backpack will receive a new respawn position.";
+                price = 100;
+                stock = 10000;
+            };
+			class B_Respawn_TentDome_F {
+                displayName = "Respawn Backpack (Dome Tent)";
+                description = "Whoever assembles the respawn backpack will receive a new respawn position and nearby players will receive the respawn position as well.";
+                price = 500;
+                stock = 10000;
+            };
 			class B_Parachute {
                 displayName = "Steerable Parachute";
                 description = "Steerable Parachute.";
-                price = 300;
+                price = 0;
                 stock = 10000;
-            };			
+            };
         };
 	};

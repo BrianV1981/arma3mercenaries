@@ -1,4 +1,8 @@
-ALiVE_SYS_LOGISTICS_CARRYABLE = [["Man"],[
+[] spawn {
+  waitUntil {
+  ALiVE_SYS_LOGISTICS getVariable["startupComplete",false]};
+  ALiVE_SYS_LOGISTICS_CARRYABLE = [
+  ["Man"],[
 "Reammobox_F",
 "Static",
 "StaticWeapon",
@@ -20,5 +24,14 @@ ALiVE_SYS_LOGISTICS_CARRYABLE = [["Man"],[
 "Land_Cargo_Tower_V1_F",
 "Land_Cargo_HQ_V1_F",
 "Land_Cargo_Patrol_V1_F",
-"Land_Cargo_House_V1_F"
-],["House"]];
+"Land_Cargo_House_V1_F",
+"Land_Monument_02_F",
+"Land_Tombstone_17_F",
+"Land_Grave_obelisk_F",
+"Land_SignM_WarningMilitaryArea_english_F",
+"Land_SignM_WarningMilitaryVehicles_english_F",
+"Land_PortableLight_double_F",
+"Land_PortableLight_double_F",
+"Land_PortableLight_single_F"
+  ],[""]];
+};

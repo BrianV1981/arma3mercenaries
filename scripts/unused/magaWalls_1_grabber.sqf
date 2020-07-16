@@ -1,1 +1,0 @@
-0 = [[21170, 7282.03], 0, call (compile (preprocessFileLineNumbers "magaWalls_1.sqf"))] call BIS_fnc_ObjectsMapper;

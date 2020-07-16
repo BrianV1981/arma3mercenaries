@@ -10,6 +10,11 @@ class CfgGradBuymenu {
 	#include "fortificationStoreMenu_1.hpp"
 	#include "fortificationStoreMenu_2.hpp"
 	#include "aliveStoreMenu_1.hpp"
+	#include "aliveStoreMenu_2.hpp"
 	#include "marineStoreMenu.hpp"
-	#include "haloStoreMenu.hpp"
+	#include "haloStoreMenu_1.hpp"
+	#include "haloStoreMenu_2.hpp"
+	#include "customStoreMenu_1.hpp"
+	#include "bugStoreMenu_1.hpp"
+	#include "bugStoreMenu_2.hpp"
 };

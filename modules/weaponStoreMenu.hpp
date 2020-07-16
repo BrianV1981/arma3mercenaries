@@ -223,7 +223,7 @@
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class SMG_03C_TR_hex {
-                displayName = "	ADR-97C TR 5.7 mm (Hex)";
+                displayName = "ADR-97C TR 5.7 mm (Hex)";
                 description = "Just like the conventional ADR-97C model, this variant almost identical to it in terms of performance (shorter barrel, lower muzzle velocity, higher dispersion), But similar to the ADR-97 TR variant, this model removes the built-in reflex sight in favour of having top and side rails, While this means that it no longer has an iron sight for aiming, it is able to mount optical sights onto its top rail and be fitted with accessories like laser sights onto its side rail.";
                 price = 5000;
                 stock = 1000;                
@@ -558,7 +558,7 @@
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class arifle_MSBS65_GL_camo_F {
-                displayName = "	Promet GL 6.5 mm (Camo)";
+                displayName = "Promet GL 6.5 mm (Camo)";
                 description = "The Promet GL is simply a modified configuration of the baseline Promet rifle fitted with an underbarrel grenade launcher module, It is chambered to fire 6.5×39 mm NATO caseless ammunition while its underbarrel UGP-40 module can load 40 mm grenade rounds universally shared with other rifle UGLs. It can be fitted with accessories on its top and side rails and supports muzzle attachments.";
                 price = 8000;
                 stock = 1000;                
@@ -1930,46 +1930,46 @@
                 stock = 10000;                
 	    };		
 			class muzzle_snds_65_TI_blk_F {
-                displayName = "	Stealth Sound Suppressor (6.5 mm, Black)";
-                description = "	The 5.8 mm suppressor is unique for being able to conceal its heat signature, and will not light up on infrared sensors during and after continuous fire. There is otherwise no difference to the regular 5.56 mm suppressor (performance-wise).";
+                displayName = "Stealth Sound Suppressor (6.5 mm, Black)";
+                description = "The 5.8 mm suppressor is unique for being able to conceal its heat signature, and will not light up on infrared sensors during and after continuous fire. There is otherwise no difference to the regular 5.56 mm suppressor (performance-wise).";
                 price = 500;
-                stock = 10000;                
+                stock = 10000;
 	    };		
 			class muzzle_snds_B {
                 displayName = "Sound Suppressor (7.62 mm)";
                 description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
                 price = 500;
-                stock = 10000;                
+                stock = 10000;
             };
 			class muzzle_snds_338_black {
                 displayName = "Sound Suppressor (.338, Black)";
                 description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
                 price = 550;
-                stock = 10000;                
+                stock = 10000;
             };
 			class muzzle_snds_93mmg {
                 displayName = "Sound Suppressor (9.3mm, Black)";
                 description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
                 price = 600;
-                stock = 10000;                
+                stock = 10000;
             };
 			class acc_flashlight_pistol {
                 displayName = "Pistol Flashlight";
                 description = "Weapon mounted light.";
                 price = 100;
-                stock = 10000;                
+                stock = 10000;
             };
 			class acc_esd_01_flashlight {
                 displayName = "SD Flashlight";
                 description = "Weapon mounted light.";
                 price = 100;
-                stock = 10000;                
+                stock = 10000;
             };
 			class acc_flashlight_smg_01 {
                 displayName = "Flashlight";
                 description = "Weapon mounted light (SMG).";
                 price = 100;
-                stock = 10000;                
+                stock = 10000;
             };
 			class acc_flashlight {
                 displayName = "Flashlight";

@@ -1,1 +1,0 @@
-0 = [[21158.8, 7328.75], 0, call (compile (preprocessFileLineNumbers "magaBunker_2.sqf"))] call BIS_fnc_ObjectsMapper;

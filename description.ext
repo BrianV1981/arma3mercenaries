@@ -4,18 +4,18 @@ class Header
 	minPlayers = 1;
 	maxPlayers = 15;
 };
-OnLoadName = "arma3mercenaries";
+OnLoadName = "arma3mercenaries_V35";
 onLoadMission = "A special unit of soldiers is tasked with sabotaging infrastructure, rescuing hostages and eliminating high value targets...";
 author="BrianV1981";
 respawn = 3;
 respawndelay = 15;
 respawnTemplates[] = {"MenuInventory", "MenuPosition", "Spectator"};
 respawnOnStart = -1;
-disabledAI = 0;
+disabledAI = 1;
 joinUnassigned = 1;
 enableDebugConsole = 1;
 allowFunctionsLog = 1;
-ExtendedInfoType=0;
+ExtendedInfoType = 0;
 corpseManagerMode = 1;
 corpseLimit = 50;
 corpseRemovalMinTime = 1800;
@@ -37,9 +37,9 @@ minPlayerDistance = 0;
 class CfgFunctions {
     #include "modules\grad-moneymenu\cfgFunctions.hpp"
     #include "modules\grad-listBuymenu\cfgFunctions.hpp"
-	#include "modules\grad-fortifications\cfgFunctions.hpp"
-	#include "modules\grad-persistence\cfgFunctions.hpp"
-	#include "vcom\cfgFunctions.hpp"
+    #include "modules\grad-fortifications\cfgFunctions.hpp"
+    #include "modules\grad-persistence\cfgFunctions.hpp"
+    #include "vcom\cfgFunctions.hpp"
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -108,84 +108,7 @@ class CfgRespawnInventory
 class CfgSounds
 {
 	sounds[] = {};
-	class bird
-	{
-		name = "birdSong";
-		sound[] = {"music\bird.ogg", 7, 1, 500};
-		titles[] = {};
-	};
-	class cisco
-	{
-		name = "ciscoSong";
-		sound[] = {"music\cisco.ogg", 7, 1, 500};
-		titles[] = {};
-	};
-	class hush
-	{
-		name = "hushSong";
-		sound[] = {"music\hush.ogg", 8, 1, 500};
-		titles[] = {};
-	};
-	class shakin
-	{
-		name = "shakinSong";
-		sound[] = {"music\shakin.ogg", 7, 1, 500};
-		titles[] = {};
-	};
-	class letter
-	{
-		name = "letterSong";
-		sound[] = {"music\letter.ogg", 8, 1, 500};
-		titles[] = {};
-	};
-    class black
-	{
-		name = "blackSong";
-		sound[] = {"music\black.ogg", 8, 1, 500};
-		titles[] = {};
-	};
-	class boots
-	{
-		name = "bootsSong";
-		sound[] = {"music\boots.ogg", 8, 1, 500};
-		titles[] = {};
-	};
-	class bully
-	{
-		name = "bullySong";
-		sound[] = {"music\bully.ogg", 8, 1, 500};
-		titles[] = {};
-	};
-	class fortunate
-	{
-		name = "fortunateSong";
-		sound[] = {"music\fortunate.ogg", 8, 1, 500};
-		titles[] = {};
-	};
-	class pompeo1
-	{
-		name = "pompeo1Song";
-		sound[] = {"music\pompeo1.ogg", 10, 1, 500};
-		titles[] = {};
-	};
-	class preacher
-	{
-		name = "preacherSong";
-		sound[] = {"music\preacher.ogg", 8, 1, 500};
-		titles[] = {};
-	};
-	class trumpspeach1
-	{
-		name = "trumpspeach1Song";
-		sound[] = {"music\trumpspeach1.ogg", 10, 1, 500};
-		titles[] = {};
-	};
-	class foxiran1
-	{
-		name = "foxiran1Song";
-		sound[] = {"music\foxiran1.ogg", 10, 1, 500};
-		titles[] = {};
-	};
+	
 	class Killfeed_notification
 	{
 		name = "Killfeed_notification";
