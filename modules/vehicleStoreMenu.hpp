@@ -56,78 +56,91 @@
                 description = "***WARNING**ALL QUAD BIKES WILL BE DELETED UPON SERVER RESTART***The ATV is an all-terrain, 4x4 light utility vehicle that is mainly designed for use by special forces units and non-combat troops. (Slingload: No) (Slingloadable: Yes)";
                 price = 0;
 				stock = 9999;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class C_Kart_01_black_F {
                 displayName = "Go-Kart"; 
                 description = "Go-karts come in all shapes and forms, from motorless models to high-powered racing machines. Some, such as Superkarts, are able to beat racing cars or motorcycles on long circuits. (Slingload: No) (Slingloadable: Yes)";
                 price = 500;
                 stock = 9999;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class C_Hatchback_01_sport_F {
                 displayName = "Hatchback (Sport)";
                 description = "The Hatchback is a five-door compact car with a hatchback layout. The Hatchback contains enough seats for the driver and up to a maximum of three other passengers. (Slingload: No) (Slingloadable: Yes)";
                 price = 4000;
                 stock = 1000;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };		
 			class C_Offroad_02_unarmed_F {
                 displayName = "MB 4WD";
                 description = "The MB 4WD is a modern four-wheel drive off-road vehicle with a distinctive construction. The vehicle was produced in the US and exists in a number of different editions. (Slingload: No) (Slingloadable: Yes)";
                 price = 6000;
                 stock = 1000;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class C_SUV_01_F {
                 displayName = "SUV";
                 description = "SUV. (Slingload: No) (Slingloadable: Yes)";
                 price = 8000;
-				stock = 1000;				
+				stock = 1000;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_G_Offroad_01_F {
                 displayName = "Offroad";
                 description = "Offroad. (Slingload: No) (Slingloadable: Yes)";
                 price = 8000;
-                stock = 1000;     	
+                stock = 1000;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class C_Offroad_01_covered_F {
                 displayName = "Offroad (Covered)";
                 description = "Offroad. (Slingload: No) (Slingloadable: Yes)";
                 price = 8000;
-                stock = 1000;        
+                stock = 1000;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class C_Offroad_01_comms_F {
                 displayName = "Offroad (Comms)";
                 description = "Offroad. (Slingload: No) (Slingloadable: Yes)";
                 price = 8000;
-                stock = 1000;        
+                stock = 1000;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };		
 			class B_G_Van_02_transport_F {
                 displayName = "Van (Transport)";
                 description = "	The standard van can be used for a huge variety of practical purposes. This particular model features a long load length and excellent roof height, allowing for the transport of passengers, cargo, or even some smaller vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 10000;
                 stock = 1000;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };		
             class B_G_Van_02_vehicle_F {
-                displayName = "Van (Camo)"; 
+                displayName = "Van (Cargo)"; 
                 description = "Rugged and flexible, the Van represents more than twenty years of innovation. It is the benchmark for hybrid minibus-style vehicles; providing a combination of reliability and customisation for a variety of roles. (Slingload: No) (Slingloadable: Yes)";
                 price = 10000;
                 stock = 9999;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class C_Van_01_transport_F {
                 displayName = "Truck (Flatbed)";
                 description = "***ATTENTION***Truck (Flatbed) can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. Once activated, you can use the middle mouse wheel on the vehicle that you wish to be towed. (Slingload: No) (Slingloadable: Yes)";
                 price = 13000;
                 stock = 1000;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class C_Van_01_box_F {
                 displayName = "Truck (Box)";
                 description = "The Truck is a multipurpose, medium-sized, off-road capable van designed for a variety of roles ranging from transporting freight and/or passengers, to refuelling military and civilian vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 13000;
                 stock = 1000;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class C_Tractor_01_F {
                 displayName = "Tractor"; 
                 description = "Found in farm barns across the globe, the common tractor is a reliable high torque engineering vehicle, used for towing trailers and many other agricultural tasks. This 2WD tractor with a diesel engine has proven itself reliable since the eighties. With solid maintenance and the occasional lick of fresh paint, this old workhorse has been in use by several generations of farmers to date. (Slingload: No) (Slingloadable: Yes)";
                 price = 5000;
                 stock = 9999;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 		};
 		class Svehicles {
@@ -138,115 +151,129 @@
 			
 			class C_Van_02_medevac_F {
                 displayName = "Ambulance (Medical Facility)"; 
-                description = "Ambulance (Medical Facility) will enable the use of personal aid kits (PAK's) in the field and is a mobile medical facility. It is also a mobile respawn point for NATO and Syndicate forces. (Slingload: No) (Slingloadable: Yes)";
+                description = "Ambulance (Medical Facility) will enable the use of personal aid kits (PAK's) in the field and is a mobile medical facility. (Slingload: No) (Slingloadable: Yes)";
                 price = 50000;
                 stock = 9999;
-				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_G_Offroad_01_repair_F {
                 displayName = "Offroad (Repair Facility)"; 
                 description = "Offroad (repair facility) can be utiliezed to repair damaged vehicles to 100%. (Slingload: No) (Slingloadable: Yes)";
                 price = 50000;
                 stock = 9999;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class C_Van_01_fuel_F {
                 displayName = "Truck (Fuel)"; 
                 description = "The Truck is a multipurpose, medium-sized, off-road capable van designed for a variety of roles ranging from transporting freight and/or passengers, to refuelling military and civilian vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 50000;
                 stock = 9999;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class C_Truck_02_covered_F {
                 displayName = "Zamak Transport (Covered)"; 
-                description = "The Zamak is a medium-sized 6x6, general utility truck that can transport and heal troops, or repair and refuel military vehicles although it can also be used for civil purposes as well (Covered). (Slingload: No) (Slingloadable: Yes)";
+                description = "The Zamak is a medium-sized 6x6, general utility truck that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Covered). (Slingload: No) (Slingloadable: Yes)";
                 price = 150000;
                 stock = 9999;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
             class C_Truck_02_fuel_F {
                 displayName = "Zamak Fuel"; 
-                description = "The Zamak is a medium-sized 6x6, general utility truck that can transport and heal troops, or repair and refuel military vehicles although it can also be used for civil purposes as well.  (Slingload: No) (Slingloadable: Yes)";
+                description = "The Zamak is a mobile fuel station that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Slingload: No) (Slingloadable: Yes)";
                 price = 150000;
                 stock = 9999;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class C_Truck_02_box_F {
                 displayName = "Zamak Repair"; 
-                description = "The Zamak is a medium-sized 6x6, general utility truck that can transport and heal troops, or repair and refuel military vehicles although it can also be used for civil purposes as well. (Slingload: No) (Slingloadable: Yes)";
+                description = "The Zamak is a mobile repair station that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Slingload: No) (Slingloadable: Yes)";
                 price = 150000;
                 stock = 9999;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_Truck_01_mover_F {
                 displayName = "HEMTT";
-                description = "This HEMTT is a transport vehicle. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a transport vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 200000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_Truck_01_flatbed_F {
                 displayName = "HEMTT Flatbed";
-                description = "This HEMTT is equipped with a flatbed. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is equipped with a flatbed that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 200000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_Truck_01_cargo_F {
                 displayName = "HEMTT Cargo";
-                description = "This HEMTT is a cargo vehicle. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a cargo vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 200000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_Truck_01_box_F {
                 displayName = "HEMTT Box";
-                description = "This HEMTT is equipped with a box container. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is equipped with a box container that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 200000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_Truck_01_transport_F {
                 displayName = "HEMTT Transport";
-                description = "This HEMTT is a transport vehicle. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a transport vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 200000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };			
 			class B_Truck_01_covered_F {
                 displayName = "HEMTT Transport (Covered)";
-                description = "This HEMTT is a transport vehicle. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a transport vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 200000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_Truck_01_Repair_F {
                 displayName = "HEMTT Repair";
-                description = "This HEMTT is a mobile repair station. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a mobile repair station that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 220000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_Truck_01_ammo_F {
                 displayName = "HEMTT Ammo";
-                description = "This HEMTT is a ammo resupply vehicle. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a ammo resupply vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 220000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_Truck_01_fuel_F {
                 displayName = "HEMTT Fuel";
-                description = "This HEMTT is a mobile fuel station. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a mobile fuel station that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 220000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_Truck_01_medical_F {
                 displayName = "HEMTT Medical";
-                description = "Ambulance (Medical Facility) will enable the use of personal aid kits (PAK's) in the field and is a mobile medical facility. It is also a mobile respawn point for NATO and Syndicate forces. (Slingload: No) (Slingloadable: Yes)";
+                description = "Ambulance (Medical Facility) will enable the use of personal aid kits (PAK's) in the field and is a mobile medical facility that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Slingload: No) (Slingloadable: Yes)";
                 price = 220000;
                 stock = 50;
-				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_APC_Tracked_01_CRV_F {
                 displayName = "CRV-6e Bobcat (Sand)";
-                description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat. It also serves as a mobile respawn point for NATO forces. ";
+                description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
                 price = 475000;
                 stock = 20;
-				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_T_APC_Tracked_01_CRV_F {
                 displayName = "CRV-6e Bobcat (Military Green)";
-                description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat. It also serves as a mobile respawn point for NATO forces. ";
+                description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
                 price = 475000;
                 stock = 20;
-				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 		};
 		class Cvehicles {
@@ -260,84 +287,98 @@
                 description = "	The 4x4 pickup by Generic Motors is a perfect choice for farmers and hunters. The durable chassis and powerful engine has been designed to withstand anything from the cratered highways of Central Europe to the rugged terrain of the Mediterranean. (Slingload: No) (Slingloadable: Yes)";
                 price = 10000;
                 stock = 9999;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_G_Offroad_01_AT_F  {
                 displayName = "Offroad (AT)"; 
                 description = "	The 4x4 pickup by Generic Motors is a perfect choice for farmers and hunters. The durable chassis and powerful engine has been designed to withstand anything from the cratered highways of Central Europe to the rugged terrain of the Mediterranean. (Slingload: No) (Slingloadable: Yes)";
                 price = 20000;
                 stock = 9999;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             }; 
 			class B_T_LSV_01_unarmed_F {
                 displayName = "Prowler";
                 description = "Primarily designed for use by special operations units, the Prowler is a lightweight, air transportable, highly mobile platform that can be configured for a variety of missions. (Slingload: No) (Slingloadable: Yes)";
                 price = 150000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_LSV_01_armed_F {
                 displayName = "Prowler (HMG)";
                 description = "Primarily designed for use by special operations units, the Prowler is a lightweight, air transportable, highly mobile platform that can be configured for a variety of missions. (Slingload: No) (Slingloadable: Yes)";
                 price = 175000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_LSV_01_AT_F {
                 displayName = "Prowler (AT)";
                 description = "Primarily designed for use by special operations units, the Prowler is a lightweight, air transportable, highly mobile platform that can be configured for a variety of missions. (Slingload: No) (Slingloadable: Yes)";
                 price = 175000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
             class B_MRAP_01_F {
                 displayName = "Hunter";
                 description = "The Hunter is a four-wheel drive, all-terrain, MRAP-type vehicle. Primarily intended for use in counter-insurgency operations, it is multi-role and can act as both a troop carrier and supply vehicle if needed. (Slingload: No) (Slingloadable: Yes)";
                 price = 190000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class O_MRAP_02_F {
                 displayName = "Ifrit";
                 description = "The Ifrit is a four-wheel drive MRAP-type vehicle that can fulfil many roles ranging from serving as a V.I.P. transport, escort vehicle, light troop transport, to reconnaissance. All in a well-protected and compact package. (Slingload: No) (Slingloadable: Yes)";
                 price = 190000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class I_MRAP_03_F {
                 displayName = "Strider";
                 description = "The Strider is a four-wheel drive armed reconnaissance vehicle. Though its primary mission is observation, it can act as both a light troop transport and scout vehicle as well. (Slingload: No) (Slingloadable: Yes)";
                 price = 190000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
             class B_MRAP_01_hmg_F {
                 displayName = "Hunter (HMG)";
                 description = "The Hunter is a four-wheel drive, all-terrain, MRAP-type vehicle. Primarily intended for use in counter-insurgency operations, it is multi-role and can act as both a troop carrier and supply vehicle if needed. (Slingload: No) (Slingloadable: Yes)";
                 price = 225000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class O_MRAP_02_hmg_F {
                 displayName = "Ifrit (HMG)";
                 description = "The Ifrit is a four-wheel drive MRAP-type vehicle that can fulfil many roles ranging from serving as a V.I.P. transport, escort vehicle, light troop transport, to reconnaissance. All in a well-protected and compact package. (Slingload: No) (Slingloadable: Yes)";
                 price = 225000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class I_MRAP_03_hmg_F {
                 displayName = "Strider (HMG)";
                 description = "The Strider is a four-wheel drive armed reconnaissance vehicle. Though its primary mission is observation, it can act as both a light troop transport and scout vehicle as well. (Slingload: No) (Slingloadable: Yes)";
                 price = 225000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_MRAP_01_gmg_F {
                 displayName = "Hunter (GMG)";
                 description = "The Hunter is a four-wheel drive, all-terrain, MRAP-type vehicle. Primarily intended for use in counter-insurgency operations, it is multi-role and can act as both a troop carrier and supply vehicle if needed. (Slingload: No) (Slingloadable: Yes)";
                 price = 250000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class O_MRAP_02_gmg_F {
                 displayName = "Ifrit (GMG)";
                 description = "The Ifrit is a four-wheel drive MRAP-type vehicle that can fulfil many roles ranging from serving as a V.I.P. transport, escort vehicle, light troop transport, to reconnaissance. All in a well-protected and compact package. (Slingload: No) (Slingloadable: Yes)";
                 price = 250000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class I_MRAP_03_gmg_F {
                 displayName = "Strider (GMG)";
                 description = "The Strider is a four-wheel drive armed reconnaissance vehicle. Though its primary mission is observation, it can act as both a light troop transport and scout vehicle as well. (Slingload: No) (Slingloadable: Yes)";
                 price = 250000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 		};
         class LAvehicles {
@@ -351,96 +392,112 @@
                 description = "The Gorgon is an 8x8 armoured combat vehicle that uses an inverted V-shape hull. It is designed to transport troops into battle and to provide fire support against a variety of ground threats. (Seating Capacity: 11)";
                 price = 420000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_APC_Wheeled_01_cannon_F {
                 displayName = "Badger IFV (Sand)";
                 description = "The Badger IFV is an 8x8 infantry fighting vehicle designed as a medium-lift personnel carrier for expeditionary warfare. It can operate across a variety of environments ranging from land to sea, and can even be para-dropped from the air. (Seating Capacity: 11)";
                 price = 420000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_T_APC_Wheeled_01_cannon_F {
                 displayName = "Badger IFV (Military Green)";
                 description = "The Badger IFV is an 8x8 infantry fighting vehicle designed as a medium-lift personnel carrier for expeditionary warfare. It can operate across a variety of environments ranging from land to sea, and can even be para-dropped from the air. (Seating Capacity: 11)";
                 price = 420000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_AFV_Wheeled_01_cannon_F {
                 displayName = "Rooikat 120 (Sand)";
                 description = "The Rooikat 120 is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. (Seating Capacity: 3)";
                 price = 450000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_T_AFV_Wheeled_01_cannon_F {
                 displayName = "Rooikat 120 (Military Green)";
                 description = "The Rooikat 120 is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. (Seating Capacity: 3)";
                 price = 450000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };		
 			class B_AFV_Wheeled_01_up_cannon_F {
                 displayName = "Rooikat 120 UP (Sand)";
                 description = "The RRooikat 120 is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. The 'UP' version is equipped with a remotely operated 12.7mm HMG and improved protection, provided by a cage and reactive armor. However, with this setup, it's too bulky to fit into many transport vehicles, including the Blackfish VTOL. (Seating Capacity: 3)";
                 price = 465000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_T_AFV_Wheeled_01_up_cannon_F {
                 displayName = "Rooikat 120 UP (Military Green)";
                 description = "The Rooikat 120 is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. The 'UP' version is equipped with a remotely operated 12.7mm HMG and improved protection, provided by a cage and reactive armor. However, with this setup, it's too bulky to fit into many transport vehicles, including the Blackfish VTOL. (Seating Capacity: 3)";
                 price = 465000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };						
 			class B_APC_Tracked_01_rcws_F {
                 displayName = "Namer (Sand)";
                 description = "The Namer is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat. (Seating Capacity: 11)";
                 price = 440000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_T_APC_Tracked_01_rcws_F {
                 displayName = "Namer (Military Green)";
                 description = "The Namer is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat. (Seating Capacity: 11)";
                 price = 440000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class O_APC_Tracked_02_cannon_F {
                 displayName = "BM-2T";
                 description = "The BM-2T is a highly manoeuvrable infantry fighting vehicle designed as a troop transport that can engage armoured ground and low-flying aerial targets while stationary, and as an armoured reconnaissance vehicle. (Seating Capacity: 11)";
                 price = 440000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class O_APC_Tracked_02_AA_F {
                 displayName = "ZSU-35";
                 description = "The ZSU-35 is a dedicated anti-aircraft variant of its IFV parent that is fitted with a turret armed with dual 35 mm cannons and surface-to-air missiles. (Seating Capacity: 3)";
                 price = 440000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class I_APC_tracked_03_cannon_F {
                 displayName = "FV510";
                 description = "The FV-510 is an armoured vehicle used to transport infantry squads into combat under protection, and to provide fire support once troops have disembarked. It is fitted with a 30 mm cannon that is capable of firing both high-explosive and armour-piercing rounds at ranges of up to 1,500 metres against light-medium armoured vehicles. (Seating Capacity: 10)";
                 price = 440000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_APC_Tracked_01_AA_F {
                 displayName = "Bardelas (Sand)";
                 description = "Primarily used to defend against aerial threats, the Bardelas is fitted with a turret armed with dual 35 mm cannons and four surface-to-air missiles that can be fired in a rapid succession once an aerial target is locked onto. (Seating Capacity: 3)";
                 price = 500000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_T_APC_Tracked_01_AA_F {
                 displayName = "Bardelas (Military Green)";
                 description = "Primarily used to defend against aerial threats, the Bardelas is fitted with a turret armed with dual 35 mm cannons and four surface-to-air missiles that can be fired in a rapid succession once an aerial target is locked onto. (Seating Capacity: 3)";
                 price = 500000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };		
 			class B_Radar_System_01_F {
                 displayName = "AN/MPQ-105 Radar";
                 description = "The AN/MPQ-105 is the search and detection, target track and illumination radar and missile commander for the surface-to-air defense missile system";
                 price = 200000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_SAM_System_03_F {
                 displayName = "MIM-145 Defender";
                 description = "The Defender is a long-range, all-altitude, and all-weather air defence system used to counter enemy aircraft.";
                 price = 500000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };			
 	};
         class HAvehicles {
@@ -455,66 +512,77 @@
                 description = "The Leopard 2SG is the main battle tank used by Altian Armed Forces. A batch of a few dozen tanks and spare turrets were bought under-price from a South-European country facing economic collapse. Like similar MBTs of the era, the Kuma is armed with a 120mm cannon, 7.62mm coaxial machine gun and a remotely controlled 12.7mm HMG. The level of protection for the crew is also remarkable, thanks to additional armor layers. (Seating Capacity: 3)";
                 price = 560000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };			
 			class O_MBT_02_cannon_F {
                 displayName = "T-100 Black Eagle";
                 description = "	A modernized version of the Russian T-95 MBT. The ongoing development of the new generation battle tank was restarted in 2016 thanks to revenues from the oil crisis. The new concept of battle tank is lower, lighter with increased maneuverability. The crew was moved from the turret to a more armored body of the tank resulting in increased survivability. The T-100 Varsuk comes with a standard 125 mm cannon. (Seating Capacity: 3)";
                 price = 575000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class O_T_MBT_02_cannon_ghex_F {
                 displayName = "T-100 Black Eagle";
                 description = "	A modernized version of the Russian T-95 MBT. The ongoing development of the new generation battle tank was restarted in 2016 thanks to revenues from the oil crisis. The new concept of battle tank is lower, lighter with increased maneuverability. The crew was moved from the turret to a more armored body of the tank resulting in increased survivability. The T-100 Varsuk comes with a standard 125 mm cannon. (Seating Capacity: 3)";
                 price = 575000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };			
 			class B_MBT_01_cannon_F {
                 displayName = "Merkava MK IV M (Sand)";
                 description = "The Merkava MK IV M is a main battle tank that uses a drive train consisting of six road wheels, one rear idler wheel, one front drive sprocket and three return rollers per side.The turret is triangular and narrow in shape, large but low, and is mounted rearwards onto the chassis, a layout commonly found on SPGs. (Seating Capacity: 9)";
                 price = 600000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_T_MBT_01_cannon_F {
                 displayName = "Merkava MK IV M (Military Green)";
                 description = "The Merkava MK IV M is a main battle tank that uses a drive train consisting of six road wheels, one rear idler wheel, one front drive sprocket and three return rollers per side.The turret is triangular and narrow in shape, large but low, and is mounted rearwards onto the chassis, a layout commonly found on SPGs. (Seating Capacity: 9)";
                 price = 600000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };			
 			class O_MBT_04_cannon_F {
                 displayName = "T-14 Armata";
                 description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers. (Seating Capacity: 3)";
                 price = 625000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class O_T_MBT_04_cannon_F {
                 displayName = "T-14 Armata";
                 description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers. (Seating Capacity: 3)";
                 price = 625000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };	
 		class B_MBT_01_TUSK_F {
                 displayName = "Merkava MK IV LIC (Sand)";
                 description = "The Merkava MK IV LIC is the urban purpose variant of the M2A1 Slammer. Compared to the basic version, it features heavier armor with reinforced rear of the tank and a remote-controlled turret fitted with 12.7 mm heavy machine gun. (Seating Capacity: 9)";
                 price = 650000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };	
 			class B_T_MBT_01_TUSK_F {
                 displayName = "Merkava MK IV LIC (Military Green)";
                 description = "The Merkava MK IV LIC is the urban purpose variant of the M2A1 Slammer. Compared to the basic version, it features heavier armor with reinforced rear of the tank and a remote-controlled turret fitted with 12.7 mm heavy machine gun. (Seating Capacity: 9)";
                 price = 650000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };		
 			class O_MBT_04_command_F {
                 displayName = "T-14K Armata";
                 description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers. Two main variants are currently in use - the standard T-140 and the T-140K, a 'commander' variant which exchanges the HMG for a 30mm autocannon. In addition, it also provides additional radios and sensors for platoon and company leaders. (Seating Capacity: 3)";
                 price = 675000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class O_T_MBT_04_command_F {
                 displayName = "T-14K Armata";
                 description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers. Two main variants are currently in use - the standard T-140 and the T-140K, a 'commander' variant which exchanges the HMG for a 30mm autocannon. In addition, it also provides additional radios and sensors for platoon and company leaders. (Seating Capacity: 3)";
                 price = 675000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 	};
         class AAvehicles {
@@ -528,30 +596,35 @@
                 description = "The KamAZ MRL is simply a modified variant of the baseline Zamak truck that has had its rear flatbed configured to house a rocket pod and a (non-functional) winch crane. It is armed with a 230 mm rocket pod which is always pre-loaded with 12 long-range artillery rockets, and are fitted with high-explosive (HE) warheads. (Seating Capacity: 3)";
                 price = 400000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_MBT_01_mlrs_F {
                 displayName = "Seara (Sand)";
                 description = "Sharing the same chassis as its MBT parent, the Seara is essentially a mobile rocket battery on treads. It can accurately deliver high-explosive rockets with a dispersion of less than 100 m on targets more than 11 km away in a single salvo. (Seating Capacity: 3)";
                 price = 700000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_T_MBT_01_mlrs_F {
                 displayName = "Seara (Military Green)";
                 description = "Sharing the same chassis as its MBT parent, the Seara is essentially a mobile rocket battery on treads. It can accurately deliver high-explosive rockets with a dispersion of less than 100 m on targets more than 11 km away in a single salvo. (Seating Capacity: 3)";
                 price = 700000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };			
 			class B_MBT_01_arty_F {
                 displayName = "Sholef (Sand)";
                 description = "Fitted with a 155 mm howitzer cannon as its primary weapon, the Scorcher is a powerful gun-based fire support vehicle that can launch a mixture of high-explosive, smoke, cluster, and even precision guided shells on targets at extreme distances. (Seating Capacity: 3)";
                 price = 700000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_T_MBT_01_arty_F {
                 displayName = "Sholef (Military Green)";
                 description = "Fitted with a 155 mm howitzer cannon as its primary weapon, the Scorcher is a powerful gun-based fire support vehicle that can launch a mixture of high-explosive, smoke, cluster, and even precision guided shells on targets at extreme distances. (Seating Capacity: 3)";
                 price = 700000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };			
 	};	
         class Avehicles {
@@ -562,72 +635,80 @@
 			
             class B_T_VTOL_01_infantry_F {
                 displayName = "V-44 X Blackfish (Infantry Transport)";
-                description = "This is a V-44 X Blackfish (Infantry Transport) that also acts as a mobile respawn point for NATO forces. The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
+                description = "This is a V-44 X Blackfish (Infantry Transport) is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
                 price = 400000;
                 stock = 20;
-				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
             class B_T_VTOL_01_infantry_blue_F {
                 displayName = "V-44 X Blackfish (Infantry Transport) (Blue)";
-                description = "This is a V-44 X Blackfish (Infantry Transport) that also acts as a mobile respawn point for NATO forces. The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
+                description = "This is a V-44 X Blackfish (Infantry Transport) is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
                 price = 400000;
                 stock = 20;
-				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
             class B_T_VTOL_01_infantry_olive_F {
                 displayName = "V-44 X Blackfish (Infantry Transport) (Olive)";
-                description = "This is a V-44 X Blackfish (Infantry Transport) that also acts as a mobile respawn point for NATO forces. The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
+                description = "This is a V-44 X Blackfish (Infantry Transport) is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
                 price = 400000;
                 stock = 20;
-				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };			
             class B_T_VTOL_01_armed_F {
                 displayName = "V-44 X Blackfish (Armed)";
                 description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place, Armed variant of the Blackfish. Has two gunners who remotely operate its weapon systems through control panels in front of their seats.. (Slingload: No) (Slingloadable: No)";
                 price = 420000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
             class B_T_VTOL_01_armed_blue_F {
                 displayName = "V-44 X Blackfish (Armed) (Blue)";
                 description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place, Armed variant of the Blackfish. Has two gunners who remotely operate its weapon systems through control panels in front of their seats.. (Slingload: No) (Slingloadable: No)";
                 price = 420000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
             class B_T_VTOL_01_armed_olive_F {
                 displayName = "V-44 X Blackfish (Armed) (Olive)";
                 description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place, Armed variant of the Blackfish. Has two gunners who remotely operate its weapon systems through control panels in front of their seats.. (Slingload: No) (Slingloadable: No)";
                 price = 420000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class I_C_Plane_Civil_01_F {
                 displayName = "Caesar BTT";
                 description = "Caesar BTT is a single-engine, fixed-gear, low-wing general aviation aircraft built from composite materials. The Caesar BTT is one of the fastest fixed-gear, single-engine piston aircraft, reaching a speed of 235 knots (435 km/h) true air speed at 25,000 feet (7,600 m). It is used by civilians and smaller shipping companies all around the world. (Slingload: No) (Slingloadable: No)";
                 price = 50000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class I_Plane_Fighter_03_CAS_F {
                 displayName = "A-143 Buzzard (CAS)";
                 description = "The Buzzard is a low-set, straight wing jet-powered aircraft with a double-taper planform. It is designed to be a low-cost aircraft capable of performing both ground attack and air interdiction missions. (Slingload: No) (Slingloadable: No)";
                 price = 600000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_Plane_Fighter_01_F {
                 displayName = "F/A-181 Black Wasp II";
                 description = "The Black Wasp is a twin-engined stealth fighter that uses a clipped delta wing design with a reverse sweep on the rear. (Slingload: No) (Slingloadable: No)";
                 price = 650000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class B_Plane_Fighter_01_Stealth_F {
                 displayName = "	F/A-181 Black Wasp II (Stealth)";
                 description = "The Black Wasp is a twin-engined stealth fighter that uses a clipped delta wing design with a reverse sweep on the rear. (Slingload: No) (Slingloadable: No)";
                 price = 650000;
                 stock = 20;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };			
 			class B_Plane_CAS_01_F {
                 displayName = "A-164 Wipeout (CAS)";
                 description = "The Wipeout is a twin turbofan-engined, ground attack jet that uses a cantilever low-wing monoplane wing design with a wide chord. It is meant to be used exclusively for ground attack and close air support. (Slingload: No) (Slingloadable: No)";
                 price = 625000;
-                stock = 20;          
+                stock = 20;       
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";				
             }; 			
 };			
         class Hvehicles {
@@ -641,46 +722,49 @@
                 description = "Comparable in size and appearance to NATO's MH-9, the M900 is the civilian variant of the same xH-9 series of light helicopters. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
                 price = 50000;
                 stock = 50;
-				picture = "photos\Arma3-render-m900digital.png";				
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";		
             };			
 			class B_Heli_Light_01_stripped_F {
                 displayName = "MH-9 Hummingbird (Stripped)";
                 description = "The Hummingbird is a five-bladed, single engine, rotary-wing light helicopter designed for both observation and light transport roles. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
                 price = 100000;
                 stock = 50;
-				picture = "photos\B_Heli_Light_01_stripped_F.jpg";
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
             class B_Heli_Light_01_F {
                 displayName = "MH-9 Hummingbird";
                 description = "The Hummingbird is a five-bladed, single engine, rotary-wing light helicopter designed for both observation and light transport roles. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
                 price = 160000;
                 stock = 50;
-				picture = "photos\Arma3-render-m900digital.png";
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			 class B_Heli_Light_01_armed_F {
                 displayName = "AH-9 Pawnee";
                 description = "The Pawnee is a five-bladed, single engine, rotary-wing light helicopter designed for both observation and light attack roles. Unlike the Hummingbird, the Pawnee has two stub wings located on either side of the fuselage where the side benches that support dynamic loadouts. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
                 price = 200000;
                 stock = 25;
-				picture = "photos\Arma3-render-m900digital.png";
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };			
 			class I_Heli_light_03_unarmed_F {
                 displayName = "WY-55 Hellcat (Unarmed)";
                 description = "The Hellcat is a four-bladed, twin-engined rotary-wing helicopter that is capable of serving in many roles. These range from providing air-to-ground fire support as a light gunship, ferrying troops and cargo into battle as a utility transport, and even as an anti-tank/ship helicopter when outfitted with guided missiles. (Yes, up to 2000 kg) (Slingloadable: No)";
 				price = 200000;
                 stock = 25;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class I_Heli_light_03_F {
                 displayName = "WY-55 Hellcat";
                 description = "The Hellcat is a four-bladed, twin-engined rotary-wing helicopter that is capable of serving in many roles. These range from providing air-to-ground fire support as a light gunship, ferrying troops and cargo into battle as a utility transport, and even as an anti-tank/ship helicopter when outfitted with guided missiles. (Yes, up to 2000 kg) (Slingloadable: No)";
                 price = 300000;
                 stock = 25;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class O_Heli_Light_02_unarmed_F  {
                 displayName = "PO-30 Orca (Unarmed)";
                 description = "The PO-30 is a four-bladed, rotary-wing light helicopter with a fantail designed for both aerial reconnaissance and light transport duties. (Yes, up to 2000 kg) (Slingloadable: No)";
                 price = 200000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			
 			class O_Heli_Light_02_F  {
@@ -688,80 +772,91 @@
                 description = "The PO-30 is a four-bladed, rotary-wing light helicopter with a fantail designed for both aerial reconnaissance and light transport duties. (Yes, up to 2000 kg) (Slingloadable: No)";
                 price = 300000;
                 stock = 25;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class O_Heli_Light_02_v2_F {
                 displayName = "PO-30 Orca (Black & White)";
                 description = "The PO-30 is a four-bladed, rotary-wing light helicopter with a fantail designed for both aerial reconnaissance and light transport duties. (Yes, up to 2000 kg) (Slingloadable: No)";
                 price = 300000;
                 stock = 25;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
             class B_Heli_Transport_01_F {
                 displayName = "UH-80 Ghost Hawk";
                 description = "The Ghost Hawk is a five-bladed, twin engine, rotary-wing stealth helicopter designed for slingloading cargo and to transport troops into battle. (Slingload: Yes, up to 4000 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
             class B_Heli_Transport_01_camo_F {
                 displayName = "UH-80 Ghost Hawk (Camo)";
                 description = "The Ghost Hawk is a five-bladed, twin engine, rotary-wing stealth helicopter designed for slingloading cargo and to transport troops into battle. (Slingload: Yes, up to 4000 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
             class B_CTRG_Heli_Transport_01_sand_F {
                 displayName = "UH-80 Ghost Hawk (Sand)";
                 description = "The Ghost Hawk is a five-bladed, twin engine, rotary-wing stealth helicopter designed for slingloading cargo and to transport troops into battle. (Slingload: Yes, up to 4000 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
             class B_CTRG_Heli_Transport_01_tropic_F {
                 displayName = "UH-80 Ghost Hawk (Tropic)";
                 description = "The Ghost Hawk is a five-bladed, twin engine, rotary-wing stealth helicopter designed for slingloading cargo and to transport troops into battle. (Slingload: Yes, up to 4000 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class I_Heli_Transport_02_F {
                 displayName = "CH-49 Mohawk";
                 description = "The CH-49 Mohawk is a conventionally designed, four-bladed, rotary-wing helicopter that is powered by three engines. (Slingload: Yes, up to 5000 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };	
             class B_Heli_Transport_03_unarmed_green_F {
                 displayName = "CH47I Chinook (Unarmed) (Green)";
-                description = "This is a CH47I Chinook (Unarmed) that also acts as a mobile respawn point for NATO forces. The CH47I Chinook is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
+                description = "This is a CH47I Chinook (Unarmed) is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
-				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class O_Heli_Transport_04_F {
                 displayName = "Mi-290 Taru";
-                description = "This is a Mi-290 Taru that also acts as a mobile respawn point for NATO forces. The Mi-290 is a twin-engine, heavy-lift utility helicopter that uses a distinctive coaxial rotor system which removes the need for a tail rotor. It is unique for its ability to utilise interchangeable mission pods, which grant the Mi-290 a diverse array of performable roles, from transporting troops into battle, to providing air medical services. (Slingload: Yes, up to 13500 kg) (Slingloadable: No)";
+                description = "This is a Mi-290 Taru is a twin-engine, heavy-lift utility helicopter that uses a distinctive coaxial rotor system which removes the need for a tail rotor. It is unique for its ability to utilise interchangeable mission pods, which grant the Mi-290 a diverse array of performable roles, from transporting troops into battle, to providing air medical services. (Slingload: Yes, up to 13500 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
-				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
             class B_Heli_Transport_03_F {
                 displayName = "CH47I Chinook";
                 description = "The CH47I Chinook is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
                 price = 400000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
             class B_Heli_Transport_03_black_F {
                 displayName = "CH47I Chinook (Black)";
                 description = "The CH47I Chinook is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
                 price = 400000;
                 stock = 50;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };			
             class B_Heli_Attack_01_F {
                 displayName = "AH-99 Comanchie";
                 description = "The Comanchie is a five-bladed, rotary-wing stealth helicopter designed for both armed reconnaissance and ground attack duties.(Slingload: No) (Slingloadable: No)";
                 price = 525000;
                 stock = 25;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             }; 
 			class O_Heli_Attack_02_black_F {
                 displayName = "Mi-48 Kajman (Black)";
                 description = "The Mi-48 is a large helicopter gunship with low-capacity troop transport capability. It uses a tandem cockpit layout, and has a distinctive coaxial rotor system that removes the need for a tail rotor.";
                 price = 575000;
                 stock = 25;
+				code = "sleep 5;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 	};	
 		class NDunits {
@@ -878,56 +973,56 @@
                 description = "Man portable and compact, the Darter is miniature VTOL-capable quad-rotor drone that is small enough to be carried in a backpack.";
                 price = 5000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";				
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};sleep;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";				
             };
 			class I_UAV_06_F {
                 displayName = "AL-6 Pelican (INDEPENDANT)";
                 description = "Compared to the Darter, the AL-6 Pelican Utility Drone's overall functionality is more simplistic as it is only designed with ferrying supplies in mind (usually medical items). Because it lacks a laser designator and does not possess a secondary camera with thermal/night vision capability, it is similarly ill-suited for use in a reconnaissance or surveillance role.";
                 price = 5000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";				
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};sleep;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";				
             };
 			class I_UAV_06_medical_F {
                 displayName = "AL-6 Pelican (Medical) (INDEPENDANT)";
                 description = "Compared to the Darter, the AL-6 Pelican Utility Drone's overall functionality is more simplistic as it is only designed with ferrying supplies in mind (usually medical items). Because it lacks a laser designator and does not possess a secondary camera with thermal/night vision capability, it is similarly ill-suited for use in a reconnaissance or surveillance role.";
                 price = 5000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";				
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};sleep;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";				
             };
 			class I_UAV_02_dynamicLoadout_F {
                 displayName = "K40 Ababil-3 (INDEPENDANT)";
                 description = "The K40 Ababil-3 is a medium-altitude, long-endurance aerial drone that can serve a variety of roles from surveillance to ground attack, and even air-to-air combat. (Slingload: No) (Slingloadable: Yes)";
                 price = 500000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};sleep;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class I_E_UGV_01_F {
                 displayName = "UGV Stomper (INDEPENDANT)";
                 description = "The Stomper is available in two variants; an unarmed version that has no weapons mounted on it that is meant to be used for transporting supplies and cargo, and an armed version that is fitted with an RCWS turret armed with a dual-mount 12.7 mm heavy machine gun and 40 mm automatic grenade launcher. (Slingload: No) (Slingloadable: Yes)";
                 price = 10000;
                 stock = 20; 
-				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};sleep;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class I_E_UGV_01_rcws_F {
                 displayName = "UGV Stomper RCWS (INDEPENDANT)";
                 description = "The Stomper is available in two variants; an unarmed version that has no weapons mounted on it that is meant to be used for transporting supplies and cargo, and an armed version that is fitted with an RCWS turret armed with a dual-mount 12.7 mm heavy machine gun and 40 mm automatic grenade launcher. (Slingload: No) (Slingloadable: Yes)";
                 price = 50000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};sleep;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class I_UGV_02_Science_F {
                 displayName = "ED-1E Roller (INDEPENDANT)";
                 description = "ED-1 is a commercial off-the-shelf series of robotic systems built upon a man-portable modular platform. The tracked mini UGV has convenient front and rear obstacle climbers that allow it to traverse relatively complex terrain. (Slingload: No) (Slingloadable: Yes)";
                 price = 5000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};sleep;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 			class I_UGV_02_Demining_F {
                 displayName = "ED-1D Pelter (INDEPENDANT)";
                 description = "ED-1 is a commercial off-the-shelf series of robotic systems built upon a man-portable modular platform. The tracked mini UGV has convenient front and rear obstacle climbers that allow it to traverse relatively complex terrain. (Slingload: No) (Slingloadable: Yes)";
                 price = 10000;
                 stock = 20;
-				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};sleep;[] call ALiVE_fnc_createProfilesFromUnitsRuntime";
             };
 	};
 };

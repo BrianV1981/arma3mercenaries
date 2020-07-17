@@ -398,34 +398,6 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_PillboxBunker_01_big_F'] call grad_fortifications_fnc_addFort}";
             };
-			class Land_Bunker_01_small_F {
-                displayName = "Land Bunker (Small)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Land Bunker (Small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_Bunker_01_small_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_Bunker_01_big_F {
-                displayName = "Land Bunker (Big)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Land Bunker (Big) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_Bunker_01_big_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_Bunker_01_tall_F {
-                displayName = "Land Bunker (Tall)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Land Bunker (Tall) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_Bunker_01_tall_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_Bunker_01_HQ_F {
-                displayName = "Land Bunker (HQ)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Land Bunker (HQ) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_Bunker_01_HQ_F'] call grad_fortifications_fnc_addFort}";
-            };
         };
 		class Dfortifications {
             displayName = "Lights, Nets, Other";
