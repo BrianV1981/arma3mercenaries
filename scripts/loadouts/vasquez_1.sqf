@@ -17,8 +17,8 @@ player addPrimaryWeaponItem "bipod_01_F_blk";
 player addPrimaryWeaponItem "100Rnd_65x39_caseless_black_mag_tracer"; 
 player addSecondaryWeaponItem "Titan_AT"; 
 
-player forceAddUniform "V_PlateCarrierSpec_blk";
-player addVest "V_PlateCarrierSpec_mtp";
+player forceAddUniform "U_B_CombatUniform_mcam_vest";
+player addVest "V_PlateCarrierSpec_blk";
 player addBackpack "B_Bergen_mcamo_F";
 
 player addMagazine "Laserbatteries";

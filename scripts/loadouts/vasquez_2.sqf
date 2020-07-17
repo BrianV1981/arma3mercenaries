@@ -16,7 +16,7 @@ player addPrimaryWeaponItem "bipod_01_F_blk";
 player addPrimaryWeaponItem "30Rnd_65x39_caseless_green_mag_Tracer"; 
 player addPrimaryWeaponItem "10Rnd_50BW_Mag_F"; 
 
-player forceAddUniform "V_PlateCarrierSpec_blk";
+player forceAddUniform "U_B_CombatUniform_mcam_vest";
 player addVest "V_PlateCarrierSpec_blk";
 player addBackpack "B_Bergen_mcamo_F";
 
