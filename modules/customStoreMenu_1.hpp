@@ -114,7 +114,6 @@
                 price = 35000;
                 amount = 1;
                 stock = 9999;
-				picture = "pictures\recodedcustompicture_3.paa";
 				code = [player,"scripts\loadouts\recoded_3.sqf"] call BIS_fnc_execVM;
             };
 		};

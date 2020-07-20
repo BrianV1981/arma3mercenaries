@@ -53,5 +53,5 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemRadio";
-player linkItem "B_UavTerminal";
+player linkItem "ItemGPS";
 player linkItem "NVGogglesB_blk_F";

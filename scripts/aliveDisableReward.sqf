@@ -19,7 +19,7 @@ SAV_fnc_taskSucceeded = {
 [p_14,random 5000] call grad_lbm_fnc_addFunds;
 [p_15,random 5000] call grad_lbm_fnc_addFunds;
 [p_16,random 5000] call grad_lbm_fnc_addFunds;
-["The installation has been disabled. The payment amount will depend on the intelligence gathered and will be deposted into your account.", "hint", true, true] call BIS_fnc_MP;
+["The installation has been disabled. The payment amount will depend on the intelligence gathered and will be been delevired to you in person by a CIA courier.", "hint", true, true] call BIS_fnc_MP;
 
             // do your reward stuff here
             // task data is in _args
