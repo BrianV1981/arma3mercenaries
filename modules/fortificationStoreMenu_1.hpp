@@ -501,7 +501,14 @@
                 price = 50;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_HelipadCircle_F'] call grad_fortifications_fnc_addFort}";
-            };		
+            };
+			class Windsock_01_F {
+                displayName = "Windsock";
+                description = "Windsock can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Windsock_01_F'] call grad_fortifications_fnc_addFort}";
+            };
 			class Flag_US_F {
                 displayName = "Flag (USA)";
                 description = "Flag (USA) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";

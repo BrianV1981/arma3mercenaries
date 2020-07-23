@@ -1490,21 +1490,21 @@
 			class 10Rnd_127x54_Mag {
                 displayName = "12.7 mm 10Rnd Mag";
                 description = "Caliber: 12.7x54 mm Rounds: 10 Used in: ASP-1 Kir.";
-                price = 110;
+                price = 200;
                 stock = 10000;                				
             };			
 			class 5Rnd_127x108_Mag {
                 displayName = "12.7 mm 5Rnd Mag";
                 description = "Caliber: 12.7x108 mm Russian Rounds: 5 Used in: GM6 Lynx.";
-                price = 55;
-                stock = 10000;                
+                price = 100;
+                stock = 10000;       
             };
 			class 5Rnd_127x108_APDS_Mag {
                 displayName = "12.7 mm 5Rnd APDS Mag";
                 description = "Caliber: 12.7x108 mm APDS Rounds: 5 Used in: GM6 Lynx.";
-                price = 55;
-                stock = 10000;                
-            };			
+                price = 125;
+                stock = 10000;
+            };	
 			class 7Rnd_408_Mag {
                 displayName = ".408 7Rnd LRR Mag";
                 description = "Caliber: .408 Rounds: 7 Used in: M320 LRR";

@@ -98,6 +98,7 @@
                 price = 15000;
                 amount = 1;
                 stock = 9999;
+				picture = "pictures\recodedcustompicture_1.paa";
 				code = [player,"scripts\loadouts\recoded_1.sqf"] call BIS_fnc_execVM;
             };
 			class B_ghillie_sard_F {	
@@ -106,6 +107,7 @@
                 price = 25000;
                 amount = 1;
                 stock = 9999;
+				picture = "pictures\recodedcustompicture_2.paa";
 				code = [player,"scripts\loadouts\recoded_2.sqf"] call BIS_fnc_execVM;
             };
 			class B_Soldier_VR_F {	
@@ -114,6 +116,7 @@
                 price = 35000;
                 amount = 1;
                 stock = 9999;
+				picture = "pictures\recodedcustompicture_3.paa";
 				code = [player,"scripts\loadouts\recoded_3.sqf"] call BIS_fnc_execVM;
             };
 		};

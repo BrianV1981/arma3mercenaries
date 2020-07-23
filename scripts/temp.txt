@@ -185,8 +185,14 @@ hint "The enemy combatant has been interrogated. The payment amount varies depen
 [p_14,random 5000] call grad_lbm_fnc_addFunds;
 [p_15,random 5000] call grad_lbm_fnc_addFunds;
 [p_16,random 5000] call grad_lbm_fnc_addFunds;
-hint "The enemy combatant has been interrogated. The payment amount varies depending on the intelligence recieved. The credits have been delivered to you in person by a CIA courier."
+hint "The civilian has been interrogated. The payment amount varies depending on the intelligence recieved. The credits have been delivered to you in person by a CIA courier."
 
+////////////////////////////////////////
+
+
+["The enemy combatant has been interrogated. The payment amount varies depending on the intelligence recieved. The credits have been delivered to you in person by a CIA courier.", "hint"] call BIS_fnc_MP;
+
+["The civilian has been interrogated. The payment amount varies depending on the intelligence recieved. The credits have been delivered to you in person by a CIA courier.", "hint"] call BIS_fnc_MP;
 
 
 

@@ -154,7 +154,7 @@
                 description = "Ambulance (Medical Facility) will enable the use of personal aid kits (PAK's) in the field and is a mobile medical facility. (Slingload: No) (Slingloadable: Yes)";
                 price = 50000;
                 stock = 9999;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
 			class B_G_Offroad_01_repair_F {
                 displayName = "Offroad (Repair Facility)"; 
@@ -259,7 +259,7 @@
                 description = "Ambulance (Medical Facility) will enable the use of personal aid kits (PAK's) in the field and is a mobile medical facility that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Slingload: No) (Slingloadable: Yes)";
                 price = 220000;
                 stock = 50;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
 			class B_APC_Tracked_01_CRV_F {
                 displayName = "CRV-6e Bobcat (Sand)";
@@ -273,7 +273,7 @@
                 description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
                 price = 475000;
                 stock = 20;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
 		};
 		class Cvehicles {
@@ -332,8 +332,8 @@
 				
             };
 			class I_MRAP_03_F {
-                displayName = "Strider";
-                description = "The Strider is a four-wheel drive armed reconnaissance vehicle. Though its primary mission is observation, it can act as both a light troop transport and scout vehicle as well. (Slingload: No) (Slingloadable: Yes)";
+                displayName = "Fennek";
+                description = "The Fennek is a four-wheel drive armed reconnaissance vehicle. Though its primary mission is observation, it can act as both a light troop transport and scout vehicle as well. (Slingload: No) (Slingloadable: Yes)";
                 price = 190000;
                 stock = 50;
 				
@@ -353,8 +353,8 @@
 				
             };
 			class I_MRAP_03_hmg_F {
-                displayName = "Strider (HMG)";
-                description = "The Strider is a four-wheel drive armed reconnaissance vehicle. Though its primary mission is observation, it can act as both a light troop transport and scout vehicle as well. (Slingload: No) (Slingloadable: Yes)";
+                displayName = "Fennek (HMG)";
+                description = "The Fennek is a four-wheel drive armed reconnaissance vehicle. Though its primary mission is observation, it can act as both a light troop transport and scout vehicle as well. (Slingload: No) (Slingloadable: Yes)";
                 price = 225000;
                 stock = 50;
 				
@@ -374,8 +374,8 @@
 				
             };
 			class I_MRAP_03_gmg_F {
-                displayName = "Strider (GMG)";
-                description = "The Strider is a four-wheel drive armed reconnaissance vehicle. Though its primary mission is observation, it can act as both a light troop transport and scout vehicle as well. (Slingload: No) (Slingloadable: Yes)";
+                displayName = "Fennek (GMG)";
+                description = "The Fennek is a four-wheel drive armed reconnaissance vehicle. Though its primary mission is observation, it can act as both a light troop transport and scout vehicle as well. (Slingload: No) (Slingloadable: Yes)";
                 price = 250000;
                 stock = 50;
 				
@@ -638,42 +638,42 @@
                 description = "This is a V-44 X Blackfish (Infantry Transport) is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
                 price = 400000;
                 stock = 20;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
             class B_T_VTOL_01_infantry_blue_F {
                 displayName = "V-44 X Blackfish (Infantry Transport) (Blue)";
                 description = "This is a V-44 X Blackfish (Infantry Transport) is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
                 price = 400000;
                 stock = 20;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
             class B_T_VTOL_01_infantry_olive_F {
                 displayName = "V-44 X Blackfish (Infantry Transport) (Olive)";
                 description = "This is a V-44 X Blackfish (Infantry Transport) is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
                 price = 400000;
                 stock = 20;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };			
             class B_T_VTOL_01_armed_F {
                 displayName = "V-44 X Blackfish (Armed)";
                 description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place, Armed variant of the Blackfish. Has two gunners who remotely operate its weapon systems through control panels in front of their seats.. (Slingload: No) (Slingloadable: No)";
                 price = 420000;
                 stock = 20;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
             class B_T_VTOL_01_armed_blue_F {
                 displayName = "V-44 X Blackfish (Armed) (Blue)";
                 description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place, Armed variant of the Blackfish. Has two gunners who remotely operate its weapon systems through control panels in front of their seats.. (Slingload: No) (Slingloadable: No)";
                 price = 420000;
                 stock = 20;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
             class B_T_VTOL_01_armed_olive_F {
                 displayName = "V-44 X Blackfish (Armed) (Olive)";
                 description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place, Armed variant of the Blackfish. Has two gunners who remotely operate its weapon systems through control panels in front of their seats.. (Slingload: No) (Slingloadable: No)";
                 price = 420000;
                 stock = 20;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
 			class I_C_Plane_Civil_01_F {
                 displayName = "Caesar BTT";
@@ -814,35 +814,35 @@
                 description = "The CH-49 Mohawk is a conventionally designed, four-bladed, rotary-wing helicopter that is powered by three engines. (Slingload: Yes, up to 5000 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };	
             class B_Heli_Transport_03_unarmed_green_F {
                 displayName = "CH47I Chinook (Unarmed) (Green)";
                 description = "This is a CH47I Chinook (Unarmed) is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
 			class O_Heli_Transport_04_F {
                 displayName = "Mi-290 Taru";
                 description = "This is a Mi-290 Taru is a twin-engine, heavy-lift utility helicopter that uses a distinctive coaxial rotor system which removes the need for a tail rotor. It is unique for its ability to utilise interchangeable mission pods, which grant the Mi-290 a diverse array of performable roles, from transporting troops into battle, to providing air medical services. (Slingload: Yes, up to 13500 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
             class B_Heli_Transport_03_F {
                 displayName = "CH47I Chinook";
                 description = "The CH47I Chinook is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
                 price = 400000;
                 stock = 50;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
             class B_Heli_Transport_03_black_F {
                 displayName = "CH47I Chinook (Black)";
                 description = "The CH47I Chinook is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
                 price = 400000;
                 stock = 50;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };			
             class B_Heli_Attack_01_F {
                 displayName = "AH-99 Comanchie";

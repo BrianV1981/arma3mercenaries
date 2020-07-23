@@ -9,8 +9,40 @@
             //items of this category:
 
 			class Land_Money_F {
+                displayName = "25,000 Credits";
+                description = "This gives you 25,000 Cr.";
+                price = 0;
+                amount = 1;
+                stock = 99999;
+				code = [player,"scripts\500k.sqf"] call BIS_fnc_execVM;
+            };
+			class Land_File1_F {
+                displayName = "50,000 Credits";
+                description = "This gives you 50,000 Cr.";
+                price = 0;
+                amount = 1;
+                stock = 99999;
+				code = [player,"scripts\500k.sqf"] call BIS_fnc_execVM;
+            };
+			class Land_File2_F {
+                displayName = "100,000 Credits";
+                description = "This gives you 100,000 Cr.";
+                price = 0;
+                amount = 1;
+                stock = 99999;
+				code = [player,"scripts\500k.sqf"] call BIS_fnc_execVM;
+            };
+			class Land_FilePhotos_F {
                 displayName = "500,000 Credits";
                 description = "This gives you 500,000 Cr.";
+                price = 0;
+                amount = 1;
+                stock = 99999;
+				code = [player,"scripts\500k.sqf"] call BIS_fnc_execVM;
+            };
+			class Land_Map_F {
+                displayName = "1,000,000 Credits";
+                description = "This gives you 1,000,000 Cr.";
                 price = 0;
                 amount = 1;
                 stock = 99999;

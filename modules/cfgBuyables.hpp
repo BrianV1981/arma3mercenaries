@@ -17,4 +17,5 @@ class CfgGradBuymenu {
 	#include "customStoreMenu_1.hpp"
 	#include "bugStoreMenu_1.hpp"
 	#include "bugStoreMenu_2.hpp"
+	#include "medicalStoreMenu_1.hpp"
 };
