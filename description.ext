@@ -4,7 +4,7 @@ class Header
 	minPlayers = 1;
 	maxPlayers = 15;
 };
-OnLoadName = "arma3mercenaries_V39";
+OnLoadName = "arma3mercenaries_V43";
 onLoadMission = "A special unit of soldiers is tasked with sabotaging infrastructure, rescuing hostages and eliminating high value targets...";
 author="BrianV1981";
 respawn = 3;
@@ -33,6 +33,7 @@ minPlayerDistance = 0;
 #include "modules\cfgBuyables.hpp"
 #include "modules\cfgFortifications.hpp"
 #include "modules\cfgPersistence.hpp"
+#include "HG\UI\HG_DialogsMaster.h"
 
 class CfgFunctions {
     #include "modules\grad-moneymenu\cfgFunctions.hpp"
@@ -40,15 +41,26 @@ class CfgFunctions {
     #include "modules\grad-fortifications\cfgFunctions.hpp"
     #include "modules\grad-persistence\cfgFunctions.hpp"
     #include "vcom\cfgFunctions.hpp"
+	#include "HG\Functions\HG_Functions.h"
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
 class RscTitles {
     #include "modules\grad-fortifications\dialog\hint\title.hpp"
+	#include "HG\UI\Dialogs\HG_HUD.h"
 };
 
+////////////////////////////vehicle shop/garage////////////////////////////////////////////
+
+class CfgClient
+{
+    #include "HG\Config\HG_Config.h"
+};
+
+
 ////////////////////////////////////////////////////////////////////////////////////////
+
 
 class CfgGradMoneymenu {
     canGiveDefault = 1;

@@ -430,6 +430,12 @@
                 price = 100;
                 stock = 10000;
             };
+			class ALiVE_Tablet {
+                displayName = "ALiVE Commander Tablet";
+                description = "Gives access to your factions ALiVE command, control, intelligence, surveilllance, target aquisition, and reconnaisance menus. They can be utilized with the ACE self interaction menu > ALiVE > C2ISTAR.";
+                price = 1000000;
+                stock = 10000;                
+            };	
         };
 		class medical {
             displayName = "Medical Supplies, MRE's and Beverages";

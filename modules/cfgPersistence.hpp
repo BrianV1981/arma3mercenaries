@@ -19,4 +19,17 @@ class CfgGradPersistence {
     saveTriggers = 0;
     saveTeamAccounts = 0;
 	saveTimeAndDate = 0;
+	
+	class customVariables {
+        class acexFood {
+            varName = "acex_field_rations_hunger";
+            varNamespace = "player";
+            public = 1;
+        };
+        class acexWater {
+            varName = "acex_field_rations_thirst";
+            varNamespace = "player";
+            public = 1;
+        };
+    };
 };

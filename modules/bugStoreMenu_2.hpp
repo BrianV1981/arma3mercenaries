@@ -14,7 +14,7 @@
                 price = 0;
                 amount = 1;
                 stock = 99999;
-				code = [player,"scripts\500k.sqf"] call BIS_fnc_execVM;
+				code = [player,25000] call grad_lbm_fnc_addFunds;
             };
 			class Land_File1_F {
                 displayName = "50,000 Credits";
@@ -22,7 +22,7 @@
                 price = 0;
                 amount = 1;
                 stock = 99999;
-				code = [player,"scripts\500k.sqf"] call BIS_fnc_execVM;
+				code = [player,50000] call grad_lbm_fnc_addFunds;
             };
 			class Land_File2_F {
                 displayName = "100,000 Credits";
@@ -30,7 +30,7 @@
                 price = 0;
                 amount = 1;
                 stock = 99999;
-				code = [player,"scripts\500k.sqf"] call BIS_fnc_execVM;
+				code = [player,100000] call grad_lbm_fnc_addFunds;
             };
 			class Land_FilePhotos_F {
                 displayName = "500,000 Credits";
@@ -38,7 +38,7 @@
                 price = 0;
                 amount = 1;
                 stock = 99999;
-				code = [player,"scripts\500k.sqf"] call BIS_fnc_execVM;
+				code = [player,500000] call grad_lbm_fnc_addFunds;
             };
 			class Land_Map_F {
                 displayName = "1,000,000 Credits";
@@ -46,7 +46,7 @@
                 price = 0;
                 amount = 1;
                 stock = 99999;
-				code = [player,"scripts\500k.sqf"] call BIS_fnc_execVM;
+				code = [player,1000000] call grad_lbm_fnc_addFunds;
             };
 			class Land_Pillow_camouflage_F {
                 displayName = "6 hours of sleep";

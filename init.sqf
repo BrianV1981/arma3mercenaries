@@ -1,3 +1,4 @@
+execVM "scripts\aliveCaptured.sqf";
 execVM "Vcom\VcomInit.sqf";
 execVM "scripts\killedEventHandlers.sqf";
 execVM "GF_Killfeed\GF_Killfeed.sqf";

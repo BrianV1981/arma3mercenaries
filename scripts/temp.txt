@@ -1,3 +1,53 @@
+[player, 1, ["ACE_SelfActions", "ACE_Equipment"], [player,"haloStore_2",container_2,aHelipad_2,"High-altitude Military Parachuting","Emergency SAC Services"] call grad_lbm_fnc_addInteraction] call ace_interact_menu_fnc_addActionToObject;
+
+[player, 1, ["ACE_SelfActions", "ACE_Equipment"], ] call ace_interact_menu_fnc_addActionToObject;
+
+[player, 1, ["ACE_SelfActions", "ACE_Equipment"], {["OPEN",[]] call ALIVE_fnc_C2TabletOnAction}] call ace_interact_menu_fnc_addActionToObject;
+
+///////////////////close...but, no dice, time to read more/////////////////////////////
+
+_cs = ["CombatSupport","Combat Support","",{["OPEN",[]] call ALIVE_fnc_C2TabletOnAction}] call ace_interact_menu_fnc_createAction;
+ 
+[player, 1, ["ACE_SelfActions"], _cs] call ace_interact_menu_fnc_addActionToObject;
+
+/////////////////////////////////yes!..........////////////////
+
+Add an interaction to a class:
+
+myaction = ["Talk","Talk","",{hint "Hello"},{true},{}] call ace_interact_menu_fnc_createAction;
+[MyUnitClass, 0, ["ACE_MainActions"], myaction] call ace_interact_menu_fnc_addActionToClass;
+Add a couple of Self Interactions to an specific object (the player):
+
+myaction = ['TestAction 1','Test','',{hint 'test';},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], myaction] call ace_interact_menu_fnc_addActionToObject;
+
+myaction = ['TestAction 2','Test 2','',{hint 'test 2';},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions", "TestAction 1"], myaction] call ace_interact_menu_fnc_addActionToObject;
+
+//////////////////////parent/child/////////////////////////////////////////
+
+myaction = ['TestAction 1','Test','',''] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], myaction] call ace_interact_menu_fnc_addActionToObject;
+
+myaction = ['TestAction 2','Test 2','',{hint 'test 2';},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions", "TestAction 1"], myaction] call ace_interact_menu_fnc_addActionToObject;
+
+///////this works, getting close//////////////
+
+myaction = ['TestAction 1','Test','',{["OPEN",[]] call ALIVE_fnc_C2TabletOnAction},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], myaction] call ace_interact_menu_fnc_addActionToObject;
+
+/////////////////////i win/////////////////////////////
+
+myaction = ['TestAction 1','ALiVE Menus','',''] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], myaction] call ace_interact_menu_fnc_addActionToObject;
+myaction = ['TestAction 2','ALiVE Combat Support Menu','',{["OPEN",[]] call ALIVE_fnc_radioAction},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions","TestAction 1"], myaction] call ace_interact_menu_fnc_addActionToObject;
+myaction = ['TestAction 3','ALiVE OPCOM Task Menu','',{["OPEN",[]] call ALIVE_fnc_C2TabletOnAction},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions","TestAction 1"], myaction] call ace_interact_menu_fnc_addActionToObject;
+myaction = ['TestAction 4','ALiVE Combat Personnel Menu','',{["OPEN",[]] call ALIVE_fnc_GMTabletOnAction},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions","TestAction 1"], myaction] call ace_interact_menu_fnc_addActionToObject;
+
 ///////////grad store info///////////////
 
 To execute code on server only:

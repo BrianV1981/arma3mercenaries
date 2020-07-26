@@ -266,7 +266,7 @@
                 description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
                 price = 475000;
                 stock = 20;
-				
+				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };
 			class B_T_APC_Tracked_01_CRV_F {
                 displayName = "CRV-6e Bobcat (Military Green)";
