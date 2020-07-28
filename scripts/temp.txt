@@ -10,7 +10,7 @@ _cs = ["CombatSupport","Combat Support","",{["OPEN",[]] call ALIVE_fnc_C2TabletO
  
 [player, 1, ["ACE_SelfActions"], _cs] call ace_interact_menu_fnc_addActionToObject;
 
-/////////////////////////////////yes!..........////////////////
+/////////////////////////////////read!..........////////////////https://github.com/acemod/ACE3/issues/1232///////////////
 
 Add an interaction to a class:
 
@@ -39,7 +39,7 @@ myaction = ['TestAction 1','Test','',{["OPEN",[]] call ALIVE_fnc_C2TabletOnActio
 
 /////////////////////i win/////////////////////////////
 
-myaction = ['TestAction 1','ALiVE Menus','',''] call ace_interact_menu_fnc_createAction;
+myaction = ['TestAction 1','ALiVE','',''] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], myaction] call ace_interact_menu_fnc_addActionToObject;
 myaction = ['TestAction 2','ALiVE Combat Support Menu','',{["OPEN",[]] call ALIVE_fnc_radioAction},{true}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions","TestAction 1"], myaction] call ace_interact_menu_fnc_addActionToObject;
@@ -47,6 +47,62 @@ myaction = ['TestAction 3','ALiVE OPCOM Task Menu','',{["OPEN",[]] call ALIVE_fn
 [player, 1, ["ACE_SelfActions","TestAction 1"], myaction] call ace_interact_menu_fnc_addActionToObject;
 myaction = ['TestAction 4','ALiVE Combat Personnel Menu','',{["OPEN",[]] call ALIVE_fnc_GMTabletOnAction},{true}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions","TestAction 1"], myaction] call ace_interact_menu_fnc_addActionToObject;
+
+//////////////////https://ace3mod.com/wiki/framework/interactionMenu-framework.html///////////////////////
+
+Using addActionToClass inheritance:
+
+// Adds action to check fuel levels for all land vehicles
+_action = ["CheckFuel", "Check Fuel", "", {hint format ["Fuel: %1", fuel _target]}, {true}] call ace_interact_menu_fnc_createAction;
+["LandVehicle", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+
+// Adds action to check external fuel levels on tanks.  Will be a sub action of the previous action.
+_action = ["CheckExtTank","Check External Tank","",{hint format ["Ext Tank: %1", 5]},{true}] call ace_interact_menu_fnc_createAction;
+["Tank_F", 0, ["ACE_MainActions", "CheckFuel"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+
+/////////////////////////
+
+The addActionToClass requires the following:
+
+ 
+
+0: TypeOf of the class <STRING>
+
+1: Type of action, 0 for actions, 1 for self-actions <NUMBER>
+
+2: Parent path of the new action <ARRAY>
+
+3: Action <ARRAY>
+
+////////////////////////////////////////////////////HG simple shop virtual garage ace interaction//////we'll see....
+
+this addAction["<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_GARAGE")+"</t>",{_this call HG_fnc_dialogOnLoadGarage},"HG_DefaultGarage",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
+this addAction["<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_GARAGE_PARK")+"</t>",{_this call HG_fnc_storeVehicleClient},"HG_DefaultGarage",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
+
+_this call HG_fnc_dialogOnLoadGarage
+_this call HG_fnc_storeVehicleClient
+
+
+customaction = ['CustomAction 1','Garage','','',{true}] call ace_interact_menu_fnc_createAction;
+[garage_2, 0, ["ACE_MainActions"], customaction] call ace_interact_menu_fnc_addActionToObject;
+
+customaction = ['CustomAction 2','Open Garage Menu','',{{_this call HG_fnc_dialogOnLoadGarage},"HG_DefaultGarage"},{true}] call ace_interact_menu_fnc_createAction;
+[garage_2, 0, ["ACE_MainActions","CustomAction 1"], customaction] call ace_interact_menu_fnc_addActionToObject;
+customaction = ['CustomAction 3','Store Vehicle','',{{_this call HG_fnc_storeVehicleClient},"HG_DefaultGarage"},{true}] call ace_interact_menu_fnc_createAction;
+[garage_2, 0, ["ACE_MainActions","CustomAction 1"], customaction] call ace_interact_menu_fnc_addActionToObject;
+
+//////////////////////////////////////////
+
+
+customaction = ['CustomAction 1','Garage','','',{true}] call ace_interact_menu_fnc_createAction;
+[player, 0, ["ACE_MainActions"], customaction] call ace_interact_menu_fnc_addActionToObject;
+
+customaction = ['CustomAction 2','Open Garage Menu','',{_this call HG_fnc_dialogOnLoadGarage},{true}] call ace_interact_menu_fnc_createAction;
+[player, 0, ["ACE_MainActions","CustomAction 1"], customaction] call ace_interact_menu_fnc_addActionToObject;
+customaction = ['CustomAction 3','Store Vehicle','',{_this call HG_fnc_storeVehicleClient},{true}] call ace_interact_menu_fnc_createAction;
+[player, 0, ["ACE_MainActions","CustomAction 1"], customaction] call ace_interact_menu_fnc_addActionToObject;
+
+
 
 ///////////grad store info///////////////
 

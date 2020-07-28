@@ -24,7 +24,7 @@ if(_storePoint isEqualTo "") then
     _pos = markerPos _storePoint;
 };
 
-_near = (nearestObjects [_pos,_allowedTypes,8]) select {alive _x};
+_near = (nearestObjects [_pos,_allowedTypes,30]) select {alive _x};
 
 if((count _near) > 0) then
 {

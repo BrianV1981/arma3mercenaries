@@ -50,8 +50,7 @@ if(_mode isEqualTo 1) then
 	    [_vehicle] call HG_fnc_getInventory;
     };
 
-	_vehicle setpos [24247, 18117, 20];
-    _vehicle setDamage [1, false];
+	deleteVehicle _vehicle;
 	
 	(localize "STR_HG_GRG_VEHICLE_STORED") remoteExecCall ["hint",(owner _unit),false];
 };
