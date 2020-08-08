@@ -4,7 +4,7 @@
         class units_1 {
             displayname = "Constellis Loadouts (Blufor)";
             kindOf = "other";
-            tracking = 0;
+            tracking = 1;
 					
 			class B_RangeMaster_F {
                 displayName = "Constellis Scrub Loadout (Blufor)";
@@ -67,6 +67,7 @@
 		class units_2 {
             displayname = "Custom Loadouts";
             kindOf = "other";
+			tracking = 1;
 
 			class B_recon_LAT_F {
                 displayName = "Vasquez Loadout 1";
@@ -118,6 +119,38 @@
                 stock = 9999;
 				picture = "pictures\recodedcustompicture_3.paa";
 				code = [player,"scripts\loadouts\recoded_3.sqf"] call BIS_fnc_execVM;
+            };
+			class O_V_Soldier_TL_hex_F {	
+                displayName = "Koger Loadout 1";
+                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Recoded.";
+                price = 35000;
+                amount = 1;
+                stock = 9999;
+				code = [player,"scripts\loadouts\koger_1.sqf"] call BIS_fnc_execVM;
+            };
+			class O_V_Soldier_hex_F {	
+                displayName = "Koger Loadout 2";
+                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Recoded.";
+                price = 35000;
+                amount = 1;
+                stock = 9999;
+				code = [player,"scripts\loadouts\koger_2.sqf"] call BIS_fnc_execVM;
+            };
+			class O_V_Soldier_Exp_hex_F {	
+                displayName = "Koger Loadout 3";
+                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Recoded.";
+                price = 35000;
+                amount = 1;
+                stock = 9999;
+				code = [player,"scripts\loadouts\koger_3.sqf"] call BIS_fnc_execVM;
+            };
+			class O_V_Soldier_Medic_hex_F {	
+                displayName = "Koger Loadout 4";
+                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Recoded.";
+                price = 35000;
+                amount = 1;
+                stock = 9999;
+				code = [player,"scripts\loadouts\koger_4.sqf"] call BIS_fnc_execVM;
             };
 		};
 	};

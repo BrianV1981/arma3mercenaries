@@ -12,7 +12,7 @@
 		spawnPoints - ARRAY OF ARRAYS - Spawn positions (markers/positions)
 		|- 0 - STRING - Display name in the dialog
 		|- 1 - ARRAY OF MIXED - Markers/positions
-		storePoint - STRING - Point (marker) where the vehicle should be placed to be able to store it, if left empty it will detect the nearest owned vehicle inside a 20m radius around the player
+		storePoint - STRING - Point (marker) where the vehicle should be placed to be able to store it, if left empty it will detect the nearest owned vehicle inside a 30m radius around the player
 	};
 */
 
@@ -22,8 +22,9 @@ class HG_DefaultGarage // HG_DefaultGarage is just a placeholder for testing pur
     allowedTypes[] = {"Car","Truck","Tank","Air","Ship","Submarine"};
 	spawnPoints[] = 
 	{
-		{"Spawn Point 1",{"garage_spawn_1"}},
-		{"Spawn Point 2",{"garage_spawn_2","garage_spawn_3"}}
+		{"Molos Garage Spawn Point",{"garage_spawn_1"}},
+		{"Molos Pier Spawn Point",{"garage_spawn_2"}},
+		{"Lighthouse Pier Spawn Point",{"garage_spawn_4"}}
 	};
 	storePoint = "";
 };

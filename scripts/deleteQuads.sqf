@@ -1,5 +1,5 @@
 // https://forums.bohemia.net/forums/topic/134103-delete-empty-vehicles/
-_vehicles = nearestObjects [player, ["B_Quadbike_01_F"], 9999]; 
+_vehicles = nearestObjects [player, ["B_Quadbike_01_F"], 99999]; 
  
 { 
  

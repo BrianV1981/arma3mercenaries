@@ -5,6 +5,7 @@
 		class other {
             displayName = "HAHO/HALO Jump";
             kindOf = "Other";
+			tracking = 1;
 
 			class B_T_VTOL_01_infantry_F {
                 displayName = "HALO/HAHO Solo Jump";

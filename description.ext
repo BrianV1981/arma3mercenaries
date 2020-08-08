@@ -4,8 +4,9 @@ class Header
 	minPlayers = 1;
 	maxPlayers = 15;
 };
-OnLoadName = "arma3mercenaries_V44";
-onLoadMission = "A special unit of soldiers is tasked with sabotaging infrastructure, rescuing hostages and eliminating high value targets...";
+OnLoadName = "arma3mercenaries_ALPHA_V48";
+onLoadMission = "Constellis is a trusted and experienced provider of security services in high-risk environments, remote areas and emerging markets in support of land-based, aviation, maritime and cyber operations.";
+loadScreen = "pictures\constellisslogan_1.paa";
 author="BrianV1981";
 respawn = 3;
 respawndelay = 15;

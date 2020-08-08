@@ -2,53 +2,24 @@
     class vehicleStore {
         //category:  
     
-	class Vitems {
+		class Vitems {
             kindOf = "Items";
-            displayName = "Keys and Lockpicks";
-            tracking = 0;
+            displayName = "Vehicle Keys";
+            tracking = 1;
             //items of this category:
+
 
 			class ACE_key_master {
                 displayName = "Vehicle Key: Master"; 
                 description = "Vehicle Key: Master";
                 price = 0;
-                stock = 9999;
-            };
-			class ACE_key_west {
-                displayName = "Vehicle Key: West"; 
-                description = "Vehicle Key: West";
-                price = 0;
-                stock = 9999;
-            };
-			class ACE_key_indp {
-                displayName = "Vehicle Key: Independent"; 
-                description = "Vehicle Key: Independent";
-                price = 0;
-                stock = 9999;
-            };
-			class ACE_key_civ {
-                displayName = "Vehicle Key: Civilian"; 
-                description = "Vehicle Key: Civilian";
-                price = 0;
-                stock = 9999;
-            };
-			class ACE_key_east {
-                displayName = "Vehicle Key: East"; 
-                description = "Vehicle Key: East";
-                price = 0;
-                stock = 9999;
-            };
-			class ACE_key_lockpick {
-                displayName = "Lockpick"; 
-                description = "Lockpick";
-                price = 0;
-                stock = 9999;
+                stock = 99999;
             };
 		};
         class Rvehicles {
             kindOf = "Vehicles";
             displayName = "Automobiles and Recreational Vehicles";
-            tracking = 0;
+            tracking = 1;
             //items of this category:
 
             class B_Quadbike_01_F {
@@ -146,7 +117,7 @@
 		class Svehicles {
             kindOf = "Vehicles";
             displayName = "Support Vehicles";
-            tracking = 0;
+            tracking = 1;
             //items of this category:
 			
 			class C_Van_02_medevac_F {
@@ -279,7 +250,7 @@
 		class Cvehicles {
             kindOf = "Vehicles";
             displayName = "Combat Vehicles";
-            tracking = 0;
+            tracking = 1;
             //items of this category:
 			
 			class B_G_Offroad_01_armed_F  {
@@ -384,7 +355,7 @@
         class LAvehicles {
             kindOf = "Vehicles";
             displayName = "Light Armored Vehicles";
-            tracking = 0;
+            tracking = 1;
             //items of this category:
 			
 			class B_APC_Wheeled_03_cannon_F  {
@@ -482,28 +453,13 @@
                 displayName = "Bardelas (Military Green)";
                 description = "Primarily used to defend against aerial threats, the Bardelas is fitted with a turret armed with dual 35 mm cannons and four surface-to-air missiles that can be fired in a rapid succession once an aerial target is locked onto. (Seating Capacity: 3)";
                 price = 500000;
-                stock = 20;
-				
-            };		
-			class B_Radar_System_01_F {
-                displayName = "AN/MPQ-105 Radar";
-                description = "The AN/MPQ-105 is the search and detection, target track and illumination radar and missile commander for the surface-to-air defense missile system";
-                price = 200000;
-                stock = 20;
-				
-            };
-			class B_SAM_System_03_F {
-                displayName = "MIM-145 Defender";
-                description = "The Defender is a long-range, all-altitude, and all-weather air defence system used to counter enemy aircraft.";
-                price = 500000;
-                stock = 20;
-				
-            };			
+                stock = 20;		
+			};
 	};
         class HAvehicles {
             kindOf = "Vehicles";
             displayName = "Heavy Armored Vehicles";
-            tracking = 0;
+            tracking = 1;
             //items of this category:
 			
 
@@ -588,7 +544,7 @@
         class AAvehicles {
             kindOf = "Vehicles";
             displayName = "Artillery Vehicles";
-            tracking = 0;
+            tracking = 1;
             //items of this category:
 			
 			class I_Truck_02_MRL_F {
@@ -630,7 +586,7 @@
         class Avehicles {
             kindOf = "Vehicles";
             displayName = "Fixed-Wing and VTOL Aircraft";
-            tracking = 0;
+            tracking = 1;
             //items of this category:
 			
             class B_T_VTOL_01_infantry_F {
@@ -682,9 +638,16 @@
                 stock = 20;
 				
             };
-			class I_Plane_Fighter_03_CAS_F {
-                displayName = "A-143 Buzzard (CAS)";
-                description = "The Buzzard is a low-set, straight wing jet-powered aircraft with a double-taper planform. It is designed to be a low-cost aircraft capable of performing both ground attack and air interdiction missions. (Slingload: No) (Slingloadable: No)";
+			class I_Plane_Fighter_04_F {
+                displayName = "JAS 39 Gripen";
+                description = "The Gripen is a fourth-generation, single-seat, single-engine, and all-weather tactical fighter jet. The aircraft was designed as a multi-role platform at an affordable cost, and unlike some of the larger air-superiority jets, it can also perform well in low-altitude flight. Despite its aging platform, the A-149 has still been upgraded with the newest sensors and weapons systems. (Slingload: No) (Slingloadable: No)";
+                price = 500000;
+                stock = 20;
+				
+            };
+			class I_Plane_Fighter_03_dynamicLoadout_F {
+                displayName = "L-159 ALCA";
+                description = "The Aero L 159 ALCA (Advanced Light Combat Aircraft) is a Czech-built single-seat light multi-role combat aircraft designed for a variety of air-to-air, air-to-ground and reconnaissance missions. The aircraft is equipped with a radar for all-weather, day and night operations. (Slingload: No) (Slingloadable: No)";
                 price = 600000;
                 stock = 20;
 				
@@ -695,26 +658,26 @@
                 price = 650000;
                 stock = 20;
 				
-            };
+            };	
+			class B_Plane_CAS_01_dynamicLoadout_F {
+                displayName = "A-10D Thunderbolt (CAS)";
+                description = "The Thunderbolt is a twin turbofan-engined, ground attack jet that uses a cantilever low-wing monoplane wing design with a wide chord. It is meant to be used exclusively for ground attack and close air support. (Slingload: No) (Slingloadable: No)";
+                price = 650000;
+                stock = 20;       
+								
+            }; 		
 			class B_Plane_Fighter_01_Stealth_F {
                 displayName = "	F/A-181 Black Wasp II (Stealth)";
                 description = "The Black Wasp is a twin-engined stealth fighter that uses a clipped delta wing design with a reverse sweep on the rear. (Slingload: No) (Slingloadable: No)";
-                price = 650000;
+                price = 700000;
                 stock = 20;
 				
-            };			
-			class B_Plane_CAS_01_F {
-                displayName = "A-164 Wipeout (CAS)";
-                description = "The Wipeout is a twin turbofan-engined, ground attack jet that uses a cantilever low-wing monoplane wing design with a wide chord. It is meant to be used exclusively for ground attack and close air support. (Slingload: No) (Slingloadable: No)";
-                price = 625000;
-                stock = 20;       
-								
-            }; 			
+            };		
 };			
         class Hvehicles {
             kindOf = "Vehicles";
             displayName = "Rotary-Wing Aircraft";
-            tracking = 0;
+            tracking = 1;
             //items of this category:
 			
 			class C_Heli_Light_01_civil_F {
@@ -731,52 +694,44 @@
                 stock = 50;
 				
             };
-            class B_Heli_Light_01_F {
+            class B_Heli_Light_01__F {
                 displayName = "MH-9 Hummingbird";
                 description = "The Hummingbird is a five-bladed, single engine, rotary-wing light helicopter designed for both observation and light transport roles. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
-                price = 160000;
+                price = 150000;
                 stock = 50;
 				
             };
-			 class B_Heli_Light_01_armed_F {
-                displayName = "AH-9 Pawnee";
+			 class B_Heli_Light_01_dynamicLoadout_F {
+                displayName = "AH-6 Little Bird";
                 description = "The Pawnee is a five-bladed, single engine, rotary-wing light helicopter designed for both observation and light attack roles. Unlike the Hummingbird, the Pawnee has two stub wings located on either side of the fuselage where the side benches that support dynamic loadouts. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
                 price = 200000;
                 stock = 25;
 				
             };			
 			class I_Heli_light_03_unarmed_F {
-                displayName = "WY-55 Hellcat (Unarmed)";
-                description = "The Hellcat is a four-bladed, twin-engined rotary-wing helicopter that is capable of serving in many roles. These range from providing air-to-ground fire support as a light gunship, ferrying troops and cargo into battle as a utility transport, and even as an anti-tank/ship helicopter when outfitted with guided missiles. (Yes, up to 2000 kg) (Slingloadable: No)";
+                displayName = "AW-159 Wildcat (Unarmed)";
+                description = "The Wildcat is a four-bladed, twin-engined rotary-wing helicopter that is capable of serving in many roles. These range from providing air-to-ground fire support as a light gunship, ferrying troops and cargo into battle as a utility transport, and even as an anti-tank/ship helicopter when outfitted with guided missiles. (Yes, up to 2000 kg) (Slingloadable: No)";
 				price = 200000;
                 stock = 25;
 				
             };
-			class I_Heli_light_03_F {
-                displayName = "WY-55 Hellcat";
-                description = "The Hellcat is a four-bladed, twin-engined rotary-wing helicopter that is capable of serving in many roles. These range from providing air-to-ground fire support as a light gunship, ferrying troops and cargo into battle as a utility transport, and even as an anti-tank/ship helicopter when outfitted with guided missiles. (Yes, up to 2000 kg) (Slingloadable: No)";
+			class I_Heli_light_03_dynamicLoadout_F {
+                displayName = "AW-159 Wildcat";
+                description = "The Wildcat is a four-bladed, twin-engined rotary-wing helicopter that is capable of serving in many roles. These range from providing air-to-ground fire support as a light gunship, ferrying troops and cargo into battle as a utility transport, and even as an anti-tank/ship helicopter when outfitted with guided missiles. (Yes, up to 2000 kg) (Slingloadable: No)";
                 price = 300000;
                 stock = 25;
 				
             };
 			class O_Heli_Light_02_unarmed_F  {
-                displayName = "PO-30 Orca (Unarmed)";
-                description = "The PO-30 is a four-bladed, rotary-wing light helicopter with a fantail designed for both aerial reconnaissance and light transport duties. (Yes, up to 2000 kg) (Slingloadable: No)";
+                displayName = "Ka-60 Kasatka (Unarmed)";
+                description = "The Kasatka is a four-bladed, rotary-wing light helicopter with a fantail designed for both aerial reconnaissance and light transport duties. (Yes, up to 2000 kg) (Slingloadable: No)";
                 price = 200000;
                 stock = 50;
 				
             };
-			
-			class O_Heli_Light_02_F  {
-                displayName = "PO-30 Orca";
-                description = "The PO-30 is a four-bladed, rotary-wing light helicopter with a fantail designed for both aerial reconnaissance and light transport duties. (Yes, up to 2000 kg) (Slingloadable: No)";
-                price = 300000;
-                stock = 25;
-				
-            };
-			class O_Heli_Light_02_v2_F {
-                displayName = "PO-30 Orca (Black & White)";
-                description = "The PO-30 is a four-bladed, rotary-wing light helicopter with a fantail designed for both aerial reconnaissance and light transport duties. (Yes, up to 2000 kg) (Slingloadable: No)";
+			class O_Heli_Light_02_dynamicLoadout_F  {
+                displayName = "Ka-60 Kasatka";
+                description = "The Kasatka is a four-bladed, rotary-wing light helicopter with a fantail designed for both aerial reconnaissance and light transport duties. (Yes, up to 2000 kg) (Slingloadable: No)";
                 price = 300000;
                 stock = 25;
 				
@@ -844,15 +799,15 @@
                 stock = 50;
 				code = "[west,_this select 2] call BIS_fnc_addRespawnPosition";
             };			
-            class B_Heli_Attack_01_F {
+            class B_Heli_Attack_01_dynamicLoadout_F {
                 displayName = "AH-99 Comanchie";
                 description = "The Comanchie is a five-bladed, rotary-wing stealth helicopter designed for both armed reconnaissance and ground attack duties.(Slingload: No) (Slingloadable: No)";
                 price = 525000;
                 stock = 25;
 				
             }; 
-			class O_Heli_Attack_02_black_F {
-                displayName = "Mi-48 Kajman (Black)";
+			class O_Heli_Attack_02_dynamicLoadout_F {
+                displayName = "Mi-48 Kajman";
                 description = "The Mi-48 is a large helicopter gunship with low-capacity troop transport capability. It uses a tandem cockpit layout, and has a distinctive coaxial rotor system that removes the need for a tail rotor.";
                 price = 575000;
                 stock = 25;
@@ -860,9 +815,9 @@
             };
 	};	
 		class NDunits {
-            displayname = "UAV's and Drones (NATO)";
+            displayname = "UAV's and UGV's (NATO)";
             kindOf = "vehicles";
-            tracking = 0;
+            tracking = 1;
 			
 			class B_UavTerminal {
                 displayName = "UAV Termninal (NATO)";
@@ -899,60 +854,60 @@
                 stock = 20;
 				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";				
             };
-			class B_UAV_02_F {
-                displayName = "MQ-4A Greyhawk";
-                description = "The Greyhawk is a medium-altitude, long-endurance aerial drone that can serve a variety of roles from surveillance to ground attack, and even air-to-air combat. (Slingload: No) (Slingloadable: Yes)";
+			class B_UAV_02_dynamicLoadout_F {
+                displayName = "YABHON-R3 (NATO)";
+                description = "The YABHON is a medium-altitude, long-endurance aerial drone that can serve a variety of roles from surveillance to ground attack, and even air-to-air combat. (Slingload: No) (Slingloadable: Yes)";
                 price = 500000;
-                stock = 20;
+                stock = 20; 
 				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
-			class B_UAV_02_CAS_F {
-                displayName = "MQ-4A Greyhawk (CAS)";
-                description = "The Greyhawk is a medium-altitude, long-endurance aerial drone that can serve a variety of roles from surveillance to ground attack, and even air-to-air combat. (Slingload: No) (Slingloadable: Yes)";
+			class B_UAV_05_F {
+                displayName = "UCAV Sentinal (NATO)";
+                description = "The Sentinel is a tailless, jet-powered stealth drone that uses a blended-wing-body airframe. It is designed primarily to be used for both ground attack and close air support roles. (Slingload: No) (Slingloadable: Yes)";
                 price = 500000;
                 stock = 20; 
 				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class B_UGV_01_F {
-                displayName = "UGV Stomper";
+                displayName = "UGV Stomper (NATO)";
                 description = "The Stomper is available in two variants; an unarmed version that has no weapons mounted on it that is meant to be used for transporting supplies and cargo, and an armed version that is fitted with an RCWS turret armed with a dual-mount 12.7 mm heavy machine gun and 40 mm automatic grenade launcher. (Slingload: No) (Slingloadable: Yes)";
                 price = 10000;
                 stock = 20; 
 				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class B_UGV_01_rcws_F {
-                displayName = "UGV Stomper RCWS";
+                displayName = "UGV Stomper RCWS (NATO)";
                 description = "The Stomper is available in two variants; an unarmed version that has no weapons mounted on it that is meant to be used for transporting supplies and cargo, and an armed version that is fitted with an RCWS turret armed with a dual-mount 12.7 mm heavy machine gun and 40 mm automatic grenade launcher. (Slingload: No) (Slingloadable: Yes)";
                 price = 50000;
                 stock = 20;
 				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class B_T_UAV_03_dynamicLoadout_F {
-                displayName = "MQ-12 Falcon";
+                displayName = "MQ-12 Falcon (NATO)";
                 description = "The Falcon is a single engine, five-bladed, long-endurance helicopter UAV. Designed as a semi-stealthed VTOL drone, the Falcon has the ability to autonomously take off and land on any prepared and unprepared surface. (Slingload: No) (Slingloadable: No)";
                 price = 100000;
                 stock = 20;
 				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class B_UGV_02_Science_F {
-                displayName = "ED-1E Roller";
+                displayName = "ED-1E Roller (NATO)";
                 description = "ED-1 is a commercial off-the-shelf series of robotic systems built upon a man-portable modular platform. The tracked mini UGV has convenient front and rear obstacle climbers that allow it to traverse relatively complex terrain. (Slingload: No) (Slingloadable: Yes)";
                 price = 5000;
                 stock = 20;
 				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
 			class B_UGV_02_Demining_F {
-                displayName = "ED-1D Pelter";
+                displayName = "ED-1D Pelter (NATO)";
                 description = "ED-1 is a commercial off-the-shelf series of robotic systems built upon a man-portable modular platform. The tracked mini UGV has convenient front and rear obstacle climbers that allow it to traverse relatively complex terrain. (Slingload: No) (Slingloadable: Yes)";
                 price = 10000;
                 stock = 20;
 				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]}";
             };
         };
-				class IDunits {
-            displayname = "UAV's and Drones (INDEPENDANT)";
+		class IDunits {
+            displayname = "UAV's and UGV's (INDEPENDANT)";
             kindOf = "vehicles";
-            tracking = 0;
+            tracking = 1;
 			
 			class I_UavTerminal {
                 displayName = "UAV Termninal (INDEPENDANT)";

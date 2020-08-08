@@ -4,6 +4,7 @@
 		class medical {
             displayName = "Medical Supplies, MRE's and Beverages";
             kindOf = "Items";
+			tracking = 1;
 
             class ACE_Splint {
                 displayName = "ACE Splint (x5)";

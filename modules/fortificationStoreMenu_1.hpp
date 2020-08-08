@@ -5,6 +5,7 @@
 		class fortifications {
             displayName = "Fortifications";
             kindOf = "other";
+			tracking = 1;
 			
 			class ACE_Sandbag_empty {
                 displayName = "ACE Sandbag (empty)";
@@ -20,19 +21,26 @@
                 stock = 10000;
 			    kindOf = Items;
             };
-			class ACE_ConcertinaWireCoil {
-                displayName = "ACE Concertina Wire Coil";
-                description = "The ACE Concertina Wire Coil can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10;
-                stock = 10000;
-				code = "if (player == (_this select 0)) then {[container_1,'ACE_ConcertinaWireCoil'] call grad_fortifications_fnc_addFort}";
-            };
 			class ACE_wirecutter {
                 displayName = "ACE Wire Cutter";
                 description = "The ACE wire cutter can be used to cut concertina wire and fences. Utilize with the ACE interaction menu.";
                 price = 20;
                 stock = 10000;
 				kindOf = Items;
+            };
+			class ACE_ConcertinaWireCoil {
+                displayName = "ACE Concertina Wire Coil";
+                description = "The ACE Concertina Wire Coil can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 10;
+                stock = 1000;
+				code = "if (player == (_this select 0)) then {[container_1,'ACE_ConcertinaWireCoil'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Razorwire_F {
+                displayName = "Razorwire Barrier";
+                description = "The razorwire barrier can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50;
+                stock = 1000;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Razorwire_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Land_BagFence_Corner_F {
                 displayName = "Sandbag Wall (Corner)";
@@ -328,55 +336,7 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_HBarrierTower_F'] call grad_fortifications_fnc_addFort}";
             };
-			class Land_DeerStand_01_F {
-                displayName = "Deer Stand (v1)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Deer Stand (v1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 2000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_01_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_DeerStand_02_F {
-                displayName = "Deer Stand (v2)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Deer Stand (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 2000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_02_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_GuardTower_02_F {
-                displayName = "Guard Tower (small)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Guard Tower (small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 2000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_GuardTower_02_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_Cargo_House_V1_F {
-                displayName = "Military Cargo House (Green)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Military Cargo House (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_Cargo_House_V1_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_Cargo_Patrol_V1_F {
-                displayName = "Military Cargo Post (Green)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Military Cargo Post (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 15000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_Cargo_Patrol_V1_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_Cargo_HQ_V1_F {
-                displayName = "Military Cargo HQ (Green)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Military Cargo HQ (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 75000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_Cargo_HQ_V1_F'] call grad_fortifications_fnc_addFort}";
-            };
-			class Land_Cargo_Tower_V1_F {
-                displayName = "Military Cargo Tower (Green)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Military Cargo Tower (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_Cargo_Tower_V1_F'] call grad_fortifications_fnc_addFort}";
-            };
+			
 			class Land_PillboxBunker_01_hex_F {
                 displayName = "Pillbox (Hexagonal)";
                 description = "Pillbox (Hexagonal) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -398,10 +358,46 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_PillboxBunker_01_big_F'] call grad_fortifications_fnc_addFort}";
             };
+			class Land_DeerStand_01_F {
+                displayName = "Deer Stand (v1)";
+                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Deer Stand (v1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 2000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_01_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_DeerStand_02_F {
+                displayName = "Deer Stand (v2)";
+                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Deer Stand (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 3000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_02_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_GuardTower_02_F {
+                displayName = "Guard Tower (small)";
+                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***The guard tower (small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 4000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_GuardTower_02_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_TTowerBig_1_F {
+                displayName = "Transmitter Tower";
+                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***The transmitter tower can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_TTowerBig_1_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_TTowerBig_2_F {
+                displayName = "Transmitter Tower (Tall)";
+                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***The transmitter tower (tall) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_TTowerBig_2_F'] call grad_fortifications_fnc_addFort}";
+            };
         };
 		class Dfortifications {
             displayName = "Lights, Nets, Other";
             kindOf = "other";
+			tracking = 1;
 			
 			class Target_PopUp3_Moving_90deg_Acc2_F {
                 displayName = "Moving Target 3 (Front Accuracy)";
@@ -569,6 +565,7 @@
 	    class Cfortifications {
             displayName = "Cargo and Logistical Supplies";
             kindOf = "other";
+			tracking = 1;
 			
 			class ToolKit {
                 displayName = "ToolKit";
@@ -656,21 +653,21 @@
             };
 			class Box_NATO_AmmoVeh_F {
                 displayName = "Vehicle Ammo [NATO]";
-                description = "Vehicle ammo [NATO] can be utilized to rearm vehicles and generate static weapon ammo in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Vehicle ammo [NATO] can be utilized to rearm vehicles and CSW's (crew served weapons) in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 25000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Box_NATO_AmmoVeh_F'] call grad_fortifications_fnc_addFort}";
             };
 			class B_Slingload_01_Ammo_F {
                 displayName = "Huron Ammo Container";
-                description = "The huron ammo container can be utilized to rearm vehicles and generate static weapon ammo in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "The huron ammo container can be utilized to rearm vehicles and CSW's (crew served weapons) in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 50000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'B_Slingload_01_Ammo_F'] call grad_fortifications_fnc_addFort}";
             };
 			class Land_Pod_Heli_Transport_04_ammo_F {
                 displayName = "Taru Ammo Pod";
-                description = "Taru Ammo Pod can be utilized to rearm vehicles and generate static weapon ammo in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Taru Ammo Pod can be utilized to rearm vehicles and CSW's (crew served weapons) in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 50000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_ammo_F'] call grad_fortifications_fnc_addFort}";
@@ -838,16 +835,38 @@
             };
 	};
 	    class Sweapons {
-            displayName = "Static Weapons";
+            displayName = "Crew Served Weapons and Unmanned Weapon Systems";
             kindOf = "other";
+			tracking = 1;
 
 			 class B_Static_Designator_01_F {
                 displayName = "Remote Designator (NATO)";
                 description = "Remote Designator (NATO) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
+                price = 2000;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'B_Static_Designator_01_F'] call grad_fortifications_fnc_addFort}";
             };
+			class ACE_B_SpottingScope {
+                displayName = "ACE Spotting Scope";
+                description = "The ACE spotting scope is a small portable high-power telescope with added optics to present an erect image, optimized for the observation of terrestrial objects. They are used for hunting and target shooting to verify a marksman's shot placements, for tactical ranging and surveillance, and for any other application that requires more magnification than a pair of binoculars.";
+                price = 1000;
+                stock = 100;
+				code = "if (player == (_this select 0)) then {[container_1,'ACE_B_SpottingScope'] call grad_fortifications_fnc_addFort}";
+            };
+			class I_HMG_01_F {
+                displayName = "M2 HMG .50";
+                description = "M2 HMG .50 can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 5000;
+                stock = 100;
+				code = "if (player == (_this select 0)) then {[container_1,'I_HMG_02_F'] call grad_fortifications_fnc_addFort}";
+			};
+			class I_HMG_01_high_F {
+                displayName = "M2 HMG .50 (Raised)";
+                description = "M2 HMG .50 (raised) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 5000;
+                stock = 100;
+				code = "if (player == (_this select 0)) then {[container_1,'I_HMG_02_high_F'] call grad_fortifications_fnc_addFort}";
+			};
 		     class B_HMG_01_F {
                 displayName = "Mk30 HMG .50";
                 description = "Mk30 HMG .50 can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -857,7 +876,7 @@
 			};
 			class B_HMG_01_high_F {
                 displayName = "Mk30 HMG .50 (Raised)";
-                description = "Mk30 HMG .50 (Raised) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Mk30 HMG .50 (raised) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 15000;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'B_HMG_01_high_F'] call grad_fortifications_fnc_addFort}";
@@ -871,7 +890,7 @@
             };
 			class B_GMG_01_high_F {
                 displayName = "Mk32 GMG 20 mm (Raised)";
-                description = "Mk32 GMG 20 mm (Raised) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Mk32 GMG 20 mm (raised) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 15000;
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'B_GMG_01_high_F'] call grad_fortifications_fnc_addFort}";
@@ -883,6 +902,20 @@
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'B_Mortar_01_F'] call grad_fortifications_fnc_addFort}";
             };
+			class ace_dragon_staticAssembled {
+                displayName = "M47 Super-Dragon";
+                description = "***WARNING***THIS ITEM CAN ONLY BE REARMED WITH LOGITICS AMMO CONTAINERS***The M47 Super-Dragon uses a wire-guidance system in concert with a high explosive anti-tank warhead and was capable of defeating armored vehicles, fortified bunkers, main battle tanks, and other hardened targets. While it was primarily created to defeat the Soviet Union's T-55, T-62, and T-72 tanks, it saw use well into the 1990s, seeing action in the Persian Gulf War. The U.S. military officially retired the weapon in 2001. It can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 5000;
+                stock = 100;
+				code = "if (player == (_this select 0)) then {[container_1,'ace_dragon_staticAssembled'] call grad_fortifications_fnc_addFort}";
+            };
+			class B_static_AT_F {
+                displayName = "Static Titan Launcher (AT)";
+                description = "Static Titan Launcher (AT) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 40000;
+                stock = 100;
+				code = "if (player == (_this select 0)) then {[container_1,'B_static_AT_F'] call grad_fortifications_fnc_addFort}";
+            };
 			class B_static_AA_F {
                 displayName = "Static Titan Launcher (AA) (NATO)";
                 description = "Static Titan Launcher (AA) (NATO) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -890,31 +923,53 @@
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'B_static_AA_F'] call grad_fortifications_fnc_addFort}";
             };
-			class B_static_AT_F {
-                displayName = "Static Titan Launcher (AT) (NATO)";
-                description = "Static Titan Launcher (AT) (NATO) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 40000;
-                stock = 100;
-				code = "if (player == (_this select 0)) then {[container_1,'B_static_AT_F'] call grad_fortifications_fnc_addFort}";
+			class B_AAA_System_01_F {
+                displayName = "Praetorian 1C";
+                description = "The Praetorian 1C is a static 20 mm anti-aircraft weapon system. The Praetorian 1C is a point-defence, close-in weapons system that is designed to engage Unmanned Aerial Vehicles and fixed-wing aircraft at short ranges.";
+                price = 500000;
+                stock = 20;
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};if (player == (_this select 0)) then {[container_1,'B_AAA_System_01_F'] call grad_fortifications_fnc_addFort}";
             };
-			class I_static_AA_F {
-                displayName = "Static Titan Launcher (AA) (Independent)";
-                description = "Static Titan Launcher (AA) (Independent) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 40000;
-                stock = 100;
-				code = "if (player == (_this select 0)) then {[container_1,'I_static_AA_F'] call grad_fortifications_fnc_addFort}";
+			class B_Radar_System_01_F {
+                displayName = "AN/MPQ-105 Radar";
+                description = "The AN/MPQ-105 is the search and detection, target track and illumination radar and missile commander for the surface-to-air defense missile system.";
+                price = 500000;
+                stock = 20;
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};if (player == (_this select 0)) then {[container_1,'B_Radar_System_01_F'] call grad_fortifications_fnc_addFort}";
             };
-			class I_static_AT_F {
-                displayName = "Static Titan Launcher (AT) (Independent)";
-                description = "Static Titan Launcher (AT) (Independent) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 40000;
-                stock = 100;
-				code = "if (player == (_this select 0)) then {[container_1,'I_static_AT_F'] call grad_fortifications_fnc_addFort}";
+			class B_SAM_System_03_F {
+                displayName = "MIM-145 Defender";
+                description = "***1,000,000 Cr.***The Defender is a long-range, all-altitude, and all-weather air defence system used to counter enemy aircraft.";
+                price = 1000000;
+                stock = 20;
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};if (player == (_this select 0)) then {[container_1,'B_SAM_System_03_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class B_SAM_System_01_F {
+                displayName = "Mk49 Spartan";
+                description = "***1,000,000 Cr.***The Mk49 Spartan is a static 127 mm anti-aircraft weapon system. It is a fire-and-forget anti-aircraft missile launcher that is designed to destroy helicopters and low-flying fixed-wing jets.";
+                price = 1000000;
+                stock = 20;
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};if (player == (_this select 0)) then {[container_1,'B_SAM_System_01_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class B_Ship_Gun_01_F {
+                displayName = "	Mk45 Hammer";
+                description = "***5,000,000 Cr.***The MK45 Hammer is a 120 mm non-ballistic missile-based fire support weapon. The cannon's camera has access to three magnification zoom levels, as well as normal day, night, and black/white-hot thermal vision modes.";
+                price = 5000000;
+                stock = 20;
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};if (player == (_this select 0)) then {[container_1,'B_Ship_Gun_01_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class B_Ship_MRLS_01_F {
+                displayName = "	Mk41 VLS";
+                description = "***10,000,000 Cr.***The MK41 Vertical Launch System primary loadout consists of thirty six Venator surface-to-surface cruise missiles. Of these, eighteen are outfitted with a high-explosive (HE) payload while the other eighteen contain cluster bomblet payloads instead.";
+                price = 10000000;
+                stock = 20;
+				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};if (player == (_this select 0)) then {[container_1,'B_Ship_MRLS_01_F'] call grad_fortifications_fnc_addFort}";
             };
         };	
 		class Mammo {
-            displayName = "Static Weapon Ammunition";
+            displayName = "Crew Served Weapon Ammunition";
             kindOf = "Items";
+			tracking = 1;
 
 			class ace_csw_100Rnd_127x99_mag_Red {
                 displayName = "ACE 12.7 mm HMG Tracer (Red) Belt";

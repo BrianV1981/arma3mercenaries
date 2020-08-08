@@ -5,6 +5,7 @@
         class items {
             displayName = "Military Supplies";
             kindOf = "Items";
+			tracking = 1;
 
             class ItemMap {
                 displayName = "Map";
@@ -276,6 +277,20 @@
                 price = 1500;
                 stock = 10000;                
             };
+			class ACE_VMH3 {
+                displayName = "ACE VMH3";
+                description = "The VMH3 detector is designed to meet the very specific needs of the mine clearance professionals for humanitarian demining in post conflict areas.";
+                kindOf = "Weapons";
+				price = 5000;
+                stock = 10000;
+            };
+			class ACE_VMM3 {
+                displayName = "ACE VMM3";
+                description = "The VMM3 has been designed for the highly accurate detection of all types of metallic mines and plastic mines with minimum metal content.";
+                kindOf = "Weapons";
+				price = 5000;
+                stock = 10000;
+            };
    			class ACE_Cellphone {
                 displayName = "ACE Cellphone";
                 description = "The ACE cellphone can be utilize with the ACE self interaction menu, under explosives. After placing the charge, interact with it with ACE and assign it to a type of detonator.";
@@ -293,6 +308,13 @@
                 description = "The ACE Maglite XL50 flashlight can be utilized with the ACE self interaction menu (while looking at the map) to see your map in the dark.";
                 price = 70;
                 stock = 10000;                
+            };
+			class ACE_Flashlight_Maglite_ML300L {
+                displayName = "ACE Maglite ML300L";
+                kindOf = "Weapons";
+				description = "Flash light that requires 2 hands and utilizes the handgun inventory slot.";
+                price = 0;
+                stock = 1000;
             };
 			class  ACE_EarPlugs {
                 displayName = "ACE Earplugs";
@@ -430,6 +452,12 @@
                 price = 100;
                 stock = 10000;
             };
+			class ACE_SpareBarrel {
+                displayName = "ACE Spare barrel";
+                description = "The ACE spare barrel is useful when your weapon barrel tempertures start to exceed 500°c or when the temperture bar is half full (yellow). It can be utilize with the ACE self interaction menu > Equipment > Swap Barrel";
+                price = 500;
+                stock = 10000;                
+            };
 			class ALiVE_Tablet {
                 displayName = "ALiVE Commander Tablet";
                 description = "Gives access to your factions ALiVE command, control, intelligence, surveilllance, target aquisition, and reconnaisance menus. They can be utilized with the ACE self interaction menu > ALiVE > C2ISTAR.";
@@ -440,20 +468,21 @@
 		class medical {
             displayName = "Medical Supplies, MRE's and Beverages";
             kindOf = "Items";
+			tracking = 1;
 
             class ACE_Splint {
                 displayName = "ACE Splint (x5)";
                 description = "5 simple splints to secure fractured bones. (utilize the Fort MAGA medical cargo house for subsidized medical treatment)";
                 amount = 5;
                 price = 10;
-                stock = 1000;     //note that a total of 2000 splints can be bought (in sets of 5)
+                stock = 1000;     //note that a total of 5000 splints can be bought (in sets of 5)
             };
             class ACE_fieldDressing {
                 displayName = "ACE Bandages (x10)";
                 description = "10 simple bandages in sterile packaging. (utilize the Fort MAGA medical cargo house for subsidized medical treatment)";
                 amount = 10;
                 price = 10;
-                stock = 1000;     //note that a total of 4000 bandages can be bought (in sets of 10)
+                stock = 1000;     //note that a total of 10000 bandages can be bought (in sets of 10)
             };
             class ACE_bloodIV_250 {
                 displayName = "ACE Blood IV (250ml) (x5)";
@@ -571,6 +600,7 @@
         class equipment {
             displayName = "Military Equipment";
             kindOf = "Wearables";
+			tracking = 1;
 
 			class U_Rangemaster {
                 displayName = "Rangemaster Suit";

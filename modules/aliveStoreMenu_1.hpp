@@ -5,6 +5,7 @@
 		class Nother {
             displayName = "Combat Support (NATO)";
             kindOf = "Other";
+			tracking = 1;
 			
 			class B_Truck_01_transport_F {
                 displayName = "ALiVE HEMTT Transport (120 Minutes)";
@@ -88,6 +89,7 @@
 		class Iother {
             displayName = "Combat Support (INDEPENDENT)";
             kindOf = "Other";
+			tracking = 1;
 			
 			class I_Truck_02_transport_F {
                 displayName = "ALiVE Zamak Transport (120 Minutes)";

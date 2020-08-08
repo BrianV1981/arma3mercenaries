@@ -5,14 +5,27 @@
  		class Hweapons {
             displayName = "Handguns";
             kindOf = "Weapons";
+			tracking = 1;
             //items of this category:
 
 			class ACE_Flashlight_Maglite_ML300L {
                 displayName = "ACE Maglite ML300L";
                 description = "Flash light that requires 2 hands and utilizes the handgun inventory slot.";
                 price = 0;
-                stock = 1000;                  
-            };			
+                stock = 1000;
+            };
+			class ACE_VMH3 {
+                displayName = "ACE VMH3";
+                description = "The VMH3 detector is designed to meet the very specific needs of the mine clearance professionals for humanitarian demining in post conflict areas.";
+				price = 5000;
+                stock = 10000;
+            };
+			class ACE_VMM3 {
+                displayName = "ACE VMM3";
+                description = "The VMM3 has been designed for the highly accurate detection of all types of metallic mines and plastic mines with minimum metal content.";
+				price = 5000;
+                stock = 10000;
+            };
 			class hgun_Pistol_Signal_F {
                 displayName = "Starter Pistol";
                 description = "The Starter Pistol is a double-action revolver chambered to fire 10 mm signal flare slugs, It loads from 6-round cylinders and has both a fire rate and muzzle velocity of 240 rounds per minute/240 m/s. The Starter Pistol does not support being fitted with any accessories or muzzle attachments.";
@@ -87,6 +100,7 @@
         class SMGweapons {
             displayName = "Sub Machine Guns";
             kindOf = "Weapons";
+			tracking = 1;
             //items of this category:			
 			
 			class SMG_05_F {
@@ -233,6 +247,7 @@
         class Aweapons {
             displayName = "Assault Rifles";
             kindOf = "Weapons";
+			tracking = 1;
             //items of this category:
 			
             class arifle_SDAR_F {
@@ -645,6 +660,7 @@
         class Mweapons {
             displayName = "Marksman Rifles";
             kindOf = "Weapons";
+			tracking = 1;
             //items of this category:
 			
 			class arifle_MXM_F {
@@ -833,6 +849,7 @@
         class MGweapons {
             displayName = "Machine Guns";
             kindOf = "Weapons";
+			tracking = 1;
             //items of this category:
 			
             class MMG_01_hex_F {
@@ -874,6 +891,7 @@
         class LMGweapons {
             displayName = "Light Machine Guns";
             kindOf = "Weapons";
+			tracking = 1;
             //items of this category:
 			
             class arifle_SPAR_02_blk_F {
@@ -992,6 +1010,7 @@
         class SRweapons {
             displayName = "Sniper Rifles";
             kindOf = "Weapons";
+			tracking = 1;
             //items of this category:
 			
 			class srifle_LRR_F {
@@ -1040,6 +1059,7 @@
         class Lweapons {
             displayName = "Missile and Rocket Launchers";
             kindOf = "Weapons";
+			tracking = 1;
             //items of this category:			
 			
 		    class launch_RPG7_F {
@@ -1228,6 +1248,7 @@
         class ammo {
             displayName = "Ammunition";
             kindOf = "Items";
+			tracking = 1;
 
 			class 6Rnd_GreenSignal_F {
                 displayName = "6Rnd Signal Cylinder (Green)";
@@ -1665,7 +1686,14 @@
 		class Eammo {
             displayName = "Plantable Explosives";
             kindOf = "Items";
+			tracking = 1;
 			
+			class ACE_DefusalKit {
+                displayName = "ACE ACE Defusal Kit";
+                description = "The ACE ACE defusal kit can be utilize with the ACE interaction menu.";
+                price = 50;
+                stock = 10000;
+            };
    			class ACE_Cellphone {
                 displayName = "ACE Cellphone";
                 description = "The ACE cellphone can be utilize with the ACE self interaction menu, under explosives. After placing the charge, interact with it with ACE and assign it to a type of detonator.";
@@ -1678,6 +1706,18 @@
                 price = 200;
                 stock = 10000;                
             };
+			class ACE_M26_Clacker {
+                displayName = "ACE M26 Firing Device";
+                description = "The ACE M26 firing device can be utilize with the ACE self interaction menu, under explosives. After placing the charge, interact with it with ACE and assign it to a type of detonator.";
+                price = 200;
+                stock = 10000;                
+            };
+			class ACE_DeadManSwitch {
+                displayName = "ACE Dead Man’s Switch";
+                description = "The ACE Dead Man’s Switch can be utilize with the ACE self interaction menu, under explosives. After placing the charge, interact with it with ACE and assign it to a type of detonator.";
+                price = 200;
+                stock = 10000;                
+            };
 			class DemoCharge_Remote_Mag {
                 displayName = "Explosive Charge";
                 description = "Explosive charges can be utilize with the ACE self interaction menu, under explosives. After placing charge, interact with it with ACE and assign it to a type of detonator. ";
@@ -1687,6 +1727,30 @@
 			class SatchelCharge_Remote_Mag {
                 displayName = "Explosive Satchel";
                 description = "Explosive satchels can be utilize with the ACE self interaction menu, under explosives. After placing charge, interact with it with ACE and assign it to a type of detonator.";
+                price = 750;
+                stock = 10000;                
+            };
+			class IEDLandSmall_Remote_Mag {
+                displayName = "Small IED (Dug-in)";
+                description = "The small IED (dug-in) can be utilize with the ACE self interaction menu, under explosives. After placing charge, interact with it with ACE and assign it to a type of detonator.";
+                price = 200;
+                stock = 10000;                
+            };
+			class IEDUrbanSmall_Remote_Mag {
+                displayName = "Small IED (Urban)";
+                description = "The small IED (urban) can be utilize with the ACE self interaction menu, under explosives. After placing charge, interact with it with ACE and assign it to a type of detonator.";
+                price = 200;
+                stock = 10000;                
+            };
+			class IEDLandBig_Remote_Mag {
+                displayName = "Large IED (Dug-in)";
+                description = "The large IED (dug-in) can be utilize with the ACE self interaction menu, under explosives. After placing charge, interact with it with ACE and assign it to a type of detonator.";
+                price = 500;
+                stock = 10000;                
+            };
+			class IEDUrbanBig_Remote_Mag {
+                displayName = "	Large IED (Urban)";
+                description = "The large IED (urban) can be utilize with the ACE self interaction menu, under explosives. After placing charge, interact with it with ACE and assign it to a type of detonator.";
                 price = 500;
                 stock = 10000;                
             };
@@ -1724,139 +1788,212 @@
                 displayName = "APERS Tripwire Mine";
                 description = "Anti-personnel tripwire mine";
                 price = 100;
-                stock = 10000;                
+                stock = 10000;
             };
         };
         class accessories {
             displayName = "Weapon Accessories";
             kindOf = "Items";
+			tracking = 1;
 
 			class optic_MRD {
                 displayName = "MRD";
                 description = "MRD Close Range.";
-                price = 80;
+                price = 100;
                 stock = 10000;                
-	    };
+			};
 			class optic_MRD_black {
                 displayName = "MRD (Black)";
                 description = "MRD Close Range.";
-                price = 80;
+                price = 100;
                 stock = 10000;                
-	    };
+			};
 			class optic_Yorris {
                 displayName = "Yorris J2";
                 description = "Y-J2 Close Range.";
-                price = 80;
+                price = 100;
                 stock = 10000;                
-	    };
+			};
 			class optic_Holosight_blk_F {
                 displayName = "Mk17 Holosight (Black)";
                 description = "Mk17 Close Range.";
-                price = 100;
+                price = 200;
                 stock = 10000;                
-	    };
+			};
 			class optic_Holosight_smg_blk_F {
                 displayName = "Mk17 Holosight SMG (Black)";
                 description = "Mk17 Close Range.";
-                price = 100;
+                price = 200;
                 stock = 10000;                
-	    };
+			};
 			class optic_Aco {
                 displayName = "ACO (Red)";
                 description = "Advanced Collimator Optics Color: Red, Close Range.";
                 price = 0;
                 stock = 10000;                
-	    };
+			};
 			class optic_ACO_grn {
                 displayName = "ACO (Green)";
                 description = "Advanced Collimator Optics Color: Green, Close Range.";
                 price = 0;
                 stock = 10000;                
-	    };
+			};
 			class optic_Aco_smg {
                 displayName = "ACO SMG (Red";
                 description = "Advanced Collimator Optics Color: Red, Close Range.";
                 price = 0;
                 stock = 10000;                
-	    };
+			};
 			class optic_ACO_grn_smg {
                 displayName = "ACO SMG (Green)";
                 description = "Advanced Collimator Optics Color: Green, Close Range.";
                 price = 0;
                 stock = 10000;                
-	    };
+			};
 			class optic_Hamr {
                 displayName = "RCO";
                 description = "Rifle Combat Optics Magnification: 2x";
-                price = 200;
+                price = 400;
                 stock = 10000;                
-	    };
+			};
+			class ACE_optic_Hamr_2D {
+                displayName = "RCO (2D)";
+                description = "Enhanced Rifle Combat Optics Magnification: 2x.";
+                price = 400;
+                stock = 10000;                
+            };
+			class ACE_optic_Hamr_PIP {
+                displayName = "RCO (PIP)";
+                description = "Enhanced Rifle Combat Optics Magnification: 2x.";
+                price = 400;
+                stock = 10000;                
+            };
 			class optic_ERCO_blk_F {
                 displayName = "ERCO (Black)";
                 description = "Enhanced Rifle Combat Optics Magnification: 2x.";
-                price = 250;
+                price = 500;
                 stock = 10000;                
-            };		
+            };
 			class optic_Arco_blk_F {
                 displayName = "ARCO (Black)";
                 description = "Advanced Rifle Combat Optics Magnification: 2x";
-                price = 300;
+                price = 600;
                 stock = 10000;                
-	    };
+			};
+			class ACE_optic_Arco_2D {
+                displayName = "ARCO (2D)";
+                description = "Advanced Rifle Combat Optics Magnification: 2x";
+                price = 600;
+                stock = 10000;                
+			};
+			class ACE_optic_Arco_PIP {
+                displayName = "ARCO (PIP)";
+                description = "Advanced Rifle Combat Optics Magnification: 2x";
+                price = 600;
+                stock = 10000;                
+			};
 			class optic_MRCO {
                 displayName = "MRCO";
                 description = "MRCO Magnification: 2x.";
-                price = 300;
+                price = 600;
+                stock = 10000;                
+            };
+			class ACE_optic_MRCO_2D {
+                displayName = "MRCO (2D)";
+                description = "MRCO Magnification: 2x.";
+                price = 600;
+                stock = 10000;                
+            };
+			class ACE_optic_MRCO_PIP {
+                displayName = "MRCO (PIP)";
+                description = "MRCO Magnification: 2x.";
+                price = 600;
                 stock = 10000;                
             };
 			class optic_DMS {
                 displayName = "DMS";
                 description = "DMS Magnification: 2x-4x.";
-                price = 500;
+                price = 1000;
                 stock = 10000;                
             };
 			class optic_NVS {
                 displayName = "NVS";
                 description = "Night Vision Scope Magnification: 5x.";
-                price = 500;
-                stock = 10000;                
+                price = 1000;
+                stock = 10000;
             };
 			class optic_SOS {
 			    displayName = "MOS";
                 description = "Marksman Optical Sights Magnification: 2.5x-5x.";
-                price = 550;
+                price = 1100;
+                stock = 10000;
+            };
+			class ACE_optic_SOS_2D {
+			    displayName = "MOS (2D)";
+                description = "Marksman Optical Sights Magnification: 2.5x-5x.";
+                price = 1100;
+                stock = 10000;
+            };
+			class ACE_optic_SOS_PIP {
+			    displayName = "MOS (PIP)";
+                description = "Marksman Optical Sights Magnification: 2.5x-5x.";
+                price = 1100;
                 stock = 10000;                
             };
+			class Item_optic_KHS_blk {
+                displayName = "Kahlia";
+                description = "The Kahlia has a magnification strength range of 5x-11x. It has a minimum zeroing range of 300 m to a maximum of 2,000 m.";
+                price = 1200;
+                stock = 10000;                
+			};
 			class optic_AMS {
 			    displayName = "AMS (Black)";
                 description = "Advanced Marksman Scope Magnification: 3x-10x.";
-                price = 700;
+                price = 1400;
                 stock = 10000;                
             };
 			class optic_tws {
                 displayName = "TWS";
                 description = "Thermal Weapon Sight Magnification: 4x-10x.";
-                price = 850;
+                price = 2000;
                 stock = 10000;                
             };
 			class optic_tws_mg {
                 displayName = "TWS MG";
                 description = "Thermal Weapon Sight for Machineguns Magnification: 4x-10x.";
-                price = 850;
+                price = 2000;
                 stock = 10000;                
             };
 			class optic_Nightstalker {
                 displayName = "Nightstalker";
                 description = "Nightstalker Sight Magnification: 4x-10x";
-                price = 950;
+                price = 2000;
                 stock = 10000;                
             };		
 			class optic_LRPS {
                 displayName = "LRPS";
                 description = "The LRPS (Long-Range Precision Scope Magnification: 6x-25x";
+                price = 2500;
+                stock = 10000;                
+			};
+			class ACE_optic_LRPS_2D {
+                displayName = "ACE LRPS (2D)";
+                description = "The LRPS (Long-Range Precision Scope Magnification: 6x-25x";
+                price = 2500;
+                stock = 10000;                
+			};
+			class ACE_optic_LRPS_PIP {
+                displayName = "LRPS (PIP)";
+                description = "The LRPS (Long-Range Precision Scope Magnification: 6x-25x";
+                price = 2500;
+                stock = 10000;                
+			};
+			class Item_optic_ico_01_black_f {
+                displayName = "PMS";
+                description = "The PMS or Promet Modular Sight is an integrated combat sight designed exclusively for use with the LDF's Promet bullpup. It combines a magnified riflescope with a backup ironsight, all contained within a compact carrying handle.";
                 price = 1000;
                 stock = 10000;                
-	    };
+			};
 			class ace_muzzle_mzls_smg_02 {
                 displayName = "Flash Suppressor (9 mm)";
                 description = "A flash suppressor, also known as a flash guard, flash eliminator, flash hider, or flash cone, is a muzzle device attached to the muzzle of a rifle that reduces its visible signature while firing by cooling or dispersing the burning gases that exit the muzzle, a phenomenon typical of carbine-length weapons. Its primary intent is to reduce the chances that the shooter will be blinded in low-light shooting conditions. Contrary to popular belief, it is only a minor secondary benefit if a flash suppressor reduces the intensity of the flash visible to the enemy.";
@@ -1898,7 +2035,13 @@
                 description = "A flash suppressor, also known as a flash guard, flash eliminator, flash hider, or flash cone, is a muzzle device attached to the muzzle of a rifle that reduces its visible signature while firing by cooling or dispersing the burning gases that exit the muzzle, a phenomenon typical of carbine-length weapons. Its primary intent is to reduce the chances that the shooter will be blinded in low-light shooting conditions. Contrary to popular belief, it is only a minor secondary benefit if a flash suppressor reduces the intensity of the flash visible to the enemy.";
                 price = 600;
                 stock = 10000;                
-            };		
+            };
+			class muzzle_snds_L {
+                displayName = "Sound Suppressor (9 mm)";
+                description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
+                price = 200;
+                stock = 10000;                
+            };
 			class muzzle_snds_acp {
                 displayName = "Sound Suppressor (.45 ACP)";
                 description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
@@ -1984,9 +2127,16 @@
                 stock = 10000;                
             };
 			class bipod_01_F_blk {
-                displayName = "Bipod (Black) [NATO]";
-                description = "Bipod (Black) [NATO]";
+                displayName = "Bipod (Black)";
+                description = "Bipod (Black)";
                 price = 150;
+                stock = 10000;                
+            };
+			class ACE_SpareBarrel {
+                displayName = "ACE Spare barrel";
+                description = "The ACE spare barrel is useful when your weapon barrel tempertures start to exceed 500°c or when the temperture bar is half full (yellow). It can be utilize with the ACE self interaction menu > Equipment > Swap Barrel";
+                kindOf = "Items";
+				price = 500;
                 stock = 10000;                
             };
         };

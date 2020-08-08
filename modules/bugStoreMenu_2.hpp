@@ -5,7 +5,7 @@
 	class Rother {
             kindOf = "other";
             displayName = "BETA Tester Store";
-            tracking = 0;
+            tracking = 1;
             //items of this category:
 
 			class Land_Money_F {

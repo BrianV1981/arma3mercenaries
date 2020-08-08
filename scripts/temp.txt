@@ -102,6 +102,34 @@ customaction = ['CustomAction 2','Open Garage Menu','',{_this call HG_fnc_dialog
 customaction = ['CustomAction 3','Store Vehicle','',{_this call HG_fnc_storeVehicleClient},{true}] call ace_interact_menu_fnc_createAction;
 [player, 0, ["ACE_MainActions","CustomAction 1"], customaction] call ace_interact_menu_fnc_addActionToObject;
 
+////////////////////////////////////the creator help[ed.../////////////////
+
+in init.sqf with garage(object) variable name "myObject":
+private _act = [(localize "STR_HG_GARAGE"),(localize "STR_HG_GARAGE"),"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;
+[myObject,0,["ACE_MainActions"],_act] call ace_interact_menu_fnc_addActionToObject;
+
+_act = [(localize "STR_HG_GARAGE_PARK"),(localize "STR_HG_GARAGE_PARK"),"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_storeVehicleClient},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;
+[myObject,0,["ACE_MainActions"],_act] call ace_interact_menu_fnc_addActionToObject;
+
+or
+
+place this code in the garage(object) init line:
+act_0 = [(localize "STR_HG_GARAGE"),(localize "STR_HG_GARAGE"),"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;
+
+act_0 = [(localize "STR_HG_GARAGE_PARK"),(localize "STR_HG_GARAGE_PARK"),"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_storeVehicleClient},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;
+
+act_0 = nil;
+
+Open both:
+HG\Functions\Client\Garage\fn_dialogOnLoadGarage.sqf
+HG\Functions\Client\Garage\fn_storeVehicleClient.sqf
+
+and replace:
+params["_target","_caller","_id","_garage"];
+with
+params["_garage"];
 
 
 ///////////grad store info///////////////
