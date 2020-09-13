@@ -1371,43 +1371,43 @@
                 stock = 10000; 
             };
 			class 30Rnd_65x39_caseless_green_mag_Tracer {
-                displayName = "6.5 mm 30Rnd Tracer (Green) Caseless Mag";
+                displayName = "6.5 mm 30Rnd Tracer Caseless Mag (Green)";
                 description = "Caliber: 6.5x39 mm Tracer (Green) - Caseless Rounds: 30 Used in: Katiba, Type 115.";
                 price = 150;
                 stock = 10000; 
             };			
 			class 30Rnd_65x39_caseless_black_mag_Tracer {
-                displayName = "6.5 mm 30Rnd Tracer Black (Red) Mag";
+                displayName = "6.5 mm 30Rnd Tracer Black Mag (Red)";
                 description = "Caliber: 6.5x39 mm STANAG Tracers (Red) Rounds: 30 Used in: MX/C/M/SW/3GL.";
                 price = 150;
                 stock = 10000;                
             };
 			class 30Rnd_65x39_caseless_mag_Tracer {
-                displayName = "6.5 mm 30Rnd Tracer Sand (Red) Mag";
+                displayName = "6.5 mm 30Rnd Tracer Sand Mag (Red)";
                 description = "Caliber: 6.5x39 mm STANAG Tracers (Red) Rounds: 30 Used in: MX/C/M/SW/3GL.";
                 price = 150;
                 stock = 10000;                
             };
 			class 30Rnd_65x39_caseless_khaki_mag_Tracer {
-                displayName = "6.5 mm 30Rnd Tracer Khaki (Red) Mag";
+                displayName = "6.5 mm 30Rnd Tracer Khaki Mag (Red)";
                 description = "Caliber: 6.5x39 mm STANAG Tracers (Red) Rounds: 30 Used in: MX/C/M/SW/3GL.";
                 price = 150;
                 stock = 10000;                
             };			
 			class 100Rnd_65x39_caseless_black_mag_tracer {
-                displayName = "6.5 mm 100Rnd Tracer (Red) Black Mag";
+                displayName = "6.5 mm 100Rnd Tracer Black Mag (Red)";
                 description = "Caliber: 6.5x39 mm Caseless Tracers (Red) Rounds: 100 Used in: MX/C/M/SW/3GL.";
                 price = 500;
                 stock = 10000;                
             };
 			class 100Rnd_65x39_caseless_mag_Tracer {
-                displayName = "6.5 mm 100Rnd Tracer (Red) Sand Mag";
+                displayName = "6.5 mm 100Rnd Tracer Sand Mag (Red)";
                 description = "Caliber: 6.5x39 mm Caseless Tracers (Red) Rounds: 100 Used in: MX/C/M/SW/3GL.";
                 price = 500;
                 stock = 10000;                
             };
 			class 100Rnd_65x39_caseless_khaki_mag_tracer {
-                displayName = "6.5 mm 100Rnd Tracer (Red) Khaki Mag";
+                displayName = "6.5 mm 100Rnd Tracer Khaki Mag (Red)";
                 description = "Caliber: 6.5x39 mm Caseless Tracers (Red) Rounds: 100 Used in: MX/C/M/SW/3GL.";
                 price = 500;
                 stock = 10000;                
@@ -1419,13 +1419,13 @@
                 stock = 10000;                
             };
 			class 200Rnd_65x39_cased_Box_Red {
-                displayName = "200 Round 6.5x39 mm Tracer (Red) cased box";
+                displayName = "200 Round 6.5x39 mm Tracer cased box (Red)";
                 description = "Caliber: 6.5x39 mm Tracers (Red) Rounds: 200 Used in: Mk200.";
                 price = 1000;
                 stock = 10000;                
             };
 			class 10Rnd_Mk14_762x51_Mag {
-                displayName = "7.62 mm 10rnd Mk14 (Classic) Mag";
+                displayName = "7.62 mm 10rnd Mk14 Mag (Classic)";
                 description = "Caliber: 7.62x51 mm Rounds: 10 Used in: Mk18 ABR, Mk-I EMR, Mk14, SPAR-17.";
                 price = 70;
                 stock = 10000;                				

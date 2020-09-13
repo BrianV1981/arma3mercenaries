@@ -52,6 +52,22 @@ _vehicle allowDamage false;
 _vehicle setVariable["HG_Owner",[(getPlayerUID _unit),_plate,_color,[]],true];
 [_vehicle,2] call HG_fnc_lock;
 
+
+//////////added flip vehicle///////////////
+if (isServer || isDedicated) then
+	{
+		 _vehicle addAction ["Flip vehicle",{ 
+		params ["_vehicle", "_caller", "_actionId", "_arguments"]; 
+		_normalVec = surfaceNormal getPos _vehicle; 
+		if (!local _vehicle) then { 
+		[_vehicle,_normalVec] remoteExec ["setVectorUp",_vehicle]; 
+		} else { 
+		_vehicle setVectorUp _normalVec; 
+ }; 
+ _vehicle setPosATL [getPosATL _vehicle select 0, getPosATL _vehicle select 1, 0]; 
+ },[],1.5,true,true,"","(vectorUp _target) vectorCos (surfaceNormal getPos _target) <0.5",5];
+	};
+/////////////////////////////////////////
 if((getNumber(getMissionConfig "CfgClient" >> "clearInventory")) isEqualTo 1) then
 {
 	clearItemCargoGlobal _vehicle;

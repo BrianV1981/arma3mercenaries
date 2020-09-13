@@ -1,10 +1,10 @@
 if (hasInterface) then {
 	"How To Make Credits!" hintC [
-	"Detain and deliver civilians for enhanced interrogations",
-	"Capture and deliver enemy combatants for enhanced interrogations",
+	"Detain and deliver civilians/combatants for enhanced interrogations",
+	"Capture and deliver enemy vehicles to Fort MAGA or Camp Molos",
 	"Kill CSAT and FIA",
 	"Disable insurgent installations",
-	"Completing ALiVE OPCOM tasks",
+	"Complete ALiVE OPCOM tasks",
 	"https://github.com/BrianV1981/arma3mercenaries/wiki"
 	];
 };

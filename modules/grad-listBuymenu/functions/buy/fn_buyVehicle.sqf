@@ -25,11 +25,14 @@ if (str _spawnPosition == "[]") exitWith {[_buyer,_account,_price,"No vehicle sp
 
 //spawn vehicle
 _vehicle = _itemConfigName createVehicle _spawnPosition;
+/////////////added HG vehicle ownership/////////////////////////
 if (isServer || isDedicated) then
 	{
 		[_vehicle,_buyer] remoteExecCall ["HG_fnc_setOwner",_buyer,false];
 	};
-
+////////////added HG vehicle lock/////////
+[_vehicle,2] call HG_fnc_lock;
+ /////////////////////////////////////////
 //bis vehicle init
 private _init = [(missionConfigFile >> "CfgGradBuymenu" >> _baseConfigName >> _categoryConfigName >> _itemConfigName >> "vehicleInit"), "text", "[[],[]]"] call CBA_fnc_getConfigEntry;
 private _compiledInit = call compile _init;

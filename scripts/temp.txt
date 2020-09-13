@@ -1,3 +1,8 @@
+open spot for CAS/transport
+[26755,24510,0]
+
+////////////////////////////////////////
+
 [player, 1, ["ACE_SelfActions", "ACE_Equipment"], [player,"haloStore_2",container_2,aHelipad_2,"High-altitude Military Parachuting","Emergency SAC Services"] call grad_lbm_fnc_addInteraction] call ace_interact_menu_fnc_addActionToObject;
 
 [player, 1, ["ACE_SelfActions", "ACE_Equipment"], ] call ace_interact_menu_fnc_addActionToObject;
@@ -101,8 +106,18 @@ customaction = ['CustomAction 2','Open Garage Menu','',{_this call HG_fnc_dialog
 [player, 0, ["ACE_MainActions","CustomAction 1"], customaction] call ace_interact_menu_fnc_addActionToObject;
 customaction = ['CustomAction 3','Store Vehicle','',{_this call HG_fnc_storeVehicleClient},{true}] call ace_interact_menu_fnc_createAction;
 [player, 0, ["ACE_MainActions","CustomAction 1"], customaction] call ace_interact_menu_fnc_addActionToObject;
+////////////////////////////and the final product...not bad, not bad at all!/////////
 
-////////////////////////////////////the creator help[ed.../////////////////
+myaction = ['TestAction 1','ALiVE','pictures\icon_interact-main_64.paa',''] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], myaction] call ace_interact_menu_fnc_addActionToObject;
+myaction = ['TestAction 2','Combat Support Menu','pictures\icon_interact-cs_64.paa',{["radio"] call ALIVE_fnc_radioAction},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions","TestAction 1"], myaction] call ace_interact_menu_fnc_addActionToObject;
+myaction = ['TestAction 3','Task Menu','pictures\icon_interact-c2_task_64.paa',{["OPEN",[]] call ALIVE_fnc_C2TabletOnAction},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions","TestAction 1"], myaction] call ace_interact_menu_fnc_addActionToObject;
+myaction = ['TestAction 4','Personnel Menu','pictures\icon_interact-c2_pers_64.paa',{["OPEN",[]] call ALIVE_fnc_GMTabletOnAction},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions","TestAction 1"], myaction] call ace_interact_menu_fnc_addActionToObject;
+
+////////////////////////////////////the creator helped.../////////////////
 
 in init.sqf with garage(object) variable name "myObject":
 private _act = [(localize "STR_HG_GARAGE"),(localize "STR_HG_GARAGE"),"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;
@@ -130,6 +145,69 @@ and replace:
 params["_target","_caller","_id","_garage"];
 with
 params["_garage"];
+
+///////time to change this/////////////
+
+act_0 = [(localize "STR_HG_GARAGE"),'Retrieve Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction; 
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject; 
+ 
+act_0 = [(localize "STR_HG_GARAGE_PARK"),'Store Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_storeVehicleClient},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction; 
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;
+
+////old example////
+
+customaction = ['CustomAction 1','Garage','','',{true}] call ace_interact_menu_fnc_createAction;
+[player, 0, ["ACE_MainActions"], customaction] call ace_interact_menu_fnc_addActionToObject;
+
+customaction = ['CustomAction 2','Open Garage Menu','',{_this call HG_fnc_dialogOnLoadGarage},{true}] call ace_interact_menu_fnc_createAction;
+[player, 0, ["ACE_MainActions","CustomAction 1"], customaction] call ace_interact_menu_fnc_addActionToObject;
+customaction = ['CustomAction 3','Store Vehicle','',{_this call HG_fnc_storeVehicleClient},{true}] call ace_interact_menu_fnc_createAction;
+[player, 0, ["ACE_MainActions","CustomAction 1"], customaction] call ace_interact_menu_fnc_addActionToObject;
+
+///////////////////////////////////end product, yeah baby!//////
+
+act_0 = ["CustomAction 1",'Garage',"HG\UI\Icons\garage.paa",{true}] call ace_interact_menu_fnc_createAction; 
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject; 
+
+act_0 = [(localize "STR_HG_GARAGE"),'Retrieve Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction; 
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject; 
+ 
+act_0 = [(localize "STR_HG_GARAGE_PARK"),'Store Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_storeVehicleClient},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction; 
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;
+
+
+//////////////////////my turn/////////////
+this addAction["<img image='HG\UI\Icons\car   .paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_DEALER")+"</t>",{_this call HG_fnc_dialogOnLoadDealer},"HG_DefaultDealer",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
+this addAction["<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_GARAGE")+"</t>",{_this call HG_fnc_dialogOnLoadGarage},"HG_DefaultGarage",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
+
+act_0 = [(localize "STR_HG_GARAGE"),(localize "STR_HG_GARAGE"),"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;
+
+///////////////above is working example////////make it work now//////////
+
+
+this addAction["<img image='HG\UI\Icons\car.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_DEALER")+"</t>",{_this call HG_fnc_dialogOnLoadDealer},"HG_DefaultDealer",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
+
+act_0 = [(localize "STR_HG_DEALER"),(localize "STR_HG_DEALER"),"HG\UI\Icons\car.paa",{["HG_DefaultDealer"] call HG_fnc_dialogOnLoadDealer},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;
+
+////end product, yeah baby!////
+
+act_0 = [(localize "STR_HG_DEALER"),'Enemy Vehicles Wanted',"HG\UI\Icons\car.paa",{["HG_DefaultDealer"] call HG_fnc_dialogOnLoadDealer},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction; 
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;
+
+////////////////////////this was key////////////
+
+Open both
+HG\Functions\Client\Garage\fn_dialogOnLoadGarage.sqf
+HG\Functions\Client\Garage\fn_storeVehicleClient.sqf
+
+Replace
+params["_target","_caller","_id","_garage"];
+With
+params["_garage"];
+
+Should work along with the code I gave you
 
 
 ///////////grad store info///////////////
@@ -330,9 +408,47 @@ hint "The civilian has been interrogated. The payment amount varies depending on
 
 
 
+//////////////////////////////////////////////////
+
+class Extended_Init_EventHandlers {
+ class Car {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
+ };
+ class Truck {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
+ };
+ class Tank {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
+ };
+ class Ship {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
+ };
+ class Submarine {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
+ };
+};
 
 
 
+//////////////////////////////////////////////////////
 
 
+class Extended_Init_EventHandlers {
+ class C_Hatchback_01_sport_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
+ };
+};
 
+
+//////////////////////////////////////////////////////////////
+
+why not call the GRAD save function on the MPEnded EH?
+https://community.bistudio.com/wiki/Arma_3:_Event_Handlers/addMissionEventHandler#Ended(edited)
+
+[KP] veteran29Yesterday at 12:15 PM
+It's not that reliable iirc
+[12:17 PM]
+https://github.com/KillahPotatoes/KP-Liberation/blob/master/Missionframework/scripts/server/game/save_manager.sqf#L25
+but HandleDisconnect with no players left check works fine.
+
+///////////////////////////////////////////////////////////////////

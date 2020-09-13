@@ -1,0 +1,243 @@
+Changelog:
+
+Version 0.7.0:
+
+Ace Medical Compatability and small CRBN change.
+
+All damage effects are now compatible with Ace Medical, the script detects automaticaly if Ace Medical is loaded and applies damage accordingly. Additionally all Uniform and Goggles with CRBN in their classnames act as CRBN suits.
+
+New:
+
+- added aceDamage.sqf
+	- used to apply a certain amount and type of Ace Medical Damage randomly on a units
+	- used for ace compatability
+	
+Changed/Fixed:
+
+- airblast1psi.sqf, airblast5psi.sqf, airblast20psi.sqf, nuclearWaste.sqf, radioation500rem.sqf, radioation5000rem.sqf, thermal50.sqf, thermal100.sqf, iniFire.sqf
+	- new optional argument for usage of Ace, defaul is false
+	- if enabled damage is applied via aceDamage.sqf
+	
+- nuclearWaste.sqf
+	- now accepts uniform with "CBRN"/"cbrn" and goggles with "CBRN"/"cbrn" or "respirator" as protective equipment
+
+- iniNuke.sqf
+	- now detects wether Ace Medical is loaded or not, if it is Ace Medical Damage is applied by all damage effects
+
+
+
+Version 0.6.0:
+
+Effects, small tweaks and performance improvement.
+
+Explosion effects for large yield explsosion have been revamped, they now start off like smaller explosion, but the particle then drift inwards to create the nuclear mushroom.
+The chemical detector from the Contact DLC now displayes a threat level when inside the radioactive zone of the fallout, the threat level corrospondent to the remaining time of the fallout effect.
+Additionally some calculations regarding the fallout have been changed as well as a single particle effect for the fireball, added expanding condensation rings and improved performance for the blast wave damage. 
+
+
+New:
+
+- added detector.sqf
+	- when using chemical detector and inside a radioactive zone displays a threat level
+	- threat level represents time left till radioation disappear, 10.0 is directly after the blast, 0.0 is when fallout is gone
+
+Changed/Fixed:
+
+- airblast20psi.sqf, aiblast5psi.sqf, airblast1psi.sqf
+	- improved performance while applying damage to buildings
+	- optimize objects being hidden for crater generation
+	
+- nuclearWaste.sqf
+	- now calls detector.sqf for the chemical detector effects
+
+- flash.sqf
+	- changed fireball to be single particle
+	
+- mushroomcloud.sqf
+	- changed effects for large yield explosion
+	
+- condensationRing.sqf
+	- condensation rings now expand
+	
+- iniNuke.sqf
+	- fallout now only occurs if detonation height is below fireball radius
+
+
+Version 0.5.0:
+
+Small tweaks to effects, new explosion effects for low-yield blasts and experimental air mode.
+
+Low-Yield Effects:
+New visual effects for low-yield explosions. They don't create a mushroom cloud but a more messy smoke pillar. Also they can't create condensation rings anymore. This changes apply to explsoion below 2.5 kT.
+
+Air Mode:
+Controlled via optional 5. parameter when calling iniNuke.sqf, which can be either 0 (force normal mode), 1 (force Air Mode) or 2 (calculate mode using blast radius, this is the default setting).
+When Air Mode is activated visual effects are changed to immitate a nuclear high-altitude explosion by not creating a mushroomcloud, earthquake nor a crater nor fallout, but still a flash of light, condensations rings and some smoke effects.
+This mode DOES NOT calculate the effects of an air burst (I have no real idea on how to do this at the moment), it's meant to fix problems with the nuke's effects at high altitudes, to enable, for example, the creation of nuclear air-to-air missiles.
+
+Notes: During testing of for this update I verified the calculations made for the damage effects. Should you experience with those effects at large yields it is most likely due to Arma needing quite some time proccess the damage.
+
+Thanks to everyone who gave feedback on the script or the mod! You really help me improve my script!
+Special thanks to Steam user @Pancake, for his suggestions regarding the mushroomcloud effects, and @V. Berlioz for thoroughly testing the script and reporting his results!
+
+
+Changed/Fixed:
+
+- blastwave.sqf
+	- added a pressure wave effect
+	- added surport for Air Mode
+	
+- mushroomcloud.sqf
+	- changed diameter of stem
+	- added new effects for small yield explosion
+	
+- iniCondensationRings.sqf
+	- included option to not create condensation rings for low yield blasts
+	
+- flash.sqf
+	- added new effects for Air Mode
+	
+- iniNuke.sqf
+	- now has one additional parameter (optional) to activate Air Mode, false by default
+	- calls other scripts according to if Air Mode is enabled
+	- small change to support small yield effects
+
+
+
+Version 0.4.1:
+
+Bug fixes to damage and sound effects.
+
+Changed/Fixed:
+
+- airblast20psi.sqf
+	- does no longer hide objects which are invulnerable
+	- now properly affects all buildings
+
+- fireFX.sqf
+	- sound randomization added/fixed
+
+
+
+Version 0.4.0 Craters:
+
+The Explosion now creates a crater.
+
+
+New:
+
+- Added crater.sqf
+	- a crater will be created by the explsoion
+	- depending a its size its either a single object or multiple stones aranged in a circle, with debris at the center
+	- the crater does not disappear, it can be used to block terrain like roads are airfields
+	- if the bomb detonates above groudn level the crater will be smaller
+
+
+Changed/Fixed:
+
+- airblast20psi.sqf
+	- will now hide objects close to the center to allow for the creation of the crater
+	
+- mushroomcloud.sqf
+	- small tweaks and fixes for the effects
+	
+- fireFX.sqf
+	- small changes to sound effects, shoudl now have for variations
+
+- iniNuke.sqf
+	- now calls crater.sqf and calculates the radius of the crater
+
+
+
+Version 0.3.0 Fire and Effects:
+
+Some buildings are set on fire after the explosion, changes to particles, small fixes and the code has been slighty cleaned up.
+
+
+New:
+
+- Added iniFire.sqf
+	- some buildings will be set on fire by the detonation
+	- fires deal damage to units who get to cloase and slowly destroy the burning building itself
+	
+- Added fireFX.sqf
+	- particle effects for the new fires
+	
+
+Changed/Fixed:
+
+- airblast5psi.sqf
+	- now starts fires using iniFire.sqf, those fires last 5 to 6 minutes
+	- fixed bug with division by zero error occuring due to vehicle with mass 0
+	
+- blastwave.sqf, falloutParticle.sqf, mushroomcloud.sqf, flash.sqf
+	- various tweaks to particle colors and other particle properties
+	- fixed a bug where the mushroomcloud stem persisted longer than it cap
+	
+- radioation500rem.sqf, radioation5000rem
+	- fixed typo in code
+	- minor change to damage calculation in radioation500rem.sqf
+	
+- iniNuke.sqf
+	- changed arguments passed to mushroomcloud.sqf and flash.sqf to alter size of said effects
+	- nuclear fallout now lasts 900 seconds instead of 300 (5 minutes instead of 3)
+	
+- (almost) all files
+	- deleted unused code, cleaned up code
+	- some comments
+
+
+
+Version 0.2.1:
+
+Blast waves now throw away units and vehicles, some bug fixes.
+
+
+New:
+
+- airblast5psi.sqf, airblast20psi.sqf
+	- vehicles are now thrown back (distance depending on their mass) and are flipped sideways
+	- units are thrown back and down to the gound (they are set to prone stance)
+	
+	
+Changed/Fixed:
+
+- airblast1psi.sqf, airblast5psi.sqf, airblast20psi.sqf
+	- units that go prone receive less damage and are not thrown back (20 psi blastwave is still always lethal)
+	- fixed bug where units/vehicles/buildings at the margin of the 5 psi zone were always completely destroyed instead of just receiving damage
+	- fixed bug which coused 20 psi shockwave to affect all objects instantly, now it should properly expand
+
+
+
+Version 0.2.0:
+
+Added fallout and new particles. Fixed some bugs with the lighting, particles and damage.
+
+
+New:
+
+- Added nuclearWaste.sqf
+	- after detonation nuclear waste is spread around the ground zero
+	- units within this area are damaged every few seconds
+	- you can negate the effect by wearing a CBRN suits and a breathing mask, thanks to user "the Cheshire" for the idea
+	
+- Added falloutParticle.sqf
+	- particle effects for the fallout effect and near the center of the blast, thanks to user "jushdrug" for the suggestion
+	
+	
+Changed/Fixed:
+
+- airblast1psi.sqf, airblast5psi.sqf, airblast20psi.sqf, radioation500rem.sqf, radioation5000rem.sqf, thermal50.sqf, thermal100.sqf, jamming.sqf
+	- fixed a bug where units and vehicles objects where not selected correctly, thanks to user "Mikey74" for reporting this
+	- some minor changes in the damage stats
+	- units with damage disabled shoudl no longer to damaged by any effect, again thanks to "Mikey74" 
+	
+- condensationRing.sqf, blastwave.sqf, mushroomcloud.sqf
+	- minor changes to particle effects
+	- fixed a bug with small mushroomclouds having to few particles
+
+- flash.sqf
+	- reduced brightness and increased flare size to avoid glitches, thanks to user "jushdrug" for reporting this
+	
+- iniNuke.sqf
+	- updated to use the new scripts

@@ -97,7 +97,7 @@ enableWhitelist = false;
 whitelistSides[] = {"west"};
 
 /* ADMINS */
-admins[] = {"_SP_PLAYER_"};
+admins[] = {"76561197997216797","76561198049332408"};
 
 /* KEYS */
 atmKey = ;

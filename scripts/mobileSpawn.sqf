@@ -1,0 +1,1 @@
+[west,_this select 2] call BIS_fnc_addRespawnPosition;

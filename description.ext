@@ -4,7 +4,7 @@ class Header
 	minPlayers = 1;
 	maxPlayers = 15;
 };
-OnLoadName = "arma3mercenaries_ALPHA_V48";
+OnLoadName = "arma3mercenaries_ALPHA_V58";
 onLoadMission = "Constellis is a trusted and experienced provider of security services in high-risk environments, remote areas and emerging markets in support of land-based, aviation, maritime and cyber operations.";
 loadScreen = "pictures\constellisslogan_1.paa";
 author="BrianV1981";
@@ -19,8 +19,8 @@ allowFunctionsLog = 1;
 ExtendedInfoType = 0;
 corpseManagerMode = 1;
 corpseLimit = 50;
-corpseRemovalMinTime = 1800;
-corpseRemovalMaxTime = 3600;
+corpseRemovalMinTime = 7200;
+corpseRemovalMaxTime = 7200;
 wreckManagerMode = 1;
 wreckLimit = 20;
 wreckRemovalMinTime = 300;
@@ -28,6 +28,7 @@ wreckRemovalMaxTime = 600;
 minPlayerDistance = 0;
 ///////////////////////////////////////////////////////////////////////////////////////////
 
+#include "scripts\Extended_Init_EventHandlers.hpp"
 #include "modules\grad-listBuymenu\grad_listBuymenu.hpp"
 #include "modules\grad-moneymenu\grad_moneymenu.hpp"
 #include "modules\grad-fortifications\grad_fortifications.hpp"
@@ -41,26 +42,31 @@ class CfgFunctions {
     #include "modules\grad-listBuymenu\cfgFunctions.hpp"
     #include "modules\grad-fortifications\cfgFunctions.hpp"
     #include "modules\grad-persistence\cfgFunctions.hpp"
-    #include "vcom\cfgFunctions.hpp"
 	#include "HG\Functions\HG_Functions.h"
+	#include "vcom\cfgFunctions.hpp"
 };
 
-////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////GRAD FORTS AND HG///////////////////////////////////////////////////
 
 class RscTitles {
     #include "modules\grad-fortifications\dialog\hint\title.hpp"
 	#include "HG\UI\Dialogs\HG_HUD.h"
+	#include "HG\UI\Dialogs\HG_Tags.h"
 };
 
-////////////////////////////vehicle shop/garage////////////////////////////////////////////
+////////////////////////////HG Simple Shops/Vehicle Garage////////////////////////////////////////////
 
 class CfgClient
 {
     #include "HG\Config\HG_Config.h"
 };
 
+class CfgDebriefing
+{
+    #include "HG\Config\HG_Debriefing.h"
+};
 
-////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////GRAD MONEY///////////////////////////////////////////////
 
 
 class CfgGradMoneymenu {
@@ -131,7 +137,11 @@ class CfgSounds
 	
 };
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////vcom////////////////////////////////////////////////
+
+
+allowFunctionsRecompile = 1;
+
 
 class CfgRemoteExec
 {
@@ -143,12 +153,28 @@ class CfgRemoteExec
 		
 		class vcm_serverask { allowedTargets = 0;jip = 1; };
 		class VCM_PublicScript { allowedTargets = 0;jip = 1; };
-		class BIS_fnc_debugConsoleExec { allowedTargets = 0;jip = 1; };
 		class SpawnScript { allowedTargets = 0;jip = 1; };
 		class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
-		class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
-		
+		class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };	
 	};
 	
 	
+};
+
+
+class Extended_PreInit_EventHandlers {
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_Functions\fn_CBASettings.sqf";
+};
+
+////////////////////////https://forums.bohemia.net/forums/topic/190877-solved-respawn-delay-as-parameter////////////////////////////////
+
+class Params
+{
+	class respawnDelay
+	{
+		title = "Respawn Delay";
+		texts[] = {"1", "5", "10", "15", "30", "45", "60"};
+		values[] = {1, 5, 10, 15, 30, 45, 60};
+		default = 15;
+	};
 };

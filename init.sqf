@@ -1,7 +1,8 @@
 execVM "scripts\aliveCaptured.sqf";
-execVM "Vcom\VcomInit.sqf";
 execVM "scripts\killedEventHandlers.sqf";
 execVM "GF_Killfeed\GF_Killfeed.sqf";
 [west, "LOADOUT1"] call BIS_fnc_addRespawnInventory;
-call compile preprocessFile "scripts\staticData.sqf";
-10800 call ALiVE_fnc_AutoSave_PNS;
+[] spawn VCM_fnc_VcomInit;
+////////////////////////https://forums.bohemia.net/forums/topic/190877-solved-respawn-delay-as-parameter////////////////////////////////
+_respawnDelay = "respawnDelay" call BIS_fnc_getParamValue;
+setPlayerRespawnTime _respawnDelay;

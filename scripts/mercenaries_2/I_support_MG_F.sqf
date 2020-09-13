@@ -1,2 +1,2 @@
-private _randomSpawnPos = aHelipad_2 getPos [(random 20) + 1,random 359];
-_mercenary = "I_support_MG_F" createUnit [_randomSpawnPos, (group player), "", 0.5];(group player) setVariable ["Vcm_Disable",true];
+private _randomSpawnPos = player getPos [(random 20) + 1,random 359];
+_mercenary = "I_support_MG_F" createUnit [_randomSpawnPos, (group player), "chute = 'Steerable_Parachute_F' createVehicle [0,0,0]; chute setPos [getPos this select 0, getPos this select 1, 200]; this moveIndriver chute;", 0.5, "PRIVATE"];(group player) setVariable ["Vcm_Disable",true];

@@ -62,6 +62,14 @@
                 stock = 9999;
 				code = [player,"scripts\loadouts\reconAASpecialist.sqf"] call BIS_fnc_execVM;
             };
+			class B_W_Soldier_CBRN_F {
+                displayName = "Constellis CBRN Specialist Loadout (Blufor)";
+                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a Anti-Air loadout.";
+                price = 30000;
+                amount = 1;
+                stock = 9999;
+				code = [player,"scripts\loadouts\CBRNspecialist.sqf"] call BIS_fnc_execVM;
+            };
 		};
         //category: 
 		class units_2 {
@@ -120,37 +128,37 @@
 				picture = "pictures\recodedcustompicture_3.paa";
 				code = [player,"scripts\loadouts\recoded_3.sqf"] call BIS_fnc_execVM;
             };
-			class O_V_Soldier_TL_hex_F {	
-                displayName = "Koger Loadout 1";
-                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Recoded.";
-                price = 35000;
-                amount = 1;
-                stock = 9999;
-				code = [player,"scripts\loadouts\koger_1.sqf"] call BIS_fnc_execVM;
-            };
 			class O_V_Soldier_hex_F {	
-                displayName = "Koger Loadout 2";
+                displayName = "Koger Medic/Engineer Loadout 1";
                 description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Recoded.";
                 price = 35000;
                 amount = 1;
                 stock = 9999;
-				code = [player,"scripts\loadouts\koger_2.sqf"] call BIS_fnc_execVM;
+				code = [player,"scripts\loadouts\kogerMedicEngineer_1.sqf"] call BIS_fnc_execVM;
             };
 			class O_V_Soldier_Exp_hex_F {	
-                displayName = "Koger Loadout 3";
+                displayName = "Koger Medic/Engineer Loadout 2";
                 description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Recoded.";
                 price = 35000;
                 amount = 1;
                 stock = 9999;
-				code = [player,"scripts\loadouts\koger_3.sqf"] call BIS_fnc_execVM;
+				code = [player,"scripts\loadouts\kogerMedicEngineer_2.sqf"] call BIS_fnc_execVM;
+            };
+			class O_V_Soldier_LAT_hex_F {	
+                displayName = "Koger Lite AT Loadout";
+                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Recoded.";
+                price = 35000;
+                amount = 1;
+                stock = 9999;
+				code = [player,"scripts\loadouts\kogerLiteAT_1.sqf"] call BIS_fnc_execVM;
             };
 			class O_V_Soldier_Medic_hex_F {	
-                displayName = "Koger Loadout 4";
+                displayName = "Koger Gear Reitriever Loadout";
                 description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Recoded.";
                 price = 35000;
                 amount = 1;
                 stock = 9999;
-				code = [player,"scripts\loadouts\koger_4.sqf"] call BIS_fnc_execVM;
+				code = [player,"scripts\loadouts\kogerGearRetriever_1.sqf"] call BIS_fnc_execVM;
             };
 		};
 	};

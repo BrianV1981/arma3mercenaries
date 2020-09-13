@@ -21,6 +21,59 @@ class CfgGradFortifications {
 	
     class Fortifications {
 		
+		class ACE_TacticalLadder {
+            buildTime = 1;
+			packUpTime = 1;
+			demolitionTime = 10;
+        };
+		class Land_Pod_Heli_Transport_04_medevac_F {
+            canPackUp = 0;
+        };
+		class Land_Pod_Heli_Transport_04_repair_F {
+            canPackUp = 0;
+        };
+		class Land_RepairDepot_01_green_F {
+            canPackUp = 0;
+        };
+		class Land_PaperBox_01_small_closed_brown_IDAP_F {
+            canPackUp = 0;
+        };
+		class C_IDAP_supplyCrate_F {
+            canPackUp = 0;
+        };
+		class ACE_Box_Ammo {
+            canPackUp = 0;
+        };
+		class ACE_Box_Misc {
+            canPackUp = 0;
+        };
+		class Box_Syndicate_WpsLaunch_F {
+            canPackUp = 0;
+        };
+		class Box_Syndicate_Ammo_F {
+            canPackUp = 0;
+        };
+		class Box_Syndicate_Wps_F {
+            canPackUp = 0;
+        };
+		class ACE_medicalSupplyCrate {
+            canPackUp = 0;
+        };
+		class ACE_Box_Chemlights {
+            canPackUp = 0;
+        };
+		class VirtualReammoBox_F {
+            canPackUp = 0;
+        };
+		class VirtualReammoBox_camonet_F {
+            canPackUp = 0;
+        };
+		class Land_WoodenCrate_01_F {
+            canPackUp = 0;
+        };
+		class VirtualReammoBox_Small_F {
+            canPackUp = 0;
+        };
         class Land_BarrelWater_F {
             canPackUp = 0;
         };
@@ -182,6 +235,14 @@ class CfgGradFortifications {
         };
 		
 		class Land_Cargo_HQ_V1_F {
+            size = 30;
+        };
+		
+		class Land_TTowerBig_1_F {
+            size = 30;
+        };
+		
+		class Land_TTowerBig_2_F {
             size = 30;
         };
 		

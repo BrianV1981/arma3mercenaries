@@ -387,6 +387,12 @@
                 stock = 10000;
 				kindOf = wearables;
             };
+			class B_CombinationUnitRespirator_01_F {
+                displayName = "Combination Unit Respirators";
+                description = "The combination unit respirators are back-worn air purifiers, designed specifically to allow the user to operate for extended periods of time in NBC environments. It provides only 20 mass units worth of space for storing ammunition/gear.";
+                price = 10000;
+                stock = 10000;
+            };
 			class ACE_Chemlight_HiOrange {
                 displayName = "ACE Chemlight (Hi Orange)";
                 description = "ACE Chemlight (Hi Orange)";
@@ -521,7 +527,7 @@
             };
 			class ACE_personalAidKit {
                 displayName = "ACE Personal Aid Kit";
-                description = "ACE Personal Aid Kit or PAK is used to remove bruises and battle wounds. The patient has to be stable with everything bandaged and 100% blood for the option to appear";
+                description = "ACE Personal Aid Kit or PAK is used to remove bruises and battle wounds. The patient has to be stable with everything bandaged and 100% blood while near a medical facility for the option to appear.";
                 amount = 1;
                 price = 1000;
                 stock = 1000;     
@@ -611,19 +617,19 @@
 		        class U_B_CBRN_Suit_01_MTP_F {
                 displayName = "CBRN Suit (MTP) [NATO]";
                 description = "CBRN Suit (MTP) [NATO]";
-                price = 500;
+                price = 5000;
                 stock = 10000;                
             };		
 			class U_B_CBRN_Suit_01_Tropic_F {
                 displayName = "CBRN Suit (Tropic) [NATO]";
                 description = "CBRN Suit (Tropic) [NATO]";
-                price = 500;
+                price = 5000;
                 stock = 10000;                
             };		
 			class U_B_CBRN_Suit_01_Wdl_F {
                 displayName = "CBRN Suit (Woodland) [NATO]";
                 description = "CBRN Suit (Woodland) [NATO]";
-                price = 500;
+                price = 5000;
                 stock = 10000;                
             };		
 			class U_I_G_Story_Protagonist_F {
@@ -1627,7 +1633,13 @@
                 description = "Stealth Balaclava (Green, Googles)";
                 price = 2000;
                 stock = 10000;
-            };		
+            };
+			class G_AirPurifyingRespirator_01_F {
+                displayName = "APR (NATO)";
+                description = "Used by NATO, LDF, CSAT and Russian military scientists/specialist infantry classes, these full face Air Purifying Respirators (APR) are designed to protect the wearer from NBC threats. Regardless of model, both APRs weigh a total mass of 8 units apiece.";
+                price = 5000;
+                stock = 10000;
+            };	
 			class B_LegStrapBag_black_F {
                 displayName = "Leg Strap Bag (Black)";
                 description = "Clocking in at only 80 mass (unloaded), the Leg Strap Bag is extremely light to carry and inflicts hardly any stamina penalties on the carrier.";
@@ -1850,6 +1862,18 @@
                 price = 1000;
                 stock = 10000;
             };
+			class B_Parachute {
+                displayName = "Steerable Parachute";
+                description = "Steerable Parachute.";
+                price = 0;
+                stock = 10000;
+            };
+			class ACE_TacticalLadder_Pack {
+                displayName = "ACE Telescopic Ladder Backpack";
+                description = "The ACE Telescopic Ladder Backpack can be utilize with the ACE self interaction menu.";
+                price = 200;
+                stock = 10000;
+            };
 			class ACE_gunbag {
                 displayName = "ACE Gunbag";
                 description = "ACE Gunbag allows users to put a gun inside a backpack.";
@@ -1868,10 +1892,10 @@
                 price = 500;
                 stock = 10000;
             };
-			class B_Parachute {
-                displayName = "Steerable Parachute";
-                description = "Steerable Parachute.";
-                price = 0;
+			class B_CombinationUnitRespirator_01_F {
+                displayName = "Combination Unit Respirators";
+                description = "The combination unit respirators are back-worn air purifiers, designed specifically to allow the user to operate for extended periods of time in NBC environments. It provides only 20 mass units worth of space for storing ammunition/gear.";
+                price = 10000;
                 stock = 10000;
             };
         };
