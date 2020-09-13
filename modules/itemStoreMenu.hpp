@@ -13,12 +13,18 @@
                 price = 0;
                 stock = 10000;                
             };
+			class gm_watch_kosei_80 {
+                displayName = "Watch Kosei C80";
+                description = "Useful for recognizing clock position. (default button o)";
+                price = 50;
+                stock = 10000;                
+            };
 			class ItemWatch {
                 displayName = "Watch";
                 description = "Useful for recognizing clock position. (default button o)";
                 price = 50;
                 stock = 10000;                
-            };
+            };		
 			class ACE_Altimeter {
                 displayName = "ACE Altimeter Watch";
                 description = "The ACE altimeter watch uses atmospheric pressure as a gauge to measure and track changes in the altitude – just like a barometer. ... As you go up, the pressure starts to decrease, and the altimeter compares this new pressure to the previously-known sea level to determine your height. (default button o)";
@@ -31,6 +37,18 @@
                 price = 20;
                 stock = 10000;                  
             };
+			class gm_gc_compass_f73 {
+                displayName = "Compass F73";
+                description = "Useful for navigation. (default button k)";
+                price = 20;
+                stock = 10000;                  
+            };
+			class gm_ge_army_conat2 {
+                displayName = "Compass Conat";
+                description = "Useful for navigation. (default button k)";
+                price = 20;
+                stock = 10000;                  
+            };		
 			class ItemRadio {
                 displayName = "Radio";
                 description = "Used to call ALiVE combat support and logistics.";
@@ -103,6 +121,18 @@
                 price = 200;
                 stock = 10000;                 
             };
+			class gm_df7x40_blk {
+                displayName = "Binoculars DF7X40";
+                description = "Magnification: 4x-12x. (default button b)";
+                price = 200;
+                stock = 10000;                 
+            };
+			class gm_ferod16_oli {
+                displayName = "Binoculars FeroD-16";
+                description = "Magnification: 4x-12x. (default button b)";
+                price = 200;
+                stock = 10000;                 
+            };		
 			class ACE_Yardage450 {
                 displayName = "ACE Yardage450";
                 description = "Magnification: 4x Rangefinder. (default button b)";
@@ -476,13 +506,48 @@
             kindOf = "Items";
 			tracking = 1;
 
+            class gm_gc_army_gauzeBandage {
+                displayName = "Gauze Bandage (x10)";
+                description = "10 Gauze bandages in sterile packaging. (utilize the Fort MAGA medical cargo house for subsidized medical treatment)";
+                amount = 10;
+                price = 10;
+                stock = 1000;     //note that a total of 10000 bandages can be bought (in sets of 10)
+            };
+            class gm_ge_army_gauzeCompress {
+                displayName = "Gauze Bandage (x10)";
+                description = "10 Gauze bandages in sterile packaging. (utilize the Fort MAGA medical cargo house for subsidized medical treatment)";
+                amount = 10;
+                price = 10;
+                stock = 1000;     //note that a total of 10000 bandages can be bought (in sets of 10)
+            };
+            class gm_ge_army_burnBandage {
+                displayName = "Burn Bandage (x10)";
+                description = "10 Burn bandages in sterile packaging. (utilize the Fort MAGA medical cargo house for subsidized medical treatment)";
+                amount = 10;
+                price = 10;
+                stock = 1000;     //note that a total of 10000 bandages can be bought (in sets of 10)
+            };			
+				class gm_gc_army_medkit {
+                displayName = "Personal Medkit";
+                description = "Personal Medkit is used to remove bruises and battle wounds. The patient has to be stable with everything bandaged and 100% blood while near a medical facility for the option to appear.";
+                amount = 1;
+                price = 1000;
+                stock = 1000;     
+            };
+				class gm_ge_army_medkit_80 {
+                displayName = "Medikit";
+                description = "Medkit is used to remove bruises and battle wounds. The patient has to be stable with everything bandaged and 100% blood while near a medical facility for the option to appear.";
+                amount = 1;
+                price = 1000;
+                stock = 1000;     
+            };			
             class ACE_Splint {
                 displayName = "ACE Splint (x5)";
                 description = "5 simple splints to secure fractured bones. (utilize the Fort MAGA medical cargo house for subsidized medical treatment)";
                 amount = 5;
                 price = 10;
                 stock = 1000;     //note that a total of 5000 splints can be bought (in sets of 5)
-            };
+            };			
             class ACE_fieldDressing {
                 displayName = "ACE Bandages (x10)";
                 description = "10 simple bandages in sterile packaging. (utilize the Fort MAGA medical cargo house for subsidized medical treatment)";
