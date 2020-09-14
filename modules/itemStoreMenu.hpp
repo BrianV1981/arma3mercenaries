@@ -128,7 +128,19 @@
                 stock = 10000;                 
             };
 			class gm_ferod16_oli {
-                displayName = "Binoculars FeroD-16";
+                displayName = "Binoculars FeroD-16 (Olive)";
+                description = "Magnification: 4x-12x. (default button b)";
+                price = 200;
+                stock = 10000;                 
+            };
+			class gm_ferod16_des {
+                displayName = "Binoculars FeroD-16 (Desert)";
+                description = "Magnification: 4x-12x. (default button b)";
+                price = 200;
+                stock = 10000;                 
+            };
+			class gm_ferod16_win {
+                displayName = "Binoculars FeroD-16 (Winter)";
                 description = "Magnification: 4x-12x. (default button b)";
                 price = 200;
                 stock = 10000;                 
@@ -1596,7 +1608,61 @@
                 description = "Crew Helmet [AAF] Armor Level III";
                 price = 4000;
                 stock = 10000;                
-            };			
+            };
+			class gm_headgear_foliage_summer_forest_01 {
+                displayName = "Forest Helmet Camo 1";
+                description = "Forest Helmet Camo 1";
+                price = 100;
+                stock = 10000;                
+            };
+			class gm_headgear_foliage_summer_forest_02 {
+                displayName = "Forest Helmet Camo 2";
+                description = "Forest Helmet Camo 2";
+                price = 100;
+                stock = 10000;                
+            };
+			class gm_headgear_foliage_summer_forest_03 {
+                displayName = "Forest Helmet Camo 3";
+                description = "Forest Helmet Camo 3";
+                price = 100;
+                stock = 10000;                
+            };
+			class gm_headgear_foliage_summer_forest_04 {
+                displayName = "Forest Helmet Camo 4";
+                description = "Forest Helmet Camo 4";
+                price = 100;
+                stock = 10000;                
+            };
+			class gm_headgear_foliage_summer_grass_01 {
+                displayName = "Grass Helmet Camo 1";
+                description = "Grass Helmet Camo 1";
+                price = 100;
+                stock = 10000;                
+            };
+			class gm_headgear_foliage_summer_grass_02 {
+                displayName = "Grass Helmet Camo 2";
+                description = "Grass Helmet Camo 2";
+                price = 100;
+                stock = 10000;                
+            };
+			class gm_headgear_foliage_summer_grass_03 {
+                displayName = "Grass Helmet Camo 3";
+                description = "Grass Helmet Camo 3";
+                price = 100;
+                stock = 10000;                
+            };
+			class gm_headgear_foliage_summer_grass_04 {
+                displayName = "Grass Helmet Camo 4";
+                description = "Grass Helmet Camo 4";
+                price = 100;
+                stock = 10000;                
+            };		
+			class gm_gc_army_facewear_dustglasses {
+                displayName = "Dust Goggles";
+                description = "Dust Goggles";
+                price = 100;
+                stock = 10000;                
+            };		
 			class G_Combat {
                 displayName = "Combat Goggles";
                 description = "Combat Goggles";
@@ -1699,12 +1765,24 @@
                 price = 2000;
                 stock = 10000;
             };
+			class gm_ge_facewear_m65 {
+                displayName = "Gasmask M65";
+                description = "Designed exclusively for military use, the M65 features two triangular eyepieces made from acrylic glass and uses a NATO-standard 40 mm filter.";
+                price = 500;
+                stock = 10000;
+            };
+			class gm_gc_army_facewear_schm41m {
+                displayName = "Gasmask SchM-41M";
+                description = "Widely exported throughout the Warsaw Pact, this Soviet-made gasmask features improved housing which has double exhale valves with a stronger seal.";
+                price = 500;
+                stock = 10000;
+            };		
 			class G_AirPurifyingRespirator_01_F {
                 displayName = "APR (NATO)";
                 description = "Used by NATO, LDF, CSAT and Russian military scientists/specialist infantry classes, these full face Air Purifying Respirators (APR) are designed to protect the wearer from NBC threats. Regardless of model, both APRs weigh a total mass of 8 units apiece.";
                 price = 5000;
                 stock = 10000;
-            };	
+            };		
 			class B_LegStrapBag_black_F {
                 displayName = "Leg Strap Bag (Black)";
                 description = "Clocking in at only 80 mass (unloaded), the Leg Strap Bag is extremely light to carry and inflicts hardly any stamina penalties on the carrier.";
