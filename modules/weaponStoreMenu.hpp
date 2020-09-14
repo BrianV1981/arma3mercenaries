@@ -46,13 +46,6 @@
                 price = 0;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-			class gm_p2a1_launcher_blk {
-                displayName = "P2A1 Experimental";
-                description = "26.5cm Potato Cannon.";
-                price = 0;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };			
                         class hgun_esd_01_F {
                 displayName = "Spectrum Device";
@@ -1271,9 +1264,23 @@
             kindOf = "Weapons";
 			tracking = 1;
             //items of this category:			
-			
-		    class gm_rpg7_prp {
+	
+			class gm_p2a1_launcher_blk {
+                displayName = "P2A1 Experimental";
+                description = "26.5cm Potato Cannon.";
+                price = 0;
+                stock = 1000;                
+                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
+            };
+		    class gm_rpg7_wud {
                 displayName = "RPG-7 Rocket Launcher 40 mm";
+                description = "The RPG-7 is an unguided, shoulder-fired, anti-tank launcher, It exclusively loads 40 mm grenades fitted with high-explosive anti-tank (HEAT) warheads. The RPG-7 can be fitted with the PGO-7V scope, but features an adjustable (non-magnified) ironsight which can be zeroed up to a maximum of 400 m and rises in 100 m increments.";
+                price = 4800
+                stock = 1000;                
+                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
+            };		
+		    class gm_rpg7_prp {
+                displayName = "RPG-7 Rocket Launcher 40 mm (Plum)";
                 description = "The RPG-7 is an unguided, shoulder-fired, anti-tank launcher, It exclusively loads 40 mm grenades fitted with high-explosive anti-tank (HEAT) warheads. The RPG-7 can be fitted with the PGO-7V scope, but features an adjustable (non-magnified) ironsight which can be zeroed up to a maximum of 400 m and rises in 100 m increments.";
                 price = 4800
                 stock = 1000;                
@@ -1288,6 +1295,20 @@
             };
 		    class gm_pzf44_2_oli {
                 displayName = "PzF44-2 Rocket Launcher 44x537mm";
+                description = "The PzF 44-2 is an unguided, shoulder-fired anti-tank launcher, It is designed to load 44 mm grenades fitted with high-explosive anti-tank (HEAT) warheads. The launcher does not feature an integrated optic and the ironsight cannot be zeroed, but it can be fitted with the Fero Z 2x17 sight.";
+                price = 5500;
+                stock = 1000;                
+                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
+            };
+		    class gm_pzf44_2_des {
+                displayName = "PzF44-2 Rocket Launcher 44x537mm (Tan)";
+                description = "The PzF 44-2 is an unguided, shoulder-fired anti-tank launcher, It is designed to load 44 mm grenades fitted with high-explosive anti-tank (HEAT) warheads. The launcher does not feature an integrated optic and the ironsight cannot be zeroed, but it can be fitted with the Fero Z 2x17 sight.";
+                price = 5500;
+                stock = 1000;                
+                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
+            };
+		    class gm_pzf44_2_win {
+                displayName = "PzF44-2 Rocket Launcher 44x537mm (Winter)";
                 description = "The PzF 44-2 is an unguided, shoulder-fired anti-tank launcher, It is designed to load 44 mm grenades fitted with high-explosive anti-tank (HEAT) warheads. The launcher does not feature an integrated optic and the ironsight cannot be zeroed, but it can be fitted with the Fero Z 2x17 sight.";
                 price = 5500;
                 stock = 1000;                
@@ -1314,6 +1335,20 @@
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             }
+			class gm_pzf84_des {
+                displayName = "PzF84 84 mm (Tan)";
+                description = "The PzF 84 is a multi-purpose, unguided shoulder-fired recoilless rifle, It is capable of loading 84 mm rounds that can be fitted with high-explosive anti-tank (HEAT) or harmless illumination warheads. The launcher does not feature an integrated optic but has an ironsight (that cannot be zeroed). It can however, be fitted with the Fero Z 2x17 scope in lieu of the launcher's ironsight.";
+                price = 7800;
+                stock = 1000;                
+                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
+            }
+			class gm_pzf84_win {
+                displayName = "PzF84 84 mm (Winter)";
+                description = "The PzF 84 is a multi-purpose, unguided shoulder-fired recoilless rifle, It is capable of loading 84 mm rounds that can be fitted with high-explosive anti-tank (HEAT) or harmless illumination warheads. The launcher does not feature an integrated optic but has an ironsight (that cannot be zeroed). It can however, be fitted with the Fero Z 2x17 scope in lieu of the launcher's ironsight.";
+                price = 7800;
+                stock = 1000;                
+                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
+            }		
 			class launch_MRAWS_green_F {
                 displayName = "MAAWS Mk4 Mod 1 (Green) 84 mm";
                 description = "The Carl Gustav is a portable, anti-tank recoilless rifle. It is designed to launch unguided 84 mm rockets, It can only load rockets fitted with high-explosive anti-tank (HEAT) warheads, and has a maximum effective range of approximately 600 metres. The Carl Gustav is fitted with an optical sight that has a magnification strength of 1.5x.";
@@ -1576,12 +1611,6 @@
 			class gm_1Rnd_265mm_flare_multi_nbc_DM47 {
                 displayName = "26.5 mm Flare DM47 (NBC)";
                 description = "Caliber: 26.5 mm flare (NBC) Rounds : 3 Used in: P2A1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_2650mm_potato_dm11 {
-                displayName = "26.5 mm 1Rnd POTATO DM11";
-                description = "Caliber: Potato";
                 price = 0;
                 stock = 10000;                
             };		
@@ -2215,6 +2244,12 @@
                 price = 0;
                 stock = 10000;                
             };
+			class gm_1Rnd_2650mm_potato_dm11 {
+                displayName = "26.5 mm 1Rnd POTATO DM11";
+                description = "Caliber: Potato";
+                price = 0;
+                stock = 10000;                
+            };		
 			class gm_1Rnd_40mm_heat_pg7v_rpg7 {
                 displayName = "40 mm HEAT PG-7V";
                 description = "Caliber: 40 mm HEAT PG-7V Rounds : 1 Used in: RPG7";
@@ -2563,12 +2598,24 @@
             kindOf = "Items";
 			tracking = 1;
 
+			class gm_zvn64_rear_ak {
+                displayName = "ZVN-64 Rear Sight";
+                description = "The ZVN-64 is intended exclusively for use in night fighting situations. It is mounted directly on the existing rear sight/base of the front sight and emits a pale white light in darkness (AKM/AKMN/LMG RPK-74/LMG RPK/MPi AK-74/MPi AKS-74/MPi AKS-74K/MPi KM-72/MPi KMS-72/RPK).";
+                price = 100;
+                stock = 10000;                
+	};
+			class gm_zvn64_front {
+                displayName = "ZVN-64/69 Front Post";
+                description = "The ZVN-64 is intended exclusively for use in night fighting situations. It is mounted directly on the existing rear sight/base of the front sight and emits a pale white light in darkness (AKM/AKMN/LMG RPK-74/LMG RPK/MPi AK-74/MPi AKS-74/MPi AKS-74K/MPi KM-72/MPi KMS-72/RPK).";
+                price = 100;
+                stock = 10000;                
+	};		
 			class optic_MRD {
                 displayName = "MRD";
                 description = "MRD Close Range.";
                 price = 100;
                 stock = 10000;                
-	};
+	};		
 			class optic_MRD_black {
                 displayName = "MRD (Black)";
                 description = "MRD Close Range.";
@@ -2683,8 +2730,32 @@
                 price = 325;
                 stock = 10000;                
 	    };
+			class gm_feroz2x17_pzf44_2_des {
+                displayName = "Fero Z 2x17 (Tan)";
+                description = "optical scope Magnification: 200m fixed, 2x (PzF 44-2)";
+                price = 325;
+                stock = 10000;                
+	    };
+			class gm_feroz2x17_pzf44_2_win {
+                displayName = "Fero Z 2x17 (Winter)";
+                description = "optical scope Magnification: 200m fixed, 2x (PzF 44-2)";
+                price = 325;
+                stock = 10000;                
+	    };		
 			class gm_feroz2x17_pzf84_blk {
                 displayName = "Fero Z 2x17";
+                description = "optical scope Magnification: 200m fixed, 2x (PzF84)";
+                price = 325;
+                stock = 10000;                
+	    };
+			class gm_feroz2x17_pzf84_des {
+                displayName = "Fero Z 2x17 (Tan)";
+                description = "optical scope Magnification: 200m fixed, 2x (PzF84)";
+                price = 325;
+                stock = 10000;                
+	    };
+			class gm_feroz2x17_pzf84_win {
+                displayName = "Fero Z 2x17 (Winter)";
                 description = "optical scope Magnification: 200m fixed, 2x (PzF84)";
                 price = 325;
                 stock = 10000;                
@@ -2701,8 +2772,20 @@
                 price = 375;
                 stock = 10000;                
 	    };
+			class gm_feroz24_des {
+                displayName = "Fero Z-24 (Tan)";
+                description = "low-powered riflescope Magnification: 100m to 600m, 4x (G3A3/G3A4/GV M/75/GV M/75 Carbine/SG5A2/SG5A3)";
+                price = 375;
+                stock = 10000;                
+	    };		
 			class gm_c79a1_blk {
                 displayName = "C79A1";
+                description = "telescopic sight Magnification: 200m to 800m, 3.4X (GV M-95/ C7A1)";
+                price = 400;
+                stock = 10000;                
+	    };
+			class gm_c79a1_oli {
+                displayName = "C79A1(Olive)";
                 description = "telescopic sight Magnification: 200m to 800m, 3.4X (GV M-95/ C7A1)";
                 price = 400;
                 stock = 10000;                
@@ -3221,6 +3304,18 @@
                 displayName = "Sound Suppressor (9.3mm, Tan)";
                 description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
                 price = 600;
+                stock = 10000;
+            };
+			class gm_bayonet_6x3_wud {
+                displayName = "6H3";
+                description = "Bayonet for MPi AK-74/ MPi AKS-74/ MPi AKS-74K/ MPi KM-72/ MPi KMS-72/ SDV/ AKM/ AKMN.";
+                price = 100;
+                stock = 10000;
+            };
+			class gm_bayonet_6x3_blk {
+                displayName = "6H3 (Black)";
+                description = "Bayonet for MPi AK-74/ MPi AKS-74/ MPi AKS-74K/ MPi KM-72/ MPi KMS-72/ SDV/ AKM/ AKMN.";
+                price = 100;
                 stock = 10000;
             };		
 			class acc_flashlight_pistol {
