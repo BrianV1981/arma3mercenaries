@@ -56,13 +56,13 @@
                 stock = 99999;
 				code = "if (isServer) then {skipTime 6}";
             };
-			class B_Quadbike_01_F {
-                displayName = "Remove All Quad Bikes";
-                description = "This removes all quad bikes from the map.";
+			class gm_xx_civ_bicycle_01 {
+                displayName = "Remove All Bikes";
+                description = "This removes all bikes from the map.";
                 price = 0;
                 amount = 1;
                 stock = 99999;
-				code = [player,"scripts\deleteQuads.sqf"] call BIS_fnc_execVM;
+				code = [player,"scripts\deleteBikes.sqf"] call BIS_fnc_execVM;
             };
 			class B_Slingload_01_Ammo_F {
                 displayName = "Reset Store";

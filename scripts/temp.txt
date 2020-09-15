@@ -1,3 +1,12 @@
+///////////////////   https://www.reddit.com/r/armadev/comments/9p95kw/adding_ace_refuel_functionality_for_in_mission/           /////////////////
+init.sqf
+["OPTRE_M914_RV", "InitPost", {
+    params ["_vehicle"];
+    [_vehicle, 600] call ace_refuel_fnc_makeSource;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+
+////////////////////////////
 open spot for CAS/transport
 [26755,24510,0]
 

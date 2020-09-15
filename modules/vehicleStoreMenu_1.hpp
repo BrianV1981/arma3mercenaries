@@ -20,10 +20,10 @@
             displayName = "Automobiles and Recreational Vehicles";
             tracking = 1;
             //items of this category:
-
-            class B_Quadbike_01_F {
-                displayName = "Quad Bike"; 
-                description = "***WARNING**ALL QUAD BIKES WILL BE DELETED UPON SERVER RESTART***The ATV is an all-terrain, 4x4 light utility vehicle that is mainly designed for use by special forces units and non-combat troops. (Slingload: No) (Slingloadable: Yes)";
+			
+			class gm_xx_civ_bicycle_01 {
+                displayName = "Bicycle"; 
+                description = "***WARNING**ALL BYCYCLES WILL BE DELETED UPON SERVER RESTART***The Bicycle. (Slingload: No) (Slingloadable: Yes)";
                 price = 0;
 				stock = 9999;
 				
@@ -33,6 +33,41 @@
                 description = "Go-karts come in all shapes and forms, from motorless models to high-powered racing machines. Some, such as Superkarts, are able to beat racing cars or motorcycles on long circuits. (Slingload: No) (Slingloadable: Yes)";
                 price = 500;
                 stock = 9999;
+				
+            };
+            class B_Quadbike_01_F {
+                displayName = "Quad Bike"; 
+                description = "The ATV is an all-terrain, 4x4 light utility vehicle that is mainly designed for use by special forces units and non-combat troops. (Slingload: No) (Slingloadable: Yes)";
+                price = 1000;
+				stock = 9999;
+				
+            };
+			class gm_ge_army_k125 {
+                displayName = "K125 gl"; 
+                description = "The K125 gl is a medium-sized motorcycle with an air-cooled, single-cylinder, two-stroke engine. (Slingload: No) (Slingloadable: Yes)";
+                price = 1000;
+                stock = 9999;
+				
+            };
+			class gm_gc_army_p601 {
+                displayName = "P601";
+                description = "A common sight throughout East German cities and towns, the P601 is driven by both civilians and military alike. It is favoured by border guards and Military Police units due to its ruggedness, and is used to transport guards between posts. (Slingload: No) (Slingloadable: Yes)";
+                price = 2000;
+                stock = 1000;
+				
+            };
+			class gm_ge_civ_typ1200 {
+                displayName = "Typ 1200 (Bug)";
+                description = "Nicknamed the Bug for its distinctive rounded silhouette, the Typ 1200 has continued to remain popular ever since its entry into the automobile market in the late 1930s. (Slingload: No) (Slingloadable: Yes)";
+                price = 2000;
+                stock = 1000;
+				
+            };
+			class gm_ge_army_iltis_cargo {
+                displayName = "Truck 0.5t tmil gl";
+                description = "The Truck 0.5t tmil gl was first produced in 1977 in response to a West German requirement for a multi-purpose 4x4 Light Utility Vehicle. (Slingload: No) (Slingloadable: Yes)";
+                price = 3000;
+                stock = 1000;
 				
             };
 			class C_Hatchback_01_sport_F {
@@ -114,14 +149,14 @@
 			
 			class I_C_Van_01_transport_F {
                 displayName = "Truck (Flatbed) (Transport)";
-                description = "***ATTENTION***THE TRUCK CAN TOW AUTOMOBILES AND RECREATIONAL VEHICLES***Truck (Flatbed) can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. Once activated, you can use the middle mouse wheel on the vehicle that you wish to be towed. (Slingload: No) (Slingloadable: Yes)";
+                description = "Truck (Flatbed) can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. Once activated, you can use the middle mouse wheel on the vehicle that you wish to be towed. (Slingload: No) (Slingloadable: Yes)";
                 price = 13000;
                 stock = 1000;
 				
             };
 			class I_E_Van_02_medevac_F {
-                displayName = "Ambulance (Medical Facility) (Mobile Spawn)"; 
-                description = "***ATTENTION***Ambulance (Medical Facility) will enable the use of personal aid kits (PAK's) in the field and is a mobile spawn position. (Slingload: No) (Slingloadable: Yes)";
+                displayName = "Ambulance (Medical Facility)"; 
+                description = "Ambulance (Medical Facility) will enable the use of personal aid kits (PAK's) in the field. (Slingload: No) (Slingloadable: Yes)";
                 price = 15000;
                 stock = 9999;
 				
@@ -133,10 +168,150 @@
                 stock = 9999;
 				
             };
+			class gm_ge_army_u1300l_cargo {
+                displayName = "Truck 2t mil gl Transport (Covered) (W.Germany)"; 
+                description = "Originally designed in 1946, the latest models of the Truck 2t mil gl have been continually expanded to encompass a range of specialised roles for both civil and military applications. (Slingload: No) (Slingloadable: Yes)";
+                price = 25000;
+                stock = 9999;
+				
+            };
+			class gm_ge_army_u1300l_container {
+                displayName = "Truck 2t mil gl Flatbed (W.Germany)"; 
+                description = "Originally designed in 1946, the latest models of the Truck 2t mil gl have been continually expanded to encompass a range of specialised roles for both civil and military applications. (Slingload: No) (Slingloadable: Yes)";
+                price = 25000;
+                stock = 9999;
+				
+            };
+			class gm_ge_army_u1300l_medic {
+                displayName = "Truck 2t mil gl Medical (W.Germany)"; 
+                description = "Originally designed in 1946, the latest models of the Truck 2t mil gl have been continually expanded to encompass a range of specialised roles for both civil and military applications. (Slingload: No) (Slingloadable: Yes)";
+                price = 25000;
+                stock = 9999;
+				
+            };
+			class gm_ge_army_u1300l_repair {
+                displayName = "Truck 2t mil gl Repair (W.Germany)"; 
+                description = "Originally designed in 1946, the latest models of the Truck 2t mil gl have been continually expanded to encompass a range of specialised roles for both civil and military applications. (Slingload: No) (Slingloadable: Yes)";
+                price = 50000;
+                stock = 9999;
+				
+            };
 			class B_G_Offroad_01_repair_F {
                 displayName = "Offroad (Repair Facility)"; 
                 description = "Offroad (repair facility) can be utiliezed to repair damaged vehicles to 100%. (Slingload: No) (Slingloadable: Yes)";
                 price = 50000;
+                stock = 9999;
+				
+            };
+			class gm_gc_army_ural44202 {
+                displayName = "Truck gel. 5 Tractor (E.Germany)"; 
+                description = "The Truck gel. 5 is a Soviet-made, medium-sized 6x6, utility truck that can transport and heal troops, or repair and refuel military vehicles. (Slingload: No) (Slingloadable: Yes)";
+                price = 75000;
+                stock = 9999;
+				
+            };
+			class gm_gc_army_ural4320_cargo {
+                displayName = "Truck gel. 5 Transport (Covered) (E.Germany)"; 
+                description = "The Truck gel. 5 is a Soviet-made, medium-sized 6x6, utility truck that can transport and heal troops, or repair and refuel military vehicles. (Slingload: No) (Slingloadable: Yes)";
+                price = 75000;
+                stock = 9999;
+				
+            };
+			class gm_pl_army_ural4320_cargo {
+                displayName = "Truck gel. 5 Transport (Covered) (Poland)"; 
+                description = "The Truck gel. 5 is a Soviet-made, medium-sized 6x6, utility truck that can transport and heal troops, or repair and refuel military vehicles. (Slingload: No) (Slingloadable: Yes)";
+                price = 75000;
+                stock = 9999;
+				
+            };
+			class gm_ge_army_kat1_451_cargo {
+                displayName = "Truck 5t mil gl Transport (Covered) (W.Germany)"; 
+                description = "Stemming from West German Army requirement in the early 1960s, the Truck 5t mil gl entered service with the armed forces in 1976. It has since proven itself as a highly capable and adaptable 4x4 platform designed for numerous logistical roles. (Slingload: No) (Slingloadable: Yes)";
+                price = 75000;
+                stock = 9999;
+				
+            };
+			class gm_ge_army_kat1_451_container {
+                displayName = "Truck 5t mil gl Flatbed (W.Germany)"; 
+                description = "Stemming from West German Army requirement in the early 1960s, the Truck 5t mil gl entered service with the armed forces in 1976. It has since proven itself as a highly capable and adaptable 4x4 platform designed for numerous logistical roles. (Slingload: No) (Slingloadable: Yes)";
+                price = 75000;
+                stock = 9999;
+				
+            };
+			class gm_gc_army_ural375d_medic {
+                displayName = "Truck gel. 5 Mp Medical (Medical Facility) (E.Germany)"; 
+                description = "The Truck gel. 5 is a Soviet-made, medium-sized 6x6, utility truck that can transport and heal troops, or repair and refuel military vehicles. (Slingload: No) (Slingloadable: Yes)";
+                price = 75000;
+                stock = 9999;
+				
+            };
+			class gm_pl_army_ural375d_medic {
+                displayName = "	Truck gel. 5 Mp Medical (Medical Facility) (Poland)"; 
+                description = "The Truck gel. 5 is a Soviet-made, medium-sized 6x6, utility truck that can transport and heal troops, or repair and refuel military vehicles. (Slingload: No) (Slingloadable: Yes)";
+                price = 75000;
+                stock = 9999;
+				
+            };
+			class gm_gc_army_ural375d_refuel {
+                displayName = "Truck gel. 5 Mp Fuel (Fuel Facility) (E.Germany)"; 
+                description = "The Truck gel. 5 is a Soviet-made, medium-sized 6x6, utility truck that can transport and heal troops, or repair and refuel military vehicles. (Slingload: No) (Slingloadable: Yes)";
+                price = 75000;
+                stock = 9999;
+				
+            };
+			class gm_pl_army_ural375d_refuel {
+                displayName = "Truck gel. 5 Mp Fuel (Fuel Facility) (Poland)"; 
+                description = "The Truck gel. 5 is a Soviet-made, medium-sized 6x6, utility truck that can transport and heal troops, or repair and refuel military vehicles. (Slingload: No) (Slingloadable: Yes)";
+                price = 75000;
+                stock = 9999;
+				
+            };
+			class gm_ge_army_kat1_451_refuel {
+                displayName = "Truck 5t mil gl Fuel (Fuel Facility) (W.Germany)"; 
+                description = "Stemming from West German Army requirement in the early 1960s, the Truck 5t mil gl entered service with the armed forces in 1976. It has since proven itself as a highly capable and adaptable 4x4 platform designed for numerous logistical roles. (Slingload: No) (Slingloadable: Yes)";
+                price = 75000;
+                stock = 9999;
+				
+            };
+			class gm_gc_army_ural4320_repair {
+                displayName = "Truck gel. 5 Repair (Repair Facility) (E.Germany)"; 
+                description = "The Truck gel. 5 is a Soviet-made, medium-sized 6x6, utility truck that can transport and heal troops, or repair and refuel military vehicles. (Slingload: No) (Slingloadable: Yes)";
+                price = 75000;
+                stock = 9999;
+				
+            };
+			class gm_pl_army_ural4320_repair {
+                displayName = "Truck gel. 5 Repair (Repair Facility) (Poland)"; 
+                description = "The Truck gel. 5 is a Soviet-made, medium-sized 6x6, utility truck that can transport and heal troops, or repair and refuel military vehicles. (Slingload: No) (Slingloadable: Yes)";
+                price = 75000;
+                stock = 9999;
+				
+            };
+			class gm_gc_army_ural4320_reammo {
+                displayName = "Truck gel. 5 Ammo (Ammo Facility) (E.Germany)"; 
+                description = "The Truck gel. 5 is a Soviet-made, medium-sized 6x6, utility truck that can transport and heal troops, or repair and refuel military vehicles. (Slingload: No) (Slingloadable: Yes)";
+                price = 100000;
+                stock = 9999;
+				
+            };
+			class gm_pl_army_ural4320_reammo {
+                displayName = "Truck gel. 5 Ammo (Ammo Facility) (Poland)"; 
+                description = "The Truck gel. 5 is a Soviet-made, medium-sized 6x6, utility truck that can transport and heal troops, or repair and refuel military vehicles. (Slingload: No) (Slingloadable: Yes)";
+                price = 100000;
+                stock = 9999;
+				
+            };
+			class gm_ge_army_kat1_451_reammo {
+                displayName = "Truck 5t mil gl Ammo (Ammo Facility) (W.Germany)"; 
+                description = "Stemming from West German Army requirement in the early 1960s, the Truck 5t mil gl entered service with the armed forces in 1976. It has since proven itself as a highly capable and adaptable 4x4 platform designed for numerous logistical roles. (Slingload: No) (Slingloadable: Yes)";
+                price = 100000;
+                stock = 9999;
+				
+            };
+			class gm_ge_army_kat1_454_cargo {
+                displayName = "Truck 10t mil gl Transport (Covered)"; 
+                description = "The result of a West German requirement drawn up during the early 1960s, the Truck 10t mil gl is a part of a family of support trucks designed to carry loads over rough terrain and maintain formation with Main Battle Tanks. (Slingload: No) (Slingloadable: Yes)";
+                price = 125000;
                 stock = 9999;
 				
             };
@@ -184,7 +359,7 @@
             };
 			class B_Truck_01_mover_F {
                 displayName = "HEMTT";
-                description = "***ATTENTION***THE HEMETT CAN TOW COMBAT VEHICLES***This HEMTT is a transport vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a transport vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 200000;
                 stock = 50;
 				
@@ -225,7 +400,7 @@
 				
             };
 			class B_Truck_01_medical_F {
-                displayName = "HEMTT Medical (Medical Facility) (Mobile Spawn)";
+                displayName = "HEMTT Medical (Medical Facility)";
                 description = "This HEMTT will enable the use of personal aid kits (PAK's) in the field and is a mobile spawn point that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Slingload: No) (Slingloadable: Yes)";
                 price = 225000;
                 stock = 50;
@@ -252,46 +427,87 @@
 				
             };
 			class O_T_Truck_03_transport_ghex_F {
-                displayName = "Typhoon Transport (Tow Truck)";
-                description = "***ATTENTION***THE TYPHOON CAN TOW LIGHT ARMOR VEHICLES***This Typhoon is a transport vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                displayName = "Typhoon Transport";
+                description = "This Typhoon is a transport vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 250000;
                 stock = 50;
             };
 			class O_T_Truck_03_covered_ghex_F {
-                displayName = "Typhoon Transport (Tow Truck)";
-                description = "***ATTENTION***THE TYPHOON CAN TOW LIGHT ARMOR VEHICLES***This Typhoon is a transport vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                displayName = "Typhoon Transport (Covered)";
+                description = "This Typhoon is a transport vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 250000;
                 stock = 50;
             };
 			class O_T_Truck_03_medical_ghex_F {
                 displayName = "Typhoon Medical (Medical Facility)";
-                description = "***ATTENTION***THE TYPHOON CAN TOW LIGHT ARMOR VEHICLES***This Typhoon will enable the use of personal aid kits (PAK's) in the field and is a mobile spawn point that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Slingload: No) (Slingloadable: Yes)";
+                description = "This Typhoon will enable the use of personal aid kits (PAK's) in the field and is a mobile spawn point that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Slingload: No) (Slingloadable: Yes)";
                 price = 275000;
                 stock = 50;
             };
 			class O_T_Truck_03_repair_ghex_F {
                 displayName = "Typhoon Repair (Repair Facility)";
-                description = "***ATTENTION***THE TYPHOON CAN TOW LIGHT ARMOR VEHICLES***This Typhoon is a mobile repair station that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This Typhoon is a mobile repair station that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 275000;
                 stock = 50;
             };
 			class O_T_Truck_03_ammo_ghex_F {
                 displayName = "Typhoon Ammo (Ammo Facility)";
-                description = "***ATTENTION***THE TYPHOON CAN TOW LIGHT ARMOR VEHICLES***This Typhoon is a ammo resupply vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This Typhoon is a ammo resupply vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 300000;
                 stock = 50;
             };
+			class gm_dk_army_m113a1dk_engineer  {
+                displayName = "M113A1DK Egineer (Repair facility) (Denmark)";
+                description = "Introduced in 1960, the M113 is an American-made Armoured Personnel Carrier that was envisioned to carry out a variety of frontline and support roles. (Seating Capacity: 10)";
+                price = 300000;
+                stock = 40;
+				
+            };
+			class gm_dk_army_m113a1dk_medic  {
+                displayName = "M113A1DK Medical (Medical Facility) (Denmark)";
+                description = "Introduced in 1960, the M113 is an American-made Armoured Personnel Carrier that was envisioned to carry out a variety of frontline and support roles. (Seating Capacity: 12)";
+                price = 300000;
+                stock = 40;
+				
+            };
+			class gm_ge_army_m113a1g_medic  {
+                displayName = "M113A1G Medical (Medical Facility) (W.Germany)";
+                description = "Introduced in 1960, the M113 is an American-made Armoured Personnel Carrier that was envisioned to carry out a variety of frontline and support roles. (Seating Capacity: 12)";
+                price = 300000;
+                stock = 40;
+				
+            };
 			class B_APC_Tracked_01_CRV_F {
-                displayName = "Nemmera (Sand)";
-                description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
+                displayName = "Nemmera (Repair, Rearm, Refuel) (Sand)";
+                description = "The Nemmera is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Nemmera.";
                 price = 475000;
                 stock = 20;
             };
 			class B_T_APC_Tracked_01_CRV_F {
-                displayName = "Nemmera (Military Green)";
-                description = "The Bobcat is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Bobcat.";
+                displayName = "Nemmera (Repair, Rearm, Refuel) (Military Green)";
+                description = "The Nemmera is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Nemmera.";
                 price = 475000;
                 stock = 20;
+            };
+			class gm_dk_army_bpz2a0 {
+                displayName = "TPz 1A0 Engineer (Repair, Rearm, Refuel) (W.Germany)";
+                description = "The TPz 1A0 Engineer is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the TPz 1A0 Engineer.(Slingload: No) (Slingloadable: Yes)";
+                price = 500000;
+                stock = 50;
+            };
+			class gm_ge_army_bpz2a0 {
+                displayName = "BPz 2A0 (Repair, Rearm, Refuel) (Denmark)";
+                description = "Based on a modified KPz 1 chassis, the BPz 2A0 is fitted with a crane, winch and front-mounted dozer. Its primary mission is the recovery of damaged tracked vehicles. Nearby friendly vehicles can be repaired, rearmed and refuelled by the BPz 2A0. (Seating Capacity: 3)";
+                price = 500000;
+                stock = 40;
+				
+            };
+			class gm_ge_airforce_do28d2_medevac {
+                displayName = "Do 28 D2 (Medical Facility) (W.Germany)";
+                description = "As a STOL aircraft, Do 28s can handily take off or land on open highways and don't require airstrips to operate from. Although it can't ferry as many passengers as its rotary-wing counterpart, the Do 28 can reach its target quickly and paradrop its riders at greater altitudes. (Seating Capacity: 5)";
+                price = 500000;
+                stock = 40;
+				
             };
 		};
 		class Cvehicles {
@@ -300,31 +516,45 @@
             tracking = 1;
             //items of this category:
 			
+			class gm_ge_army_iltis_mg3  {
+                displayName = "Truck 0.5t tmil gl MG3 (HMG)"; 
+                description = "The Truck 0.5t tmil gl was first produced in 1977 in response to a West German requirement for a multi-purpose 4x4 Light Utility Vehicle.	 (Slingload: No) (Slingloadable: Yes)";
+                price = 10000;
+                stock = 9999;
+				
+            };
 			class I_C_Offroad_02_LMG_F  {
                 displayName = "Jeep Wrangler(HMG)"; 
                 description = "	The 4x4 pickup by Jeep is a perfect choice for farmers and hunters. The durable chassis and powerful engine has been designed to withstand anything from the cratered highways of Central Europe to the rugged terrain of the Mediterranean. (Slingload: No) (Slingloadable: Yes)";
-                price = 10000;
+                price = 20000;
                 stock = 9999;
 				
             };
 			class B_G_Offroad_01_armed_F  {
                 displayName = "Offroad (HMG)"; 
                 description = "	The 4x4 pickup by Jeep is a perfect choice for farmers and hunters. The durable chassis and powerful engine has been designed to withstand anything from the cratered highways of Central Europe to the rugged terrain of the Mediterranean. (Slingload: No) (Slingloadable: Yes)";
-                price = 10000;
+                price = 20000;
+                stock = 9999;
+				
+            };
+			class gm_ge_army_iltis_milan  {
+                displayName = "Truck 0.5t tmil gl LATGM (AT)"; 
+                description = "The Truck 0.5t tmil gl was first produced in 1977 in response to a West German requirement for a multi-purpose 4x4 Light Utility Vehicle.	 (Slingload: No) (Slingloadable: Yes)";
+                price = 20000;
                 stock = 9999;
 				
             };
 			class I_C_Offroad_02_AT_F  {
                 displayName = "Jeep Wrangler(AT)"; 
                 description = "	The 4x4 pickup by Jeep is a perfect choice for farmers and hunters. The durable chassis and powerful engine has been designed to withstand anything from the cratered highways of Central Europe to the rugged terrain of the Mediterranean. (Slingload: No) (Slingloadable: Yes)";
-                price = 20000;
+                price = 30000;
                 stock = 9999;
 				
             };
 			class B_G_Offroad_01_AT_F  {
                 displayName = "Offroad (AT)"; 
                 description = "	The 4x4 pickup by Jeep is a perfect choice for farmers and hunters. The durable chassis and powerful engine has been designed to withstand anything from the cratered highways of Central Europe to the rugged terrain of the Mediterranean. (Slingload: No) (Slingloadable: Yes)";
-                price = 20000;
+                price = 30000;
                 stock = 9999;
 				
             }; 
@@ -440,25 +670,141 @@
             tracking = 1;
             //items of this category:
 			
+			class gm_dk_army_m113a1dk_apc {
+                displayName = "M113A1DK (Denmark)";
+                description = "Introduced in 1960, the M113 is an American-made Armoured Personnel Carrier that was envisioned to carry out a variety of frontline and support roles. (Seating Capacity: 12)";
+                price = 250000;
+                stock = 40;
+				
+            };
+			class gm_dk_army_m113a1dk_command {
+                displayName = "M113A1DK Command (Denmark)";
+                description = "Introduced in 1960, the M113 is an American-made Armoured Personnel Carrier that was envisioned to carry out a variety of frontline and support roles. (Seating Capacity: 6)";
+                price = 250000;
+                stock = 40;
+				
+            };
+			class gm_dk_army_m113a2dk {
+                displayName = "M113A1G APC (W.Germany)";
+                description = "Unlike regular M113A1DKs, the M113A2DK PNMK eschews externally-fitted weapons in favour of housing its 25 mm autocannon and 7.62 mm coaxial machine gun inside an armoured turret. It is the only Danish M113 variant that is equipped with defensive smoke launchers. (Seating Capacity: 3)";
+                price = 250000;
+                stock = 40;
+				
+            };
+			class gm_ge_army_fuchsa0_command {
+                displayName = "TPz 1A0 Command (Command Post Vehicle) (Denmark)";
+                description = "The Transportpanzer 1 (Fuchs) is a 6x6 Armoured Personnel Carrier designed in 1979 to meet a West German requirement mandating a family of interchangeable, low-cost armoured vehicles. It provides a balance of protection, mobility and load capacity. (Seating Capacity: 2)";
+                price = 250000;
+                stock = 40;
+				
+            };
+			class gm_ge_army_m113a1g_apc {
+                displayName = "M113A1G APC (W.Germany)";
+                description = "It is armed with a single 7.62 mm medium machine gun. The gunner has access to three spare 120-round belt boxes with one pre-loaded by default (for a combined total of 480 rounds). (Seating Capacity: 12)";
+                price = 250000;
+                stock = 40;
+				
+            };
+			class gm_gc_army_brdm2um {
+                displayName = "SPW-40P2UM (Command Post Vehicle) (E.Germany)";
+                description = "The Schützenpanzerwagen 40P2 is available in two variants; a baseline armed scout variant outfitted with a roof turret that's equipped with a dual-mount 14.5 mm heavy machine gun/7.62 mm medium machine gun, and an unarmed mobile command vehicle variant. (Seating Capacity: 2)";
+                price = 250000;
+                stock = 40;
+				
+            };
+			class gm_ge_army_m113a1g_command {
+                displayName = "M113A1G Command (Command Post Vehicle) (W.Germany)";
+                description = "The gunner retains access to a 7.62 mm-chambered MG3 machine gun. It has access to four 120-round belt boxes for a total of 480 rounds. It is able to transport up to five passengers for a combined total of 480 rounds. (Seating Capacity: 10)";
+                price = 250000;
+                stock = 40;
+				
+            };
+			class gm_ge_army_m113a1g_apc_milan  {
+                displayName = "M113A1G APC LATGM (AT) (W.Germany)";
+                description = "It is armed with a single 7.62 mm medium machine gun. The gunner has access to three spare 120-round belt boxes with one pre-loaded by default (for a combined total of 480 rounds). (Seating Capacity: 12)";
+                price = 275000;
+                stock = 40;
+				
+            };
+			class gm_gc_army_brdm2  {
+                displayName = "SPW-40P2UM (Scout Car) (E.Germany)";
+                description = "The Schützenpanzerwagen 40P2 is available in two variants; a baseline armed scout variant outfitted with a roof turret that's equipped with a dual-mount 14.5 mm heavy machine gun/7.62 mm medium machine gun, and an unarmed mobile command vehicle variant. (Seating Capacity: 2)";
+                price = 300000;
+                stock = 40;
+				
+            };
+			class gm_pl_army_brdm2  {
+                displayName = "BRDM-2 (Scout Car) (Poland)";
+                description = "The BRDM-2 is available in two variants; a baseline armed scout variant outfitted with a roof turret that's equipped with a dual-mount 14.5 mm heavy machine gun/7.62 mm medium machine gun, and an unarmed mobile command vehicle variant. (Seating Capacity: 2)";
+                price = 300000;
+                stock = 40;
+				
+            };
+			class gm_pl_army_ot64a  {
+                displayName = "SKOT-2A (Scout Car) (Poland)";
+                description = "SKOT-2A is the Polish military's designation for the Czechoslovakian-made OT-64 Armoured Personnel Carrier fitted with the BRDM-2's conical turret. (Seating Capacity: 11)";
+                price = 420000;
+                stock = 20;
+				
+            };
 			class I_LT_01_scout_F  {
                 displayName = "Wiesel 2 RFCV (Radar)";
-                description = "	The AWC 300 Nyx family consists of a number of light, fast and agile combat vehicles used by the AAF. While small and lightly armored, the Nyx can surprise enemies by striking from unexpected positions with its decent and accurate firepower. The anti-tank and air-defense variants are equipped with IR guided missiles and a 12.7mm HMG. The strike variant uses a 20mm autocannon and a 7.62mm coaxial machinegun. The recon variant is unarmed, but uses its radar and sensors to detect nearby threats and pass target data to friendly units via datalink. It can also paint targets with its laser designator, which is located on a telescopic mount. (Seating Capacity: 2)";
+                description = "The AWC 300 Nyx family consists of a number of light, fast and agile combat vehicles used by the AAF. While small and lightly armored, the Nyx can surprise enemies by striking from unexpected positions with its decent and accurate firepower. The anti-tank and air-defense variants are equipped with IR guided missiles and a 12.7mm HMG. The strike variant uses a 20mm autocannon and a 7.62mm coaxial machinegun. The recon variant is unarmed, but uses its radar and sensors to detect nearby threats and pass target data to friendly units via datalink. It can also paint targets with its laser designator, which is located on a telescopic mount. (Seating Capacity: 2)";
                 price = 300000;
                 stock = 40;
 				
             };
 			class I_LT_01_AT_F  {
                 displayName = "Wiesel 2 (AT)";
-                description = "	The AWC 300 Nyx family consists of a number of light, fast and agile combat vehicles used by the AAF. While small and lightly armored, the Nyx can surprise enemies by striking from unexpected positions with its decent and accurate firepower. The anti-tank and air-defense variants are equipped with IR guided missiles and a 12.7mm HMG. The strike variant uses a 20mm autocannon and a 7.62mm coaxial machinegun. The recon variant is unarmed, but uses its radar and sensors to detect nearby threats and pass target data to friendly units via datalink. It can also paint targets with its laser designator, which is located on a telescopic mount. (Seating Capacity: 2)";
+                description = "The AWC 300 Nyx family consists of a number of light, fast and agile combat vehicles used by the AAF. While small and lightly armored, the Nyx can surprise enemies by striking from unexpected positions with its decent and accurate firepower. The anti-tank and air-defense variants are equipped with IR guided missiles and a 12.7mm HMG. The strike variant uses a 20mm autocannon and a 7.62mm coaxial machinegun. The recon variant is unarmed, but uses its radar and sensors to detect nearby threats and pass target data to friendly units via datalink. It can also paint targets with its laser designator, which is located on a telescopic mount. (Seating Capacity: 2)";
                 price = 350000;
                 stock = 40;
 				
             };
 			class I_LT_01_AA_F  {
                 displayName = "Wiesel 2 Ozelot (AA)";
-                description = "	The Wiesel 2 family consists of a number of light, fast and agile combat vehicles used by the AAF. While small and lightly armored, the Nyx can surprise enemies by striking from unexpected positions with its decent and accurate firepower. The anti-tank and air-defense variants are equipped with IR guided missiles and a 12.7mm HMG. The strike variant uses a 20mm autocannon and a 7.62mm coaxial machinegun. The recon variant is unarmed, but uses its radar and sensors to detect nearby threats and pass target data to friendly units via datalink. It can also paint targets with its laser designator, which is located on a telescopic mount. (Seating Capacity: 2)";
+                description = "The Wiesel 2 family consists of a number of light, fast and agile combat vehicles used by the AAF. While small and lightly armored, the Nyx can surprise enemies by striking from unexpected positions with its decent and accurate firepower. The anti-tank and air-defense variants are equipped with IR guided missiles and a 12.7mm HMG. The strike variant uses a 20mm autocannon and a 7.62mm coaxial machinegun. The recon variant is unarmed, but uses its radar and sensors to detect nearby threats and pass target data to friendly units via datalink. It can also paint targets with its laser designator, which is located on a telescopic mount. (Seating Capacity: 2)";
                 price = 350000;
                 stock = 40;
+				
+            };
+			class gm_ge_army_fuchsa0_reconnaissance {
+                displayName = "TPz 1A0 Recon (W.Germany)";
+                description = "The Transportpanzer 1 (Fuchs) is a 6x6 Armoured Personnel Carrier designed in 1979 to meet a West German requirement mandating a family of interchangeable, low-cost armoured vehicles. It provides a balance of protection, mobility and load capacity. (Slingload: No) (Slingloadable: Yes)";
+                price = 350000;
+                stock = 50;
+            };
+			class gm_ge_army_luchsa1 {
+                displayName = "SpPz 2A1 (W.Germany)";
+                description = "Developed in the 1960s and entering service with the West German Army in 1973, the SpPz 2A1 is an amphibious 8x8 armoured reconnaissance vehicle. (Slingload: No) (Slingloadable: Yes)";
+                price = 350000;
+                stock = 50;
+            };
+			class gm_ge_army_luchsa2 {
+                displayName = "SpPz 2A2 (W.Germany)";
+                description = "Developed in the 1960s and entering service with the West German Army in 1973, the SpPz 2A1 is an amphibious 8x8 armoured reconnaissance vehicle. (Slingload: No) (Slingloadable: Yes)";
+                price = 350000;
+                stock = 50;
+            };
+			class gm_gc_army_btr60pu12  {
+                displayName = "SPW-60PU-12 (Command Post Vehicle) (E.Germany)";
+                description = "The SPW-60 is has the driver and commander seated at the front of the vehicle, while the troop compartment is at the middle and the engines in the rear. The armed SPW-60PB variant features a one-man turret fitted with a 14.5 mm heavy machine gun and 7.62 mm coaxial machine gun. (Seating Capacity: 4)";
+                price = 350000;
+                stock = 20;
+				
+            };
+			class gm_gc_army_btr60pa  {
+				displayName = "SPW-60PA (E.Germany)";
+                description = "The SPW-60PA is has the driver and commander seated at the front of the vehicle, while the troop compartment is at the middle and the engines in the rear. The armed SPW-60PB variant features a one-man turret fitted with a 14.5 mm heavy machine gun and 7.62 mm coaxial machine gun. (Seating Capacity: 20)";
+                price = 375000;
+                stock = 20;
+				
+            };
+			class gm_gc_army_btr60pb  {
+                displayName = "SPW-60PB (E.Germany)";
+                description = "The SPW-60 is has the driver and commander seated at the front of the vehicle, while the troop compartment is at the middle and the engines in the rear. The armed SPW-60PB variant features a one-man turret fitted with a 14.5 mm heavy machine gun and 7.62 mm coaxial machine gun. (Seating Capacity: 20)";
+                price = 375000;
+                stock = 20;
 				
             };
 			class B_APC_Wheeled_03_cannon_F  {
@@ -506,20 +852,63 @@
 			class B_AFV_Wheeled_01_up_cannon_F {
                 displayName = "Rooikat 120 UP (Sand)";
                 description = "The RRooikat 120 is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. The 'UP' version is equipped with a remotely operated 12.7mm HMG and improved protection, provided by a cage and reactive armor. However, with this setup, it's too bulky to fit into many transport vehicles, including the Blackfish VTOL. (Seating Capacity: 3)";
-                price = 465000;
+                price = 475000;
                 stock = 20;
 				
             };
 			class B_T_AFV_Wheeled_01_up_cannon_F {
                 displayName = "Rooikat 120 UP (Military Green)";
                 description = "The Rooikat 120 is the latest wheeled tank destroyer in NATO armored forces, designed for easy transportation to crisis regions. Its lightweight 120mm main cannon can use all conventional rounds including MARUK ATGMs, which increase its effective range to 8 km. The vehicle's secondary weapon is the .338 magnum SPMG coaxial machinegun. The price paid for the Rhino's great mobility and firepower is its light armor and low supplies of ammo and fuel. The 'UP' version is equipped with a remotely operated 12.7mm HMG and improved protection, provided by a cage and reactive armor. However, with this setup, it's too bulky to fit into many transport vehicles, including the Blackfish VTOL. (Seating Capacity: 3)";
+                price = 475000;
+                stock = 20;
+				
+            };
+			
+			class gm_gc_army_bmp1sp2 {
+                displayName = "BMP-1 SP-2 (E.Germany)";
+                description = "The BMP-1 SP-2 primary weapon consists of a smoothbore 73 mm gun that can fire either multi-purpose high-explosive anti-tank (HEAT) or anti-personnel high-explosive (HE) shells. By default, the gun has access to 30 HEAT and 10 HE shells. (Seating Capacity: 11)";
                 price = 465000;
                 stock = 20;
 				
-            };						
-			class B_APC_Tracked_01_rcws_F {
-                displayName = "Namer (Sand)";
-                description = "The Namer is a heavily-armoured troop carrier that is designed to be modular. Its chassis can be modified in order to be adapted for use in other roles, though its primary purpose remains transporting troops into or out of combat. (Seating Capacity: 11)";
+            };
+			class gm_pl_army_bmp1sp2 {
+                displayName = "BWP-1 (Poland)";
+                description = "The BWP-1 is yet another derivative of the Soviet-made BMP-1 Infantry Fighting Vehicle widely exported throughout the Warsaw Pact. Its primary weapon consists of a smoothbore 73 mm gun that can fire either multi-purpose high-explosive anti-tank (HEAT) or anti-personnel high-explosive (HE) shells.  (Seating Capacity: 11)";
+                price = 465000;
+                stock = 20;
+				
+            };
+			class gm_gc_army_pt76b {
+                displayName = "PT-76B (E.Germany)";
+                description = "The PT-76B is an updated variant of the original PT-76 Light Tank first commissioned for service in 1951. It is armed with a rifled 76 mm gun that can fire both anti-vehicle and anti-personnel shells, along with a coaxial 7.62 mm medium machine gun. (Seating Capacity: 11)";
+                price = 465000;
+                stock = 20;
+				
+            };
+			class gm_pl_army_pt76b {
+                displayName = "PT-76B (Poland)";
+                description = "The PT-76B is an updated variant of the original PT-76 Light Tank first commissioned for service in 1951. It is armed with a rifled 76 mm gun that can fire both anti-vehicle and anti-personnel shells, along with a coaxial 7.62 mm medium machine gun. (Seating Capacity: 11)";
+                price = 465000;
+                stock = 20;
+				
+            };
+			class gm_gc_army_zsu234v1 {
+                displayName = "ZSU-23-4V1 (E.Germany)";
+                description = "The ZSU-23-4V1 is a self-propelled anti-aircraft gun vehicle with four liquid-cooled 23 mm autocannons mounted on the front of a flat-shaped armoured turret. The chassis and suspension system shares many components borrowed directly from other Soviet-made vehicles. (Seating Capacity: 11)";
+                price = 440000;
+                stock = 20;
+				
+            };
+			class gm_pl_army_zsu234v1 {
+                displayName = "ZSU-23-4V1 (Poland)";
+                description = "The ZSU-23-4V1 is a self-propelled anti-aircraft gun vehicle with four liquid-cooled 23 mm autocannons mounted on the front of a flat-shaped armoured turret. The chassis and suspension system shares many components borrowed directly from other Soviet-made vehicles. (Seating Capacity: 11)";
+                price = 440000;
+                stock = 20;
+				
+            };
+			class gm_ge_army_gepard1a1 {
+                displayName = "ZSU-23-4V1 (W.Germany)";
+                description = "The ZSU-23-4V1 is a self-propelled anti-aircraft gun vehicle with four liquid-cooled 23 mm autocannons mounted on the front of a flat-shaped armoured turret. The chassis and suspension system shares many components borrowed directly from other Soviet-made vehicles. (Seating Capacity: 11)";
                 price = 440000;
                 stock = 20;
 				
@@ -572,7 +961,139 @@
             tracking = 1;
             //items of this category:
 			
-
+			class gm_dk_army_Leopard1a3  {
+                displayName = "KPz 1A3 (Denmark)";
+                description = "Based on a modified KPz 1 chassis, the BPz 2A0 is fitted with a crane, winch and front-mounted dozer. Its primary mission is the recovery of damaged tracked vehicles. (Seating Capacity: 3)";
+                price = 500000;
+                stock = 40;
+				
+            };
+			class gm_gc_army_t55 {
+                displayName = "T-55 (E.Germany)";
+                description = "The T55 medium tank is one of the most internationally prolific pieces of tracked armor. It is currently in use by over a dozen countries and has seen action in military incursions from the invasion of Hungary in 1956 to the Arab wars with Israel in the late Sixties and early Seventies. (Seating Capacity: 3)";
+                price = 500000;
+                stock = 20;
+				
+            };
+			class gm_pl_army_t55 {
+                displayName = "T-55 (Poland)";
+                description = "The T55 medium tank is one of the most internationally prolific pieces of tracked armor. It is currently in use by over a dozen countries and has seen action in military incursions from the invasion of Hungary in 1956 to the Arab wars with Israel in the late Sixties and early Seventies. (Seating Capacity: 3)";
+                price = 500000;
+                stock = 20;
+				
+            };
+			class gm_gc_army_t55a {
+                displayName = "T-55A (E.Germany)";
+                description = "An improved version of the original T-55 tank, production of the T-55A first commenced in 1963. It is fitted with an anti-radiation liner and features a turret-mounted 12.7 mm heavy machine gun. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_pl_army_t55a {
+                displayName = "T-55A (Poland)";
+                description = "An improved version of the original T-55 tank, production of the T-55A first commenced in 1963. It is fitted with an anti-radiation liner and features a turret-mounted 12.7 mm heavy machine gun. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_gc_army_t55ak {
+                displayName = "T-55AK (E.Germany)";
+                description = "An improved version of the original T-55 tank, production of the T-55AK first commenced in 1963. It is fitted with an anti-radiation liner and features a turret-mounted 12.7 mm heavy machine gun. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_pl_army_t55ak {
+                displayName = "T-55AK (Poland)";
+                description = "An improved version of the original T-55 tank, production of the T-55AK first commenced in 1963. It is fitted with an anti-radiation liner and features a turret-mounted 12.7 mm heavy machine gun. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_gc_army_t55am2 {
+                displayName = "T-55AM2 (E.Germany)";
+                description = "An improved version of the original T-55 tank, production of the T-55AM2 first commenced in 1963. It is fitted with an anti-radiation liner and features a turret-mounted 12.7 mm heavy machine gun. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_gc_army_t55am2b {
+                displayName = "T-55AM2B (E.Germany)";
+                description = "An improved version of the original T-55 tank, production of the T-55AM2B first commenced in 1963. It is fitted with an anti-radiation liner and features a turret-mounted 12.7 mm heavy machine gun. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_ge_army_Leopard1a1 {
+                displayName = "KPz 1A1 (W.Germany)";
+                description = "Entering service with the Bundeswehr in 1965, the KPz 1A1 makes use of a new gun stabilisation system that enables it seamlessly fire on the move. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_ge_army_Leopard1a1a1 {
+                displayName = "KPz 1A1A1 (W.Germany)";
+                description = "Beginning in 1974 and up until 1977, all KPz 1A1s in West German service were upgraded to KPz 1A1A1 standard after being retrofitted with additional armour for the turret. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_ge_army_Leopard1a1a2 {
+                displayName = "KPz 1A1A2 (W.Germany)";
+                description = "Beginning in 1974 and up until 1977, all KPz 1A1s in West German service were upgraded to KPz 1A1A1 standard after being retrofitted with additional armour for the turret. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_ge_army_Leopard1a1a3 {
+                displayName = "KPz 1A1A3 (W.Germany)";
+                description = "Beginning in 1974 and up until 1977, all KPz 1A1s in West German service were upgraded to KPz 1A1A1 standard after being retrofitted with additional armour for the turret. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_ge_army_Leopard1a3 {
+                displayName = "KPz 1A3 (W.Germany)";
+                description = "Beginning in 1974 and up until 1977, all KPz 1A1s in West German service were upgraded to KPz 1A1A1 standard after being retrofitted with additional armour for the turret. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_ge_army_Leopard1a3a1 {
+                displayName = "KPz 1A3A1 (W.Germany)";
+                description = "Beginning in 1974 and up until 1977, all KPz 1A1s in West German service were upgraded to KPz 1A1A1 standard after being retrofitted with additional armour for the turret. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_ge_army_Leopard1a3a2 {
+                displayName = "KPz 1A3A2 (W.Germany)";
+                description = "Beginning in 1974 and up until 1977, all KPz 1A1s in West German service were upgraded to KPz 1A1A1 standard after being retrofitted with additional armour for the turret. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_ge_army_Leopard1a3a3 {
+                displayName = "KPz 1A3A3 (W.Germany)";
+                description = "Beginning in 1974 and up until 1977, all KPz 1A1s in West German service were upgraded to KPz 1A1A1 standard after being retrofitted with additional armour for the turret. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_ge_army_Leopard1a5 {
+                displayName = "KPz 1A5 (W.Germany)";
+                description = "Beginning in 1974 and up until 1977, all KPz 1A1s in West German service were upgraded to KPz 1A1A1 standard after being retrofitted with additional armour for the turret. Unlike all of its predecessors, the KPz 1A5's most significant upgrade lies in the inclusion of an automated Fire Control System. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
+			class gm_ge_army_Leopard1a1a4 {
+                displayName = "KPz 1A1A4 (W.Germany)";
+                description = "Beginning in 1974 and up until 1977, all KPz 1A1s in West German service were upgraded to KPz 1A1A1 standard after being retrofitted with additional armour for the turret. (Seating Capacity: 3)";
+                price = 525000;
+                stock = 20;
+				
+            };
 			class I_MBT_03_cannon_F {
                 displayName = "Leopard 2SG";
                 description = "The Leopard 2SG is the main battle tank used by Altian Armed Forces. A batch of a few dozen tanks and spare turrets were bought under-price from a South-European country facing economic collapse. Like similar MBTs of the era, the Kuma is armed with a 120mm cannon, 7.62mm coaxial machine gun and a remotely controlled 12.7mm HMG. The level of protection for the crew is also remarkable, thanks to additional armor layers. (Seating Capacity: 3)";
@@ -581,14 +1102,14 @@
 				
             };			
 			class O_MBT_02_cannon_F {
-                displayName = "T-100 Black Eagle";
+                displayName = "T-100 Black Eagle (Hex)";
                 description = "	A modernized version of the Russian T-95 MBT. The ongoing development of the new generation battle tank was restarted in 2016 thanks to revenues from the oil crisis. The new concept of battle tank is lower, lighter with increased maneuverability. The crew was moved from the turret to a more armored body of the tank resulting in increased survivability. The T-100 Varsuk comes with a standard 125 mm cannon. (Seating Capacity: 3)";
                 price = 575000;
                 stock = 20;
 				
             };
 			class O_T_MBT_02_cannon_ghex_F {
-                displayName = "T-100 Black Eagle";
+                displayName = "T-100 Black Eagle (Green Hex)";
                 description = "	A modernized version of the Russian T-95 MBT. The ongoing development of the new generation battle tank was restarted in 2016 thanks to revenues from the oil crisis. The new concept of battle tank is lower, lighter with increased maneuverability. The crew was moved from the turret to a more armored body of the tank resulting in increased survivability. The T-100 Varsuk comes with a standard 125 mm cannon. (Seating Capacity: 3)";
                 price = 575000;
                 stock = 20;
@@ -637,14 +1158,14 @@
 				
             };		
 			class O_MBT_04_command_F {
-                displayName = "T-14K Armata";
+                displayName = "T-14K Armata (Hex)";
                 description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers. Two main variants are currently in use - the standard T-140 and the T-140K, a 'commander' variant which exchanges the HMG for a 30mm autocannon. In addition, it also provides additional radios and sensors for platoon and company leaders. (Seating Capacity: 3)";
                 price = 675000;
                 stock = 20;
 				
             };
 			class O_T_MBT_04_command_F {
-                displayName = "T-14K Armata";
+                displayName = "T-14K Armata (Green Hex)";
                 description = "A licensed variant of the original Russian design operated by the elite of CSAT armored forces. The tank is equipped with a high velocity, high-accuracy 125mm cannon, a 7.62mm coaxial machinegun, and a 12.7mm HMG in a remote turret. The crew is located in an armored capsule in the hull, improving survivability and eliminating one of the weaknesses of older tank designs. The disadvantage is its technical complexity and cost, resulting in low production numbers. Two main variants are currently in use - the standard T-140 and the T-140K, a 'commander' variant which exchanges the HMG for a 30mm autocannon. In addition, it also provides additional radios and sensors for platoon and company leaders. (Seating Capacity: 3)";
                 price = 675000;
                 stock = 20;
@@ -699,6 +1220,24 @@
             tracking = 1;
             //items of this category:
 			
+			class gm_gc_airforce_l410t {
+                displayName = "L-410T (Transport) (Unarmed) (E.Germany)";
+                description = "The L-410 is a twin-engined, short-range transport plane designed in Czechoslovakia. First produced in 1969, the UVP model features improved performance in take-off and landing thanks to its enlarged wing and tail area. (Slingload: No) (Slingloadable: No)";
+                price = 300000;
+                stock = 20;
+            };
+			class gm_gc_airforce_l410s_salon {
+                displayName = "	L-410T Salon (VIP Transport) (Unarmed) (E.Germany)";
+                description = "The L-410 is a twin-engined, short-range transport plane designed in Czechoslovakia. First produced in 1969, the UVP model features improved performance in take-off and landing thanks to its enlarged wing and tail area. (Slingload: No) (Slingloadable: No)";
+                price = 300000;
+                stock = 20;
+            };
+			class gm_ge_airforce_do28d2 {
+                displayName = "Do 28 D2(Unarmed) (W.Germany)";
+                description = "As a STOL aircraft, Do 28s can handily take off or land on open highways and don't require airstrips to operate from. Although it can't ferry as many passengers as its rotary-wing counterpart, the Do 28 can reach its target quickly and paradrop its riders at greater altitudes. (Seating Capacity: 12) (Slingload: No) (Slingloadable: No)";
+                price = 300000;
+                stock = 20;
+            };
             class B_T_VTOL_01_infantry_F {
                 displayName = "V-44 X Blackfish (Unarmed)";
                 description = "This is a V-44 X Blackfish (Infantry Transport) is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
@@ -743,56 +1282,56 @@
 				
             };
 			class I_Plane_Fighter_04_F {
-                displayName = "JAS 39 Gripen";
+                displayName = "JAS 39 Gripen (Pylons Installed)";
                 description = "The Gripen is a fourth-generation, single-seat, single-engine, and all-weather tactical fighter jet. The aircraft was designed as a multi-role platform at an affordable cost, and unlike some of the larger air-superiority jets, it can also perform well in low-altitude flight. Despite its aging platform, the A-149 has still been upgraded with the newest sensors and weapons systems. (Slingload: No) (Slingloadable: No)";
                 price = 500000;
                 stock = 20;
 				
             };
 			class I_Plane_Fighter_03_dynamicLoadout_F {
-                displayName = "L-159 ALCA";
+                displayName = "L-159 ALCA (Pylons Installed)";
                 description = "The Aero L 159 ALCA (Advanced Light Combat Aircraft) is a Czech-built single-seat light multi-role combat aircraft designed for a variety of air-to-air, air-to-ground and reconnaissance missions. The aircraft is equipped with a radar for all-weather, day and night operations. (Slingload: No) (Slingloadable: No)";
                 price = 600000;
                 stock = 20;
 				
             };
 			class O_Plane_Fighter_02_F {
-                displayName = "	To-201 Shikra";
+                displayName = "	To-201 Shikra (Pylons Installed)";
                 description = "	The To-201 Shikra is a fifth-generation, single-seat, twin-engine, all-weather tactical fighter jet. The aircraft was designed by a CSAT and Russian joint syndicate with the goal to build a highly agile and maneuverable air-superiority fighter. (Slingload: No) (Slingloadable: No)";
                 price = 650000;
                 stock = 20;
 				
             };
 			class B_Plane_Fighter_01_F {
-                displayName = "F/A-181 Black Wasp II";
+                displayName = "F/A-181 Black Wasp II (Pylons Installed)";
                 description = "The Black Wasp is a twin-engined stealth fighter that uses a clipped delta wing design with a reverse sweep on the rear. (Slingload: No) (Slingloadable: No)";
                 price = 650000;
                 stock = 20;
 				
             };
 			class O_Plane_CAS_02_dynamicLoadout_F {
-                displayName = "Yak-130 (CAS)";
+                displayName = "Yak-130 (CAS) (Pylons Installed)";
                 description = "The Yak-130 is a new addition to CSAT air forces. An agile single-seat aircraft is used for close air support but can also take down air threats. It cannot carry as much payload as NATO's A-164 and has to rearm more often, but it can take-off from even the roughest terrain, not being as dependent on air bases or aircraft carriers. (Slingload: No) (Slingloadable: No)";
                 price = 650000;
                 stock = 20;       
 								
             };
 			class B_Plane_CAS_01_dynamicLoadout_F {
-                displayName = "A-10D Thunderbolt II (CAS)";
+                displayName = "A-10D Thunderbolt II (CAS) (Pylons Installed)";
                 description = "The A-10D Thunderbolt II is a twin turbofan-engined, ground attack jet that uses a cantilever low-wing monoplane wing design with a wide chord. It is meant to be used exclusively for ground attack and close air support. (Slingload: No) (Slingloadable: No)";
                 price = 650000;
                 stock = 20;       
 								
             }; 
 			class O_Plane_Fighter_02_Stealth_F {
-                displayName = "	To-201 Shikra (Stealth)";
+                displayName = "	To-201 Shikra (Stealth) (Pylons Installed)";
                 description = "	The To-201 Shikra is a fifth-generation, single-seat, twin-engine, all-weather tactical fighter jet. The aircraft was designed by a CSAT and Russian joint syndicate with the goal to build a highly agile and maneuverable air-superiority fighter. (Slingload: No) (Slingloadable: No)";
                 price = 700000;
                 stock = 20;
 				
             };
 			class B_Plane_Fighter_01_Stealth_F {
-                displayName = "	F/A-181 Black Wasp II (Stealth)";
+                displayName = "	F/A-181 Black Wasp II (Stealth) (Pylons Installed)";
                 description = "The Black Wasp is a twin-engined stealth fighter that uses a clipped delta wing design with a reverse sweep on the rear. (Slingload: No) (Slingloadable: No)";
                 price = 700000;
                 stock = 20;
@@ -811,13 +1350,48 @@
                 price = 50000;
                 stock = 50;
 						
-            };			
+            };
 			class B_Heli_Light_01_stripped_F {
                 displayName = "MH-9 Hummingbird (Stripped)";
                 description = "The Hummingbird is a five-bladed, single engine, rotary-wing light helicopter designed for both observation and light transport roles. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
-                price = 100000;
+                price = 75000;
                 stock = 50;
 				
+            };
+			class gm_ge_army_bo105m_vbh {
+                displayName = "VBH-1 (W.Germany)";
+                description = "The VBH-1 is a West German light utility helicopter that was developed in the early 1970s. Originally intended for civil aviation, it was eventually modified for military service due to its superb manoeuvrability. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
+                price = 100000;
+                stock = 50;
+						
+            };
+			class gm_ge_army_bo105p1m_vbh {
+                displayName = "	VBH-1A1 (W.Germany)";
+                description = "The VBH-1A1 is a West German light utility helicopter that was developed in the early 1970s. Originally intended for civil aviation, it was eventually modified for military service due to its superb manoeuvrability. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
+                price = 100000;
+                stock = 50;
+						
+            };
+			class gm_ge_army_bo105p1m_vbh_swooper {
+                displayName = "VBH-1 (Transport) (W.Germany)";
+                description = "The VBH-1 is a West German light utility helicopter that was developed in the early 1970s. Originally intended for civil aviation, it was eventually modified for military service due to its superb manoeuvrability. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
+                price = 100000;
+                stock = 50;
+						
+            };
+			class gm_ge_army_bo105p_pah1 {
+                displayName = "PAH-1 (Anti-Tank) (W.Germany)";
+                description = "The PAH-1 is a West German light utility helicopter that was developed in the early 1970s. Originally intended for civil aviation, it was eventually modified for military service due to its superb manoeuvrability. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
+                price = 125000;
+                stock = 50;
+						
+            };
+			class gm_ge_army_bo105p_pah1a1 {
+                displayName = "PAH-1A1 (Anti-Tank) (W.Germany)";
+                description = "The PAH-1 is a West German light utility helicopter that was developed in the early 1970s. Originally intended for civil aviation, it was eventually modified for military service due to its superb manoeuvrability. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
+                price = 125000;
+                stock = 50;
+						
             };
             class B_Heli_Light_01_F {
                 displayName = "MH-9 Hummingbird";
@@ -827,7 +1401,7 @@
 				
             };
 			 class B_Heli_Light_01_dynamicLoadout_F {
-                displayName = "AH-6 Little Bird";
+                displayName = "AH-6 Little Bird (Pylons Installed)";
                 description = "The Pawnee is a five-bladed, single engine, rotary-wing light helicopter designed for both observation and light attack roles. Unlike the Hummingbird, the Pawnee has two stub wings located on either side of the fuselage where the side benches that support dynamic loadouts. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
                 price = 200000;
                 stock = 25;
@@ -840,23 +1414,128 @@
                 stock = 25;
 				
             };
-			class I_Heli_light_03_dynamicLoadout_F {
-                displayName = "AW-159 Wildcat";
-                description = "The Wildcat is a four-bladed, twin-engined rotary-wing helicopter that is capable of serving in many roles. These range from providing air-to-ground fire support as a light gunship, ferrying troops and cargo into battle as a utility transport, and even as an anti-tank/ship helicopter when outfitted with guided missiles. (Yes, up to 2000 kg) (Slingloadable: No)";
-                price = 300000;
-                stock = 25;
-				
-            };
-			class O_Heli_Light_02_unarmed_F  {
+			class O_Heli_Light_02_unarmed_F {
                 displayName = "Ka-60 Kasatka (Unarmed)";
                 description = "The Kasatka is a four-bladed, rotary-wing light helicopter with a fantail designed for both aerial reconnaissance and light transport duties. (Yes, up to 2000 kg) (Slingloadable: No)";
                 price = 200000;
                 stock = 50;
 				
             };
-			class O_Heli_Light_02_dynamicLoadout_F  {
-                displayName = "Ka-60 Kasatka";
+			class I_Heli_light_03_dynamicLoadout_F {
+                displayName = "AW-159 Wildcat (Pylons Installed)";
+                description = "The Wildcat is a four-bladed, twin-engined rotary-wing helicopter that is capable of serving in many roles. These range from providing air-to-ground fire support as a light gunship, ferrying troops and cargo into battle as a utility transport, and even as an anti-tank/ship helicopter when outfitted with guided missiles. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class O_Heli_Light_02_dynamicLoadout_F {
+                displayName = "Ka-60 Kasatka (Pylons Installed)";
                 description = "The Kasatka is a four-bladed, rotary-wing light helicopter with a fantail designed for both aerial reconnaissance and light transport duties. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_pl_airforce_mi2ch {
+                displayName = "	Mi-2Ch (Smoke Generator) (Poland)";
+                description = "Manufactured in Poland, the Mi-2 was first prototyped in 1961 before it entered full production in 1965. Its uses a three-point, fixed, wheeled undercarriage over the original Soviet-made Mi-1 helicopter. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_gc_airforce_mi2p {
+                displayName = "Mi-2P (Transport) (E.Germany)";
+                description = "Manufactured in Poland, the Mi-2 was first prototyped in 1961 before it entered full production in 1965. Its uses a three-point, fixed, wheeled undercarriage over the original Soviet-made Mi-1 helicopter. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_pl_airforce_mi2p {
+                displayName = "Mi-2P (Transport) (Poland)";
+                description = "Manufactured in Poland, the Mi-2 was first prototyped in 1961 before it entered full production in 1965. Its uses a three-point, fixed, wheeled undercarriage over the original Soviet-made Mi-1 helicopter. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_gc_airforce_mi2sr {
+                displayName = "Mi-2SR(Search and Rescue) (E.Germany)";
+                description = "Manufactured in Poland, the Mi-2 was first prototyped in 1961 before it entered full production in 1965. Its uses a three-point, fixed, wheeled undercarriage over the original Soviet-made Mi-1 helicopter. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_pl_airforce_mi2sr {
+                displayName = "Mi-2SR(Search and Rescue) (Poland)";
+                description = "Manufactured in Poland, the Mi-2 was first prototyped in 1961 before it entered full production in 1965. Its uses a three-point, fixed, wheeled undercarriage over the original Soviet-made Mi-1 helicopter. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_gc_airforce_mi2t {
+                displayName = "Mi-2T (Transport) (E.Germany)";
+                description = "Manufactured in Poland, the Mi-2 was first prototyped in 1961 before it entered full production in 1965. Its uses a three-point, fixed, wheeled undercarriage over the original Soviet-made Mi-1 helicopter. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_pl_airforce_mi2t {
+                displayName = "Mi-2T (Transport) (Poland)";
+                description = "Manufactured in Poland, the Mi-2 was first prototyped in 1961 before it entered full production in 1965. Its uses a three-point, fixed, wheeled undercarriage over the original Soviet-made Mi-1 helicopter. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_gc_airforce_mi2urn {
+                displayName = "Mi-2URN (Unguided Rockets) (Pylons Installed) (E.Germany)";
+                description = "Manufactured in Poland, the Mi-2 was first prototyped in 1961 before it entered full production in 1965. Its uses a three-point, fixed, wheeled undercarriage over the original Soviet-made Mi-1 helicopter. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_pl_airforce_mi2urn {
+                displayName = "Mi-2URN (Unguided Rockets) (Pylons Installed) (Poland)";
+                description = "Manufactured in Poland, the Mi-2 was first prototyped in 1961 before it entered full production in 1965. Its uses a three-point, fixed, wheeled undercarriage over the original Soviet-made Mi-1 helicopter. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_pl_airforce_mi2urp {
+                displayName = "Mi-2URP (Anti Tank) (Pylons Installed) (Poland)";
+                description = "Manufactured in Poland, the Mi-2 was first prototyped in 1961 before it entered full production in 1965. Its uses a three-point, fixed, wheeled undercarriage over the original Soviet-made Mi-1 helicopter. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_pl_airforce_mi2urs {
+                displayName = "Mi-2URS (Anti Air) (Pylons Installed) (Poland)";
+                description = "Manufactured in Poland, the Mi-2 was first prototyped in 1961 before it entered full production in 1965. Its uses a three-point, fixed, wheeled undercarriage over the original Soviet-made Mi-1 helicopter. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_gc_airforce_mi2us {
+                displayName = "	Mi-2US (Quad PKT) (Pylons Installed) (E.Germany)";
+                description = "Manufactured in Poland, the Mi-2 was first prototyped in 1961 before it entered full production in 1965. Its uses a three-point, fixed, wheeled undercarriage over the original Soviet-made Mi-1 helicopter. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_pl_airforce_mi2us {
+                displayName = "	Mi-2US (Quad PKT) (Pylons Installed) (Poland)";
+                description = "Manufactured in Poland, the Mi-2 was first prototyped in 1961 before it entered full production in 1965. Its uses a three-point, fixed, wheeled undercarriage over the original Soviet-made Mi-1 helicopter. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_ge_army_ch53g {
+                displayName = "CH-53G (Transport) (W.Germany)";
+                description = "The CH-53G is an American-made heavy-lift transport that was chosen by the West German Army's Aviation Corps to replace the ageing H-21 and H-34G helicopters. (Yes, up to 2000 kg) (Slingloadable: No)";
+                price = 300000;
+                stock = 25;
+				
+            };
+			class gm_ge_army_ch53gs {
+                displayName = "CH-53GS (Transport) (W.Germany)";
+                description = "The CH-53G is an American-made heavy-lift transport that was chosen by the West German Army's Aviation Corps to replace the ageing H-21 and H-34G helicopters. (Yes, up to 2000 kg) (Slingloadable: No)";
                 price = 300000;
                 stock = 25;
 				
@@ -890,7 +1569,7 @@
 				
             };
 			class I_Heli_Transport_02_F {
-                displayName = "AW101 Merlin (Mobile Spawn)";
+                displayName = "AW101 Merlin (Unarmed)";
                 description = "The AW101 Merlin is a mobile spawn point. The Merlin is a conventionally designed, four-bladed, rotary-wing helicopter that is powered by three engines. (Slingload: Yes, up to 5000 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
@@ -902,13 +1581,13 @@
                 stock = 50;
             };
 			class O_Heli_Transport_04_F {
-                displayName = "Mi-290 Taru (Mobile Spawn)";
+                displayName = "Mi-290 Taru";
                 description = "This is a Mi-290 Taru is a mobile spawn point. The Taru is a twin-engine, heavy-lift utility helicopter that uses a distinctive coaxial rotor system which removes the need for a tail rotor. It is unique for its ability to utilise interchangeable mission pods, which grant the Mi-290 a diverse array of performable roles, from transporting troops into battle, to providing air medical services. (Slingload: Yes, up to 13500 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
             };
             class B_Heli_Transport_03_F {
-                displayName = "CH-67 Huron (Mobile Spawn)";
+                displayName = "CH-67 Huron";
                 description = "The CH-67 Huron is a mobile spawn point. The Huron is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
                 price = 400000;
                 stock = 50;
@@ -920,14 +1599,14 @@
                 stock = 50;
             };			
             class B_Heli_Attack_01_dynamicLoadout_F {
-                displayName = "AH-99 Comanchie";
+                displayName = "AH-99 Comanchie (Pylons Installed)";
                 description = "The Comanchie is a five-bladed, rotary-wing stealth helicopter designed for both armed reconnaissance and ground attack duties.(Slingload: No) (Slingloadable: No)";
                 price = 525000;
                 stock = 25;
 				
             }; 
 			class O_Heli_Attack_02_dynamicLoadout_F {
-                displayName = "Mi-48 Kajman";
+                displayName = "Mi-48 Kajman (Pylons Installed)";
                 description = "The Mi-48 is a large helicopter gunship with low-capacity troop transport capability. It uses a tandem cockpit layout, and has a distinctive coaxial rotor system that removes the need for a tail rotor.";
                 price = 575000;
                 stock = 25;

@@ -4,7 +4,7 @@ execVM "scripts\tutorial.sqf";
 execVM "scripts\wearAllUniforms.sqf";
 [player, 1, ["ACE_SelfActions", "ACE_Equipment"], [player,"aliveStore_2",container_2,aHelipad_2,"Combat Support Menu","Emergency ALiVE Combat Support Services"] call grad_lbm_fnc_addInteraction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "ACE_Equipment"], [player,"haloStore_2",container_2,aHelipad_2,"High-altitude Military Parachuting","Emergency SAC Services"] call grad_lbm_fnc_addInteraction] call ace_interact_menu_fnc_addActionToObject;
-[player, 1, ["ACE_SelfActions", "ACE_Equipment"], [player,"mercenaryStore_2",container_2,aHelipad_2,"Private Security Services Contractors For Hire","Emergency Constellis Holdings, Inc. Services"] call grad_lbm_fnc_addInteraction;
+[player, 1, ["ACE_SelfActions", "ACE_Equipment"], [player,"mercenaryStore_2",container_2,aHelipad_2,"Private Security Services Contractors For Hire","Emergency Constellis Holdings, Inc. Services"] call grad_lbm_fnc_addInteraction] call ace_interact_menu_fnc_addActionToObject;
 player setUnitTrait ["UAVHacker",true];
 player setUnitTrait ["explosiveSpecialist",true];
 player setUnitTrait ["engineer",true];

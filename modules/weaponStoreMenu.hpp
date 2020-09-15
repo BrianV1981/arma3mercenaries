@@ -182,14 +182,14 @@
             };
 			class gm_mp5sd3_blk {
                 displayName = "SG5SD3 9x19 mm Submachine Gun";
-                description = "The SG5SD3 is an integrally suppressed variant of the SG5A3. It is exclusively used by West German special operations units, Just like the SG5SD2, the SG5SD3 shares the same advantage of possessing an integrated suppressor which makes it a properly "silent" weapon. As with the former, it also suffers from a reduced muzzle velocity of only 288 m/s, The SG5SD3's main strength over the SG5SD2 is that its buttstock isn't fixed, lowering the inertia penalty it inflicts on the user by 25% (as with the non-suppressed SG5A3). There are otherwise no differences compared to regular SG5A3s.";
+                description = "The SG5SD3 is an integrally suppressed variant of the SG5A3. It is exclusively used by West German special operations units, Just like the SG5SD2, the SG5SD3 shares the same advantage of possessing an integrated suppressor which makes it a properly silent weapon. As with the former, it also suffers from a reduced muzzle velocity of only 288 m/s, The SG5SD3's main strength over the SG5SD2 is that its buttstock isn't fixed, lowering the inertia penalty it inflicts on the user by 25% (as with the non-suppressed SG5A3). There are otherwise no differences compared to regular SG5A3s.";
                 price = 4400;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
 			class 	gm_pm63_blk {
                 displayName = "PM-63 9x18 mm Submachine Gun";
-                description = "The PM-63 is a selective-fire, blowback-operated compact submachine gun chambered for the 9×18 mm cartridge, It can load from either 25- or 15-round box magazines, and can attain a fire rate of ~ 650 rounds per minute with a muzzle velocity of 320 m/s. The PM-63 cannot be fitted with optical sights but can be zeroed between two fixed distances of either 75 m or 150 m. It can also (optionally) mount the specially-designed "Safloryt" sound suppressor.";
+                description = "The PM-63 is a selective-fire, blowback-operated compact submachine gun chambered for the 9×18 mm cartridge, It can load from either 25- or 15-round box magazines, and can attain a fire rate of ~ 650 rounds per minute with a muzzle velocity of 320 m/s. The PM-63 cannot be fitted with optical sights but can be zeroed between two fixed distances of either 75 m or 150 m. It can also (optionally) mount the specially-designed Safloryt sound suppressor.";
                 price = 4500;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
@@ -714,7 +714,7 @@
             };
            class gm_mpikms72_brn {
                 displayName = "MPi KMS-72 7.62x39 mm";
-                description = "The MPi KMS-72 is a slightly modified configuration of its parent weapon, Unlike regular KM-72s, the KMS-72 utilises a side-folding stock as opposed to a fixed one. It is also just slightly lighter to carry, weighing ~ 3 "mass" less than the KM-72, There are no other functional differences compared to the baseline KM-72.";
+                description = "The MPi KMS-72 is a slightly modified configuration of its parent weapon, Unlike regular KM-72s, the KMS-72 utilises a side-folding stock as opposed to a fixed one. It is also just slightly lighter to carry, weighing ~ 3 mass less than the KM-72, There are no other functional differences compared to the baseline KM-72.";
                 price = 7500;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 				
@@ -1187,14 +1187,7 @@
                 price = 12000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-			class arifle_RPK12_lush_F {
-                displayName = "RPK-12 7.62 mm (Lush)";
-                description = "Intended to complement the baseline AK-12 rifle, the RPK-12 combines a longer barrel to help fulfil the weapon's role as a light machine gun, It is intended to primarily feed from its own 75-round drums, though the RPK-12 can also load 30-round rifle magazines if needed as well. Attachments are supported on its front and side rails along with the muzzle, though its usage of an integrated bipod eschews the need for bipod accessories.";
-                price = 12000;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };		
+            };	
 			class arifle_RPK12_arid_F {
                 displayName = "RPK-12 7.62 mm (Arid)";
                 description = "Intended to complement the baseline AK-12 rifle, the RPK-12 combines a longer barrel to help fulfil the weapon's role as a light machine gun, It is intended to primarily feed from its own 75-round drums, though the RPK-12 can also load 30-round rifle magazines if needed as well. Attachments are supported on its front and side rails along with the muzzle, though its usage of an integrated bipod eschews the need for bipod accessories.";
@@ -1945,7 +1938,7 @@
                 stock = 10000;                				
             };
 			class gm_10Rnd_762x54mmR_b_t_7t2_svd_blk {
-                displayName = "7.62 mm 10Rnd AP 7T2 Mag;
+                displayName = "7.62 mm 10Rnd AP 7T2 Mag;";
                 description = "Caliber: 7.62x54 mmR AP 7T2 Rounds: 10 Used in: SVD.";
                 price = 70;
                 stock = 10000;                				
