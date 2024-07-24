@@ -4,12 +4,14 @@
 
 
 
-* AI unit recruitment
+* AI Unit Recruitment
+* Kill Reward System
+* Store System
+* Persistent Wallet and Banking System
 * Persistent Player Inventory
 * Persistent Vehicles Garages
-* Persistent Fortification
-* Persistent Money System
-* Persistent Store System
+* Persistent Garage Vehicle Inventories
+* Persistent Fortification System (player made bases)
 
 and much more...
 
