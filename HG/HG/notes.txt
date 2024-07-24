@@ -1,0 +1,108 @@
+HG\Functions\Client\GearShop\fn_dialogOnLoadGear.sqf
+
+/*
+    Author - HoverGuy
+    Description - Called by the player to open and feed the dialog with data
+    Website - https://northernimpulse.com
+*/
+
+
+/////////////////////////////
+
+HG\Functions\Client\VehiclesShop\fn_addActions.sqf
+
+    This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+    To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/4.0/.
+*/
+
+
+//params["_vehicle"];
+
+//_vehicle addAction ["<img image='HG\UI\Icons\clear.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_EMPTY_VEHICLE")+"</t>",{[(_this select 0)] spawn HG_fnc_emptyVehicle},"",0,false,false,"",'(alive player) AND (alive _target) AND (((player distance _target) < 5.5) OR ((objectParent player) isEqualTo _target))'];
+
+//true;
+
+chang to:
+
+HG\Functions\Client\VehiclesShop\fn_addActions.sqf
+
+    This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+    To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/4.0/.
+*/
+
+
+//params["_vehicle"];
+
+//_vehicle addAction ["<img image='HG\UI\Icons\clear.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_EMPTY_VEHICLE")+"</t>",{[(_this select 0)] spawn HG_fnc_emptyVehicle},"",0,false,false,"",'(alive player) AND (alive _target) AND (((player distance _target) < 5.5) OR ((objectParent player) isEqualTo _target))'];
+
+//true;
+
+
+/////////////////////////////
+
+HG\Functions\Client\VehiclesShop\fn_vehicleColor.sqf
+
+/*
+    Author - HoverGuy
+    Description - Called by the player when the dialog is closed (with the dialog close button or by pressing escape)
+    Website - https://northernimpulse.com
+*/
+
+////////////////////////////
+
+HG\Functions\Client\VehiclesShop\fn_vehicleSelectionChanged.sqf
+
+/*
+    Author - HoverGuy
+    Description - Called when selection in listbox has changed
+    Website - https://northernimpulse.com
+*/
+
+////////////////////////////////////
+
+object name: garage_1
+
+call{act_0 = ["CustomAction 1",'Garage',"HG\UI\Icons\garage.paa",{true}] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;  
+ 
+act_0 = [(localize "STR_HG_GARAGE"),'Retrieve Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;  
+  
+act_0 = [(localize "STR_HG_GARAGE_PARK"),'Store Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_storeVehicleClient},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;act_0 = [(localize "STR_HG_DEALER"),'Enemy Vehicles Wanted',"HG\UI\Icons\car.paa",{["HG_DefaultDealer"] call HG_fnc_dialogOnLoadDealer},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction; 
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;}
+
+old garage 1:
+
+call{act_0 = ["CustomAction 1",'Garage',"HG\UI\Icons\garage.paa",{true}] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;  
+ 
+act_0 = [(localize "STR_HG_GARAGE"),'Retrieve Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;  
+  
+act_0 = [(localize "STR_HG_GARAGE_PARK"),'Store Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_storeVehicleClient},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;}
+
+object name: garage_2
+
+call{act_0 = ["CustomAction 1",'Garage',"HG\UI\Icons\garage.paa",{true}] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;  
+ 
+act_0 = [(localize "STR_HG_GARAGE"),'Retrieve Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;  
+  
+act_0 = [(localize "STR_HG_GARAGE_PARK"),'Store Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_storeVehicleClient},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;}
+
+old garage 2:
+
+call{act_0 = [(localize "STR_HG_DEALER"),'Sell Personal Vehicles',"HG\UI\Icons\car.paa",{["HG_DefaultDealer"] call HG_fnc_dialogOnLoadDealer},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction; 
+ 
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;}
+
+
+
+////nothing is working....
+this addAction["<img image='HG\UI\Icons\garage.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_GARAGE")+"</t>",{_this call HG_fnc_dialogOnLoadGarage},"HG_DefaultGarage",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
+this addAction["<img image='HG\UI\Icons\garage.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_GARAGE_PARK")+"</t>",{_this call HG_fnc_storeVehicleClient},"HG_DefaultGarage",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
+this addAction["<img image='HG\UI\Icons\car.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_DEALER")+"</t>",{_this call HG_fnc_dialogOnLoadDealer},"HG_DefaultDealer",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];

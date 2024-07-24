@@ -1,8 +1,6 @@
 /*
     Author - HoverGuy
-    Description - Spawned when a vehicle is loaded
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 params["_vehicle","_oldDir"];
     

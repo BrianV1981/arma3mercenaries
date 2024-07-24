@@ -4,10 +4,10 @@ class CfgGradFortifications {
     buildTimeFactor = 1; //Number - Higher means building takes longer.
 	demolishTimeFactor = 1; //Number - Higher means demolitions take longer.
 	packUpTimeFactor = 1; //Number - Higher means packing up takes longer.
-	playerInventorySize = 30; //Number - Size of the virtual inventory of units.
+	playerInventorySize = 50; //Number - Size of the virtual inventory of units.
 	vehicleInventorySizeFactor = 1; //Number - Size factor for vehicle inventories.
 	canDemolishDefault = 1; //(1/0) - Can anyone demolish fortifications by default?
-    canPackUpDefault = 1; // (1/0) - Can fortification owners pack up fortifications by default?
+    canPackUpDefault = 0; // (1/0) - Can fortification owners pack up fortifications by default?
     canStoreInLandVehicles = 1; // (1/0) - Can fortifications be stored in land vehicles?
     canStoreInShips = 1; //(1/0) - Can fortifications be stored in ships?
     canStoreInHelicopters = 1; //(1/0) - Can fortifications be stored in helicopters?

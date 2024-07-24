@@ -1,7 +1,6 @@
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 if(!isServer) exitWith {true};
 
@@ -33,7 +32,12 @@ if((getNumber(getMissionConfig "CfgClient" >> "enableKillReward")) isEqualTo 1) 
 					};
                 };
             } else {
-                [(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "killedReward")),0] remoteExecCall ["HG_fnc_addOrSubCash",_instigator,false];
+			    if(395180 in (getDLCs 1)) then
+				{
+				    [(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "killedReward")),_unit] call HG_fnc_moneyItem;
+				} else {
+                    [(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "killedReward")),0] remoteExecCall ["HG_fnc_addOrSubCash",_instigator,false];
+				};
 				if((getNumber(getMissionConfig "CfgClient" >> "enableXP")) isEqualTo 1) then
 				{
 					[(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "xpReward")),0] remoteExecCall ["HG_fnc_addOrSubXP",_instigator,false];

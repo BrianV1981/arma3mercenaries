@@ -32,55 +32,6 @@
                 price = 0;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-			class gm_lp1_blk {
-                displayName = "LP1 26.5 mm";
-                description = "The LP1 is a smoothbore flare gun designed to load 26.5 mm flare/smoke rounds, It has a muzzle velocity of 240 m/s and can attain a fire rate of up to 240 rounds per minute. The LP1 cannot be fitted with any optical sights or muzzle attachments.";
-                price = 0;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };									
-			class gm_p2a1_blk {
-                displayName = "P2A1 26.5 mm";
-                description = "The P2A1 is a single-shot, break action 26.5 mm flare gun, It is designed to load either individual flare/smoke or multi-star flare 26.5 mm rounds. It can attain a fire rate of up to 240 rounds per minute and has a muzzle velocity of 240 m/s. The P2A1 cannot be fitted with any optical sights or attachments.";
-                price = 0;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };			
-                        class hgun_esd_01_F {
-                displayName = "Spectrum Device";
-                description = "Spectrum Device is a small handheld transceiver with an electromagnetic spectrum analyser. Its standard grip is designed to fit a range of directional antennas with varying frequency ranges, One common use for these devices is for jamming drones. When fitted with other antennas however, it allows the operator to receive and identify a myriad of signals, as well as to record and transmit them.";
-                price = 1000;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };			
-			class hgun_Pistol_01_F {
-                displayName = "PM 9 mm";
-                description = "The PM is a semi-automatic handgun chambered to fire the 9×21 mm round, It loads from 10-round box magazines, and can attain a fire rate of up to 400 rounds per minute with a muzzle velocity of 315 m/s. Unlike other handguns, the PM is unable to mount any accessories or muzzle attachments.";
-                price = 0;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };			
-			class hgun_P07_F {
-                displayName = "P07 9 mm";
-                description = "The P07 is a polymer framed, double-action semi-automatic handgun chambered to fire the 9×21 mm round, It can load from either 16- or 30-round magazines (the latter shared by the PDW2000 submachine gun), and is able to reach a fire rate of up to 500 rounds per minute with a muzzle velocity of 410 m/s. The P07 does not support being fitted with any optical sights but can have a sound suppressor mnounted onto its muzzle.";
-                price = 500;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-			class gm_p1_blk {
-                displayName = "P1 9x19 mm";
-                description = "The P1 is a short-recoil operated, locked-breech pistol that uses a double-action/single-action trigger. It is chambered to fire the 9×19 mm round, It loads exclusively from 8-round magazines, and can attain a fire rate of up to 600 rounds per minute with a muzzle velocity of 240 m/s. It does not support being fitted with optical sights or muzzle attachments.";
-                price = 500;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-			class gm_pm_blk {
-                displayName = "PM 9x18 mm";
-                description = "The PM is a straight blowback action, frame-fixed barrel handgun that is chambered to fire the 9×18 mm round, It loads exclusively from 8-round magazines, and can achieve a fire rate of up to 600 rounds per minute with a muzzle velocity of 240 m/s. It cannot be fitted with optical sights, but its muzzle is able to mount sound suppressors.";
-                price = 500;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };			
 			class hgun_P07_khk_F {
                 displayName = "P07 9 mm (Khaki)";
@@ -149,48 +100,6 @@
                 displayName = "Standard Sting 9 mm Submachine Gun";
                 description = "The Sting is a selective-fire, blowback-operated submachine gun that is chambered to fire the the 9×21 mm round. It loads from 30-round translucent box magazines, and can attain a fire rate of up to 1,100 rounds per minute with a muzzle velocity of 370 m/s. The Sting can fit accessories onto its top and side rails and can also mount muzzle attachments.";
                 price = 4000;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-			class gm_mp2a1_blk {
-                displayName = "MP2A1 9x19 mm Submachine Gun";
-                description = "The MP2A1 is an open bolt, blowback-operated selective fire submachine gun chambered for the 9×19 mm round, It loads exclusively from 32-round box magazines, and can attain a fire rate of up to 750 rounds per minute with a muzzle velocity of 400 m/s. The MP2A1 doesn't support being fitted with optical scopes and is unable to mount sound suppressors, though its sights can be adjusted between two fixed distances of either 100 m or 200 m.";
-                price = 4000;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-			class gm_mp5a2_blk {
-                displayName = "SG5A2 9x19 mm Submachine Gun";
-                description = "The SG5A2 is a selective-fire 9×19 mm submachine gun that fires from a closed bolt and uses a roller-delayed blowback operation, It loads exclusively from 30-round magazines that can be either curved or straight-shaped. It can achieve a fire rate of up to 800 rounds per minute and has a muzzle velocity of 400 m/s. The SG5A2 cannot be suppressed, but can be fitted with riflescopes onto its accessory mount.";
-                price = 4100;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-			class gm_mp5a3_blk {
-                displayName = "SG5A3 9x19 mm Submachine Gun";
-                description = "An updated compact variant, the SG5A3 is exclusively used by West German special operations teams, It features some minor modifications to the SG5's furniture; notably, the fixed buttstock has been removed and replaced with a retractable metal stock, This modification reduces its inertia penalty by 25%, though it remains identical in all other aspects.";
-                price = 4200;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-			class gm_mp5sd2_blk {
-                displayName = "SG5SD2 9x19 mm Submachine Gun";
-                description = "The SG5SD2 is an integrally suppressed version of the baseline SG5A2 SMG. It remains unused by any of the factions, Thanks to its integrated sound suppressor, the SG5SD2 is perfect for stealth missions and retains the same positive (and negative) traits of the baseline SG5A2, However, it should be noted that a consequence of its design is that it comes at the cost of muzzle velocity; all rounds fired out of the SG5SD2 have even lower velocities of only 288 m/s, This significantly reduces its effective firing range to well under ~ 125 metres. As such, it should not be employed for anything outside of close quarters.";
-                price = 4300;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-			class gm_mp5sd3_blk {
-                displayName = "SG5SD3 9x19 mm Submachine Gun";
-                description = "The SG5SD3 is an integrally suppressed variant of the SG5A3. It is exclusively used by West German special operations units, Just like the SG5SD2, the SG5SD3 shares the same advantage of possessing an integrated suppressor which makes it a properly silent weapon. As with the former, it also suffers from a reduced muzzle velocity of only 288 m/s, The SG5SD3's main strength over the SG5SD2 is that its buttstock isn't fixed, lowering the inertia penalty it inflicts on the user by 25% (as with the non-suppressed SG5A3). There are otherwise no differences compared to regular SG5A3s.";
-                price = 4400;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-			class 	gm_pm63_blk {
-                displayName = "PM-63 9x18 mm Submachine Gun";
-                description = "The PM-63 is a selective-fire, blowback-operated compact submachine gun chambered for the 9×18 mm cartridge, It can load from either 25- or 15-round box magazines, and can attain a fire rate of ~ 650 rounds per minute with a muzzle velocity of 320 m/s. The PM-63 cannot be fitted with optical sights but can be zeroed between two fixed distances of either 75 m or 150 m. It can also (optionally) mount the specially-designed Safloryt sound suppressor.";
-                price = 4500;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };		
@@ -320,27 +229,6 @@
 			tracking = 1;
             //items of this category:
 			
-            class gm_mpiak74n_brn {
-                displayName = "MPi AK-74 5.45x39 mm";
-                description = "The AK-74 is a gas operated, selective-fire assault rifle chambered to fire the 5.45×39 mm cartridge, It primarily loads from 30-round plastic magazines but can also accept 45-round curved magazines used by the LMG RPK-74. The AK-74 can attain a fire rate of up to ~ 652 rounds per minute and has a muzzle velocity of 900 m/s. It can be fitted with dovetail-compatible scopes/night sights as well as bayonets, but isn't able to mount any suppressors.";
-                price = 4900;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count
-            };
-            class gm_mpiaks74n_brn {
-                displayName = "MPi AKS-74 5.45x39 mm";
-                description = "The MPi AKS-74 is a modified AK-74 rifle with a side folding metal stock, Compared to regular AK-74 rifles, it is slightly lighter to wield since it no longer uses a fixed stock like its parent weapon. For close quarters, its inertia penalty has also been reduced by ~ 16%, In all other aspects, it remains unchanged from the basic AK-74 rifle.";
-                price = 4900;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count
-            };
-            class gm_mpiaks74nk_brn {
-                displayName = "MPi AKS-74K 5.45x39 mm";
-                description = "The MPi AKS-74K is another derivative of the AK-74 rifle but is designed with a carbine-style configuration and utilises a shorter barrel, As with AKS-74s, it has a ~ 16% lower inertia penalty thanks to the side folding metal stock. In addition, it is even lighter to carry due to the compensator's removal, However, one consequence of its shortened barrel is that the AKS-74K suffers from a sharply lowered muzzle velocity of 738 m/s, effectively cutting its range down to less than ~ 400 metres.";
-                price = 4900;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count
-            };		
             class arifle_SDAR_F {
                 displayName = "SDAR 5.56 mm";
                 description = "The SDAR is a selective-fire, bullpup assault rifle that is chambered to fire the 5.56×45 mm NATO round. It can be used on both land and underwater. It accepts all types of 5.56 mm NATO ammunition and can fire them while the weapon is submerged, but only the dual purpose magazines are capable of inflicting damage underwater. The supercavitating rounds have an effective range of approximately 30 metres. Beyond that distance, they will lose most of their velocity and become unable to hit any targets.";
@@ -439,27 +327,6 @@
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count
             };
-            class gm_c7a1_oli {
-                displayName = "C7A1 5.56 mm";
-                description = "The C7A1 is a selective-fire assault rifle with a direct impingement operation that is chambered to fire the 5.56×45 mm NATO round, It feeds from 30-round STANAG magazines but can also load older 20-round box magazines utilised by the American-made M16A1. It can attain a fire rate of up to ~ 652 rounds per minute (800 on full auto) and retains a muzzle velocity of 960 m/s. The C7A1 supports being fitted with optical sights and can mount muzzle attachments.";
-                price = 6300;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count
-            };
-            class gm_m16a1_blk {
-                displayName = "	M16A1 5.56 mm";
-                description = "The M16A1 is a gas operated, selective-fire assault rifle chambered for the 5.56×45 mm round, It primarily feeds from 20-round magazines but can also load 30-rounders used by its newer counterpart. It can attain a fire rate of up to ~ 652 rounds per minute (800 on full auto) and retains a muzzle velocity of 960 m/s. The M16A1 cannot be fitted with any optical sights but can mount sound suppressors.";
-                price = 6300;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count
-            };
-            class gm_m16a2_blk {
-                displayName = "M16A2 5.56 mm";
-                description = "The M16A2 is an upgraded model of the M16A1 rifle, It loads from 30-round STANAG magazines but can also feed from 20-rounders shared with the M16A1. It has the same rate of fire and muzzle velocity of the M16A1. It cannot be fitted with optical sights but can mount muzzle attachments, For all intents and purposes, the M16A2 is simply a modified M16A1 that cannot fire on full auto.";
-                price = 6300;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count
-            };		
             class arifle_CTAR_blk_F {
                 displayName = "CAR-95 5.8 mm (Black)";
                 description = "The CAR-95 is the baseline variant of the CAR-95 family. Along with its sub-variants, it is chambered to fire the 5.8×42 mm round, It loads from 30-round curved magazines and can attain a fire rate of roughly ~ 652 rounds per minute, with a muzzle velocity of 930 m/s. The CAR-95 can fit accessories on both its top and side rails and can also mount muzzle attachments.";
@@ -691,34 +558,6 @@
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };
-           class gm_akm_wud {
-                displayName = "AKM 7.62x39 mm";
-                description = "The AKM is a selective-fire, gas operated assault rifle with a rotating bolt that is chambered to fire the 7.62×39 mm round, It loads from 30-round curved magazines but can optionally load 75-round drums as well. It can attain a fire rate of up to 600 rounds per minute and retains a muzzle velocity of 715 m/s. The AKM does not support being fitted with any accessories other than night sights, but can mount bayonets onto the lug beneath the barrel.";
-                price = 7500;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 				
-            };
-           class gm_akmn_wud {
-                displayName = "AKMN 7.62x39 mm";
-                description = "The AKMN is statistically identical to the baseline AKM, Aesthetically, it's similar to the AKM but the sole difference is that it has been modified with a dovetail mount integrated onto the receiver, This allows the user to attach riflescopes like the ZFK 4x25 or any other compatible optic, rendering the AKM slightly more useful in longer ranged firefights, There are otherwise no functional or statistical differences to the regular AKM rifle.";
-                price = 7500;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 				
-            };
-           class gm_mpikm72_brn {
-                displayName = "MPi KM-72 7.62x39 mm";
-                description = "The KM-72 is a selective-fire assault rifle chambered to fire the 7.62×39 mm cartridge. It uses a gas operation with a rotating bolt, It primarily feeds from 30-round curved magazines but can also load 75-round drums utilised by the LMG RPK. It has a muzzle velocity of 715 m/s, and can reach fire rates of up to 600 rounds per minute. The KM-72 can be fitted with either optical scopes or night sights and bayonets, but is unable to mount any sound suppressors.";
-                price = 7500;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 				
-            };
-           class gm_mpikms72_brn {
-                displayName = "MPi KMS-72 7.62x39 mm";
-                description = "The MPi KMS-72 is a slightly modified configuration of its parent weapon, Unlike regular KM-72s, the KMS-72 utilises a side-folding stock as opposed to a fixed one. It is also just slightly lighter to carry, weighing ~ 3 mass less than the KM-72, There are no other functional differences compared to the baseline KM-72.";
-                price = 7500;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 				
-            };		
            class arifle_AKM_FL_F {
                 displayName = "AKM 7.62 mm";
                 description = "The AKS is simply a modified variant of the AKM assault rifle that uses a folding stock as opposed to a fixed wooden stock. The AKS is chambered to fire the same 7.62×39 mm round as its parent weapon, Like the AKM, it loads from 30-round curved steel magazines and has the same rate of fire and muzzle velocity.";
@@ -754,20 +593,6 @@
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 				
             };
-            class gm_g3a3_oli {
-                displayName = "G3A3 7.62 mm";
-                description = "The G3A3 is a selective-fire battle rifle that uses a roller-delayed blowback operating system. It is chambered to fire the ubiquitous 7.62×51 mm NATO round, It loads exclusively from 20-round box magazines designed specifically for use with the G3 series. It can achieve a fire rate of up to ~ 550 rounds per minute with a muzzle velocity of 800 m/s. The G3A3 utilises a claw mount and can be fitted with riflescopes and sound suppressors.";
-                price = 8000;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 				
-            };
-            class gm_g3a4_oli {
-                displayName = "G3A4 7.62 mm";
-                description = "The G3A4 is an updated variant of the baseline G3A3 rifle. It is visually similar to the G3A3 but has a collapsible stock as opposed to the standard fixed one, It possesses the same statistics as its parent weapon; the only difference stems from the ~ 14% reduced inertia penalty, which makes it less punishing to wield in close quarters, Otherwise, there are no differences compared to the regular G3A3 rifle.";
-                price = 8000;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 				
-            };		
             class arifle_AK12_F {
                 displayName = "AK-12 7.62 mm";
                 description = "The AK-12 is a gas operated, selective-fire assault rifle with a long stroke piston. It is chambered to fire the 7.62×39 mm round, It can load either 30-round polymer magazines designed specifically for the AK-12, or older curved steel magazines used by the AKM. It retains a variable rate of fire that ranges from 600 rounds per minute up to 1,000 rounds on burst mode. The AK-12 has a muzzle velocity of 730 m/s and can accept attachments on all three of its rails; top, side, underbarrel and muzzle.";
@@ -865,13 +690,6 @@
                 price = 8000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };			
-            class gm_svd_wud {
-                displayName = "SVD 7.62x54 mm Marksman Rifle";
-                description = "The SVD is a semi-automatic, gas-operated sniper/marksman rifle with a short-stroke gas-piston system. It is chambered to fire the 7.62×54 mm round, It loads exclusively from 10-round curved magazines, and can attain a fire rate of up to 600 rounds per minute with a muzzle velocity of 715 m/s. The SVD can only be fitted with the PSO-1 scope but can have bayonets mounted beneath the muzzle (suppressors are not supported).";
-                price = 9300;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 				
             };
             class srifle_DMR_06_hunter_F {
                 displayName = "Mk14 7.62 mm (Marksman rifle Classic)";
@@ -1013,20 +831,6 @@
 			tracking = 1;
             //items of this category:
 			
-            class gm_hmgpkm_prp {
-                displayName = "HMG PKM 7.62x54 mm";
-                description = "The HMG PKM is a gas operated, air-cooled, belt fed machine gun that fires from an open bolt. It is chambered to fire the 7.62×54 mm cartridge, It loads from 100-round belt boxes, and can attain a fire rate of ~ 652 rounds per minute with a muzzle velocity of 825 m/s. The HMG PKM cannot be fitted with optical sights or muzzle attachments, but features an integrated folding bipod and can be zeroed up to a maximum range of 1000 m.";
-                price = 13000;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 			
-	    };
-            class gm_mg3_blk {
-                displayName = "MG3 7.62x51 mm";
-                description = "The MG3 is a short recoil operated and striker-fired general-purpose machine gun with a roller-locked bolt carrier, firing from a closed bolt. It is chambered for the 7.62×51 mm NATO cartridge, It loads exclusively from 120-round belt boxes, and can attain a fire rate of up to 1,200 rounds per minute with a muzzle velocity of 820 m/s. The MG3 does not support being fitted with optical sights or muzzle attachments, but can be zeroed up to a maximum range of 1200 m. It also features an integrated folding bipod.";
-                price = 13000;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 			
-	    };		
             class MMG_01_hex_F {
                 displayName = "Navid 9.3 mm (Hex)";
                 description = "The Navid is a gas operated medium machine gun that is chambered to fire the 9.3×64mm round, It feeds from 150-round belts stored in cloth pouches, and has a variable rate of fire depending on its current fire mode that can attain anywhere from just 705 rounds per minute up to an impressive 1,500 rounds per minute (on burst fire). It has a muzzle velocity of 785 m/s, and can fit accessories onto its top, side, and underbarrel rails. Unlike the Zafir LMG used by Mediterranean CSAT forces, the muzzle also supports being mounted with attachments.";
@@ -1069,13 +873,6 @@
 			tracking = 1;
             //items of this category:
 			
-            class gm_lmgrpk74n_prp {
-                displayName = "LMG RPK-74 5.45x39 mm";
-                description = "The LMG RPK-74 is a selective-fire, gas operated light support weapon that is chambered to fire the 5.45×39 mm round, It loads from 45-round curved magazines but can also be fed with 30-round plastic magazines used by the AK-74 assault rifle. It can attain a fire rate of up to ~ 652 rounds per minute with a muzzle velocity of 945 m/s. The LMG RPK-74 does not support being fitted with suppressors or bayonets, but can mount optical scopes/night sights and utilises an integrated bipod.";
-                price = 9000;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count 				
-            };
             class arifle_SPAR_02_blk_F {
                 displayName = "SPAR-16S 5.56 mm (Black)";
                 description = "The SPAR-16 is a short-stroke, gas piston-operated assault rifle with a rotating bolt that forms the baseline model of the SPAR-16 family. Along with its sub-variants, it is chambered to fire the 5.56×45 mm NATO round, It loads from 30-round STANAG magazines, and can attain a fire rate of up to 857 rounds per minute with a muzzle velocity of 800 m/s. The SPAR-16 accepts accessories on its top, side and underbarrel rails and can also be fitted with muzzle attachments.";
@@ -1156,20 +953,6 @@
 			class LMG_Mk200_black_F {
                 displayName = "Mk200 6.5 mm (Black)";
                 description = "The Mk200 is a belt fed, gas operated fully-automatic light machine gun that is chambered to fire 6.5×39 mm caseless rounds, It feeds from 200-round linked belts stored in soft pouches, and can attain a fire rate of up to 800 rounds per minute, The Mk200 can accept accessories on its side, top and underbarrel rails, and can also mount attachments onto its muzzle.";
-                price = 12000;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-			class gm_lmgrpk_prp {
-                displayName = "LMG RPK 7.62x39 mm";
-                description = "The LMG RPK is a selective-fire, gas operated, air-cooled light machine gun. It fires from a closed rotating bolt, and is chambered for the 7.62×39 mm cartridge, It primarily feeds from 75-round drums but can also (optionally) load 30-round curved steel magazines used by other 7.62 mm-chambered assault rifles. It can attain a fire rate of up to 600 rounds per minute with a muzzle velocity of 750.75 m/s. The LMG RPK cannot be fitted with sound suppressors, but supports optical scopes/night sights and also features an integrated bipod.";
-                price = 12000;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-			class 	gm_rpk_wud {
-                displayName = "RPK 7.62x39 mm";
-                description = "The RPK is simply the Polish military's variant of the original Soviet-made RPK machine gun, It shares the exact same statistics and handling, though it is generally fed with newer 7.62 mm ammunition rather than the older M43 rounds used by East German forces, There are no other differences in capability compared to the regular LMG RPK.";
                 price = 12000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
@@ -1258,90 +1041,13 @@
 			tracking = 1;
             //items of this category:			
 	
-			class gm_p2a1_launcher_blk {
-                displayName = "P2A1 Experimental";
-                description = "26.5cm Potato Cannon.";
-                price = 0;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-		    class gm_rpg7_wud {
-                displayName = "RPG-7 Rocket Launcher 40 mm";
-                description = "The RPG-7 is an unguided, shoulder-fired, anti-tank launcher, It exclusively loads 40 mm grenades fitted with high-explosive anti-tank (HEAT) warheads. The RPG-7 can be fitted with the PGO-7V scope, but features an adjustable (non-magnified) ironsight which can be zeroed up to a maximum of 400 m and rises in 100 m increments.";
-                price = 4800
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };		
-		    class gm_rpg7_prp {
-                displayName = "RPG-7 Rocket Launcher 40 mm (Plum)";
-                description = "The RPG-7 is an unguided, shoulder-fired, anti-tank launcher, It exclusively loads 40 mm grenades fitted with high-explosive anti-tank (HEAT) warheads. The RPG-7 can be fitted with the PGO-7V scope, but features an adjustable (non-magnified) ironsight which can be zeroed up to a maximum of 400 m and rises in 100 m increments.";
-                price = 4800
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
 		    class launch_RPG7_F {
                 displayName = "RPG-7 Rocket Launcher 40 mm";
                 description = "The RPG-7V is a portable, reusable, unguided, shoulder-launched, anti-tank, rocket-propelled grenade launcher, It is capable of being loaded with two types of grenade rounds: the regular PG-7V and the larger PG-7VR. Both have the same effective ranges; only the PG-7VR has a higher damage output difference. It cannot be fitted with optics and only relies on a traditional ironsight.";
                 price = 5000;
                 stock = 1000;                
                 code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-		    class gm_pzf44_2_oli {
-                displayName = "PzF44-2 Rocket Launcher 44x537mm";
-                description = "The PzF 44-2 is an unguided, shoulder-fired anti-tank launcher, It is designed to load 44 mm grenades fitted with high-explosive anti-tank (HEAT) warheads. The launcher does not feature an integrated optic and the ironsight cannot be zeroed, but it can be fitted with the Fero Z 2x17 sight.";
-                price = 5500;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-		    class gm_pzf44_2_des {
-                displayName = "PzF44-2 Rocket Launcher 44x537mm (Tan)";
-                description = "The PzF 44-2 is an unguided, shoulder-fired anti-tank launcher, It is designed to load 44 mm grenades fitted with high-explosive anti-tank (HEAT) warheads. The launcher does not feature an integrated optic and the ironsight cannot be zeroed, but it can be fitted with the Fero Z 2x17 sight.";
-                price = 5500;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-		    class gm_pzf44_2_win {
-                displayName = "PzF44-2 Rocket Launcher 44x537mm (Winter)";
-                description = "The PzF 44-2 is an unguided, shoulder-fired anti-tank launcher, It is designed to load 44 mm grenades fitted with high-explosive anti-tank (HEAT) warheads. The launcher does not feature an integrated optic and the ironsight cannot be zeroed, but it can be fitted with the Fero Z 2x17 sight.";
-                price = 5500;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
             };		
-		    class gm_9k32m_oli {
-                displayName = "9K32M Strela-2 70mm";
-                description = "The 9K32M Strela-2 is a fire-and-forget, infrared-guided surface-to-air missile launcher, It fires 70mm missiles fitted with high-explosive (HE) warheads. The launcher features a simple ironsight for aiming and has a maximum lock-on range of 4,500 metres.";
-                price = 6500
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            };
-			class gm_fim43_oli {
-                displayName = "FIM-43 Redeye 70";
-                description = "The FIM-43 Redeye is a fire-and-forget, infrared-guided surface-to-air missile launcher, It launches 70 mm missiles fitted with high-explosive (HE) warheads. The sight unit provides a 1.5x magnified view and the launcher itself has a maximum lock-on range of 4,500 metres.";
-                price = 6500
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            }		
-			class gm_pzf84_oli {
-                displayName = "PzF84 84 mm";
-                description = "The PzF 84 is a multi-purpose, unguided shoulder-fired recoilless rifle, It is capable of loading 84 mm rounds that can be fitted with high-explosive anti-tank (HEAT) or harmless illumination warheads. The launcher does not feature an integrated optic but has an ironsight (that cannot be zeroed). It can however, be fitted with the Fero Z 2x17 scope in lieu of the launcher's ironsight.";
-                price = 7800;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            }
-			class gm_pzf84_des {
-                displayName = "PzF84 84 mm (Tan)";
-                description = "The PzF 84 is a multi-purpose, unguided shoulder-fired recoilless rifle, It is capable of loading 84 mm rounds that can be fitted with high-explosive anti-tank (HEAT) or harmless illumination warheads. The launcher does not feature an integrated optic but has an ironsight (that cannot be zeroed). It can however, be fitted with the Fero Z 2x17 scope in lieu of the launcher's ironsight.";
-                price = 7800;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            }
-			class gm_pzf84_win {
-                displayName = "PzF84 84 mm (Winter)";
-                description = "The PzF 84 is a multi-purpose, unguided shoulder-fired recoilless rifle, It is capable of loading 84 mm rounds that can be fitted with high-explosive anti-tank (HEAT) or harmless illumination warheads. The launcher does not feature an integrated optic but has an ironsight (that cannot be zeroed). It can however, be fitted with the Fero Z 2x17 scope in lieu of the launcher's ironsight.";
-                price = 7800;
-                stock = 1000;                
-                code = player setAmmo [primaryWeapon player, 1000000]; //full mag with default ammo count  
-            }		
 			class launch_MRAWS_green_F {
                 displayName = "MAAWS Mk4 Mod 1 (Green) 84 mm";
                 description = "The Carl Gustav is a portable, anti-tank recoilless rifle. It is designed to launch unguided 84 mm rockets, It can only load rockets fitted with high-explosive anti-tank (HEAT) warheads, and has a maximum effective range of approximately 600 metres. The Carl Gustav is fitted with an optical sight that has a magnification strength of 1.5x.";
@@ -1522,91 +1228,7 @@
             displayName = "Ammunition";
             kindOf = "Items";
 			tracking = 1;
-
-			class gm_1Rnd_265mm_flare_single_wht_gc {
-                displayName = "26.5 mm Flare (White)";
-                description = "Caliber: 26.5 mm flare (White) Rounds : 1 Used in: LP1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_flare_single_grn_gc {
-                displayName = "26.5 mm Flare (Green)";
-                description = "Caliber: 26.5 mm flare (Green) Rounds : 1 Used in: LP1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_flare_single_red_gc {
-                displayName = "26.5 mm Flare (Red)";
-                description = "Caliber: 26.5 mm flare (Red) Rounds : 1 Used in: LP1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_flare_multi_red_gc {
-                displayName = "26.5 mm Flare (Multi Red)";
-                description = "Caliber: 26.5 mm flare (Multi Red) Rounds : 3 Used in: LP1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_flare_para_yel_DM16 {
-                displayName = "26.5 mm Flare DM16 (Yellow)";
-                description = "Caliber: 26.5 mm flare (Yellow) Rounds : 1 Used in: P2A1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_flare_single_wht_DM15 {
-                displayName = "26.5 mm Flare DM15 (White)";
-                description = "Caliber: 26.5 mm flare (White) Rounds : 1 Used in: P2A1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_flare_single_red_DM13 {
-                displayName = "26.5 mm Flare DM13 (Red)";
-                description = "Caliber: 26.5 mm flare (Red) Rounds : 1 Used in: P2A1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_flare_single_grn_DM11 {
-                displayName = "26.5 mm Flare DM11 (Green)";
-                description = "Caliber: 26.5 mm flare (Green) Rounds : 1 Used in: P2A1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_flare_single_yel_DM10 {
-                displayName = "26.5 mm Flare DM10 (Yellow)";
-                description = "Caliber: 26.5 mm flare (Yellow) Rounds : 1 Used in: P2A1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_flare_multi_wht_DM25 {
-                displayName = "26.5 mm Flare DM25 (Multi White)";
-                description = "Caliber: 26.5 mm flare (Multi White) Rounds : 4 Used in: P2A1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_flare_multi_red_DM23 {
-                displayName = "26.5 mm Flare DM23 (Multi Red)";
-                description = "Caliber: 26.5 mm flare (Multi Red) Rounds : 4 Used in: P2A1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_flare_multi_grn_DM21 {
-                displayName = "26.5 mm Flare DM21 (Multi Green)";
-                description = "Caliber: 26.5 mm flare (Multi Green) Rounds : 4 Used in: P2A1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_flare_multi_yel_DM20 {
-                displayName = "26.5 mm Flare DM20 (Multi Yellow)";
-                description = "Caliber: 26.5 mm flare (Multi Yellow) Rounds : 4 Used in: P2A1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_flare_multi_nbc_DM47 {
-                displayName = "26.5 mm Flare DM47 (NBC)";
-                description = "Caliber: 26.5 mm flare (NBC) Rounds : 3 Used in: P2A1";
-                price = 0;
-                stock = 10000;                
-            };		
+		
 			class 6Rnd_GreenSignal_F {
                 displayName = "6Rnd Signal Cylinder (Green)";
                 description = "Caliber: 10 mm signal flare slugs (Green) Rounds : 6 Used in: Starter Pistol";
@@ -1617,31 +1239,7 @@
                 displayName = "	6Rnd Signal Cylinder (Red)";
                 description = "Caliber: 10 mm signal flare slugs (Red) Rounds : 6 Used in: Starter Pistol";
                 price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_84x245mm_ILLUM_DM16_carlgustaf {
-                displayName = "84 mm Illum DM16";
-                description = "Caliber: 84x245 mm flare DM16 rocket. Uses a illumination flare round., Used in: Pzf84";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_8Rnd_9x19mm_B_DM11_p1_blk {
-                displayName = "9 mm 8Rnd Ball DM11 Mag";
-                description = "Caliber: 9x19 mm Ball DM11 Rounds: 8 Used in: P1";
-                price = 12;
-                stock = 10000;                
-            };
-			class gm_8Rnd_9x19mm_B_DM51_p1_blk {
-                displayName = "9 mm 8Rnd Ball DM51 Mag";
-                description = "Caliber: 9x19 mm Ball DM51 Rounds: 8 Used in: P1";
-                price = 12;
-                stock = 10000;                
-            };
-			class gm_8Rnd_9x18mm_B_pst_pm_blk {
-                displayName = "9 mm 8Rnd Ball PST Mag";
-                description = "Caliber: 9x18 mm Ball PST Rounds: 8 Used in: PM";
-                price = 12;
-                stock = 10000;                
+                stock = 10000;                         
             };		
 			class 10Rnd_9x21_Mag {
                 displayName = "9 mm 10Rnd Mag";
@@ -1649,48 +1247,12 @@
                 price = 0;
                 stock = 10000;                
             };
-			class gm_15Rnd_9x18mm_b_pst_pm63_blk {
-                displayName = "9 mm 15Rnd Ball PST Mag";
-                description = "Caliber: 9x18 mm Ball PST Rounds: 15 Used in: PM-63";
-                price = 20;
-                stock = 10000;                
-            };
-			class gm_25Rnd_9x18mm_b_pst_pm63_blk {
-                displayName = "9 mm 25Rnd Ball PST Mag";
-                description = "Caliber: 9x18 mm Ball PST Rounds: 25 Used in: PM-63";
-                price = 33;
-                stock = 10000;                
-            };		
 			class 16Rnd_9x21_red_Mag {
                 displayName = "9 mm 16Rnd Reload Tracer (Red) Mag";
                 description = "Caliber: 9x21 mm Tracers (Red) Rounds: 16 Used in: PDW2000, P07, ROOK-40";
                 price = 20;
                 stock = 10000;                
-            };
-			class gm_30Rnd_9x19mm_b_DM51_mp5_blk {
-                displayName = "9 mm 30Rnd Ball DM 51 Mag";
-                description = "Caliber: 9x19 mm Ball DM51 Rounds: 30 Used in: SG5";
-                price = 40;
-                stock = 10000;                
-            };
-			class gm_30Rnd_9x19mm_b_DM11_mp5_blk {
-                displayName = "9 mm 30Rnd Ball DM 11 Mag";
-                description = "Caliber: 9x19 mm Ball DM11 Rounds: 30 Used in: SG5";
-                price = 40;
-                stock = 10000;                
-            };
-			class gm_30Rnd_9x19mm_b_DM51_mp5a3_blk {
-                displayName = "9 mm 30Rnd Ball DM 51 Mag";
-                description = "Caliber: 9x19 mm Ball DM51 Rounds: 30 Used in: SG5";
-                price = 40;
-                stock = 10000;                
-            };
-			class gm_30Rnd_9x19mm_b_DM11_mp5a3_blk {
-                displayName = "9 mm 30Rnd Ball DM 11 Mag";
-                description = "Caliber: 9x19 mm Ball DM11 Rounds: 30 Used in: SG5";
-                price = 40;
-                stock = 10000;                
-            };		
+            };	
 			class 30Rnd_9x21_Red_Mag {
                 displayName = "9 mm 30Rnd Reload Tracer (Red) Mag";
                 description = "Caliber: 9x21 mm Tracers (Red) Rounds: 30 Used in: PDW2000, P07, Rook-40.";
@@ -1703,18 +1265,6 @@
                 price = 0;
                 stock = 10000;                
             };
-			class gm_32Rnd_9x19mm_B_DM51_mp2_blk {
-                displayName = "	9 mm 32Rnd Ball DM51 Mag";
-                description = "Caliber: 9x19 mm Ball DM51 Rounds: 32 Used in: MP2.";
-                price = 44;
-                stock = 10000;                
-            };
-			class gm_32Rnd_9x19mm_B_DM11_mp2_blk {
-                displayName = "	9 mm 32Rnd Ball DM11 Mag";
-                description = "Caliber: 9x19 mm Ball DM11 Rounds: 32 Used in: MP2.";
-                price = 44;
-                stock = 10000;                
-            };		
 			class 6Rnd_45ACP_Cylinder {
                 displayName = ".45 ACP 6Rnd Cylinder";
                 description = "Caliber: .45 ACP Rounds: 6 Used in: Zubr.";
@@ -1757,90 +1307,18 @@
                 price = 150;
                 stock = 10000; 
             };
-			class gm_30Rnd_545x39mm_B_7N6_ak74_prp {
-                displayName = "5.45 mm 30Rnd Ball 7N6 Mag";
-                description = "Caliber: 5.45x39 mm Ball 7N6 Rounds: 30 Used in: AK-74.";
-                price = 150;
-                stock = 10000;                
-            };
-			class gm_30Rnd_545x39mm_B_T_7T3_ak74_prp {
-                displayName = "5.45 mm 30Rnd Ball-T 7T3 Mag";
-                description = "Caliber: 5.45x39 mm Ball-T 7T3 Rounds: 30 Used in: AK-74.";
-                price = 150;
-                stock = 10000;                
-            };
-			class gm_30Rnd_545x39mm_B_7N6_ak74_org {
-                displayName = "5.45 mm 30Rnd Ball 7N6 Mag";
-                description = "Caliber: 5.45x39 mm Ball 7N6 Rounds: 30 Used in: AK-74.";
-                price = 150;
-                stock = 10000;                
-            };
-			class gm_30Rnd_545x39mm_B_T_7T3_ak74_org {
-                displayName = "5.45 mm 30Rnd Ball-T 7T3 Mag";
-                description = "Caliber: 5.45x39 mm Ball-T 7T3 Rounds: 30 Used in: AK-74.";
-                price = 150;
-                stock = 10000;                
-            };
-			class gm_45Rnd_545x39mm_B_7N6_ak74_prp {
-                displayName = "5.45 mm 45Rnd Ball 7N6 Mag";
-                description = "Caliber: 5.45x39 mm Ball 7N6 Rounds: 45 Used in: AK-74.";
-                price = 225;
-                stock = 10000;                
-            };
-			class gm_45Rnd_545x39mm_B_T_7T3_ak74_prp {
-                displayName = "5.45 mm 45Rnd Ball-T 7T3 Mag";
-                description = "Caliber: 5.45x39 mm Ball-T 7T3 Rounds: 45 Used in: AK-74.";
-                price = 225;
-                stock = 10000;                
-            };
-			class gm_45Rnd_545x39mm_B_7N6_ak74_org {
-                displayName = "5.45 mm 45Rnd Ball 7N6 Mag";
-                description = "Caliber: 5.45x39 mm Ball 7N6 Rounds: 45 Used in: AK-74.";
-                price = 225;
-                stock = 10000;                
-            };
-			class gm_45Rnd_545x39mm_B_T_7T3_ak74_org {
-                displayName = "5.45 mm 45Rnd Ball-T 7T3 Mag";
-                description = "Caliber: 5.45x39 mm Ball-T 7T3 Rounds: 45 Used in: AK-74.";
-                price = 225;
-                stock = 10000;                
-            };				
 			class 50Rnd_570x28_SMG_03 {
                 displayName = "5.7 mm 50Rnd ADR-97 Mag";
                 description = "Caliber: 5.7x28 mm Rounds: 50 Used in: ADR-97, ADR-97C, ADR-97C TR.";
                 price = 80;
                 stock = 10000;                
             };			
-			class gm_20Rnd_556x45mm_b_M855_stanag_gry {
-                displayName = "5.56 mm 20Rnd Ball M855 Mag";
-                description = "Caliber: 5.56x45 mm Ball M855 Rounds: 20 Used in: M16, C7.";
-                price = 65;
-                stock = 10000;                
-            };
-			class gm_20Rnd_556x45mm_b_t_M856_stanag_gry {
-                displayName = "5.56 mm 20Rnd Ball-T M856 Mag";
-                description = "Caliber: 5.56x45 mm Ball-T M856 Rounds: 20 Used in: M16, C7.";
-                price = 65;
-                stock = 10000;                
-            };		
 			class 20Rnd_556x45_UW_mag {
                 displayName = "SDAR 5.56 mm 20Rnd Dual Purpose Mag";
                 description = "Caliber: 5.56x45 mm Dual Purpose (under water) Rounds: 20 Used in: SDAR.";
                 price = 65;
                 stock = 10000;                
             };
-			class gm_30Rnd_556x45mm_b_M855_stanag_gry {
-                displayName = "5.56 mm 30Rnd Ball M855 Mag";
-                description = "Caliber: 5.56x45 mm Ball M855 Rounds: 30 Used in: M16, C7.";
-                price = 100;
-                stock = 10000; 
-            };
-			class gm_30Rnd_556x45mm_b_t_M856_stanag_gry {
-                displayName = "5.56 mm 30Rnd Ball-T M856 Mag";
-                description = "Caliber: 5.56x45 mm Ball-T M856 Rounds: 30 Used in: M16, C7.";
-                price = 100;
-                stock = 10000; 
-            };		
 			class 30Rnd_556x45_Stanag_Tracer_Red {
                 displayName = "5.56 mm 30rnd Tracer (Red) Mag";
                 description = "Caliber: 5.56x45 mm STANAG Tracers (Red) Rounds: 30 Used in: TRG-20, TRG-21/EGLM, Mk20/C/EGLM, SDAR, SPAR-16/S.";
@@ -1925,120 +1403,18 @@
                 price = 1000;
                 stock = 10000;                
             };
-			class gm_10Rnd_762x54mmR_ap_7n1_svd_blk {
-                displayName = "7.62 mm 10Rnd AP 7N1 Mag";
-                description = "Caliber: 7.62x54 mmR AP 7N1 Rounds: 10 Used in: SVD.";
-                price = 70;
-                stock = 10000;                				
-            };
-			class gm_10Rnd_762x54mmR_api_7bz3_svd_blk {
-                displayName = "7.62 mm 10Rnd AP 7BZ3 Mag";
-                description = "Caliber: 7.62x54 mmR AP 7BZ3 Rounds: 10 Used in: SVD.";
-                price = 70;
-                stock = 10000;                				
-            };
-			class gm_10Rnd_762x54mmR_b_t_7t2_svd_blk {
-                displayName = "7.62 mm 10Rnd AP 7T2 Mag;";
-                description = "Caliber: 7.62x54 mmR AP 7T2 Rounds: 10 Used in: SVD.";
-                price = 70;
-                stock = 10000;                				
-            };		
 			class 10Rnd_Mk14_762x51_Mag {
                 displayName = "7.62 mm 10rnd Mk14 Mag (Classic)";
                 description = "Caliber: 7.62x51 mm Rounds: 10 Used in: Mk18 ABR, Mk-I EMR, Mk14, SPAR-17.";
                 price = 70;
                 stock = 10000;                				
             };
-			class gm_20Rnd_762x51mm_B_T_DM21_g3_blk {
-                displayName = "7.62 mm 20Rnd Ball-T DM21 Mag";
-                description = "Caliber: 7.62x51 mm Ball-T DM21 Rounds: 20 Used in: G3, G8.";
-                price = 140;
-                stock = 10000;                				
-            };
-			class gm_20Rnd_762x51mm_B_T_DM21A1_g3_blk {
-                displayName = "7.62 mm 20Rnd Ball-T DM21A1 Mag";
-                description = "Caliber: 7.62x51 mm Ball-T DM21A1 Rounds: 20 Used in: G3, G8.";
-                price = 140;
-                stock = 10000;                				
-            };
-			class gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk {
-                displayName = "7.62 mm 20Rnd Ball-T DM21A2 Mag";
-                description = "Caliber: 7.62x51 mm Ball-T DM21A2 Rounds: 20 Used in: G3, G8.";
-                price = 140;
-                stock = 10000;                				
-            };
-			class gm_20Rnd_762x51mm_B_DM111_g3_blk {
-                displayName = "7.62 mm 20Rnd Ball DM111 Mag";
-                description = "Caliber: 7.62x51 mm Ball DM111 Rounds: 20 Used in: G3, G8.";
-                price = 140;
-                stock = 10000;                				
-            };
-			class gm_20Rnd_762x51mm_B_DM41_g3_blk {
-                displayName = "7.62 mm 20Rnd Ball DM41 Mag";
-                description = "Caliber: 7.62x51 mm Ball DM41 Rounds: 20 Used in: G3, G8.";
-                price = 140;
-                stock = 10000;                				
-            };
-			class gm_20Rnd_762x51mm_AP_DM151_g3_blk {
-                displayName = "7.62 mm 20Rnd AP DM151 Mag";
-                description = "Caliber: 7.62x51 mm AP DM151 Rounds: 20 Used in: G3, G8.";
-                price = 140;
-                stock = 10000;                				
-            };
-			class gm_20Rnd_762x51mm_B_T_DM21_g3_des {
-                displayName = "7.62 mm 20Rnd Ball-T DM21 Mag";
-                description = "Caliber: 7.62x51 mm Ball-T DM21 Rounds: 20 Used in: G3, G8.";
-                price = 140;
-                stock = 10000;                				
-            };
-			class gm_20Rnd_762x51mm_B_T_DM21A1_g3_des {
-                displayName = "7.62 mm 20Rnd Ball-T DM21A1 Mag";
-                description = "Caliber: 7.62x51 mm Ball-T DM21A1 Rounds: 20 Used in: G3, G8.";
-                price = 140;
-                stock = 10000;                				
-            };
-			class gm_20Rnd_762x51mm_B_T_DM21A2_g3_des {
-                displayName = "7.62 mm 20Rnd Ball-T DM21A2 Mag";
-                description = "Caliber: 7.62x51 mm Ball-T DM21A2 Rounds: 20 Used in: G3, G8.";
-                price = 140;
-                stock = 10000;                				
-            };
-			class gm_20Rnd_762x51mm_B_DM111_g3_des {
-                displayName = "7.62 mm 20Rnd Ball DM111 Mag";
-                description = "Caliber: 7.62x51 mm Ball DM111 Rounds: 20 Used in: G3, G8.";
-                price = 140;
-                stock = 10000;                				
-            };
-			class gm_20Rnd_762x51mm_B_DM41_g3_des {
-                displayName = "7.62 mm 20Rnd Ball DM41 Mag";
-                description = "Caliber: 7.62x51 mm Ball DM41 Rounds: 20 Used in: G3, G8.";
-                price = 140;
-                stock = 10000;                				
-            };
-			class gm_20Rnd_762x51mm_AP_DM151_g3_des {
-                displayName = "7.62 mm 20Rnd AP DM151 Mag";
-                description = "Caliber: 7.62x51 mm AP DM151 Rounds: 20 Used in: G3, G8.";
-                price = 140;
-                stock = 10000;                				
-            };		
 			class 20Rnd_762x51_Mag {
                 displayName = "7.62 mm 20Rnd Mag";
                 description = "Caliber: 7.62x51 mm Rounds: 20 Used in: Mk18 ABR, Mk-I EMR, Mk14, SPAR-17.";
                 price = 140;
                 stock = 10000;                				
-            };			
-			class gm_30Rnd_762x39mm_B_M43_ak47_blk {
-                displayName = "7.62 mm 30Rnd Ball M43 Mag";
-                description = "Caliber: 7.62x39 mm Ball M43 Rounds: 30 Used in: AK-47, RPK.";
-                price = 225;
-                stock = 10000;                				
             };
-			class gm_30Rnd_762x39mm_B_T_M43_ak47_blk {
-                displayName = "7.62 mm 30Rnd Ball-T M43 Mag";
-                description = "Caliber: 7.62x39 mm Ball-T M43 Rounds: 30 Used in: AK-47, RPK.";
-                price = 225;
-                stock = 10000;                				
-            };		
 			class 30Rnd_762x39_AK12_Mag_F {
                 displayName = "7.62 mm 30rnd AK12 Mag";
                 description = "Caliber: 7.62x51 mm Rounds: 30 Used in: AK-12, AK-12 GL, AKM.";
@@ -2063,18 +1439,6 @@
                 price = 225;
                 stock = 10000;                				
             };
-			class gm_75Rnd_762x39mm_B_M43_ak47_blk {
-                displayName = "7.62 mm 75Rnd Ball M43 Mag";
-                description = "Caliber: 7.62x39 mm Ball M43 Rounds: 75 Used in: AK-47, RPK.";
-                price = 580;
-                stock = 10000;                				
-            };
-			class gm_75Rnd_762x39mm_B_T_M43_ak47_blk {
-                displayName = "7.62 mm 75Rnd Ball-T M43 Mag";
-                description = "Caliber: 7.62x39 mm Ball-T M43 Rounds: 75 Used in: AK-47, RPK.";
-                price = 580;
-                stock = 10000;                				
-            };		
 			class 75rnd_762x39_AK12_Mag_F {
                 displayName = "7.62 mm 75rnd AK12 Mag";
                 description = "Caliber: 7.62x39 mm Rounds: 75 Used in: RPK-12, AK-12, AK-12 GL, AKM.";
@@ -2093,36 +1457,6 @@
                 price = 580;
                 stock = 10000;                				
             };
-			class gm_100Rnd_762x54mm_B_T_T46_pk_grn {
-                displayName = "7.62 mm 100Rnd Ball-T T46 Mag";
-                description = "Caliber: 7.62x54 mm Ball-T Rounds: 100 Used in: PK.";
-                price = 775;
-                stock = 10000;                				
-            };
-			class gm_100Rnd_762x54mm_API_B32_pk_grn {
-                displayName = "7.62 mm 100Rnd API B32 Mag";
-                description = "Caliber: 7.62x54 mm API Rounds: 100 Used in: PK.";
-                price = 775;
-                stock = 10000;                				
-            };		
-			class gm_120Rnd_762x51mm_B_T_DM21_mg3_grn {
-                displayName = "7.62 mm 120Rnd Ball-T DM21 Mag";
-                description = "Caliber: 7.62x51 mm Ball-T DM21 Rounds: 120 Used in: MG3.";
-                price = 930;
-                stock = 10000;                				
-            };
-			class gm_120Rnd_762x51mm_B_T_DM21A1_mg3_grn {
-                displayName = "7.62 mm 120Rnd Ball-T DM21A1 Mag";
-                description = "Caliber: 7.62x51 mm Ball-T DM21A1 Rounds: 120 Used in: MG3.";
-                price = 930;
-                stock = 10000;                				
-            };
-			class gm_120Rnd_762x51mm_B_T_DM21A2_mg3_grn {
-                displayName = "7.62 mm 120Rnd Ball-T DM21A2 Mag";
-                description = "Caliber: 7.62x51 mm Ball-T DM21A2 Rounds: 120 Used in: MG3.";
-                price = 930;
-                stock = 10000;                				
-            };		
 			class 150Rnd_762x54_Box_Tracer {
                 displayName = "7.62 mm 150Rnd Tracer (Green) Box";
                 description = "Caliber: 7.62x39 mm Tracers (Green) Rounds: 150 Used in: Zafir.";
@@ -2201,66 +1535,12 @@
                 price = 150;
                 stock = 10000;                
             };
-			class gm_1Rnd_265mm_smoke_single_yel_gc {
-                displayName = "26.5 mm Smoke (Yellow)";
-                description = "Caliber: 26.5 mm Smoke (Yellow) Rounds : 1 Used in: LP1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_smoke_single_blu_gc {
-                displayName = "26.5 mm Smoke (Blue)";
-                description = "Caliber: 26.5 mm Smoke (Blue) Rounds : 1 Used in: LP1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_smoke_single_blk_gc {
-                displayName = "26.5 mm Smoke (Black)";
-                description = "Caliber: 26.5 mm Smoke (Black) Rounds : 1 Used in: LP1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_smoke_single_yel_DM19 {
-                displayName = "26.5 mm Smoke DM19 (Yellow)";
-                description = "Caliber: 26.5 mm Smoke (Yellow) Rounds : 1 Used in: P2A1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_smoke_single_org_DM22 {
-                displayName = "26.5 mm Smoke DM22 (Orange)";
-                description = "Caliber: 26.5 mm Smoke (Blue) Rounds : 1 Used in: P2A1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_265mm_smoke_single_vlt_DM24 {
-                displayName = "	26.5 mm Smoke DM24 (Purple)";
-                description = "Caliber: 26.5 mm Smoke (Black) Rounds : 1 Used in: P2A1";
-                price = 0;
-                stock = 10000;                
-            };
-			class gm_1Rnd_2650mm_potato_dm11 {
-                displayName = "26.5 mm 1Rnd POTATO DM11";
-                description = "Caliber: Potato";
-                price = 0;
-                stock = 10000;                
-            };		
-			class gm_1Rnd_40mm_heat_pg7v_rpg7 {
-                displayName = "40 mm HEAT PG-7V";
-                description = "Caliber: 40 mm HEAT PG-7V Rounds : 1 Used in: RPG7";
-                price = 100;
-                stock = 10000;                
-            };		
 			class RPG7_F {
                 displayName = "PG-7VM HEAT Grenade 40mm";
                 description = "PG-7VM HEAT 40mm Anti-Tank Grenade";
                 price = 100;
                 stock = 10000;                
             };
-			class gm_1Rnd_44x537mm_heat_dm32_pzf44_2 {
-                displayName = "44 mm HEAT DM32";
-                description = "Caliber: 44x537 mm HEAT DM32 Rounds : 1 Used in: Pzf44-2";
-                price = 150;
-                stock = 10000;                
-            };		
 			class RPG32_F {
                 displayName = "RPG-32 Rocket";
                 description = "105 mm PG-42V high-explosive anti-tank (HEAT)";
@@ -2272,31 +1552,7 @@
                 description = "72 mm TBG-42V high-explosive (HE) grenades";
                 price = 200;
                 stock = 10000;                
-            };			
-			class gm_1Rnd_84x245mm_heat_t_DM12_carlgustaf {
-                displayName = "84 mm HEAT-T DM12";
-                description = "84x245 mm HEAT DM12 rocket. Uses a high-explosive (HEAT) warhead, Used in: Pzf84";
-                price = 200;
-                stock = 10000;                
             };
-			class gm_1Rnd_84x245mm_heat_t_DM12a1_carlgustaf {
-                displayName = "84 mm HEAT-T DM12A1";
-                description = "84x245 mm HEAT DM12A1 rocket. Uses a high-explosive (HEAT) warhead, Used in: Pzf84";
-                price = 200;
-                stock = 10000;                
-            };
-			class gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf {
-                displayName = "84 mm HEAT-T DM22";
-                description = "84x245 mm HEAT DM22 rocket. Standard high-explosive anti-tank (HEAT) warhead, Used in: Pzf84";
-                price = 500;
-                stock = 10000;                
-            };
-			class gm_1Rnd_84x245mm_heat_t_DM32_carlgustaf {
-                displayName = "84 mm HEAT-T DM32";
-                description = "84x245 mm HEAT DM32 rocket. Alternate high-explosive anti-tank (HEAT) warhead, Used in: Pzf84";
-                price = 500;
-                stock = 10000;                
-            };		
 			class MRAWS_HEAT_F {
                 displayName = "MAAWS HEAT 75 Round";
                 description = "84 mm standard issue rocket. Uses a high-explosive anti-tank (HEAT) warhead, 75 Round";
@@ -2351,30 +1607,6 @@
                 price = 500;
                 stock = 10000;                
             };
-			class gm_handgrenade_frag_rgd5 {
-                displayName = "Fragmentation Grenade RGD5";
-                description = "Fragmentation Grenade RGD5";
-                price = 100;
-                stock = 10000;                
-            };		
-			class gm_handgrenade_frag_dm51 {
-                displayName = "Fragmentation Grenade DM51";
-                description = "Fragmentation Grenade DM51";
-                price = 100;
-                stock = 10000;                
-            };
-			class gm_handgrenade_frag_dm51a1 {
-                displayName = "Fragmentation Grenade DM51A1";
-                description = "Fragmentation Grenade DM51A1";
-                price = 100;
-                stock = 10000;                
-            };
-			class gm_handgrenade_pracfrag_dm58 {
-                displayName = "Practice Fragmentation Grenade DM58";
-                description = "Practice Fragmentation Grenade DM58";
-                price = 100;
-                stock = 10000;                
-            };		
 			class HandGrenade {
                 displayName = "RGO Grenade";
                 description = "RGO Defensive Grenade";
@@ -2393,24 +1625,6 @@
                 price = 75;
                 stock = 10000;                
             };
-			class gm_handgrenade_conc_dm51 {
-                displayName = "Concussion Grenade DM51";
-                description = "Concussion Grenade DM51";
-                price = 75;
-                stock = 10000;                
-            };
-			class gm_handgrenade_conc_dm51a1 {
-                displayName = "Concussion Grenade DM51A1";
-                description = "Concussion Grenade DM51A1";
-                price = 75;
-                stock = 10000;                
-            };
-			class gm_handgrenade_pracconc_dm58 {
-                displayName = "Practice Concussion Grenade DM58";
-                description = "Practice Concussion Grenade DM58";
-                price = 75;
-                stock = 10000;                
-            };		
 			class ACE_M84 {
                 displayName = "M84 Stun Grenade";
                 description = "M84 Stun Grenade	";
@@ -2422,49 +1636,19 @@
                 description = "CTS 7290 9-bang Flash Grenade";
                 price = 75;
                 stock = 10000;                
-            };			
-			class gm_smokeshell_grn_dm21 {
-                displayName = "Smoke Grenade DM21 (Green)";
-                description = "Hand smoke grenade";
-                price = 50;
-                stock = 10000;                
             };
-			class gm_smokeshell_red_dm23 {
-                displayName = "Smoke Grenade DM23 (Red)";
-                description = "Hand smoke grenade";
-                price = 50;
-                stock = 10000;                
-            };
-			class gm_smokeshell_yel_dm26 {
-                displayName = "Smoke Grenade DM26 (Yellow)";
-                description = "Hand smoke grenade";
-                price = 50;
-                stock = 10000;                
-            };
-			class gm_smokeshell_org_dm32 {
-                displayName = "Smoke Grenade DM32 (Orange)";
-                description = "Hand smoke grenade";
-                price = 50;
-                stock = 10000;                
-            };
-			class gm_smokeshell_wht_dm25 {
-                displayName = "Smoke Grenade DM25 (White)";
-                description = "Hand smoke grenade";
-                price = 50;
-                stock = 10000;                
-            };		
 			class SmokeShell {
                 displayName = "Hand Smoke Grenade";
                 description = "Hand smoke grenade";
                 price = 50;
                 stock = 10000;                
-            };		
+            };
 			class ACE_HandFlare_White {
                 displayName = "M127A1 Hand Held Signal (White)";
                 description = "M127A1 Hand Held Signal (White)";
                 price = 50;
                 stock = 10000;                
-            };			
+            };
 			class B_IR_Grenade {
                 displayName = "IR Grenade [NATO]";
                 description = "IR grenade [NATO]";
@@ -2476,7 +1660,7 @@
                 description = "IR Grenade [AAF]";
                 price = 40;
                 stock = 10000;                
-            };			
+            };
         };
 		class Eammo {
             displayName = "Plantable Explosives";
@@ -2591,18 +1775,6 @@
             kindOf = "Items";
 			tracking = 1;
 
-			class gm_zvn64_rear_ak {
-                displayName = "ZVN-64 Rear Sight";
-                description = "The ZVN-64 is intended exclusively for use in night fighting situations. It is mounted directly on the existing rear sight/base of the front sight and emits a pale white light in darkness (AKM/AKMN/LMG RPK-74/LMG RPK/MPi AK-74/MPi AKS-74/MPi AKS-74K/MPi KM-72/MPi KMS-72/RPK).";
-                price = 100;
-                stock = 10000;                
-	};
-			class gm_zvn64_front {
-                displayName = "ZVN-64/69 Front Post";
-                description = "The ZVN-64 is intended exclusively for use in night fighting situations. It is mounted directly on the existing rear sight/base of the front sight and emits a pale white light in darkness (AKM/AKMN/LMG RPK-74/LMG RPK/MPi AK-74/MPi AKS-74/MPi AKS-74K/MPi KM-72/MPi KMS-72/RPK).";
-                price = 100;
-                stock = 10000;                
-	};		
 			class optic_MRD {
                 displayName = "MRD";
                 description = "MRD Close Range.";
@@ -2716,85 +1888,7 @@
                 description = "Riflescope Magnification: 200m to 300m fixed, 1x-2x";
                 price = 300;
                 stock = 10000;                
-	    };		
-			class gm_feroz2x17_pzf44_2_blk {
-                displayName = "Fero Z 2x17";
-                description = "optical scope Magnification: 200m fixed, 2x (PzF 44-2)";
-                price = 325;
-                stock = 10000;                
 	    };
-			class gm_feroz2x17_pzf44_2_des {
-                displayName = "Fero Z 2x17 (Tan)";
-                description = "optical scope Magnification: 200m fixed, 2x (PzF 44-2)";
-                price = 325;
-                stock = 10000;                
-	    };
-			class gm_feroz2x17_pzf44_2_win {
-                displayName = "Fero Z 2x17 (Winter)";
-                description = "optical scope Magnification: 200m fixed, 2x (PzF 44-2)";
-                price = 325;
-                stock = 10000;                
-	    };		
-			class gm_feroz2x17_pzf84_blk {
-                displayName = "Fero Z 2x17";
-                description = "optical scope Magnification: 200m fixed, 2x (PzF84)";
-                price = 325;
-                stock = 10000;                
-	    };
-			class gm_feroz2x17_pzf84_des {
-                displayName = "Fero Z 2x17 (Tan)";
-                description = "optical scope Magnification: 200m fixed, 2x (PzF84)";
-                price = 325;
-                stock = 10000;                
-	    };
-			class gm_feroz2x17_pzf84_win {
-                displayName = "Fero Z 2x17 (Winter)";
-                description = "optical scope Magnification: 200m fixed, 2x (PzF84)";
-                price = 325;
-                stock = 10000;                
-	    };		
-			class gm_pgo7v_blk {
-                displayName = "PGO-7V";
-                description = "optical scope Magnification: 2.8X (RPG-7)";
-                price = 350;
-                stock = 10000;                
-	    };		
-			class gm_feroz24_blk {
-                displayName = "Fero Z-24";
-                description = "low-powered riflescope Magnification: 100m to 600m, 4x (G3A3/G3A4/GV M/75/GV M/75 Carbine/SG5A2/SG5A3)";
-                price = 375;
-                stock = 10000;                
-	    };
-			class gm_feroz24_des {
-                displayName = "Fero Z-24 (Tan)";
-                description = "low-powered riflescope Magnification: 100m to 600m, 4x (G3A3/G3A4/GV M/75/GV M/75 Carbine/SG5A2/SG5A3)";
-                price = 375;
-                stock = 10000;                
-	    };		
-			class gm_c79a1_blk {
-                displayName = "C79A1";
-                description = "telescopic sight Magnification: 200m to 800m, 3.4X (GV M-95/ C7A1)";
-                price = 400;
-                stock = 10000;                
-	    };
-			class gm_c79a1_oli {
-                displayName = "C79A1(Olive)";
-                description = "telescopic sight Magnification: 200m to 800m, 3.4X (GV M-95/ C7A1)";
-                price = 400;
-                stock = 10000;                
-	    };		
-			class gm_pso1_gry {
-                displayName = "PSO-1";
-                description = "low-powered riflescope Magnification: 100m to 800m, 4x (SVD)";
-                price = 400;
-                stock = 10000;                
-	    };		
-			class gm_zfk4x25_blk {
-                displayName = "ZFK 4x25";
-                description = "low-powered riflescope Magnification: 100m to 800m, 4x25 (LMG RPK/LMG RPK-74/MPi AK-74/MPi KM-72/AKMN)";
-                price = 400;
-                stock = 10000;                
-	    };		
 			class optic_Hamr {
                 displayName = "RCO";
                 description = "Rifle Combat Optics Magnification: 2x";
@@ -3119,12 +2213,6 @@
                 price = 200;
                 stock = 10000;                
             };
-			class gm_suppressor_safloryt_blk {
-                displayName = "Silencer for Safloryt PM-63 (9 mm)";
-                description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
-                price = 200;
-                stock = 10000;                
-            };		
 			class muzzle_snds_acp {
                 displayName = "Sound Suppressor (.45 ACP)";
                 description = "Suppressors are designed to be fitted onto the muzzle of firearms. Once attached, the suppressor will alter the sound signature of the weapon and make it harder for enemies within range to hear the discharge. Suppressors will also minimise (not remove) the weapon's muzzle flash, which can help prevent the shooter's position from becoming exposed at nighttime. In addition, suppressors will enhance the velocity of a weapon slightly which can provide a small boost to its effective firing range.";
@@ -3299,18 +2387,6 @@
                 price = 600;
                 stock = 10000;
             };
-			class gm_bayonet_6x3_wud {
-                displayName = "6H3";
-                description = "Bayonet for MPi AK-74/ MPi AKS-74/ MPi AKS-74K/ MPi KM-72/ MPi KMS-72/ SDV/ AKM/ AKMN.";
-                price = 100;
-                stock = 10000;
-            };
-			class gm_bayonet_6x3_blk {
-                displayName = "6H3 (Black)";
-                description = "Bayonet for MPi AK-74/ MPi AKS-74/ MPi AKS-74K/ MPi KM-72/ MPi KMS-72/ SDV/ AKM/ AKMN.";
-                price = 100;
-                stock = 10000;
-            };		
 			class acc_flashlight_pistol {
                 displayName = "Pistol Flashlight";
                 description = "Weapon mounted light.";

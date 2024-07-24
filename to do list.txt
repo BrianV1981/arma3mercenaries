@@ -1,0 +1,93 @@
+
+add more garage locations
+limit amount of vehiicles stored
+rework and test the killedevenhandlers.sqf 
+
+***TESTING***killedEventHandlers.sqf updated and fixed
+***DONE***fix the crack in the wall near maga hq
+add garag to Fort Maga...(remove lighthouse garage?)
+add CSW box with 4x hmg's and 1x mortar
+add earplugs to medical crate
+***done***check vcom mortars 
+fix the loot transfer script
+***DONE***fix floating canteen
+add fence/loot vendor
+***DONE***add ALIVE player logistics (disable) module
+***DONE***turn of persistent logistics
+***DONE***turn off persistent ied's
+***TESTING***fix loot script (configuration?)
+put water stand at molos base
+***DONE***update locations of the delete vehicles.sqf
+
+***TESTING***have the abort button disable script on by default
+***DONE***check alive advanced markers settings(cant find them)...
+
+***DONE***update grad persistence and grad fortifiications...
+
+
+***DONE***change grad persistence settings to stop packing up fortifications (canPackUpDefault = 0;)***av1.02***
+make drone batteries last longer
+nato gmg bug store . said something like it wasn;t a good class name. aat_soldier blah blah blah
+***DONE***remove towing and force people to use ace towing***av1.02***
+ai use ace medical on teamates
+fix headless clients
+***DONE***add cable ties to ace medical box***addedav1.01***
+***TESTING***vehicle inventory overhaul (med trucks get ace bandages, splints, blood bags, etc.)***addedav1.02***
+***DONE***food box, fob box, etc.***addedav1.02***
+***TESTING***loot all corpses to vehicle inventory https://github.com/MMartisiusCS/Arma-3-Loot-to-Vehicle-Extended ***addedav1.02***
+***TESTING***remove abort button 
+****DONE***add tool kits to repair trucks (init extended event handler)***addedav1.01***
+***TESTING***adjadjusted CQB settings***addedav1.00 aka v17***
+
+
+***DONE***turned off roadblock/camp saving/persistence (the can relocate after server restart)
+***DONE***PERSISTENT ACE HEALTH by a hailmary! I looked into the FORKS of grad persistence and notriced a JD WANG (purpule bandana) fork and lo and behold, he added ace medical persistence! No google search, no ning search, nothing pulled up ace medical persistence except a few basic commands
+***DONE***remove bugged barricade from fortifications
+***DONE***have war continue as we sleep?
+***DONE***WATER BARREL 200 LITERS
+***DONE***WATER STALL 600 LITERS
+
+***DONE***MOVE LASER DESIGNATOR BATTERIES UP NEAR THE LASER DESIGNATORS
+
+
+
+///
+
+duplicate vehicles after server restart. should I assign unique variable ID's during creation process? (doesn't matter, alive vehicles duplicate, i need to remove the profile from alive during sale?)
+
+http://alivemod.com/forum/1645-vehicle-persistence-help/0
+
+https://www.google.com/search?q=arma+3+alive+vehicles+respawning+site:alivemod.com&sca_esv=a63c16f2bb691621&sca_upv=1&sxsrf=ADLYWIKCiBqHz2f29R0iQKiOvdSdJovr_w:1720686721455&ei=gZiPZqy7G8rvkvQPvISByAU&start=10&sa=N&sstk=AagrsugFh076LP0z8vbScIfnj-GadVFbdY8a6vig17g2oohsuyPXjNX7ntySjJlsezUw80B5EKsFcFo1eYxlEbd7H9L4N-sUeSO8uw&ved=2ahUKEwjs_7TGyZ6HAxXKt4QIHTxCAFkQ8NMDegQIGRAW&biw=3200&bih=1608&dpr=0.8
+
+***DONE***check logistics module? ****nothing stuck out***
+
+
+////http://alivemod.com/forum/3128-remove-profiles/0
+
+figure out how to add [_profile, "destroy"] call ALiVE_fnc_profileVehicle for vehicle; to the HG sell to dealer function
+
+
+//////
+
+disable the ace cargo system? talk about it first
+
+////
+
+***DONE***use grad persistence for character gear/loadout\turn off alive player loadout persistence.
+***DONE***remove all items from the store with a "???" as the photo
+
+v13
+***DONE***adjust TAORS. increased blufor
+***DONE***adjust blufor AI commander simultanious attacks up from 15 to 20
+***DONE***change virtualize settings. sync all players to module and virtualize everything else
+//////
+***DONE?***disable crowds from alive civilian population module
+
+unable to arrest majorityn of civilians. I have encountered some civilians that I can interact with and interrogate
+
+disable crowds?
+
+look at all civilian settings
+//////
+***DONE***adjust fort maga blu_f initial spawned units
+***DONE***fix the rearm refuel and repair cargo containers or just add all 3 items and be done with it

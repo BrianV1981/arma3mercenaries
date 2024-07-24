@@ -12,6 +12,12 @@ _isOwner = switch (typeName _fortOwner) do {
     case ("SIDE"): {
         side _unit == _fortOwner;
     };
+    case ("STRING"): {
+        getPlayerUID _unit == _fortOwner;
+    };
+    default {
+        false
+    };
 };
 
 _isOwner

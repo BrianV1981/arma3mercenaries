@@ -1,17 +1,22 @@
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 
 /*
     Init constants
 */
 HG_HUD_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableHUD")) isEqualTo 1;
+if(HG_HUD_ENABLED) then
+{
+    HG_HUD_TOGGLED = true;
+	HG_HUD_TYPE = ["HG_HUD","HG_HUD_ALT"] select getNumber(getMissionConfig "CfgClient" >> "hudType");
+};
 HG_PAYCHECK_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enablePaycheck")) isEqualTo 1;
 HG_GIVE_MONEY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableGiveMoney")) isEqualTo 1;
 HG_BUY_TO_GARAGE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableBuyToGarage")) isEqualTo 1;
 HG_KILL_REWARD_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableKillReward")) isEqualTo 1;
+HG_DEATH_PENALTY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableDeathPenalty")) isEqualTo 1;
 HG_TEAM_KILL_PENALTY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableTeamKillPenalty")) isEqualTo 1;
 HG_CRATE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableCrate")) isEqualTo 1;
 HG_PLAYER_INVENTORY_SAVE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1;
@@ -27,11 +32,16 @@ HG_BANK_VAR = getText(getMissionConfig "CfgClient" >> "bankVariable");
 /*
     Init EVHs
 */
+HG_LOADED_MEVH = addMissionEventHandler ["Loaded", {_this spawn HG_fnc_loaded}];
 HG_RESPAWN_EVH = player addEventHandler["Respawn",{_this call HG_fnc_respawn}];
 HG_KILLED_EVH = player addEventHandler["Killed",{_this call HG_fnc_killed}];
 HG_RATING_EVH = player addEventHandler["HandleRating",{_this call HG_fnc_handleRating}];
 HG_INVENTORY_OPENED_EVH = player addEventHandler["InventoryOpened",{_this call HG_fnc_inventoryOpened}];
 HG_INVENTORY_CLOSED_EVH = player addEventHandler["InventoryClosed",{_this call HG_fnc_inventoryClosed}];
+if(395180 in (getDLCs 1)) then
+{
+    HG_TAKE_EVH = player addEventHandler["Take",{_this call HG_fnc_take}];
+};
 
 if(HG_WHITELISTED_ENABLED AND ((getPlayerUID player) in (getArray(getMissionConfig "CfgClient" >> "admins"))) AND !isServer) then
 {

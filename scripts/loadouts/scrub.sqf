@@ -8,8 +8,7 @@ removeHeadgear player;
 removeGoggles player;
 
 player addWeapon "SMG_05_F";
-player addWeapon "ACE_Flashlight_Maglite_ML300L";
-player addPrimaryWeaponItem "optic_LRPS";
+player addWeapon "ACE_Flashlight_XL50";
 player addPrimaryWeaponItem "30Rnd_9x21_Mag_SMG_02_Tracer_Red";
 player addPrimaryWeaponItem "optic_ACO_grn_smg";
 

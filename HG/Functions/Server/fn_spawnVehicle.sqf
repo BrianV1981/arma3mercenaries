@@ -1,9 +1,8 @@
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
-params["_mode","_unit","_classname","_sp",["_plate",round(random(9999))],["_color",(localize "STR_HG_DEFAULT")],"_vehicle"];
+params["_mode","_unit","_classname","_sp",["_plate",round(random(9999))],["_color",""],"_vehicle"];
 
 if(!HG_SAVING_EXTDB) then
 {
@@ -52,22 +51,6 @@ _vehicle allowDamage false;
 _vehicle setVariable["HG_Owner",[(getPlayerUID _unit),_plate,_color,[]],true];
 [_vehicle,2] call HG_fnc_lock;
 
-
-//////////added flip vehicle///////////////
-if (isServer || isDedicated) then
-	{
-		 _vehicle addAction ["Flip vehicle",{ 
-		params ["_vehicle", "_caller", "_actionId", "_arguments"]; 
-		_normalVec = surfaceNormal getPos _vehicle; 
-		if (!local _vehicle) then { 
-		[_vehicle,_normalVec] remoteExec ["setVectorUp",_vehicle]; 
-		} else { 
-		_vehicle setVectorUp _normalVec; 
- }; 
- _vehicle setPosATL [getPosATL _vehicle select 0, getPosATL _vehicle select 1, 0]; 
- },[],1.5,true,true,"","(vectorUp _target) vectorCos (surfaceNormal getPos _target) <0.5",5];
-	};
-/////////////////////////////////////////
 if((getNumber(getMissionConfig "CfgClient" >> "clearInventory")) isEqualTo 1) then
 {
 	clearItemCargoGlobal _vehicle;
@@ -76,7 +59,7 @@ if((getNumber(getMissionConfig "CfgClient" >> "clearInventory")) isEqualTo 1) th
 	clearBackpackCargoGlobal _vehicle;
 };
 
-if(_color != (localize "STR_HG_DEFAULT")) then
+if(_color != "") then
 {
     private _textures = getArray(configFile >> "CfgVehicles" >> _classname >> "TextureSources" >> _color >> "textures");
 	
@@ -87,6 +70,7 @@ if(_color != (localize "STR_HG_DEFAULT")) then
 };
 
 _vehicle allowDamage true;
+_vehicle addEventHandler["Killed",{_this call HG_fnc_killedVehicle}];
 [_vehicle] remoteExecCall ["HG_fnc_addActions",(owner _unit),false];
 
 if(((getNumber(getMissionConfig "CfgClient" >> "enableVehicleInventorySave")) isEqualTo 1) AND (_mode isEqualTo 1)) then

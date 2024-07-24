@@ -1,11 +1,10 @@
 #include "..\..\..\UI\HG_IDCS.h"
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 
-#define HG_HUD_DISP               (uiNamespace getVariable ["HG_HUD",displayNull])
+#define HG_HUD_DISP               (uiNamespace getVariable [HG_HUD_TYPE,displayNull])
 #define HG_HUD_XP_BACK            (HG_HUD_DISP displayCtrl HG_HUD_XP_BACK_IDC)
 #define HG_HUD_XP_PIC             (HG_HUD_DISP displayCtrl HG_HUD_XP_PIC_IDC)
 #define HG_HUD_XP_TEXT            (HG_HUD_DISP displayCtrl HG_HUD_XP_TEXT_IDC)

@@ -1,8 +1,7 @@
 #include "..\HG_IDCS.h"
 /*
     Author - HoverGuy
-	© All Fucks Reserved
-	Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 
 class HG_VehiclesShop

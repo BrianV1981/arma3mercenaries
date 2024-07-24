@@ -1,8 +1,6 @@
 /*
     Author - HoverGuy
-    Description - Used to add or subtract money from the money variable
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 params[["_amount",1,[0]],["_mode",0,[0]],["_where",0,[0]],"_oldVal","_newVal"];
 
@@ -30,7 +28,10 @@ if(_where isEqualTo 0) then
 	
 	if(HG_HUD_ENABLED) then
     {
-        [1] call HG_fnc_HUD;
+	    if(HG_HUD_TOGGLED) then
+		{
+            [1] call HG_fnc_HUD;
+		};
     };
 } else {
     player setVariable [HG_BANK_VAR,_newVal,true];

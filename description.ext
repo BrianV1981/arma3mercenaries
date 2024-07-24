@@ -2,9 +2,9 @@ class Header
 {
 	gameType = Coop;
 	minPlayers = 1;
-	maxPlayers = 15;
+	maxPlayers = 22;
 };
-OnLoadName = "arma3mercenaries_ALPHA_V60";
+OnLoadName = "arma3mercenaries Av2.02";
 onLoadMission = "Constellis is a trusted and experienced provider of security services in high-risk environments, remote areas and emerging markets in support of land-based, aviation, maritime and cyber operations.";
 loadScreen = "pictures\constellisslogan_1.paa";
 author="BrianV1981";
@@ -28,6 +28,8 @@ wreckRemovalMaxTime = 600;
 minPlayerDistance = 0;
 ///////////////////////////////////////////////////////////////////////////////////////////
 
+	
+
 #include "scripts\Extended_Init_EventHandlers.hpp"
 #include "modules\grad-listBuymenu\grad_listBuymenu.hpp"
 #include "modules\grad-moneymenu\grad_moneymenu.hpp"
@@ -37,6 +39,9 @@ minPlayerDistance = 0;
 #include "modules\cfgPersistence.hpp"
 #include "HG\UI\HG_DialogsMaster.h"
 
+///https://github.com/Ghosto27/LootToVehicle/tree/master
+///ace area loot start
+
 class CfgFunctions {
     #include "modules\grad-moneymenu\cfgFunctions.hpp"
     #include "modules\grad-listBuymenu\cfgFunctions.hpp"
@@ -44,6 +49,7 @@ class CfgFunctions {
     #include "modules\grad-persistence\cfgFunctions.hpp"
 	#include "HG\Functions\HG_Functions.h"
 	#include "vcom\cfgFunctions.hpp"
+    #include "functions\looter_cfgFunctions.hpp"
 };
 
 /////////////////////////////////////GRAD FORTS AND HG///////////////////////////////////////////////////
@@ -99,6 +105,28 @@ class CfgRoles
 class CfgRespawnInventory
 {
 	class LOADOUT1
+	{
+		displayName = "Scrub";									// Name visible in the menu
+		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";	// Icon displayed next to the name
+		role = "Assault";										// Optional, see CfgRoles
+
+		// Loadout definition, uses same entries as CfgVehicles classes
+		weapons[] = {
+		
+		};
+		magazines[] = {
+		
+		};
+		items[] = {
+		
+		};
+		linkedItems[] = {
+		"ItemMap"
+		};
+		uniformClass = "";
+		backpack = "";
+	};
+	class LOADOUT2
 	{
 		displayName = "Scrub";									// Name visible in the menu
 		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";	// Icon displayed next to the name
@@ -178,3 +206,7 @@ class Params
 		default = 15;
 	};
 };
+
+///https://forums.bohemia.net/forums/topic/220528-help-disable-escape-options-when-killed/
+
+onPauseScript = "scripts\removeabortbutton.sqf";

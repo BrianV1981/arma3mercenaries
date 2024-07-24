@@ -49,7 +49,6 @@ player addItemToBackpack "ACE_Kestrel4500";
 player addItemToBackpack "ACE_RangeCard";
 
 player addHeadgear "H_HelmetB_plain_mcamo";
-player addGoggles "NVGogglesB_blk_F";
 
 player linkItem "ItemMap";
 player linkItem "ItemCompass";

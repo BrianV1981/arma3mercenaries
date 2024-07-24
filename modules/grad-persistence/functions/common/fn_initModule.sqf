@@ -8,6 +8,18 @@
     [] remoteExec ["grad_persistence_fnc_loadMission",2,false];
 }, "adminLogged"] call CBA_fnc_registerChatCommand;
 
+["gradpersistenceLoadPlayers", {
+    [] remoteExec ["grad_persistence_fnc_loadAllPlayers",2,false];
+}, "adminLogged"] call CBA_fnc_registerChatCommand;
+
+["gradpersistenceLoadPlayer", {
+    params [["_player",""]];
+    if (_player == "") exitWith {
+        systemChat "Use '#gradPersistenceLoadPlayer <name>' or '#gradPersistenceLoadPlayer <UID>'";
+    };
+    _this remoteExecCall ["grad_persistence_fnc_loadPlayerChatcommandServer",2,false];
+}, "adminLogged"] call CBA_fnc_registerChatCommand;
+
 if (isServer) then {
 
     // server side player loading disabled in favor of player side load request
@@ -21,6 +33,10 @@ if (isServer) then {
         if (_waitCondition == "") then {_waitCondition = "true"};
         [{call compile _this}, {[] call grad_persistence_fnc_loadMission}, _waitCondition] call CBA_fnc_waitUntilAndExecute;
     };
+
+    private _blacklistFromConfig = [missionConfigFile >> "CfgGradPersistence","blacklist",[]] call BIS_fnc_returnConfigEntry;
+    if (isNil QGVAR(blacklist)) then {GVAR(blacklist) = _blacklistFromConfig} else {GVAR(blacklist) append _blacklistFromConfig};
+    GVAR(blacklist) = GVAR(blacklist) apply {toLower _x};
 };
 
 if (hasInterface) then {

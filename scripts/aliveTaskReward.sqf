@@ -19,7 +19,7 @@ SAV_fnc_taskSucceeded = {
 [p_14, 50000] call grad_lbm_fnc_addFunds;
 [p_15, 50000] call grad_lbm_fnc_addFunds;
 [p_16, 50000] call grad_lbm_fnc_addFunds;
-["Good job! The mission has been completed and your payment of 50,000 Cr. has been delevired to you in person by a CIA courier.", "hint", true, true] call BIS_fnc_MP;
+["An OPCOM task has been completed and a payment of 50,000 Cr. has been delivered to you in person by a CIA courier.", "hint", true, true] call BIS_fnc_MP;
 
 
 

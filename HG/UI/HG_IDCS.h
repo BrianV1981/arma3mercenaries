@@ -1,7 +1,6 @@
 /*
     Author - HoverGuy
-	© All Fucks Reserved
-	Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 #define HG_NO_IDC                     -1
 
@@ -43,6 +42,7 @@
 #define HG_GEAR_BUY_IDC               7005
 #define HG_GEAR_MC_IDC                7006
 #define HG_GEAR_SLIDER_IDC            7007
+#define HG_GEAR_SLIDER_DIST_IDC       7008
 
 #define HG_GM_IDD                     7100
 #define HG_GM_EDIT_IDC                7101
@@ -130,3 +130,11 @@
 #define HG_GK_REMOVE_BTN_IDC          9403
 #define HG_GK_REFRESH_BTN_IDC         9404
 #define HG_GK_GIVE_BTN_IDC            9405
+
+#define HG_UNITS_SHOP_IDD             9500
+#define HG_UNITS_PRICE_IDC            9501
+#define HG_UNITS_ITEM_PIC_IDC         9502
+#define HG_UNITS_ITEM_TEXT_IDC        9503
+#define HG_UNITS_TREE_IDC             9504
+#define HG_UNITS_UNIT_SWITCH_IDC      9505
+#define HG_UNITS_BUY_BTN_IDC          9506

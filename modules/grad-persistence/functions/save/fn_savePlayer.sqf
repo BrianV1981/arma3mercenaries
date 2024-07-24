@@ -13,7 +13,7 @@ params [
 
 
 if (!isServer) exitWith {};
-if (_unit getVariable [QGVAR(isExcluded),false]) exitWith {};
+if ([_unit] call FUNC(isBlacklisted)) exitWith {};
 
 if (isNil "_allPlayerVariableClasses") then {
     private _allVariableClasses = "true" configClasses (missionConfigFile >> "CfgGradPersistence" >> "customVariables");
@@ -72,7 +72,6 @@ if (_savePlayerInventory) then {
         private _fnc_replaceRadioTfar = {
             params ["_item"];
             if (!(_item isEqualType []) && {_item call TFAR_fnc_isRadio}) then {
-                diag_log ["ASDASD replaced item:",_item," with: ",[configFile >> "CfgWeapons" >> _item >> "tf_parent", "text", _item] call CBA_fnc_getConfigEntry];
                 _this set [0,[configFile >> "CfgWeapons" >> _item >> "tf_parent", "text", _item] call CBA_fnc_getConfigEntry];
             };
         };
@@ -91,13 +90,24 @@ if (_savePlayerInventory) then {
 };
 
 if (_savePlayerDamage) then {
-    private _allHitPointsDamage = getAllHitPointsDamage _unit;
-    private _damage = if (count _allHitPointsDamage > 2) then {
-        [_allHitPointsDamage select 0,_allHitPointsDamage select 2]
-    } else {
-        [[],[]]
-    };
-    [_unitDataHash,"damage",_damage] call CBA_fnc_hashSet;
+    if (isClass(configfile >> "CfgPatches" >> "ace_medical")) then {
+
+        private _damage = [_unit] call ace_medical_fnc_serializeState;
+        [_unitDataHash,"damage",_damage] call CBA_fnc_hashSet;
+        diag_log "ACE DETECTED - Saving ACE wounds";
+        diag_log format ["%1", _damage];
+
+    } else 
+            {
+                private _allHitPointsDamage = getAllHitPointsDamage _unit;
+                private _damage = if (count _allHitPointsDamage > 2) then {
+                    [_allHitPointsDamage select 0,_allHitPointsDamage select 2]
+                } else {
+                    [[],[]]
+                };
+                [_unitDataHash,"damage",_damage] call CBA_fnc_hashSet;
+            };
+    
 };
 
 if (_savePlayerPosition) then {

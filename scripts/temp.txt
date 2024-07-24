@@ -1,3 +1,9 @@
+///factions used
+
+
+OPF_F,BLU_F,OPF_G_F,IND_C_F
+
+
 ///////////////////   https://www.reddit.com/r/armadev/comments/9p95kw/adding_ace_refuel_functionality_for_in_mission/           /////////////////
 init.sqf
 ["OPTRE_M914_RV", "InitPost", {
@@ -202,7 +208,7 @@ act_0 = [(localize "STR_HG_DEALER"),(localize "STR_HG_DEALER"),"HG\UI\Icons\car.
 
 ////end product, yeah baby!////
 
-act_0 = [(localize "STR_HG_DEALER"),'Enemy Vehicles Wanted',"HG\UI\Icons\car.paa",{["HG_DefaultDealer"] call HG_fnc_dialogOnLoadDealer},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction; 
+act_0 = [(localize "STR_HG_DEALER"),'Sell Claimed Vehicle',"HG\UI\Icons\car.paa",{["HG_DefaultDealer"] call HG_fnc_dialogOnLoadDealer},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction; 
 [this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;
 
 ////////////////////////this was key////////////
@@ -460,4 +466,42 @@ It's not that reliable iirc
 https://github.com/KillahPotatoes/KP-Liberation/blob/master/Missionframework/scripts/server/game/save_manager.sqf#L25
 but HandleDisconnect with no players left check works fine.
 
-///////////////////////////////////////////////////////////////////
+//////////////////////////////garage ace interaction menu changes/////////////////////////////////////
+
+///I am removing the store and call functions (virtual garge) to just a selling function. HG garages do not work after an update somewhere along the lines////
+
+call{act_0 = ["CustomAction 1",'Garage',"HG\UI\Icons\garage.paa",{true}] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;  
+ 
+act_0 = [(localize "STR_HG_GARAGE"),'Retrieve Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;  
+  
+act_0 = [(localize "STR_HG_GARAGE_PARK"),'Store Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_storeVehicleClient},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;act_0 = [(localize "STR_HG_DEALER"),'Sell Claimed Vehicle',"HG\UI\Icons\car.paa",{["HG_DefaultDealer"] call HG_fnc_dialogOnLoadDealer},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction; 
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;}
+
+
+
+//////to this/////
+
+call{act_0 = [(localize "STR_HG_DEALER"),'Sell Claimed Vehicle',"HG\UI\Icons\car.paa",{["HG_DefaultDealer"] call HG_fnc_dialogOnLoadDealer},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;}
+
+
+
+
+
+
+///////////https://forums.bohemia.net/forums/topic/203271-whats-the-initsqf-and-the-initserversqf/
+But everytime you execute a script or call a function you should ask who exactly needs to execute this and which is the appropriate time to execute.
+
+Who and when?
+
+Server only on mission start -> initServer.sqf
+
+Player only on mission join ->  initPlayerLocal.sqf
+
+Server only if player joins -> initPlayerServer.sqf
+
+everywhere on mission start -> init.sqf
+
+////////

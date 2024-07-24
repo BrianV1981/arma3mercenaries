@@ -1,0 +1,144 @@
+class Extended_Init_EventHandlers {
+ class Car {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
+ };
+ class Truck {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
+ };
+ class Tank {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
+ };
+ class Ship {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
+ };
+ class Submarine {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
+ };
+ class Air {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
+ };
+ 
+ class B_T_VTOL_01_armed_olive_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_T_VTOL_01_armed_blue_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_T_VTOL_01_armed_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_T_VTOL_01_infantry_olive_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_T_VTOL_01_infantry_blue_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_T_VTOL_01_infantry_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class I_Heli_Transport_02_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_Heli_Transport_03_unarmed_green_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_Heli_Transport_03_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_Heli_Transport_03_black_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class O_Heli_Transport_04_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ 
+ class B_Slingload_01_Medevac_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class Land_Pod_Heli_Transport_04_medevac_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ 
+ class gm_ge_army_fuchsa0_engineer {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRepairVehicle.sqf')";
+ };
+ class gm_dk_army_m113a1dk_engineer {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRepairVehicle.sqf')";
+ };
+ class gm_gc_army_ural4320_repair {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRepairVehicle.sqf')";
+ };
+ class gm_gc_bgs_ural4320_repair {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRepairVehicle.sqf')";
+ };
+ class gm_pl_army_ural4320_repair {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRepairVehicle.sqf')";
+ };
+ class gm_ge_army_u1300l_repair {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRepairVehicle.sqf')";
+ };
+ 
+  class I_E_Van_02_medevac_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_Truck_01_medical_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ 
+ class gm_gc_army_ural375d_medic {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetMedicalVehicle.sqf')";
+ };
+ class gm_gc_bgs_ural375d_medic {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetMedicalVehicle.sqf')";
+ };
+ class gm_pl_army_ural375d_medic {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetMedicalVehicle.sqf')";
+ };
+ class gm_dk_army_m113a1dk_medic {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetMedicalVehicle.sqf')";
+ };
+ class gm_ge_army_u1300l_medic {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetMedicalVehicle.sqf')";
+ };
+ class gm_ge_army_m113a1g_medic {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetMedicalVehicle.sqf')";
+ };
+ class gm_ge_airforce_do28d2_medevac {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetMedicalVehicle.sqf')";
+ };
+ 
+ class gm_gc_army_ural4320_reammo {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetAmmoVehicle.sqf')";
+ };
+ class gm_gc_bgs_ural4320_reammo {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetAmmoVehicle.sqf');";
+ };
+ class gm_pl_army_ural4320_reammo {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetAmmoVehicle.sqf')";
+ };
+ class gm_ge_army_kat1_451_reammo {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetAmmoVehicle.sqf')";
+ };
+
+ 
+ class gm_gc_army_ural375d_refuel {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRefuelVehicle.sqf')";
+ };
+ class gm_gc_bgs_ural375d_refuel {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRefuelVehicle.sqf')";
+ };
+ class gm_pl_army_ural375d_refuel {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRefuelVehicle.sqf')";
+ };
+ class gm_ge_army_kat1_451_refuel {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRefuelVehicle.sqf')";
+ };
+ 
+ class gm_dk_army_bpz2a0 {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRefuelVehicle.sqf');_this call (compile preprocessFileLineNumbers 'scripts\ACEsetAmmoVehicle.sqf');_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRepairVehicle.sqf')";
+ };
+ class gm_ge_army_bpz2a0 {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRefuelVehicle.sqf');_this call (compile preprocessFileLineNumbers 'scripts\ACEsetAmmoVehicle.sqf');_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRepairVehicle.sqf')";
+ };
+ 
+};

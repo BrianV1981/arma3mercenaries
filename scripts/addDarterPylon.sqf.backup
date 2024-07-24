@@ -1,0 +1,29 @@
+//created by chat GPT (not working)
+
+private ["_this", "_uav", "_pylonClass", "_uavClass", "_pylonPositions"];
+
+// Initialize variables
+_this = _this select 0;
+
+// Define the class names for the pylons and the Darter UAV
+_pylonClass = "Land_Pylon_F"; // Replace with the actual pylon class if different
+_uavClass = "B_UAV_01_F";    // Darter UAV class name
+
+// Find the Darter UAV in the game world
+//_uav = nearestObject player; // You might need to refine this search if necessary
+
+// Check if the found object is a Darter UAV
+//if (isNil { _uav } || !(typeOf _uav == _uavClass)) exitWith { hint "No Darter UAV found"; };
+
+// Define the positions for the pylons (relative to the UAV)
+_pylonPositions = [
+    [0, 1, 0], // Position for the first pylon
+    [0, -1, 0] // Position for the second pylon
+];
+
+// Create pylons and attach them to the UAV
+{
+    _pylonPos = _x; // Get the pylon position
+    _pylon = createVehicle [_pylonClass, (position _uav vectorAdd _pylonPos), [], 0, "NONE"];
+    _pylon attachTo [_uav, [0, 0, 0]]; // Attach pylons to the UAV
+} forEach _pylonPositions;

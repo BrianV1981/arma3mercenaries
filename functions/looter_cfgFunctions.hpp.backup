@@ -1,0 +1,12 @@
+class bear_antistasi_looter {
+        class bear_antistasi_looter {
+            file = "functions";
+            class transferToVehicle {};
+        };
+    };
+};
+
+class Extended_PostInit_EventHandlers {
+    class bear_antistasi_looter {
+        init = "call compile preProcessFileLineNumbers 'XEH_postInit.sqf'";
+    };

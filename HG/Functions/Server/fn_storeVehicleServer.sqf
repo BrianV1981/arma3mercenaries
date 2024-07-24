@@ -1,9 +1,8 @@
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
-params["_mode","_unit","_vehicle",["_plate",round(random(9999))],["_color",(localize "STR_HG_DEFAULT")]];
+params["_mode","_unit","_vehicle",["_plate",round(random(9999))],["_color",""]];
 
 if(!HG_SAVING_EXTDB) then
 {
@@ -49,8 +48,8 @@ if(_mode isEqualTo 1) then
     {
 	    [_vehicle] call HG_fnc_getInventory;
     };
-
-	deleteVehicle _vehicle;
+	
+    deleteVehicle _vehicle;
 	
 	(localize "STR_HG_GRG_VEHICLE_STORED") remoteExecCall ["hint",(owner _unit),false];
 };

@@ -1,7 +1,6 @@
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 params[["_amount",1,[0]],["_mode",0,[0]],["_ranks",["PRIVATE","CORPORAL","SERGEANT","LIEUTENANT","CAPTAIN","MAJOR","COLONEL"]]];
 
@@ -51,8 +50,11 @@ player setVariable ["HG_XP",[(rank player),_newXp],true];
 
 if(HG_HUD_ENABLED) then
 {
-    [2] call HG_fnc_HUD;
-	[3] call HG_fnc_HUD;
+    if(HG_HUD_TOGGLED) then
+	{
+        [2] call HG_fnc_HUD;
+	    [3] call HG_fnc_HUD;
+	};
 };
 
 true;

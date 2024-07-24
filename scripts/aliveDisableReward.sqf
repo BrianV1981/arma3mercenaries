@@ -3,23 +3,23 @@ SAV_fnc_taskSucceeded = {
  
     switch (_operation) do {
         case "handleEvent": {
-[p_1,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_2,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_3,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_4,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_5,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_6,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_7,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_8,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_9,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_10,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_11,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_12,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_13,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_14,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_15,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-[p_16,random [1000,3000,5000]] call grad_lbm_fnc_addFunds;
-["The installation has been disabled. The payment amount will depend on the intelligence gathered and will be been delevired to you in person by a CIA courier.", "hint", true, true] call BIS_fnc_MP;
+[p_1,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_2,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_3,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_4,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_5,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_6,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_7,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_8,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_9,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_10,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_11,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_12,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_13,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_14,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_15,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+[p_16,random [10000,30000,50000]] call grad_lbm_fnc_addFunds;
+["The installation has been disabled. The payment amount will depend on the intelligence gathered and will be been delivered to you in person by a CIA courier.", "hint", true, true] call BIS_fnc_MP;
 
             // do your reward stuff here
             // task data is in _args

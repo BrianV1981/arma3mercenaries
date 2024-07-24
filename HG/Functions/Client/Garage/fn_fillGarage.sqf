@@ -1,8 +1,7 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 private "_ind";
 
@@ -20,7 +19,7 @@ if((count _this) != 0) then
     private "_color";
 	
     {
-	    _color = if((_x select 2) != (localize "STR_HG_DEFAULT")) then {(getText(configFile >> "CfgVehicles" >> (_x select 0) >> "TextureSources" >> (_x select 2) >> "displayName"))} else {(_x select 2)};
+	    _color = if((_x select 2) isEqualTo "") then {(localize "STR_HG_DEFAULT")} else {(getText(configFile >> "CfgVehicles" >> (_x select 0) >> "TextureSources" >> (_x select 2) >> "displayName"))};
         _ind = HG_GARAGE_LIST lbAdd format[(localize "STR_HG_GRG_LIST"),(getText(configFile >> "CfgVehicles" >> (_x select 0) >> "displayName")),_color];
 		HG_GARAGE_LIST lbSetData[_ind,format["%1/%2",(_x select 0),(_x select 2)]];
 		HG_GARAGE_LIST lbSetValue[_ind,(_x select 1)];

@@ -1,8 +1,7 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 params["_mode"];
 
@@ -13,7 +12,7 @@ switch(_mode) do
     // HUD On
     case 0: 
 	{
-	    ("HG_HUD" call BIS_fnc_rscLayer) cutRsc ["HG_HUD","PLAIN",-1,false];
+	    (HG_HUD_TYPE call BIS_fnc_rscLayer) cutRsc [HG_HUD_TYPE,"PLAIN",-1,false];
 		
 		if((getNumber(getMissionConfig "CfgClient" >> "enableXP")) isEqualTo 1) then
 		{
@@ -66,7 +65,7 @@ switch(_mode) do
 	// HUD Off
 	case 5:
 	{
-	    ("HG_HUD" call BIS_fnc_rscLayer) cutText ["","PLAIN"];
+	    (HG_HUD_TYPE call BIS_fnc_rscLayer) cutText ["","PLAIN"];
 	};
 };
 

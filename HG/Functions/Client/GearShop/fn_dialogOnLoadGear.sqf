@@ -1,9 +1,7 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Description - Called by the player to open and feed the dialog with data
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 params["_target","_caller","_id","_whatShop"];
 if((typeName _whatShop) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_1");};
@@ -23,6 +21,8 @@ createDialog "HG_GearShop";
 	
 lbClear HG_GEAR_SWITCH;
 HG_GEAR_SLIDER sliderSetRange [0,360];
+HG_GEAR_SLIDER_DIST sliderSetRange [2,6];
+HG_GEAR_SLIDER_DIST sliderSetPosition 4;
 HG_GEAR_TOTAL ctrlSetText format[(localize "STR_HG_DLG_GS_TOTAL_TEXT"),([0,true] call HG_fnc_currencyToText)];
 HG_STRING_HANDLER = _whatShop;
 

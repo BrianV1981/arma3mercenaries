@@ -1,7 +1,6 @@
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 params["_unit",["_rank","PRIVATE",[""]]];
 if(_rank isEqualTo "") exitWith {};
@@ -23,11 +22,14 @@ if(HG_XP_ENABLED) then
 
 if(HG_HUD_ENABLED) then
 {
-    if(HG_XP_ENABLED) then
+    if(HG_HUD_TOGGLED) then
 	{
-        [2] call HG_fnc_HUD;
+        if(HG_XP_ENABLED) then
+	    {
+            [2] call HG_fnc_HUD;
+	    };
+	    [3] call HG_fnc_HUD;
 	};
-	[3] call HG_fnc_HUD;
 };
 
 true;

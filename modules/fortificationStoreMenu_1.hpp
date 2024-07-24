@@ -42,34 +42,6 @@
                 stock = 1000;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Razorwire_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
-			class land_gm_sandbags_01_window_02 {
-                displayName = "Sandbags (Half Baricaded Window)";
-                description = "Sandbags (Half Baricaded Window) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'land_gm_sandbags_01_window_02'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class land_gm_sandbags_01_window_01 {
-                displayName = "Sandbags (Baricaded Window)";
-                description = "Sandbags (Baricaded Window) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 15;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'land_gm_sandbags_01_window_01'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class land_gm_sandbags_01_door_02 {
-                displayName = "Sandbags (Half Baricaded Door)";
-                description = "Sandbags (Half Baricaded Door) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 15;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'land_gm_sandbags_01_door_02'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class land_gm_sandbags_01_door_01 {
-                displayName = "Sandbags  (Baricaded Door)";
-                description = "Sandbags (Baricaded Door) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 20;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'land_gm_sandbags_01_door_01'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
 			class Land_BagFence_Corner_F {
                 displayName = "Sandbag Wall (Corner)";
                 description = "Sandbag Wall (Corner) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -84,13 +56,6 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_BagFence_End_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
-			class land_gm_sandbags_01_short_01 {
-                displayName = "Sandbags  (End)";
-                description = "Sandbags (End) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 10;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'land_gm_sandbags_01_short_01'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
 			class Land_BagFence_Round_F {
                 displayName = "Sandbag Wall (Round)";
                 description = "Sandbag Wall (Round)) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -98,20 +63,6 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_BagFence_Round_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
-			class land_gm_sandbags_01_low_01 {
-                displayName = "Sandbags (Low Half Circle)";
-                description = "Sandbags (Low Half Circle) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 15;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'land_gm_sandbags_01_low_01'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class land_gm_sandbags_01_round_01 {
-                displayName = "Sandbags (Half Circle)";
-                description = "Sandbags (Half Circle) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 30;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'land_gm_sandbags_01_round_01'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };	
 		    class Land_BagFence_Short_F {
                 displayName = "Sandbag Wall (Short)";
                 description = "Sandbag Wall (Short) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -125,27 +76,6 @@
                 price = 20;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_BagFence_Long_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class land_gm_sandbags_01_wall_01 {
-                displayName = "Sandbags (Wall)";
-                description = "Sandbags (Wall) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 20;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'land_gm_sandbags_01_wall_01'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class land_gm_sandbags_02_wall {
-                displayName = "Sandbags (High Wall)";
-                description = "Sandbags (High Wall) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 20;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'land_gm_sandbags_02_wall'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class land_gm_sandbags_02_bunker_high {
-                displayName = "Sandbags (Bunker)";
-                description = "Sandbags (Bunker) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'land_gm_sandbags_02_bunker_high'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_HBarrier_1_F {
                 displayName = "H-barrier (Block)";
@@ -287,13 +217,6 @@
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_RoadBarrier_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
-			class RoadBarrier_small_F {
-                displayName = "Road Barrier (Small)";
-                description = "Road Barrier (Small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100;
-                stock = 100;
-				code = "if (player == (_this select 0)) then {[container_1,'RoadBarrier_small_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
 			class Land_PlasticBarrier_01_line_x6_F {
                 displayName = "Plastic Barrier (Small, 6)";
                 description = "Plastic Barrier (Small, 6) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -378,20 +301,6 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_NetFence_02_m_gate_v2_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
-			class land_gm_woodbunker_01 {
-                displayName = "Shed";
-                description = "The shed can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                 price = 100;
-                 stock = 100;
-				 code = "if (player == (_this select 0)) then {[container_1,'land_gm_woodbunker_01'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class land_gm_woodbunker_01_bags {
-                displayName = "Sandbags (Shed)";
-                description = "Sandbags (Shed) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                 price = 500;
-                 stock = 100;
-				 code = "if (player == (_this select 0)) then {[container_1,'land_gm_woodbunker_01_bags'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
 			class Land_BagBunker_Small_F {
                 displayName = "Bunker (Small)";
                 description = "Bunker (Small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -444,38 +353,73 @@
             };
 			class Land_DeerStand_01_F {
                 displayName = "Deer Stand (v1)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Deer Stand (v1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Deer Stand (v1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 2000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_DeerStand_02_F {
                 displayName = "Deer Stand (v2)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Deer Stand (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Deer Stand (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 3000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_DeerStand_02_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_GuardTower_02_F {
                 displayName = "Guard Tower (small)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***The guard tower (small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "The guard tower (small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 4000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_GuardTower_02_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_TTowerBig_1_F {
                 displayName = "Transmitter Tower";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***The transmitter tower can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "The transmitter tower can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 50000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_TTowerBig_1_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_TTowerBig_2_F {
                 displayName = "Transmitter Tower (Tall)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***The transmitter tower (tall) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "The transmitter tower (tall) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 50000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_TTowerBig_2_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_TentHangar_V1_F {
+                displayName = "Tent Hangar (Green)";
+                description = "Tent Hangar (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 20000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_TentHangar_V1_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Cargo_House_V1_F {
+                displayName = "Military Cargo House (Green)";
+                description = "Military Cargo House (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 100000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Cargo_House_V1_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Cargo_Patrol_V1_F {
+                displayName = "Military Cargo Post (Green)";
+                description = "Military Cargo Post (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 150000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Cargo_Patrol_V1_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Cargo_HQ_V1_F {
+                displayName = "Military Cargo HQ (Green)";
+                description = "Military Cargo HQ (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 200000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Cargo_HQ_V1_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Cargo_Tower_V1_F {
+                displayName = "Military Cargo Tower (Green)";
+                description = "Military Cargo Tower (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 500000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Cargo_Tower_V1_F'] call grad_fortifications_fnc_addFort}";
             };
         };
 		class Dfortifications {
@@ -492,7 +436,7 @@
             };
 			class Land_PierLadder_F {
                 displayName = "Ladder (Pier)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Ladder (Pier) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Ladder (Pier) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 50;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_PierLadder_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
@@ -527,45 +471,45 @@
             };		
 			class Land_PortableLight_single_F {
                 displayName = "Portable Light (Single)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***The portable light can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "The portable light can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 50;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {code = [container_1,'Land_PortableLight_single_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_PortableLight_double_F {
                 displayName = "Portable Lights (Double)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***The portable lights can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "The portable lights can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 75;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_PortableLight_double_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_LampStreet_small_F {
                 displayName = "Street Lamp (Small)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***The street lamp (small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "The street lamp (small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 500;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_LampStreet_small_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_LampAirport_F {
                 displayName = "Airport Lamp";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***The airport lamp can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "The airport lamp can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 1000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_LampAirport_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
-			class gm_gc_bgs_searchlight_01 {
-                displayName = "Searchlight";
-                description = "The searchlight can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 2000;
+			class PortableHelipadLight_01_blue_F {
+                displayName = "Portable Helipad Light (Blue)";
+                description = "Portable Helipad Light (Blue) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50;
                 stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_gc_bgs_searchlight_01'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+				code = "if (player == (_this select 0)) then {[container_1,'PortableHelipadLight_01_blue_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
-			class gm_gc_tent_5x5m {
-                displayName = "Tent (5x5m)";
-                description = "Tent (5x5m) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100;
+			class PortableHelipadLight_01_red_F {
+                displayName = "Portable Helipad Light (Red)";
+                description = "Portable Helipad Light (Red) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50;
                 stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_gc_tent_5x5m'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+				code = "if (player == (_this select 0)) then {[container_1,'PortableHelipadLight_01_red_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 		    class CamoNet_BLUFOR_F {
                 displayName = "Camouflage Net (Green)";
@@ -634,35 +578,35 @@
             };
 			class Land_Monument_02_F {
                 displayName = "War Monument";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***War Monument can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "War Monument can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 1000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Monument_02_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_Tombstone_17_F {
                 displayName = "Tombstone (wooden, v6)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Tombstone (wooden, v6) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Tombstone (wooden, v6) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 500;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Tombstone_17_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_Grave_obelisk_F {
                 displayName = "Grave (Obelisk)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Grave (Obelisk) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Grave (Obelisk) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 500;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Grave_obelisk_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_SignM_WarningMilitaryArea_english_F {
                 displayName = "Sign (Military Area, English)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Sign (Military Area, English) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Sign (Military Area, English) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 50;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_SignM_WarningMilitaryArea_english_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_SignM_WarningMilitaryVehicles_english_F {
                 displayName = "Sign (Military Vehicles, English)";
-                description = "***WARNING***THIS FORTIFICATION DOES NOT PERSIST***Sign (Military Vehicles, English) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "Sign (Military Vehicles, English) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 30;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_SignM_WarningMilitaryVehicles_english_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
@@ -765,16 +709,16 @@
 				code = "if (player == (_this select 0)) then {[container_1,'Land_StallWater_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_WaterBarrel_F {
-                displayName = "Water Barrel ( Liters)";
+                displayName = "Water Barrel (200 Liters)";
                 description = "The water barrel ( liters) can be utilized to refill yourself, canteens and water bottles in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications. (depletes on use)";
-                price = 125;
+                price = 100;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_WaterBarrel_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_WaterTank_F {
-                displayName = "Water Stall ( Liters)";
+                displayName = "Water Stall (600 Liters)";
                 description = "The water stall ( liters) can be utilized to refill yourself, canteens and water bottles in the field. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications. (depletes on use)";
-                price = 125;
+                price = 175;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_WaterTank_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
@@ -836,24 +780,24 @@
             };
 			class B_Slingload_01_Repair_F {
                 displayName = "Huron Repair Container";
-                description = "Huron Repair Container can be utilized to fully repair any vehicle in the field. It deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "The Huron Repair Container can be utilized to fully repair any vehicle in the field. It deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 50000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'B_Slingload_01_Repair_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_Pod_Heli_Transport_04_repair_F {
                 displayName = "Taru Repair Pod";
-                description = "Taru Repair Pod  can be utilized to fully repair any vehicle in the field. It deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                description = "The Taru Repair Pod  can be utilized to fully repair any vehicle in the field. It deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 50000;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_repair_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
-			class Land_PaperBox_01_small_closed_brown_IDAP_F {
+			class Land_PaperBox_01_small_closed_brown_F {
                 displayName = "IDAP Cardboard Box (Empty)"; 
                 description = "The cardboard box (empty) can be utilized to store scavanged equipment. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 10;
                 stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_PaperBox_01_small_closed_brown_IDAP_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+				code = "if (player == (_this select 0)) then {[container_2,'Land_PaperBox_01_small_closed_brown_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Box_Wps_F {
                 displayName = "Weapons Cache (Empty)";
@@ -861,41 +805,6 @@
                 price = 25;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Box_Wps_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_wood_01_empty {
-                displayName = "Ammobox Wood (Type 1) (Empty)";
-                description = "The ammobox Wood (type 1) (empty) can be utilized to store scavanged equipment. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_wood_01_empty'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_wood_02_empty {
-                displayName = "Ammobox Wood (Type 2) (Empty)";
-                description = "The ammobox Wood (type 2) (empty) can be utilized to store scavanged equipment. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_wood_02_empty'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_wood_03_empty {
-                displayName = "Ammobox Wood (Type 3) (Empty)";
-                description = "The ammobox Wood (type 3) (empty) can be utilized to store scavanged equipment. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_wood_03_empty'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_wood_04_empty {
-                displayName = "Ammobox Wood (Type 4) (Empty)";
-                description = "The ammobox Wood (type 4) (empty) can be utilized to store scavanged equipment. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_wood_04_empty'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_wood_05_empty {
-                displayName = "Ammobox Wood (Type 5) (Empty)";
-                description = "The ammobox Wood (type 4) (empty) can be utilized to store scavanged equipment. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 25;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_wood_05_empty'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_WoodenCrate_01_F {
                 displayName = "Wooden Crate (Empty)";
@@ -1058,153 +967,6 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Box_IED_Exp_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
-			class gm_AmmoBox_6Rnd_mine_ap_dm31_put {
-                displayName = "Mine AP DM31 (6 Rounds)";
-                description = "This crate of Mine AP DM31 (6 rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 500;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_6Rnd_mine_ap_dm31_put'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_4Rnd_mine_at_DM21_put {
-                displayName = "Mine AT DM21 (4 Rounds)";
-                description = "This crate of Mine AT DM21 (4 rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 2000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_4Rnd_mine_at_DM21_put'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_4Rnd_mine_at_tm46_put {
-                displayName = "Mine AT TM46 (4 Rounds)";
-                description = "This crate of Mine AT TM46 (4 rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 2000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_4Rnd_mine_at_tm46_put'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_2160Rnd_545x39mm_b_7N6_ak74 {
-                displayName = "5.45x39mm 7N6 (2160 Rounds)";
-                description = "This crate of 5.45x39mm 7N6 (2160 rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_2160Rnd_545x39mm_b_7N6_ak74'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_880Rnd_762x39mm_b_M43_ak47 {
-                displayName = "7.62x39mm M43 (800 Rounds)";
-                description = "This crate of 7.62x39mm M43 (800 rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_880Rnd_762x39mm_b_M43_ak47'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_880Rnd_762x39mm_b_T_m43_ak47 {
-                displayName = "7.62x39mm M43T (800 Rounds)";
-                description = "This crate of 7.62x39mm M43T (800 rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_880Rnd_762x39mm_b_T_m43_ak47'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_1000Rnd_762x51mm_b_DM111_g3 {
-                displayName = "7.62x51mm DM111 (1000 Rounds)";
-                description = "This crate of 7.62x51mm DM111 (1000 rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_880Rnd_762x39mm_b_T_m43_ak47'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_1000Rnd_762x51mm_ap_DM151_g3 {
-                displayName = "7.62x51mm DM151 (1000 Rounds)";
-                description = "This crate of 7.62x51mm DM151 (1000 rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_880Rnd_762x39mm_b_T_m43_ak47'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_1000Rnd_762x51mm_b_t_DM21A1_g3 {
-                displayName = "7.62x51mm DM21A1 (1000 Rounds)";
-                description = "This crate of 7.62x51mm DM21A1 (1000 rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_1000Rnd_762x51mm_b_t_DM21A1_g3'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_480Rnd_762x51mm_b_t_DM21A1_mg3 {
-                displayName = "7.62x51mm DM21A1 (480 Rounds)";
-                description = "This crate of 7.62x51mm DM21A1 (480 rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_480Rnd_762x51mm_b_t_DM21A1_mg3'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_1000Rnd_762x51mm_b_DM41_g3 {
-                displayName = "7.62x51mm DM41 (1000 Rounds)";
-                description = "This crate of 7.62x51mm DM41 (1000 rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_1000Rnd_762x51mm_b_DM41_g3'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_880Rnd_762x54mmR_api_7bz3_pk {
-                displayName = "7.62x54mm 7BZ3 (800 Rounds)";
-                description = "This crate of 7.62x54mm 7BZ3 (800 rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_880Rnd_762x54mmR_api_7bz3_pk'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_280Rnd_762x53mm_b_7N1_svd {
-                displayName = "7.62x54mm 7N1 (280 Rounds)";
-                description = "This crate of 7.62x54mm 7N1 (280 rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_280Rnd_762x53mm_b_7N1_svd'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_800Rnd_762x54mmR_b_t_7t2_pk {
-                displayName = "7.62x54mm 7T2 (1000 Rounds)";
-                description = "This crate of 7.62x54mm 7T2 (1000 rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_800Rnd_762x54mmR_b_t_7t2_pk'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_2500Rnd_9x19mm_b_DM11_mp2 {
-                displayName = "9X19mm DM11 (2500 Rounds)";
-                description = "This crate of 9X19mm DM11 (2500 Rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_2500Rnd_9x19mm_b_DM11_mp2'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_3Rnd_40mm_heat_pg7v_rpg7 {
-                displayName = "40mm PG-7V (4 Rounds)";
-                description = "This crate of 40mm PG-7V (4 Rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 400;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_3Rnd_40mm_heat_pg7v_rpg7'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_4Rnd_44x537mm_heat_DM32_pzf44_2 {
-                displayName = "44x537mm DM32 (4 Rounds)";
-                description = "This crate of 40MM PG-7V (4 Rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 400;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_4Rnd_44x537mm_heat_DM32_pzf44_2'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_4Rnd_67mm_heat_dm22a1_g3 {
-                displayName = "67mm HEAT DM22A1 (4 Rounds)";
-                description = "This crate of 67mm HEAT DM22A1 (4 Rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 400;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_4Rnd_67mm_heat_dm22a1_g3'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_2Rnd_84x245mm_heat_t_DM12a1_carlgustaf {
-                displayName = "84x245mm HEAT-T DM12a1 (2 Rounds)";
-                description = "This crate of 84x245mm HEAT-T DM12a1 (2 Rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 400;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_2Rnd_84x245mm_heat_t_DM12a1_carlgustaf'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_2Rnd_84x245mm_heat_t_DM22_carlgustaf {
-                displayName = "84x245mm HEAT-T DM22 (2 Rounds)";
-                description = "This crate of 84x245mm HEAT-T DM22 (2 Rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 400;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_2Rnd_84x245mm_heat_t_DM22_carlgustaf'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class gm_AmmoBox_2Rnd_84x245mm_heat_t_DM32_carlgustaf {
-                displayName = "84x245mm HEAT-T DM32 (2 Rounds)";
-                description = "This crate of 84x245mm HEAT-T DM32 (2 Rounds) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 400;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_AmmoBox_2Rnd_84x245mm_heat_t_DM32_carlgustaf'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
 			class B_Slingload_01_Cargo_F {
                 displayName = "Huron Cargo Container";
                 description = "Huron Cargo Container can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -1288,20 +1050,6 @@
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'B_Mortar_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
-			class gm_pl_army_fagot_launcher_tripod {
-                displayName = "Fagot (AT)";
-                description = "***WARNING***THIS ITEM CAN ONLY BE REARMED WITH LOGISTICAL AMMO CONTAINERS AND AMMO TRUCKS***Fagot (AT) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 3000;
-                stock = 100;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_ge_army_milan_launcher_tripod'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-			};
-			class gm_ge_army_milan_launcher_tripod {
-                displayName = "LATGM (AT)";
-                description = "***WARNING***THIS ITEM CAN ONLY BE REARMED WITH LOGISTICAL AMMO CONTAINERS AND AMMO TRUCKS***LATGM (AT) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 3000;
-                stock = 100;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_ge_army_milan_launcher_tripod'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-			};
 			class ace_dragon_staticAssembled {
                 displayName = "M47 Super-Dragon";
                 description = "***WARNING***THIS ITEM CAN ONLY BE REARMED WITH LOGISTICAL AMMO CONTAINERS AND AMMO TRUCKS***The M47 Super-Dragon uses a wire-guidance system in concert with a high explosive anti-tank warhead and was capable of defeating armored vehicles, fortified bunkers, main battle tanks, and other hardened targets. While it was primarily created to defeat the Soviet Union's T-55, T-62, and T-72 tanks, it saw use well into the 1990s, seeing action in the Persian Gulf War. The U.S. military officially retired the weapon in 2001. It can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -1316,13 +1064,6 @@
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'B_static_AT_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
-			class gm_ge_army_mg3_aatripod {
-                displayName = "MG3 (AA)";
-                description = "***WARNING***THIS ITEM CAN ONLY BE REARMED WITH LOGISTICAL AMMO CONTAINERS AND AMMO TRUCKS***MG3 (AA) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 5000;
-                stock = 100;
-				code = "if (player == (_this select 0)) then {[container_1,'gm_ge_army_mg3_aatripod'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-			};
 			class B_static_AA_F {
                 displayName = "Static Titan Launcher (AA) (NATO)";
                 description = "Static Titan Launcher (AA) (NATO) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";

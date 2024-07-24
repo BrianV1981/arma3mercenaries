@@ -13,12 +13,6 @@
                 price = 0;
                 stock = 10000;                
             };
-			class gm_watch_kosei_80 {
-                displayName = "Watch Kosei C80";
-                description = "Useful for recognizing clock position. (default button o)";
-                price = 50;
-                stock = 10000;                
-            };
 			class ItemWatch {
                 displayName = "Watch";
                 description = "Useful for recognizing clock position. (default button o)";
@@ -37,18 +31,6 @@
                 price = 20;
                 stock = 10000;                  
             };
-			class gm_gc_compass_f73 {
-                displayName = "Compass F73";
-                description = "Useful for navigation. (default button k)";
-                price = 20;
-                stock = 10000;                  
-            };
-			class gm_ge_army_conat2 {
-                displayName = "Compass Conat";
-                description = "Useful for navigation. (default button k)";
-                price = 20;
-                stock = 10000;                  
-            };		
 			class ItemRadio {
                 displayName = "Radio";
                 description = "Used to call ALiVE combat support and logistics.";
@@ -120,31 +102,7 @@
                 description = "Magnification: 4x-12x. (default button b)";
                 price = 200;
                 stock = 10000;                 
-            };
-			class gm_df7x40_blk {
-                displayName = "Binoculars DF7X40";
-                description = "Magnification: 4x-12x. (default button b)";
-                price = 200;
-                stock = 10000;                 
-            };
-			class gm_ferod16_oli {
-                displayName = "Binoculars FeroD-16 (Olive)";
-                description = "Magnification: 4x-12x. (default button b)";
-                price = 200;
-                stock = 10000;                 
-            };
-			class gm_ferod16_des {
-                displayName = "Binoculars FeroD-16 (Desert)";
-                description = "Magnification: 4x-12x. (default button b)";
-                price = 200;
-                stock = 10000;                 
-            };
-			class gm_ferod16_win {
-                displayName = "Binoculars FeroD-16 (Winter)";
-                description = "Magnification: 4x-12x. (default button b)";
-                price = 200;
-                stock = 10000;                 
-            };		
+            };	
 			class ACE_Yardage450 {
                 displayName = "ACE Yardage450";
                 description = "Magnification: 4x Rangefinder. (default button b)";
@@ -210,7 +168,13 @@
                 description = "Magnification: 5x-25x. Rangefinder (default button b)";
                 price = 2500;
                 stock = 10000;                
-            };		
+            };
+			class Laserbatteries {
+                displayName = "Laser Designator Batteries";
+                description = "Batteries for a laser designator. (Does not fit into NVG, UAV or Drone)";
+                price = 50;
+                stock = 10000;
+            };
 			class NVGogglesB_blk_F {
                 displayName = "ENVG-II (Black)";
                 description = "Night Vision Goggles. Also, use these to see IR beacons. (default button n)";
@@ -308,14 +272,14 @@
                 stock = 10000;                
             };
 			class ACE_DefusalKit {
-                displayName = "ACE ACE Defusal Kit";
-                description = "The ACE ACE defusal kit can be utilize with the ACE interaction menu.";
+                displayName = "ACE Defusal Kit";
+                description = "***RECOMMENDED TO HAVE AT ALL TIMES***The ACE ACE defusal kit can be utilize with the ACE interaction menu.";
                 price = 50;
                 stock = 10000;
             };
 			class MineDetector {
                 displayName = "Mine Detector";
-                description = "Detects all mines within a 15 meter in range. (default buttons [ and ])";
+                description = "***RECOMMENDED TO HAVE AT ALL TIMES***Detects all mines within a 15 meter in range. (default buttons [ and ])";
                 price = 1500;
                 stock = 10000;                
             };
@@ -482,12 +446,6 @@
                 price = 0;
                 stock = 10000;
             };
-			class Laserbatteries {
-                displayName = "Laser Designator Batteries";
-                description = "Batteries for a laser designator. (Does not fit into NVG, UAV or Drone)";
-                price = 50;
-                stock = 10000;
-            };
 			class ACE_UAVBattery {
                 displayName = "ACE UAV Battery";
                 description = "ACE UAV Battery";
@@ -517,42 +475,7 @@
             displayName = "Medical Supplies, MRE's and Beverages";
             kindOf = "Items";
 			tracking = 1;
-
-            class gm_gc_army_gauzeBandage {
-                displayName = "Gauze Bandage (x10)";
-                description = "10 Gauze bandages in sterile packaging. (utilize the Fort MAGA medical cargo house for subsidized medical treatment)";
-                amount = 10;
-                price = 10;
-                stock = 1000;     //note that a total of 10000 bandages can be bought (in sets of 10)
-            };
-            class gm_ge_army_gauzeCompress {
-                displayName = "Gauze Bandage (x10)";
-                description = "10 Gauze bandages in sterile packaging. (utilize the Fort MAGA medical cargo house for subsidized medical treatment)";
-                amount = 10;
-                price = 10;
-                stock = 1000;     //note that a total of 10000 bandages can be bought (in sets of 10)
-            };
-            class gm_ge_army_burnBandage {
-                displayName = "Burn Bandage (x10)";
-                description = "10 Burn bandages in sterile packaging. (utilize the Fort MAGA medical cargo house for subsidized medical treatment)";
-                amount = 10;
-                price = 10;
-                stock = 1000;     //note that a total of 10000 bandages can be bought (in sets of 10)
-            };			
-				class gm_gc_army_medkit {
-                displayName = "Personal Medkit";
-                description = "Personal Medkit is used to remove bruises and battle wounds. The patient has to be stable with everything bandaged and 100% blood while near a medical facility for the option to appear.";
-                amount = 1;
-                price = 1000;
-                stock = 1000;     
-            };
-				class gm_ge_army_medkit_80 {
-                displayName = "Medikit";
-                description = "Medkit is used to remove bruises and battle wounds. The patient has to be stable with everything bandaged and 100% blood while near a medical facility for the option to appear.";
-                amount = 1;
-                price = 1000;
-                stock = 1000;     
-            };			
+		
             class ACE_Splint {
                 displayName = "ACE Splint (x5)";
                 description = "5 simple splints to secure fractured bones. (utilize the Fort MAGA medical cargo house for subsidized medical treatment)";
@@ -625,14 +548,14 @@
             };
 			class ACE_WaterBottle {
                 displayName = "ACE Water Bottle";
-                description = "ACE water bottle";
+                description = "ACE Water Bottle";
                 amount = 1;
                 price = 5;
                 stock = 1000;
             };
 			class ACE_Can_Spirit {
                 displayName = "ACE Spirit Soda";
-                description = "ACE Spirit soda";
+                description = "ACE Spirit Soda";
                 amount = 1;
                 price = 2;
                 stock = 1000;
@@ -646,28 +569,28 @@
             };
 			class ACE_Can_RedGull {
                 displayName = "ACE RedGull Energy Drink";
-                description = "ACE RedGull energy drink";
+                description = "ACE RedGull Energy Drink";
                 amount = 1;
                 price = 2;
                 stock = 1000;				
             };
 			class ACE_Banana {
-                displayName = "ACE banana";
-                description = "ACE banana";
+                displayName = "ACE Banana";
+                description = "ACE Banana";
                 amount = 1;
                 price = 2;
                 stock = 1000;
             };			
 			class ACE_MRE_SteakVegetables {
                 displayName = "ACE MRE (Steak and Vegetables)";
-                description = "ACE MRE (steak and vegetables)";
+                description = "ACE MRE (Steak and Vegetables)";
                 amount = 1;
                 price = 5;
                 stock = 1000;
             };
 			class ACE_MRE_CreamTomatoSoup {
                 displayName = "ACE MRE (Tomato Soup)";
-                description = "ACE MRE (tomato soup)";
+                description = "ACE MRE (Tomato Soup)";
                 amount = 1;
                 price = 5;
                 stock = 1000;
@@ -1608,61 +1531,7 @@
                 description = "Crew Helmet [AAF] Armor Level III";
                 price = 4000;
                 stock = 10000;                
-            };
-			class gm_headgear_foliage_summer_forest_01 {
-                displayName = "Forest Helmet Camo 1";
-                description = "Forest Helmet Camo 1";
-                price = 100;
-                stock = 10000;                
-            };
-			class gm_headgear_foliage_summer_forest_02 {
-                displayName = "Forest Helmet Camo 2";
-                description = "Forest Helmet Camo 2";
-                price = 100;
-                stock = 10000;                
-            };
-			class gm_headgear_foliage_summer_forest_03 {
-                displayName = "Forest Helmet Camo 3";
-                description = "Forest Helmet Camo 3";
-                price = 100;
-                stock = 10000;                
-            };
-			class gm_headgear_foliage_summer_forest_04 {
-                displayName = "Forest Helmet Camo 4";
-                description = "Forest Helmet Camo 4";
-                price = 100;
-                stock = 10000;                
-            };
-			class gm_headgear_foliage_summer_grass_01 {
-                displayName = "Grass Helmet Camo 1";
-                description = "Grass Helmet Camo 1";
-                price = 100;
-                stock = 10000;                
-            };
-			class gm_headgear_foliage_summer_grass_02 {
-                displayName = "Grass Helmet Camo 2";
-                description = "Grass Helmet Camo 2";
-                price = 100;
-                stock = 10000;                
-            };
-			class gm_headgear_foliage_summer_grass_03 {
-                displayName = "Grass Helmet Camo 3";
-                description = "Grass Helmet Camo 3";
-                price = 100;
-                stock = 10000;                
-            };
-			class gm_headgear_foliage_summer_grass_04 {
-                displayName = "Grass Helmet Camo 4";
-                description = "Grass Helmet Camo 4";
-                price = 100;
-                stock = 10000;                
-            };		
-			class gm_gc_army_facewear_dustglasses {
-                displayName = "Dust Goggles";
-                description = "Dust Goggles";
-                price = 100;
-                stock = 10000;                
-            };		
+            };	
 			class G_Combat {
                 displayName = "Combat Goggles";
                 description = "Combat Goggles";
@@ -1763,18 +1632,6 @@
                 displayName = "Stealth Balaclava (Green, Googles)";
                 description = "Stealth Balaclava (Green, Googles)";
                 price = 2000;
-                stock = 10000;
-            };
-			class gm_ge_facewear_m65 {
-                displayName = "Gasmask M65";
-                description = "Designed exclusively for military use, the M65 features two triangular eyepieces made from acrylic glass and uses a NATO-standard 40 mm filter.";
-                price = 500;
-                stock = 10000;
-            };
-			class gm_gc_army_facewear_schm41m {
-                displayName = "Gasmask SchM-41M";
-                description = "Widely exported throughout the Warsaw Pact, this Soviet-made gasmask features improved housing which has double exhale valves with a stronger seal.";
-                price = 500;
                 stock = 10000;
             };		
 			class G_AirPurifyingRespirator_01_F {
