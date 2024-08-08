@@ -77,6 +77,28 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_BagFence_Long_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
+			class Land_SandbagBarricade_01_half_F {
+                displayName = "Sandbag Barricade (Short)";
+                description = "Sandbag Barricade (Short) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 40;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_SandbagBarricade_01_half_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_SandbagBarricade_01_F {
+                displayName = "Sandbag Barricade (Tall)";
+                description = "Sandbag Barricade (Tall) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 45;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_SandbagBarricade_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_SandbagBarricade_01_hole_F {
+                displayName = "Sandbag Barricade (Tall, Hole)";
+                description = "Sandbag Barricade (Tall, Hole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_SandbagBarricade_01_hole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+
 			class Land_HBarrier_1_F {
                 displayName = "H-barrier (Block)";
                 description = "H-barrier (Block) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
