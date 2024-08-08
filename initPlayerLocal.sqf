@@ -1,4 +1,4 @@
-execVM "scripts\healPlayerWhenIncapacitated.sqf";
+//execVM "scripts\healPlayerWhenIncapacitated.sqf";
 execVM "scripts\HG_initPlayerLocal.sqf";
 execVM "scripts\deathMarker.sqf";
 execVM "scripts\tutorial.sqf";

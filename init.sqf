@@ -11,4 +11,4 @@ setPlayerRespawnTime _respawnDelay;
 
 ///http://alivemod.com/wiki/index.php/Script_Snippets
 /// If you use the ALiVE saving feature one 'issue' is that AI members in the player's group do not get saved or restored. If they are editor-placed units then they will spawn at their original editor start location instead of wherever the player is. To work around this do the following:
-///execVM "scripts\aliveGroupMemberPersistence.sqf";
+execVM "scripts\aliveGroupMemberPersistence.sqf";

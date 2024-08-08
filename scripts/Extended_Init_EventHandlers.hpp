@@ -86,4 +86,58 @@ class Extended_Init_EventHandlers {
  class Box_EAF_Equip_F {
   init = "_this call (compile preprocessFileLineNumbers 'scripts\addBasicRoadBlock.sqf')";
  };
+ 
+ ///mobile spawn points
+ class B_T_APC_Tracked_01_CRV_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_APC_Tracked_01_CRV_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+  class B_T_VTOL_01_armed_olive_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_T_VTOL_01_armed_blue_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_T_VTOL_01_armed_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_T_VTOL_01_infantry_olive_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_T_VTOL_01_infantry_blue_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_T_VTOL_01_infantry_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class I_Heli_Transport_02_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_Heli_Transport_03_unarmed_green_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_Heli_Transport_03_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_Heli_Transport_03_black_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class O_Heli_Transport_04_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ 
+ class B_Slingload_01_Medevac_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class Land_Pod_Heli_Transport_04_medevac_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class I_E_Van_02_medevac_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
+ class B_Truck_01_medical_F {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+ };
 };
