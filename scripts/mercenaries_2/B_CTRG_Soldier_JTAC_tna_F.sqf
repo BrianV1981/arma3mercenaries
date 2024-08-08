@@ -4,3 +4,4 @@ chute = 'Steerable_Parachute_F' createVehicle [0,0,0];
 chute setPos [getPos this select 0, getPos this select 1, 150]; 
 this moveIndriver chute;", 0.5, "PRIVATE"];
 (group player) setVariable ["Vcm_Disable",true];
+_mercenary setVariable ["Vcm_Disable",true];

@@ -24,7 +24,8 @@ class HG_DefaultGarage // HG_DefaultGarage is just a placeholder for testing pur
 		{"Lighthouse Garage Spawn Point",{"garage_2_spawn"}},
 		{"Lighthouse Pier Spawn Point",{"dock_2_spawn"}},
 		{"Molos Garage Spawn Point",{"garage_1_spawn"}},
-		{"Molos Pier Spawn Point",{"dock_1_spawn"}}
+		{"Molos Pier Spawn Point",{"dock_1_spawn"}},
+		{"Nifi Garage Spawn Point",{"garage_3_spawn"}}
 	};
 	storePoint = "";
 };

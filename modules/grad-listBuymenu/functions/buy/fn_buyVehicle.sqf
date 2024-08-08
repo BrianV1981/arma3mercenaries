@@ -31,8 +31,9 @@ if (isServer || isDedicated) then
 		[_vehicle,_buyer] remoteExecCall ["HG_fnc_setOwner",_buyer,false];
 	};
 ////////////added HG vehicle lock/////////
-[_vehicle,2] call HG_fnc_lock;
- /////////////////////////////////////////
+[_vehicle, 2] call HG_fnc_lock;
+ //////////////////add gradFortfication variable for persistence///////////////////////
+ _vehicle setVariable ["grad_fortifications_fortOwner", getPlayerUID player, true];
 //bis vehicle init
 private _init = [(missionConfigFile >> "CfgGradBuymenu" >> _baseConfigName >> _categoryConfigName >> _itemConfigName >> "vehicleInit"), "text", "[[],[]]"] call CBA_fnc_getConfigEntry;
 private _compiledInit = call compile _init;

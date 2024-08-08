@@ -793,8 +793,8 @@
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Pod_Heli_Transport_04_repair_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_PaperBox_01_small_closed_brown_F {
-                displayName = "IDAP Cardboard Box (Empty)"; 
-                description = "The cardboard box (empty) can be utilized to store scavanged equipment. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                displayName = "Cardboard Box (Empty)"; 
+                description = "The cardboard box (empty) can be utilized to store scavanged supplies and equipment. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 10;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_2,'Land_PaperBox_01_small_closed_brown_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
@@ -805,13 +805,6 @@
                 price = 25;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Box_Wps_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class Land_WoodenCrate_01_F {
-                displayName = "Wooden Crate (Empty)";
-                description = "The wooden crate (empty) can be utilized to store scavanged equipment. You can deployed it with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 100;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_1,'Land_WoodenCrate_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class CargoNet_01_box_F {
                 displayName = "Cargo Net Box Pallet (Empty )";

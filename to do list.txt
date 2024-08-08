@@ -1,15 +1,22 @@
 
-add more garage locations
-limit amount of vehiicles stored
-rework and test the killedevenhandlers.sqf 
 
-***TESTING***killedEventHandlers.sqf updated and fixed
+add kill rewards for NPC's
+put a distance on the radio addaction
+
+Moving loot from target to %
+
+otokar ARMA selling for $0
+
+
+***TESTING***adjust player logistuics (disable) midule***av1.03***
+add more garage locations
+limit amount of vehicles stored
+***DONE***rework and test the killedevenhandlers.sqf ***av1.03***
 ***DONE***fix the crack in the wall near maga hq
-add garag to Fort Maga...(remove lighthouse garage?)
 add CSW box with 4x hmg's and 1x mortar
 add earplugs to medical crate
-***done***check vcom mortars 
-fix the loot transfer script
+***DONE***check vcom mortars 
+***DONE***fix the loot transfer script***av1.03***
 ***DONE***fix floating canteen
 add fence/loot vendor
 ***DONE***add ALIVE player logistics (disable) module

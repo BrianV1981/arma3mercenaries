@@ -17,7 +17,9 @@ class Extended_Init_EventHandlers {
  class Air {
   init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
  };
- 
+ class StaticWeapon {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimStaticWeapon.sqf')";
+ };
  //////repair vehicles//////
  class gm_ge_army_fuchsa0_engineer {
   init = "_this call (compile preprocessFileLineNumbers 'scripts\ACEsetRepairVehicle.sqf');";

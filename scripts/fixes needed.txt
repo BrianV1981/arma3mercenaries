@@ -1,0 +1,30 @@
+11:03:51 ThingX 2490c31ab00# 1813151: dummyweapon.p3d was falling under terrain! Position corrected to ground [22399.68, 16.75, 18434.28]. Disable simulation to keep object under terrain.
+11:03:57 ThingX 248d3f45600# 1813171: dummyweapon.p3d was falling under terrain! Position corrected to ground [22335.48, 16.74, 18478.97]. Disable simulation to keep object under terrain.
+11:04:44 ThingX 24824624b80# 1813515: dummyweapon.p3d was falling under terrain! Position corrected to ground [22394.75, 17.56, 18532.07]. Disable simulation to keep object under terrain.
+
+11:03:13 Error in expression <space getVariable[format["HG_Garage_%1",_uid],[]];
+_index = [_plate,_garage] cal>
+11:03:13   Error position: <_uid],[]];
+_index = [_plate,_garage] cal>
+11:03:13   Error Undefined variable in expression: _uid
+11:03:13 File C:\Users\kingb\Documents\Arma 3 - Other Profiles\Vasquez\mpmissions\arma3mercenaries_v065.Altis\HG\Functions\Server\fn_cleanup.sqf..., line 22
+11:03:13 Error in expression <ner = _x getVariable "HG_Owner";
+_uid = _owner select 0;
+_plate = _owner select >
+11:03:13   Error position: <_owner select 0;
+_plate = _owner select >
+11:03:13   Error Undefined variable in expression: _owner
+11:03:13 File C:\Users\kingb\Documents\Arma 3 - Other Profiles\Vasquez\mpmissions\arma3mercenaries_v065.Altis\HG\Functions\Server\fn_cleanup.sqf..., line 17
+11:03:13 Error in expression <space getVariable[format["HG_Garage_%1",_uid],[]];
+_index = [_plate,_garage] cal>
+11:03:13   Error position: <_uid],[]];
+_index = [_plate,_garage] cal>
+11:03:13   Error Undefined variable in expression: _uid
+11:03:13 File C:\Users\kingb\Documents\Arma 3 - Other Profiles\Vasquez\mpmissions\arma3mercenaries_v065.Altis\HG\Functions\Server\fn_cleanup.sqf..., line 22
+11:03:13 Error in expression <ner = _x getVariable "HG_Owner";
+_uid = _owner select 0;
+_plate = _owner select >
+11:03:13   Error position: <_owner select 0;
+_plate = _owner select >
+11:03:13   Error Undefined variable in expression: _owner
+11:03:13 File C:\Users\kingb\Documents\Arma 3 - Other Profiles\Vasquez\mpmissions\arma3mercenaries_v065.Altis\HG\Functions\Server\fn_cleanup.sqf..., line 17

@@ -4,7 +4,7 @@ class Header
 	minPlayers = 1;
 	maxPlayers = 22;
 };
-OnLoadName = "arma3mercenaries Av2.02";
+OnLoadName = "arma3mercenaries Av2.10";
 onLoadMission = "Constellis is a trusted and experienced provider of security services in high-risk environments, remote areas and emerging markets in support of land-based, aviation, maritime and cyber operations.";
 loadScreen = "pictures\constellisslogan_1.paa";
 author="BrianV1981";
@@ -26,10 +26,11 @@ wreckLimit = 20;
 wreckRemovalMinTime = 300;
 wreckRemovalMaxTime = 600;
 minPlayerDistance = 0;
+
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////
-
-	
-
+#include "scripts\jukebox\customInterface.hpp"
 #include "scripts\Extended_Init_EventHandlers.hpp"
 #include "modules\grad-listBuymenu\grad_listBuymenu.hpp"
 #include "modules\grad-moneymenu\grad_moneymenu.hpp"
@@ -51,7 +52,6 @@ class CfgFunctions {
 	#include "vcom\cfgFunctions.hpp"
     #include "functions\looter_cfgFunctions.hpp"
 };
-
 /////////////////////////////////////GRAD FORTS AND HG///////////////////////////////////////////////////
 
 class RscTitles {
@@ -106,7 +106,7 @@ class CfgRespawnInventory
 {
 	class LOADOUT1
 	{
-		displayName = "Scrub";									// Name visible in the menu
+		displayName = "Blufor Scrub";									// Name visible in the menu
 		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";	// Icon displayed next to the name
 		role = "Assault";										// Optional, see CfgRoles
 
@@ -128,7 +128,7 @@ class CfgRespawnInventory
 	};
 	class LOADOUT2
 	{
-		displayName = "Scrub";									// Name visible in the menu
+		displayName = "Independant Scrub";									// Name visible in the menu
 		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";	// Icon displayed next to the name
 		role = "Assault";										// Optional, see CfgRoles
 
@@ -150,20 +150,6 @@ class CfgRespawnInventory
 	};
 };
 
-///////////////////////////////////////////////////////////////////////////////////////////
-
-class CfgSounds
-{
-	sounds[] = {};
-	
-	class Killfeed_notification
-	{
-		name = "Killfeed_notification";
-		sound[] = {"GF_Killfeed\Killfeed_Sounds\Killfeed_notification.ogg", db-5, 1.0};
-		titles[] = {};
-	};
-	
-};
 
 ///////////////////////////////vcom////////////////////////////////////////////////
 
@@ -208,5 +194,187 @@ class Params
 };
 
 ///https://forums.bohemia.net/forums/topic/220528-help-disable-escape-options-when-killed/
-
 onPauseScript = "scripts\removeabortbutton.sqf";
+
+//////////////////////////////////   music   /////////////////////////////////////////////////////////
+
+	class CfgMusic {
+	tracks[] = {myTrack1, myTrack2, myTrack3, myTrack4, myTrack5, myTrack6, myTrack7, myTrack8, myTrack9, myTrack10, myTrack11, myTrack12, myTrack13};
+	
+		class myTrack1 {
+		name = "myTrack1";
+		sound[] = {"music\bird.ogg", db+3, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 121;
+		artist = "The Trashmen";
+		title = "Surfing Bird";
+		};
+		class myTrack2 {
+		name = "myTrack2";
+		sound[] = {"music\black.ogg", db+3, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 121;
+		artist = "The Rolling Stones";
+		title = "Paint It, Black";
+		};
+		class myTrack3 {
+		name = "myTrack3";
+		sound[] = {"music\boots.ogg", db+3, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 121;
+		artist = "Nancy Sinatra";
+		title = "These Boots Are Made For Walkin";
+		};
+		class myTrack4 {
+		name = "myTrack4";
+		sound[] = {"music\bully.ogg", db+3, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 121;
+		artist = "Sam the Sham & the Pharaos";
+		title = "Wooly Bully";
+		};
+		class myTrack5 {
+		name = "myTrack5";
+		sound[] = {"music\cisco.ogg", db+3, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 121;
+		artist = "WAR";
+		title = "Cisco Kid";
+		};
+		class myTrack6 {
+		name = "myTrack6";
+		sound[] = {"music\fortunate.ogg", db+3, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 121;
+		artist = "Creedence Clearwater Revival";
+		title = "Fortunate Son";
+		};
+		class myTrack7 {
+		name = "myTrack7";
+		sound[] = {"music\foxiran1.ogg", db+3, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 121;
+		artist = "FOX";
+		title = "Iran Update 1";
+		};
+		class myTrack8 {
+		name = "myTrack8";
+		sound[] = {"music\hush.ogg", db+3, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 121;
+		artist = "Deep Purple";
+		title = "Hush";
+		};
+		class myTrack9 {
+		name = "myTrack9";
+		sound[] = {"music\letter.ogg", db+3, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 121;
+		artist = "The Box Tops";
+		title = "The Letter";
+		};
+		class myTrack10 {
+		name = "myTrack10";
+		sound[] = {"music\pompeo1.ogg", db+3, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 121;
+		artist = "Foriegn Press Center";
+		title = "Iran Update 2";
+		};
+		class myTrack11 {
+		name = "myTrack11";
+		sound[] = {"music\preacher.ogg", db+3, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 121;
+		artist = "Dusty Springfield";
+		title = "Son of a Preacher Man";
+		};
+		class myTrack12 {
+		name = "myTrack12";
+		sound[] = {"music\shakin.ogg", db+3, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 121;
+		artist = "The Guess Who";
+		title = "Shakin All Over";
+		};
+		class myTrack13 {
+		name = "myTrack13";
+		sound[] = {"music\trumpspeach1.ogg", db+3, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 121;
+		artist = "President Donald J. Trump";
+		title = "Iran Update 3";
+		};
+		class myTrack14 {
+		name = "myTrack14";
+		sound[] = {"music\silence_60m.ogg", db+0, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 3600;
+		artist = "";
+		title = "";
+		};
+		class myTrack15 {
+		name = "myTrack15";
+		sound[] = {"music\silence_45m.ogg", db+0, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 2700;
+		artist = "";
+		title = "";
+		};
+		class myTrack16 {
+		name = "myTrack16";
+		sound[] = {"music\silence_30m.ogg", db+0, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 1800;
+		artist = "";
+		title = "";
+		};
+		class myTrack17 {
+		name = "myTrack17";
+		sound[] = {"music\silence_15m.ogg", db+0, 1};
+		titles[] = {};
+		tag = "jukeboxRadio";
+		duration = 900;
+		artist = "";
+		title = "";
+		};
+	};
+	
+	
+////////////////////////////   sound   ///////////////////////////////////
+
+	class CfgSounds {
+    sounds[] = {Sound_myTrack1, Sound_myTrack2};
+
+    class Sound_myTrack1 {
+        name = "Sound_myTrack1";
+        sound[] = {"music\bird.ogg", db+3, 1.0};
+		titles[] = {};
+    };
+    class Sound_myTrack2 {
+        name = "Sound_myTrack2";
+        sound[] = {"music\black.ogg", db+3, 1.0};
+		titles[] = {};
+    };
+	class Killfeed_notification {
+		name = "Killfeed_notification";
+		sound[] = {"GF_Killfeed\Killfeed_Sounds\Killfeed_notification.ogg", db-5, 1.0};
+		titles[] = {};
+	};
+};

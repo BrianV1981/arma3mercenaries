@@ -25,6 +25,6 @@ disableSerialization;
 if (isServer || (isDedicated && (player getVariable ["isAdmin", false]))) then {
 
 } else {
-    // Remove the abort button from non-admins
+    // Remove the abort
     ((findDisplay 49) displayCtrl 104) ctrlShow false;
 };

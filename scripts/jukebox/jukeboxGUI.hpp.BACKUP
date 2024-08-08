@@ -1,0 +1,49 @@
+class RscText;
+class RscListbox;
+class RscButton;
+class IGUIBack;
+
+class myJukeboxGUI {
+    idd = -1; // Dialog ID
+    movingEnable = false;
+    enableSimulation = true;
+
+    class ControlsBackground {
+        class MainBackground: IGUIBack {
+            idc = -1;
+            x = 0.3; y = 0.2;
+            w = 0.4; h = 0.6;
+            colorBackground[] = {0, 0, 0, 0.7};
+        };
+    };
+
+    class Controls {
+        class SongListBox: RscListbox {
+            idc = 1000; // Unique control ID for the list box
+            x = 0.31; y = 0.21;
+            w = 0.38; h = 0.4;
+        };
+
+        class AddToQueueButton: RscButton {
+            idc = 1001; // Unique control ID for the button
+            text = "Add to Queue";
+            x = 0.31; y = 0.62;
+            w = 0.18; h = 0.04;
+        };
+
+        class ClearQueueButton: RscButton {
+            idc = 1002; // Unique control ID for the button
+            text = "Clear Queue";
+            x = 0.51; y = 0.62;
+            w = 0.18; h = 0.04;
+        };
+
+        class SongDurationText: RscText {
+            idc = 1003; // Unique control ID for the text display
+            text = "00:00/00:00";
+            x = 0.31; y = 0.67;
+            w = 0.38; h = 0.04;
+        };
+    };
+};
+

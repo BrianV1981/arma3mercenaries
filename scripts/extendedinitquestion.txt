@@ -1,0 +1,97 @@
+Hello, I had a question about adding an action using an extended init event handler on a dedicated server
+https://github.com/CBATeam/CBA_A3/wiki/Extended-Event-Handlers-(new) 
+I have successfully added an action on all of my vehivcles in this mission, however, when trying to apply the same techniques to a different action I am not having any success. I found a vehicle flip script on the BH forums that I am trying to apply to all vehicles in the mission, even vehicles that are spawned dynamically..
+ 
+this addAction ["Flip vehicle",{
+ params ["_vehicle", "_caller", "_actionId", "_arguments"];
+ _normalVec = surfaceNormal getPos _vehicle;
+ if (!local _vehicle) then {
+ [_vehicle,_normalVec] remoteExec ["setVectorUp",_vehicle];
+ } else {
+ _vehicle setVectorUp _normalVec;
+ };
+ _vehicle setPosATL [getPosATL _vehicle select 0, getPosATL _vehicle select 1, 0];
+ },[],1.5,true,true,"","(vectorUp _target) vectorCos (surfaceNormal getPos _target) <0.5",5];
+ 
+This script works great when adding it directly to a vehicle init. Let me explain exactly what I am trying to do to get this to work on all vehicles. I created a file named vehicleUnflip.sqf with the above code, saved it, and put that into a scripts folder. I then created another file called Extended_Init_Eventhandlers.hpp and put this in it
+
+class Extended_Init_EventHandlers {
+ class Car {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\vehicleUnflip.sqf')";
+ };
+ class Truck {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\vehicleUnflip.sqf')";
+ };
+ class Tank {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\vehicleUnflip.sqf')";
+ };
+ class Ship {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\vehicleUnflip.sqf')";
+ };
+ class Submarine {
+  init = "_this call (compile preprocessFileLineNumbers 'scripts\vehicleUnflip.sqf')";
+};
+};
+
+and save it into my "scripts" folder as well. After that, I open my description.ext and I add 
+
+#include "scripts\Extended_Init_EventHandlers.hpp"
+
+
+
+
+
+/////////////////////////////
+
+
+
+
+I was guessing that it had something to do with the way that the vehicleUnflip.sqf refers to the vehicle as "this" but I have no idea what I am talking about. I have 2 addaction scripts that actually do work. Again, it took me a lot of trial and error, but they do work on a dedicated server. I followed the same steps as I described above but with these scripts
+
+claimVehicle.sqf
+
+private "_this";
+_this = _this select 0;
+claimVehicleAction = _this addAction["Claim this vehicle",{
+[(_this select 0)] call HG_fnc_setOwner;
+(_this select 0) removeAction (_this select 2)},"",0,false,false,"",'(alive player) && !dialog && player distance _target < 5'];
+
+
+claimVehicleRemove.sqf
+
+private "_this";
+_this = _this select 0;
+_this removeaction claimVehicleAction;
+
+
+One of my cut and paste copycat tries looked something like this
+
+private "_this";
+_this = _this select 0;
+vehicleUnflipAction = _this addAction ["Flip vehicle",{
+ params ["_vehicle", "_caller", "_actionId", "_arguments"];
+ _normalVec = surfaceNormal getPos _vehicle;
+ if (!local _vehicle) then {
+ [_vehicle,_normalVec] remoteExec ["setVectorUp",_vehicle];
+ } else {
+ _vehicle setVectorUp _normalVec;
+ };
+ _vehicle setPosATL [getPosATL _vehicle select 0, getPosATL _vehicle select 1, 0];
+ },[],1.5,true,true,"","(vectorUp _target) vectorCos (surfaceNormal getPos _target) <0.5",5];
+ 
+ 
+ 
+ //////////////////////////////////////////
+ 
+ Hello, when testing this vehicle flip script on single player and multiplayer, everything works fine. However, when I try the script on a dedicated server it doesn't work at all. Does anything stick out that may be causing the problem?
+ 
+ 	_vehicle addAction ["Flip vehicle",{ 
+ params ["_vehicle", "_caller", "_actionId", "_arguments"]; 
+ _normalVec = surfaceNormal getPos _vehicle; 
+ if (!local _vehicle) then { 
+ [_vehicle,_normalVec] remoteExec ["setVectorUp",_vehicle]; 
+ } else { 
+ _vehicle setVectorUp _normalVec; 
+ }; 
+ _vehicle setPosATL [getPosATL _vehicle select 0, getPosATL _vehicle select 1, 0]; 
+ },[],1.5,true,true,"","(vectorUp _target) vectorCos (surfaceNormal getPos _target) <0.5",5];

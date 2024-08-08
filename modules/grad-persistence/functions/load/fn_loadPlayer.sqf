@@ -6,7 +6,9 @@ if (_playerWaitCondition == "") then {_playerWaitCondition = "true"};
 private _fnc_waitUntil = {
     _unit = ((_this select 0) select 0);
     !isNull _unit &&
-    {[_unit,side _unit,typeOf _unit,roleDescription _unit] call compile (_this select 1)}
+    {[_unit,side _unit,typeOf _unit,roleDescription _unit] call compile (_this select 1)} &&
+    {!isNull findDisplay 46} && // Ensure the player is fully loaded in the game world
+    {(alive _unit)} // Ensure the unit is alive
 };
 
 [_fnc_waitUntil, {
@@ -44,9 +46,8 @@ private _fnc_waitUntil = {
             diag_log "ACE DETECTED - PreLoading ACE wounds";
             diag_log format ["%1", _unitHits];
             
-        } else
+        } else {
 
-        {
             private _unitHits = [_unitDataHash,"damage"] call CBA_fnc_hashGet;
             if (!(_unitHits isEqualType false) && {count _unitHits > 0}) then {
                 _unitHits params ["_unitHitNames","_unitHitDamages"];

@@ -1,0 +1,86 @@
+// unfinished jukebox script writtenm with open AI
+
+// Load songs from CfgMusic
+jukebox_fnc_loadSongs = {
+    private ["_songs", "_songData"];
+    _songs = [];
+    _songData = [];
+    {
+        _track = configName _x;
+        _songs pushBack _track;
+        _songData pushBack [
+            getText (configFile >> "CfgMusic" >> _track >> "artist"), 
+            getText (configFile >> "CfgMusic" >> _track >> "title"), 
+            getNumber (configFile >> "CfgMusic" >> _track >> "duration")
+        ];
+    } forEach ("CfgMusic" configClasses (configFile >> "CfgMusic"));
+    missionNamespace setVariable ["jukebox_songs", _songs];
+    missionNamespace setVariable ["jukebox_songData", _songData];
+};
+
+// Create the jukebox GUI
+jukebox_fnc_createGUI = {
+    private ["_gui"];
+    _gui = createDialog "myJukeboxGUI";
+    (findDisplay -1) displayCtrl 1000 ctrlSetBackgroundColor [0, 0, 0, 0.5];
+
+    // Event handler for adding to the queue
+    (findDisplay -1) displayCtrl 1001 ctrlAddEventHandler ["ButtonClick", {
+        private _songIndex = lbCurSel 1000; // Listbox control ID
+        call jukebox_fnc_addToQueue;
+        if (isNil "jukebox_soundSource") then { call jukebox_fnc_startPlayback; };
+    }];
+
+    // Event handler for clearing the queue
+    (findDisplay -1) displayCtrl 1002 ctrlAddEventHandler ["ButtonClick", {
+        missionNamespace setVariable ["jukebox_songQueue", []];
+    }];
+};
+
+// Add a song index to the queue
+jukebox_fnc_addToQueue = {
+    private ["_songIndex"];
+    params ["_songIndex"];
+    _songQueue = missionNamespace getVariable ["jukebox_songQueue", []];
+    _songQueue pushBack _songIndex;
+    missionNamespace setVariable ["jukebox_songQueue", _songQueue];
+};
+
+// Start playback of the next song in the queue
+jukebox_fnc_startPlayback = {
+    private ["_soundSource", "_songIndex", "_startTime"];
+    _songQueue = missionNamespace getVariable ["jukebox_songQueue", []];
+    _songs = missionNamespace getVariable ["jukebox_songs"];
+    _songData = missionNamespace getVariable ["jukebox_songData"];
+    _jukeboxObject = missionNamespace getVariable ["jukebox_object"];
+
+    if (count _songQueue > 0) then {
+        _songIndex = _songQueue select 0;
+        _songQueue deleteAt 0;
+        missionNamespace setVariable ["jukebox_songQueue", _songQueue];
+        _startTime = time;
+        _soundSource = _jukeboxObject say3D (_songs select _songIndex);
+
+        while {true} do {
+            private _elapsed = round (time - _startTime);
+            private _duration = _songData select _songIndex select 2;
+            (findDisplay -1) displayCtrl 1003 ctrlSetText format ["%1/%2", [_elapsed, _duration]];
+            if (_elapsed >= _duration) exitWith {};
+            sleep 0.5;
+        };
+    };
+};
+
+// Handle the jukebox action
+jukebox_fnc_onAction = {
+    params ["_player", "_object", "_actionName", "_currentAction", "_targetObject"];
+    missionNamespace setVariable ["jukebox_object", _object];
+    call jukebox_fnc_loadSongs;
+    call jukebox_fnc_createGUI;
+};
+
+// Create the jukebox action for a given object
+jukebox_fnc_createAction = {
+    params ["_object"];
+    _object addAction ["Play Jukebox", { call jukebox_fnc_onAction; }];
+};

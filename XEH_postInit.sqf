@@ -56,7 +56,7 @@
 ] call CBA_fnc_addSetting;
 
 private _action = [
-    "LootToVehicleExtended_transferAction", "Load Loot to Vehicle", "a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa",
+    "LootToVehicleExtended_transferAction", "Gather Loot", "a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa",
     {
         params ["_target", "_player"];
         
@@ -65,9 +65,9 @@ private _action = [
         } params [["_nearestVehicle", objNull]];
         
         if (isNull _nearestVehicle) then {
-            systemChat "1Tac Antistasi Looter: Error: couldn't find any nearby vehicle";
+            systemChat "Area Looter: Error: couldn't find any nearby vehicle";
         } else {
-            systemChat "1Tac Antistasi Looter: Using nearest vehicle";
+            systemChat "Area Looter: Using nearest vehicle";
             [_nearestVehicle,[_target],_player] call LootToVehicleExtended_fnc_transferToVehicle;
         };
     },
@@ -100,7 +100,7 @@ private _action = [
 ["WeaponHolderSimulated", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
 private _transferBetweenAction = [
-    "LootToVehicleExtended_transferBetweenAction", "Unload Cargo to Seperate Vehicle", "a3\ui_f\data\IGUI\Cfg\Actions\unloadVehicle_ca.paa",
+    "LootToVehicleExtended_transferBetweenAction", "Unload cargo to nearby containers", "a3\ui_f\data\IGUI\Cfg\Actions\unloadVehicle_ca.paa",
     {
         
         params ["_target", "_player"];
@@ -110,9 +110,9 @@ private _transferBetweenAction = [
         } params [["_nearestVehicle", objNull]];
         
         if (isNull _nearestVehicle) then {
-            systemChat "1Tac Antistasi Looter: Error: couldn't find any nearby vehicle";
+            systemChat "Area Looter: Error: couldn't find any nearby conatiners";
         } else {
-            systemChat "1Tac Antistasi Looter: Using nearest vehicle";
+            systemChat "Area Looter: Using nearest vehicle";
             [_nearestVehicle,[_target],_player] call LootToVehicleExtended_fnc_transferToVehicle;
         };
     },
@@ -136,7 +136,7 @@ private _transferBetweenAction = [
 ] call ace_interact_menu_fnc_createAction;
 
 private _actionVehicle = [
-    "LootToVehicleExtended_transferActionVehicle", "Load Loot to Vehicle", "a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa",
+    "LootToVehicleExtended_transferActionVehicle", "Load Loot to target", "a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa",
     {
         params ["_target", "_player"];
         private _containerList = (nearestObjects[_target,["CAManBase","WeaponHolder","WeaponHolderSimulated"],LootToVehicleExtended_MaxTransferDistance] select {!alive _x || !(_x isKindOf "CAManBase")});

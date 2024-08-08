@@ -4,7 +4,7 @@ private _backpacks = [];
 private _isMan = false;
 private _bodies = [];
 private _weight = 0;
-systemChat format["1Tac Antistasi Looter: Moving from %1 containers to %2",count(_containerList),getText (configFile >> "CfgVehicles" >> typeOf _targetVehicle >> "displayname")];
+systemChat format["Moving loot from target to %2",count(_containerList),getText (configFile >> "CfgVehicles" >> typeOf _targetVehicle >> "displayname")];
 
 // Get all items from each container
 {
@@ -115,7 +115,7 @@ if(LootToVehicleExtended_PlayAnimation) then {
 	_animLoop = -1;
 };
 // Transfer all items found to target vehicle
-systemChat format ["Total mass of items: %1", _weight];
+systemChat format ["The total weight of the loot was %1", _weight];
 /*
 // Function to play the cargo sound
 playCargoSound = {
@@ -181,7 +181,7 @@ if (LootToVehicleExtended_PlaySound) then {
 	clearMagazineCargoGlobal _x;
 	clearBackpackCargoGlobal _x;
 } forEach _containerList;
-systemChat format ["Total items transferred to target: %1", (count _items + count _backpacks)];
+systemChat format ["The total mass of the loot transferred was %1", (count _items + count _backpacks)];
 if (LootToVehicleExtended_DeleteBodies) then {
 	{
 		deleteVehicle _x;
@@ -200,4 +200,4 @@ player switchMove "";
 	};
 	player switchMove "";
 	//["stopCargoSound"] remoteExec ["stopCargoSound", 0, true];
-}, "Transfering items..."] call ace_common_fnc_progressBar;
+}, "Transfering loot..."] call ace_common_fnc_progressBar;

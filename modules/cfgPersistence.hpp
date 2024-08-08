@@ -1,12 +1,14 @@
+// https://github.com/gruppe-adler/grad-persistence/wiki/Configuration
+// https://github.com/gruppe-adler/grad-persistence/wiki/Saving-Variables
 class CfgGradPersistence {
     missionTag = "my_persistent_mission";
     loadOnMissionStart = 1;
     missionWaitCondition = "true";
     playerWaitCondition = "true";
 
-    saveUnits = 3;
+    saveUnits = 0;
     saveVehicles = 0;
-    saveContainers = 0;
+    saveContainers = 3;
     saveStatics = 0;
 	saveGradFortificationsStatics = 3;
 	
@@ -15,7 +17,7 @@ class CfgGradPersistence {
     savePlayerPosition = 0;
     savePlayerMoney = 1;
 	
-    saveMarkers = 0;
+    saveMarkers = 3;
     saveTasks = 0;
     saveTriggers = 0;
     saveTeamAccounts = 0;
@@ -52,5 +54,15 @@ class CfgGradPersistence {
           varNamespace = "unit";
           public = 1;
       };
+	   class gradFortificationsStore1ContainerInventory {
+          varName = "container_1";
+          varNamespace = "container";
+          public = 1;
+      };
+	  class gradFortificationsStore2ContainerInventory {
+          varName = "container_2";
+          varNamespace = "container";
+          public = 1;
+    };
     };
 };
