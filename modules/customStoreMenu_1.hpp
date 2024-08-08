@@ -96,7 +96,7 @@
 			class B_recon_TL_F {
                 displayName = "Jay Loadout";
                 description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Jay.";
-                price = 35000;
+                price = 45000;
                 amount = 1;
                 stock = 9999;
 				code = [player,"scripts\loadouts\jay_1.sqf"] call BIS_fnc_execVM;
