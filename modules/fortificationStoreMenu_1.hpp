@@ -210,6 +210,13 @@
                 stock = 100;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_BarGate_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
+			class RoadCone_L_F {
+                displayName = "	Road Cone (Light)";
+                description = "	Road Cone (Light)";
+                price = 75;
+                stock = 100;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_BarGate_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
 			class Land_RoadBarrier_01_F {
                 displayName = "Bar Gate (v2)";
                 description = "Bar Gate (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -414,6 +421,20 @@
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_Cargo_HQ_V1_F'] call grad_fortifications_fnc_addFort}";
             };
+			class Land_Airport_01_hangar_F {
+                displayName = "Hangar (Small)";
+                description = "Hangar (Small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 250000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Airport_01_hangar_F'] call grad_fortifications_fnc_addFort}";
+            };
+			class Land_Airport_01_controlTower_F {
+                displayName = "Airport Control Tower (Metal)";
+                description = "Airport Control Tower (Metal) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 300000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Airport_01_controlTower_F'] call grad_fortifications_fnc_addFort}";
+            };
 			class Land_Cargo_Tower_V1_F {
                 displayName = "Military Cargo Tower (Green)";
                 description = "Military Cargo Tower (Green) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -440,6 +461,13 @@
                 price = 50;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_PierLadder_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class FirePlace_burning_F {
+                displayName = "Fireplace (burning)";
+                description = "Fireplace (burning) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 10;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'FirePlace_burning_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };
 			class Land_TentLamp_01_standing_F {
                 displayName = "Tent Lamp (White) (Standing)";
@@ -468,6 +496,13 @@
                 price = 20;
                 stock = 200;
 				code = "if (player == (_this select 0)) then {[container_1,'Land_TentLamp_01_suspended_red_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };	
+			class Land_Camping_Light_F {
+                displayName = "Tent Lamp (Red) (Suspended)";
+                description = "The tent lamp can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 35;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_1,'Land_Camping_Light_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
             };		
 			class Land_PortableLight_single_F {
                 displayName = "Portable Light (Single)";
