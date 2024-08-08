@@ -1585,7 +1585,25 @@
                 description = "Diving Goggles [AAF]";
                 price = 250;
                 stock = 10000;                
-            };			
+            };	
+			class G_Bandana_CandySkull {
+                displayName = "Bandana (Candy Skull)";
+                description = "Bandana (Candy Skull)";
+                price = 50;
+                stock = 10000;                
+            };
+			class G_Bandana_oli {
+                displayName = "Bandana (Olive)";
+                description = "Bandana (Olive)";
+                price = 50;
+                stock = 10000;                
+            };
+			class G_Bandana_Skull2 {
+                displayName = "Bandana (Skull Ornamental)";
+                description = "Bandana (Candy Ornamental)";
+                price = 50;
+                stock = 10000;                
+            };
 			class G_Balaclava_blk {
                 displayName = "Balaclava (Black)";
                 description = "Balaclava (Black)";
@@ -1608,6 +1626,24 @@
                 displayName = "Balaclava (Olive)";
                 description = "Balaclava (Olive)";
                 price = 50;
+                stock = 10000;
+            };
+		    class G_Balaclava_Tropentarn {
+                displayName = "Balaclava (Tropentarn)";
+                description = "Balaclava (Tropentarn)";
+                price = 75;
+                stock = 10000;
+            };
+		    class G_Balaclava_Skull1 {
+                displayName = "Balaclava (Skull)";
+                description = "Balaclava (Skull)";
+                price = 75;
+                stock = 10000;
+            };
+		    class G_Balaclava_Flecktarn {
+                displayName = "Balaclava (Flecktarn)";
+                description = "Balaclava (Flecktarn)";
+                price = 75;
                 stock = 10000;
             };
 		    class G_Balaclava_TI_blk_F {
@@ -1838,6 +1874,12 @@
                 price = 750;
                 stock = 10000;
             }; 
+			class B_Carryall_blk_F {
+                displayName = "Carryall Backpack (Black)";
+                description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
+                price = 750;
+                stock = 10000;
+            };
 			class B_Bergen_hex_F {
                 displayName = "Bergen Backpack (Hex)";
                 description = "The heaviest backpack, the Bergen can easily store up to four Titan AT missiles at once thanks to having a maximum capacity of 480 mass.";
