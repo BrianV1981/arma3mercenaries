@@ -1586,19 +1586,25 @@
                 price = 250;
                 stock = 10000;                
             };	
-			class G_Bandana_CandySkull {
+			class G_Bandanna_CandySkull {
                 displayName = "Bandana (Candy Skull)";
                 description = "Bandana (Candy Skull)";
                 price = 50;
                 stock = 10000;                
             };
-			class G_Bandana_oli {
+			class G_Bandanna_oli {
                 displayName = "Bandana (Olive)";
                 description = "Bandana (Olive)";
                 price = 50;
                 stock = 10000;                
             };
-			class G_Bandana_Skull2 {
+			class G_Bandanna_blk {
+                displayName = "Bandana (Black)";
+                description = "Bandana (Black)";
+                price = 50;
+                stock = 10000;                
+            };
+			class G_Bandanna_Skull2 {
                 displayName = "Bandana (Skull Ornamental)";
                 description = "Bandana (Candy Ornamental)";
                 price = 50;
@@ -1874,7 +1880,7 @@
                 price = 750;
                 stock = 10000;
             }; 
-			class B_Carryall_blk_F {
+			class B_Carryall_blk {
                 displayName = "Carryall Backpack (Black)";
                 description = "Possessing the highest storage capacity (320 mass) of any backpack other than the Bergen";
                 price = 750;
