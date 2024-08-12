@@ -1,7 +1,7 @@
 execVM "scripts\jukebox\playRandomTracks.sqf";
 execVM "scripts\aliveCaptured.sqf";
 //execVM "scripts\killedEventHandlers.sqf";merged with GF killfeed
-execVM "GF_Killfeed\GF_Killfeed.sqf";
+execVM "scripts\kill\arma3mercenaries_kill_script.sqf";
 [west, "LOADOUT1"] call BIS_fnc_addRespawnInventory;
 [resistance, "LOADOUT2"] call BIS_fnc_addRespawnInventory;
 [] spawn VCM_fnc_VcomInit;

@@ -1,3 +1,6 @@
+execVM "scripts\kill\arma3mercenaries_kill_XEHCfg.sqf";
+//area loot script start
+
 [
     "LootToVehicleExtended_MaxTransferDistance", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
     "SLIDER", // setting type
@@ -110,7 +113,7 @@ private _transferBetweenAction = [
         } params [["_nearestVehicle", objNull]];
         
         if (isNull _nearestVehicle) then {
-            systemChat "Area Looter: Error: couldn't find any nearby conatiners";
+            systemChat "Area Looter: Error: couldn't find any nearby containers";
         } else {
             systemChat "Area Looter: Using nearest vehicle";
             [_nearestVehicle,[_target],_player] call LootToVehicleExtended_fnc_transferToVehicle;

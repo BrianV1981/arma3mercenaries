@@ -1,4 +1,4 @@
-    //buyables set/store:
+    //buyables set/store at molos:
     class mercenaryStore_1 {
         //category:  
 		class units_1 {

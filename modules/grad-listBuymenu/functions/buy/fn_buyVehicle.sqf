@@ -1,5 +1,9 @@
-/*  Spawns vehicle
-*
+/*  
+
+gradListBuy vehicle spawn script
+
+enhanced by BrianV1981
+
 */
 
 params ["_buyer","_account","_price","_code","_baseConfigName","_categoryConfigName","_itemConfigName","_vehiclespawn"];
@@ -25,15 +29,20 @@ if (str _spawnPosition == "[]") exitWith {[_buyer,_account,_price,"No vehicle sp
 
 //spawn vehicle
 _vehicle = _itemConfigName createVehicle _spawnPosition;
-/////////////added HG vehicle ownership////
+
+//Disable ALiVE dynamic simulation for this vehicle
+_vehicle setVariable ["ALiVE_disableDynamicSimulation", true, true];
+
+//added HG vehicle ownership variable HG_Owner
 if (isServer || isDedicated) then
-	{
-		[_vehicle,_buyer] remoteExecCall ["HG_fnc_setOwner",_buyer,false];
-	};
-////////////added HG vehicle lock/////////
+    {
+        [_vehicle,_buyer] remoteExecCall ["HG_fnc_setOwner",_buyer,false];
+    };
+//added HG vehicle lock
 [_vehicle, 2] call HG_fnc_lock;
- //////////////////add gradFortfication variable for persistence///////////////////////
- _vehicle setVariable ["grad_fortifications_fortOwner", getPlayerUID player, true];
+//add gradFortfication variable for persistence
+_vehicle setVariable ["grad_fortifications_fortOwner", getPlayerUID player, true];
+
 //bis vehicle init
 private _init = [(missionConfigFile >> "CfgGradBuymenu" >> _baseConfigName >> _categoryConfigName >> _itemConfigName >> "vehicleInit"), "text", "[[],[]]"] call CBA_fnc_getConfigEntry;
 private _compiledInit = call compile _init;

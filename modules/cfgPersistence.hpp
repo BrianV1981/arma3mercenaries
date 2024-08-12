@@ -7,7 +7,7 @@ class CfgGradPersistence {
     playerWaitCondition = "true";
 
     saveUnits = 0;
-    saveVehicles = 0;
+    saveVehicles = 3;
     saveContainers = 3;
     saveStatics = 0;
 	saveGradFortificationsStatics = 3;
@@ -63,6 +63,17 @@ class CfgGradPersistence {
           varName = "container_2";
           varNamespace = "container";
           public = 1;
-    };
+	  };
+	  class hgOwner {
+          varName = "HG_Owner"; // custom variable
+          varNamespace = "vehicle"; // Since this variable is related to vehicles
+          public = 1; // Make it public if needed, 0 if not
+		};
+	  
+		class mercenaryGroups {
+		 varName = "arma3mercenaries_persistence_groupMembers"; // custom variable for persistent group members
+		 varNamespace = "unit"; // Since this variable is related to individual units in a group
+		 public = 1; // Make it public if needed, 0 if not
+		};
     };
 };

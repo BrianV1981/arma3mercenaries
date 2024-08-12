@@ -18,6 +18,10 @@ Example
 [storageBox, 100] call grad_moneymenu_fnc_addFunds; // adds 100 to 
 [player, 1500, true] call grad_moneymenu_fnc_addFunds; // adds 1500 to players bank
 
+
+
+THIS HAS BEEN INTIGRATED INTO THE GF KILLFEED!
+
 */
 
 ///////////adds random 10k wallet for killing opfor////////////////

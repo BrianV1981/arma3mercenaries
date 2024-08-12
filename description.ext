@@ -4,7 +4,7 @@ class Header
 	minPlayers = 1;
 	maxPlayers = 22;
 };
-OnLoadName = "arma3mercenaries Av2.10";
+OnLoadName = "arma3mercenaries Av3.16";
 onLoadMission = "Constellis is a trusted and experienced provider of security services in high-risk environments, remote areas and emerging markets in support of land-based, aviation, maritime and cyber operations.";
 loadScreen = "pictures\constellisslogan_1.paa";
 author="BrianV1981";
@@ -30,6 +30,7 @@ minPlayerDistance = 0;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////
+#include "scripts\kill\arma3mercenaries_killCfg.hpp"
 #include "scripts\jukebox\customInterface.hpp"
 #include "scripts\Extended_Init_EventHandlers.hpp"
 #include "modules\grad-listBuymenu\grad_listBuymenu.hpp"
@@ -373,8 +374,8 @@ onPauseScript = "scripts\removeabortbutton.sqf";
 		titles[] = {};
     };
 	class Killfeed_notification {
-		name = "Killfeed_notification";
-		sound[] = {"GF_Killfeed\Killfeed_Sounds\Killfeed_notification.ogg", db-5, 1.0};
+		name = "Kill_notification";
+		sound[] = {"scripts\kill\kill_notification_sounds\kill_notification.ogg", db-5, 1.0};
 		titles[] = {};
 	};
 };

@@ -40,7 +40,7 @@
             };
 			class B_sniper_F {
                 displayName = "Constellis Sniper Loadout (Blufor)";
-                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is sniper loadout.";
+                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is Sniper loadout.";
                 price = 20000;
                 amount = 1;
                 stock = 9999;
@@ -64,7 +64,7 @@
             };
 			class B_W_Soldier_CBRN_F {
                 displayName = "Constellis CBRN Specialist Loadout (Blufor)";
-                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a Anti-Air loadout.";
+                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a Anti-Radiation loadout.";
                 price = 30000;
                 amount = 1;
                 stock = 9999;

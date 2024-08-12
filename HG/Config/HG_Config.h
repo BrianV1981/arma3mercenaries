@@ -108,9 +108,9 @@ admins[] = {"_SP_PLAYER_"};
 
 /* KEYS */
 atmKey = ;
-lockUnlockKey = ;
+lockUnlockKey = 0x26; // L key;
 giveMoneyKey = ;
-giveKeyKey = ;
+giveKeyKey = 0x25;        // K key
 adminKey = ;
 hudKey = ;
 

@@ -2,19 +2,6 @@
     class vehicleStore_1 {
         //category:  
     
-		class Vitems {
-            kindOf = "Items";
-            displayName = "Vehicle Keys";
-            tracking = 1;
-            //items of this category:
-
-			class ACE_key_master {
-                displayName = "Vehicle Key: Master"; 
-                description = "Vehicle Key: Master";
-                price = 0;
-                stock = 99999;
-            };
-		};
         class Rvehicles {
             kindOf = "Vehicles";
             displayName = "Automobiles and Recreational Vehicles";

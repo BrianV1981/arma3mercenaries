@@ -4,7 +4,7 @@ class CfgGradBuymenu {
 
 	#include "mercenaryStoreMenu_1.hpp"
 	#include "mercenaryStoreMenu_2.hpp"
-	#include "mercenaryStoreMenu_3.hpp"
+	#include "mercenaryStoreMenu_parachute.hpp"
 	#include "vehicleStoreMenu_1.hpp"
 	#include "nukeStoreMenu_1.hpp"
 	#include "weaponStoreMenu.hpp"

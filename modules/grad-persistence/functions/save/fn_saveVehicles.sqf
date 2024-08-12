@@ -1,3 +1,13 @@
+/*
+
+arma3mercenaries_fn_saveVehicle.sqf
+
+gradPersistence save vehicle script fn_saveVehicle.sqf
+
+enhanced by BrianV1981
+
+*/
+
 #include "script_component.hpp"
 
 if (!isServer) exitWith {};
@@ -20,18 +30,14 @@ private _vehiclesData = [_vehiclesTag] call FUNC(getSaveData);
 private _foundVehiclesVarnames = GVAR(allFoundVarNames) select 1;
 _vehiclesData resize 0;
 
-private _saveVehiclesMode = [missionConfigFile >> "CfgGradPersistence", "saveVehicles", 1] call BIS_fnc_returnConfigEntry;
-
+// Collect only vehicles that are tagged with the HG_Owner variable
 private _allVehicles = vehicles select {
     !(_x isKindOf "Static") &&
     !((_x isKindOf "ThingX") && (([configfile >> "CfgVehicles" >> typeOf _x,"maximumLoad",0] call BIS_fnc_returnConfigEntry) > 0)) &&
     {alive _x} &&
     {!([_x] call FUNC(isBlacklisted))} &&
-    {
-        _saveVehiclesMode == 2 ||
-        (_x getVariable [QGVAR(isEditorObject),false]) isEqualTo (_saveVehiclesMode == 1)
-    } &&
-    {if (_area isEqualType false) then {true} else {_x inArea _area}}
+    {if (_area isEqualType false) then {true} else {_x inArea _area}} &&
+    {!isNil {_x getVariable "HG_Owner"}}
 };
 
 {
@@ -63,8 +69,7 @@ private _allVehicles = vehicles select {
     [_thisVehicleHash,"side",side _thisVehicle] call CBA_fnc_hashSet;
     [_thisVehicleHash,"turretMagazines", magazinesAllTurrets _thisVehicle] call CBA_fnc_hashSet;
     [_thisVehicleHash,"inventory", _vehicleInventory] call CBA_fnc_hashSet;
-    [_thisVehicleHash,"isGradFort",!isNil {_thisVehicle getVariable "grad_fortifications_fortOwner"}] call CBA_fnc_hashSet;
-
+    [_thisVehicleHash,"HG_Owner",_thisVehicle getVariable "HG_Owner"] call CBA_fnc_hashSet;
 
     private _thisVehicleVars = [_allVehicleVariableClasses,_thisVehicle] call FUNC(saveObjectVars);
     [_thisVehicleHash,"vars",_thisVehicleVars] call CBA_fnc_hashSet;
@@ -78,6 +83,5 @@ private _killedVehiclesVarnames = _killedVarnames param [1,[]];
 _killedVehiclesVarnames append _foundVehiclesVarnames;
 _killedVehiclesVarnames arrayIntersect _killedVehiclesVarnames;
 _killedVarnames set [1,_killedVehiclesVarnames];
-
 
 saveProfileNamespace;

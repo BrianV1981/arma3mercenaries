@@ -28,19 +28,34 @@ class CfgGradPersistence {
             varNamespace = "player";
             public = 1;
         };
+		
         class acexWater {
             varName = "acex_field_rations_thirst";
             varNamespace = "player";
             public = 1;
         };
-	  class gradFortificationsStore1ContainerInventory {
+		
+		class gradFortificationsStore1ContainerInventory {
           varName = "container_1";
           varNamespace = "container";
           public = 1;
-      };
-	  class gradFortificationsStore2ContainerInventory {
+		};
+		
+		class gradFortificationsStore2ContainerInventory {
           varName = "container_2";
           varNamespace = "container";
           public = 1;
-    };
+		};
+		
+		class hgOwner {
+          varName = "HG_Owner"; // custom variable
+          varNamespace = "vehicle"; // Since this variable is related to vehicles
+          public = 1; // Make it public if needed, 0 if not
+		};
+	  
+		class mercenaryGroups {
+		 varName = "arma3mercenaries_persistence_groupMembers"; // custom variable for persistent group members
+		 varNamespace = "unit"; // Since this variable is related to individual units in a group
+		 public = 1; // Make it public if needed, 0 if not
+		};
 };

@@ -1,6 +1,8 @@
 /*
     Author - HoverGuy
     Website - https://northernimpulse.com
+	
+	Updated by BrianV1981
 */
 params["_mode","_unit","_classname","_sp",["_plate",round(random(9999))],["_color",""],"_vehicle"];
 
@@ -46,6 +48,9 @@ if((typeName _sp) isEqualTo "ARRAY") then
 	_vehicle setVectorUp (surfaceNormal (markerPos _sp));
 	_vehicle setDir (markerDir _sp);
 };
+
+// **Disable ALiVE dynamic simulation for this vehicle**
+_vehicle setVariable ["ALiVE_disableDynamicSimulation", true, true];
 
 _vehicle allowDamage false;
 _vehicle setVariable["HG_Owner",[(getPlayerUID _unit),_plate,_color,[]],true];

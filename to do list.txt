@@ -1,14 +1,40 @@
+add claim action on namers
+death marker does not show any information, just a bright red last name with a warning circle
 
+
+***version 3.15***TESTINGfix the kill feed...i went nuts and did a complete overhaul. first time that I feel like I created something that may be usefile for years to come...
+
+***TESTING***fix duping parchute: nope, once again, a big fat fail...try again
+
+private _randomSpawnPos = player getPos [(random 20) + 1, random 359];
+_mercenary = "B_crew_F" createUnit [_randomSpawnPos, (group player), {
+    _this setVariable ['Vcm_Disable', true, true];
+    if (isServer) then {
+        chute = 'Steerable_Parachute_F' createVehicle [0, 0, 0];
+        chute setPos [getPos _this select 0, getPos _this select 1, 150];
+        _this moveInDriver chute;
+    };
+}, 0.5, "PRIVATE"];
+
+***done***remofe fort maga AA? (duping)
+
+remove car keys and add an ace addaction for HG locks and HG key interface
+
+update store notifiation with directions on how to lock and unlock/ open key menu
+
+alter HG interface to say arma3mercenaries
+
+alter grad persistence to say arma3mercenaries
 
 add kill rewards for NPC's
 put a distance on the radio addaction
 
-Moving loot from target to %
+fix area loot script hints: Moving loot from target to % (should be gathering loot around to "target")
 
 otokar ARMA selling for $0
 
 
-***TESTING***adjust player logistuics (disable) midule***av1.03***
+***done***adjust player logistuics (disable) module***av1.03***
 add more garage locations
 limit amount of vehicles stored
 ***DONE***rework and test the killedevenhandlers.sqf ***av1.03***
@@ -22,7 +48,7 @@ add fence/loot vendor
 ***DONE***add ALIVE player logistics (disable) module
 ***DONE***turn of persistent logistics
 ***DONE***turn off persistent ied's
-***TESTING***fix loot script (configuration?)
+***done***fix loot script (configuration?)
 put water stand at molos base
 ***DONE***update locations of the delete vehicles.sqf
 
@@ -98,3 +124,67 @@ look at all civilian settings
 //////
 ***DONE***adjust fort maga blu_f initial spawned units
 ***DONE***fix the rearm refuel and repair cargo containers or just add all 3 items and be done with it
+
+
+
+
+
+
+
+/////////backing up my stupid brain....
+
+
+Walls and Fences:
+
+Stone Walls
+Wire Fences
+Tin Fences
+Fortress Walls
+Barriers and Obstacles:
+
+Sandbags
+Dragon's Teeth
+Concrete Barriers
+Anti-Tank Obstacles
+Fortified Structures:
+
+Bunkers
+Watchtowers
+Military Cargo Houses
+Military Cargo HQs
+Camouflage and Cover:
+
+Camouflage Nets
+Canvas Covers
+Industrial Sheds
+Vehicle Covers
+Tents
+Historical Structures:
+
+Ancient Relics
+Petroglyph Walls
+Fortress Cannons
+Industrial Structures:
+
+Sugarcane Factory Structures
+Industrial Sheds (Surface Mine)
+Cargo Patrol Posts
+Towers:
+
+Military Cargo Towers
+Watchtowers
+Miscellaneous:
+
+
+
+
+
+
+Bunkers
+Watchtowers
+Military Cargo Houses
+Military Cargo HQs
+Industrial Sheds (Surface Mine)
+Cargo Patrol Posts
+Military Cargo Towers
+Watchtowers
