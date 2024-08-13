@@ -21,7 +21,7 @@ player addItemToUniform "ACE_Splint";
 player addItemToUniform "ACE_morphine";
 player addItemToUniform "ACE_CableTie";
 player addItemToUniform "ACE_EarPlugs";
-player addItemToUniform "ACE_key_master";
+
 
 for "_i" from 1 to 4 do {player addItemToVest "30Rnd_9x21_Mag_SMG_02_Tracer_Red";};
 

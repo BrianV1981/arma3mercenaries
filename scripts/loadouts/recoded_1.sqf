@@ -27,7 +27,7 @@ player addItemToUniform "ACE_MapTools";
 player addItemToUniform "ACE_Flashlight_XL50";
 player addItemToUniform "ACE_microDAGR";
 player addItemToUniform "ACE_RangeCard";
-player addItemToUniform "ACE_key_master";
+
 player addItemToUniform "optic_Nightstalker";
 player addItemToUniform "ACE_muzzle_mzls_H";
 for "_i" from 1 to 14 do {player addItemToVest "ACE_30Rnd_65_Creedmor_mag";};

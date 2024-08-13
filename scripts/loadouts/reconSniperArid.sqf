@@ -29,7 +29,7 @@ player addItemToUniform "ACE_CableTie";
 player addItemToUniform "ACE_Canteen";
 player addItemToUniform "ACE_Humanitarian_Ration";
 player addItemToUniform "ACE_EarPlugs";
-player addItemToUniform "ACE_key_master";
+
 
 for "_i" from 1 to 8 do {player addItemToVest "7Rnd_408_Mag";};
 for "_i" from 1 to 4 do {player addItemToVest "SmokeShell";};

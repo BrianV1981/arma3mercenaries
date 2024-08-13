@@ -26,7 +26,7 @@ player addWeapon "ACE_Vector";
 player addItemToUniform "ACE_IR_Strobe_Item";
 player addItemToUniform "ACE_microDAGR";
 player addItemToUniform "ACE_SpraypaintBlue";
-player addItemToUniform "ACE_key_master";
+
 player addItemToUniform "ACE_RangeCard";
 player addItemToUniform "ACE_MapTools";
 player addItemToUniform "ACE_Clacker";

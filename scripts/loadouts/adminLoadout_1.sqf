@@ -24,6 +24,7 @@ for "_i" from 1 to 4 do {player addItemToUniform "ACE_morphine";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_epinephrine";}; 
 player addItemToUniform "ACE_CableTie"; 
 player addItemToUniform "ACE_EarPlugs";
+player addItemToUniform "ACE_key_master";
 player addItemToUniform "FirstAidKit";
 player addItemToUniform "30Rnd_65x39_caseless_black_mag";
 
@@ -37,6 +38,8 @@ player addItemToVest "SmokeShellGreen";
 player addItemToBackpack "ACE_EntrenchingTool";
 player addItemToBackpack "ACE_Canteen";
 player addItemToBackpack "ACE_Humanitarian_Ration";
+player addItemToBackpack "ALiVE_Tablet";
+
 
 player addHeadgear "H_HelmetB";
 player addGoggles "G_AirPurifyingRespirator_01_nofilter_F";

@@ -101,6 +101,14 @@
                 stock = 9999;
 				code = [player,"scripts\loadouts\jay_1.sqf"] call BIS_fnc_execVM;
             };
+			class B_Patrol_Soldier_UAV_F {
+                displayName = "Jay Loadout 2";
+                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Jay.";
+                price = 45000;
+                amount = 1;
+                stock = 9999;
+				code = [player,"scripts\loadouts\jay_1.sqf"] call BIS_fnc_execVM;
+            };
 			class B_ghillie_ard_F {
                 displayName = "RGMK1";
                 description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a custom loadout for Recoded.";
@@ -159,6 +167,14 @@
                 amount = 1;
                 stock = 9999;
 				code = [player,"scripts\loadouts\kogerGearRetriever_1.sqf"] call BIS_fnc_execVM;
+            };
+			class B_CTRG_Soldier_AR_tna_F {	
+                displayName = "Admin Loadout";
+                description = "***WARNING***ALL ITEMS THAT ARE IN YOUR INVENTORY AND CURRENTLY EQUIPPED WILL BE DELETED***This is a game administrator loadout.";
+                price = 5000000;
+                amount = 1;
+                stock = 9999;
+				code = [player,"scripts\loadouts\adminLoadoutr_1.sqf"] call BIS_fnc_execVM;
             };
 		};
 	};

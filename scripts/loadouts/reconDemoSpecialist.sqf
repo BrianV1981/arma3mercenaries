@@ -28,7 +28,7 @@ player addItemToUniform "ACE_CableTie";
 player addItemToUniform "ACE_Clacker"; 
 player addItemToUniform "ACE_DefusalKit"; 
 player addItemToUniform "ACE_EarPlugs";
-player addItemToUniform "ACE_key_master";
+
 
 for "_i" from 1 to 4 do {player addItemToVest "ACE_bloodIV_250";}; 
 for "_i" from 1 to 8 do {player addItemToVest "30Rnd_65x39_caseless_mag";}; 

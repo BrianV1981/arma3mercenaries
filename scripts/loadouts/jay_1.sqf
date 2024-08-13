@@ -33,7 +33,7 @@ player addItemToUniform "ACE_splint";
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_epinephrine";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_tourniquet";
-player addItemToUniform "ACE_key_master";
+
 for "_i" from 1 to 5 do {player addItemToVest "100Rnd_65x39_caseless_mag_Tracer";};
 
 player addItemToBackpack "Toolkit";

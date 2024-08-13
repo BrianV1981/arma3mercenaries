@@ -20,7 +20,7 @@ player addWeapon "Binocular";
 
 for "_i" from 1 to 22 do {player addItemToUniform "ACE_fieldDressing";};
 player addItemToUniform "ACE_EarPlugs";
-player addItemToUniform "ACE_key_master";
+
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_epinephrine";};
 for "_i" from 1 to 3 do {player addItemToUniform "ACE_morphine";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_splint";};
