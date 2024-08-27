@@ -6,7 +6,7 @@ class CfgGradPersistence {
     missionWaitCondition = "true";
     playerWaitCondition = "true";
 
-    saveUnits = 0;
+    saveUnits = 3;
     saveVehicles = 3;
     saveContainers = 3;
     saveStatics = 0;
@@ -70,10 +70,20 @@ class CfgGradPersistence {
           public = 1; // Make it public if needed, 0 if not
 		};
 	  
-		class mercenaryGroups {
-		 varName = "arma3mercenaries_persistence_groupMembers"; // custom variable for persistent group members
-		 varNamespace = "unit"; // Since this variable is related to individual units in a group
-		 public = 1; // Make it public if needed, 0 if not
-		};
+		class aiUnit {
+            varName = "arma3mercenaries_aiUnit";
+            varNamespace = "unit";
+            public = 1;  // Set to 1 if you need it broadcast across the network
+        };
+        class groupID {
+            varName = "arma3mercenaries_groupID";
+            varNamespace = "unit";
+            public = 1;
+        };
+		class barracksGroupData {
+            varName = "arma3mercenaries_barracksGroupsData";
+            varNamespace = "missionNamespace"; // This stores data in the mission namespace
+            public = 1; // Private to each player, not broadcast across the network
+        };
     };
 };

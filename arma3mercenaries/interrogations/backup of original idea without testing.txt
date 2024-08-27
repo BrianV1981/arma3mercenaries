@@ -1,0 +1,54 @@
+ORIGINAL
+
+/*
+    arma3mercenaries_fn_civilianInterrogations.sqf
+    Author: BrianV1981
+
+    Description:
+    This script enables Independent or BLUFOR players to "interrogate" civilians within a 30-meter radius of an activation point.
+    Upon triggering the action, the player is notified about the number of civilians being interrogated. After a 1-minute delay,
+    each civilian is considered interrogated and removed (killed). The player then receives a financial reward for each civilian processed,
+    simulating the collection and processing of intelligence. This provides strategic benefits and gameplay incentives to Independent and BLUFOR factions.
+*/
+
+// Get the player who activated the action
+private _player = _this select 0;
+if (!(side _player in [west, independent])) exitWith {
+    hint "Only Independent or BLUFOR members can perform this action.";
+};
+
+if ((_player getVariable ["lastInterrogationTime", 0]) > time - 60) exitWith {
+    hint "You can only interrogate once every minute.";
+};
+_player setVariable ["lastInterrogationTime", time];
+
+private _pos = getPos _player;
+private _civilians = _pos nearEntities ["Civilian", 30];
+_civilians = _civilians select {alive _x && side _x == civilian};
+private _totalReward = 0;
+
+// Notify the player about the number of civilians being interrogated
+private _initialMessage = format ["%1 civilians are being interrogated. Payment will be received upon completion.", count _civilians];
+_initialMessage cutText ["PLAIN", "PLAIN DOWN"];
+
+// Delay processing of each civilian
+[_civilians, _player] spawn {
+    params ["_civilians", "_player"];
+    sleep 60; // Reduced delay to 1 minute as per potential requirement change
+
+    // Process each civilian within 30 meters
+    {
+        if (side _x == civilian) {
+            _x setDamage 1; // "Kill" the civilian
+            private _reward = random [10000, 30000, 50000];
+            _totalReward = _totalReward + _reward; // Accumulate total reward
+        }
+    } forEach _civilians;
+
+    // Apply the total reward to the player
+    [getPlayerUID _player, _totalReward] call grad_lbm_fnc_addFunds;
+
+    // Provide dynamic feedback to the player
+    private _completionMessage = format ["Interrogation complete. %1 cr. has been handed to you. Use it to fund the war effort.", _totalReward];
+    _completionMessage cutText ["PLAIN", "PLAIN DOWN"];
+};

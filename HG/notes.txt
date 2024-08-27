@@ -115,5 +115,144 @@ HG\Functions\Client\Dealer\fn_dealerSell.sqf
 HG\Functions\Client\Garage\fn_storeVehicleClient.sqf
 HG\Functions\Client\VehiclesShop\fn_addActions.sqf
 
+////success...
 
+
+
+this addAction[
+    "<img image='HG\UI\Icons\garage.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>" + (localize "STR_HG_GARAGE") + "</t>", 
+    { ["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage; },
+    nil, 0, false, false, "", '(alive player) && !dialog && player distance _target < 3'
+];    
+
+this addAction[
+    "<img image='HG\UI\Icons\garage.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>" + (localize "STR_HG_GARAGE_PARK") + "</t>", 
+    { ["HG_DefaultGarage"] call HG_fnc_storeVehicleClient; },
+    nil, 0, false, false, "", '(alive player) && !dialog && player distance _target < 3'
+];
+
+this addAction[
+    "<img image='HG\UI\Icons\money.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>" + (localize "STR_HG_VEHICLES_SHOP") + "</t>", 
+    { ["HG_DefaultShop"] call HG_fnc_dialogOnLoadVehicles; },
+    nil, 0, false, false, "", '(alive player) && !dialog && player distance _target < 3'
+]; 
+
+this addAction[
+    "<img image='HG\UI\Icons\money.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>" + (localize "STR_HG_ITEMS_SHOP") + "</t>", 
+    { ["HG_DefaultShop"] call HG_fnc_dialogOnLoadItems; },
+    nil, 0, false, false, "", '(alive player) && !dialog && player distance _target < 3'
+];    
+
+this addAction[
+    "<img image='HG\UI\Icons\money.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>" + (localize "STR_HG_GEAR_SHOP") + "</t>", 
+    { ["HG_DefaultShop"] call HG_fnc_dialogOnLoadGear; },
+    nil, 0, false, false, "", '(alive player) && !dialog && player distance _target < 3'
+];    
+
+this addAction["<img image='HG\UI\Icons\money.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_TRADER")+"</t>",{_this call HG_fnc_dialogOnLoadTrader},"HG_DefaultTrader",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];   
+
+this addAction["<img image='HG\UI\Icons\car.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_DEALER")+"</t>",{_this call HG_fnc_dialogOnLoadDealer},"HG_DefaultDealer",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];     
+
+this addAction["<img image='HG\UI\Icons\atm.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_ATM")+"</t>",{_this call HG_fnc_dialogOnLoadATM},"",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
+
+///// ace addactions
+
+
+private _actGarage = [ 
+    (localize "STR_HG_GARAGE"), 
+    (localize "STR_HG_GARAGE"), 
+    "HG\UI\Icons\garage.paa", 
+    {["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage}, 
+    {(alive player) && !dialog}, 
+    {},[],[],3 
+] call ace_interact_menu_fnc_createAction; 
+[shop_1, 0, ["ACE_MainActions"], _actGarage] call ace_interact_menu_fnc_addActionToObject; 
+ 
+ 
+private _actParkVehicle = [ 
+    (localize "STR_HG_GARAGE_PARK"), 
+    (localize "STR_HG_GARAGE_PARK"), 
+    "HG\UI\Icons\garage.paa", 
+    {["HG_DefaultGarage"] call HG_fnc_storeVehicleClient}, 
+    {(alive player) && !dialog}, 
+    {},[],[],3 
+] call ace_interact_menu_fnc_createAction; 
+[shop_1, 0, ["ACE_MainActions"], _actParkVehicle] call ace_interact_menu_fnc_addActionToObject; 
+ 
+ 
+private _actDealer = [  
+    (localize "STR_HG_DEALER"),  
+    (localize "STR_HG_DEALER"),  
+    "HG\UI\Icons\car.paa",  
+    {[_target, player, 0, "HG_DefaultDealer"] call HG_fnc_dialogOnLoadDealer},  
+    {(alive player) && !dialog},  
+    {},[],[],3  
+] call ace_interact_menu_fnc_createAction;  
+  
+[shop_1, 0, ["ACE_MainActions"], _actDealer] call ace_interact_menu_fnc_addActionToObject;  
+ 
+ 
+private _actTrader = [   
+    (localize "STR_HG_TRADER"),   
+    (localize "STR_HG_TRADER"),   
+    "HG\UI\Icons\money.paa",   
+    {[_target, player, 0, "HG_DefaultTrader"] call HG_fnc_dialogOnLoadTrader},   
+    {(alive player) && !dialog},   
+    {},[],[],3   
+] call ace_interact_menu_fnc_createAction;   
+   
+[shop_1, 0, ["ACE_MainActions"], _actTrader] call ace_interact_menu_fnc_addActionToObject;  
+ 
+ 
+private _actGearShop = [ 
+    (localize "STR_HG_GEAR_SHOP"), 
+    (localize "STR_HG_GEAR_SHOP"), 
+    "HG\UI\Icons\money.paa", 
+    {["HG_DefaultShop"] call HG_fnc_dialogOnLoadGear}, 
+    {(alive player) && !dialog}, 
+    {},[],[],3 
+] call ace_interact_menu_fnc_createAction; 
+[shop_1, 0, ["ACE_MainActions"], _actGearShop] call ace_interact_menu_fnc_addActionToObject; 
+ 
+ 
+private _actItemsShop = [   
+    (localize "STR_HG_ITEMS_SHOP"),   
+    (localize "STR_HG_ITEMS_SHOP"),   
+    "HG\UI\Icons\money.paa",   
+    {   
+        params ["_whatShop"];  
+        ["HG_DefaultShop", _whatShop] call HG_fnc_dialogOnLoadItems;   
+    },   
+    {(alive player) && !dialog},   
+    {},[],[],3   
+] call ace_interact_menu_fnc_createAction;   
+   
+[shop_1, 0, ["ACE_MainActions"], _actItemsShop] call ace_interact_menu_fnc_addActionToObject;  
+ 
+ 
+private _actVehiclesShop = [ 
+    (localize "STR_HG_VEHICLES_SHOP"), 
+    (localize "STR_HG_VEHICLES_SHOP"), 
+    "HG\UI\Icons\car.paa", 
+    { 
+        params ["_target", "_caller"]; 
+        ["HG_DefaultShop", _target, _caller] call HG_fnc_dialogOnLoadVehicles; 
+    }, 
+    {(alive player) && !dialog}, 
+    {},[],[],3 
+] call ace_interact_menu_fnc_createAction; 
+ 
+[shop_1, 0, ["ACE_MainActions"], _actVehiclesShop] call ace_interact_menu_fnc_addActionToObject; 
+ 
+ 
+private _actATM = [ 
+    (localize "STR_HG_ATM"), 
+    (localize "STR_HG_ATM"), 
+    "HG\UI\Icons\atm.paa", 
+    {call HG_fnc_dialogOnLoadATM}, 
+    {(alive player) && !dialog}, 
+    {},[],[],3 
+] call ace_interact_menu_fnc_createAction; 
+[shop_1, 0, ["ACE_MainActions"], _actATM] call ace_interact_menu_fnc_addActionToObject; 
+ 
 

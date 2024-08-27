@@ -1,0 +1,57 @@
+# Unit Shop Update Summary
+
+## Overview
+The goal was to update the unit shop to integrate with the Grad Money system and ensure compatibility with the ACE Interaction menu. The key objectives included replacing outdated money-handling functions, adjusting parameters for ACE compatibility, and preserving all UI elements and functionality.
+
+## Files Updated
+
+### 1. `fn_unitsComboChanged.sqf`
+- **Changes**:
+  - Removed the discount parameter and related calculations to simplify the script.
+  - Updated the script to check for Grad Money instead of HG Money when processing purchases.
+  - Replaced any reference to HG functions or variables that manage currency.
+- **Purpose**:
+  - Ensured that when a unit is selected in the combo box, the correct price is displayed and processed using Grad Money. This change streamlined the code and aligned it with the updated money-handling system.
+
+### 2. `fn_unitsRefresh.sqf`
+- **Changes**:
+  - Updated the logic for refreshing the unit list within the shop.
+  - Ensured that the unit shop properly loads and displays available units, factoring in any conditions for access and pricing using Grad Money.
+- **Purpose**:
+  - Allowed the unit list to be dynamically refreshed and displayed correctly in the shop, reflecting the current availability and cost of units using the Grad Money system.
+
+### 3. `fn_unitsTreeChanged.sqf`
+- **Changes**:
+  - Updated the logic to correctly display unit details (such as name, picture, and description) when a unit is selected from the tree view.
+  - Integrated Grad Money formatting to display the correct price for each unit.
+- **Purpose**:
+  - Ensured that selecting a unit in the tree view triggers the correct display of all relevant details, including pricing formatted with the Grad Money system.
+
+### 4. `HG_UnitsShop.h`
+- **Changes**:
+  - Integrated the "My Cash" button with the Grad Money system to display the player's current wallet amount.
+  - Updated UI elements to ensure that all button actions, especially those related to purchasing units and checking available funds, work correctly with Grad Money.
+- **Purpose**:
+  - Made sure that the shop interface correctly reflects the player's available funds and processes purchases using the Grad Money system.
+
+### 5. `fn_dialogOnLoadUnits.sqf`
+- **Changes**:
+  - Parameters Adjusted: The parameters were adjusted by removing _target, _caller, and _id, leaving only _whatShop. This ensures compatibility with ACE Interaction as it requires specific parameters to function correctly.
+  - Adjusted parameters to ensure compatibility with ACE Interaction, specifically aligning the parameters to match the required structure.
+  - Simplified the shop loading process and ensured that the unit list is populated correctly when accessed via ACE.
+- **Purpose**:
+  - Enabled the unit shop to be accessed and displayed correctly when triggered via the ACE Interaction menu. This adjustment was crucial for making sure the unit list was populated and accessible as expected.
+
+## Critical Steps
+
+### 1. Parameter Adjustments
+The `fn_dialogOnLoadUnits.sqf` file was modified to align the parameters correctly for ACE Interaction. This was a crucial step in ensuring the unit shop could be accessed through the ACE menu and that the unit list populated as expected.
+
+### 2. Grad Money Integration
+Across all scripts, the original HG money-handling functions were replaced with those from Grad Money. This ensured consistency in how funds are checked, displayed, and deducted, aligning the unit shop with the updated financial system.
+
+### 3. ACE Interaction Setup
+Adjustments were made to the scripts to ensure that the unit shop could be accessed and interacted with through the ACE Interaction menu. This involved aligning functions and parameters to work seamlessly within the ACE framework.
+
+## Summary
+By updating each script to integrate Grad Money and adjusting parameters for ACE Interaction, the unit shop was modernized and made fully functional within the ACE menu. These updates ensured that all money-related functions worked correctly and that the shop interface was properly populated and accessible. The final adjustments, particularly the parameter changes, were key to ensuring the unit list displayed as expected and the purchasing process worked smoothly.

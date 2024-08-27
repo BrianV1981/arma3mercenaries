@@ -1,0 +1,36 @@
+
+this addAction[
+    "<img image='HG\UI\Icons\garage.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>" + (localize "STR_HG_GARAGE") + "</t>", 
+    { ["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage; },
+    nil, 0, false, false, "", '(alive player) && !dialog && player distance _target < 3'
+];    
+
+this addAction[
+    "<img image='HG\UI\Icons\garage.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>" + (localize "STR_HG_GARAGE_PARK") + "</t>", 
+    { ["HG_DefaultGarage"] call HG_fnc_storeVehicleClient; },
+    nil, 0, false, false, "", '(alive player) && !dialog && player distance _target < 3'
+];
+
+this addAction[
+    "<img image='HG\UI\Icons\money.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>" + (localize "STR_HG_VEHICLES_SHOP") + "</t>", 
+    { ["HG_DefaultShop"] call HG_fnc_dialogOnLoadVehicles; },
+    nil, 0, false, false, "", '(alive player) && !dialog && player distance _target < 3'
+]; 
+
+this addAction[
+    "<img image='HG\UI\Icons\money.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>" + (localize "STR_HG_ITEMS_SHOP") + "</t>", 
+    { ["HG_DefaultShop"] call HG_fnc_dialogOnLoadItems; },
+    nil, 0, false, false, "", '(alive player) && !dialog && player distance _target < 3'
+];    
+
+this addAction[
+    "<img image='HG\UI\Icons\money.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>" + (localize "STR_HG_GEAR_SHOP") + "</t>", 
+    { ["HG_DefaultShop"] call HG_fnc_dialogOnLoadGear; },
+    nil, 0, false, false, "", '(alive player) && !dialog && player distance _target < 3'
+];    
+
+this addAction["<img image='HG\UI\Icons\money.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_TRADER")+"</t>",{_this call HG_fnc_dialogOnLoadTrader},"HG_DefaultTrader",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];   
+
+this addAction["<img image='HG\UI\Icons\car.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_DEALER")+"</t>",{_this call HG_fnc_dialogOnLoadDealer},"HG_DefaultDealer",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];     
+
+this addAction["<img image='HG\UI\Icons\atm.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_ATM")+"</t>",{_this call HG_fnc_dialogOnLoadATM},"",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];

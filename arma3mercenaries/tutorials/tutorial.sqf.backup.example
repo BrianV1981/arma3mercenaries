@@ -1,0 +1,16 @@
+// Check if the player has already seen the tutorial this session
+if (isNil {missionNamespace getVariable ["arma3mercenaries_shownTutorial", nil]}) then {
+    // Set the flag to true to indicate the tutorial has been shown
+    missionNamespace setVariable ["arma3mercenaries_shownTutorial", true];
+
+    // Trigger the tutorial dialog
+    [] spawn {
+        scriptName "initPlayerLocal.sqf: show tutorial";
+
+        // Ensure the GUI is not displayed while in the loading screen
+        waitUntil { !isNull findDisplay 46 };
+
+        // Display the tutorial dialog
+        createDialog "Arma3MercenariesTutorial";
+    };
+};

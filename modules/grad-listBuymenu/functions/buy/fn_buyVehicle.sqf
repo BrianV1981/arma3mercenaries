@@ -33,7 +33,7 @@ _vehicle = _itemConfigName createVehicle _spawnPosition;
 //Disable ALiVE dynamic simulation for this vehicle
 _vehicle setVariable ["ALiVE_disableDynamicSimulation", true, true];
 
-//added HG vehicle ownership variable HG_Owner
+//added HG vehicle ownership variable HG_Owner for use in HG garages
 if (isServer || isDedicated) then
     {
         [_vehicle,_buyer] remoteExecCall ["HG_fnc_setOwner",_buyer,false];
@@ -41,7 +41,7 @@ if (isServer || isDedicated) then
 //added HG vehicle lock
 [_vehicle, 2] call HG_fnc_lock;
 //add gradFortfication variable for persistence
-_vehicle setVariable ["grad_fortifications_fortOwner", getPlayerUID player, true];
+ _vehicle setVariable ["grad_fortifications_fortOwner", getPlayerUID player, true]; // I have no idea why I cant or didn't use the hg variable for vehicle persistence, but I am going to leave well enough alone, plus, im switching to hg shop interface...
 
 //bis vehicle init
 private _init = [(missionConfigFile >> "CfgGradBuymenu" >> _baseConfigName >> _categoryConfigName >> _itemConfigName >> "vehicleInit"), "text", "[[],[]]"] call CBA_fnc_getConfigEntry;

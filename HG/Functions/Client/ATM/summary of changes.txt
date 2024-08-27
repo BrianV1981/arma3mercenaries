@@ -1,0 +1,49 @@
+# ATM Update Summary
+
+## Overview
+The objective was to update the ATM system to work seamlessly with the Grad Money system, replacing the original HG money functions with verified Grad Money functions. This involved updating the various ATM-related scripts to ensure all interactions with the player's money, whether in the wallet or the bank account, were handled correctly and consistently.
+
+## Files Updated
+
+### 1. `fn_atmReceived.sqf`
+- **Changes**:
+  - Integrated the Grad Money system to correctly handle the receipt of funds when they are transferred between players.
+  - Replaced HG-specific money functions with Grad Money equivalents.
+- **Purpose**:
+  - To ensure that when funds are transferred to another player, the Grad Money system updates the recipient’s account balance accurately.
+
+### 2. `fn_atmRefresh.sqf`
+- **Changes**:
+  - Replaced HG-specific functions with Grad Money equivalents to refresh and display the player's current account balance and cash on hand.
+  - Ensured that the ATM interface reflects the player’s Grad Money balances accurately.
+- **Purpose**:
+  - To correctly update the display of the player’s funds in both the wallet and the bank account using the Grad Money system.
+
+### 3. `fn_dialogOnLoadATM.sqf`
+- **Changes**:
+  - Adjusted the script to initialize the ATM dialog with the correct balances from the Grad Money system when it is loaded.
+- **Purpose**:
+  - To ensure that the ATM interface is correctly initialized with the player’s current financial data when accessed.
+
+### 4. `fn_atmBtns.sqf`
+- **Changes**:
+  - Updated the button actions (deposit, withdraw, transfer) to interact with the Grad Money system.
+  - Ensured that any funds added, removed, or transferred are correctly handled by the Grad Money system.
+- **Purpose**:
+  - To allow players to deposit, withdraw, or transfer funds correctly using the Grad Money functions, ensuring accurate account balance updates.
+
+### 5. `HG_Macros.h`
+- **Changes**:
+  - Updated macros related to the ATM interface to work with the new Grad Money functions.
+- **Purpose**:
+  - To provide updated references and controls for interacting with the ATM interface, ensuring the correct display and functionality of money-related UI elements.
+
+### 6. `HG_ATM.h`
+- **Changes**:
+  - Enhanced comments to clarify the purpose and functionality of each UI element.
+  - Updated button actions and text fields to work with the Grad Money system.
+- **Purpose**:
+  - To ensure the ATM’s UI elements are correctly set up and functional with the new money system, providing clear instructions and feedback to the player.
+
+## Summary
+By updating each of these files, we ensured that the ATM system now fully integrates with the Grad Money system. This update allows for seamless management of in-game currency through deposits, withdrawals, and transfers, with accurate and up-to-date financial information displayed in the ATM interface. The changes also included the removal of outdated HG-specific functions, replacing them with the more robust and reliable Grad Money functions.

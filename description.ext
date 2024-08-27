@@ -4,13 +4,13 @@ class Header
 	minPlayers = 1;
 	maxPlayers = 22;
 };
-OnLoadName = "arma3mercenaries Av3.16";
+OnLoadName = "arma3mercenaries Av6.26";
 onLoadMission = "Constellis is a trusted and experienced provider of security services in high-risk environments, remote areas and emerging markets in support of land-based, aviation, maritime and cyber operations.";
-loadScreen = "pictures\constellisslogan_1.paa";
+loadScreen = "pictures\arma3mercenaries_v1.paa";
 author="BrianV1981";
 respawn = 3;
-respawndelay = 15;
-respawnTemplates[] = {"MenuInventory", "MenuPosition", "Spectator"};
+respawndelay = 30;
+respawnTemplates[] = {"MenuInventory", "MenuPosition", "Spectator"};  // {"ace_spectator"} // MenuPosition and MenuInventory are not currently compatible with the ace_spectator template.
 respawnOnStart = -1;
 disabledAI = 1;
 joinUnassigned = 1;
@@ -27,11 +27,10 @@ wreckRemovalMinTime = 300;
 wreckRemovalMaxTime = 600;
 minPlayerDistance = 0;
 
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////
-#include "scripts\kill\arma3mercenaries_killCfg.hpp"
-#include "scripts\jukebox\customInterface.hpp"
+
+#include "arma3mercenaries\kill\arma3mercenaries_killCfg.hpp"
+#include "arma3mercenaries\jukebox\arma3mercenaries_jukebox_customInterface.hpp"
 #include "scripts\Extended_Init_EventHandlers.hpp"
 #include "modules\grad-listBuymenu\grad_listBuymenu.hpp"
 #include "modules\grad-moneymenu\grad_moneymenu.hpp"
@@ -155,8 +154,6 @@ class CfgRespawnInventory
 ///////////////////////////////vcom////////////////////////////////////////////////
 
 
-allowFunctionsRecompile = 1;
-
 
 class CfgRemoteExec
 {
@@ -168,214 +165,53 @@ class CfgRemoteExec
 		
 		class vcm_serverask { allowedTargets = 0;jip = 1; };
 		class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+		class BIS_fnc_debugConsoleExec { allowedTargets = 0;jip = 1; };
 		class SpawnScript { allowedTargets = 0;jip = 1; };
 		class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
-		class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };	
+		class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+		
 	};
 	
 	
 };
-
 
 class Extended_PreInit_EventHandlers {
 	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_Functions\fn_CBASettings.sqf";
 };
 
-////////////////////////https://forums.bohemia.net/forums/topic/190877-solved-respawn-delay-as-parameter////////////////////////////////
-
-class Params
-{
-	class respawnDelay
-	{
-		title = "Respawn Delay";
-		texts[] = {"1", "5", "10", "15", "30", "45", "60"};
-		values[] = {1, 5, 10, 15, 30, 45, 60};
-		default = 15;
-	};
-};
-
-///https://forums.bohemia.net/forums/topic/220528-help-disable-escape-options-when-killed/
-onPauseScript = "scripts\removeabortbutton.sqf";
-
+///disabled, trying another way out (initPlayerLocal)
+/// https://forums.bohemia.net/forums/topic/220528-help-disable-escape-options-when-killed/
+//  onPauseScript = "scripts\removeabortbutton.sqf";
+	onPauseScript = "arma3mercenaries\disable_abort_button\arma3mercenaries_disableAbortBtn.sqf";
 //////////////////////////////////   music   /////////////////////////////////////////////////////////
 
-	class CfgMusic {
-	tracks[] = {myTrack1, myTrack2, myTrack3, myTrack4, myTrack5, myTrack6, myTrack7, myTrack8, myTrack9, myTrack10, myTrack11, myTrack12, myTrack13};
-	
-		class myTrack1 {
-		name = "myTrack1";
-		sound[] = {"music\bird.ogg", db+3, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 121;
-		artist = "The Trashmen";
-		title = "Surfing Bird";
-		};
-		class myTrack2 {
-		name = "myTrack2";
-		sound[] = {"music\black.ogg", db+3, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 121;
-		artist = "The Rolling Stones";
-		title = "Paint It, Black";
-		};
-		class myTrack3 {
-		name = "myTrack3";
-		sound[] = {"music\boots.ogg", db+3, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 121;
-		artist = "Nancy Sinatra";
-		title = "These Boots Are Made For Walkin";
-		};
-		class myTrack4 {
-		name = "myTrack4";
-		sound[] = {"music\bully.ogg", db+3, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 121;
-		artist = "Sam the Sham & the Pharaos";
-		title = "Wooly Bully";
-		};
-		class myTrack5 {
-		name = "myTrack5";
-		sound[] = {"music\cisco.ogg", db+3, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 121;
-		artist = "WAR";
-		title = "Cisco Kid";
-		};
-		class myTrack6 {
-		name = "myTrack6";
-		sound[] = {"music\fortunate.ogg", db+3, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 121;
-		artist = "Creedence Clearwater Revival";
-		title = "Fortunate Son";
-		};
-		class myTrack7 {
-		name = "myTrack7";
-		sound[] = {"music\foxiran1.ogg", db+3, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 121;
-		artist = "FOX";
-		title = "Iran Update 1";
-		};
-		class myTrack8 {
-		name = "myTrack8";
-		sound[] = {"music\hush.ogg", db+3, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 121;
-		artist = "Deep Purple";
-		title = "Hush";
-		};
-		class myTrack9 {
-		name = "myTrack9";
-		sound[] = {"music\letter.ogg", db+3, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 121;
-		artist = "The Box Tops";
-		title = "The Letter";
-		};
-		class myTrack10 {
-		name = "myTrack10";
-		sound[] = {"music\pompeo1.ogg", db+3, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 121;
-		artist = "Foriegn Press Center";
-		title = "Iran Update 2";
-		};
-		class myTrack11 {
-		name = "myTrack11";
-		sound[] = {"music\preacher.ogg", db+3, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 121;
-		artist = "Dusty Springfield";
-		title = "Son of a Preacher Man";
-		};
-		class myTrack12 {
-		name = "myTrack12";
-		sound[] = {"music\shakin.ogg", db+3, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 121;
-		artist = "The Guess Who";
-		title = "Shakin All Over";
-		};
-		class myTrack13 {
-		name = "myTrack13";
-		sound[] = {"music\trumpspeach1.ogg", db+3, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 121;
-		artist = "President Donald J. Trump";
-		title = "Iran Update 3";
-		};
-		class myTrack14 {
-		name = "myTrack14";
-		sound[] = {"music\silence_60m.ogg", db+0, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 3600;
-		artist = "";
-		title = "";
-		};
-		class myTrack15 {
-		name = "myTrack15";
-		sound[] = {"music\silence_45m.ogg", db+0, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 2700;
-		artist = "";
-		title = "";
-		};
-		class myTrack16 {
-		name = "myTrack16";
-		sound[] = {"music\silence_30m.ogg", db+0, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 1800;
-		artist = "";
-		title = "";
-		};
-		class myTrack17 {
-		name = "myTrack17";
-		sound[] = {"music\silence_15m.ogg", db+0, 1};
-		titles[] = {};
-		tag = "jukeboxRadio";
-		duration = 900;
-		artist = "";
-		title = "";
-		};
-	};
+class CfgMusic {
+    #include "arma3mercenaries\jukebox\arma3mercenaries_jukeboxMusic.hpp"
+};
 	
 	
 ////////////////////////////   sound   ///////////////////////////////////
 
-	class CfgSounds {
-    sounds[] = {Sound_myTrack1, Sound_myTrack2};
+class CfgSounds {
+    sounds[] = {
+        hg_lock, hg_unlock,
+        Sound_myTrack1, Sound_myTrack2, Sound_myTrack3, Sound_myTrack4, 
+        Sound_myTrack5, Sound_myTrack6, Sound_myTrack7, Sound_myTrack8, 
+        Sound_myTrack9, Sound_myTrack10, Sound_myTrack11, Sound_myTrack12, 
+        Sound_myTrack13, Sound_myTrack14, Sound_myTrack15, Sound_myTrack16, 
+        Sound_myTrack17
+    };
 
-    class Sound_myTrack1 {
-        name = "Sound_myTrack1";
-        sound[] = {"music\bird.ogg", db+3, 1.0};
-		titles[] = {};
+    // Include HoverGuy's sounds
+    #include "HG\Sounds\HG_Sounds.h"
+
+    // Include Jukebox sounds
+    #include "arma3mercenaries\jukebox\arma3mercenaries_jukeboxSounds.hpp"
+	#include "arma3mercenaries\interrogations\arma3mercenaries_interrogationSounds.hpp"
+    // Additional sound configurations
+    class Killfeed_notification {
+        name = "Kill_notification";
+        sound[] = {"arma3mercenaries\kill\kill_notification_sounds\kill_notification.ogg", db-5, 1.0};
+        titles[] = {};
     };
-    class Sound_myTrack2 {
-        name = "Sound_myTrack2";
-        sound[] = {"music\black.ogg", db+3, 1.0};
-		titles[] = {};
-    };
-	class Killfeed_notification {
-		name = "Kill_notification";
-		sound[] = {"scripts\kill\kill_notification_sounds\kill_notification.ogg", db-5, 1.0};
-		titles[] = {};
-	};
 };

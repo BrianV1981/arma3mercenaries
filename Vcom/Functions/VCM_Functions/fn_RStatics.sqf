@@ -56,7 +56,8 @@ private _mineList = [];
 		
 		if (VCM_ARTYENABLE) then {_x call VCM_fnc_CheckArty;};
 	};
-} forEach (units _this);
+	true;
+} count (units _this);
 
 private _finalList = [_staticList,_satchelList,_mineList];
 _finalList

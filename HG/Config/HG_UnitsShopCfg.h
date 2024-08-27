@@ -1,4 +1,5 @@
 /*
+	HG_unitsShopCfg.h
     Author - HoverGuy
     Website - https://northernimpulse.com
 	

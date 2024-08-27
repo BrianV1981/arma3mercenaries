@@ -1,3 +1,7 @@
+/*
+	fn_saveGradFortificationsStatics.sqf
+*/
+
 #include "script_component.hpp"
 
 if (!isServer) exitWith {};

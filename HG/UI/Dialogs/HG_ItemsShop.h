@@ -1,8 +1,16 @@
 #include "..\HG_IDCS.h"
 /*
+    HG_ItemsShop.h
     Author - HoverGuy
-    Website - https://northernimpulse.com
+    Enhanced by - BrianV1981
+    Changes:
+    - Replaced HG money function with the corresponding Grad Money function.
+    - Updated the `onButtonClick` for displaying the player's cash to use Grad Money's `grad_lbm_fnc_getFunds` function while retaining the original HG currency formatting function (`HG_fnc_currencyToText`).
+
+    Summary:
+    This script has been updated to integrate the Grad Money system in place of the original HG money system. The reason for this change is to unify the financial handling within the mission, ensuring compatibility with the broader Grad Money framework that is being used for other shops and interactions. The updates also aim to provide a consistent user experience across different in-game financial transactions.
 */
+
 
 class HG_ItemsShop
 {
@@ -230,13 +238,13 @@ class HG_ItemsShop
 		
 		class MyCashButton: HG_RscButtonInvisible
 		{
-			idc = HG_ITEMS_MC_IDC;
-			onButtonClick = "hint format[(localize 'STR_HG_DLG_MC'),([(player getVariable 'HG_Cash'),true] call HG_fnc_currencyToText)]";
-			tooltip = "$STR_HG_DLG_MC_TOOLTIP";
-			x = 0.608281 * safeZoneW + safeZoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
+		idc = HG_ITEMS_MC_IDC;
+		onButtonClick = "hint format[(localize 'STR_HG_DLG_MC'),([player] call grad_lbm_fnc_getFunds) call HG_fnc_currencyToText]";
+		tooltip = "$STR_HG_DLG_MC_TOOLTIP";
+		    x = 0.608281 * safeZoneW + safeZoneX;
+		    y = 0.28 * safeZoneH + safeZoneY;
+		    w = 0.0309375 * safeZoneW;
+		    h = 0.044 * safeZoneH;
 		};
 		
 		class ExitButton: HG_RscButtonInvisible

@@ -1,0 +1,200 @@
+/*
+    Saves groups in format:
+    [[side of group, unitsData],[side of group, unitsData],[...]]
+    unitsData:
+    [unit hash, unit hash, unit hash, [...]]
+
+
+Enhanced By: BrianV1981
+
+---
+
+# Arma 3 Persistence Script: Group and Unit Save/Load System
+
+## Overview
+
+This README provides an explanation of the modifications made to the original Arma 3 persistence scripts to support saving and loading groups and units with the `arma3mercenaries_groupOwner` variable. The changes ensure that only units belonging to specific groups with this variable are saved and restored across sessions.
+
+## Changes Made
+
+### 1. **Save Script (`fn_saveArma3mercenariesGroups.sqf`)**
+
+#### **Original Functionality:**
+- The original script was designed to save all groups and their associated units within a mission, filtering out player-controlled units, dead units, or units inside vehicles.
+- It saved various attributes of each unit, such as type, position, direction, and damage, and stored these in a hash format.
+
+#### **Modifications:**
+- **Filtering Groups by Ownership:**
+  - The script now filters groups based on the presence of the `arma3mercenaries_groupOwner` variable. Only groups with this variable set are considered for saving.
+  
+- **Saving the Group Owner:**
+  - The `arma3mercenaries_groupOwner` variable is saved alongside the unit's other attributes. This ensures that ownership information is preserved across sessions.
+
+- **Enhanced Documentation:**
+  - The script has been updated with detailed comments explaining each step, from filtering units and groups to saving attributes and handling special cases like editor-placed vehicles.
+
+### 2. **Load Script (`fn_loadArma3mercenariesGroups.sqf`)**
+
+#### **Original Functionality:**
+- The original script was responsible for recreating saved groups and their associated units during mission startup.
+- It restored units based on saved attributes such as type, position, direction, and damage, and re-applied any additional saved variables.
+
+#### **Modifications:**
+- **Restoring Group Ownership:**
+  - The script now re-applies the `arma3mercenaries_groupOwner` variable to each group as it is recreated. This ensures that the correct ownership information is restored.
+
+- **Enhanced Documentation:**
+  - As with the save script, the load script has been updated with detailed comments to clarify each step of the process, including the handling of editor-placed vehicles and the restoration of unit attributes.
+
+### 3. **General Enhancements**
+
+- **Namespace Management:**
+  - Both scripts use a mission-specific tag for namespacing to ensure that saved data is uniquely associated with the current mission.
+
+- **Handling Removed or Killed Units:**
+  - The scripts have logic to detect and handle units that were removed or killed in previous sessions, ensuring they are not restored during the loading process.
+
+- **Cleaner Code Structure:**
+  - The scripts have been restructured for better readability and maintainability, with clear separation of concerns and consistent variable naming conventions.
+
+## How to Use
+
+1. **Save Script**:
+   - Place the modified save script (`fn_saveArma3mercenariesGroups.sqf`) in your mission's scripts directory.
+   - The script will automatically filter and save groups with the `arma3mercenaries_groupOwner` variable when triggered.
+
+2. **Load Script**:
+   - Place the modified load script (`fn_loadArma3mercenariesGroups.sqf`) in your mission's scripts directory.
+   - During mission startup, the script will restore all saved groups and units, re-applying the `arma3mercenaries_groupOwner` variable as needed.
+
+3. **Integration**:
+// Assuming '_unit' is the newly created unit and '_player' is the player who hired or spawned the unit
+apply this variable to any unit and it should persist...thats the plan, anyway.
+_unit setVariable ["arma3mercenaries_groupOwner", getPlayerUID _player, true];
+
+## Conclusion
+
+These modifications enhance the original persistence scripts by introducing selective saving and loading of groups based on the `arma3mercenaries_groupOwner` variable. The enhanced documentation and code structure make the scripts easier to understand and integrate into your Arma 3 mission.
+
+For further customization or assistance, feel free to reach out or contribute to the project.
+
+---
+
+
+*/
+
+#include "script_component.hpp"
+
+// Ensure the script is only executed on the server
+if (!isServer) exitWith {};
+
+// Parameters: _area for defining the area to save units from, _allVariableClasses for filtering variables to be saved
+params [["_area", false], ["_allVariableClasses", []]];
+
+// Filter to identify variable classes related to groups
+private _allGroupsVariableClasses = _allVariableClasses select {
+    ([_x, "varNamespace", ""] call BIS_fnc_returnConfigEntry) == "group"
+};
+
+// Filter to identify variable classes related to units
+private _allUnitsVariableClasses = _allVariableClasses select {
+    ([_x, "varNamespace", ""] call BIS_fnc_returnConfigEntry) == "unit"
+};
+
+// Process the _area parameter to ensure it has a consistent format
+if (_area isEqualType []) then {
+    _area params ["_center", "_a", "_b", ["_angle", 0], ["_isRectangle", false], ["_c", -1]];
+    if (isNil "_b") then { _b = _a };
+    _area = [_center, _a, _b, _angle, _isRectangle, _c];
+};
+
+// Initialize the mission-specific tag for namespacing and the group data storage
+private _missionTag = [] call FUNC(getMissionTag);
+private _groupsTag = _missionTag + "_groups";
+private _groupsData = [_groupsTag] call FUNC(getSaveData);
+
+// Get a list of all vehicle variable names found and reset the group data array
+private _foundUnitsVarnames = GVAR(allFoundVarNames) select 0;
+_groupsData resize 0;
+
+// Retrieve all groups and configure the saving mode from the mission config
+private _allGroups = allGroups;
+private _saveGroupsMode = [missionConfigFile >> "CfgGradPersistence", "saveUnits", 1] call BIS_fnc_returnConfigEntry;
+
+// Iterate through each group to process units for saving
+{
+    private _thisGroup = _x;
+    private _thisGroupData = [side _thisGroup, [], []]; // Initialize group data: side, units, and group vars
+    private _thisUnitsData = _thisGroupData select 1; // Reference to the units data array within the group data
+
+    // Generate or retrieve the unique `arma3mercenaries_groupID` for this group
+    private _groupID = _thisGroup getVariable ["arma3mercenaries_groupID", createSimpleObjectUID];
+    _thisGroup setVariable ["arma3mercenaries_groupID", _groupID, true];
+
+    // Iterate through each unit in the group to collect data
+    {
+        private _thisUnit = _x;
+
+        // Filter conditions to determine if the unit should be saved
+        if (
+                !(isPlayer _thisUnit) && // Ignore players
+                {!(isNull _thisUnit)} && // Ensure the unit is not null
+                {alive _thisUnit} && // Only save units that are alive
+                {vehicle _thisUnit == _thisUnit} && // Exclude units inside vehicles
+                {!([_thisUnit] call FUNC(isBlacklisted))} && // Exclude blacklisted units
+                {!((group _thisUnit) getVariable [QGVAR(isExcluded), false])} && // Exclude groups marked for exclusion
+                {
+                    _saveGroupsMode == 2 || // Save groups based on the configured mode
+                    (_thisUnit getVariable [QGVAR(isEditorObject), false]) isEqualTo (_saveGroupsMode == 1)
+                } &&
+                {if (_area isEqualType false) then {true} else {_thisUnit inArea _area}} // Check if the unit is within the specified area
+            ) then {
+
+            // Create a hash to store the unit's data
+            _thisUnitHash = [] call CBA_fnc_hashCreate;
+
+            // Generate the combined unique ID (group ID + object ID)
+            private _unitUID = format ["%1_%2", _groupID, (_thisUnit call BIS_fnc_objectID)];
+            [_thisUnitHash, "unitUID", _unitUID] call CBA_fnc_hashSet;
+
+            // Save the unit's variable name if it has one
+            private _vehVarName = vehicleVarName _thisUnit;
+            if (_vehVarName != "") then {
+                [_thisUnitHash, "varName", _vehVarName] call CBA_fnc_hashSet;
+                _foundUnitsVarnames deleteAt (_foundUnitsVarnames find _vehVarName);
+            };
+
+            // Save the unit's type, position, direction, and damage
+            [_thisUnitHash, "type", typeOf _thisUnit] call CBA_fnc_hashSet;
+            [_thisUnitHash, "posASL", getPosASL _thisUnit] call CBA_fnc_hashSet;
+            [_thisUnitHash, "dir", getDir _thisUnit] call CBA_fnc_hashSet;
+            [_thisUnitHash, "damage", damage _thisUnit] call CBA_fnc_hashSet;
+
+            // Save additional variables attached to the unit
+            private _thisUnitVars = [_allUnitsVariableClasses, _thisUnit] call FUNC(saveObjectVars);
+            [_thisUnitHash, "vars", _thisUnitVars] call CBA_fnc_hashSet;
+
+            // Add the unit's hash to the group's units data
+            _thisUnitsData pushBack _thisUnitHash;
+        };
+
+    } forEach (units _thisGroup); // End of unit processing
+
+    // Save the group data only if there are units to be saved
+    if (count (_thisGroupData select 1) > 0) then {
+        _groupsData pushBack _thisGroupData;
+        _thisGroupData set [2, [_allGroupsVariableClasses, _thisGroup] call FUNC(saveObjectVars)];
+    };
+
+    false
+} count _allGroups; // End of group processing
+
+// Handle any vehicle variable names that were not saved (e.g., removed or killed)
+private _killedVarnames = [_missionTag + "_killedVarnames"] call FUNC(getSaveData);
+private _killedUnitsVarnames = _killedVarnames param [0, []];
+_killedUnitsVarnames append _foundUnitsVarnames;
+_killedUnitsVarnames arrayIntersect _killedUnitsVarnames;
+_killedVarnames set [0, _killedUnitsVarnames];
+
+// Save the updated profile namespace to ensure persistence
+saveProfileNamespace;

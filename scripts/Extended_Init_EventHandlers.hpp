@@ -76,7 +76,7 @@ scripts/Extended_Init_EventHandlers.hpp
 
 class Extended_Init_EventHandlers {
 	
- ///adds "Claim this vehicle" addaction. during this process, a lot pf other code fires off if the vehicle is claimed. Such as removing the claim buton, adding variables, remove it fromALiVE profile system, etc.
+ //adds "Claim this vehicle" addaction. during this process, a lot 0f other code fires off if the vehicle is claimed. Such as removing the claim buton, adding variables, remove it fromALiVE profile system, etc.
  class Car {
   init = "_this call (compile preprocessFileLineNumbers 'scripts\claimCar.sqf')";
  };

@@ -1,29 +1,41 @@
 #include "HG_Macros.h"
 /*
+    fn_vehicleSelectionChanged.sqf
     Author - HoverGuy
     Website - https://northernimpulse.com
+    Enhanced by - BrianV1981
+    Changes:
+    - Integrated Grad Money system.
+    - Ensured compatibility with ACE interaction parameters.
+    - Updated UI logic to correctly display vehicle details and handle purchases.
 */
-params["_ctrl","_index","_vehicle"];
 
+// Define parameters and disable serialization for UI manipulation
+params["_ctrl","_index","_vehicle"];
 disableSerialization;
 
+// Retrieve the selected vehicle from the listbox
 _vehicle = _ctrl lbData _index;
 
+// If a previous vehicle preview exists, delete it
 if(!isNull HG_VEHICLE_PREVIEW) then
 {
     deleteVehicle HG_VEHICLE_PREVIEW;
 };
 
+// If a valid vehicle is selected, update the UI and prepare the preview
 if(_vehicle != (localize "STR_HG_NONE")) then
 {
     private["_price","_veh","_canColor"];
 	
     _price = _ctrl lbValue _index;
 	
+	// Enable the relevant controls for the vehicle shop
 	{
 	    _x ctrlEnable true;
 	} forEach [HG_VEHICLES_TG,HG_VEHICLES_BUY,HG_VEHICLES_COLORS];
 	
+    // Update the UI with vehicle details
     HG_VEHICLES_TEXT ctrlSetStructuredText parseText format
     [
         "<br/>"+
@@ -43,6 +55,7 @@ if(_vehicle != (localize "STR_HG_NONE")) then
 	    if(_price <= 0) then {(localize "STR_HG_DLG_FREE")} else {[_price,true] call HG_fnc_currencyToText}
     ];
 
+    // Create a preview vehicle and position it correctly
     _veh = _vehicle createVehicleLocal (getPosATL player);
     _veh setPosATL [(getPosATL HG_OBJECT_PREVIEW) select 0,(getPosATL HG_OBJECT_PREVIEW) select 1,((getPosATL HG_OBJECT_PREVIEW) select 2)+0.2];
     _veh setDir round([player,_veh] call BIS_fnc_dirTo);
@@ -52,6 +65,7 @@ if(_vehicle != (localize "STR_HG_NONE")) then
 	HG_VEHICLE_COLORS = [];
 	lbClear HG_VEHICLES_COLORS;
 	
+	// Check if the vehicle can have different colors and populate the color listbox
 	_canColor = isClass(configFile >> "CfgVehicles" >> _vehicle >> "TextureSources");
 	
 	if(_canColor) then
@@ -73,6 +87,7 @@ if(_vehicle != (localize "STR_HG_NONE")) then
 	    HG_VEHICLES_COLORS lbSetData[_ind,""];
 	};
 
+    // Set the camera position and target for vehicle preview
     HG_CAMERA_PREVIEW camSetTarget (_veh modelToWorld [0,0,0.5]);
     if(_veh isKindOf "Air") then
     {
@@ -86,8 +101,10 @@ if(_vehicle != (localize "STR_HG_NONE")) then
 
     [_veh] spawn HG_fnc_vehicleRotate;
 	
+	// Select the first color by default
 	HG_VEHICLES_COLORS lbSetCurSel 0;
 } else {
+    // If no valid vehicle is selected, disable the relevant controls and show a placeholder message
     HG_VEHICLES_TEXT ctrlSetStructuredText parseText format["<t align='center' size='1'>%1</t>",(localize "STR_HG_NOTHING_TO_DISPLAY")];
     
 	{

@@ -2,7 +2,13 @@
 /*
     Author - HoverGuy
     Website - https://northernimpulse.com
+    Enhanced By - BrianV1981
+    Changes:
+    - Integrated Grad Money system for adding funds when selling vehicles.
+    - Replaced the HG cash handling function with the Grad Money function for payout.
+    - Added detailed comments for clarity and understanding.
 */
+
 private["_sel","_val","_vehicle","_plate"];
 
 disableSerialization;
@@ -18,8 +24,16 @@ deleteVehicle _vehicle;
 ///ADD GRAD FUNDS FOR PAYOUT
 [player,HG_PRICE_HANDLER] call grad_moneymenu_fnc_addFunds;
 
-///deletes alive profile http://alivemod.com/forum/3128-remove-profiles/0
-///       [_vehicle, "destroy"] call ALiVE_fnc_profileVehicle;
+/*
+
+deletes alive profile http://alivemod.com/forum/3128-remove-profiles/0
+[_vehicle, "destroy"] call ALiVE_fnc_profileVehicle;
+
+update:
+The better idea is to apply the variable ALiVE_disableDynamicSimulation when creating the vehicle.
+If you want to exclude an object from ALiVE persistence only (and not from profiling), you can apply the ALiVE_sys_persistence_skip variable
+
+*/
 
 hint format[(localize "STR_HG_DLG_DE_SOLD"),(getText(configFile >> "CfgVehicles" >> _sel >> "displayName")),[HG_PRICE_HANDLER,true] call HG_fnc_currencyToText];
 [player,_plate] remoteExecCall ["HG_fnc_deleteVehicle",2,false];

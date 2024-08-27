@@ -1,7 +1,11 @@
 #include "..\HG_IDCS.h"
 /*
-    Author - HoverGuy
-    Website - https://northernimpulse.com
+   Author - HoverGuy
+   Website - https://northernimpulse.com
+   Enhanced By - BrianV1981
+   Changes:
+   - Integrated Grad Money system to check available funds.
+   - Modified the MyCashButton logic to utilize grad_lbm_fnc_getFunds.
 */
 
 class HG_GearShop
@@ -235,11 +239,11 @@ class HG_GearShop
 			w = 0.0309375 * safeZoneW;
 			h = 0.044 * safeZoneH;
 		};
-		
+		//Modified the MyCashButton logic to utilize grad_lbm_fnc_getFunds.
 		class MyCashButton: HG_RscButtonInvisible
 		{
 			idc = HG_GEAR_MC_IDC;
-			onButtonClick = "titleText [format[(localize 'STR_HG_DLG_MC'),([(player getVariable 'HG_Cash'),true] call HG_fnc_currencyToText)],'PLAIN DOWN',0.5]";
+			onButtonClick = "titleText [format['Your Available Funds: %1', [(player) call grad_lbm_fnc_getFunds]],'PLAIN DOWN',0.5];";
 			tooltip = "$STR_HG_DLG_MC_TOOLTIP";
 			x = 0.639219 * safeZoneW + safeZoneX;
 			y = 0.00500001 * safeZoneH + safeZoneY;

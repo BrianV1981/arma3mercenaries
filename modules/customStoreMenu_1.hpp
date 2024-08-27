@@ -174,7 +174,7 @@
                 price = 5000000;
                 amount = 1;
                 stock = 9999;
-				code = [player,"scripts\loadouts\adminLoadoutr_1.sqf"] call BIS_fnc_execVM;
+				code = [player,"scripts\loadouts\adminLoadout_1.sqf"] call BIS_fnc_execVM;
             };
 		};
 	};

@@ -1,0 +1,76 @@
+/*
+    arma3mercenaries_fn_bluforIndep_on_capturedUnits.sqf
+    Author: BrianV1981
+
+    Description:
+    This script allows a BLUFOR or Independent player to "interrogate" civilians within a 30-meter radius.
+    The nearest player to the object with the addAction is identified and tagged with a temporary variable.
+    Each civilian is assigned a unique variable and processed with a random health bleed between 1% and 10% damage.
+    The health bleed ticks at a random interval between 10 and 30 seconds until the civilian is dead, 
+    at which point the player receives a random financial reward between 10,000 and 50,000 credits.
+    Additionally, a 3D sound will be played (from an in-game object with a variable 'interrogation_house_1') every time an interrogation is complete.
+*/
+
+// Search for the nearest player within 5 meters of the object
+private _object = _this select 0;
+private _nearestPlayer = _object nearEntities ["CAManBase", 5] select 0;
+
+// Check if a player was found
+if (isNull _nearestPlayer) exitWith {};
+
+// Check if the player belongs to BLUFOR or Independent
+if (!(side _nearestPlayer in [west, independent])) exitWith {}; // [west, independent] can be changed to any combbination or single factoion of west, east, and independent
+
+// Assign a temporary variable using the player's unique playerUID
+_nearestPlayer setVariable ["isProcessingInterrogation", getPlayerUID _nearestPlayer];
+
+
+// Get the position of the nearest player and find captured units within 30 meters
+private _pos = getPos _nearestPlayer;
+private _capturedUnits = _pos nearEntities ["Man", 30]; // change 30 to any number of meters fo the distance check
+_capturedUnits = _capturedUnits select {alive _x && side _x == civilian}; // civilian can be changed to west, east, or independent
+
+// Calculate the captured count
+private _capturedCount = count _capturedUnits; 
+
+// Check if there are captured units in range
+if (_capturedCount == 0) exitWith {};
+
+// Process each captured unit with a random health bleed
+{
+    private _bleedPercentage = random 0.20 + 0.10; // Random bleed between 10% and 30% 
+	// private _bleedPercentage = random 0.10 + 0.20; // Random bleed between 20% and 30%
+	// private _bleedPercentage = random 0.09 + 0.01; // Random bleed between 1% and 10%
+
+
+    // Use a unique variable on the captured unit
+    private _uniqueID = format ["interrogate_%1", _x getVariable ["BIS_fnc_objectVar", ""]]; 
+
+    _x setVariable [_uniqueID, true]; // Set the unique variable on the captured unit
+
+    // Spawn process for each captured unit
+    [_x, _nearestPlayer, _uniqueID, _bleedPercentage] spawn {
+        params ["_cap", "_player", "_id", "_bleedPercentage"];
+
+        // Apply health bleed at a random interval between 10 and 30 seconds
+        while {alive _cap && {_cap getVariable [_id, false]}} do {
+            sleep (10 + random 20); // Random bleed interval between 10 and 30 seconds
+            _cap setDamage (damage _cap + _bleedPercentage); // Apply the random bleed percentage
+
+            if (damage _cap >= 1) then {
+                // Kill the captured unit
+                _cap setDamage 1;
+                private _reward = 10000 + random 40000; // Random payout between 10,000 and 50,000 credits
+
+                // Apply the reward to the player
+                [_player, _reward] remoteExec ["grad_lbm_fnc_addFunds", _player, true];
+
+                // Clean up the variable on the captured unit
+                _cap setVariable [_id, nil];
+            };
+        };
+    };
+} forEach _capturedUnits;
+
+// Clean up: Remove the temporary variable from the player
+_nearestPlayer setVariable ["isProcessingInterrogation", nil];

@@ -1,4 +1,5 @@
-execVM "scripts\kill\arma3mercenaries_kill_XEHCfg.sqf";
+execVM "arma3mercenaries\kill\arma3mercenaries_kill_XEHCfg.sqf";
+
 //area loot script start
 
 [

@@ -1,0 +1,168 @@
+/*
+    arma3mercenaries_fn_bluforIndep_on_civilians.sqf
+    Author: BrianV1981
+
+    Description:
+    This script allows a BLUFOR or Independent player to "interrogate" civilians within a 30-meter radius.
+    The nearest player to the object with the addAction is identified and tagged with a temporary variable.
+    Each civilian is assigned a unique variable and processed with a random health bleed between 1% and 10% damage.
+    The health bleed ticks at a random interval between 10 and 30 seconds until the civilian is dead, 
+    at which point the player receives a random financial reward between 10,000 and 50,000 credits.
+    Dynamic feedback messages are provided to the player who triggered the action, using random war-like phrases with dynamic values.
+    Additionally, a 3D sound will be played (from an ingame object with a variable 'interrogation_house_1' every time an interogation is complete.
+*/
+
+// Define variations for dynamic text messages
+private _noPlayerFoundMessages = [
+    "Ain’t no one here to do the job—get someone on the ground!",
+    "Nobody’s close enough to get their hands dirty—get in there!",
+    "No trigger-puller around here—step up and get it done.",
+    "No boots on the ground—get in range or get out."
+];
+
+private _factionRestrictionMessages = [
+    "This is BLUFOR or Independent turf. Step aside, rookie.",
+    "This ain’t your fight. Only BLUFOR or Independent handle this kind of heat.",
+    "Only BLUFOR or Independent get to play this game. Step back.",
+    "You’re out of your league. Only BLUFOR or Independent run this show."
+];
+
+private _interrogationStartMessages = [
+    "%1 Civilians lined up—%1 targets. Cash comes after they sing or bleed.",
+    "%1 Civilians marked for questioning—%1 of them. Cash comes when the job’s finished.",
+    "%1 Civilians under the gun—%1 in total. Cash is yours when the talking’s over.",
+    "%1 Civilians in the hot seat—%1 marked. You’ll get the cash once they spill or drop."
+];
+
+private _interrogationCompleteMessages = [
+    "Interrogation’s done. %1 cash from the %2 in hand—don’t spend it all in one place.",
+    "Job’s done. The %2 screamed about his family. Here’s your %1 I hope you can sleep at night.",
+    "All done. That %2 was tough, but he finally cracked. %1 cash delivered—straight to your hands.",
+    "Interrogation complete on a %2. %1 cash in hand—use it wisely.",
+    "He begged for mercy, but the info came first. %1 cash for a job well done on the %2.",
+    "That %2 couldn’t hold out forever—now you’ve got %1 cash in your pocket.",
+    "War isn’t pretty, but it pays well %1 cash earned from interrogating a %2.",
+    "They broke under pressure, and so did their bank—%1 cash delivered.",
+    "The %2 didn’t make it home for dinner, that's for sure. %1 cash delivered!",
+    "It’s not about the pain, it’s about the payday %1 cash for your efforts.",
+    "The screams still echo, but so does the sound of cash %1 from the %2 in hand."
+];
+
+// Search for the nearest player within 5 meters of the object
+private _object = _this select 0;
+private _nearestPlayer = _object nearEntities ["CAManBase", 5] select 0;
+
+// Check if a player was found
+if (isNull _nearestPlayer) exitWith {
+    private _noPlayerFoundMessage = selectRandom _noPlayerFoundMessages;
+    [_noPlayerFoundMessage, 0.0, 0.1, 5, 1, 0, 789] spawn BIS_fnc_dynamicText;
+};
+
+/*
+
+// I tried this and it did not work
+Custom Input Handling
+Override Key Presses: Implement logic in your script to ensure that key presses like L do not accidentally trigger the addAction. This might involve checking the player's current action state or disabling the addAction when the player is using certain key bindings.
+
+Example: Ensure that the addAction is only activated when the player is within range of the object and interacting with the action menu, not by merely pressing the L key.
+
+// This snippet goes inside your addAction function
+
+if (inputAction "VehicleLock" == 1) exitWith {
+    hint "Cannot interrogate while locking/unlocking vehicles.";
+};
+
+*/
+
+
+
+// Check if the player belongs to BLUFOR or Independent
+if (!(side _nearestPlayer in [west, independent])) exitWith {
+    private _factionRestrictionMessage = selectRandom _factionRestrictionMessages;
+    [_factionRestrictionMessage, 0.0, 0.1, 5, 1, 0, 789] spawn BIS_fnc_dynamicText;
+};
+
+// Assign a temporary variable to the nearest player
+_nearestPlayer setVariable ["isProcessingInterrogation", true];
+
+// Notify the player about the interrogation process
+private _pos = getPos _nearestPlayer;
+private _civilians = _pos nearEntities ["Man", 30];
+_civilians = _civilians select {alive _x && side _x == civilian};
+private _civilianCount = count _civilians;  // Count the civilians for %1
+private _interrogationStartMessage = format [selectRandom _interrogationStartMessages, _civilianCount];
+[_interrogationStartMessage, 0.0, 0.1, 5, 1, 0, 789] remoteExec ["BIS_fnc_dynamicText", _nearestPlayer, true];
+
+// Process each civilian with a random health bleed
+{
+    private _bleedPercentage = random 0.09 + 0.01; // Random bleed between 1% and 10%
+    private _uniqueID = format ["interrogate_%1", diag_tickTime + (getPos _x select 0)]; // Generate a unique ID using the X coordinate and tick time
+    _x setVariable [_uniqueID, true]; // Set the unique variable on the civilian
+
+    [_x, _nearestPlayer, _uniqueID, _bleedPercentage, _interrogationCompleteMessages] spawn {
+        params ["_civ", "_player", "_id", "_bleedPercentage", "_interrogationCompleteMessages"];
+
+        // Map the side to a readable faction name for %3
+        private _sideText = switch (side _civ) do {
+            case west: {"BLUFOR"};
+            case east: {"OPFOR"};
+            case independent: {"Independent"};
+            case civilian: {"Civilian"};
+            default {"Unknown"};
+        };
+
+        // Apply health bleed at a random interval between 10 and 30 seconds
+        while {alive _civ && {_civ getVariable [_id, false]}} do {
+            sleep (10 + random 20); // Random interval between 10 and 30 seconds
+            _civ setDamage (damage _civ + _bleedPercentage); // Apply the random bleed percentage
+
+            if (damage _civ >= 1) then {
+                // Kill the civilian
+                _civ setDamage 1;
+                private _reward = 10000 + random 40000; // Random payout between 10,000 and 50,000 credits
+
+                // Apply the reward to the player
+                [_player, _reward] remoteExec ["grad_lbm_fnc_addFunds", _player, true];
+				
+				
+				// Define the available sounds in an array
+				private _soundArray = ["interrogation_sound_1", "interrogation_sound_2", "interrogation_sound_3"];
+
+				// Select a random sound from the array
+				private _selectedSound = selectRandom _soundArray;
+
+				// Apply the selected sound using say3D to the civilian
+				[interrogation_house_1, [_selectedSound, 50, 1]] remoteExec ["say3D", 0];
+				
+				
+				// Play 3D sound from ingame oobject with a variable name: interrogation_house_1
+				//[interrogation_house_1,["interrogation_sound_1",50,1]] remoteExec ["say3D",0];
+				
+				
+				// this sound option works as well. it will play the track for the player and only the player in standard sound format.
+				/*
+				//apply interrogation complete sound for the player
+				if (_player == player) then {
+					playSound "interrogation_sound_1";
+					};
+				*/
+				
+				/*
+                // Provide feedback to the player with %2 (reward) and %3 (faction)
+                private _completionMessage = format [selectRandom _interrogationCompleteMessages, _civilianCount, _reward, _sideText];
+                [_completionMessage, 0.0, 0.1, 5, 1, 0, 789] remoteExec ["BIS_fnc_dynamicText", _player, true];
+				*/
+				
+				  // Provide feedback to the player
+                private _completionMessage = format [selectRandom _interrogationCompleteMessages, _reward, _sideText];
+                [_completionMessage, 0.0, 0.1, 5, 1, 0, 789] remoteExec ["BIS_fnc_dynamicText", _player, true];
+				
+                // Clean up the variable on the civilian
+                _civ setVariable [_id, nil];
+            };
+        };
+    };
+} forEach _civilians;
+
+// Clean up: Remove the temporary variable from the player
+_nearestPlayer setVariable ["isProcessingInterrogation", nil];

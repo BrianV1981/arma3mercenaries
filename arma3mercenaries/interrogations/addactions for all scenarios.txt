@@ -1,0 +1,29 @@
+// For any faction interrogating civilians
+this addAction ["Interrogate Civilians", {[] execVM "arma3mercenaries\interrogations\arma3mercenaries_interrogate_any_on_civilian.sqf";}];
+
+// For BLUFOR interrogating OPFOR
+this addAction ["Interrogate OPFOR Soldiers", {[] execVM "arma3mercenaries\interrogations\arma3mercenaries_interrogate_blufor_on_opfor.sqf";}];
+
+// For BLUFOR interrogating OPFOR and Independent
+this addAction ["Interrogate OPFOR and Independent", {[] execVM "arma3mercenaries\interrogations\arma3mercenaries_interrogate_blufor_on_opforIndep.sqf";}];
+
+// For BLUFOR and Independent interrogating civilians
+this addAction ["Interrogate Civilians", {[] execVM "arma3mercenaries\interrogations\arma3mercenaries_interrogate_bluforIndep_on_civilians.sqf";}];
+
+// For BLUFOR and Independent interrogating OPFOR
+this addAction ["Interrogate OPFOR Soldiers", {[] execVM "arma3mercenaries\interrogations\arma3mercenaries_interrogate_bluforIndep_on_opfor.sqf";}];
+
+// For Independent interrogating BLUFOR
+this addAction ["Interrogate BLUFOR Soldiers", {[] execVM "arma3mercenaries\interrogations\arma3mercenaries_interrogate_indep_on_blufor.sqf";}];
+
+// For Independent interrogating OPFOR
+this addAction ["Interrogate OPFOR Soldiers", {[] execVM "arma3mercenaries\interrogations\arma3mercenaries_interrogate_indep_on_opfor.sqf";}];
+
+// For Independent and OPFOR interrogating BLUFOR
+this addAction ["Interrogate BLUFOR Soldiers", {[] execVM "arma3mercenaries\interrogations\arma3mercenaries_interrogate_indepOpfor_on_blufor.sqf";}];
+
+// For OPFOR interrogating BLUFOR and Independent
+this addAction ["Interrogate BLUFOR and Independent", {[] execVM "arma3mercenaries\interrogations\arma3mercenaries_interrogate_opfor_on_bluforIndep.sqf";}];
+
+// For OPFOR interrogating Independent
+this addAction ["Interrogate Independent Soldiers", {[] execVM "arma3mercenaries\interrogations\arma3mercenaries_interrogate_opfor_on_indep.sqf";}];

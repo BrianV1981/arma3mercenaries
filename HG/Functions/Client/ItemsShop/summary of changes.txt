@@ -1,0 +1,52 @@
+### Item Shop Update Summary
+
+#### Overview
+The update focused on integrating the item shop within the HG framework to work seamlessly with the Grad Money system and ensure compatibility with ACE Interaction. The main objectives were to replace outdated money-handling functions, adjust the scripts for ACE compatibility, and ensure that all item shop functionalities were preserved and optimized.
+
+#### Files Updated
+
+1. **`fn_dialogOnLoadItems.sqf`**
+   - **Changes:**
+     - Simplified the parameters by retaining only the `_whatShop` parameter, aligning it with ACE Interaction requirements.
+     - Integrated the Grad Money system to ensure that items are correctly loaded based on the player's available funds.
+   - **Reason:**
+     - To streamline the loading process and ensure that the item shop could be accessed both through a traditional addAction and via ACE Interaction without errors.
+
+2. **`fn_itemBtns.sqf`**
+   - **Changes:**
+     - Updated the script to check for Grad Money instead of the original HG Money system.
+     - Removed outdated discount logic and simplified the script to ensure accurate item purchases.
+     - Ensured that the correct item is purchased based on the player's Grad Money balance.
+   - **Reason:**
+     - To ensure that item purchases are handled correctly with the updated Grad Money system, reflecting accurate fund deductions and providing the player with the correct item.
+
+3. **`fn_itemsRefresh.sqf`**
+   - **Changes:**
+     - Updated the script to refresh the item shop display, ensuring that the correct list of available items is shown based on the player's Grad Money balance.
+     - Adjusted the logic to ensure the correct display of items and their availability.
+   - **Reason:**
+     - To maintain the integrity of the item shop display and ensure that the item list is accurately refreshed based on the player's current status and available funds.
+
+4. **`fn_itemSelectionChanged.sqf`**
+   - **Changes:**
+     - Adjusted the script to handle changes in the item selection, ensuring that the correct item information is displayed when a selection is made.
+     - Integrated Grad Money formatting for consistency in displaying item prices.
+   - **Reason:**
+     - To ensure that the correct item information is displayed when navigating through the item list, providing players with accurate and up-to-date information.
+
+5. **`HG_ItemsShop.h`**
+   - **Changes:**
+     - Updated the UI elements to trigger the correct actions when accessed via ACE Interaction.
+     - Linked the "Buy Item" button to the Grad Money system to ensure correct fund deductions and display.
+   - **Reason:**
+     - To align the UI elements with the updated backend logic, ensuring that all interactions within the item shop are consistent with the Grad Money system and accessible through ACE.
+
+#### Summary of Key Changes
+
+- **Parameter Adjustments:** Simplified the parameter structure in key scripts to ensure that the item shop loads correctly with ACE Interaction. This step was crucial in preventing errors related to parameter mismatches.
+  
+- **Grad Money Integration:** Across all scripts, the original HG money-handling functions were replaced with Grad Money functions, ensuring consistency in how funds are checked, displayed, and deducted.
+  
+- **UI and ACE Interaction:** Adjusted the UI elements and ACE Interaction setup to ensure that the item shop is fully functional and accessible through multiple interaction methods.
+
+By systematically updating each script, we ensured that the item shop works seamlessly with the Grad Money system and is fully compatible with ACE Interaction, providing a smooth and error-free experience for players.

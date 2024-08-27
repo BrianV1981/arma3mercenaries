@@ -1,9 +1,12 @@
 #include "HG_Macros.h"
 /*
+    fn_dialogOnLoadGear.sqf
     Author - HoverGuy
     Website - https://northernimpulse.com
+    Enhanced by - BrianV1981
+    Updated for ACE Interactions - Removed unnecessary parameters and adapted the script to work with ACE interaction system.
 */
-params["_target","_caller","_id","_whatShop"];
+params["_whatShop"];
 if((typeName _whatShop) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_1");};
 if(_whatShop isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
 

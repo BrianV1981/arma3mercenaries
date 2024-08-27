@@ -1,0 +1,96 @@
+//////////////////////
+
+Breakdown for use of %1, %2, %3, and %4 in all dynamic text messages:
+
+_interrogationStartMessages
+
+%1: The number of captured unites lined up for interrogation.
+%2: The faction of the unit being interrogated.
+%3: Not used.
+%4: The faction of the player initiating the interrogation.
+
+_interrogationCompleteMessages
+
+%1: Not used.
+%2: The faction of the interrogated unit.
+%3: The reward amount in credits.
+%4: The faction of the player initiating the interrogation.
+
+_factionRestrictionMessages
+
+%1: Not used.
+%2: Not used.
+%3: Not used.
+%4: The faction of the player initiating the interrogation.
+
+_noCapturedMessages
+
+%1: Not used.
+%2: Not used.
+%3: Not used.
+%4: The faction of the player initiating the interrogation .
+
+///////////////////////////
+private _factionRestrictionMessages = [
+    "%4 huh? If you don't get out of here, you're the one who's going to be getting interrogated!",
+    "This ain’t your fight.",
+    "I would suggest turning around and looking for your %4 buddies.",
+    "Are you wearing the wrong %4 uniform by chance?",
+    "You’re on the wrong side of the fence. Doesn't %4 know how to read?"
+];
+
+private _interrogationStartMessages = [
+    "%1 %2 lined up—%1 targets. Cash comes after they sing or bleed.",
+    "%1 %2 marked for questioning—%1 of them. Cash comes when the job’s finished.",
+    "%1 %2 under the gun—%1 in total. Cash is yours when the talking’s over.",
+    "%1 %2 in the hot seat—%1 marked. You’ll get the cash once they spill or drop.",
+    "Line up the %1 %2—%1 lives hanging by a thread. Cash rolls in when they start to break.",
+    "Ready the %1 %2—%1 souls to crack. The money's yours once they start screaming.",
+    "The %1 %2 are ready—%1 chances to make them bleed. Blood or tears, cash is coming either way.",
+    "%1 %2, %1 whispers away from breaking. The cash flows when they stop breathing.",
+    "%1 %2 in the spotlight—%1 chances to push them over the edge. Only one thing matters—the payday.",
+    "The %1 %2 are sweating—%1 opportunities to break them. Cash doesn’t care how they fall.",
+    "Eyes on the %1 %2—%1 lives on the line. Once they’re shattered, the cash is yours.",
+    "%1 %2—%1 stories to cut short. Cash is what’s left when the screams fade away.",
+    "The %1 %2 are ready—%1 chances to make them beg. The only thing left is the payoff.",
+    "%1 %2 under pressure—%1 lives about to end. When the silence falls, the money rises."
+];
+
+private _interrogationCompleteMessages = [
+    "Interrogation’s done. %3 cash from the %2 in hand—don’t spend it all in one place.",
+    "Job’s done. The %2 screamed about his family. Here’s your %3—I hope you can sleep at night.",
+    "All done. That %2 was tough, but he finally cracked. %3 cash delivered—straight to your hands.",
+    "Interrogation complete on a %2. %3 cash in hand—use it wisely.",
+    "He begged for mercy, but the info came first. %3 cash for a job well done on the %2.",
+    "That %2 couldn’t hold out forever—now you’ve got %3 cash in your pocket.",
+    "War isn’t pretty, but it pays well. %3 cash earned from interrogating a %2.",
+    "They broke under pressure, and so did their bank—%3 cash delivered.",
+    "The %2 didn’t make it home for dinner, that's for sure. %3 cash delivered!",
+    "It’s not about the pain, it’s about the payday. %3 cash for your efforts.",
+    "The screams still echo, but so does the sound of cash. %3 from the %2 in hand.",
+    "%2 didn’t stand a chance—%3 cash earned. Maybe next time they’ll listen.",
+    "%2 cried until the end. %3 cash is yours, but the guilt’s on you.",
+    "%2 gave up everything—%3 cash won’t bring back their dignity.",
+    "%3 cash for shattering a %2. The money feels heavy, doesn’t it?",
+    "The %2 begged for mercy. %3 cash in your pocket, their blood on your hands.",
+    "%2 couldn’t take it anymore. %3 cash earned, but at what cost?",
+    "The %2’s last words were about family. %3 cash won’t silence the echoes.",
+    "%3 cash for breaking a soul. The %2 never saw it coming.",
+    "%2 broke down, and so did their wallet. %3 cash for a job well done."
+];
+
+private _noCapturedMessages = [
+    "I don't see anybody to interrogate. You must make %4 real proud...",
+    "Are you blind, son? The only person standing here that should be interrogated is you...",
+    "Bring me someone with some information to extract or get out of my face, soldier!",
+    "%4 must be having problems filling the ranks...",
+    "It's not that hard to figure out. Go find and bring me someone to interrogate!",
+    "What’s the matter, soldier? Did you forget to bring the prisoners? Get out there and do your job!",
+    "I don't see any targets. Are you planning on interrogating the air?",
+    "You expect me to interrogate ghosts? Bring me a real target, or get lost!",
+    "Nice job, genius. You brought me nothing. Go fetch some real intel, or don't come back!",
+    "What, did they all vanish? Next time, try bringing someone I can actually interrogate.",
+    "I can’t work with thin air, soldier! Find a civilian or get out of my sight!",
+    "You brought me a whole lot of nothing. Did you think I’d interrogate the shadows?",
+    "Great plan, bringing no one for interrogation. Maybe next time, try doing your job right."
+];

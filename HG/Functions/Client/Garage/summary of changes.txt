@@ -1,0 +1,76 @@
+# Vehicle Garage Update Summary
+
+## Overview
+The goal of this update was to integrate the Grad Money system with the Vehicle Garage, allowing for consistent currency management across all shops. We also ensured that the garage functionality could be accessed via ACE Interaction and optimized the overall performance.
+
+## Files Updated
+
+### 1. `fn_storeVehicleClient.sqf`
+- **Changes**:
+  - Integrated the Grad Money system, replacing any references to the old HG currency system.
+  - Ensured compatibility with the new ACE Interaction system.
+  - Streamlined the process of storing vehicles to optimize performance.
+- **Purpose**:
+  - This update ensures that players' money is correctly deducted when storing vehicles and that the process is consistent with the updated currency system.
+
+### 2. `fn_garageSpawn.sqf`
+- **Changes**:
+  - Adjusted the script to work with the Grad Money system.
+  - Improved the spawning logic to ensure vehicles are correctly placed and initialized.
+- **Purpose**:
+  - The spawn functionality now aligns with the updated currency system and ensures that vehicles spawn without issues.
+
+### 3. `fn_refreshGarage.sqf`
+- **Changes**:
+  - Integrated the Grad Money system to ensure that vehicle prices and garage interactions are consistent.
+  - Enhanced the refresh logic to improve performance and ensure that the garage interface updates correctly.
+- **Purpose**:
+  - This ensures that the garage interface displays the correct vehicle information and that the system remains responsive during usage.
+
+### 4. `fn_delVehicle.sqf`
+- **Changes**:
+  - Updated the deletion process to integrate with the Grad Money system.
+  - Ensured that vehicle deletions are handled correctly and consistently.
+- **Purpose**:
+  - This update ensures that vehicles are deleted properly, and any associated costs are managed through the Grad Money system.
+
+### 5. `fn_fillGarage.sqf`
+- **Changes**:
+  - Integrated the Grad Money system and optimized the garage filling process.
+- **Purpose**:
+  - Ensures that the garage is populated with vehicles correctly, reflecting the player's purchases and stored vehicles.
+
+### 6. `fn_dialogOnLoadGarage.sqf`
+- **Changes**:
+  - Adjusted parameters to ensure compatibility with ACE Interaction.
+  - Simplified and optimized the loading process for the garage interface.
+- **Purpose**:
+  - This update ensures that the garage interface loads correctly when accessed via ACE Interaction and that all necessary parameters are passed correctly.
+
+### 7. `HG_GaragesCfg.h`
+- **Changes**:
+  - Updated the configuration to ensure compatibility with the new systems.
+  - Included new spawn points and allowed vehicle types to ensure a broader range of vehicles can be managed.
+- **Purpose**:
+  - This update allows for more flexibility in the types of vehicles that can be stored and retrieved from the garage.
+
+### 8. `HG_Garage.h`
+- **Changes**:
+  - Updated UI elements to reflect changes in currency management and interaction processes.
+  - Ensured that all buttons and actions within the garage interface function correctly with the updated systems.
+- **Purpose**:
+  - This ensures a smooth user experience within the garage interface, with all actions correctly linked to the new systems.
+
+## Critical Steps
+
+### 1. Grad Money Integration
+All scripts and functions related to vehicle storage, spawning, and deletion were updated to use the Grad Money system. This ensures consistency in how money is managed across the game.
+
+### 2. ACE Interaction Setup
+Parameters and scripts were adjusted to ensure that the garage could be accessed and used via the ACE Interaction menu. This involved aligning functions and parameters to work seamlessly within the ACE framework.
+
+### 3. UI Optimization
+UI elements were updated to ensure that all actions within the garage interface were correctly linked to the updated systems, providing a smooth and responsive user experience.
+
+## Summary
+The Vehicle Garage has been successfully updated to integrate the Grad Money system and is now fully compatible with ACE Interaction. These updates ensure that all garage-related functionalities, including vehicle storage, spawning, and deletion, are handled consistently and efficiently, providing players with a seamless experience.

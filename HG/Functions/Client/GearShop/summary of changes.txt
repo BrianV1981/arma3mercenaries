@@ -1,0 +1,53 @@
+### Gear Shop Update Summary
+
+#### Overview
+The goal of this update was to integrate the gear shop within the HG framework to work seamlessly with the Grad Money system and ensure compatibility with ACE Interaction. The primary objectives were to replace outdated money-handling functions, adjust the scripts for ACE compatibility, and ensure that all gear shop functionalities were preserved and enhanced where necessary.
+
+#### Files Updated
+
+1. **`fn_dialogOnLoadGear.sqf`**
+   - **Changes:**
+     - Simplified the parameters by removing unnecessary ones, leaving only `_whatShop` to streamline the script.
+     - Adjusted the script to ensure compatibility with ACE Interaction.
+     - Integrated Grad Money and ensured that the gear shop is correctly loaded with the available items.
+   - **Reason:**
+     - The primary reason was to simplify the loading process and ensure that the gear shop could be accessed both through a traditional addAction and via ACE Interaction without errors.
+
+2. **`fn_itemBtns.sqf`**
+   - **Changes:**
+     - Updated the script to check for Grad Money instead of the original HG Money system.
+     - Simplified the logic by removing unnecessary parameters and discount calculations.
+     - Enhanced the script to ensure that the correct gear item is purchased based on the player's Grad Money balance.
+   - **Reason:**
+     - The changes were made to ensure that gear purchases are handled correctly with the updated Grad Money system, allowing players to purchase items with accurate fund deductions.
+
+3. **`fn_itemsRefresh.sqf`**
+   - **Changes:**
+     - Updated the script to refresh the gear shop display, ensuring that the correct list of available items is shown based on the player's Grad Money balance.
+     - Adjusted the logic to ensure the correct display of items and their availability.
+   - **Reason:**
+     - To maintain the integrity of the gear shop display and ensure that the item list is accurately refreshed based on the player's current status and available funds.
+
+4. **`fn_itemSelectionChanged.sqf`**
+   - **Changes:**
+     - Adjusted the script to handle changes in the gear item selection, ensuring that the correct item information is displayed when a selection is made.
+     - Ensured compatibility with the updated Grad Money system.
+   - **Reason:**
+     - To ensure that the correct item information is displayed when navigating through the gear list, providing players with accurate and up-to-date information.
+
+5. **`HG_GearShop.h`**
+   - **Changes:**
+     - Updated the UI elements to trigger the correct actions when accessed via ACE Interaction.
+     - Linked the "Buy Gear" button to the Grad Money system to ensure correct fund deductions and display.
+   - **Reason:**
+     - To align the UI elements with the updated backend logic, ensuring that all interactions within the gear shop are consistent with the Grad Money system and accessible through ACE.
+
+#### Summary of Key Changes
+
+- **Parameter Adjustments:** Simplified the parameter structure in key scripts to ensure that the gear shop loads correctly with ACE Interaction. This was a crucial step in preventing errors related to parameter mismatches.
+  
+- **Grad Money Integration:** Across all scripts, we replaced the original HG money-handling functions with Grad Money functions to ensure consistency in how funds are checked, displayed, and deducted.
+  
+- **UI and ACE Interaction:** Adjusted the UI elements and ACE Interaction setup to ensure that the gear shop is fully functional and accessible through multiple interaction methods.
+
+By systematically updating each script, we ensured that the gear shop works seamlessly with the Grad Money system and is fully compatible with ACE Interaction, providing a smooth and error-free experience for players.

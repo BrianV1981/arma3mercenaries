@@ -1,8 +1,17 @@
 #include "..\HG_IDCS.h"
 /*
+    HG_VehiclesShop.h
     Author - HoverGuy
     Website - https://northernimpulse.com
+    Enhanced by - BrianV1981
+
+    Changes:
+    - Integrated Grad Money system into the "MyCashButton" to correctly display the player's current funds.
+    - Replaced the use of `HG_Cash` variable with the `grad_moneymenu_fnc_getFunds` function.
+    - Ensured compatibility with the Grad Money system for accurate and up-to-date currency information.
+    - The button now retrieves the player's funds using the Grad Money system and displays it in the same consistent format as before using `HG_fnc_currencyToText`.
 */
+
 
 class HG_VehiclesShop
 {
@@ -219,15 +228,16 @@ class HG_VehiclesShop
 		};
 		
 		class MyCashButton: HG_RscButtonInvisible
-		{
-			idc = HG_VEHICLES_MC_IDC;
-			onButtonClick = "titleText [format[(localize 'STR_HG_DLG_MC'),([(player getVariable 'HG_Cash'),true] call HG_fnc_currencyToText)],'PLAIN DOWN',0.5]";
-			tooltip = "$STR_HG_DLG_MC_TOOLTIP";
-			x = 0.634062 * safeZoneW + safeZoneX;
-			y = 0.00500001 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
+{
+    idc = HG_VEHICLES_MC_IDC;
+    onButtonClick = "titleText [format[(localize 'STR_HG_DLG_MC'),([(player) call grad_moneymenu_fnc_getFunds, true] call HG_fnc_currencyToText)],'PLAIN DOWN',0.5]";
+    tooltip = "$STR_HG_DLG_MC_TOOLTIP";
+    x = 0.634062 * safeZoneW + safeZoneX;
+    y = 0.00500001 * safeZoneH + safeZoneY;
+    w = 0.0309375 * safeZoneW;
+    h = 0.044 * safeZoneH;
+};
+
 		
 		class ExitButton: HG_RscButtonInvisible
 		{

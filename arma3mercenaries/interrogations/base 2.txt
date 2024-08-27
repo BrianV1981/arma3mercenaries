@@ -1,0 +1,103 @@
+/*
+    arma3mercenaries_fn_bluforIndep_on_civilians.sqf
+    Author: BrianV1981
+
+    Description:
+    This script allows a BLUFOR or Independent player to "interrogate" civilians within a 30-meter radius.
+    The nearest player to the object with the addAction is identified and tagged with a temporary variable.
+    Each civilian is assigned a unique variable and processed with a random health bleed between 1% and 50% damage.
+    The health bleed ticks every 5 seconds until the civilian is dead, at which point the player receives
+    a random financial reward between 10,000 and 50,000 credits. Dynamic feedback messages are provided
+    to the player who triggered the action, using random war-like phrases.
+*/
+
+// Define variations for dynamic text messages
+private _noPlayerFoundMessages = [
+    "Ain’t no one here to do the job—get someone on the ground!",
+    "Nobody’s close enough to get their hands dirty—get in there!",
+    "No trigger-puller around here—step up and get it done.",
+    "No boots on the ground—get in range or get out."
+];
+
+private _factionRestrictionMessages = [
+    "This is BLUFOR or Independent turf. Step aside, rookie.",
+    "This ain’t your fight. Only BLUFOR or Independent handle this kind of heat.",
+    "Only BLUFOR or Independent get to play this game. Step back.",
+    "You’re out of your league. Only BLUFOR or Independent run this show."
+];
+
+private _interrogationStartMessages = [
+    "%1 civilians lined up. Cash comes after they sing or bleed.",
+    "%1 civilians marked for questioning. Cash comes when the job’s finished.",
+    "%1 civilians under the gun. Cash is yours when the talking’s over.",
+    "%1 civilians in the hot seat. You’ll get the cash once they spill or drop."
+];
+
+private _interrogationCompleteMessages = [
+    "Interrogation’s done. 2% cash is in hand—don’t spend it all in one place.",
+    "Job’s done. The poor guy was screaming about his family. Here’s your cash. 2%, I hope you don;t have a concious.",
+    "All done. That 3% was a tough but he finally cracked. 2% Cash delivered—straight to your hands.",
+    "Interrogation complete on 3%. 2% Cash in hand—use it wisely."
+];
+
+// Search for the nearest player within 5 meters of the object
+private _object = _this select 0;
+private _nearestPlayer = _object nearEntities ["CAManBase", 5] select 0;
+
+// Check if a player was found
+if (isNull _nearestPlayer) exitWith {
+    private _noPlayerFoundMessage = selectRandom _noPlayerFoundMessages;
+    [_noPlayerFoundMessage, 0.0, 0.1, 5, 1, 0, 789] spawn BIS_fnc_dynamicText;
+};
+
+// Check if the player belongs to BLUFOR or Independent
+if (!(side _nearestPlayer in [west, independent])) exitWith {
+    private _factionRestrictionMessage = selectRandom _factionRestrictionMessages;
+    [_factionRestrictionMessage, 0.0, 0.1, 5, 1, 0, 789] spawn BIS_fnc_dynamicText;
+};
+
+// Assign a temporary variable to the nearest player
+_nearestPlayer setVariable ["isProcessingInterrogation", true];
+
+// Notify the player about the interrogation process
+private _pos = getPos _nearestPlayer;
+private _civilians = _pos nearEntities ["Man", 30];
+_civilians = _civilians select {alive _x && side _x == civilian};
+private _interrogationStartMessage = format [selectRandom _interrogationStartMessages, count _civilians];
+[_interrogationStartMessage, 0.0, 0.1, 5, 1, 0, 789] remoteExec ["BIS_fnc_dynamicText", _nearestPlayer, true];
+
+// Process each civilian with a random health bleed
+{
+    private _bleedPercentage = random 0.25 + 0.05; // Random bleed between 5% and 25%
+    private _uniqueID = format ["interrogate_%1", diag_tickTime + (getPos _x select 0)]; // Generate a unique ID using the X coordinate and tick time
+    _x setVariable [_uniqueID, true]; // Set the unique variable on the civilian
+
+    [_x, _nearestPlayer, _uniqueID, _bleedPercentage, _interrogationCompleteMessages] spawn {
+        params ["_civ", "_player", "_id", "_bleedPercentage", "_interrogationCompleteMessages"];
+
+        // Apply health bleed every 5 seconds
+        while {alive _civ && {_civ getVariable [_id, false]}} do {
+            sleep 5; // 5 seconds per tick
+            _civ setDamage (damage _civ + _bleedPercentage); // Apply the random bleed percentage
+
+            if (damage _civ >= 1) then {
+                // Kill the civilian
+                _civ setDamage 1;
+                private _reward = 10000 + random 40000; // Random payout between 10,000 and 50,000 credits
+
+                // Apply the reward to the player
+                [_player, _reward] remoteExec ["grad_lbm_fnc_addFunds", _player, true];
+
+                // Provide feedback to the player
+                private _completionMessage = format [selectRandom _interrogationCompleteMessages, _reward];
+                [_completionMessage, 0.0, 0.1, 5, 1, 0, 789] remoteExec ["BIS_fnc_dynamicText", _player, true];
+
+                // Clean up the variable on the civilian
+                _civ setVariable [_id, nil];
+            };
+        };
+    };
+} forEach _civilians;
+
+// Clean up: Remove the temporary variable from the player
+_nearestPlayer setVariable ["isProcessingInterrogation", nil];

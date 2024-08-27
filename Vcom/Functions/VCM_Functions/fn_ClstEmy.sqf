@@ -13,8 +13,6 @@
 		if none found, ARRAY
 */
 
-if (_this isEqualType []) exitWith {_rtrn = [0,0,0];_rtrn};
-
 private _unitSide = (side _this);
 private _a1 = [];
 {

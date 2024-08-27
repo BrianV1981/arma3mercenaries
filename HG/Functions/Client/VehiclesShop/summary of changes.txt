@@ -1,0 +1,48 @@
+# Vehicle Shop Update Summary
+
+## Overview
+We aimed to update the vehicle shop to work seamlessly with the Grad Money system and ensure that it could be accessed via the ACE Interaction menu. The main goals were to replace any outdated money-handling functions with those from Grad Money, adjust parameters for ACE compatibility, and ensure all UI elements and functionality were preserved.
+
+## Files Updated
+
+### 1. `fn_buyVehicle.sqf`
+- **Changes**:
+  - Integrated the Grad Money system by replacing the original HG cash handling functions with those from Grad Money.
+  - Adjusted the logic to check the player's funds before allowing a purchase and deduct the correct amount when a vehicle is bought.
+- **Purpose**:
+  - Ensured that vehicle purchases correctly interact with the player's Grad Money balance, reflecting the correct deductions and displaying the proper hints/messages.
+
+### 2. `fn_dialogOnLoadVehicles.sqf`
+- **Changes**:
+  - Updated the parameters to ensure compatibility with ACE Interaction. Specifically, we removed unnecessary parameters to align with the required structure for ACE.
+  - Adjusted UI logic to populate the vehicle list correctly and maintain functionality with updated money handling.
+- **Purpose**:
+  - Allowed the vehicle shop to be accessed and displayed correctly when triggered via the ACE Interaction menu. The key change was aligning the parameters to ensure the shop list was populated and accessible.
+
+### 3. `fn_vehicleSelectionChanged.sqf`
+- **Changes**:
+  - Updated the script to correctly handle the selection of vehicles within the shop, ensuring that the UI elements (like vehicle images, stats, and pricing) were displayed correctly.
+  - Integrated Grad Money formatting for consistency in displaying vehicle prices.
+- **Purpose**:
+  - Ensured that when a vehicle is selected, the relevant information is displayed to the player, including its cost (using Grad Money formatting) and other stats like speed, armor, etc.
+
+### 4. `HG_VehiclesShop.h`
+- **Changes**:
+  - Linked the "My Cash" button to the Grad Money system, ensuring that the correct wallet amount was displayed to the player.
+  - Updated UI elements to reflect the changes in money handling.
+- **Purpose**:
+  - Ensured that all button actions, especially those related to displaying the player's current funds, worked correctly with the Grad Money system.
+
+## Critical Steps
+
+### 1. Parameter Adjustments
+We removed unnecessary parameters in the `fn_dialogOnLoadVehicles.sqf` file to ensure it worked correctly with the ACE Interaction menu. This was a critical step in making sure the shop list populated correctly and was accessible.
+
+### 2. Grad Money Integration
+Across all scripts, we replaced the original HG money-handling functions with Grad Money functions. This ensured consistency in how funds are checked, displayed, and deducted.
+
+### 3. ACE Interaction Setup
+We carefully adjusted the parameters and scripts to ensure that the vehicle shop could be accessed and interacted with through the ACE menu. This involved aligning the functions and parameters to work seamlessly within the ACE framework.
+
+## Summary
+By systematically updating each script to integrate Grad Money and adjusting the parameters for ACE Interaction, we successfully modernized the vehicle shop. This process ensured that all money-related functions worked correctly and that the shop was fully functional within the ACE Interaction menu. The final adjustments, especially the parameter changes, were key to making sure the vehicle list was populated and displayed as expected.

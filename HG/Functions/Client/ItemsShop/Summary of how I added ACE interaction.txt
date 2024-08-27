@@ -1,0 +1,29 @@
+# Key Files Updated
+
+### `fn_dialogOnLoadItems.sqf`:
+- **Changes:** Updated to handle the correct parameters and ensure that the shop list is populated properly when accessed through ACE Interaction. The parameters were adjusted to ensure compatibility with the ACE system.
+
+### `HG_ItemsShop.h`:
+- **Changes:** The on-screen buttons were linked to the correct Grad Money functions, ensuring that funds are properly checked and deducted during purchases. The `onButtonClick` action for displaying the player's cash was updated to use the Grad Money system while maintaining the original HG currency formatting.
+
+### `fn_itemBtns.sqf`:
+- **Changes:** Modified to correctly handle item purchases using Grad Money. The script now verifies if the player has enough funds before allowing a purchase and deducts the correct amount when an item is bought. Any unnecessary or outdated logic was removed to streamline the functionality.
+
+### `HG_ItemsShopCfg.h`:
+- **Changes:** No specific changes needed here, but this file defines the items available in the shop, their prices, and access conditions.
+
+# Critical Final Step
+
+### **Parameters Adjustment:**
+The final breakthrough involved updating the parameters in `fn_dialogOnLoadItems.sqf` to ensure they aligned correctly with the ACE Interaction system. The script was adjusted to correctly handle and pass the parameters needed for ACE, specifically focusing on ensuring that the list of items for sale was properly populated when accessed through ACE.
+
+# Summary of the Process
+
+### **Integration of Grad Money:**
+Across the board, functions related to handling money were updated to use Grad Money, ensuring consistency in how funds are checked, displayed, and deducted.
+
+### **ACE Interaction Setup:**
+The main challenge was ensuring that the ACE Interaction system could correctly trigger the shop interface and display the items for sale. This required careful handling of parameters and ensuring that all UI elements and logic flowed correctly from the ACE interaction point.
+
+### **Final Fix:**
+The last piece of the puzzle was fixing the parameters in the ACE Interaction setup. Once the correct parameters were passed to the `fn_dialogOnLoadItems.sqf`, the item list populated correctly, and the interface behaved as expected.

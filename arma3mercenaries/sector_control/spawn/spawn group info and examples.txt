@@ -1,0 +1,76 @@
+Example 1: Basic Randomized Infantry and Vehicle Group
+This example spawns a group with at least 3 mandatory units and a 50% chance of spawning additional units. It allows for up to 2 vehicles to be spawned.
+
+sqf
+Copy code
+private _group = [
+    _spawnPosition,       // Starting position of the group
+    EAST,                 // CSAT faction
+    ["O_Soldier_F", "O_Soldier_AR_F", "O_medic_F"], // Array of possible units
+    [],                   // Relative positions (default)
+    [],                   // Ranks (default)
+    [],                   // Skill range (default)
+    [],                   // Ammo range (default)
+    [3, 0.5],             // Randomness control: 3 mandatory units, 50% chance for others
+    0,                    // Azimuth (direction)
+    true,                 // Precise position placement
+    2                     // Max 2 vehicles
+] call BIS_fnc_spawnGroup;
+Example 2: More Complex Group with Vehicle Limit
+This example introduces a mix of random infantry units and a vehicle with a 50% chance to spawn 3-10 units. It limits the group to spawning only 1 vehicle.
+
+sqf
+Copy code
+private _group = [
+    _spawnPosition,
+    EAST,
+    ["O_Soldier_TL_F", "O_Soldier_LAT_F", "O_Soldier_AR_F", "O_Soldier_exp_F"],
+    [], 
+    [], 
+    [], 
+    [], 
+    [3, 0.5],           // 3 mandatory units, 50% chance for up to 10 units
+    random 360,         // Random azimuth for direction
+    true,               // Precise position placement
+    1                   // Limit to 1 vehicle
+] call BIS_fnc_spawnGroup;
+Example 3: Fully Random Group with Random Vehicles
+In this example, the function spawns a group with random units and random vehicles. The group has at least 2 units and a 70% chance of spawning up to 5 additional units. It also includes a maximum of 2 vehicles.
+
+sqf
+Copy code
+private _group = [
+    _spawnPosition,
+    EAST,
+    ["O_Soldier_F", "O_Soldier_LAT_F", "O_Soldier_GL_F", "O_Soldier_AR_F"],
+    [], 
+    [], 
+    [], 
+    [], 
+    [2, 0.7],           // 2 mandatory units, 70% chance for up to 5 more units
+    random 360,         // Random azimuth
+    true,               // Precise position placement
+    2                   // Max 2 vehicles
+] call BIS_fnc_spawnGroup;
+Example 4: Large Group with Higher Vehicle Limit
+This example spawns a large group with a minimum of 5 mandatory units and a 30% chance to spawn additional units. It includes a higher vehicle limit of 3.
+
+sqf
+Copy code
+private _group = [
+    _spawnPosition,
+    EAST,
+    ["O_Soldier_A_F", "O_Soldier_AAR_F", "O_Soldier_SL_F", "O_Soldier_TL_F"],
+    [], 
+    [], 
+    [], 
+    [], 
+    [5, 0.3],           // 5 mandatory units, 30% chance for others
+    random 360,         // Random azimuth
+    true,               // Precise position placement
+    3                   // Max 3 vehicles
+] call BIS_fnc_spawnGroup;
+Notes:
+minUnits specifies the minimum number of units that will always spawn.
+chance determines the likelihood of spawning additional units beyond the minimum specified.
+maxVehicles controls how many vehicles can spawn with the group. If set to a higher number, more vehicles will spawn, depending on the group composition.

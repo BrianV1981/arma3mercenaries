@@ -1,7 +1,12 @@
 #include "..\HG_IDCS.h"
 /*
+    HG_ATM.h
     Author - HoverGuy
     Website - https://northernimpulse.com
+    Enhanced by - BrianV1981
+    Changes:
+
+    - Added clear comments on what each element does.
 */
 
 class HG_ATM
@@ -16,7 +21,7 @@ class HG_ATM
 	{
 		class Header: HG_RscText
 		{
-			colorBackground[] = {0.4,0.4,0.4,1};
+			colorBackground[] = {0.4,0.4,0.4,1};  // Header background color.
 			x = 0.391719 * safezoneW + safezoneX;
 			y = 0.302 * safezoneH + safezoneY;
 			w = 0.216563 * safezoneW;
@@ -25,7 +30,7 @@ class HG_ATM
 		
 		class Background: HG_RscText
 		{
-			colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0.5};  // Main background color.
 			x = 0.391719 * safezoneW + safezoneX;
 		    y = 0.346 * safezoneH + safezoneY;
 		    w = 0.216563 * safezoneW;
@@ -42,7 +47,7 @@ class HG_ATM
 		
 		class WhiteLine: HG_RscPicture
 		{
-			text = "#(argb,8,8,3)color(1,1,1,1)";
+			text = "#(argb,8,8,3)color(1,1,1,1)";  // A small white line to separate header and main content.
 			x = 0.391719 * safezoneW + safezoneX;
 			y = 0.3482 * safezoneH + safezoneY;
 			w = 0.216563 * safezoneW;
@@ -52,7 +57,7 @@ class HG_ATM
 		class MainPicture: HG_RscPicture
 		{
 			moving = true;
-			text = "HG\UI\Icons\atm.paa";
+			text = "HG\UI\Icons\atm.paa";  // ATM icon.
 			tooltip = "$STR_HG_DLG_TOOLTIP";
 			x = 0.391719 * safezoneW + safezoneX;
 			y = 0.302 * safezoneH + safezoneY;
@@ -62,7 +67,7 @@ class HG_ATM
 		
 		class ExitBtnPicture: HG_RscPicture
 		{
-			text = "HG\UI\Icons\close.paa";
+			text = "HG\UI\Icons\close.paa";  // Close button icon.
 			x = 0.577344 * safezoneW + safezoneX;
 			y = 0.302 * safezoneH + safezoneY;
 			w = 0.0309375 * safeZoneW;
@@ -79,7 +84,7 @@ class HG_ATM
 		
 		class AccTitle: HG_RscText
 		{
-			text = "$STR_HG_ATM_ACC_TITLE";
+			text = "$STR_HG_ATM_ACC_TITLE";  // Account balance title.
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.357 * safezoneH + safezoneY;
 			w = 0.103125 * safezoneW;
@@ -89,7 +94,7 @@ class HG_ATM
 		class AccText: HG_RscText
 		{
 			idc = HG_ATM_ACC_TEXT_IDC;
-			style = "0x02";
+			style = "0x02";  // Centered text style.
 			shadow = 0;
 			sizeEx = 0.08;
 			x = 0.396875 * safezoneW + safezoneX;
@@ -105,7 +110,7 @@ class HG_ATM
 	
 	    class CashTitle: AccTitle
 		{
-			text = "$STR_HG_ATM_CASH_TITLE";
+			text = "$STR_HG_ATM_CASH_TITLE";  // Cash balance title.
 			y = 0.544 * safezoneH + safezoneY;
 		};
 		
@@ -118,7 +123,7 @@ class HG_ATM
 		
 		class DepositBtnPic: HG_RscPicture
 		{
-			text = "HG\UI\Icons\up.paa";
+			text = "HG\UI\Icons\up.paa";  // Deposit button icon.
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;
@@ -127,7 +132,7 @@ class HG_ATM
 		
 		class WithdrawBtnPic: HG_RscPicture
 		{
-			text = "HG\UI\Icons\down.paa";
+			text = "HG\UI\Icons\down.paa";  // Withdraw button icon.
 			x = 0.427812 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;
@@ -136,7 +141,7 @@ class HG_ATM
 		
 		class TransferBtnPic: HG_RscPicture
 		{
-			text = "HG\UI\Icons\right.paa";
+			text = "HG\UI\Icons\right.paa";  // Transfer button icon.
 			x = 0.572187 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;
@@ -145,7 +150,7 @@ class HG_ATM
 		
 		class RefreshBtnPic: HG_RscPicture
 		{
-			text = "HG\UI\Icons\refresh.paa";
+			text = "HG\UI\Icons\refresh.paa";  // Refresh button icon.
 			x = 0.54125 * safezoneW + safezoneX;
 			y = 0.302 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;
@@ -173,7 +178,7 @@ class HG_ATM
 		class DepositBtn: HG_RscButtonInvisible
 		{
 			tooltip = "$STR_HG_ATM_DEPOSIT_TOOLTIP";
-			onButtonClick = "[0] call HG_fnc_atmBtns";
+			onButtonClick = "[0] call HG_fnc_atmBtns";  // Deposit funds using the updated function.
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;
@@ -183,7 +188,7 @@ class HG_ATM
 		class WithdrawBtn: HG_RscButtonInvisible
 		{
 			tooltip = "$STR_HG_ATM_WITHDRAW_TOOLTIP";
-			onButtonClick = "[1] call HG_fnc_atmBtns";
+			onButtonClick = "[1] call HG_fnc_atmBtns";  // Withdraw funds using the updated function.
 			x = 0.427812 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;
@@ -203,7 +208,7 @@ class HG_ATM
 		{
 			idc = HG_ATM_TRANSFER_BTN_IDC;
 			tooltip = "$STR_HG_ATM_TRANSFER_TOOLTIP";
-			onButtonClick = "[2] call HG_fnc_atmBtns";
+			onButtonClick = "[2] call HG_fnc_atmBtns";  // Transfer funds using the updated function.
 			x = 0.572187 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;
@@ -214,7 +219,7 @@ class HG_ATM
 		{
 			idc = HG_ATM_REFRESH_BTN_IDC;
 			tooltip = "$STR_HG_ATM_REFRESH_TOOLTIP";
-			onButtonClick = "[] call HG_fnc_atmRefresh";
+			onButtonClick = "[] call HG_fnc_atmRefresh";  // Refresh the ATM display using the updated function.
 			x = 0.54125 * safezoneW + safezoneX;
 			y = 0.302 * safezoneH + safezoneY;
 			w = 0.0309375 * safezoneW;
@@ -224,7 +229,7 @@ class HG_ATM
 		class ExitButton: HG_RscButtonInvisible
 		{
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
-			onButtonClick = "closeDialog 0";
+			onButtonClick = "closeDialog 0";  // Close the ATM dialog.
 			x = 0.577344 * safezoneW + safezoneX;
 			y = 0.302 * safezoneH + safezoneY;
 			w = 0.0309375 * safeZoneW;

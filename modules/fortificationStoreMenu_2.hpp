@@ -1,12 +1,13 @@
-    //buyables set/store:
-    class fortificationStore_2 {
+//buyables set/store:
+class fortificationStore_2 {
+		
 		//category:
-		class fortifications_barriers {
-    displayName = "Barriers and Obstacles";
+		class fortifications_sandbags {
+    displayName = "Fortifications: Sandbags, H-Barriers and Razor Wire";
     kindOf = "other";
     tracking = 0;
-
-    // ACE Items
+	
+	    // ACE Items
     class ACE_EntrenchingTool {
         displayName = "ACE Entrenching Tool";
         description = "The ACE entrenching tool can be utilized to dig trenches with the ACE self interaction menu.";
@@ -28,53 +29,152 @@
         stock = 1000;
         code = "if (player == (_this select 0)) then {[container_2,'ACE_ConcertinaWireCoil'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
+	class Land_Razorwire_F {
+                displayName = "Razorwire Barrier";
+                description = "The razorwire barrier can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50;
+                stock = 1000;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_Razorwire_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
 
-    // Barbed Wire / Razor Wire
-    class Land_New_WiredFence_5m_F {
-        displayName = "Barbed Wire Fence";
-        description = "Barbed Wire Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 200;
-        stock = 200;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_New_WiredFence_5m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    class ACE_Sandbag_empty {
+        displayName = "ACE Sandbag (empty)";
+        description = "The ACE Sandbag (empty) can be utilized with the ACE self interaction menu.";
+        price = 0;
+        stock = 10000;
+        kindOf = Items;
     };
-    class Land_New_WiredFence_10m_F {
-        displayName = "Barbed Wire Fence (Long)";
-        description = "Barbed Wire Fence (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 400;
+    class Land_BagFence_Corner_F {
+        displayName = "Sandbag Wall (Corner)";
+        description = "Sandbag Wall (Corner) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 10;
         stock = 200;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_New_WiredFence_10m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        code = "if (player == (_this select 0)) then {[container_2,'Land_BagFence_Corner_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
-    class Land_New_WiredFence_pole_F {
-        displayName = "Barbed Wire Fence (Pole)";
-        description = "Barbed Wire Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+    class Land_BagFence_End_F {
+        displayName = "Sandbag Wall (End)";
+        description = "Sandbag Wall (End) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 10;
+        stock = 200;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_BagFence_End_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+    class Land_BagFence_Round_F {
+        displayName = "Sandbag Wall (Round)";
+        description = "Sandbag Wall (Round) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
         price = 20;
         stock = 200;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_New_WiredFence_pole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        code = "if (player == (_this select 0)) then {[container_2,'Land_BagFence_Round_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
+    class Land_BagFence_Short_F {
+        displayName = "Sandbag Wall (Short)";
+        description = "Sandbag Wall (Short) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 15;
+        stock = 200;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_BagFence_Short_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+    class Land_BagFence_Long_F {
+        displayName = "Sandbag Wall (Long)";
+        description = "Sandbag Wall (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 20;
+        stock = 200;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_BagFence_Long_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+    class Land_SandbagBarricade_01_half_F {
+        displayName = "Sandbag Barricade (Short)";
+        description = "Sandbag Barricade (Short) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 40;
+        stock = 200;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_SandbagBarricade_01_half_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+    class Land_SandbagBarricade_01_F {
+        displayName = "Sandbag Barricade (Tall)";
+        description = "Sandbag Barricade (Tall) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 45;
+        stock = 200;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_SandbagBarricade_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+    class Land_SandbagBarricade_01_hole_F {
+        displayName = "Sandbag Barricade (Tall, Hole)";
+        description = "Sandbag Barricade (Tall, Hole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 50;
+        stock = 200;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_SandbagBarricade_01_hole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+	    // H-Barriers
+		class Land_HBarrier_1_F {
+                displayName = "H-barrier (Block)";
+                description = "H-barrier (Block) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 100;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_HBarrier_1_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_HBarrier_3_F {
+                displayName = "H-barrier (3 Blocks)";
+                description = "H-barrier (3 Blocks) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 300;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_HBarrier_3_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_HBarrier_5_F {
+                displayName = "H-barrier (5 Blocks)";
+                description = "H-barrier (5 Blocks) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 500;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_HBarrier_5_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_HBarrierBig_F {
+                displayName = "H-barrier (Big, 4 Blocks)";
+                description = "H-barrier (Big, 4 Blocks) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 500;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_HBarrierBig_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_HBarrierWall4_F {
+                displayName = "H-barrier Wall (Short)";
+                description = "H-barrier Wall (Short) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 600;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_HBarrierWall4_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_HBarrierWall6_F {
+                displayName = "H-barrier Wall (Long)";
+                description = "H-barrier Wall (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 1000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_HBarrierWall6_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_HBarrierWall_corner_F {
+                displayName = "H-barrier Wall (Corner)";
+                description = "H-barrier Wall (Corner) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 800;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_HBarrierWall_corner_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_HBarrierWall_corridor_F {
+                displayName = "H-barrier Corridor";
+                description = "H-barrier Corridor can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 1000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_HBarrierWall_corridor_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+	
+			
+};		
+		
+		//category:
+		class fortifications_roadBarriers {
+    displayName = "Fortifications: Road Barriers, Gates, and Obstacles";
+    kindOf = "other";
+    tracking = 0;
 
-    // H-Barriers
-    class Land_HBarrierWall6_F {
-        displayName = "H-barrier (6 Blocks)";
-        description = "H-barrier (6 Blocks) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 1000;
-        stock = 200;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_HBarrierWall6_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-    class Land_HBarrierWall_corridor_F {
-        displayName = "H-barrier Corridor";
-        description = "H-barrier Corridor can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 1000;
-        stock = 200;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_HBarrierWall_corridor_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-    class Land_HBarrierWall_corner_F {
-        displayName = "H-barrier Wall (Corner)";
-        description = "H-barrier Wall (Corner) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 800;
-        stock = 200;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_HBarrierWall_corner_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
 
+    class Land_CzechHedgehog_01_new_F {
+        displayName = "Czech Hedgehog (New)";
+        description = "Czech Hedgehog (New) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_CzechHedgehog_01_new_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+	};
     // Dragon's Teeth
     class Land_DragonsTeeth_01_1x1_old_F {
         displayName = "Dragon's Tooth (Single, old)";
@@ -97,7 +197,79 @@
         stock = 100;
         code = "if (player == (_this select 0)) then {[container_2,'Land_DragonsTeeth_01_4x2_old_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
+	
+	// concrete barriers
+	
+	    class Land_Crash_barrier_F {
+        displayName = "Safety Barrier";
+        description = "Safety Barrier can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 50;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Crash_barrier_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
 
+    class BlockConcrete_F {
+        displayName = "Concrete Block";
+        description = "Concrete Block can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'BlockConcrete_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+	 class Land_CncBarrier_F {
+                displayName = "Concrete Barrier";
+                description = "Concrete Barrier can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 200;
+                stock = 100;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_CncBarrier_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_CncBarrier_stripes_F {
+                displayName = "Concrete Barrier";
+                description = "Concrete Barrier can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 200;
+                stock = 100;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_CncBarrier_stripes_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_CncBarrierMedium_F {
+                displayName = "Concrete Barrier (Medium)";
+                description = "Concrete Barrier (Medium) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 250;
+                stock = 100;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_CncBarrierMedium_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_CncBarrierMedium4_F {
+                displayName = "Concrete Barrier (Medium, Long)";
+                description = "Concrete Barrier (Medium, Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 300;
+                stock = 100;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_CncBarrierMedium4_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is loacted outside, it is the military-green huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+
+    class Land_CncShelter_F {
+        displayName = "Concrete Shelter";
+        description = "Concrete Shelter can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_CncShelter_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+	
+	// road block gates
+
+	class Land_BarGate_F {
+        displayName = "Bar Gate";
+        description = "Bar Gate";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_BarGate_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+	
+    class Land_RoadBarrier_01_F {
+        displayName = "Bar Gate (v2)";
+        description = "Bar Gate (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_RoadBarrier_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+	
     // Other Obstacles and Barriers
     class Land_RampConcrete_F {
         displayName = "Concrete Ramp";
@@ -119,45 +291,8 @@
         description = "Road Cone (Light)";
         price = 75;
         stock = 100;
+		 picture = "pictures\arma3mercenaries_v1.paa";  //this is a placeholder picture for bugged items
         code = "if (player == (_this select 0)) then {[container_2,'RoadCone_L_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-	
-	class Land_BarGate_F {
-        displayName = "Bar Gate";
-        description = "Bar Gate";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_BarGate_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-	
-    class Land_RoadBarrier_01_F {
-        displayName = "Bar Gate (v2)";
-        description = "Bar Gate (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_RoadBarrier_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Crash_barrier_F {
-        displayName = "Safety Barrier";
-        description = "Safety Barrier can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Crash_barrier_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-    class Land_CzechHedgehog_01_new_F {
-        displayName = "Czech Hedgehog (New)";
-        description = "Czech Hedgehog (New) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_CzechHedgehog_01_new_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-    class BlockConcrete_F {
-        displayName = "Concrete Block";
-        description = "Concrete Block can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'BlockConcrete_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
 	
 	class Land_PlasticBarrier_01_F {
@@ -255,46 +390,176 @@ class PlasticBarrier_03_orange_F {
     stock = 200;
     code = "if (player == (_this select 0)) then {[container_2,'PlasticBarrier_03_orange_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
 };
+    class Land_BasaltKerb_01_2m_F {
+        displayName = "Basalt Curb (2 m)";
+        description = "Basalt Curb (2 m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 50;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltKerb_01_2m_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
 
+    class Land_BasaltKerb_01_4m_F {
+        displayName = "Basalt Curb (4 m)";
+        description = "Basalt Curb (4 m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 75;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltKerb_01_4m_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_BasaltKerb_01_platform_F {
+        displayName = "Basalt Curbstone Platform";
+        description = "Basalt Curbstone Platform can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 150;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltKerb_01_platform_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
 	
 };
 
-//category:
-class fortifications_walls {
-    displayName = "Fortifications: Walls and Fences";
+		//category:
+		class fortifications_bunkers {
+        displayName = "Fortifications: Bunkers, Pillboxes, and Watch Towers";
+        kindOf = "other";
+        tracking = 0;
+
+        // Bunkers
+        class Land_BagBunker_Small_F {
+            displayName = "Bunker (Small)";
+            description = "Bunker (Small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+            price = 500;
+            stock = 100;
+            code = "if (player == (_this select 0)) then {[container_2,'Land_BagBunker_Small_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        };
+        class Land_BagBunker_Large_F {
+            displayName = "Bunker (Large)";
+            description = "Bunker (Large) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+            price = 1500;
+            stock = 200;
+            code = "if (player == (_this select 0)) then {[container_2,'Land_BagBunker_Large_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        };
+        class Land_BagBunker_Tower_F {
+            displayName = "Bunker (Tower)";
+            description = "Bunker (Tower) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+            price = 2000;
+            stock = 200;
+            code = "if (player == (_this select 0)) then {[container_2,'Land_BagBunker_Tower_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        };
+		
+		class Land_HBarrierTower_F {
+            displayName = "H-barrier Watchtower";
+            description = "H-barrier Watchtower can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+            price = 2000;
+            stock = 200;
+            code = "if (player == (_this select 0)) then {[container_2,'Land_HBarrierTower_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        };
+
+        // Pillbox Bunkers
+        class Land_PillboxBunker_01_hex_F {
+            displayName = "Pillbox (Hexagonal)";
+            description = "Pillbox (Hexagonal) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+            price = 50000;
+            stock = 200;
+            code = "if (player == (_this select 0)) then {[container_2,'Land_PillboxBunker_01_hex_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        };
+        class Land_PillboxBunker_01_rectangle_F {
+            displayName = "Pillbox (Rectangular)";
+            description = "Pillbox (Rectangular) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+            price = 50000;
+            stock = 200;
+            code = "if (player == (_this select 0)) then {[container_2,'Land_PillboxBunker_01_rectangle_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        };
+        class Land_PillboxBunker_01_big_F {
+            displayName = "Pillbox (Big)";
+            description = "Pillbox (Big) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+            price = 100000;
+            stock = 200;
+            code = "if (player == (_this select 0)) then {[container_2,'Land_PillboxBunker_01_big_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        };
+
+        // Watchtowers/Guard Towers
+		class Land_DeerStand_01_F {
+                displayName = "Deer Stand (v1)";
+                description = "Deer Stand (v1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 2000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_DeerStand_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			
+		class Land_DeerStand_02_F {
+                displayName = "Deer Stand (v2)";
+                description = "Deer Stand (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 3000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_DeerStand_02_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_GuardTower_02_F {
+                displayName = "Guard Tower (small)";
+                description = "The guard tower (small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50000;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_GuardTower_02_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+            };
+			class Land_Castle_01_tower_F {
+				displayName = "Castle Tower";
+				description = "Castle Tower can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+				price = 500000;
+				stock = 100;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_Castle_01_tower_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside; it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+};
+};
+
+		//category:
+		class fortifications_walls {
+    displayName = "Fortifications: Walls";
     kindOf = "other";
     tracking = 0;
-
-    class Land_CncBarrier_F {
-        displayName = "Concrete Barrier";
-        description = "Concrete Barrier can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 200;
+	
+	    class Land_ConcreteWall_03_m_pole_F {
+        displayName = "Concrete Wall (v3, Pole)";
+        description = "Concrete Wall (v3, Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 75;
         stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_CncBarrier_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        code = "if (player == (_this select 0)) then {[container_2,'Land_ConcreteWall_03_m_pole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
 
-    class Land_CncBarrierMedium_F {
-        displayName = "Concrete Barrier (Medium)";
-        description = "Concrete Barrier (Medium) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 250;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_CncBarrierMedium_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_CncBarrierMedium4_F {
-        displayName = "Concrete Barrier (Medium, Long)";
-        description = "Concrete Barrier (Medium, Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 300;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_CncBarrierMedium4_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_CncShelter_F {
-        displayName = "Concrete Shelter";
-        description = "Concrete Shelter can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+    class Land_ConcreteWall_03_m_2m_F {
+        displayName = "Concrete Wall (v3, 2m)";
+        description = "Concrete Wall (v3, 2m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
         price = 100;
         stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_CncShelter_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        code = "if (player == (_this select 0)) then {[container_2,'Land_ConcreteWall_03_m_2m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_ConcreteWall_03_m_6m_F {
+        displayName = "Concrete Wall (v3, 6m)";
+        description = "Concrete Wall (v3, 6m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 150;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_ConcreteWall_03_m_6m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_CamoConcreteWall_01_l_4m_v1_F {
+        displayName = "Camo Concrete Wall (4m, v1)";
+        description = "Camo Concrete Wall (4m, v1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_CamoConcreteWall_01_l_4m_v1_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_CamoConcreteWall_01_l_4m_v2_F {
+        displayName = "Camo Concrete Wall (4m, v2)";
+        description = "Camo Concrete Wall (4m, v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_CamoConcreteWall_01_l_4m_v2_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_CamoConcreteWall_01_pole_v1_F {
+        displayName = "Camo Concrete Wall (Pole)";
+        description = "Camo Concrete Wall (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 75;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_CamoConcreteWall_01_pole_v1_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
 
     class Land_Concrete_SmallWall_4m_F {
@@ -312,305 +577,7 @@ class fortifications_walls {
         stock = 100;
         code = "if (player == (_this select 0)) then {[container_2,'Land_Concrete_SmallWall_8m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
-
-    class Land_Mil_WallBig_4m_F {
-        displayName = "Military Base Wall";
-        description = "Military Base Wall can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 300;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Mil_WallBig_4m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Mil_WallBig_Corner_F {
-        displayName = "Military Base Wall (Corner)";
-        description = "Military Base Wall (Corner) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Mil_WallBig_Corner_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Mil_WallBig_Gate_F {
-        displayName = "Military Base Wall (Gate)";
-        description = "Military Base Wall (Gate) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 300;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Mil_WallBig_Gate_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_CncWall1_F {
-        displayName = "Concrete Wall";
-        description = "Concrete Wall can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 500;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_CncWall1_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_CncWall4_F {
-        displayName = "Concrete Wall (Long)";
-        description = "Concrete Wall (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 1500;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_CncWall4_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-	
-	    class Land_PetroglyphWall_01_F {
-        displayName = "Petroglyph Wall 1";
-        description = "Petroglyph Wall 1 can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 200;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_PetroglyphWall_01_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_PetroglyphWall_02_F {
-        displayName = "Petroglyph Wall 2";
-        description = "Petroglyph Wall 2 can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 200;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_PetroglyphWall_02_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_BasaltKerb_01_2m_F {
-        displayName = "Basalt Curb (2 m)";
-        description = "Basalt Curb (2 m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltKerb_01_2m_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_BasaltKerb_01_2m_d_F {
-        displayName = "Basalt Curb (2 m, Damaged)";
-        description = "Basalt Curb (2 m, Damaged) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltKerb_01_2m_d_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_BasaltKerb_01_4m_F {
-        displayName = "Basalt Curb (4 m)";
-        description = "Basalt Curb (4 m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 75;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltKerb_01_4m_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_BasaltKerb_01_pile_F {
-        displayName = "Basalt Curbstone Pile";
-        description = "Basalt Curbstone Pile can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltKerb_01_pile_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_BasaltKerb_01_platform_F {
-        displayName = "Basalt Curbstone Platform";
-        description = "Basalt Curbstone Platform can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 150;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltKerb_01_platform_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_BasaltWall_01_4m_F {
-        displayName = "Basalt Wall (4 m)";
-        description = "Basalt Wall (4 m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 200;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltWall_01_4m_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_BasaltWall_01_8m_F {
-        displayName = "Basalt Wall (8 m)";
-        description = "Basalt Wall (8 m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 300;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltWall_01_8m_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_BasaltWall_01_d_left_F {
-        displayName = "Basalt Wall (Crumbled 1)";
-        description = "Basalt Wall (Crumbled 1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltWall_01_d_left_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_BasaltWall_01_d_right_F {
-        displayName = "Basalt Wall (Crumbled 2)";
-        description = "Basalt Wall (Crumbled 2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltWall_01_d_right_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_BasaltWall_01_gate_F {
-        displayName = "Basalt Wall Gate";
-        description = "Basalt Wall Gate can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 150;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltWall_01_gate_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-	
-	class Land_Fortress_01_innerCorner_70_F {
-    displayName = "Fortress Wall (Inner Corner, 70 deg)";
-    description = "Fortress Wall (Inner Corner, 70 deg) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-    price = 150;
-    stock = 100;
-    code = "if (player == (_this select 0)) then {[container_2,'Land_Fortress_01_innerCorner_70_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside; it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-};
-
-class Land_Fortress_01_innerCorner_90_F {
-    displayName = "Fortress Wall (Inner Corner, 90 deg)";
-    description = "Fortress Wall (Inner Corner, 90 deg) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-    price = 150;
-    stock = 100;
-    code = "if (player == (_this select 0)) then {[container_2,'Land_Fortress_01_innerCorner_90_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside; it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-};
-
-class Land_Fortress_01_innerCorner_110_F {
-    displayName = "Fortress Wall (Inner Corner, 110 deg)";
-    description = "Fortress Wall (Inner Corner, 110 deg) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-    price = 150;
-    stock = 100;
-    code = "if (player == (_this select 0)) then {[container_2,'Land_Fortress_01_innerCorner_110_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside; it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-};
-
-class Land_Fortress_01_outterCorner_50_F {
-    displayName = "Fortress Wall (Outer Corner, 50 deg)";
-    description = "Fortress Wall (Outer Corner, 50 deg) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-    price = 150;
-    stock = 100;
-    code = "if (player == (_this select 0)) then {[container_2,'Land_Fortress_01_outterCorner_50_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside; it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-};
-
-class Land_Fortress_01_outterCorner_80_F {
-    displayName = "Fortress Wall (Outer Corner, 80 deg)";
-    description = "Fortress Wall (Outer Corner, 80 deg) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-    price = 150;
-    stock = 100;
-    code = "if (player == (_this select 0)) then {[container_2,'Land_Fortress_01_outterCorner_80_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside; it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-};
-
-class Land_Fortress_01_outterCorner_90_F {
-    displayName = "Fortress Wall (Outer Corner, 90 deg)";
-    description = "Fortress Wall (Outer Corner, 90 deg) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-    price = 150;
-    stock = 100;
-    code = "if (player == (_this select 0)) then {[container_2,'Land_Fortress_01_outterCorner_90_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside; it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-};
-
-
-    class Land_Wall_Tin_4 {
-        displayName = "Tin Fence (v1)";
-        description = "Tin Fence (v1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Wall_Tin_4'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Wall_Tin_4_2 {
-        displayName = "Tin Fence (v2)";
-        description = "Tin Fence (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Wall_Tin_4_2'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Wall_Tin_Pole {
-        displayName = "Tin Fence (Pole)";
-        description = "Tin Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 25;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Wall_Tin_Pole'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Wired_Fence_4m_F {
-        displayName = "Wire Fence";
-        description = "Wire Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 30;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Wired_Fence_4m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Wired_Fence_8m_F {
-        displayName = "Wire Fence (Long)";
-        description = "Wire Fence (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 60;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Wired_Fence_8m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Stone_4m_F {
-        displayName = "Stone Wall";
-        description = "Stone Wall can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Stone_4m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Stone_8m_F {
-        displayName = "Stone Wall (Long)";
-        description = "Stone Wall (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 150;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Stone_8m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Stone_Gate_F {
-        displayName = "Stone Wall (Gate)";
-        description = "Stone Wall (Gate) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 200;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Stone_Gate_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Stone_pillar_F {
-        displayName = "Stone Wall (Pillar)";
-        description = "Stone Wall (Pillar) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 75;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Stone_pillar_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Slums01_8m {
-        displayName = "Slum Fence";
-        description = "Slum Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Slums01_8m'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Slums01_pole {
-        displayName = "Slum Fence (Pole)";
-        description = "Slum Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Slums01_pole'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Slums02_4m {
-        displayName = "Plank Fence (Long)";
-        description = "Plank Fence (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Slums02_4m'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Slums02_pole {
-        displayName = "Plank Fence (Pole)";
-        description = "Plank Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Slums02_pole'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_SportGround_fence_F {
-        displayName = "Sport Fence";
-        description = "Sport Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 75;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_SportGround_fence_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Wall_IndCnc_2deco_F {
+	    class Land_Wall_IndCnc_2deco_F {
         displayName = "Concrete Square Wall";
         description = "Concrete Square Wall can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
         price = 150;
@@ -634,102 +601,6 @@ class Land_Fortress_01_outterCorner_90_F {
         code = "if (player == (_this select 0)) then {[container_2,'Land_Wall_IndCnc_Pole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
 
-    class Land_New_WiredFence_5m_F {
-        displayName = "Barbed Wire Fence";
-        description = "Barbed Wire Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 75;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_New_WiredFence_5m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_New_WiredFence_10m_F {
-        displayName = "Barbed Wire Fence (Long)";
-        description = "Barbed Wire Fence (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_New_WiredFence_10m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_New_WiredFence_pole_F {
-        displayName = "Barbed Wire Fence (Pole)";
-        description = "Barbed Wire Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_New_WiredFence_pole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Pipe_fence_4m_F {
-        displayName = "Pipe Fence (Long)";
-        description = "Pipe Fence (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 75;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Pipe_fence_4m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_PipeWall_concretel_8m_F {
-        displayName = "Concrete Pipe Wall";
-        description = "Concrete Pipe Wall can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 200;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeWall_concretel_8m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Mil_WiredFence_F {
-        displayName = "Razor Fence";
-        description = "Razor Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Mil_WiredFence_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Mil_WiredFence_Gate_F {
-        displayName = "Razor Fence (Gate)";
-        description = "Razor Fence (Gate) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 150;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Mil_WiredFence_Gate_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_Crash_barrier_F {
-        displayName = "Safety Barrier";
-        description = "Safety Barrier can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_Crash_barrier_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_IndFnc_3_F {
-        displayName = "Industrial Fence";
-        description = "Industrial Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 75;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_IndFnc_3_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_IndFnc_9_F {
-        displayName = "Industrial Fence (Long)";
-        description = "Industrial Fence (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_IndFnc_9_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_IndFnc_Corner_F {
-        displayName = "Industrial Fence (Corner)";
-        description = "Industrial Fence (Corner) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 75;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_IndFnc_Corner_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_IndFnc_Pole_F {
-        displayName = "Industrial Fence (Pole)";
-        description = "Industrial Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_IndFnc_Pole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-	
 	class Land_BrickWall_01_l_5m_F {
         displayName = "Brick Wall (v1, 5m)";
         description = "Brick Wall (v1, 5m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
@@ -744,14 +615,6 @@ class Land_Fortress_01_outterCorner_90_F {
         price = 75;
         stock = 100;
         code = "if (player == (_this select 0)) then {[container_2,'Land_BrickWall_01_l_pole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_BrickWall_01_l_end_F {
-        displayName = "Brick Wall (v1, End)";
-        description = "Brick Wall (v1, End) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_BrickWall_01_l_end_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
 
     class Land_BrickWall_02_l_5m_F {
@@ -776,14 +639,6 @@ class Land_Fortress_01_outterCorner_90_F {
         price = 100;
         stock = 100;
         code = "if (player == (_this select 0)) then {[container_2,'Land_BrickWall_02_l_corner_v2_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_BrickWall_02_l_end_F {
-        displayName = "Brick Wall (v2, End)";
-        description = "Brick Wall (v2, End) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_BrickWall_02_l_end_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
 
     class Land_BrickWall_03_l_5m_v1_F {
@@ -866,183 +721,144 @@ class Land_Fortress_01_outterCorner_90_F {
         code = "if (player == (_this select 0)) then {[container_2,'Land_SilageWall_01_l_pole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
 
-    class Land_ConcreteWall_03_m_pole_F {
-        displayName = "Concrete Wall (v3, Pole)";
-        description = "Concrete Wall (v3, Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 75;
+
+
+    class Land_Mil_WallBig_4m_F {
+        displayName = "Military Base Wall";
+        description = "Military Base Wall can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 300;
         stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_ConcreteWall_03_m_pole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Mil_WallBig_4m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
 
-    class Land_ConcreteWall_03_m_2m_F {
-        displayName = "Concrete Wall (v3, 2m)";
-        description = "Concrete Wall (v3, 2m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+    class Land_Mil_WallBig_Corner_F {
+        displayName = "Military Base Wall (Corner)";
+        description = "Military Base Wall (Corner) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
         price = 100;
         stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_ConcreteWall_03_m_2m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Mil_WallBig_Corner_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
 
-    class Land_ConcreteWall_03_m_6m_F {
-        displayName = "Concrete Wall (v3, 6m)";
-        description = "Concrete Wall (v3, 6m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 150;
+    class Land_Mil_WallBig_Gate_F {
+        displayName = "Military Base Wall (Gate)";
+        description = "Military Base Wall (Gate) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 300;
         stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_ConcreteWall_03_m_6m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Mil_WallBig_Gate_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
 
-    class Land_CamoConcreteWall_01_l_4m_v1_F {
-        displayName = "Camo Concrete Wall (4m, v1)";
-        description = "Camo Concrete Wall (4m, v1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
+    class Land_CncWall1_F {
+        displayName = "Concrete Wall";
+        description = "Concrete Wall can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 500;
         stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_CamoConcreteWall_01_l_4m_v1_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        code = "if (player == (_this select 0)) then {[container_2,'Land_CncWall1_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
 
-    class Land_CamoConcreteWall_01_l_4m_v2_F {
-        displayName = "Camo Concrete Wall (4m, v2)";
-        description = "Camo Concrete Wall (4m, v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
+    class Land_CncWall4_F {
+        displayName = "Concrete Wall (Long)";
+        description = "Concrete Wall (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 1500;
         stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_CamoConcreteWall_01_l_4m_v2_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_CamoConcreteWall_01_l_end_v1_F {
-        displayName = "Camo Concrete Wall (End)";
-        description = "Camo Concrete Wall (End) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_CamoConcreteWall_01_l_end_v1_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_CamoConcreteWall_01_pole_v1_F {
-        displayName = "Camo Concrete Wall (Pole)";
-        description = "Camo Concrete Wall (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 75;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_CamoConcreteWall_01_pole_v1_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_GameProofFence_01_l_5m_F {
-        displayName = "Game Fence (5m)";
-        description = "Game Fence (5m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_GameProofFence_01_l_5m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_GameProofFence_01_l_gate_F {
-        displayName = "Game Fence (Gate)";
-        description = "Game Fence (Gate) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 150;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_GameProofFence_01_l_gate_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_GameProofFence_01_l_pole_F {
-        displayName = "Game Fence (Pole)";
-        description = "Game Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 75;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_GameProofFence_01_l_pole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_NetFence_03_m_3m_F {
-        displayName = "Industrial Fence";
-        description = "Industrial Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 75;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_NetFence_03_m_3m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_NetFence_03_m_9m_F {
-        displayName = "Industrial Fence (Long)";
-        description = "Industrial Fence (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_NetFence_03_m_9m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_NetFence_03_m_3m_corner_F {
-        displayName = "Industrial Fence (Corner)";
-        description = "Industrial Fence (Corner) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 75;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_NetFence_03_m_3m_corner_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_NetFence_03_m_pole_F {
-        displayName = "Industrial Fence (Pole)";
-        description = "Industrial Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_NetFence_03_m_pole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_PipeFence_03_m_gate_l_F {
-        displayName = "Pipe Fence (v3, Gate, Left)";
-        description = "Pipe Fence (v3, Gate, Left) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_03_m_gate_l_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_PipeFence_03_m_gate_r_F {
-        displayName = "Pipe Fence (v3, Gate, Right)";
-        description = "Pipe Fence (v3, Gate, Right) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_03_m_gate_r_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_PipeFence_04_m_gate_l_F {
-        displayName = "Pipe Fence (v4, Gate, Left)";
-        description = "Pipe Fence (v4, Gate, Left) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_04_m_gate_l_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_PipeFence_04_m_gate_r_F {
-        displayName = "Pipe Fence (v4, Gate, Right)";
-        description = "Pipe Fence (v4, Gate, Right) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_04_m_gate_r_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_PipeFence_05_m_gate_l_F {
-        displayName = "Pipe Fence (v5, Gate, Left)";
-        description = "Pipe Fence (v5, Gate, Left) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_05_m_gate_l_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_PipeFence_05_m_gate_r_F {
-        displayName = "Pipe Fence (v5, Gate, Right)";
-        description = "Pipe Fence (v5, Gate, Right) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_05_m_gate_r_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_PipeFence_06_m_gate_l_F {
-        displayName = "Pipe Fence (v6, Gate, Left)";
-        description = "Pipe Fence (v6, Gate, Left) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_06_m_gate_l_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-    };
-
-    class Land_PipeFence_06_m_gate_r_F {
-        displayName = "Pipe Fence (v6, Gate, Right)";
-        description = "Pipe Fence (v6, Gate, Right) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100;
-        stock = 100;
-        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_06_m_gate_r_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+        code = "if (player == (_this select 0)) then {[container_2,'Land_CncWall4_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
     };
 	
-	class Land_WallCity_01_8m_blue_F {
+	    class Land_PetroglyphWall_01_F {
+        displayName = "Petroglyph Wall 1";
+        description = "Petroglyph Wall 1 can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 200;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_PetroglyphWall_01_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_PetroglyphWall_02_F {
+        displayName = "Petroglyph Wall 2";
+        description = "Petroglyph Wall 2 can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 200;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_PetroglyphWall_02_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+	   class Land_BasaltWall_01_4m_F {
+        displayName = "Basalt Wall (4 m)";
+        description = "Basalt Wall (4 m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 200;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltWall_01_4m_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_BasaltWall_01_8m_F {
+        displayName = "Basalt Wall (8 m)";
+        description = "Basalt Wall (8 m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 300;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltWall_01_8m_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_BasaltWall_01_gate_F {
+        displayName = "Basalt Wall Gate";
+        description = "Basalt Wall Gate can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 150;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_BasaltWall_01_gate_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+	
+    class Land_Wall_Tin_4 {
+        displayName = "Tin Fence (v1)";
+        description = "Tin Fence (v1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 50;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Wall_Tin_4'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_Wall_Tin_4_2 {
+        displayName = "Tin Fence (v2)";
+        description = "Tin Fence (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 50;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Wall_Tin_4_2'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_Wall_Tin_Pole {
+        displayName = "Tin Fence (Pole)";
+        description = "Tin Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 25;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Wall_Tin_Pole'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_Stone_4m_F {
+        displayName = "Stone Wall";
+        description = "Stone Wall can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Stone_4m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_Stone_8m_F {
+        displayName = "Stone Wall (Long)";
+        description = "Stone Wall (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 150;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Stone_8m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_Stone_Gate_F {
+        displayName = "Stone Wall (Gate)";
+        description = "Stone Wall (Gate) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 200;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Stone_Gate_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_Stone_pillar_F {
+        displayName = "Stone Wall (Pillar)";
+        description = "Stone Wall (Pillar) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 75;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Stone_pillar_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+	
+		class Land_WallCity_01_8m_blue_F {
     displayName = "City Wall (Long, Blue)";
     description = "City Wall (Long, Blue) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
     price = 100;
@@ -1266,27 +1082,305 @@ class Land_WallCity_01_4m_plain_pink_F {
     code = "if (player == (_this select 0)) then {[container_2,'Land_WallCity_01_4m_plain_pink_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
 };
 
-class Land_WallCity_01_4m_plain_whiteblue_F {
-    displayName = "Wall (White & Blue)";
-    description = "Wall (White & Blue) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-    price = 100;
-    stock = 100;
-    code = "if (player == (_this select 0)) then {[container_2,'Land_WallCity_01_4m_plain_whiteblue_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+			class Land_WallCity_01_4m_plain_whiteblue_F {
+			displayName = "Wall (White & Blue)";
+			description = "Wall (White & Blue) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+			price = 100;
+			stock = 100;
+			code = "if (player == (_this select 0)) then {[container_2,'Land_WallCity_01_4m_plain_whiteblue_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+	};
+
+		class Land_WallCity_01_4m_plain_yellow_F {
+			displayName = "Wall (Yellow & White)";
+			description = "Wall (Yellow & White) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+			price = 100;
+			stock = 100;
+			code = "if (player == (_this select 0)) then {[container_2,'Land_WallCity_01_4m_plain_yellow_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+	};
 };
 
-class Land_WallCity_01_4m_plain_yellow_F {
-    displayName = "Wall (Yellow & White)";
-    description = "Wall (Yellow & White) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-    price = 100;
-    stock = 100;
-    code = "if (player == (_this select 0)) then {[container_2,'Land_WallCity_01_4m_plain_yellow_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-};
+		//category:
+		class fortifications_fences {
+    displayName = "Fortifications: Fences";
+    kindOf = "other";
+    tracking = 0;
+
+
+    class Land_Slums01_8m {
+        displayName = "Slum Fence";
+        description = "Slum Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 50;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Slums01_8m'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_Slums01_pole {
+        displayName = "Slum Fence (Pole)";
+        description = "Slum Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 50;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Slums01_pole'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+	    class Land_Wired_Fence_4m_F {
+        displayName = "Wire Fence";
+        description = "Wire Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 30;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Wired_Fence_4m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_Wired_Fence_8m_F {
+        displayName = "Wire Fence (Long)";
+        description = "Wire Fence (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 60;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Wired_Fence_8m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_Slums02_4m {
+        displayName = "Plank Fence (Long)";
+        description = "Plank Fence (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 50;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Slums02_4m'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_Slums02_pole {
+        displayName = "Plank Fence (Pole)";
+        description = "Plank Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 50;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Slums02_pole'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_SportGround_fence_F {
+        displayName = "Sport Fence";
+        description = "Sport Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 75;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_SportGround_fence_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+	
+
+    class Land_New_WiredFence_5m_F {
+        displayName = "Barbed Wire Fence";
+        description = "Barbed Wire Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 75;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_New_WiredFence_5m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_New_WiredFence_10m_F {
+        displayName = "Barbed Wire Fence (Long)";
+        description = "Barbed Wire Fence (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_New_WiredFence_10m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_New_WiredFence_pole_F {
+        displayName = "Barbed Wire Fence (Pole)";
+        description = "Barbed Wire Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 50;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_New_WiredFence_pole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_Pipe_fence_4m_F {
+        displayName = "Pipe Fence (Long)";
+        description = "Pipe Fence (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 75;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Pipe_fence_4m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_PipeWall_concretel_8m_F {
+        displayName = "Concrete Pipe Wall";
+        description = "Concrete Pipe Wall can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 200;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeWall_concretel_8m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_Mil_WiredFence_F {
+        displayName = "Razor Fence";
+        description = "Razor Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Mil_WiredFence_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_Mil_WiredFence_Gate_F {
+        displayName = "Razor Fence (Gate)";
+        description = "Razor Fence (Gate) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 150;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_Mil_WiredFence_Gate_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+
+
+    class Land_IndFnc_3_F {
+        displayName = "Industrial Fence";
+        description = "Industrial Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 75;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_IndFnc_3_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_IndFnc_9_F {
+        displayName = "Industrial Fence (Long)";
+        description = "Industrial Fence (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_IndFnc_9_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_IndFnc_Corner_F {
+        displayName = "Industrial Fence (Corner)";
+        description = "Industrial Fence (Corner) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 75;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_IndFnc_Corner_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_IndFnc_Pole_F {
+        displayName = "Industrial Fence (Pole)";
+        description = "Industrial Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 50;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_IndFnc_Pole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+	
+	
+
+    class Land_GameProofFence_01_l_5m_F {
+        displayName = "Game Fence (5m)";
+        description = "Game Fence (5m) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_GameProofFence_01_l_5m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_GameProofFence_01_l_gate_F {
+        displayName = "Game Fence (Gate)";
+        description = "Game Fence (Gate) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 150;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_GameProofFence_01_l_gate_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_GameProofFence_01_l_pole_F {
+        displayName = "Game Fence (Pole)";
+        description = "Game Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 75;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_GameProofFence_01_l_pole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_NetFence_03_m_3m_F {
+        displayName = "Industrial Fence";
+        description = "Industrial Fence can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 75;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_NetFence_03_m_3m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_NetFence_03_m_9m_F {
+        displayName = "Industrial Fence (Long)";
+        description = "Industrial Fence (Long) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_NetFence_03_m_9m_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_NetFence_03_m_3m_corner_F {
+        displayName = "Industrial Fence (Corner)";
+        description = "Industrial Fence (Corner) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 75;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_NetFence_03_m_3m_corner_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_NetFence_03_m_pole_F {
+        displayName = "Industrial Fence (Pole)";
+        description = "Industrial Fence (Pole) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 50;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_NetFence_03_m_pole_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_PipeFence_03_m_gate_l_F {
+        displayName = "Pipe Fence (v3, Gate, Left)";
+        description = "Pipe Fence (v3, Gate, Left) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_03_m_gate_l_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_PipeFence_03_m_gate_r_F {
+        displayName = "Pipe Fence (v3, Gate, Right)";
+        description = "Pipe Fence (v3, Gate, Right) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_03_m_gate_r_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_PipeFence_04_m_gate_l_F {
+        displayName = "Pipe Fence (v4, Gate, Left)";
+        description = "Pipe Fence (v4, Gate, Left) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_04_m_gate_l_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_PipeFence_04_m_gate_r_F {
+        displayName = "Pipe Fence (v4, Gate, Right)";
+        description = "Pipe Fence (v4, Gate, Right) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_04_m_gate_r_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_PipeFence_05_m_gate_l_F {
+        displayName = "Pipe Fence (v5, Gate, Left)";
+        description = "Pipe Fence (v5, Gate, Left) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_05_m_gate_l_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_PipeFence_05_m_gate_r_F {
+        displayName = "Pipe Fence (v5, Gate, Right)";
+        description = "Pipe Fence (v5, Gate, Right) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_05_m_gate_r_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_PipeFence_06_m_gate_l_F {
+        displayName = "Pipe Fence (v6, Gate, Left)";
+        description = "Pipe Fence (v6, Gate, Left) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_06_m_gate_l_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+
+    class Land_PipeFence_06_m_gate_r_F {
+        displayName = "Pipe Fence (v6, Gate, Right)";
+        description = "Pipe Fence (v6, Gate, Right) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
+        price = 100;
+        stock = 100;
+        code = "if (player == (_this select 0)) then {[container_2,'Land_PipeFence_06_m_gate_r_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+    };
+	
+
 	
 };
 
 		//category:
 		class fortifications_tents {
-    displayName = "Tents, Covers, and Camouflage";
+    displayName = "Fortifications: Tents, Covers, and Camouflage";
     kindOf = "other";
     tracking = 0;
 
@@ -1447,84 +1541,6 @@ class Land_WallCity_01_4m_plain_yellow_F {
         displayName = "Fortifications: Structures";
         kindOf = "other";
         tracking = 0;
-
-        // Bunkers
-        class Land_BagBunker_Small_F {
-            displayName = "Bunker (Small)";
-            description = "Bunker (Small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-            price = 500;
-            stock = 100;
-            code = "if (player == (_this select 0)) then {[container_2,'Land_BagBunker_Small_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-        };
-        class Land_BagBunker_Large_F {
-            displayName = "Bunker (Large)";
-            description = "Bunker (Large) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-            price = 1500;
-            stock = 200;
-            code = "if (player == (_this select 0)) then {[container_2,'Land_BagBunker_Large_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-        };
-        class Land_BagBunker_Tower_F {
-            displayName = "Bunker (Tower)";
-            description = "Bunker (Tower) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-            price = 2000;
-            stock = 200;
-            code = "if (player == (_this select 0)) then {[container_2,'Land_BagBunker_Tower_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-        };
-		
-		class Land_HBarrierTower_F {
-            displayName = "H-barrier Watchtower";
-            description = "H-barrier Watchtower can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-            price = 2000;
-            stock = 200;
-            code = "if (player == (_this select 0)) then {[container_2,'Land_HBarrierTower_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-        };
-
-        // Pillbox Bunkers
-        class Land_PillboxBunker_01_hex_F {
-            displayName = "Pillbox (Hexagonal)";
-            description = "Pillbox (Hexagonal) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-            price = 50000;
-            stock = 200;
-            code = "if (player == (_this select 0)) then {[container_2,'Land_PillboxBunker_01_hex_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-        };
-        class Land_PillboxBunker_01_rectangle_F {
-            displayName = "Pillbox (Rectangular)";
-            description = "Pillbox (Rectangular) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-            price = 50000;
-            stock = 200;
-            code = "if (player == (_this select 0)) then {[container_2,'Land_PillboxBunker_01_rectangle_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-        };
-        class Land_PillboxBunker_01_big_F {
-            displayName = "Pillbox (Big)";
-            description = "Pillbox (Big) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-            price = 100000;
-            stock = 200;
-            code = "if (player == (_this select 0)) then {[container_2,'Land_PillboxBunker_01_big_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-        };
-
-        // Watchtowers/Guard Towers
-		class Land_DeerStand_01_F {
-                displayName = "Deer Stand (v1)";
-                description = "Deer Stand (v1) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 2000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Land_DeerStand_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			
-		class Land_DeerStand_02_F {
-                displayName = "Deer Stand (v2)";
-                description = "Deer Stand (v2) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 3000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Land_DeerStand_02_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			class Land_GuardTower_02_F {
-                displayName = "Guard Tower (small)";
-                description = "The guard tower (small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Land_GuardTower_02_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-            };
 			
 			
 
@@ -1677,13 +1693,7 @@ class Land_Medevac_HQ_V1_F {
     code = "if (player == (_this select 0)) then {[container_2,'Land_i_Barracks_V1_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside; it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
 };
 
-class Land_Castle_01_tower_F {
-    displayName = "Castle Tower";
-    description = "Castle Tower can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-    price = 50000;
-    stock = 100;
-    code = "if (player == (_this select 0)) then {[container_2,'Land_Castle_01_tower_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside; it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-};
+
 
     };
 
@@ -1692,6 +1702,14 @@ class Land_Castle_01_tower_F {
     displayName = "Fortifications: Airport and Hangar Items";
     kindOf = "other";
     tracking = 0;
+	
+	class Windsock_01_F {
+                displayName = "Windsock";
+                description = "Windsock can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+                price = 50;
+                stock = 200;
+				code = "if (player == (_this select 0)) then {[container_2,'Windsock_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+            };
 
     // Hangars
     class Land_Hangar_F {
@@ -1746,6 +1764,7 @@ class Land_Castle_01_tower_F {
     description = "The portable helipad light can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
     price = 50;
     stock = 200;
+	picture = "pictures\arma3mercenaries_v1.paa";  //this is a placeholder picture for bugged items
     code = "if (player == (_this select 0)) then {[container_2,'Land_PortableHelipadLight_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
 };
 
@@ -1754,6 +1773,7 @@ class PortableHelipadLight_01_blue_F {
     description = "The portable helipad light (blue) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
     price = 50;
     stock = 200;
+	picture = "pictures\arma3mercenaries_v1.paa";  //this is a placeholder picture for bugged items
     code = "if (player == (_this select 0)) then {[container_2,'PortableHelipadLight_01_blue_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
 };
 
@@ -1762,6 +1782,7 @@ class PortableHelipadLight_01_red_F {
     description = "The portable helipad light (red) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
     price = 50;
     stock = 200;
+	picture = "pictures\arma3mercenaries_v1.paa";  //this is a placeholder picture for bugged items
     code = "if (player == (_this select 0)) then {[container_2,'PortableHelipadLight_01_red_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
 };
 
@@ -1770,6 +1791,7 @@ class PortableHelipadLight_01_white_F {
     description = "The portable helipad light (white) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
     price = 50;
     stock = 200;
+	picture = "pictures\arma3mercenaries_v1.paa";  //this is a placeholder picture for bugged items
     code = "if (player == (_this select 0)) then {[container_2,'PortableHelipadLight_01_white_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
 };
 
@@ -1778,6 +1800,7 @@ class PortableHelipadLight_01_green_F {
     description = "The portable helipad light (green) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
     price = 50;
     stock = 200;
+	picture = "pictures\arma3mercenaries_v1.paa";  //this is a placeholder picture for bugged items
     code = "if (player == (_this select 0)) then {[container_2,'PortableHelipadLight_01_green_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
 };
 
@@ -1786,6 +1809,7 @@ class PortableHelipadLight_01_yellow_F {
     description = "The portable helipad light (yellow) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
     price = 50;
     stock = 200;
+	picture = "pictures\arma3mercenaries_v1.paa";  //this is a placeholder picture for bugged items
     code = "if (player == (_this select 0)) then {[container_2,'PortableHelipadLight_01_yellow_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
 };
 
@@ -1793,14 +1817,14 @@ class PortableHelipadLight_01_yellow_F {
     class Land_TTowerBig_1_F {
         displayName = "Transmitter Tower";
         description = "The transmitter tower can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50000;
+        price = 100000;
         stock = 200;
         code = "if (player == (_this select 0)) then {[container_2,'Land_TTowerBig_1_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction.';";
     };
     class Land_TTowerBig_2_F {
         displayName = "Transmitter Tower (Tall)";
         description = "The transmitter tower (tall) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50000;
+        price = 100000;
         stock = 200;
         code = "if (player == (_this select 0)) then {[container_2,'Land_TTowerBig_2_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction.';";
     };
@@ -1826,22 +1850,21 @@ class PortableHelipadLight_01_yellow_F {
     class Land_Radar_F {
         displayName = "Radar";
         description = "Radar can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 100000;
+        price = 500000;
         stock = 200;
         code = "if (player == (_this select 0)) then {[container_2,'Land_Radar_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction.';";
     };
     class Land_Radar_Small_F {
         displayName = "Radar (Small)";
         description = "Radar (Small) can be built with the ACE Self Interaction Menu > Equipment > Fortifications.";
-        price = 50000;
+        price = 100000;
         stock = 200;
         code = "if (player == (_this select 0)) then {[container_2,'Land_Radar_Small_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction.';";
     };
 };
 
-
-		class Dfortifications {
-            displayName = "Lights, Ladders, Other";
+		class fortifications_lights {
+            displayName = "Fortifications: Lights, Ladders, and Other";
             kindOf = "other";
 			tracking = 0;
 			
@@ -1892,6 +1915,7 @@ class PortableHelipadLight_01_yellow_F {
                 description = "The tent lamp can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
                 price = 20;
                 stock = 200;
+				picture = "pictures\arma3mercenaries_v1.paa";  //this is a placeholder picture for bugged items
 				code = "if (player == (_this select 0)) then {[container_2,'Land_TentLamp_01_suspended_red_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
             };	
 			class Land_Camping_Light_F {
@@ -1931,11 +1955,11 @@ class PortableHelipadLight_01_yellow_F {
 			};
 			
 			class Land_PortableLight_02_single_yellow_F {
-    displayName = "Rugged Portable Lamp (Single, Yellow)";
-    description = "The rugged portable lamp (single, yellow) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-    price = 75;
-    stock = 100;
-    code = "if (player == (_this select 0)) then {[container_2,'Land_PortableLight_02_single_yellow_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+				displayName = "Rugged Portable Lamp (Single, Yellow)";
+				description = "The rugged portable lamp (single, yellow) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+				price = 75;
+				stock = 100;
+				code = "if (player == (_this select 0)) then {[container_2,'Land_PortableLight_02_single_yellow_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
 };
 
 class Land_PortableLight_02_single_black_F {
@@ -2048,23 +2072,22 @@ class Land_PortableLight_02_single_folded_sand_F {
     price = 75;
     stock = 100;
     code = "if (player == (_this select 0)) then {[container_2,'Land_PortableLight_02_single_folded_sand_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-};
+	};
+
+};			
 			
-			class Windsock_01_F {
-                displayName = "Windsock";
-                description = "Windsock can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Windsock_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-            };
+		class fortifications_flags {
+            displayName = "Fortifications: Flags";
+            kindOf = "other";
+			tracking = 0;
 			
-class Flag_US_F {
-    displayName = "Flag (USA)";
-    description = "Flag (USA) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-    price = 50;
-    stock = 100;
-    code = "if (player == (_this select 0)) then {[container_2,'Flag_US_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-};
+			class Flag_US_F {
+				displayName = "Flag (USA)";
+				description = "Flag (USA) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
+				price = 50;
+				stock = 100;
+				code = "if (player == (_this select 0)) then {[container_2,'Flag_US_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
+			};
 
 class Flag_POWMIA_F {
     displayName = "Flag (POW/MIA)";
@@ -2258,72 +2281,11 @@ class Flag_BI_F {
     code = "if (player == (_this select 0)) then {[container_2,'Flag_BI_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
 };
 			
-			class Land_Monument_02_F {
-                displayName = "War Monument";
-                description = "War Monument can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 1000;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Land_Monument_02_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-            };
 			
-			class Land_Tombstone_17_F {
-                displayName = "Tombstone (wooden, v6)";
-                description = "Tombstone (wooden, v6) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 500;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Land_Tombstone_17_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			
-			class Land_Grave_obelisk_F {
-                displayName = "Grave (Obelisk)";
-                description = "Grave (Obelisk) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 500;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Land_Grave_obelisk_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			
-			class Land_SignM_WarningMilitaryArea_english_F {
-                displayName = "Sign (Military Area, English)";
-                description = "Sign (Military Area, English) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Land_SignM_WarningMilitaryArea_english_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			
-			class Land_SignM_WarningMilitaryVehicles_english_F {
-                displayName = "Sign (Military Vehicles, English)";
-                description = "Sign (Military Vehicles, English) can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 30;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Land_SignM_WarningMilitaryVehicles_english_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			
-			class Land_Target_Oval_F {
-                displayName = "Target-Oval (Ground)";
-                description = "The target can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Land_Target_Oval_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			
-			class Land_Target_Dueling_01_F {
-                displayName = "Dueling Target (Ground)";
-                description = "The target can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Land_Target_Dueling_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-            };
-			
-			class Target_PopUp3_Moving_90deg_Acc2_F {
-                displayName = "Moving Target 3 (Front Accuracy)";
-                description = "The target can be deployed with the ACE Self Interaction Menu > Equipment > Fortifications.";
-                price = 50;
-                stock = 200;
-				code = "if (player == (_this select 0)) then {[container_2,'Target_PopUp3_Moving_90deg_Acc2_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-            };	
-        };
-	    class Cfortifications {
-            displayName = "Cargo and Logistical Supplies";
+};
+
+	    class fortifications_logiSupplies {
+            displayName = "Logistics: Logistical Supplies";
             kindOf = "other";
 			tracking = 0;
 			
@@ -2704,15 +2666,6 @@ class Land_PlasticCase_01_small_idap_F {
     code = "if (player == (_this select 0)) then {[container_2,'Land_PlasticCase_01_small_idap_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
 };
 
-class Land_Orange_01_F {
-    displayName = "Orange";
-    description = "A fresh orange, perfect for a snack.";
-    price = 5;
-    stock = 500;
-    code = "if (player == (_this select 0)) then {[container_2,'Land_Orange_01_F'] call grad_fortifications_fnc_addFort}; systemChat 'Your purchase is in the traders fortifications cargo.'; hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
-};
-
-
 class Land_PortableCabinet_01_bookcase_olive_F {
     displayName = "Rugged Portable Cabinet (Olive, Books)";
     description = "Rugged Portable Cabinet (Olive, Books) can be used for storage.";
@@ -2832,8 +2785,9 @@ class Land_PortableCabinet_01_medical_F {
 				code = "if (player == (_this select 0)) then {[container_2,'Land_Pod_Heli_Transport_04_bench_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
             };
 	};
-		class Lfortifications {
-            displayName = "Supply Crates";
+	
+		class fortifications_supplyCrates {
+            displayName = "Logistics: Fortifications: Supply Crates";
             kindOf = "other";
 			tracking = 0;
 			
@@ -2979,8 +2933,9 @@ class Land_PortableCabinet_01_medical_F {
 				code = "if (player == (_this select 0)) then {[container_2,'Land_Pod_Heli_Transport_04_box_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
             };
 	};
-	    class Sweapons {
-            displayName = "Crew Served Weapons and Unmanned Weapon Systems";
+	
+	    class fortifications_CSWs {
+            displayName = "Logistics: Crew Served Weapons and Unmanned Weapon Systems";
             kindOf = "other";
 			tracking = 0;
 
@@ -3111,8 +3066,9 @@ class Land_PortableCabinet_01_medical_F {
 				code = "if (isServer) then {createVehicleCrew (_this select 2);(group this) setVariable ['Vcm_Disable',true]};if (player == (_this select 0)) then {[container_2,'B_Ship_MRLS_01_F'] call grad_fortifications_fnc_addFort};systemChat 'Your purchase is in the traders fortifications cargo.';hint 'The traders fortifications cargo is located outside, it is the military-green Huron cargo container. Use ACE interaction > Fortifications.';";
             };
         };	
-		class Mammo {
-            displayName = "Crew Served Weapon Ammunition";
+		
+		class fortifications_CSWAmmo {
+            displayName = "Logistics: Crew Served Weapon Ammunition";
             kindOf = "Items";
 			tracking = 0;
 
@@ -3186,3 +3142,4 @@ class Land_PortableCabinet_01_medical_F {
             };
         };
 };
+

@@ -1,0 +1,76 @@
+# Trader Shop Update Summary
+
+## Overview
+The goal was to update the Trader Shop scripts to ensure seamless integration with the Grad Money system and ACE interaction, similar to previous updates done for other shops. The focus was on replacing outdated money-handling functions with those from Grad Money, adjusting parameters for ACE compatibility, and preserving the functionality of all UI elements.
+
+## Files Updated
+
+### 1. `fn_gearItem.sqf`
+- **Changes**:
+  - Integrated the Grad Money system by replacing the original HG cash handling functions with those from Grad Money.
+  - Adjusted the logic for item transactions to reflect the correct amount of Grad Money when items are bought or sold.
+- **Purpose**:
+  - Ensured that item transactions within the trader shop correctly reflect the player's Grad Money balance.
+
+### 2. `fn_refreshTrader.sqf`
+- **Changes**:
+  - Updated the trader shop's inventory and interface to work with the Grad Money system.
+  - Adjusted parameters for ACE compatibility, ensuring the shop loads correctly through ACE interactions.
+- **Purpose**:
+  - Ensured that the trader shop refreshes and displays items correctly based on the player's inventory and the Grad Money balance.
+
+### 3. `fn_traderBtns.sqf`
+- **Changes**:
+  - Integrated the Grad Money system for handling transactions.
+  - Adjusted button functionality to ensure proper interaction when using ACE or regular UI elements.
+- **Purpose**:
+  - Ensured that all button actions, such as buying or selling items, interact correctly with the Grad Money system.
+
+### 4. `fn_traderTreeChanged.sqf`
+- **Changes**:
+  - Updated the script to correctly handle the selection of items within the shop, ensuring the UI elements display item details and prices.
+  - Integrated Grad Money formatting for consistency in displaying item prices.
+- **Purpose**:
+  - Ensured that when an item is selected, the relevant information, including cost and description, is displayed correctly to the player.
+
+### 5. `fn_dialogOnLoadTrader.sqf`
+- **Changes**:
+  - Adjusted the parameters to ensure compatibility with ACE Interaction.
+  - Updated the logic to populate the trader shop list and maintain functionality with the Grad Money system.
+- **Purpose**:
+  - Allowed the trader shop to be accessed and displayed correctly when triggered via the ACE Interaction menu.
+
+### 6. `fn_dialogOnUnloadTrader.sqf`
+- **Changes**:
+  - Ensured that all relevant data is properly saved or discarded when the trader shop is closed.
+  - Integrated compatibility with ACE Interaction, ensuring smooth transitions.
+- **Purpose**:
+  - Maintained data integrity when the trader shop is closed, preventing potential issues with unsaved changes.
+
+### 7. `HG_TradersCfg.h`
+- **Changes**:
+  - Defined the available traders and their inventory, setting up items with their respective prices.
+  - Updated to ensure compatibility with Grad Money and ACE.
+- **Purpose**:
+  - Configured the trader shop's inventory to reflect the correct items and prices, making sure they are compatible with the new systems.
+
+### 8. `HG_Trader.h`
+- **Changes**:
+  - Updated the UI definitions and controls to work seamlessly with the Grad Money system and ACE Interaction.
+  - Adjusted the layout to ensure all elements display correctly when accessed through ACE.
+- **Purpose**:
+  - Maintained the visual integrity of the trader shop UI, ensuring it is fully functional and visually consistent.
+
+## Critical Steps
+
+### 1. Grad Money Integration
+Across all relevant scripts, we replaced the original HG money-handling functions with Grad Money functions. This ensured consistency in how funds are checked, displayed, and deducted.
+
+### 2. ACE Interaction Setup
+The parameters and scripts were adjusted to ensure that the trader shop could be accessed and interacted with through the ACE menu. This involved aligning the functions and parameters to work seamlessly within the ACE framework.
+
+### 3. UI and Inventory Adjustments
+We ensured that all UI elements, including buttons and lists, were correctly updated to reflect the new money-handling system and display the correct information to players.
+
+## Summary
+The Trader Shop was successfully updated to integrate the Grad Money system and ensure compatibility with ACE Interaction. All functions, from item selection to transactions, now correctly interact with the player's Grad Money balance, and the shop can be accessed smoothly through both traditional UI elements and ACE Interaction.

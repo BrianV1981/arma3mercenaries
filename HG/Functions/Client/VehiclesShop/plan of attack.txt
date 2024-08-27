@@ -1,0 +1,24 @@
+Summary of the Process:
+Integration of Grad Money:
+
+The scripts must be updated to use Grad Money functions for checking and deducting funds. This will ensure consistency and compatibility across all transactions in the vehicle shop. Specifically, functions like grad_moneymenu_fnc_getFunds should replace any existing HG money functions for checking balances. Similarly, grad_moneymenu_fnc_addFunds will handle the deduction of funds after a purchase.
+ACE Interaction Setup:
+
+The interaction menu needs to be correctly set up to trigger the vehicle shop's functionality. This involves creating actions in ACE that correctly call the vehicle shop's load and unload functions, ensuring that the interface and item list are populated as expected.
+Critical to this is ensuring that parameters passed to the ACE actions are correctly formatted and aligned with the vehicle shop's expected inputs.
+Critical Final Step - Parameter Adjustment:
+
+Similar to the item shop, the critical step is adjusting the parameters, particularly in the fn_dialogOnLoadVehicles.sqf, to ensure they align correctly with the ACE Interaction system. Properly handling these parameters will allow the vehicle list to populate correctly when accessed through the ACE interaction menu.
+Game Plan for Updating the Vehicle Shop:
+Update Money Functions:
+
+In the scripts responsible for purchases (fn_buyVehicle.sqf, fn_buyToGarage.sqf), replace any existing HG money-related functions with their Grad Money equivalents. Ensure that before any transaction is completed, the player’s funds are checked using grad_moneymenu_fnc_getFunds, and after the transaction, funds are deducted using grad_moneymenu_fnc_addFunds.
+Ensure Compatibility Across UI Scripts:
+
+Ensure that UI scripts such as fn_dialogOnLoadVehicles.sqf and fn_vehicleSelectionChanged.sqf are updated to handle the correct parameters and integrate smoothly with Grad Money.
+Correctly Set Up ACE Interactions:
+
+Create or update the ACE interaction code to ensure it correctly triggers the vehicle shop interface. Double-check that the actions created in the ACE menu pass the right parameters, particularly when calling the fn_dialogOnLoadVehicles.sqf.
+Testing and Debugging:
+
+After making these changes, thoroughly test the integration to ensure that the ACE interaction menu triggers the vehicle shop correctly, that the vehicle list populates as expected, and that all purchases are correctly handled through the Grad Money system.

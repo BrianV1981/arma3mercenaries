@@ -1,0 +1,40 @@
+/*
+# Interrogation System Overview
+
+## Files Overview
+
+### 1. arma3mercenaries_interrogate_xxx_on_xxx.sqf
+**Purpose:**  
+This group of scripts allows players to "interrogate" AI units within a 30-meter radius. The script checks for the nearest player to the object with the addAction and tags them with a temporary variable. The units (the typoe depends on the script) within the radius are then assigned a unique variable and are subjected to a random health bleed ranging between 1% and 10% damage. This bleed occurs at intervals between 10 and 30 seconds until the civilian dies, after which the player receives a random financial reward between 10,000 and 50,000 credits.
+
+**Key Features:**
+- **Dynamic Messages:** Players receive dynamic feedback messages using war-like phrases and values.
+- **Health Bleed:** Civilians take random damage over time, leading to their death if not interrupted.
+- **Reward System:** Players earn a random amount of credits after successfully completing an interrogation.
+- **Sound Integration:** A 3D sound will be played (from an ingame object with a variable 'interrogation_house_1' every time an interogation is complete.
+
+### 2. arma3mercenaries_interrogationSounds.hpp
+**Purpose:**  
+This file defines the sounds that will be used during the interrogation process. It includes three sound definitions (`interrogation_sound_1`, `interrogation_sound_2`, and `interrogation_sound_3`) that are played at random during the interrogation.
+
+### 3. interrogation_sound_1.ogg, interrogation_sound_2.ogg, interrogation_sound_3.ogg
+**Purpose:**  
+These are the sound files used during the interrogation process. They are referenced in the `arma3mercenaries_interrogationSounds.hpp` file and played randomly during the interrogation.
+
+### 4. description.ext
+**Purpose:**  
+This file needs to be updated to include the `CfgSounds` class, where the interrogation sounds are defined. This ensures that the sounds can be played in-game during the interrogation process.
+
+## In-Game Features
+- **Interrogation Mechanic:** Allows players to interrogate civilians, causing them to bleed out over time, with dynamic messaging and sound effects enhancing the experience.
+- **Rewards System:** Provides financial rewards to players for successful interrogations.
+- **Sound Effects:** Enhances immersion by playing random interrogation sounds during the process.
+
+## Installation Instructions
+1. Place the script files in the `arma3mercenaries/interrogations` folder.
+2. Add the sound files (`interrogation_sound_1.ogg`, `interrogation_sound_2.ogg`, `interrogation_sound_3.ogg`) to the `arma3mercenaries/interrogations/sounds` folder.
+3. Update the `description.ext` file to include the `CfgSounds` definitions from the `arma3mercenaries_interrogationSounds.hpp` file.
+4. Assign the `addAction` to an object in-game to start the interrogation process:
+   - Example: `this addAction ["Interrogate Civilians", "arma3mercenaries/interrogations/arma3mercenaries_interrogate_bluforIndep_on_civilians.sqf"];`
+5. Optionally, name an in-game object (e.g., a cargo house) `interrogation_house_1` to have the 3D interrogation sounds emit from that object.
+*/

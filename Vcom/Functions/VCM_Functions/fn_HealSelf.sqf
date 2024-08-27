@@ -16,8 +16,7 @@ private _CanHeal = false;
 
 if (alive _this && {"FirstAidKit" in (items _this)}) then 
 {
-	_this setdamage 0;
-	_this action ["HealSoldierSelf", _this];	
+	_this action ["HealSoldierSelf", _this];
 	_CanHeal = true;
 	if VCM_DEBUG then {systemChat format ["%1 healing self", _this]};
 };

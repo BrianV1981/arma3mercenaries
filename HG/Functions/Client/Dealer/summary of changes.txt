@@ -1,0 +1,47 @@
+### Dealer Shop Update Summary
+
+#### Overview
+The objective was to update the dealer shop scripts to integrate the Grad Money system, ensuring compatibility with the ACE Interaction menu, and streamline the dealer shop functionalities. Each script was reviewed and adjusted to remove outdated logic, enhance compatibility, and ensure seamless interaction with Grad Money.
+
+#### Files Updated
+
+1. **`fn_dealerSell.sqf`**
+   - **Changes**: 
+     - Integrated Grad Money system by replacing HG Money functions with Grad Money equivalents.
+     - Updated logic to handle vehicle selling with the correct balance adjustments and notifications.
+   - **Purpose**: 
+     - To ensure that when a vehicle is sold, the player’s Grad Money balance is updated correctly, and the transaction is communicated effectively through hints or notifications.
+
+2. **`fn_dialogOnLoadDealer.sqf`**
+   - **Changes**: 
+     - Adjusted parameters for ACE compatibility, removing unnecessary arguments to align with the new setup.
+     - Updated the shop loading process to correctly populate the dealer’s inventory.
+   - **Purpose**: 
+     - To ensure the dealer shop loads correctly when accessed via ACE Interaction, displaying the available vehicles and their respective prices.
+
+3. **`fn_refreshDealer.sqf`**
+   - **Changes**: 
+     - Simplified the refresh logic, ensuring it updates the dealer inventory based on current game state and Grad Money integration.
+   - **Purpose**: 
+     - To allow players to refresh the dealer inventory, ensuring the displayed vehicles and prices are accurate and up to date.
+
+4. **`fn_dealerListChanged.sqf`**
+   - **Changes**: 
+     - Updated the list change handler to correctly interact with the Grad Money system, ensuring selected items display accurate prices.
+   - **Purpose**: 
+     - To ensure that when a player selects a vehicle from the dealer list, the correct information is displayed, including the updated price using Grad Money.
+
+5. **`HG_DealersCfg.h`**
+   - **Changes**: 
+     - Updated the dealer configuration to align with the Grad Money system and ensure correct interaction with the dealer scripts.
+   - **Purpose**: 
+     - To define the vehicles that dealers are interested in buying, including their prices, ensuring consistency with the updated system.
+
+6. **`HG_Dealer.h`**
+   - **Changes**: 
+     - Adjusted UI elements to ensure correct functionality with the updated scripts.
+   - **Purpose**: 
+     - To ensure that the dealer interface is correctly displayed, allowing for seamless interaction with the dealer shop, including selling vehicles and updating prices.
+
+#### Summary
+The dealer shop has been fully integrated with the Grad Money system, ensuring that all financial transactions are handled correctly. The scripts were adjusted for compatibility with ACE Interaction, ensuring players can access and interact with the dealer shop seamlessly. The UI was updated to reflect these changes, maintaining a smooth and consistent user experience.

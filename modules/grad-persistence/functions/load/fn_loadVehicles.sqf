@@ -65,8 +65,12 @@ private _vehiclesData = [_vehiclesTag] call FUNC(getSaveData);
         [_thisVehicle,_turretMagazines] call FUNC(loadTurretMagazines);
         [_thisVehicle,_hitPointDamage] call FUNC(loadVehicleHits);
         [_thisVehicle,_inventory] call FUNC(loadVehicleInventory);
-
+		
+		//set vehicle ownerwith HG_Owner
         _thisVehicle setVariable ["HG_Owner", _HG_Owner, true];
+		
+		//added HG vehicle lock
+		[_thisVehicle, 2] call HG_fnc_lock;
 
         private _vars = [_thisVehicleHash,"vars"] call CBA_fnc_hashGet;
         [_vars,_thisVehicle] call FUNC(loadObjectVars);

@@ -1,0 +1,157 @@
+this addAction ["Capture Objective Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskCaptureObjective.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["CAS Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskCAS.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Civilian Assault Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskCivAssault.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["CSAR Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskCSAR.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["DCA Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskDCA.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Destroy Building Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskDestroyBuilding.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Destroy Infantry Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskDestroyInfantry.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Destroy Vehicles Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskDestroyVehicles.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Insurgency Destroy Assets Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskInsurgencyDestroyAssets.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Assassination Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskAssassination.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Insurgency Patrol Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskInsurgencyPatrol.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Military Assault Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskMilAssault.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Military Defense Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskMilDefence.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["OCA Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskOCA.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Rescue Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskRescue.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Sabotage Building Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskSabotageBuilding.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["SEAD Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskSEAD.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Transport Insertion Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskTransportInsertion.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Wiretap Task", {
+    [] execVM "arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskWiretap.sqf";
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+
+
+////////////////////////////
+
+this addAction ["Capture Objective Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskCaptureObjective.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["CAS Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskCAS.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Civilian Assault Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskCivAssault.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["CSAR Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskCSAR.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["DCA Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskDCA.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Destroy Building Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskDestroyBuilding.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Destroy Infantry Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskDestroyInfantry.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Destroy Vehicles Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskDestroyVehicles.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Insurgency Destroy Assets Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskInsurgencyDestroyAssets.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Assassination Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskAssassination.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Insurgency Patrol Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskInsurgencyPatrol.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Military Assault Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskMilAssault.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Military Defense Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskMilDefence.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["OCA Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskOCA.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Rescue Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskRescue.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Sabotage Building Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskSabotageBuilding.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["SEAD Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskSEAD.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Transport Insertion Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskTransportInsertion.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+this addAction ["Wiretap Task", {
+    ["arma3mercenaries\ALiVE\tasks_2\arma3mercenaries_fnc_taskWiretap.sqf"] remoteExec ["execVM", 2];
+}, nil, 6, false, true, "", "(_this distance _target) < 5"];
+
+

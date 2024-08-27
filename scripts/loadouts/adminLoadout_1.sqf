@@ -9,7 +9,7 @@ removeGoggles player;
 
 player addWeapon "arifle_MXC_Black_F";
 player addPrimaryWeaponItem "acc_flashlight";
-player addPrimaryWeaponItem "optic_Holosight_blk_F";
+player addPrimaryWeaponItem "optic_AMS_snd";
 player addPrimaryWeaponItem "30Rnd_65x39_caseless_black_mag";
 player addWeapon "hgun_P07_khk_F";
 player addHandgunItem "16Rnd_9x21_Mag";
@@ -26,7 +26,8 @@ player addItemToUniform "ACE_CableTie";
 player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACE_key_master";
 player addItemToUniform "FirstAidKit";
-player addItemToUniform "30Rnd_65x39_caseless_black_mag";
+player addItemToUniform "ALiVE_Tablet";
+
 
 for "_i" from 1 to 7 do {player addItemToVest "30Rnd_65x39_caseless_black_mag";};
 for "_i" from 1 to 2 do {player addItemToVest "16Rnd_9x21_Mag";};
@@ -38,7 +39,6 @@ player addItemToVest "SmokeShellGreen";
 player addItemToBackpack "ACE_EntrenchingTool";
 player addItemToBackpack "ACE_Canteen";
 player addItemToBackpack "ACE_Humanitarian_Ration";
-player addItemToBackpack "ALiVE_Tablet";
 
 
 player addHeadgear "H_HelmetB";
