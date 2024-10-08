@@ -2787,7 +2787,7 @@ class Land_PortableCabinet_01_medical_F {
 	};
 	
 		class fortifications_supplyCrates {
-            displayName = "Logistics: Fortifications: Supply Crates";
+            displayName = "Logistics: Supply Crates";
             kindOf = "other";
 			tracking = 0;
 			

@@ -1,4 +1,3 @@
-
 /*
 
 
@@ -46,6 +45,7 @@ The objective is to create a persistent system for saving and loading AI units l
    - **Logic**:
      - The script retrieves saved groups and units based on their saved data.
      - Each unit is reassigned its `arma3mercenaries_aiUnit`, `arma3mercenaries_groupID`, and loadout, ensuring they are placed back into their correct group with their original inventory.
+	- Each unit is reassigned the `ALiVE_disableDynamicSimulation` and `Vcm_Disable` variables, disableing them from VCOM and ALiVE
    - **Purpose**: Ensures that when the mission is reloaded, all units and groups are restored to their original state, maintaining consistency across sessions, including their equipment.
 
 ### Rationale Behind the Logic
@@ -208,6 +208,8 @@ private _groupsData = [_groupsTag] call grad_persistence_fnc_getSaveData;
             private _groupID = [_thisUnitHash,"arma3mercenaries_groupID"] call CBA_fnc_hashGet;
             _thisUnit setVariable ["arma3mercenaries_aiUnit", _aiUnitID, true];
             _thisUnit setVariable ["arma3mercenaries_groupID", _groupID, true];
+			_thisUnit setVariable ["ALiVE_disableDynamicSimulation", true, true];    
+            _thisUnit setVariable ["Vcm_Disable", true, true];   
 
             // Apply the saved loadout to the unit
             private _loadout = [_thisUnitHash, "inventory"] call CBA_fnc_hashGet;

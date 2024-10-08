@@ -5,7 +5,7 @@
 		class Vitems {
             kindOf = "Items";
             displayName = "Vehicle Keys";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 
 			class ACE_key_master {
@@ -18,7 +18,7 @@
         class Rvehicles {
             kindOf = "Vehicles";
             displayName = "Automobiles and Recreational Vehicles";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class gm_xx_civ_bicycle_01 {
@@ -144,7 +144,7 @@
 		class Svehicles {
             kindOf = "Vehicles";
             displayName = "Support Vehicles";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class I_C_Van_01_transport_F {
@@ -513,7 +513,7 @@
 		class Cvehicles {
             kindOf = "Vehicles";
             displayName = "Combat Vehicles";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class gm_ge_army_iltis_mg3  {
@@ -667,7 +667,7 @@
         class LAvehicles {
             kindOf = "Vehicles";
             displayName = "Light Armored Vehicles";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class gm_dk_army_m113a1dk_apc {
@@ -958,7 +958,7 @@
         class HAvehicles {
             kindOf = "Vehicles";
             displayName = "Heavy Armored Vehicles";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class gm_dk_army_Leopard1a3  {
@@ -1175,7 +1175,7 @@
         class AAvehicles {
             kindOf = "Vehicles";
             displayName = "Artillery Vehicles";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class I_Truck_02_MRL_F {
@@ -1217,7 +1217,7 @@
         class Avehicles {
             kindOf = "Vehicles";
             displayName = "Fixed-Wing and VTOL Aircraft";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class gm_gc_airforce_l410t {
@@ -1341,7 +1341,7 @@
         class Hvehicles {
             kindOf = "Vehicles";
             displayName = "Rotary-Wing Aircraft";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class I_C_Heli_Light_01_civil_F {
@@ -1616,7 +1616,7 @@
 		class NDunits {
             displayname = "UAV's and UGV's (NATO)";
             kindOf = "vehicles";
-            tracking = 1;
+            tracking = 0;
 			
 			class B_UavTerminal {
                 displayName = "UAV Termninal (NATO)";
@@ -1706,7 +1706,7 @@
 		class IDunits {
             displayname = "UAV's and UGV's (INDEPENDANT)";
             kindOf = "vehicles";
-            tracking = 1;
+            tracking = 0;
 			
 			class I_UavTerminal {
                 displayName = "UAV Termninal (INDEPENDANT)";

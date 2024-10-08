@@ -2,7 +2,8 @@
 /*
     fn_atmRefresh.sqf
     Author - HoverGuy
-    Website - https://northernimpulse.com
+    GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
     Enhanced by - BrianV1981
     Changes:
     - Integrated Grad Money system to display the player's wallet and bank account balances.

@@ -5,7 +5,7 @@
         class Rvehicles {
             kindOf = "Vehicles";
             displayName = "Automobiles and Recreational Vehicles";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class C_Kart_01_black_F {
@@ -96,18 +96,18 @@
 		class Svehicles {
             kindOf = "Vehicles";
             displayName = "Support Vehicles";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class I_C_Van_01_transport_F {
                 displayName = "Truck (Flatbed) (Transport)";
-                description = "Truck (Flatbed) can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. Once activated, you can use the middle mouse wheel on the vehicle that you wish to be towed. (Slingload: No) (Slingloadable: Yes)";
+                description = "Truck (Flatbed) can be utilized to tow other vehicles. Once activated, you can use the middle mouse wheel on the vehicle that you wish to be towed. (Slingload: No) (Slingloadable: Yes)";
                 price = 13000;
                 stock = 1000;
 				
             };
 			class I_E_Van_02_medevac_F {
-                displayName = "Ambulance (Medical Facility)"; 
+                displayName = "Ambulance (Medical Facility & Mobile Respawn)"; 
                 description = "Ambulance (Medical Facility) will enable the use of personal aid kits (PAK's) in the field. (Slingload: No) (Slingloadable: Yes)";
                 price = 15000;
                 stock = 9999;
@@ -129,153 +129,153 @@
             };
 			class I_Truck_02_covered_F {
                 displayName = "Zamak Transport (Covered)"; 
-                description = "The Zamak is a medium-sized 6x6, general utility truck that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Covered). (Slingload: No) (Slingloadable: Yes)";
+                description = "The Zamak is a medium-sized 6x6, general utility truck that can be utilized to tow other vehicles. (Covered). (Slingload: No) (Slingloadable: Yes)";
                 price = 125000;
                 stock = 9999;
 				
             };
 			class I_Truck_02_medical_F {
-                displayName = "Zamak Transport (Medical Facility)"; 
-                description = "This Zamak is a mobile medical facility that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Slingload: No) (Slingloadable: Yes)";
+                displayName = "Zamak Transport (Medical Facility & Mobile Respawn)"; 
+                description = "This Zamak is a mobile medical facility that can be utilized to tow other vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 150000;
                 stock = 9999;
 				
             };
 			class C_IDAP_Truck_02_water_F {
                 displayName = "Zamak Water (10,000 Liters)"; 
-                description = "The Zamak is a medium-sized 6x6, general utility truck that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Covered). (Slingload: No) (Slingloadable: Yes)";
+                description = "The Zamak is a medium-sized 6x6, general utility truck that can be utilized to tow other vehicles. (Covered). (Slingload: No) (Slingloadable: Yes)";
                 price = 150000;
                 stock = 9999;
 				
             };
             class I_Truck_02_fuel_F {
                 displayName = "Zamak Fuel (10,000 Liters)"; 
-                description = "This Zamak is a mobile fuel station that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Slingload: No) (Slingloadable: Yes)";
+                description = "This Zamak is a mobile fuel station that can be utilized to tow other vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 150000;
                 stock = 9999;
 				
             };
 			class I_Truck_02_box_F {
                 displayName = "Zamak Repair (Repair Facility)"; 
-                description = "This Zamak is a mobile repair station that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Slingload: No) (Slingloadable: Yes)";
+                description = "This Zamak is a mobile repair station that can be utilized to tow other vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 150000;
                 stock = 9999;
 				
             };
 			class I_Truck_02_ammo_F {
                 displayName = "Zamak Ammo (Ammo Facility)"; 
-                description = "This Zamak is a mobile ammo station that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Slingload: No) (Slingloadable: Yes)";
+                description = "This Zamak is a mobile ammo station that can be utilized to tow other vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 175000;
                 stock = 9999;
 				
             };
 			class B_Truck_01_mover_F {
                 displayName = "HEMTT";
-                description = "This HEMTT is a transport vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a transport vehicle that can be utilized to tow other vehicles. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 200000;
                 stock = 50;
 				
             };
 			class B_Truck_01_flatbed_F {
                 displayName = "HEMTT Flatbed";
-                description = "This HEMTT is equipped with a flatbed that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is equipped with a flatbed that can be utilized to tow other vehicles. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 200000;
                 stock = 50;
 				
             };
 			class B_Truck_01_cargo_F {
                 displayName = "HEMTT Cargo";
-                description = "This HEMTT is a cargo vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a cargo vehicle that can be utilized to tow other vehicles. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 200000;
                 stock = 50;
 				
             };
 			class B_Truck_01_box_F {
                 displayName = "HEMTT Box";
-                description = "This HEMTT is equipped with a box container that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is equipped with a box container that can be utilized to tow other vehicles. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 200000;
                 stock = 50;
 				
             };
 			class B_Truck_01_transport_F {
                 displayName = "HEMTT Transport";
-                description = "This HEMTT is a transport vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a transport vehicle that can be utilized to tow other vehicles. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 200000;
                 stock = 50;
 				
             };			
 			class B_Truck_01_covered_F {
                 displayName = "HEMTT Transport (Covered)";
-                description = "This HEMTT is a transport vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a transport vehicle that can be utilized to tow other vehicles. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 200000;
                 stock = 50;
 				
             };
 			class B_Truck_01_medical_F {
-                displayName = "HEMTT Medical (Medical Facility)";
-                description = "This HEMTT will enable the use of personal aid kits (PAK's) in the field and is a mobile spawn point that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Slingload: No) (Slingloadable: Yes)";
+                displayName = "HEMTT Medical (Medical Facility & Mobile Respawn)";
+                description = "This HEMTT will enable the use of personal aid kits (PAK's) in the field and is a mobile spawn point that can be utilized to tow other vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 225000;
                 stock = 50;
             };
 			class B_Truck_01_fuel_F {
                 displayName = "HEMTT Fuel (10,000 Liters)";
-                description = "This HEMTT is a mobile fuel station that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a mobile fuel station that can be utilized to tow other vehicles. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 225000;
                 stock = 50;
 				
             };
 			class B_Truck_01_Repair_F {
                 displayName = "HEMTT Repair (Repair Facility)";
-                description = "This HEMTT is a mobile repair station that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a mobile repair station that can be utilized to tow other vehicles. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 225000;
                 stock = 50;
 				
             };
 			class B_Truck_01_ammo_F {
                 displayName = "HEMTT Ammo (Ammo Facility)";
-                description = "This HEMTT is a ammo resupply vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This HEMTT is a ammo resupply vehicle that can be utilized to tow other vehicles. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 250000;
                 stock = 50;
 				
             };
 			class O_T_Truck_03_transport_ghex_F {
                 displayName = "Typhoon Transport";
-                description = "This Typhoon is a transport vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This Typhoon is a transport vehicle that can be utilized to tow other vehicles. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 250000;
                 stock = 50;
             };
 			class O_T_Truck_03_covered_ghex_F {
                 displayName = "Typhoon Transport (Covered)";
-                description = "This Typhoon is a transport vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This Typhoon is a transport vehicle that can be utilized to tow other vehicles. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 250000;
                 stock = 50;
             };
 			class O_T_Truck_03_medical_ghex_F {
-                displayName = "Typhoon Medical (Medical Facility)";
-                description = "This Typhoon will enable the use of personal aid kits (PAK's) in the field and is a mobile spawn point that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. (Slingload: No) (Slingloadable: Yes)";
+                displayName = "Typhoon Medical (Medical Facility & Mobile Respawn)";
+                description = "This Typhoon will enable the use of personal aid kits (PAK's) in the field and is a mobile spawn point that can be utilized to tow other vehicles. (Slingload: No) (Slingloadable: Yes)";
                 price = 275000;
                 stock = 50;
             };
 			class O_T_Truck_03_repair_ghex_F {
                 displayName = "Typhoon Repair (Repair Facility)";
-                description = "This Typhoon is a mobile repair station that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This Typhoon is a mobile repair station that can be utilized to tow other vehicles. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 275000;
                 stock = 50;
             };
 			class O_T_Truck_03_ammo_ghex_F {
                 displayName = "Typhoon Ammo (Ammo Facility)";
-                description = "This Typhoon is a ammo resupply vehicle that can be utilized to tow other vehicles, however, ALiVE player logistics must be actived. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
+                description = "This Typhoon is a ammo resupply vehicle that can be utilized to tow other vehicles. The HEMTT performs decently on and off-road but handles rather poorly at high speeds; not to mention the risk of rollovers when turning on sharp corners as it requires a large amount of space to turn itself even at slow speeds. (Slingload: No) (Slingloadable: Yes)";
                 price = 300000;
                 stock = 50;
             };
 			class B_APC_Tracked_01_CRV_F {
-                displayName = "Nemmera (Repair, Rearm, Refuel) (Sand)";
+                displayName = "Nemmera (Repair, Rearm, Refuel, & Mobile Respawn) (Sand)";
                 description = "The Nemmera is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Nemmera.";
                 price = 475000;
                 stock = 20;
             };
 			class B_T_APC_Tracked_01_CRV_F {
-                displayName = "Nemmera (Repair, Rearm, Refuel) (Military Green)";
+                displayName = "Nemmera (Repair, Rearm, Refuel, & Mobile Respawn) (Military Green)";
                 description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE***The Nemmera is designed to serve purely as a support vehicle. Nearby friendly vehicles can be repaired, rearmed and refuelled by the Nemmera.";
                 price = 575000;
                 stock = 20;
@@ -284,7 +284,7 @@
 		class Cvehicles {
             kindOf = "Vehicles";
             displayName = "Combat Vehicles";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class I_C_Offroad_02_LMG_F  {
@@ -424,7 +424,7 @@
         class LAvehicles {
             kindOf = "Vehicles";
             displayName = "Light Armored Vehicles";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class I_LT_01_scout_F  {
@@ -556,7 +556,7 @@
         class HAvehicles {
             kindOf = "Vehicles";
             displayName = "Heavy Armored Vehicles";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class I_MBT_03_cannon_F {
@@ -619,7 +619,7 @@
         class AAvehicles {
             kindOf = "Vehicles";
             displayName = "Artillery Vehicles";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class I_Truck_02_MRL_F {
@@ -661,92 +661,92 @@
         class Avehicles {
             kindOf = "Vehicles";
             displayName = "Fixed-Wing and VTOL Aircraft";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
             class B_T_VTOL_01_infantry_F {
-                displayName = "V-44 X Blackfish (Unarmed)";
+                displayName = "V-44 X Blackfish (Mobile Respawn )(Unarmed)";
                 description = "This is a V-44 X Blackfish (Infantry Transport) is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
                 price = 400000;
                 stock = 20;
             };
 			class B_T_VTOL_01_infantry_olive_F {
-                displayName = "V-44 X Blackfish (Unarmed) (Olive)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** This is a V-44 X Blackfish (Infantry Transport) is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
+                displayName = "V-44 X Blackfish (Mobile Respawn )(Unarmed)(Olive)";
+                description = "This is a V-44 X Blackfish (Infantry Transport) is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place. (Slingload: No) (Slingloadable: No)";
                 price = 500000;
                 stock = 20;
             };
             class B_T_VTOL_01_armed_F {
-                displayName = "V-44 X Blackfish (Armed)";
+                displayName = "V-44 X Blackfish (Mobile Respawn )(Armed)";
                 description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place, Armed variant of the Blackfish. Has two gunners who remotely operate its weapon systems through control panels in front of their seats.. (Slingload: No) (Slingloadable: No)";
                 price = 420000;
                 stock = 20;
             };
 			class B_T_VTOL_01_armed_olive_F {
-                displayName = "V-44 X Blackfish (Armed) (Olive)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place, Armed variant of the Blackfish. Has two gunners who remotely operate its weapon systems through control panels in front of their seats.. (Slingload: No) (Slingloadable: No)";
+                displayName = "V-44 X Blackfish (Mobile Respawn )(Armed)(Olive)";
+                description = "The Blackfish is a multi-mission tiltrotor aircraft that uses one three-bladed proprotor, turboprop engines fitted on the end of each wing, The V-44X Blackfish’s third-generation tilt-rotor VTOL (Vertical Take-Off and Landing) technology provides unparalleled maneuverability with its unique ability to perform pylon turns or merely hover in place, Armed variant of the Blackfish. Has two gunners who remotely operate its weapon systems through control panels in front of their seats.. (Slingload: No) (Slingloadable: No)";
                 price = 520000;
                 stock = 20;
             };
 			class I_C_Plane_Civil_01_F {
                 displayName = "Cessna TTx";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The Cessna TTx is a single-engine, fixed-gear, low-wing general aviation aircraft built from composite materials. The Caesar BTT is one of the fastest fixed-gear, single-engine piston aircraft, reaching a speed of 235 knots (435 km/h) true air speed at 25,000 feet (7,600 m). It is used by civilians and smaller shipping companies all around the world. (Slingload: No) (Slingloadable: No)";
+                description = "The Cessna TTx is a single-engine, fixed-gear, low-wing general aviation aircraft built from composite materials. The Caesar BTT is one of the fastest fixed-gear, single-engine piston aircraft, reaching a speed of 235 knots (435 km/h) true air speed at 25,000 feet (7,600 m). It is used by civilians and smaller shipping companies all around the world. (Slingload: No) (Slingloadable: No)";
                 price = 50000;
                 stock = 20;
 				
             };
 			class I_Plane_Fighter_04_F {
                 displayName = "JAS 39 Gripen (Pylons Installed)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The Gripen is a fourth-generation, single-seat, single-engine, and all-weather tactical fighter jet. The aircraft was designed as a multi-role platform at an affordable cost, and unlike some of the larger air-superiority jets, it can also perform well in low-altitude flight. Despite its aging platform, the A-149 has still been upgraded with the newest sensors and weapons systems. (Slingload: No) (Slingloadable: No)";
+                description = "The Gripen is a fourth-generation, single-seat, single-engine, and all-weather tactical fighter jet. The aircraft was designed as a multi-role platform at an affordable cost, and unlike some of the larger air-superiority jets, it can also perform well in low-altitude flight. Despite its aging platform, the A-149 has still been upgraded with the newest sensors and weapons systems. (Slingload: No) (Slingloadable: No)";
                 price = 500000;
                 stock = 20;
 				
             };
 			class I_Plane_Fighter_03_dynamicLoadout_F {
                 displayName = "L-159 ALCA (Pylons Installed)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The Aero L 159 ALCA (Advanced Light Combat Aircraft) is a Czech-built single-seat light multi-role combat aircraft designed for a variety of air-to-air, air-to-ground and reconnaissance missions. The aircraft is equipped with a radar for all-weather, day and night operations. (Slingload: No) (Slingloadable: No)";
+                description = "The Aero L 159 ALCA (Advanced Light Combat Aircraft) is a Czech-built single-seat light multi-role combat aircraft designed for a variety of air-to-air, air-to-ground and reconnaissance missions. The aircraft is equipped with a radar for all-weather, day and night operations. (Slingload: No) (Slingloadable: No)";
                 price = 600000;
                 stock = 20;
 				
             };
 			class O_Plane_Fighter_02_F {
                 displayName = "	To-201 Shikra (Pylons Installed)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The To-201 Shikra is a fifth-generation, single-seat, twin-engine, all-weather tactical fighter jet. The aircraft was designed by a CSAT and Russian joint syndicate with the goal to build a highly agile and maneuverable air-superiority fighter. (Slingload: No) (Slingloadable: No)";
+                description = "The To-201 Shikra is a fifth-generation, single-seat, twin-engine, all-weather tactical fighter jet. The aircraft was designed by a CSAT and Russian joint syndicate with the goal to build a highly agile and maneuverable air-superiority fighter. (Slingload: No) (Slingloadable: No)";
                 price = 650000;
                 stock = 20;
 				
             };
 			class B_Plane_Fighter_01_F {
                 displayName = "F/A-181 Black Wasp II (Pylons Installed)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The Black Wasp is a twin-engined stealth fighter that uses a clipped delta wing design with a reverse sweep on the rear. (Slingload: No) (Slingloadable: No)";
+                description = "The Black Wasp is a twin-engined stealth fighter that uses a clipped delta wing design with a reverse sweep on the rear. (Slingload: No) (Slingloadable: No)";
                 price = 650000;
                 stock = 20;
 				
             };
 			class O_Plane_CAS_02_dynamicLoadout_F {
                 displayName = "Yak-130 (CAS) (Pylons Installed)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The Yak-130 is a new addition to CSAT air forces. An agile single-seat aircraft is used for close air support but can also take down air threats. It cannot carry as much payload as NATO's A-164 and has to rearm more often, but it can take-off from even the roughest terrain, not being as dependent on air bases or aircraft carriers. (Slingload: No) (Slingloadable: No)";
+                description = "The Yak-130 is a new addition to CSAT air forces. An agile single-seat aircraft is used for close air support but can also take down air threats. It cannot carry as much payload as NATO's A-164 and has to rearm more often, but it can take-off from even the roughest terrain, not being as dependent on air bases or aircraft carriers. (Slingload: No) (Slingloadable: No)";
                 price = 650000;
                 stock = 20;       
 								
             };
 			class B_Plane_CAS_01_dynamicLoadout_F {
                 displayName = "A-10D Thunderbolt II (CAS) (Pylons Installed)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The A-10D Thunderbolt II is a twin turbofan-engined, ground attack jet that uses a cantilever low-wing monoplane wing design with a wide chord. It is meant to be used exclusively for ground attack and close air support. (Slingload: No) (Slingloadable: No)";
+                description = "The A-10D Thunderbolt II is a twin turbofan-engined, ground attack jet that uses a cantilever low-wing monoplane wing design with a wide chord. It is meant to be used exclusively for ground attack and close air support. (Slingload: No) (Slingloadable: No)";
                 price = 650000;
                 stock = 20;       
 								
             }; 
 			class O_Plane_Fighter_02_Stealth_F {
                 displayName = "	To-201 Shikra (Stealth) (Pylons Installed)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The To-201 Shikra is a fifth-generation, single-seat, twin-engine, all-weather tactical fighter jet. The aircraft was designed by a CSAT and Russian joint syndicate with the goal to build a highly agile and maneuverable air-superiority fighter. (Slingload: No) (Slingloadable: No)";
+                description = "The To-201 Shikra is a fifth-generation, single-seat, twin-engine, all-weather tactical fighter jet. The aircraft was designed by a CSAT and Russian joint syndicate with the goal to build a highly agile and maneuverable air-superiority fighter. (Slingload: No) (Slingloadable: No)";
                 price = 700000;
                 stock = 20;
 				
             };
 			class B_Plane_Fighter_01_Stealth_F {
                 displayName = "F/A-181 Black Wasp II (Stealth) (Pylons Installed)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The Black Wasp is a twin-engined stealth fighter that uses a clipped delta wing design with a reverse sweep on the rear. (Slingload: No) (Slingloadable: No)";
+                description = "The Black Wasp is a twin-engined stealth fighter that uses a clipped delta wing design with a reverse sweep on the rear. (Slingload: No) (Slingloadable: No)";
                 price = 700000;
                 stock = 20;
 				
@@ -755,7 +755,7 @@
         class Hvehicles {
             kindOf = "Vehicles";
             displayName = "Rotary-Wing Aircraft";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class I_C_Heli_Light_01_civil_F {
@@ -781,7 +781,7 @@
             };
 			 class B_Heli_Light_01_dynamicLoadout_F {
                 displayName = "AH-6 Little Bird (Pylons Installed)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The Pawnee is a five-bladed, single engine, rotary-wing light helicopter designed for both observation and light attack roles. Unlike the Hummingbird, the Pawnee has two stub wings located on either side of the fuselage where the side benches that support dynamic loadouts. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
+                description = "The Pawnee is a five-bladed, single engine, rotary-wing light helicopter designed for both observation and light attack roles. Unlike the Hummingbird, the Pawnee has two stub wings located on either side of the fuselage where the side benches that support dynamic loadouts. (Slingload: Yes, up to 500 kg) (Slingloadable: No)";
                 price = 200000;
                 stock = 25;
 				
@@ -802,14 +802,14 @@
             };
 			class I_Heli_light_03_dynamicLoadout_F {
                 displayName = "AW-159 Wildcat (Pylons Installed)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The Wildcat is a four-bladed, twin-engined rotary-wing helicopter that is capable of serving in many roles. These range from providing air-to-ground fire support as a light gunship, ferrying troops and cargo into battle as a utility transport, and even as an anti-tank/ship helicopter when outfitted with guided missiles. (Yes, up to 2000 kg) (Slingloadable: No)";
+                description = "The Wildcat is a four-bladed, twin-engined rotary-wing helicopter that is capable of serving in many roles. These range from providing air-to-ground fire support as a light gunship, ferrying troops and cargo into battle as a utility transport, and even as an anti-tank/ship helicopter when outfitted with guided missiles. (Yes, up to 2000 kg) (Slingloadable: No)";
                 price = 300000;
                 stock = 25;
 				
             };
 			class O_Heli_Light_02_dynamicLoadout_F {
                 displayName = "Ka-60 Kasatka (Pylons Installed)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The Kasatka is a four-bladed, rotary-wing light helicopter with a fantail designed for both aerial reconnaissance and light transport duties. (Yes, up to 2000 kg) (Slingloadable: No)";
+                description = "The Kasatka is a four-bladed, rotary-wing light helicopter with a fantail designed for both aerial reconnaissance and light transport duties. (Yes, up to 2000 kg) (Slingloadable: No)";
                 price = 300000;
                 stock = 25;
 				
@@ -823,7 +823,7 @@
             };
 			class B_Heli_Transport_01_camo_F {
                 displayName = "UH-80 Ghost Hawk (Camo)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The Ghost Hawk is a five-bladed, twin engine, rotary-wing stealth helicopter designed for slingloading cargo and to transport troops into battle. (Slingload: Yes, up to 4000 kg) (Slingloadable: No)";
+                description = "The Ghost Hawk is a five-bladed, twin engine, rotary-wing stealth helicopter designed for slingloading cargo and to transport troops into battle. (Slingload: Yes, up to 4000 kg) (Slingloadable: No)";
                 price = 450000;
                 stock = 50;
 				
@@ -835,7 +835,7 @@
                 stock = 50;
             };	
             class B_Heli_Transport_03_unarmed_green_F {
-                displayName = "CH-67 Huron (Unarmed)";
+                displayName = "CH-67 Huron (Mobile Respawn )(Unarmed)";
                 description = "The CH-67 Huron is a mobile spawn point. The Huron is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
                 price = 350000;
                 stock = 50;
@@ -847,21 +847,21 @@
                 stock = 50;
             };
             class B_Heli_Transport_03_F {
-                displayName = "CH-67 Huron";
+                displayName = "CH-67 Huron (Mobile Respawn )";
                 description = "The CH-67 Huron is a mobile spawn point. The Huron is a twin-engine, tandem rotor, semi-stealth heavy-lift helicopter. The tandem rotor layout eliminates the need for an anti-torque vertical rotor, allowing all power to be used for lift and thrust. This means it less sensitive to changes in its centre of gravity, making the Huron suitable for slingloading heavy cargo loads. (Slingload: Yes, up to 12000 kg) (Slingloadable: No)";
                 price = 400000;
                 stock = 50;
             };			
             class B_Heli_Attack_01_dynamicLoadout_F {
                 displayName = "AH-99 Comanchie (Pylons Installed)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The Comanchie is a five-bladed, rotary-wing stealth helicopter designed for both armed reconnaissance and ground attack duties.(Slingload: No) (Slingloadable: No)";
+                description = "The Comanchie is a five-bladed, rotary-wing stealth helicopter designed for both armed reconnaissance and ground attack duties.(Slingload: No) (Slingloadable: No)";
                 price = 525000;
                 stock = 25;
 				
             }; 
 			class O_Heli_Attack_02_dynamicLoadout_F {
                 displayName = "Mi-48 Kajman (Pylons Installed)";
-                description = "***ATTENTION***THIS VEHICLE CAN BE SOLD BACK AT FULL PRICE*** The Mi-48 is a large helicopter gunship with low-capacity troop transport capability. It uses a tandem cockpit layout, and has a distinctive coaxial rotor system that removes the need for a tail rotor.";
+                description = "The Mi-48 is a large helicopter gunship with low-capacity troop transport capability. It uses a tandem cockpit layout, and has a distinctive coaxial rotor system that removes the need for a tail rotor.";
                 price = 575000;
                 stock = 25;
 				
@@ -870,7 +870,7 @@
 		class NDunits {
             displayname = "UAV's and UGV's (NATO)";
             kindOf = "vehicles";
-            tracking = 1;
+            tracking = 0;
 			
 			class B_UavTerminal {
                 displayName = "UAV Termninal (NATO)";
@@ -960,7 +960,7 @@
 		class IDunits {
             displayname = "UAV's and UGV's (INDEPENDANT)";
             kindOf = "vehicles";
-            tracking = 1;
+            tracking = 0;
 			
 			class I_UavTerminal {
                 displayName = "UAV Termninal (INDEPENDANT)";

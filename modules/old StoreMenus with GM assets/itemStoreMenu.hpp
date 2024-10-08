@@ -5,7 +5,7 @@
         class items {
             displayName = "Military Supplies";
             kindOf = "Items";
-			tracking = 1;
+			tracking = 0;
 
             class ItemMap {
                 displayName = "Map";
@@ -516,7 +516,7 @@
 		class medical {
             displayName = "Medical Supplies, MRE's and Beverages";
             kindOf = "Items";
-			tracking = 1;
+			tracking = 0;
 
             class gm_gc_army_gauzeBandage {
                 displayName = "Gauze Bandage (x10)";
@@ -683,7 +683,7 @@
         class equipment {
             displayName = "Military Equipment";
             kindOf = "Wearables";
-			tracking = 1;
+			tracking = 0;
 
 			class U_Rangemaster {
                 displayName = "Rangemaster Suit";

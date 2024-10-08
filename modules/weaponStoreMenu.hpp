@@ -5,7 +5,7 @@
  		class Hweapons {
             displayName = "Handguns";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:
 
 			class ACE_Flashlight_Maglite_ML300L {
@@ -79,7 +79,7 @@
         class SMGweapons {
             displayName = "Sub Machine Guns";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:			
 			
 			class SMG_05_F {
@@ -226,7 +226,7 @@
         class Aweapons {
             displayName = "Assault Rifles";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:
 			
             class arifle_SDAR_F {
@@ -639,7 +639,7 @@
         class Mweapons {
             displayName = "Marksman Rifles";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:
 			
 			class arifle_MXM_F {
@@ -828,7 +828,7 @@
         class MGweapons {
             displayName = "Machine Guns";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:
 			
             class MMG_01_hex_F {
@@ -870,7 +870,7 @@
         class LMGweapons {
             displayName = "Light Machine Guns";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:
 			
             class arifle_SPAR_02_blk_F {
@@ -989,7 +989,7 @@
         class SRweapons {
             displayName = "Sniper Rifles";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:
 			
 			class srifle_LRR_F {
@@ -1038,7 +1038,7 @@
         class Lweapons {
             displayName = "Missile and Rocket Launchers";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:			
 	
 		    class launch_RPG7_F {
@@ -1227,7 +1227,7 @@
         class ammo {
             displayName = "Ammunition";
             kindOf = "Items";
-			tracking = 1;
+			tracking = 0;
 		
 			class 6Rnd_GreenSignal_F {
                 displayName = "6Rnd Signal Cylinder (Green)";
@@ -1665,7 +1665,7 @@
 		class Eammo {
             displayName = "Plantable Explosives";
             kindOf = "Items";
-			tracking = 1;
+			tracking = 0;
 			
 			class ACE_DefusalKit {
                 displayName = "ACE ACE Defusal Kit";
@@ -1773,7 +1773,7 @@
         class accessories {
             displayName = "Weapon Accessories";
             kindOf = "Items";
-			tracking = 1;
+			tracking = 0;
 
 			class optic_MRD {
                 displayName = "MRD";

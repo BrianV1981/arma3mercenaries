@@ -3,7 +3,8 @@ HG\Functions\Client\GearShop\fn_dialogOnLoadGear.sqf
 /*
     Author - HoverGuy
     Description - Called by the player to open and feed the dialog with data
-    Website - https://northernimpulse.com
+    GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 */
 
 
@@ -45,7 +46,8 @@ HG\Functions\Client\VehiclesShop\fn_vehicleColor.sqf
 /*
     Author - HoverGuy
     Description - Called by the player when the dialog is closed (with the dialog close button or by pressing escape)
-    Website - https://northernimpulse.com
+    GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 */
 
 ////////////////////////////
@@ -55,7 +57,8 @@ HG\Functions\Client\VehiclesShop\fn_vehicleSelectionChanged.sqf
 /*
     Author - HoverGuy
     Description - Called when selection in listbox has changed
-    Website - https://northernimpulse.com
+    GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 */
 
 ////////////////////////////////////

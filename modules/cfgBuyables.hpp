@@ -1,5 +1,5 @@
 class CfgGradBuymenu {
-    tracking = 1;
+    tracking = 0;
     trackingTag = "GRAD_menuTracking";
 
 	#include "mercenaryStoreMenu_1.hpp"
@@ -20,4 +20,5 @@ class CfgGradBuymenu {
 	#include "bugStoreMenu_1.hpp"
 	#include "bugStoreMenu_2.hpp"
 	#include "medicalStoreMenu_1.hpp"
+	#include "supplyDropStoreMenu_1.hpp"
 };

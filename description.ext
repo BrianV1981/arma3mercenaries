@@ -2,15 +2,15 @@ class Header
 {
 	gameType = Coop;
 	minPlayers = 1;
-	maxPlayers = 22;
+	maxPlayers = 30;
 };
-OnLoadName = "arma3mercenaries Av6.26";
+OnLoadName = "arma3mercenaries Bv7.53";
 onLoadMission = "Constellis is a trusted and experienced provider of security services in high-risk environments, remote areas and emerging markets in support of land-based, aviation, maritime and cyber operations.";
 loadScreen = "pictures\arma3mercenaries_v1.paa";
 author="BrianV1981";
 respawn = 3;
 respawndelay = 30;
-respawnTemplates[] = {"MenuInventory", "MenuPosition", "Spectator"};  // {"ace_spectator"} // MenuPosition and MenuInventory are not currently compatible with the ace_spectator template.
+respawnTemplates[] = {"MenuInventory", "MenuPosition"};  // {"ace_spectator"} // MenuPosition and MenuInventory are not currently compatible with the ace_spectator template. // "MenuInventory", "MenuPosition", "Spectator"
 respawnOnStart = -1;
 disabledAI = 1;
 joinUnassigned = 1;
@@ -179,10 +179,10 @@ class Extended_PreInit_EventHandlers {
 	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_Functions\fn_CBASettings.sqf";
 };
 
-///disabled, trying another way out (initPlayerLocal)
+
 /// https://forums.bohemia.net/forums/topic/220528-help-disable-escape-options-when-killed/
-//  onPauseScript = "scripts\removeabortbutton.sqf";
 	onPauseScript = "arma3mercenaries\disable_abort_button\arma3mercenaries_disableAbortBtn.sqf";
+	
 //////////////////////////////////   music   /////////////////////////////////////////////////////////
 
 class CfgMusic {
@@ -199,13 +199,16 @@ class CfgSounds {
         Sound_myTrack5, Sound_myTrack6, Sound_myTrack7, Sound_myTrack8, 
         Sound_myTrack9, Sound_myTrack10, Sound_myTrack11, Sound_myTrack12, 
         Sound_myTrack13, Sound_myTrack14, Sound_myTrack15, Sound_myTrack16, 
-        Sound_myTrack17
+        Sound_myTrack17, Sound_myTrack18, Sound_myTrack19, Sound_myTrack20,
+		Sound_myTrack21, Sound_myTrack22, Sound_myTrack23, Sound_myTrack24,
+		Sound_myTrack25, Sound_myTrack26, Sound_myTrack27, Sound_myTrack28,
+		Sound_myTrack29
     };
 
     // Include HoverGuy's sounds
     #include "HG\Sounds\HG_Sounds.h"
 
-    // Include Jukebox sounds
+    // Include arma3mercenaries sounds
     #include "arma3mercenaries\jukebox\arma3mercenaries_jukeboxSounds.hpp"
 	#include "arma3mercenaries\interrogations\arma3mercenaries_interrogationSounds.hpp"
     // Additional sound configurations

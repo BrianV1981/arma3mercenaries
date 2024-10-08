@@ -4,7 +4,7 @@
 		class units_1 {
             displayname = "CTRG Mercenaries";
             kindOf = "other";
-			tracking = 1;
+			tracking = 0;
 
 			class B_CTRG_Soldier_TL_tna_F {
                 displayName = "CTRG Team Leader";
@@ -75,7 +75,7 @@
         class units_2 {
             displayname = "FIA Mercenaries";
             kindOf = "other";
-            tracking = 1;
+            tracking = 0;
 			
 		
 			class I_G_Soldier_unarmed_F {
@@ -211,7 +211,7 @@
         class units_3 {
             displayname = "Gendarmerie Mercenaries";
             kindOf = "other";
-            tracking = 1;
+            tracking = 0;
 			
 			class B_GEN_Commander_F {
                 displayName = "Gendarmerie Commander";
@@ -234,7 +234,7 @@
         class units_4 {
             displayname = "NATO Mercenaries";
             kindOf = "other";
-            tracking = 1;
+            tracking = 0;
 			
 			class B_Soldier_unarmed_F {
                 displayName = "NATO Rifleman (Unarmed)";
@@ -633,7 +633,7 @@
 		class units_5 {
             displayname = "Syndicate Mercenaries";
             kindOf = "other";
-			tracking = 1;
+			tracking = 0;
 
 			class I_C_Soldier_Para_1_F {
                 displayName = "Syndikat Soldier (Rifle)";
@@ -752,7 +752,7 @@
         class units_6 {
             displayname = "AAF Mercenaries";
             kindOf = "other";
-            tracking = 1;			
+            tracking = 0;			
 			
 			class I_soldier_F {
                 displayName = "AAF Rifleman";
@@ -1071,7 +1071,7 @@
         class units_7 {
             displayname = "LDF Mercenaries";
             kindOf = "other";
-            tracking = 1;			
+            tracking = 0;			
 			
 			class I_E_Soldier_unarmed_F {
                 displayName = "LDF Rifleman (Unarmed)";
@@ -1358,7 +1358,7 @@
         class units_8 {
             displayname = "Spetsnaz Mercenaries";
             kindOf = "other";
-            tracking = 1;			
+            tracking = 0;			
 			
 			class O_R_Soldier_TL_F {
                 displayName = "Spetsnaz Team Leader";
@@ -1565,7 +1565,7 @@
         class units_9 {
             displayname = "CSAT Mercenaries";
             kindOf = "other";
-            tracking = 1;			
+            tracking = 0;			
 			
 			class O_V_Soldier_TL_hex_F {
                 displayName = "CSAT Viper Team Leader";
@@ -1628,7 +1628,7 @@
         class units_10 {
             displayname = "Agent Provocateurs";
             kindOf = "other";
-            tracking = 1;			
+            tracking = 0;			
 			
 			class I_L_Looter_Pistol_F {
                 displayName = "Looter (Pistol)";

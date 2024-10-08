@@ -41,7 +41,7 @@ To incorporate the script into the full jukebox system:
    - Place the script in the `arma3mercenaries/jukebox/` folder alongside other jukebox components.
 
 2. **Initialize with Jukebox**:
-   - Include the initialization line in your mission’s `init.sqf` file as described above. This will enable the random looping feature within the full jukebox interface.
+   - Include the initialization line in your mission’s `initServer.sqf` file as described above. This will enable the random looping feature within the full jukebox interface.
 
 3. **Remove If Needed**:
    - The script can be removed entirely without affecting the core functionality of the jukebox, which will revert to manual track selection only.
@@ -54,13 +54,10 @@ To incorporate the script into the full jukebox system:
 
 */
 
-
-
-
-// Define the function to play a random track
+// Ensure the function is defined on both server and clients
 fnc_playRandomTrack = {
     // Choose a random track and set the hint text
-    private _trackInfo = switch (round(random 16)) do {
+    private _trackInfo = switch (round(random 32)) do {
         case 0 : {["myTrack1", "The Trashmen", "Surfing Bird"]};
         case 1 : {["myTrack2", "The Rolling Stones", "Paint It, Black"]};
         case 2 : {["myTrack3", "Nancy Sinatra", "These Boots Are Made For Walkin"]};
@@ -78,7 +75,23 @@ fnc_playRandomTrack = {
         case 14 : {["myTrack15", "", ""]};
         case 15 : {["myTrack16", "", ""]};
         case 16 : {["myTrack17", "", ""]};
-        default {["defaultTrack", "Unknown Artist", "Unknown Title"]};  // Default case
+        case 17 : {["myTrack18", "Good Morning Vietnam", "First Broadcast"]};
+        case 18 : {["myTrack19", "Fox", "Iran Update 4"]};
+        case 19 : {["myTrack20", "The Spencer Davis Group", "Gimmie Some Lovin"]};
+        case 20 : {["myTrack21", "The Rolling Stones", "Gimmie Shelter"]};
+        case 21 : {["myTrack22", "The Doors", "Hello, I Love You"]};
+        case 22 : {["myTrack23", "Jefferson Airplane", "White Rabbit"]};
+        case 23 : {["myTrack24", "Donovan", "Mellow Yellow"]};
+        case 24 : {["myTrack25", "The Chambers Brothers", "Time Has Come Today"]};
+        case 25 : {["myTrack26", "The Animals", "House Of The Rising Sun"]};
+        case 26 : {["myTrack27", "The Doors", "Light My Fire"]};
+        case 27 : {["myTrack28", "Otis Redding", "Sittin On The Dock Of The Bay"]};
+        case 28 : {["myTrack29", "Jimmi Hendrix", "All Along The Watchtower"]};
+        case 29 : {["myTrack14", "", ""]};
+        case 30 : {["myTrack15", "", ""]};
+        case 31 : {["myTrack16", "", ""]};
+        case 32 : {["myTrack17", "", ""]};
+        default {["myTrack14", "", ""]};  // Default case
     };
 
     private _track = _trackInfo select 0;
@@ -92,17 +105,11 @@ fnc_playRandomTrack = {
     playMusic _track;
 };
 
-// Wrap the function call for remote execution
-fnc_remotePlayRandomTrack = {
-    // Call the random track function
-    [] call fnc_playRandomTrack;
-};
-
-// Execute on the server
-[] remoteExecCall ["fnc_remotePlayRandomTrack", 0, true];
-
-// Add an event handler to play a new random track when the current track stops
+// Add the MusicStop event handler to ensure a new track plays when the current one ends
 addMusicEventHandler ["MusicStop", {
-    // Call the function to play a new random track on the server
-    [] remoteExecCall ["fnc_remotePlayRandomTrack", 0, true];
+    // Call the function to play a new random track locally
+    [] call fnc_playRandomTrack;
 }];
+
+// Play the first random track immediately upon loading
+[] call fnc_playRandomTrack;

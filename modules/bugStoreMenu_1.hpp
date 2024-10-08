@@ -5,7 +5,7 @@
 	class Rother {
             kindOf = "other";
             displayName = "BETA Tester Store";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class Land_Pillow_camouflage_F {

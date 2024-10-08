@@ -1,7 +1,8 @@
 /*
     fn_fillBox.sqf
     Author - HoverGuy
-    Website - https://northernimpulse.com
+    GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
     Enhanced by - BrianV1981
     Changes:
     - Corrected the usage of `addItemCargo` and `addWeaponCargo` to ensure both item name and count are passed correctly.

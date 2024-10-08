@@ -12,14 +12,18 @@
 
 	Installation:
 	1. Place this script in the following directory:
+	
 	   arma3mercenaries\disable_abort_button\arma3mercenaries_disableAbortBtn.sqf
 
-	2. In your mission's `init.sqf` or 'initServer.sqf, add the following line to execute the script:
-	   execVM "arma3mercenaries\disable_abort_button\arma3mercenaries_disableAbortBtn.sqf";
+	2. Place this in the description.ext:
+	
+	   onPauseScript = "arma3mercenaries\disable_abort_button\arma3mercenaries_disableAbortBtn.sqf";
 
 	3. Save and test your mission to ensure the abort button is disabled as intended.
 	
-	update_1: changed 'ACE_isUnconscious isEqualTo true' to 'ace_common_fnc_isAwake isEqualTo false'
+	   update_1: changed 'ACE_isUnconscious isEqualTo true' to 'ace_common_fnc_isAwake isEqualTo false'
+	   
+	   update_2: completed removed the unconscious check...boom, done.
 */
 
 /*
@@ -39,9 +43,7 @@ if (!isNull findDisplay 49) then {
     (findDisplay 49) displayCtrl 104 ctrlShow false;
 };
 
-// Check if the player is unconscious using the ACE mod variable
-if (player getVariable "ace_common_fnc_isAwake;" isEqualTo false) then {
-    // Disable the unconscious abort button (ID: 103) in the unconscious menu
-    ((findDisplay 49) displayCtrl 103) ctrlShow false; // change ctrlShow to ctrlEnable to gret out the button lettering instead of totally removing
+// Disable the unconscious abort button (ID: 103) in the unconscious menu
+if (!isNull findDisplay 49) then {
+    ((findDisplay 49) displayCtrl 103) ctrlShow false; // Change to ctrlEnable to grey out the button lettering instead of totally removing
 };
-

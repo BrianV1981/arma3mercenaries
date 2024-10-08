@@ -2,7 +2,8 @@
 /*
     fn_traderBtns.sqf
     Author - HoverGuy
-    Website - https://northernimpulse.com
+    GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
     Enhanced By - BrianV1981
 
     Changes:

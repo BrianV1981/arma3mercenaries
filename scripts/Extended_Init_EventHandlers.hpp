@@ -78,88 +78,87 @@ class Extended_Init_EventHandlers {
 	
  //adds "Claim this vehicle" addaction. during this process, a lot 0f other code fires off if the vehicle is claimed. Such as removing the claim buton, adding variables, remove it fromALiVE profile system, etc.
  class Car {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimCar.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\claim\claimVehicle.sqf')";
  };
  class Truck {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimTruck.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\claim\claimVehicle.sqf')";
  };
  class Tank {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimTank.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\claim\claimVehicle.sqf')";
+ };
+ class WheeledAPC {
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\claim\claimVehicle.sqf')";
+ };
+ class TrackedAPC {
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\claim\claimVehicle.sqf')";
  };
  class Ship {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimShip.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\claim\claimVehicle.sqf')";
  };
  class Submarine {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\claim\claimVehicle.sqf')";
  };
  class Air {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimVehicle.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\claim\claimVehicle.sqf')";
  };
  class StaticWeapon {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\claimStaticWeapon.sqf')";
- };
-
-///FOBs in a box
- class I_EAF_supplyCrate_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\addBasicFOB.sqf')";
- };
- class I_E_CargoNet_01_ammo_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\addAdvancedFOB.sqf')";
- };
- class Box_EAF_Equip_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\addBasicRoadBlock.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\claim\claimStaticWeapon.sqf')";
  };
  
  ///mobile spawn points
  class B_T_APC_Tracked_01_CRV_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class B_APC_Tracked_01_CRV_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
   class B_T_VTOL_01_armed_olive_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class B_T_VTOL_01_armed_blue_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class B_T_VTOL_01_armed_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class B_T_VTOL_01_infantry_olive_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class B_T_VTOL_01_infantry_blue_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class B_T_VTOL_01_infantry_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class I_Heli_Transport_02_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class B_Heli_Transport_03_unarmed_green_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class B_Heli_Transport_03_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class B_Heli_Transport_03_black_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class O_Heli_Transport_04_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class B_Slingload_01_Medevac_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class Land_Pod_Heli_Transport_04_medevac_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class I_E_Van_02_medevac_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
  class B_Truck_01_medical_F {
-  init = "_this call (compile preprocessFileLineNumbers 'scripts\mobileSpawnPoints.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
  };
+ class I_Truck_02_medical_F {
+  init = "_this call (compile preprocessFileLineNumbers 'arma3mercenaries\mobile_respawns\mobileRespawnAddaction.sqf')";
+ };
+
 };

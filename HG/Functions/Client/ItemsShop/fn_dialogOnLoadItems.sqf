@@ -3,7 +3,8 @@
     fn_dialogOnLoadItems.sqf
     Author - HoverGuy
     Enhanced by - BrianV1981
-    Website - https://northernimpulse.com
+    GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
     Changes:
     - Updated parameter handling to ensure compatibility with ACE interaction.
     - Simplified the parameter list to improve reliability when triggered via ACE interaction.

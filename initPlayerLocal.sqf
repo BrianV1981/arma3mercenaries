@@ -1,16 +1,42 @@
+// plays random tracks for each player independently of eachother
+execVM "arma3mercenaries\jukebox\arma3mercenaries_playRandomTracks.sqf";
 
-//execVM "scripts\healPlayerWhenIncapacitated.sqf"; // still never gfot this to work...on the backburner.
+// ambiant radio chatter
+execVM "arma3mercenaries\jukebox\ambientRadioChatter.sqf";
+
+//execVM "scripts\healPlayerWhenIncapacitated.sqf"; // still never got this to work...on the backburner.
+
 execVM "scripts\HG_initPlayerLocal.sqf";
-execVM "arma3mercenaries\tutorials\tutorial.sqf";
+execVM "arma3mercenaries\tutorials\quickTutorial.sqf";
 execVM "scripts\wearAllUniforms.sqf";
+
 [player, 1, ["ACE_SelfActions", "ACE_Equipment"], [player,"aliveStore_2",container_2,aHelipad_2,"Combat Support Menu","Emergency ALiVE Combat Support Services"] call grad_lbm_fnc_addInteraction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "ACE_Equipment"], [player,"haloStore_2",container_2,aHelipad_2,"High-altitude Military Parachuting","Emergency SAC Services"] call grad_lbm_fnc_addInteraction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "ACE_Equipment"], [player,"mercenaryStore_parachute",container_2,aHelipad_2,"Private Security Services Contractors For Hire","Emergency Constellis Holdings, Inc. Services"] call grad_lbm_fnc_addInteraction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "ACE_Equipment"], [player,"supplyDropStore_1",container_2,aHelipad_2,"Supply Drops","Emergency Supply Drops"] call grad_lbm_fnc_addInteraction] call ace_interact_menu_fnc_addActionToObject;
+
+
+/*
+// player traits
+Abilities:
+Boolean engineer - Ability to partially repair vehicles with toolkit, equivalent to engineer = 1; in CfgVehicles
+Boolean explosiveSpecialist - Ability to defuse mines with toolkit, equivalent to canDeactivateMines = 1; in CfgVehicles
+Boolean medic - Ability to treat self and others with medikit, equivalent to attendant = 1; in CfgVehicles
+Boolean UAVHacker - Ability to hack enemy and frendly drones, equivalent to uavHacker = 1; in CfgVehicles
+Modifiers:
+Number audibleCoef - A lower value means the unit is harder to hear
+Number camouflageCoef - A lower value means the unit is harder to spot
+Number loadCoef - Equipment weight multiplier affecting fatigue and stamina
+
+Syntax:
+unit setUnitTrait [skillName, value, isCustom]
+*/
+
 player setUnitTrait ["UAVHacker",true];
 player setUnitTrait ["explosiveSpecialist",true];
 // player setUnitTrait ["engineer",true]; 
-// initPlayerLocal.sqf
 
+// initPlayerLocal.sqf
 /*
 // This script deducts funds from a player's bank account every time they respawn.
 // Adding a respawn event handler
@@ -19,12 +45,7 @@ player addEventHandler ["Respawn", {
     [_unit, -10000, true] call grad_moneymenu_fnc_addFunds;
     ["You have died and 10,000 cr. has been deducted from your bank account."] remoteExec ["hintSilent", _unit];
 }];
-*/
-//////////////////////////
-// this creates an event handler that fires off when the player hits escape and disables the abort button
-///execVM "arma3mercenaries\disable_abort_button\arma3mercenaries_disableAbortBtn.sqf"; /// trying description.ext pauseonstart execute 
-//////////////////////////
-/*
+
 myaction = ['TestAction 1','ALiVE','pictures\icon_interact-main_64.paa',''] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], myaction] call ace_interact_menu_fnc_addActionToObject;
 myaction = ['TestAction 2','Combat Support Menu','pictures\icon_interact-cs_64.paa',{["radio"] call ALIVE_fnc_radioAction},{true}] call ace_interact_menu_fnc_createAction;
@@ -86,10 +107,13 @@ private _action = [
 [player, 1, _menupath, _action] call ace_interact_menu_fnc_addActionToObject;
 
 
+// It apears that I gave up on the ace self interact to call the alive mission function...
 */
 
 ////////////////////////////////////////////
-// Enable full spectator in respawn screen
+// Enable full spectator in respawn screen (after testing, it can cause respawn issues, such as dropping you drom the sky and killing you, etc.)
+
+/*
 {
     missionNamespace setVariable [_x, true];
 } forEach [
@@ -103,89 +127,17 @@ private _action = [
     "BIS_respSpecLists"                 // Show list of available units and locations on the left-hand side
 ];
 
-//////////////////////////////////////enhanced grad persistence modification for grouped units by BrianV1981
-// initPlayerLocal.sqf
-
-
-/* 
-
-///////////OLD VERSION
-// Get the player's UID
-private _playerUID = getPlayerUID player;
-
-// Custom function to reassign units (can be placed in your function library)
-player addEventHandler ["Respawn", {
-    params ["_newUnit"];
-
-    // Check if the new unit belongs to the player
-    private _unitOwnerUID = _newUnit getVariable ["arma3mercenaries_groupOwner", ""];
-    if (_unitOwnerUID == getPlayerUID player) then {
-        // Reassign the unit to the player's group
-        _newUnit joinSilent group player;
-    };
-}];
-
-// Reassign existing units that belong to the player without looping
-{
-    private _unitOwnerUID = _x getVariable ["arma3mercenaries_groupOwner", ""];
-    if (_unitOwnerUID == _playerUID) then {
-        _x joinSilent group player;
-    };
-} forEach (allUnits select {_x getVariable ["arma3mercenaries_groupOwner", ""] == _playerUID});
-
-
-
-///////// FAIL
-// initPlayerLocal.sqf
-
-// Get the player's UID
-private _playerUID = getPlayerUID player;
-
-// Retrieve the player's group ID from the saved data (this should be loaded elsewhere, such as in the load script)
-private _groupID = player getVariable ["arma3mercenaries_groupID", ""];
-
-// Ensure the player has their group ID reapplied on respawn or join
-if (!isNil "_groupID" && {_groupID != ""}) then {
-    player setVariable ["arma3mercenaries_groupID", _groupID, true];
-};
-
-// Reassign existing units to the player's group if they match the player's group ID
-{
-    private _unit = _x;
-    private _unitGroupID = _unit getVariable ["arma3mercenaries_groupID", ""];
-
-    // Check if the unit's group ID matches the player's group ID
-    if (_unitGroupID == _groupID) then {
-        // Reassign the unit to the player's group silently
-        _unit joinSilent group player;
-    };
-} forEach (allUnits select {
-    !isNull _x && {_x getVariable ["arma3mercenaries_groupID", ""] == _groupID}
-});
-
 */
 
-// initPlayerLocal.sqf
+//////////////////////////////////////enhanced grad persistence modification for grouped units by BrianV1981
+[] execVM "arma3mercenaries\set_group_captive\groupRejoin.sqf"; // introduced a captive system for grouped AI units when the group leader/player logs out (currently a WIP)
 
-// Get the player's UID
-private _playerUID = getPlayerUID player;
+_action = ["groupTeleport","Group Recall","",{execVM "arma3mercenaries\group_teleport\groupTeleport.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 
-// Create the group ID using the player's UID
-private _groupID = format ["arma3mercenaries_groupID_%1", _playerUID];
+_action = ["groupSetCaptive","Group Deactivate","",{execVM "arma3mercenaries\set_group_captive\setGroupCaptive_proofOfConcept.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 
-// Assign the group ID to the player
-player setVariable ["arma3mercenaries_groupID", _groupID, true];
-
-// Wait until the player is fully loaded
-waitUntil {time > 0 && !isNull player};
-
-// Reassign AI units with the matching group ID to the player's group
-{
-    private _unit = _x;
-    if (!isPlayer _unit) then {
-        [_unit] joinSilent group player;
-    };
-} forEach (allUnits select {
-    _x getVariable ["arma3mercenaries_groupID", ""] == player getVariable ["arma3mercenaries_groupID", ""]
-});
+_action = ["groupRejoin","Group Reactivate","",{execVM "arma3mercenaries\set_group_captive\groupRejoin_proofOfConcept.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 

@@ -5,7 +5,7 @@
 		class Mvehicles {
             kindOf = "Vehicles";
             displayName = "Marine Vehicles";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 			
 			class C_Scooter_Transport_01_F {

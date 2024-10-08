@@ -5,7 +5,7 @@
 		class fortifications {
             displayName = "Fortifications";
             kindOf = "other";
-			tracking = 1;
+			tracking = 0;
 			
 			class ACE_Sandbag_empty {
                 displayName = "ACE Sandbag (empty)";
@@ -481,7 +481,7 @@
 		class Dfortifications {
             displayName = "Lights, Ladders, Other";
             kindOf = "other";
-			tracking = 1;
+			tracking = 0;
 			
 			class ACE_TacticalLadder {
                 displayName = "ACE Telescopic Ladder";
@@ -692,7 +692,7 @@
 	    class Cfortifications {
             displayName = "Cargo and Logistical Supplies";
             kindOf = "other";
-			tracking = 1;
+			tracking = 0;
 			
 			class ToolKit {
                 displayName = "ToolKit";
@@ -936,7 +936,7 @@
 		class Lfortifications {
             displayName = "Supply Crates";
             kindOf = "other";
-			tracking = 1;
+			tracking = 0;
 			
 			class ACE_Box_Chemlights {
                 displayName = "ACE Chemlites Crate";
@@ -1230,7 +1230,7 @@
 	    class Sweapons {
             displayName = "Crew Served Weapons and Unmanned Weapon Systems";
             kindOf = "other";
-			tracking = 1;
+			tracking = 0;
 
 			 class B_Static_Designator_01_F {
                 displayName = "Remote Designator (NATO)";
@@ -1383,7 +1383,7 @@
 		class Mammo {
             displayName = "Crew Served Weapon Ammunition";
             kindOf = "Items";
-			tracking = 1;
+			tracking = 0;
 
 			class ace_csw_100Rnd_127x99_mag_Red {
                 displayName = "ACE 12.7 mm HMG Tracer (Red) Belt";

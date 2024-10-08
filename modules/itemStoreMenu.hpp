@@ -5,7 +5,7 @@
         class items {
             displayName = "Military Supplies";
             kindOf = "Items";
-			tracking = 1;
+			tracking = 0;
 
             class ItemMap {
                 displayName = "Map";
@@ -468,7 +468,7 @@
 		class medical {
             displayName = "Medical Supplies, MRE's and Beverages";
             kindOf = "Items";
-			tracking = 1;
+			tracking = 0;
 		
             class ACE_Splint {
                 displayName = "ACE Splint (x5)";
@@ -600,7 +600,7 @@
         class equipment {
             displayName = "Military Equipment";
             kindOf = "Wearables";
-			tracking = 1;
+			tracking = 0;
 
 			class U_Rangemaster {
                 displayName = "Rangemaster Suit";

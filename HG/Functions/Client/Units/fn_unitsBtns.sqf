@@ -2,7 +2,8 @@
 /*
     fn_unitsBtns.sqf
     Author - HoverGuy
-    Website - https://northernimpulse.com
+    GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
     Enhanced By - BrianV1981
     Changes:
     - Integrated Grad Money system for unit purchases.

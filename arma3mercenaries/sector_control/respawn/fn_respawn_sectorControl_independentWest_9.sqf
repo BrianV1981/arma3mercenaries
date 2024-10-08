@@ -119,7 +119,7 @@ switch (true) do {
         private _markerPos = getMarkerPos _markerName;
 
         // Create the respawn point at the marker position
-        private _respawnData = [_side, _markerPos, _markerName] call BIS_fnc_addRespawnPosition;
+        private _respawnData = [_side, _markerPos] call BIS_fnc_addRespawnPosition;
         private _respawnID = _respawnData select 1;
 
         // Store the respawn ID for future reference (e.g., removal)

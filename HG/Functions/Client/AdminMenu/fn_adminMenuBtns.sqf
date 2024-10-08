@@ -1,7 +1,8 @@
 /*
     fn_adminMenuBtns.sqf
     Author - HoverGuy
-    Website - https://northernimpulse.com
+    GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 
     Summary:
     This script is part of the HG admin menu system for Arma 3. It allows administrators to perform various in-game actions such as adjusting player XP, kills, cash, bank balance, and ranks, as well as managing a player whitelist. The script uses a switch-case structure to handle different administrative tasks based on the selected mode. It also includes validation checks to ensure input values are valid and provides feedback to the admin via hints.

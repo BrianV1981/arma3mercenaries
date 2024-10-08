@@ -5,7 +5,7 @@
  		class Hweapons {
             displayName = "Handguns";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:
 
 			class ACE_Flashlight_Maglite_ML300L {
@@ -128,7 +128,7 @@
         class SMGweapons {
             displayName = "Sub Machine Guns";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:			
 			
 			class SMG_05_F {
@@ -317,7 +317,7 @@
         class Aweapons {
             displayName = "Assault Rifles";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:
 			
             class gm_mpiak74n_brn {
@@ -814,7 +814,7 @@
         class Mweapons {
             displayName = "Marksman Rifles";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:
 			
 			class arifle_MXM_F {
@@ -1010,7 +1010,7 @@
         class MGweapons {
             displayName = "Machine Guns";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:
 			
             class gm_hmgpkm_prp {
@@ -1066,7 +1066,7 @@
         class LMGweapons {
             displayName = "Light Machine Guns";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:
 			
             class gm_lmgrpk74n_prp {
@@ -1206,7 +1206,7 @@
         class SRweapons {
             displayName = "Sniper Rifles";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:
 			
 			class srifle_LRR_F {
@@ -1255,7 +1255,7 @@
         class Lweapons {
             displayName = "Missile and Rocket Launchers";
             kindOf = "Weapons";
-			tracking = 1;
+			tracking = 0;
             //items of this category:			
 	
 			class gm_p2a1_launcher_blk {
@@ -1521,7 +1521,7 @@
         class ammo {
             displayName = "Ammunition";
             kindOf = "Items";
-			tracking = 1;
+			tracking = 0;
 
 			class gm_1Rnd_265mm_flare_single_wht_gc {
                 displayName = "26.5 mm Flare (White)";
@@ -2481,7 +2481,7 @@
 		class Eammo {
             displayName = "Plantable Explosives";
             kindOf = "Items";
-			tracking = 1;
+			tracking = 0;
 			
 			class ACE_DefusalKit {
                 displayName = "ACE ACE Defusal Kit";
@@ -2589,7 +2589,7 @@
         class accessories {
             displayName = "Weapon Accessories";
             kindOf = "Items";
-			tracking = 1;
+			tracking = 0;
 
 			class gm_zvn64_rear_ak {
                 displayName = "ZVN-64 Rear Sight";

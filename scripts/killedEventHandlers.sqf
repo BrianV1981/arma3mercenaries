@@ -1,26 +1,30 @@
 /*
 
-https://forums.bohemia.net/forums/topic/211383-trigger-on-enemy-death/
-https://forums.bohemia.net/forums/topic/225166-help-killed-event-handler/
-https://community.bistudio.com/wiki/BIS_fnc_sideID
-https://github.com/gruppe-adler/grad-moneyMenu/wiki/addFunds
+	killedEventHandlers.sqf
+	Author: BrianV1981
 
 
-[unit, amount, addToBankAccount] call grad_moneymenu_fnc_addFunds
-
-Parameter -	Explanation
-unit -	Object - The unit or storage object to add or detract from.
-amount -	Number - The Amount to add. Negative value to subtract. Total funds will never go below 0.
-addToBankAccount (optional)	Bool - Use true to add the amount to the unit's bank account instead of his wallet.
-
-Example
-[this, -2000] call grad_moneymenu_fnc_addFunds; // subtracts 2000 from wallet
-[storageBox, 100] call grad_moneymenu_fnc_addFunds; // adds 100 to 
-[player, 1500, true] call grad_moneymenu_fnc_addFunds; // adds 1500 to players bank
+	https://forums.bohemia.net/forums/topic/211383-trigger-on-enemy-death/
+	https://forums.bohemia.net/forums/topic/225166-help-killed-event-handler/
+	https://community.bistudio.com/wiki/BIS_fnc_sideID
+	https://github.com/gruppe-adler/grad-moneyMenu/wiki/addFunds
 
 
+	[unit, amount, addToBankAccount] call grad_moneymenu_fnc_addFunds
 
-THIS HAS BEEN INTIGRATED INTO THE GF KILLFEED!
+	Parameter -	Explanation
+	unit -	Object - The unit or storage object to add or detract from.
+	amount -	Number - The Amount to add. Negative value to subtract. Total funds will never go below 0.
+	addToBankAccount (optional)	Bool - Use true to add the amount to the unit's bank account instead of his wallet.
+
+	Example
+	[this, -2000] call grad_moneymenu_fnc_addFunds; // subtracts 2000 from wallet
+	[storageBox, 100] call grad_moneymenu_fnc_addFunds; // adds 100 to 
+	[player, 1500, true] call grad_moneymenu_fnc_addFunds; // adds 1500 to players bank
+
+
+
+	*****THIS IS OBSOLETE AND HAS BEEN INTEGRATED INTO THE arma3mercenaries KILL SCRIPT!*****
 
 */
 

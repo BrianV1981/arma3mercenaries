@@ -1,8 +1,9 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
-	enhance By BrianV1981
+    GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
+	Enhance By - BrianV1981
 	params["_target","_caller","_id","_garage"]; ///original params
 
 // This is the ACE addAction code for the object named garage_4
@@ -16,7 +17,7 @@ private _actParkVehicle = [(localize "STR_HG_GARAGE_PARK"),(localize "STR_HG_GAR
 [garage_4,0,["ACE_MainActions"],_actParkVehicle] call ace_interact_menu_fnc_addActionToObject;
 
 
-//////////////////////alll ace interactions///////////
+//////////////////////alll ace interactions for object named shop_1///////////
 
 private _actItemsShop = [
     (localize "STR_HG_ITEMS_SHOP"),
@@ -130,7 +131,7 @@ if(_storePoint isEqualTo "") then
     _pos = markerPos _storePoint;
 };
 
-_near = (nearestObjects [_pos,_allowedTypes,100]) select {alive _x};// 100 is the distance
+_near = (nearestObjects [_pos,_allowedTypes,100]) select {alive _x}; // 100 is the distance in meters that a vehicle is searched for in order to store/park
 
 if((count _near) > 0) then
 {

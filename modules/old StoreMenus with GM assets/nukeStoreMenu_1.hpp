@@ -5,7 +5,7 @@
 		class Vitems {
             kindOf = "Items";
             displayName = "Vehicle Keys and Special Weapons Vehicles";
-            tracking = 1;
+            tracking = 0;
             //items of this category:
 
 			class ACE_key_master {

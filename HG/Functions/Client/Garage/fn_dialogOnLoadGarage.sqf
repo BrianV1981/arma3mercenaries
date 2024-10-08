@@ -1,7 +1,8 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
+    GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 	params["_target","_caller","_id","_garage"];
 */
 params["_garage"];

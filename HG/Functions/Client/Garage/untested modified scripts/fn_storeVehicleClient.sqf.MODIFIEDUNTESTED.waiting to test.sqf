@@ -1,7 +1,8 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
+    GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
     enhanced by BrianV1981
     added safety checks for _vehicle and _owner variables to ensure they are valid before proceeding.
     params["_target","_caller","_id","_garage"]; //changed the parms for ace interaction

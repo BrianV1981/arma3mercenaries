@@ -4,7 +4,7 @@
         class units_1 {
             displayname = "Constellis Loadouts (Blufor)";
             kindOf = "other";
-            tracking = 1;
+            tracking = 0;
 					
 			class B_RangeMaster_F {
                 displayName = "Constellis Scrub Loadout (Blufor)";
@@ -75,7 +75,7 @@
 		class units_2 {
             displayname = "Custom Loadouts";
             kindOf = "other";
-			tracking = 1;
+			tracking = 0;
 
 			class B_recon_LAT_F {
                 displayName = "Vasquez Loadout 1";

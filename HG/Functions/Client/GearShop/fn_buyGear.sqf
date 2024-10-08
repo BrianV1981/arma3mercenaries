@@ -1,7 +1,8 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
+    GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
     Enhanced By - BrianV1981
     Changes:
     - Integrated Grad Money system to check for available funds before purchasing gear.

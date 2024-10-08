@@ -1,5 +1,11 @@
 // execVM "arma3mercenaries\salvaging\arma3mercenaries_salvagingInit.sqf"; // failed idea so far...
 // execVM "arma3mercenaries\salvaging\vehicleDestroyedTest.sqf"; // failed idea so far...
+// [] execVM "arma3mercenaries\set_group_captive\setGroupCaptive.sqf"; // work in progress (doing it manually with ace self interact for now)
+
+execVM "arma3mercenaries\sector_control\spawn\fn_spawnSectorControlUnits.sqf";
+execVM "arma3mercenaries\sector_control\reward\fn_manageSectors.sqf";
+
+/*
 execVM "arma3mercenaries\sector_control\spawn\arma3mercenaries_fn_spawnSectorControlUnit_12.sqf";
 execVM "arma3mercenaries\sector_control\spawn\arma3mercenaries_fn_spawnSectorControlUnit_11.sqf";
 execVM "arma3mercenaries\sector_control\spawn\arma3mercenaries_fn_spawnSectorControlUnit_10.sqf";
@@ -13,20 +19,32 @@ execVM "arma3mercenaries\sector_control\spawn\arma3mercenaries_fn_spawnSectorCon
 execVM "arma3mercenaries\sector_control\spawn\arma3mercenaries_fn_spawnSectorControlUnit_2.sqf";
 execVM "arma3mercenaries\sector_control\spawn\arma3mercenaries_fn_spawnSectorControlUnit_1.sqf";
 
-[] execVM "arma3mercenaries\sector_control\reward_system\arma3mercenaries_fn_sector_control_RewardSystem_1.sqf";
-[] execVM "arma3mercenaries\sector_control\reward_system\arma3mercenaries_fn_sector_control_RewardSystem_2.sqf";
-[] execVM "arma3mercenaries\sector_control\reward_system\arma3mercenaries_fn_sector_control_RewardSystem_3.sqf";
-[] execVM "arma3mercenaries\sector_control\reward_system\arma3mercenaries_fn_sector_control_RewardSystem_4.sqf";
-[] execVM "arma3mercenaries\sector_control\reward_system\arma3mercenaries_fn_sector_control_RewardSystem_5.sqf";
-[] execVM "arma3mercenaries\sector_control\reward_system\arma3mercenaries_fn_sector_control_RewardSystem_6.sqf";
-[] execVM "arma3mercenaries\sector_control\reward_system\arma3mercenaries_fn_sector_control_RewardSystem_7.sqf";
-[] execVM "arma3mercenaries\sector_control\reward_system\arma3mercenaries_fn_sector_control_RewardSystem_8.sqf";
-[] execVM "arma3mercenaries\sector_control\reward_system\arma3mercenaries_fn_sector_control_RewardSystem_9.sqf";
-[] execVM "arma3mercenaries\sector_control\reward_system\arma3mercenaries_fn_sector_control_RewardSystem_10.sqf";
-[] execVM "arma3mercenaries\sector_control\reward_system\arma3mercenaries_fn_sector_control_RewardSystem_11.sqf";
-[] execVM "arma3mercenaries\sector_control\reward_system\arma3mercenaries_fn_sector_control_RewardSystem_12.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_checkSector_1.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_checkSector_2.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_checkSector_3.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_checkSector_4.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_checkSector_5.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_checkSector_6.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_checkSector_7.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_checkSector_8.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_checkSector_9.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_checkSector_10.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_checkSector_11.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_checkSector_12.sqf";
 
-
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_rewardSector_1.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_rewardSector_2.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_rewardSector_3.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_rewardSector_4.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_rewardSector_5.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_rewardSector_6.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_rewardSector_7.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_rewardSector_8.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_rewardSector_9.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_rewardSector_10.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_rewardSector_11.sqf";
+[] execVM "arma3mercenaries\sector_control\reward_system\fn_rewardSector_12.sqf";
+*/
 
 /// temporarily disable alive reward systems (disable installation, complete task, and objective secured)
 // execVM "scripts\aliveDisableReward.sqf"; (fires off all the time - randomly)
@@ -48,4 +66,3 @@ execVM "scripts\HG_initServer.sqf";
 
 ///https://github.com/gruppe-adler/grad-persistence/wiki/saveMission
 [{[false, 3601] call grad_persistence_fnc_saveMission}, 21000, []] call CBA_fnc_addPerFrameHandler;
-

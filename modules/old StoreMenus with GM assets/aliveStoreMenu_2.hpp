@@ -5,7 +5,7 @@
 		class Nother {
             displayName = "Combat Support (NATO)";
             kindOf = "Other";
-			tracking = 1;
+			tracking = 0;
 			
 			class B_MRAP_01_F {
                 displayName = "ALiVE M-ATV Transport (120 Minutes)";
@@ -159,7 +159,7 @@
 		class Iother {
             displayName = "Combat Support (INDEPENDENT)";
             kindOf = "Other";
-			tracking = 1;
+			tracking = 0;
 			
 			class I_MRAP_03_F {
                 displayName = "ALiVE Fennek Transport (120 Minutes)";

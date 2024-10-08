@@ -209,3 +209,112 @@ _this addAction ["arma3mercenaries Radio", {
         artist = "";
         title = "";
     };
+	class myTrack18 {
+        name = "myTrack18";
+        sound[] = {"music\GM_vietnam.ogg", db+3, 1};
+        titles[] = {};
+        tag = "jukeboxRadio";
+        duration = 159;
+        artist = "Good Morning Vietnam";
+        title = "First Radio Broadcast";
+    };
+	class myTrack19 {
+        name = "myTrack19";
+        sound[] = {"music\iranPlot.ogg", db+3, 1};
+        titles[] = {};
+        tag = "jukeboxRadio";
+        duration = 119;
+        artist = "Fox";
+        title = "Iran Update 4";
+    };
+	class myTrack20 {
+        name = "myTrack20";
+        sound[] = {"music\lovin.ogg", db+3, 1};
+        titles[] = {};
+        tag = "jukeboxRadio";
+        duration = 177;
+        artist = "The Spencer Davis Group";
+        title = "Gimmie Some Lovin";
+    };
+	class myTrack21 {
+        name = "myTrack21";
+        sound[] = {"music\shelter.ogg", db+3, 1};
+        titles[] = {};
+        tag = "jukeboxRadio";
+        duration = 271;
+        artist = "The Rolling Stones";
+        title = "Gimmie Shelter";
+    };
+	class myTrack22 {
+        name = "myTrack22";
+        sound[] = {"music\hello.ogg", db+3, 1};
+        titles[] = {};
+        tag = "jukeboxRadio";
+        duration = 160;
+        artist = "The Doors";
+        title = "Hello, I Love You";
+    };
+	class myTrack23 {
+        name = "myTrack23";
+        sound[] = {"music\rabbit.ogg", db+3, 1};
+        titles[] = {};
+        tag = "jukeboxRadio";
+        duration = 154;
+        artist = "Jefferson Airplane";
+        title = "White Rabbit";
+    };
+	class myTrack24 {
+        name = "myTrack24";
+        sound[] = {"music\mellow.ogg", db+3, 1};
+        titles[] = {};
+        tag = "jukeboxRadio";
+        duration = 228;
+        artist = "Donovan";
+        title = "Mellow Yellow";
+    };
+	class myTrack25 {
+        name = "myTrack25";
+        sound[] = {"music\time.ogg", db+3, 1};
+        titles[] = {};
+        tag = "jukeboxRadio";
+        duration = 293;
+        artist = "The Chambers Brothers";
+        title = "Time Has Come Today";
+    };
+	class myTrack26 {
+        name = "myTrack26";
+        sound[] = {"music\risingSun.ogg", db+3, 1};
+        titles[] = {};
+        tag = "jukeboxRadio";
+        duration = 270;
+        artist = "The Animals";
+        title = "House Of The Rising Sun";
+    };
+	class myTrack27 {
+        name = "myTrack27";
+        sound[] = {"music\lightMyFire.ogg", db+3, 1};
+        titles[] = {};
+        tag = "jukeboxRadio";
+        duration = 431;
+        artist = "The Doors";
+        title = "Light My Fire";
+    };
+	class myTrack28 {
+        name = "myTrack28";
+        sound[] = {"music\sittin.ogg", db+3, 1};
+        titles[] = {};
+        tag = "jukeboxRadio";
+        duration = 164;
+        artist = "Otis Redding";
+        title = "Sittin On The Dock Of The Bay";
+    };
+	class myTrack29 {
+        name = "myTrack29";
+        sound[] = {"music\watchtower.ogg", db+3, 1};
+        titles[] = {};
+        tag = "jukeboxRadio";
+        duration = 242;
+        artist = "Jimmi Hendrix";
+        title = "All Along The Watchtower";
+    };
+	

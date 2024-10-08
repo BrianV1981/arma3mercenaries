@@ -2,7 +2,8 @@
 /*
     fn_buyVehicle.sqf
     Author - HoverGuy
-    Website - https://northernimpulse.com
+    GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
     Enhanced by - BrianV1981
     Changes:
     - Replaced HG money handling functions with Grad Money functions.

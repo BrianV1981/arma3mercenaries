@@ -177,7 +177,7 @@ private _interrogationStartMessage = format [selectRandom _interrogationStartMes
 
         // Apply health bleed at a random interval between 10 and 30 seconds
         while {alive _cap && {_cap getVariable [_id, false]}} do {
-            sleep (1 + random 2); // Random bleed interval between 10 and 30 seconds
+            sleep (10 + random 20); // Random bleed interval between 10 and 30 seconds
             _cap setDamage (damage _cap + _bleedPercentage); // Apply the random bleed percentage
 
             if (damage _cap >= 1) then {
@@ -185,13 +185,16 @@ private _interrogationStartMessage = format [selectRandom _interrogationStartMes
                 _cap setDamage 1;
     
                 // Initial reward calculation
-                private _reward = 10000 + random 15000; // Random payout between 10,000 and 15,000 credits
+                private _reward = 10000 + random 20000; // Random payout between 10,000 and 20,000 credits
     
                 // 5x reward multiplier chance
                 private _multiplierChance = random 100; // Generate a random number between 0 and 100
-                if (_multiplierChance < 10) then { // 10% chance 
+                if (_multiplierChance < 50) then { // 50% chance 
                     _reward = _reward * 20; // 20x multiplier
                     hintSilent "HVT found! The information extracted was invaluable to our war effort!";
+					
+					// Execute the HVT task
+					[] execVM "arma3mercenaries\tasks\HVT_task_1.sqf";
                 };
     
                 // Apply the (possibly multiplied) reward to the player

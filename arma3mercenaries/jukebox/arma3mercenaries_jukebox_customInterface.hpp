@@ -18,8 +18,10 @@ class CustomInterface {
     controls[] = {
         Title, MuteButton,
         TrackButton1, TrackButton2, TrackButton3, TrackButton4, TrackButton5,
-        TrackButton6, TrackButton7, TrackButton8, TrackButton9, TrackButton10,
-        TrackButton11, TrackButton12, TrackButton13, MercenaryRadioButton
+        TrackButton6, TrackButton8, TrackButton9, TrackButton11, TrackButton12,
+        TrackButton20, TrackButton21, TrackButton22, TrackButton23,
+        TrackButton24, TrackButton25, TrackButton26, TrackButton27, TrackButton28,
+        TrackButton29, MercenaryRadioButton
     };
 
     class CustomBackground {
@@ -34,8 +36,8 @@ class CustomInterface {
         colorBackground[] = {0, 0, 0, 0.6};
         x = 0.2; // Adjusted for the new title and buttons
         y = 0.2;
-        w = 0.6;
-        h = 0.6;
+        w = 0.6; // adjust width
+        h = 0.6; // adjust height
     };
 
     class CustomButton {
@@ -64,14 +66,14 @@ class CustomInterface {
         animTexturePressed = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\down_ca.paa";
         shadow = 0;
         font = "RobotoCondensed";
-        sizeEx = 0.04;
+        sizeEx = 0.03;
         offsetX = 0.003;
         offsetY = 0.003;
         offsetPressedX = 0.002;
         offsetPressedY = 0.002;
         borderSize = 0;
-        w = 0.3; // Button width
-        h = 0.05; // Button height
+        w = 0.25; // Button width
+        h = 0.03; // Button height
     };
 
     class Title {
@@ -84,115 +86,166 @@ class CustomInterface {
         sizeEx = 0.06;
         shadow = 0;
         colorBackground[] = {0, 0.5, 0, 1};
-        x = 0.2;
-        y = 0.2;
-        w = 0.6;
-        h = 0.05;
+        x = 0.2; // Adjusted to match background
+		y = 0.2;
+		w = 0.6; // Adjusted to match background width
+		h = 0.05;
     };
     
     // Track buttons
-    class TrackButton1: CustomButton {
-        text = "Surfing Bird";
-        x = 0.2;
-        y = 0.3;
-        action = "['myTrack1'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'The Trashmen', 'Surfing Bird'];";
-    };
+	class TrackButton1: CustomButton {
+		text = "Surfing Bird";
+		x = 0.23;	// left/right (.52 is right of .23)
+		y = 0.3;	// up/down (.34 is down from .3)
+		action = "['myTrack1'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'The Trashmen', 'Surfing Bird'];";
+	};
+	
+	class TrackButton2: CustomButton {
+		text = "Paint It, Black";
+		x = 0.52; 
+		y = 0.3;
+		action = "['myTrack2'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'The Rolling Stones', 'Paint It, Black'];";
+	};
 
-    class TrackButton2: CustomButton {
-        text = "Paint It, Black";
-        x = 0.2;
-        y = 0.36;
-        action = "['myTrack2'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'The Rolling Stones', 'Paint It, Black'];";
-    };
+	class TrackButton3: CustomButton {
+		text = "These Boots Are Made For Walkin";
+		x = 0.23; 
+		y = 0.34;
+		action = "['myTrack3'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Nancy Sinatra', 'These Boots Are Made For Walkin'];";
+	};
 
-    class TrackButton3: CustomButton {
-        text = "These Boots Are Made For Walkin";
-        x = 0.2;
-        y = 0.42;
-        action = "['myTrack3'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Nancy Sinatra', 'These Boots Are Made For Walkin'];";
-    };
+	class TrackButton4: CustomButton {
+		text = "Wooly Bully";
+		x = 0.52; 
+		y = 0.34;
+		action = "['myTrack4'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Sam the Sham & the Pharaos', 'Wooly Bully'];";
+	};
 
-    class TrackButton4: CustomButton {
-        text = "Wooly Bully";
-        x = 0.2;
-        y = 0.48;
-        action = "['myTrack4'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Sam the Sham & the Pharaos', 'Wooly Bully'];";
-    };
+	class TrackButton5: CustomButton {
+		text = "Cisco Kid";
+		x = 0.23; 
+		y = 0.38;
+		action = "['myTrack5'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'WAR', 'Cisco Kid'];";
+	};
 
-    class TrackButton5: CustomButton {
-        text = "Cisco Kid";
-        x = 0.2;
-        y = 0.54;
-        action = "['myTrack5'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'WAR', 'Cisco Kid'];";
-    };
+	class TrackButton6: CustomButton {
+		text = "Fortunate Son";
+		x = 0.52; 
+		y = 0.38;
+		action = "['myTrack6'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Creedence Clearwater Revival', 'Fortunate Son'];";
+	};
 
-    class TrackButton6: CustomButton {
-        text = "Fortunate Son";
-        x = 0.2;
-        y = 0.6;
-        action = "['myTrack6'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Creedence Clearwater Revival', 'Fortunate Son'];";
-    };
+	class TrackButton8: CustomButton {
+		text = "Hush";
+		x = 0.23;
+		y = 0.42;
+		action = "['myTrack8'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Deep Purple', 'Hush'];";
+	};
 
-    class TrackButton7: CustomButton {
-        text = "Iran Update 1";
-        x = 0.2;
-        y = 0.66;
-        action = "['myTrack7'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'FOX', 'Iran Update 1'];";
-    };
+	class TrackButton9: CustomButton {
+		text = "The Letter";
+		x = 0.52;
+		y = 0.42;
+		action = "['myTrack9'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'The Box Tops', 'The Letter'];";
+	};
 
-    class TrackButton8: CustomButton {
-        text = "Hush";
-        x = 0.5;
-        y = 0.3;
-        action = "['myTrack8'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Deep Purple', 'Hush'];";
-    };
+	class TrackButton11: CustomButton {
+		text = "Son of a Preacher Man";
+		x = 0.23;
+		y = 0.46;
+		action = "['myTrack11'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Dusty Springfield', 'Son of a Preacher Man'];";
+	};
 
-    class TrackButton9: CustomButton {
-        text = "The Letter";
-        x = 0.5;
-        y = 0.36;
-        action = "['myTrack9'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'The Box Tops', 'The Letter'];";
-    };
+	class TrackButton12: CustomButton {
+		text = "Shakin All Over";
+		x = 0.52;
+		y = 0.46;
+		action = "['myTrack12'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'The Guess Who', 'Shakin All Over'];";
+	};
 
-    class TrackButton10: CustomButton {
-        text = "Iran Update 2";
-        x = 0.5;
-        y = 0.42;
-        action = "['myTrack10'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Foriegn Press Center', 'Iran Update 2'];";
-    };
+	class TrackButton20: CustomButton {
+		text = "Gimmie Some Lovin";
+		x = 0.23;
+		y = 0.5;
+		action = "['myTrack20'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'The Spencer Davis Group', 'Gimmie Some Lovin'];";
+	};
 
-    class TrackButton11: CustomButton {
-        text = "Son of a Preacher Man";
-        x = 0.5;
-        y = 0.48;
-        action = "['myTrack11'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Dusty Springfield', 'Son of a Preacher Man'];";
-    };
+	class TrackButton21: CustomButton {
+		text = "Gimmie Shelter";
+		x = 0.52; 
+		y = 0.5;
+		action = "['myTrack21'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'The Rolling Stones', 'Gimmie Shelter'];";
+	};
 
-    class TrackButton12: CustomButton {
-        text = "Shakin All Over";
-        x = 0.5;
-        y = 0.54;
-        action = "['myTrack12'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'The Guess Who', 'Shakin All Over'];";
-    };
+	class TrackButton22: CustomButton {
+		text = "Hello, I Love You";
+		x = 0.23; 
+		y = 0.54;
+		action = "['myTrack22'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'The Doors', 'Hello, I Love You'];";
+	};
 
-    class TrackButton13: CustomButton {
-        text = "Iran Update 3";
-        x = 0.5;
-        y = 0.6;
-        action = "['myTrack13'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'President Donald J. Trump', 'Iran Update 3'];";
-    };
+	class TrackButton23: CustomButton {
+		text = "White Rabbit";
+		x = 0.52; 
+		y = 0.54;
+		action = "['myTrack23'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Jefferson Airplane', 'White Rabbit'];";
+	};
 
-    class MercenaryRadioButton: CustomButton {
-        text = "Arma3mercenaries Radio";
-        x = 0.5;
-        y = 0.66;
-        action = "hintSilent 'arma3mercenaries Radio\nCreated By: BrianV1981 w/ ChatGPT.';";
-    };
+	class TrackButton24: CustomButton {
+		text = "Mellow Yellow";
+		x = 0.23; 
+		y = 0.58;
+		action = "['myTrack24'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Donovan', 'Mellow Yellow'];";
+	};
 
-    class MuteButton: CustomButton {
-        text = "Mute";
-        x = 0.35;
-        y = 0.72;
-        action = "['myTrack14'] remoteExecCall ['playMusic', 0, true]; hintSilent 'Now Playing: Muted';";
-    };
+	class TrackButton25: CustomButton {
+		text = "Time Has Come Today";
+		x = 0.52; 
+		y = 0.58;
+		action = "['myTrack25'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'The Chambers Brothers', 'Time Has Come Today'];";
+	};
+
+	class TrackButton26: CustomButton {
+		text = "House Of The Rising Sun";
+		x = 0.23; 
+		y = 0.62;
+		action = "['myTrack26'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'The Animals', 'House Of The Rising Sun'];";
+	};
+
+	class TrackButton27: CustomButton {
+		text = "Light My Fire";
+		x = 0.52; 
+		y = 0.62;
+		action = "['myTrack27'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'The Doors', 'Light My Fire'];";
+	};
+
+	class TrackButton28: CustomButton {
+		text = "Sittin On The Dock Of The Bay";
+		x = 0.23; 
+		y = 0.66;
+		action = "['myTrack28'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Otis Redding', 'Sittin On The Dock Of The Bay'];";
+	};
+
+	class TrackButton29: CustomButton {
+		text = "All Along The Watchtower";
+		x = 0.52; 
+		y = 0.66;
+		action = "['myTrack29'] remoteExecCall ['playMusic', 0, true]; hintSilent format ['Now Playing: %1 - %2', 'Jimmi Hendrix', 'All Along The Watchtower'];";
+	};
+
+	class MercenaryRadioButton: CustomButton {
+		text = "Arma3mercenaries Radio";
+		x = 0.33;
+		y = 0.70;
+		w = 0.34;
+		action = "hintSilent 'arma3mercenaries Radio\nCreated By: BrianV1981 w/ ChatGPT.';";
+	};
+
+	class MuteButton: CustomButton {
+		text = "Mute";
+		x = 0.33;
+		y = 0.74;
+		w = 0.34;
+		action = "['myTrack14'] remoteExecCall ['playMusic', 0, true]; hintSilent 'Now Playing: Muted';";
+	};
 };
